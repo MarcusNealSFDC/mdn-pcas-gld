@@ -1,0 +1,43 @@
+{
+  "orgName": "PNNL Scratch",
+  "edition": "Enterprise",
+  "features": ["Communities", "PersonAccounts", "StateAndCountryPicklist", "Knowledge", "LiveAgent", 
+      "ContactsToMultipleAccounts", "SharedActivities", "DeferSharingCalc", "ForceComPlatform", "ProcessBuilder", "DebugApex",
+      "CaseClassification", "EnableSetPasswordInApi"],
+
+  "hasSampleData": false,
+  "features": ["Communities", 
+              "Walkthroughs", 
+              "EnableSetPasswordInApi",
+              "API",
+              "LightningSalesConsole",
+              "ExternalSharing",
+              "MultiCurrency",
+              "ContactsToMultipleAccounts",
+              "StateAndCountryPicklist",
+              "Case"],
+  "settings": {
+      "communitiesSettings": {
+          "enableNetworksEnabled": true
+      },
+      "experienceBundleSettings": {
+          "enableExperienceBundleMetadata": true
+      },
+      "lightningExperienceSettings": {
+          "enableS1DesktopEnabled": true
+      },
+      "mobileSettings": {
+          "enableS1EncryptedStoragePref2": false
+      },
+      "userEngagementSettings": {
+          "enableOrchestrationInSandbox": true
+      },
+      "chatterSettings": {
+          "enableChatter": true
+      },
+      "experienceBundleSettings": {
+          "enableExperienceBundleMetadata": true
+
+      }
+  }
+}

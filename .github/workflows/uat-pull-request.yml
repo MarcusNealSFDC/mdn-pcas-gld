@@ -1,0 +1,41 @@
+name: UAT Pull Request Against QA
+
+on:
+  workflow_dispatch:
+  #push:
+
+env:
+  SFDX_AUDIENCE_URL: https://test.salesforce.com # Use https://login.salesforce.com for production instances. Use https://test.salesforce.com for sandboxes
+  BITBUCKET_CREDS: ${{ secrets.BITBUCKET_CREDS }} # Bitbucket username:app password
+  SALESFORCE_ORG_USERNAME: #builduser@acumensolutions.com.uschrecruiting.qa  Salesforce username of target org
+  TARGET_BRANCH: uat # Git branch to merge feature branch into
+  SOURCE_BRANCH: qa # Git branch to merge feature branch into
+  SOURCE_PATH: force-app
+  
+jobs:
+  Deploy:
+    name: QA to UAT Merge-Process
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+          ref: ${{ env.TARGET_BRANCH }}
+    
+    - name: Setup Git User
+      run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+    
+    - name: Checkout the head commit of the branch
+      if: ${{ github.event_name != 'pull_request_target' }}
+      uses: actions/checkout@v2
+      
+    - name: Merge Feature Branch into Target Branch
+      run: |
+          git fetch --all
+          git merge --no-ff origin/${SOURCE_BRANCH}  -m "Merge ${SOURCE_BRANCH} into ${TARGET_BRANCH}" --allow-unrelated-histories
+          
+    - name: Push Changes to Repository
+      if: ${{ success() }}
+      run: |
+          git push -u origin --force "${TARGET_BRANCH}"

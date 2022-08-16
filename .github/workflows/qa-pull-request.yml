@@ -1,0 +1,100 @@
+name: QA Pull Request Against DEV
+
+on:
+  workflow_call:
+    secrets:
+      token:
+        description: 'Key for use in jwt authorizations'
+        required: true
+  #pull_request:
+    # workflows: ["PR BUGFIXES/FEATURES"]
+    # branches: [dev]
+    # types:
+    #   - completed
+    #   - requested
+  # pull_request_target:
+  #   types: [assigned, opened, synchronize, reopened, auto_merge_enabled]
+  #   branches:
+  #     - 'dev'
+  workflow_dispatch:
+  #push:
+  #  branches:
+   #   - 'dev'
+
+env:
+  SFDX_AUDIENCE_URL: https://login.salesforce.com # Use https://login.salesforce.com for production instances. Use https://test.salesforce.com for sandboxes
+  SALESFORCE_ORG_USERNAME: builduser@acumensolutions.com.uschrecruiting.qa # Salesforce username of target org
+  SOURCE_BRANCH: dev # Git branch to merge feature branch into
+  TARGET_BRANCH: qa # Git branch to merge feature branch into
+  SOURCE_PATH: force-app
+
+
+jobs:
+  QADeploy:
+    name: Dev to QA Merge-Process
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+            ref: ${{ env.TARGET_BRANCH }}
+
+      # - name: Sleep for 1 mins
+      #   run: |
+      #       sleep 60s
+          
+      - name: Install SFDX
+        run: |
+            wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
+            mkdir sfdx-cli
+            tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
+            ./sfdx-cli/install
+            sfdx --version
+
+        #Install Acu-pack.
+      # - name: Install acu-pack
+      #   run: |
+      #       echo "y" | sfdx plugins:install https://${BITBUCKET_CREDS}@bitbucket.org/acumensolutions/acu-pack.git
+
+        #Authenticate and Deploy.
+      - name: Authenticate Salesforce Org(Called)
+        env:
+          CALLEDSECRETKEY: ${{ secrets.token }}
+        if: env.CALLEDSECRETKEY != null
+        run: |
+              echo "${{ env.CALLEDSECRETKEY }}" > server.key
+              export SFDX_AUDIENCE_URL=https://test.salesforce.com
+              sfdx force:auth:jwt:grant --jwtkeyfile server.key --clientid 3MVG9Zdl7Yn6QDKOmdEKlNgV3ijyCcpRtgY.Zss.F8MSKTJtyHSpzW8A_5pHihW.D_Vf2ji7qjRRbGliaK9Fc --username builduser@acumensolutions.com.uschrecruiting.qa --instanceurl https://uscgrecruiting--qa.my.salesforce.com
+
+      - name: Authenticate Salesforce Org(Manual)
+        env:
+          MANUALSECRETKEY: ${{ secrets.JWTKEY }}
+        if: env.MANUALSECRETKEY != null
+        run: |
+              echo "${{ env.MANUALSECRETKEY }}" > server.key
+              export SFDX_AUDIENCE_URL=https://test.salesforce.com
+              sfdx force:auth:jwt:grant --jwtkeyfile server.key --clientid 3MVG9Zdl7Yn6QDKOmdEKlNgV3ijyCcpRtgY.Zss.F8MSKTJtyHSpzW8A_5pHihW.D_Vf2ji7qjRRbGliaK9Fc --username builduser@acumensolutions.com.uschrecruiting.qa --instanceurl https://uscgrecruiting--qa.my.salesforce.com
+
+      - name: Setup Git User
+        run: |
+            git config user.name "GitHub Actions Bot"
+            git config user.email "<>"
+
+      - name: Merge Feature Branch into Target Branch
+        run: |
+            git fetch --all
+            git merge -X theirs origin/${SOURCE_BRANCH} -m "Merge ${SOURCE_BRANCH} into ${TARGET_BRANCH}" --allow-unrelated-histories
+
+      # - name: Generate Deploy Package
+      #   run: |
+      #       git --no-pager diff HEAD^ --name-status --no-renames > git_diff.txt
+      #       sfdx acumen:source:delta:git -g git_diff.txt -s "${SOURCE_DIR}" -d deploy
+            
+      - name: Deploy delta to target org
+        run: |
+            sfdx force:source:deploy -p "${SOURCE_PATH}" -u "${SALESFORCE_ORG_USERNAME}"
+
+      - name: Push Changes to Repository
+        if: ${{ success() }}
+        run: |
+            git push -u origin --force "${TARGET_BRANCH}"
+    
