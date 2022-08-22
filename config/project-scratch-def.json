@@ -6,16 +6,6 @@
       "CaseClassification", "EnableSetPasswordInApi"],
 
   "hasSampleData": false,
-  "features": ["Communities", 
-              "Walkthroughs", 
-              "EnableSetPasswordInApi",
-              "API",
-              "LightningSalesConsole",
-              "ExternalSharing",
-              "MultiCurrency",
-              "ContactsToMultipleAccounts",
-              "StateAndCountryPicklist",
-              "Case"],
   "settings": {
       "communitiesSettings": {
           "enableNetworksEnabled": true
