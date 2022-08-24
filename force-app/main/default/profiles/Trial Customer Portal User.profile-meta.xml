@@ -55,6 +55,10 @@
         <editable>false</editable>
         <field>Project__c.Setup_Date__c</field>
         <readable>true</readable>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Contact_Type__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
@@ -66,6 +70,9 @@
         <tab>Project__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
+    </layoutAssignments>
     <userLicense>High Volume Customer Portal</userLicense>
     <userPermissions>
         <enabled>true</enabled>
