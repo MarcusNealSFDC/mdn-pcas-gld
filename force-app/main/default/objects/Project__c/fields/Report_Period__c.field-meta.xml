@@ -8,7 +8,6 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <controllingField>Account__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
@@ -23,27 +22,5 @@
                 <label>TD</label>
             </value>
         </valueSetDefinition>
-        <valueSettings>
-            <controllingFieldValue>D5909 - Line Item Construction Proj</controllingFieldValue>
-            <controllingFieldValue>D5910 - Construction Work in Prog GF</controllingFieldValue>
-            <controllingFieldValue>D5911 - Equipment Work in Prog  GF</controllingFieldValue>
-            <controllingFieldValue>D5912 - Construction Work in Prog</controllingFieldValue>
-            <controllingFieldValue>D5913 - Equipment Work in Progress</controllingFieldValue>
-            <controllingFieldValue>D5915 - Equipment Other</controllingFieldValue>
-            <controllingFieldValue>D5005 - DOE Related Serv Projects</controllingFieldValue>
-            <controllingFieldValue>D5008 - Bonneville Power Admin</controllingFieldValue>
-            <controllingFieldValue>D5009 - Non-IC Reimbursable Work</controllingFieldValue>
-            <controllingFieldValue>D5010 - Related Services-Non DOE (SPP)</controllingFieldValue>
-            <controllingFieldValue>D5012 - Joint Appointments-Out</controllingFieldValue>
-            <controllingFieldValue>D5013 - Joint Appointment Out - ACT</controllingFieldValue>
-            <controllingFieldValue>D5015 - Homeland Security</controllingFieldValue>
-            <controllingFieldValue>D5040 - ACT Federal</controllingFieldValue>
-            <controllingFieldValue>D5908 - DOE Sites Cap</controllingFieldValue>
-            <valueName>TD</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>D5000 - DOE Financial Plan</controllingFieldValue>
-            <valueName>FY</valueName>
-        </valueSettings>
     </valueSet>
 </CustomField>
