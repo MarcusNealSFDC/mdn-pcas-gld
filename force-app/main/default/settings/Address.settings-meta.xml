@@ -1056,14 +1056,6 @@
             </states>
             <states>
                 <active>true</active>
-                <integrationValue>Taiwan</integrationValue>
-                <isoCode>71</isoCode>
-                <label>Taiwan</label>
-                <standard>true</standard>
-                <visible>true</visible>
-            </states>
-            <states>
-                <active>true</active>
                 <integrationValue>Hong Kong</integrationValue>
                 <isoCode>91</isoCode>
                 <label>Hong Kong</label>
@@ -2009,14 +2001,6 @@
                 <integrationValue>Sikkim</integrationValue>
                 <isoCode>SK</isoCode>
                 <label>Sikkim</label>
-                <standard>true</standard>
-                <visible>true</visible>
-            </states>
-            <states>
-                <active>true</active>
-                <integrationValue>Telangana</integrationValue>
-                <isoCode>TG</isoCode>
-                <label>Telangana</label>
                 <standard>true</standard>
                 <visible>true</visible>
             </states>
