@@ -1,7 +1,7 @@
 {
     "orgName": "PNNL Scratch",
     "edition": "Enterprise",
-    "features": ["Communities", "StateAndCountryPicklist", "Knowledge", "LiveAgent", 
+    "features": ["Communities", "StateAndCountryPicklist",
         "ContactsToMultipleAccounts", "SharedActivities", "DeferSharingCalc", "ForceComPlatform", "ProcessBuilder", "DebugApex",
         "CaseClassification", "EnableSetPasswordInApi", "SalesUser", "RecordTypes", "FlowSites", "Interaction", "Workflow", 
         "WorkflowFlowActionFeature"],

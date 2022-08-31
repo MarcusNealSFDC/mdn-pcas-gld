@@ -1,4 +1,4 @@
-name: Deployments:PR BUGFIXES/FEATURES - QA Pull Request Against DEV
+name: Deployments:PR BUGFIXES/FEATURES - Pull Request Against DEV
 
 on:
   pull_request:
@@ -7,10 +7,9 @@ on:
 
 env:
   SFDX_AUDIENCE_URL: https://test.salesforce.com # Use https://login.salesforce.com for production instances. Use https://test.salesforce.com for sandboxes
-  BITBUCKET_CREDS: ${{ secrets.BITBUCKET_CREDS }} # Bitbucket username:app password
-  SALESFORCE_ORG_URL: https://uscgrecruiting--qa.my.salesforce.com # Salesforce URL of target org
-  SALESFORCE_CONSUMER_KEY: ${{ secrets.SALESFORCE_CONSUMER_KEY_QA}} # SFDX App consumer key from target org
-  SALESFORCE_ORG_USERNAME: builduser@acumensolutions.com.uschrecruiting.qa # Salesforce username of target org
+  SALESFORCE_ORG_DEV_URL: https://pnnl--pnnldev1.sandbox.my.salesforce.com # Salesforce URL of target org
+  SALESFORCE_CONSUMER_KEY: ${{ secrets.SALESFORCE_CONSUMER_KEY_DEV}} # SFDX App consumer key from target org
+  SALESFORCE_ORG_USERNAME: builduser@pnnl.doe.pnnldev1 # Salesforce username of target org
   TARGET_BRANCH: dev # Git branch to merge feature branch into
   SOURCE_DIR: force-app
 
@@ -23,91 +22,113 @@ jobs:
         with:
           ref: ${{ env.TARGET_BRANCH }}
           fetch-depth: 0
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '>=14'
+          check-latest: true
       
       - name: Install SFDX
         run: |
-          wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
-          mkdir sfdx-cli
-          tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
-          ./sfdx-cli/install
+          npm install sfdx-cli
+          node_modules/sfdx-cli/bin/run --version
+          node_modules/sfdx-cli/bin/run plugins --core
+        
+      # wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
+      # mkdir sfdx-cli
+      # tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
+      # ./sfdx-cli/install
           
       # - name: Install acu-pack
       #   run: |
       #     echo "y" | sfdx plugins:install https://${BITBUCKET_CREDS}@bitbucket.org/acumensolutions/acu-pack.git
+      - name: 'Populate auth file with SFDX_URL secret'
+        run: |
+          echo "${{ secrets.SALESFORCE_AUTHURL_DEV }}" > SFDX_AUTHURL
       
       - name: Authenticate Salesforce Org
         run: |
-          echo "${{ secrets.JWTKEY }}" > server.key
-          sfdx force:auth:jwt:grant --jwtkeyfile server.key --clientid "${SALESFORCE_CONSUMER_KEY}" --username "${SALESFORCE_ORG_USERNAME}" --instanceurl "${SALESFORCE_ORG_URL}"
+          node_modules/sfdx-cli/bin/run force:auth:sfdxurl:store -f SFDX_AUTHURL -s -a PNNLDev
 
-      - name: Setup Git User
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
+        # sfdx force:auth:jwt:grant --jwtkeyfile server.key --clientid "${SALESFORCE_CONSUMER_KEY}" --username "${SALESFORCE_ORG_USERNAME}" --instanceurl "${SALESFORCE_ORG_URL}"
 
-      - name: Merge Feature Branch into Target Branch
-        run: |
-          git fetch origin
-          git merge --no-ff origin/${GITHUB_HEAD_REF#refs/heads/} -m "Merge ${GITHUB_HEAD_REF#refs/heads/} into ${TARGET_BRANCH}" --allow-unrelated-histories
+      # - name: Setup Git User
+      #   run: |
+      #     git config user.name "GitHub Actions Bot"
+      #     git config user.email "<>"
+
+      # - name: Merge Feature Branch into Target Branch
+      #   run: |
+      #     git fetch origin
+      #     git merge --no-ff origin/${GITHUB_HEAD_REF#refs/heads/} -m "Merge ${GITHUB_HEAD_REF#refs/heads/} into ${TARGET_BRANCH}" --allow-unrelated-histories
           
       # - name: Generate Deploy Package
       #   run: |
       #     git --no-pager diff HEAD^ --name-status --no-renames > git_diff.txt
       #     sfdx acumen:source:delta:git -g git_diff.txt -s "${SOURCE_DIR}" -d deploy
+
+      # - name: Run Apex test
+      #   run: 
+          # node_modules/sfdx-cli/bin/run force:apex:test:run --resultformat tap --codecoverage -c -r human
+
+      # - name: Deploy Package
+      #   id: deploy-salesforce
+      #   run: |
+      #     (
+      #       set -o pipefail
+      #       sfdx force:source:deploy -c -p force-app -u "${SALESFORCE_ORG_USERNAME}"  --verbose | tee results.txt
+      #     )
+
+      - name: Deploy source
+        id: Deploy
+        if: github.event_name == 'push'
+        run:
+          node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u PNNLDev
           
-      - name: Deploy Delta Package
-        id: deploy-salesforce
-        run: |
-          (
-            set -o pipefail
-            sfdx force:source:deploy -c -p force-app -u "${SALESFORCE_ORG_USERNAME}"  --verbose | tee results.txt
-          )
+      # - name: Push Changes to Repository
+      #   if: ${{ success() }}
+      #   run: |
+      #     git push -u origin --force "${TARGET_BRANCH}"
+      #     git push -d origin "${GITHUB_HEAD_REF}"
           
-      - name: Push Changes to Repository
-        if: ${{ success() }}
-        run: |
-          git push -u origin --force "${TARGET_BRANCH}"
-          git push -d origin "${GITHUB_HEAD_REF}"
+      # - name: Collect Results
+      #   id: collect-results
+      #   if: ${{ always() }} 
+      #   run: |
+      #     RESULTS=$(cat results.txt)
+      #     echo "$RESULTS"
+      #     RESULTS="${RESULTS//'%'/'%25'}"
+      #     RESULTS="${RESULTS//$'\n'/'%0A'}"
+      #     RESULTS="${RESULTS//$'\r'/'%0D'}"
+      #     echo "::set-output name=results::$RESULTS"
           
-      - name: Collect Results
-        id: collect-results
-        if: ${{ always() }} 
-        run: |
-          RESULTS=$(cat results.txt)
-          echo "$RESULTS"
-          RESULTS="${RESULTS//'%'/'%25'}"
-          RESULTS="${RESULTS//$'\n'/'%0A'}"
-          RESULTS="${RESULTS//$'\r'/'%0D'}"
-          echo "::set-output name=results::$RESULTS"
-          
-      - name: Update Pull Request
-        if: ${{ always() }}
-        uses: actions/github-script@v5.0.0
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const output = `#### Validation to Salesforce: \`${{ steps.validate-salesforce.outcome }}\`
+      # - name: Update Pull Request
+      #   if: ${{ always() }}
+      #   uses: actions/github-script@v5.0.0
+      #   with:
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+      #     script: |
+      #       const output = `#### Validation to Salesforce: \`${{ steps.validate-salesforce.outcome }}\`
             
-            <details><summary>Show Salesforce Validation Output</summary>
+      #       <details><summary>Show Salesforce Validation Output</summary>
             
-            \`\`\`\n
-            ${{ steps.collect-results.outputs.results }}
-            \`\`\`
+      #       \`\`\`\n
+      #       ${{ steps.collect-results.outputs.results }}
+      #       \`\`\`
             
-            </details>
+      #       </details>
             
-            *Pusher: @${{ github.actor }}, Workflow: \`${{ github.workflow }}\`, Workflow Run Number: \`${{ github.run_number }}\`*`;
+      #       *Pusher: @${{ github.actor }}, Workflow: \`${{ github.workflow }}\`, Workflow Run Number: \`${{ github.run_number }}\`*`;
             
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: output
-            })
+      #       github.rest.issues.createComment({
+      #         issue_number: context.issue.number,
+      #         owner: context.repo.owner,
+      #         repo: context.repo.repo,
+      #         body: output
+      #       })
     
-  QADeploy:
-    name: Call QA Deploy
-    needs: Deploy
-    uses: CSGAMERSServices/dhs-us-coast-guard-gangway/.github/workflows/qa-pull-request.yml@uat
-    secrets:
-      token: ${{ secrets.JWTKEY }}
+  # QADeploy:
+  #   name: Call QA Deploy
+  #   needs: Deploy
+  #   uses: CSGAMERSServices/dhs-us-coast-guard-gangway/.github/workflows/qa-pull-request.yml@uat
+  #   secrets:
+  #     token: ${{ secrets.JWTKEY }}
