@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Awaiting Budget Office Update</fullName>
+                <default>false</default>
+                <label>Awaiting Budget Office Update</label>
+            </value>
+            <value>
+                <fullName>Budget Office Review</fullName>
+                <default>false</default>
+                <label>Budget Office Review</label>
+            </value>
+            <value>
+                <fullName>Pending HQ Correction</fullName>
+                <default>false</default>
+                <label>Pending HQ Correction</label>
+            </value>
+            <value>
+                <fullName>Pending Obs Action</fullName>
+                <default>false</default>
+                <label>Pending Obs Action</label>
+            </value>
+            <value>
+                <fullName>Void/Withdrawn</fullName>
+                <default>false</default>
+                <label>Void/Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Completed - Funds Received</fullName>
+                <default>false</default>
+                <label>Completed - Funds Received</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
