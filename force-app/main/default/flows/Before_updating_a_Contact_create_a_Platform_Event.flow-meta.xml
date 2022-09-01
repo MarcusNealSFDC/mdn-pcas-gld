@@ -34,7 +34,7 @@ Before updating a Contact, create a Platform Event.</description>
         <inputAssignments>
             <field>ObjectType__c</field>
             <value>
-                <stringValue>Opportunity</stringValue>
+                <stringValue>Contact</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -62,5 +62,5 @@ Before updating a Contact, create a Platform Event.</description>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>

@@ -34,7 +34,7 @@ Before creating a Contact, create a Platform Event.</description>
         <inputAssignments>
             <field>ObjectType__c</field>
             <value>
-                <stringValue>Opportunity</stringValue>
+                <stringValue>Contact</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
