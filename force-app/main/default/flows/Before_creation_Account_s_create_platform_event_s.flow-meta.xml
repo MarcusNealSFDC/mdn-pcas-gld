@@ -34,7 +34,7 @@ Before creating an Account, create a Platform Event.</description>
         <inputAssignments>
             <field>ObjectType__c</field>
             <value>
-                <stringValue>Opportunity</stringValue>
+                <stringValue>Account</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
