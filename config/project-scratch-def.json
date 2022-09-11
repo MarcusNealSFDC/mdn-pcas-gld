@@ -25,10 +25,6 @@
         },
         "chatterSettings": {
             "enableChatter": true
-        },
-        "experienceBundleSettings": {
-            "enableExperienceBundleMetadata": true
-  
         }
     }
   }
