@@ -104,25 +104,25 @@ jobs:
       - name: Update Pull Request
         if: ${{ always() }}
         uses: actions/github-script@v5.0.0
-          script: |
-            const output = `#### Validation to Salesforce: \`${{ steps.validate-salesforce.outcome }}\`
-            
-            <details><summary>Show Salesforce Validation Output</summary>
-            
-            \`\`\`\n
-            ${{ steps.collect-results.outputs.results }}
-            \`\`\`
-            
-            </details>
-            
-            *Pusher: @${{ github.actor }}, Workflow: \`${{ github.workflow }}\`, Workflow Run Number: \`${{ github.run_number }}\`*`;
-            
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: output
-            })
+        script: |
+          const output = `#### Validation to Salesforce: \`${{ steps.validate-salesforce.outcome }}\`
+          
+          <details><summary>Show Salesforce Validation Output</summary>
+          
+          \`\`\`\n
+          ${{ steps.collect-results.outputs.results }}
+          \`\`\`
+          
+          </details>
+          
+          *Pusher: @${{ github.actor }}, Workflow: \`${{ github.workflow }}\`, Workflow Run Number: \`${{ github.run_number }}\`*`;
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: output
+          })
     
   # QADeploy:
   #   name: Call QA Deploy
