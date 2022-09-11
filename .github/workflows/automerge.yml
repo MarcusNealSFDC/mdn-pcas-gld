@@ -82,7 +82,7 @@ jobs:
       - name: Deploy source
         id: Deploy
         run:
-          node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u PNNLDev --json --loglevel fatal
+          node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u PNNLDev --loglevel fatal
           
       # - name: Push Changes to Repository
       #   if: ${{ success() }}
