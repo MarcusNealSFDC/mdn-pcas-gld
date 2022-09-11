@@ -80,9 +80,9 @@ jobs:
         run:
           node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u PNNLDev --loglevel fatal --verbose | tee results.txt
 
-      - name: Run Apex test
-        run: 
-          node_modules/sfdx-cli/bin/run force:apex:test:run --resultformat tap --codecoverage -r human -l RunLocalTests -u PNNLDev | tee results.txt
+      # - name: Run Apex test
+      #   run: 
+      #     node_modules/sfdx-cli/bin/run force:apex:test:run --resultformat tap --codecoverage -r human -l RunLocalTests -u PNNLDev | tee results.txt
           
       # - name: Push Changes to Repository
       #   if: ${{ success() }}
@@ -106,7 +106,7 @@ jobs:
         uses: actions/github-script@v5.0.0
         with:
           script: |
-            const output = `#### Validation to Salesforce: \`${{ steps.validate-salesforce.outcome }}\`
+            const output = `#### Validation to Salesforce: \`${{ steps.Deploy.outcome }}\`
             
             <details><summary>Show Salesforce Validation Output</summary>
             
