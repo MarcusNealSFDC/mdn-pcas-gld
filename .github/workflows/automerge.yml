@@ -112,7 +112,7 @@ jobs:
           echo "::set-output name=results::$RESULTS"
           
       - name: Update Pull Request
-        if: ${{ always() }}
+        if: github.event_name == 'pull_request'
         uses: actions/github-script@v5.0.0
         with:
           script: |
