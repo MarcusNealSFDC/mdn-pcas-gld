@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Event triggered by change in data inside PCAS system. Events will trigger changes in PNNL legacy systems</description>
+    <eventType>HighVolume</eventType>
+    <label>PNNL Data Event</label>
+    <pluralLabel>PNNL Data Events</pluralLabel>
+    <publishBehavior>PublishAfterCommit</publishBehavior>
+</CustomObject>
