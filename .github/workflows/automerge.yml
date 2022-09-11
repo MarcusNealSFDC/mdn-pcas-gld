@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
     - dev 
+  workflow_dispatch:
 
 env:
   SFDX_AUDIENCE_URL: https://test.salesforce.com # Use https://login.salesforce.com for production instances. Use https://test.salesforce.com for sandboxes
@@ -66,10 +67,6 @@ jobs:
       #     git --no-pager diff HEAD^ --name-status --no-renames > git_diff.txt
       #     sfdx acumen:source:delta:git -g git_diff.txt -s "${SOURCE_DIR}" -d deploy
 
-      # - name: Run Apex test
-      #   run: 
-          # node_modules/sfdx-cli/bin/run force:apex:test:run --resultformat tap --codecoverage -c -r human
-
       # - name: Deploy Package
       #   id: deploy-salesforce
       #   run: |
@@ -80,9 +77,12 @@ jobs:
 
       - name: Deploy source
         id: Deploy
-        if: github.event_name == 'push'
         run:
-          node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u PNNLDev
+          node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u PNNLDev --loglevel fatal --verbose | tee results.txt
+
+      # - name: Run Apex test
+      #   run: 
+      #     node_modules/sfdx-cli/bin/run force:apex:test:run --resultformat tap --codecoverage -r human -l RunLocalTests -u PNNLDev | tee results.txt
           
       # - name: Push Changes to Repository
       #   if: ${{ success() }}
@@ -90,41 +90,40 @@ jobs:
       #     git push -u origin --force "${TARGET_BRANCH}"
       #     git push -d origin "${GITHUB_HEAD_REF}"
           
-      # - name: Collect Results
-      #   id: collect-results
-      #   if: ${{ always() }} 
-      #   run: |
-      #     RESULTS=$(cat results.txt)
-      #     echo "$RESULTS"
-      #     RESULTS="${RESULTS//'%'/'%25'}"
-      #     RESULTS="${RESULTS//$'\n'/'%0A'}"
-      #     RESULTS="${RESULTS//$'\r'/'%0D'}"
-      #     echo "::set-output name=results::$RESULTS"
+      - name: Collect Results
+        id: collect-results
+        if: ${{ always() }} 
+        run: |
+          RESULTS=$(cat results.txt)
+          echo "$RESULTS"
+          RESULTS="${RESULTS//'%'/'%25'}"
+          RESULTS="${RESULTS//$'\n'/'%0A'}"
+          RESULTS="${RESULTS//$'\r'/'%0D'}"
+          echo "::set-output name=results::$RESULTS"
           
-      # - name: Update Pull Request
-      #   if: ${{ always() }}
-      #   uses: actions/github-script@v5.0.0
-      #   with:
-      #     github-token: ${{ secrets.GITHUB_TOKEN }}
-      #     script: |
-      #       const output = `#### Validation to Salesforce: \`${{ steps.validate-salesforce.outcome }}\`
+      - name: Update Pull Request
+        if: ${{ always() }}
+        uses: actions/github-script@v5.0.0
+        with:
+          script: |
+            const output = `#### Validation to Salesforce: \`${{ steps.Deploy.outcome }}\`
             
-      #       <details><summary>Show Salesforce Validation Output</summary>
+            <details><summary>Show Salesforce Validation Output</summary>
             
-      #       \`\`\`\n
-      #       ${{ steps.collect-results.outputs.results }}
-      #       \`\`\`
+            \`\`\`\n
+            ${{ steps.collect-results.outputs.results }}
+            \`\`\`
             
-      #       </details>
+            </details>
             
-      #       *Pusher: @${{ github.actor }}, Workflow: \`${{ github.workflow }}\`, Workflow Run Number: \`${{ github.run_number }}\`*`;
+            *Pusher: @${{ github.actor }}, Workflow: \`${{ github.workflow }}\`, Workflow Run Number: \`${{ github.run_number }}\`*`;
             
-      #       github.rest.issues.createComment({
-      #         issue_number: context.issue.number,
-      #         owner: context.repo.owner,
-      #         repo: context.repo.repo,
-      #         body: output
-      #       })
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: output
+            })
     
   # QADeploy:
   #   name: Call QA Deploy
