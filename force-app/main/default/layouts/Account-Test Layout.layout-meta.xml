@@ -91,17 +91,33 @@
     </relatedLists>
     <relatedLists>
         <fields>OPPORTUNITY.NAME</fields>
+        <fields>OPPORTUNITY.RECORDTYPE</fields>
+        <fields>Proposal_Number__c</fields>
         <fields>OPPORTUNITY.STAGE_NAME</fields>
-        <fields>OPPORTUNITY.AMOUNT</fields>
         <fields>OPPORTUNITY.CLOSE_DATE</fields>
-        <relatedList>RelatedOpportunityList</relatedList>
+        <relatedList>Opportunity.Contract_Client__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>OPPORTUNITY.RECORDTYPE</fields>
+        <fields>Proposal_Number__c</fields>
+        <fields>OPPORTUNITY.STAGE_NAME</fields>
+        <fields>OPPORTUNITY.CLOSE_DATE</fields>
+        <relatedList>Opportunity.Funding_Client__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Scope_Num__c</fields>
+        <fields>Effective_Date__c</fields>
+        <fields>Inactive_Date__c</fields>
         <relatedList>Project__c.Account__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Fiscal_Year__c</fields>
+        <fields>Funding_Amount__c</fields>
+        <fields>Revised_Amount__c</fields>
+        <fields>Status__c</fields>
         <relatedList>Funding_Agreement__c.Account__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
@@ -111,7 +127,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000mlcI</masterLabel>
+        <masterLabel>00h3R000000nyFp</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

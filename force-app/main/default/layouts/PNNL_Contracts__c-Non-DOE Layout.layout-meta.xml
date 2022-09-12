@@ -143,10 +143,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Split__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Balance_Order__c</field>
             </layoutItems>
         </layoutColumns>
