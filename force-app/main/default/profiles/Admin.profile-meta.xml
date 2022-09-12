@@ -548,11 +548,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>PNNL_Contracts__c.Split__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>PNNL_Contracts__c.Start_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -624,6 +619,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Project__c.Budget_and_Reporting_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Project__c.EP_R_Signed_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -743,7 +743,7 @@
         <recordType>PNNL_Contracts__c.DOE_Direct</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PNNL_Contracts__c-DOE Direct</layout>
+        <layout>PNNL_Contracts__c-Non-DOE Layout</layout>
         <recordType>PNNL_Contracts__c.Non_DOE</recordType>
     </layoutAssignments>
     <layoutAssignments>
