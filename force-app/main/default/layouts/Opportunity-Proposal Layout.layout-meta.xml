@@ -20,12 +20,15 @@
                 <field>Contract_Client__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>BOA__c</field>
+                <emptySpace>true</emptySpace>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Task__c</field>
+                <field>Field_Work_Proposal__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>FFRDC__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -211,7 +214,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000nRiI</masterLabel>
+        <masterLabel>00h3R000000nyeW</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

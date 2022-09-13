@@ -38,6 +38,15 @@
         <won>false</won>
     </standardValue>
     <standardValue>
+        <fullName>Proposal Submitted</fullName>
+        <default>false</default>
+        <label>Proposal Submitted</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>30</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
         <fullName>Proposal Pending</fullName>
         <default>false</default>
         <label>Proposal Pending</label>
@@ -47,12 +56,30 @@
         <won>false</won>
     </standardValue>
     <standardValue>
+        <fullName>Proposal Reviewed</fullName>
+        <default>false</default>
+        <label>Proposal Reviewed</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>40</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
         <fullName>Proposal Approved</fullName>
         <default>false</default>
         <label>Proposal Approved</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Funding Received</fullName>
+        <default>false</default>
+        <label>Funding Received</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>80</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -80,15 +107,6 @@
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>90</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Funding Received</fullName>
-        <default>false</default>
-        <label>Funding Received</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>80</probability>
         <won>false</won>
     </standardValue>
     <standardValue>

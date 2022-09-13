@@ -84,7 +84,7 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>New Section</label>
+        <label>Client Details &amp; Dates</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -127,7 +127,7 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>New Section2</label>
+        <label>Financials</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -166,7 +166,7 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>New Section</label>
+        <label>Notes</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -233,7 +233,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000nxyf</masterLabel>
+        <masterLabel>00h3R000000nyeX</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
