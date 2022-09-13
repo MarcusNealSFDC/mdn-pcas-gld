@@ -33,6 +33,14 @@
                 <behavior>Edit</behavior>
                 <field>Official_User_Only__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Account__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Opportunity__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -69,7 +77,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Account__c</field>
+                <field>Account_Number__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
