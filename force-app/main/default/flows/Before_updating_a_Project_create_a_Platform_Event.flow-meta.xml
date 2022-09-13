@@ -34,7 +34,7 @@ Before updating a Project, create a Platform Event.</description>
         <inputAssignments>
             <field>ObjectType__c</field>
             <value>
-                <stringValue>Opportunity</stringValue>
+                <stringValue>Project</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>

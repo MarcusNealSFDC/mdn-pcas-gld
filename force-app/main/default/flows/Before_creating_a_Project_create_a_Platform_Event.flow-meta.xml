@@ -33,7 +33,7 @@
         <inputAssignments>
             <field>ObjectType__c</field>
             <value>
-                <stringValue>Opportunity</stringValue>
+                <stringValue>Project</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -57,7 +57,7 @@
         <connector>
             <targetReference>platform_event</targetReference>
         </connector>
-        <object>Opportunity</object>
+        <object>Project__c</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>

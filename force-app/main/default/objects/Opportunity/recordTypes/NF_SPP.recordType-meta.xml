@@ -3,8 +3,72 @@
     <fullName>NF_SPP</fullName>
     <active>true</active>
     <businessProcess>PNNL Proposal Management</businessProcess>
+    <compactLayoutAssignment>Proposal_Compact_View</compactLayoutAssignment>
     <description>Non-Federal Strategic Partnership Projects</description>
     <label>NF-SPP</label>
+    <picklistValues>
+        <picklist>Contract_Type__c</picklist>
+        <values>
+            <fullName>BOA - Basic Ordering Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAF - Cost Plus Award Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPFF - Cost Plus Fixed Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPIF - Cost Plus Incentive Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPPC - Cost Plus Percentage of Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRADA - Cooperative Research and Development Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRC - Cost Reimbursable Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRG - Cost Reimbursable Grant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FPLOE - Firm Fixed Price%2C Level of Effort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FX - Firm Fixed Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ILA - Interlaboratory Authorization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP - Intellectual Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPA - Intergovernmental Personnel Act</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OC - Operating Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T%26M - Time and Materials</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
     <picklistValues>
         <picklist>ForecastCategoryName</picklist>
         <values>
@@ -72,6 +136,48 @@
         </values>
         <values>
             <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Lost to Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Budget %2F Lost Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision %2F Non-Responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Proposal_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
             <default>false</default>
         </values>
     </picklistValues>
