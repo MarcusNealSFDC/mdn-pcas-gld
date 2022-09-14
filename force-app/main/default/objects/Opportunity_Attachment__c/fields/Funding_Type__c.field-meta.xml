@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Funding Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACT</fullName>
+                <default>false</default>
+                <label>ACT</label>
+            </value>
+            <value>
+                <fullName>DOE-Direct Funding (WAS Form)</fullName>
+                <default>false</default>
+                <label>DOE-Direct Funding (WAS Form)</label>
+            </value>
+            <value>
+                <fullName>DOE-Direct Proposal</fullName>
+                <default>false</default>
+                <label>DOE-Direct Proposal</label>
+            </value>
+            <value>
+                <fullName>IWO</fullName>
+                <default>false</default>
+                <label>IWO</label>
+            </value>
+            <value>
+                <fullName>SPP</fullName>
+                <default>false</default>
+                <label>SPP</label>
+            </value>
+            <value>
+                <fullName>Non-Fed SPP</fullName>
+                <default>false</default>
+                <label>Non-Fed SPP</label>
+            </value>
+            <value>
+                <fullName>SIPP</fullName>
+                <default>false</default>
+                <label>SIPP</label>
+            </value>
+            <value>
+                <fullName>DHS</fullName>
+                <default>false</default>
+                <label>DHS</label>
+            </value>
+            <value>
+                <fullName>NIC-RW</fullName>
+                <default>false</default>
+                <label>NIC-RW</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

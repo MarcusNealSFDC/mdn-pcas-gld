@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attachment_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Attachment Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Funding_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACT Agreement</fullName>
+                <default>false</default>
+                <label>ACT Agreement</label>
+            </value>
+            <value>
+                <fullName>Animal Use – SC Response</fullName>
+                <default>false</default>
+                <label>Animal Use – SC Response</label>
+            </value>
+            <value>
+                <fullName>Animal Use Worksheet</fullName>
+                <default>false</default>
+                <label>Animal Use Worksheet</label>
+            </value>
+            <value>
+                <fullName>Biographical sketches</fullName>
+                <default>false</default>
+                <label>Biographical sketches</label>
+            </value>
+            <value>
+                <fullName>CI Foreign Approval</fullName>
+                <default>false</default>
+                <label>CI Foreign Approval</label>
+            </value>
+            <value>
+                <fullName>Client Certification (hard gate)</fullName>
+                <default>false</default>
+                <label>Client Certification (hard gate)</label>
+            </value>
+            <value>
+                <fullName>DOE Approved Proposal</fullName>
+                <default>false</default>
+                <label>DOE Approved Proposal</label>
+            </value>
+            <value>
+                <fullName>HQ Foreign Approval</fullName>
+                <default>false</default>
+                <label>HQ Foreign Approval</label>
+            </value>
+            <value>
+                <fullName>Incoming WAS Email from PNSO</fullName>
+                <default>false</default>
+                <label>Incoming WAS Email from PNSO</label>
+            </value>
+            <value>
+                <fullName>IP Management Plan</fullName>
+                <default>false</default>
+                <label>IP Management Plan</label>
+            </value>
+            <value>
+                <fullName>IWO Funding Document (hard gate)</fullName>
+                <default>false</default>
+                <label>IWO Funding Document (hard gate)</label>
+            </value>
+            <value>
+                <fullName>MSOF</fullName>
+                <default>false</default>
+                <label>MSOF</label>
+            </value>
+            <value>
+                <fullName>NF-SPP Agreement</fullName>
+                <default>false</default>
+                <label>NF-SPP Agreement</label>
+            </value>
+            <value>
+                <fullName>Obligation Cost Roadmap</fullName>
+                <default>false</default>
+                <label>Obligation Cost Roadmap</label>
+            </value>
+            <value>
+                <fullName>OCI Addendum</fullName>
+                <default>false</default>
+                <label>OCI Addendum</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Proposal</fullName>
+                <default>false</default>
+                <label>Proposal</label>
+            </value>
+            <value>
+                <fullName>Proposal Letter</fullName>
+                <default>false</default>
+                <label>Proposal Letter</label>
+            </value>
+            <value>
+                <fullName>PSO Foreign Approval</fullName>
+                <default>false</default>
+                <label>PSO Foreign Approval</label>
+            </value>
+            <value>
+                <fullName>Research Plan</fullName>
+                <default>false</default>
+                <label>Research Plan</label>
+            </value>
+            <value>
+                <fullName>SC Analysis Worksheet</fullName>
+                <default>false</default>
+                <label>SC Analysis Worksheet</label>
+            </value>
+            <value>
+                <fullName>SC Foreign Approval</fullName>
+                <default>false</default>
+                <label>SC Foreign Approval</label>
+            </value>
+            <value>
+                <fullName>Sponsor Registration</fullName>
+                <default>false</default>
+                <label>Sponsor Registration</label>
+            </value>
+            <value>
+                <fullName>SPP Justification</fullName>
+                <default>false</default>
+                <label>SPP Justification</label>
+            </value>
+            <value>
+                <fullName>Statement of Work (hard gate)</fullName>
+                <default>false</default>
+                <label>Statement of Work (hard gate)</label>
+            </value>
+            <value>
+                <fullName>Sub-contract Plan</fullName>
+                <default>false</default>
+                <label>Sub-contract Plan</label>
+            </value>
+            <value>
+                <fullName>TPEC Foreign Approval</fullName>
+                <default>false</default>
+                <label>TPEC Foreign Approval</label>
+            </value>
+            <value>
+                <fullName>Work Authorization Document</fullName>
+                <default>false</default>
+                <label>Work Authorization Document</label>
+            </value>
+            <value>
+                <fullName>Animal Use -SC Response</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Animal Use -SC Response</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <valueName>ACT Agreement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>Animal Use – SC Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>Animal Use Worksheet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>CI Foreign Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <valueName>Client Certification (hard gate)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>HQ Foreign Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <valueName>IP Management Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <valueName>OCI Addendum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>DOE-Direct Proposal</controllingFieldValue>
+            <controllingFieldValue>IWO</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>DOE-Direct Proposal</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>Proposal Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>PSO Foreign Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>SC Analysis Worksheet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>SC Foreign Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>DOE-Direct Proposal</controllingFieldValue>
+            <controllingFieldValue>IWO</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>Statement of Work (hard gate)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>TPEC Foreign Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOE-Direct Proposal</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>Biographical sketches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOE-Direct Proposal</controllingFieldValue>
+            <valueName>Obligation Cost Roadmap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOE-Direct Proposal</controllingFieldValue>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>Research Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IWO</controllingFieldValue>
+            <valueName>IWO Funding Document (hard gate)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>DOE Approved Proposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>MSOF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>NF-SPP Agreement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>Proposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>Sponsor Registration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>SPP Justification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP</controllingFieldValue>
+            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>Sub-contract Plan</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
