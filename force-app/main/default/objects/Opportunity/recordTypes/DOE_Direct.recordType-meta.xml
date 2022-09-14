@@ -2,7 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>DOE_Direct</fullName>
     <active>true</active>
-    <businessProcess>PNNL Proposal Management</businessProcess>
+    <businessProcess>DOE Direct</businessProcess>
     <compactLayoutAssignment>Proposal_Compact_View</compactLayoutAssignment>
     <description>Department of Energy Direct</description>
     <label>DOE Direct</label>
