@@ -2,5 +2,59 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>DOE_Direct</fullName>
     <active>true</active>
+    <compactLayoutAssignment>Contract_Compact_Layout</compactLayoutAssignment>
     <label>DOE Direct</label>
+    <picklistValues>
+        <picklist>Advance__c</picklist>
+        <values>
+            <fullName>Full Advance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Advance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Billing_Type__c</picklist>
+        <values>
+            <fullName>ACT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOEPAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G-Invoicing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NICRW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Fed SPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIPP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FAC__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
 </RecordType>

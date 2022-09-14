@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Funding_Client__c</fullName>
     <externalId>false</externalId>
-    <formula>Proposal__r.Funding_Client__c</formula>
+    <formula>Project__r.Account__r.Client_Code__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Funding Client</label>
     <required>false</required>

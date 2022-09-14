@@ -5,7 +5,7 @@
     <externalId>false</externalId>
     <label>Contract Client</label>
     <referenceTo>Account</referenceTo>
-    <relationshipLabel>Opportunities</relationshipLabel>
+    <relationshipLabel>Contract Client</relationshipLabel>
     <relationshipName>Contract_Client</relationshipName>
     <required>true</required>
     <trackFeedHistory>false</trackFeedHistory>
