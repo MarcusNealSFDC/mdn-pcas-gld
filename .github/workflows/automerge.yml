@@ -7,14 +7,11 @@ on:
   push:
     branches:
     - dev 
-  workflow_dispatch:
 
 env:
   SFDX_AUDIENCE_URL: https://test.salesforce.com # Use https://login.salesforce.com for production instances. Use https://test.salesforce.com for sandboxes
   SALESFORCE_ORG_DEV_URL: https://pnnl--pnnldev1.sandbox.my.salesforce.com # Salesforce URL of target org
-  SALESFORCE_CONSUMER_KEY: ${{ secrets.SALESFORCE_CONSUMER_KEY_DEV}} # SFDX App consumer key from target org
   SALESFORCE_ORG_USERNAME: builduser@pnnl.doe.pnnldev1 # Salesforce username of target org
-  TARGET_BRANCH: dev # Git branch to merge feature branch into
   SOURCE_DIR: force-app
 
 jobs:
