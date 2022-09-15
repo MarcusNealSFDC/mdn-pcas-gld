@@ -12,6 +12,7 @@ env:
   SFDX_AUDIENCE_URL: https://test.salesforce.com # Use https://login.salesforce.com for production instances. Use https://test.salesforce.com for sandboxes
   SALESFORCE_ORG_DEV_URL: https://pnnl--pnnldev1.sandbox.my.salesforce.com # Salesforce URL of target org
   SALESFORCE_ORG_USERNAME: builduser@pnnl.doe.pnnldev1 # Salesforce username of target org
+  TARGET_BRANCH: dev
   SOURCE_DIR: force-app
 
 jobs:
@@ -19,9 +20,15 @@ jobs:
     name: Bugfixes/Features Merge-Process 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - if: github.event_name == 'pull_request'
+        uses: actions/checkout@v2
         with:
           ref: ${{ env.GITHUB_HEAD_REF }}
+          fetch-depth: 0
+      - if: github.event_name == 'push'
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ env.TARGET_BRANCH }}
           fetch-depth: 0
       - uses: actions/setup-node@v1
         with:
