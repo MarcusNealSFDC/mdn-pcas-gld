@@ -1,6 +1,7 @@
 {
     "orgName": "PNNL Scratch",
     "edition": "Enterprise",
+    "release": "Preview",
     "features": ["Communities", "StateAndCountryPicklist",
         "ContactsToMultipleAccounts", "SharedActivities", "DeferSharingCalc", "ForceComPlatform", "ProcessBuilder", "DebugApex",
         "CaseClassification", "EnableSetPasswordInApi", "SalesUser", "RecordTypes", "FlowSites", "Interaction", "Workflow", 
@@ -25,10 +26,6 @@
         },
         "chatterSettings": {
             "enableChatter": true
-        },
-        "experienceBundleSettings": {
-            "enableExperienceBundleMetadata": true
-  
         }
     }
   }

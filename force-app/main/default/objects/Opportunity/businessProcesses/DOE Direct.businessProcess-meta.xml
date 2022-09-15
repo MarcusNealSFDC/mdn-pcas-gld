@@ -1,45 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>PNNL Proposal Management</fullName>
+    <fullName>DOE Direct</fullName>
     <isActive>true</isActive>
     <values>
-        <fullName>Closed Lost</fullName>
+        <fullName>Closeout</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Closed Won</fullName>
+        <fullName>Funding Approved</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Id%2E Decision Makers</fullName>
+        <fullName>Funding Pending</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Needs Analysis</fullName>
+        <fullName>Funding Received</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Negotiation%2FReview</fullName>
+        <fullName>Funding Stage</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Perception Analysis</fullName>
+        <fullName>Proposal Approved</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Proposal%2FPrice Quote</fullName>
+        <fullName>Proposal Draft</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Prospecting</fullName>
+        <fullName>Proposal Pending</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Qualification</fullName>
+        <fullName>Proposal Reviewed</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Value Proposition</fullName>
+        <fullName>Proposal Submitted</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Scope Cleared</fullName>
         <default>false</default>
     </values>
 </BusinessProcess>
