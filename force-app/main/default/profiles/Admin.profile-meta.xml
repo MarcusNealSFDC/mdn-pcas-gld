@@ -7,17 +7,17 @@
     </applicationVisibilities>
     <custom>false</custom>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.Agency_Loc_CD__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.BMI_Client_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.BMI_Client_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -29,16 +29,31 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.OPI__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.Sector__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Budget_Reporting_Entry__c.B_R_Number__c</field>
+        <field>Budget_Reporting_Entry__c.Budget_Reporting_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Budget_Reporting_Entry__c.CPS_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Budget_Reporting_Entry__c.CRADA__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Budget_Reporting_Entry__c.Commen__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -62,13 +77,13 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Budget_Reporting_Entry__c.Project__c</field>
+        <editable>true</editable>
+        <field>Budget_Reporting_Entry__c.Opportunity__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Budget_Reporting_Entry__c.Scope__c</field>
+        <editable>true</editable>
+        <field>Budget_Reporting_Entry__c.Project__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -173,6 +188,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Funding_Agreement__c.Project_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Funding_Agreement__c.Project_Specialist__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -202,7 +222,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Funding_Agreement__c.WAS_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -488,6 +508,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>PNNL_Contracts__c.CPS__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>PNNL_Contracts__c.CRADA__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -737,11 +762,14 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
-        <layout>Account-Test Layout</layout>
+        <layout>Account-Business Account</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Test Layout</layout>
+        <layout>Account-Business Account</layout>
         <recordType>Account.Business_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
@@ -753,42 +781,42 @@
         <layout>Funding_Agreement__c-Funding Agreement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Proposal Layout</layout>
+        <layout>Opportunity-DOE Direct Proposal Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Proposal Layout</layout>
+        <layout>Opportunity-DOE Direct Proposal Layout</layout>
         <recordType>Opportunity.ACT</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Proposal Layout</layout>
+        <layout>Opportunity-DOE Direct Proposal Layout</layout>
         <recordType>Opportunity.CRADA</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Proposal Layout</layout>
+        <layout>Opportunity-DOE Direct Proposal Layout</layout>
         <recordType>Opportunity.DHS</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Proposal Layout</layout>
+        <layout>Opportunity-DOE Direct Proposal Layout</layout>
         <recordType>Opportunity.DOE_Direct</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Proposal Layout</layout>
+        <layout>Opportunity-DOE Direct Proposal Layout</layout>
         <recordType>Opportunity.F_SPP</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Proposal Layout</layout>
+        <layout>Opportunity-DOE Direct Proposal Layout</layout>
         <recordType>Opportunity.IWO</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Proposal Layout</layout>
+        <layout>Opportunity-DOE Direct Proposal Layout</layout>
         <recordType>Opportunity.NF_SPP</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Proposal Layout</layout>
+        <layout>Opportunity-DOE Direct Proposal Layout</layout>
         <recordType>Opportunity.NIC_RW</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Proposal Layout</layout>
+        <layout>Opportunity-DOE Direct Proposal Layout</layout>
         <recordType>Opportunity.SIPP</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -808,6 +836,15 @@
     <layoutAssignments>
         <layout>Project__c-Project Layout</layout>
     </layoutAssignments>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Budget_Reporting_Code__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -937,6 +974,10 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
+        <tab>Budget_Reporting_Code__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Budget_Reporting_Entry__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -976,6 +1017,14 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>AddDirectMessageMembers</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AllowUniversalSearch</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AllowViewKnowledge</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -1155,6 +1204,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>EditKnowledge</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>EditMyDashboards</name>
     </userPermissions>
     <userPermissions>
@@ -1196,6 +1249,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>EmailSingle</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EnableCommunityAppLauncher</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -1319,6 +1376,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ManageEntitlements</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>ManageExchangeConfig</name>
     </userPermissions>
     <userPermissions>
@@ -1343,6 +1404,14 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ManageKnowledge</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageKnowledgeImportExport</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>ManageLeads</name>
     </userPermissions>
     <userPermissions>
@@ -1359,7 +1428,15 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ManageOrchInstsAndWorkItems</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>ManagePackageLicenses</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManagePartners</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -1396,6 +1473,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ManageRoles</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageSearchPromotionRules</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -1500,6 +1581,14 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>SendSitRequests</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ShareFilesWithNetworks</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ShareInternalArticles</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

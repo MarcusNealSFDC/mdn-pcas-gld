@@ -1,0 +1,77 @@
+<apex:page standardController="Opportunity" tabStyle="Opportunity" extensions="UploadAttachmentController" lightningStylesheets="true">
+ 
+ <!--<apex:form>-->
+ 
+        <!-- Don't mix a standard input field... -->
+        <!--<apex:inputField value="{!opportunity_attachment__c.Sponsor__c}"/>
+        <apex:outputField value="{!opportunity_attachment__c.Attachment_Type__c}">-->
+            <!-- ...with an inline-edit enabled dependent field -->
+            <!--<apex:inlineEditSupport event="ondblClick" />-->
+        <!--</apex:outputField>
+     </apex:form>-->
+
+ <apex:sectionHeader title="{!Opportunity.Name}" subtitle="Attach File"/>
+ 
+ <apex:form id="form_Upload">
+ <apex:pageBlock >
+
+ <apex:pageBlockButtons >
+   <apex:commandButton action="{!back}" value="Back to {!Opportunity.Name}"/>
+   <apex:commandButton action="{!back}" value="Cancel"/>
+ </apex:pageBlockButtons>
+ <apex:pageMessages />
+ 
+  <apex:pageBlockSection columns="1">
+  
+    <apex:pageBlockSectionItem >
+      <apex:outputLabel value="File" for="file_File"/>
+      <apex:inputFile id="file_File" value="{!fileBody}" filename="{!fileName}"/>
+    </apex:pageBlockSectionItem>
+  
+    <apex:pageBlockSectionItem >
+      <apex:outputLabel value="Type" for="type"/>
+      <apex:selectList value="{!selectedType}" size="1" id="type"> 
+        <apex:selectOption itemValue="Biographical Sketches" itemLabel="Biographical Sketches"/>
+        <apex:selectOption itemValue="Obligation Cost Roadmap" itemLabel="Obligation Cost Roadmap"/>
+        <apex:selectOption itemValue="Other" itemLabel="Other"/>
+        <apex:selectOption itemValue="Proposal Letter" itemLabel="Proposal Letter"/>
+        <apex:selectOption itemValue="Research Plan" itemLabel="Research Plan"/>
+        <apex:selectOption itemValue="Statement of Work (hard gate)" itemLabel="Statement of Work (hard gate)"/>
+      </apex:selectList>
+    </apex:pageBlockSectionItem>
+    
+    <!-- 
+    Biographical Sketches
+    Obligation Cost Roadmap 
+    Other
+    Proposal Letter
+    Research Plan
+    Statement of Work (hard gate)
+    -->
+    
+    <!--<apex:pageBlockSectionItem >
+      <apex:outputLabel value="Is the file awesome?" for="visible"/>
+      <apex:selectList value="{!selectedAwesomeness}" size="1" id="visible">
+        <apex:selectOption itemValue="false" itemLabel="No"/>
+        <apex:selectOption itemValue="true" itemLabel="Yes"/>       
+      </apex:selectList>
+    </apex:pageBlockSectionItem>-->    
+    
+    <!--<apex:pageBlockSectionItem >
+      <apex:outputLabel value="Description" for="description"/> 
+      <apex:inputTextarea id="description" value="{!description}" rows="4" cols="50"/>
+    </apex:pageBlockSectionItem>-->
+    
+    <apex:pageBlockSectionItem >
+      <apex:outputLabel value="" for="uploadBtn"/> 
+      <apex:commandButton id="uploadBtn" value="Attach File" action="{!processUpload}" />
+    </apex:pageBlockSectionItem>    
+    
+  </apex:pageBlockSection>
+ 
+ </apex:pageBlock>
+
+
+ </apex:form>
+
+</apex:page>
