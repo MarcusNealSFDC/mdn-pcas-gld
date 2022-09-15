@@ -2,9 +2,116 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>F_SPP</fullName>
     <active>true</active>
-    <businessProcess>PNNL Proposal Management</businessProcess>
+    <businessProcess>DOE Direct</businessProcess>
+    <compactLayoutAssignment>Proposal_Compact_View</compactLayoutAssignment>
     <description>Federal Strategic Partnership Projects</description>
     <label>F-SPP</label>
+    <picklistValues>
+        <picklist>BMI_Client_Type__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR%2BD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Type__c</picklist>
+        <values>
+            <fullName>BOA - Basic Ordering Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAF - Cost Plus Award Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPFF - Cost Plus Fixed Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPIF - Cost Plus Incentive Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPPC - Cost Plus Percentage of Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRADA - Cooperative Research and Development Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRC - Cost Reimbursable Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRG - Cost Reimbursable Grant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FPLOE - Firm Fixed Price%2C Level of Effort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FX - Firm Fixed Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ILA - Interlaboratory Authorization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP - Intellectual Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPA - Intergovernmental Personnel Act</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OC - Operating Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T%26M - Time and Materials</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
     <picklistValues>
         <picklist>ForecastCategoryName</picklist>
         <values>
@@ -72,6 +179,60 @@
         </values>
         <values>
             <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Proposal_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed %28C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Cleared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vaultable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
             <default>false</default>
         </values>
     </picklistValues>
