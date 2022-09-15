@@ -7,17 +7,17 @@
     </applicationVisibilities>
     <custom>false</custom>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.Agency_Loc_CD__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.BMI_Client_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.BMI_Client_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -29,10 +29,10 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.OPI__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.Sector__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -737,10 +737,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
-        <layout>Account-Test Layout</layout>
+        <layout>Account-Business Account</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Test Layout</layout>
+        <layout>Account-Business Account</layout>
         <recordType>Account.Business_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -1356,6 +1356,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ManageNetworks</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageOrchInstsAndWorkItems</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
