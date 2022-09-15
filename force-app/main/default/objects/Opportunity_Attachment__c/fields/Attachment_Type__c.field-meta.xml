@@ -3,7 +3,7 @@
     <fullName>Attachment_Type__c</fullName>
     <externalId>false</externalId>
     <label>Attachment Type</label>
-    <required>false</required>
+    <required>true</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
@@ -164,8 +164,8 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
@@ -173,8 +173,8 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
@@ -182,8 +182,8 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
@@ -195,8 +195,8 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
@@ -212,10 +212,11 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>DOE-Direct Proposal</controllingFieldValue>
+            <controllingFieldValue>DOE Direct</controllingFieldValue>
+            <controllingFieldValue>CRADA</controllingFieldValue>
             <controllingFieldValue>IWO</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
@@ -223,9 +224,8 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>DOE-Direct Proposal</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
@@ -233,8 +233,8 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
@@ -242,8 +242,8 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
@@ -251,8 +251,8 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
@@ -260,10 +260,9 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>DOE-Direct Proposal</controllingFieldValue>
             <controllingFieldValue>IWO</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
@@ -271,90 +270,84 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <valueName>TPEC Foreign Approval</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>DOE-Direct Proposal</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>IWO</controllingFieldValue>
+            <valueName>IWO Funding Document (hard gate)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <valueName>Biographical sketches</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>DOE-Direct Proposal</controllingFieldValue>
-            <valueName>Obligation Cost Roadmap</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>DOE-Direct Proposal</controllingFieldValue>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
-            <controllingFieldValue>SIPP</controllingFieldValue>
-            <controllingFieldValue>DHS</controllingFieldValue>
-            <controllingFieldValue>NIC-RW</controllingFieldValue>
-            <valueName>Research Plan</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>IWO</controllingFieldValue>
-            <valueName>IWO Funding Document (hard gate)</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <valueName>DOE Approved Proposal</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <valueName>MSOF</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <valueName>NF-SPP Agreement</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <valueName>Proposal</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <valueName>Research Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <valueName>Sponsor Registration</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <valueName>SPP Justification</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>SPP</controllingFieldValue>
-            <controllingFieldValue>Non-Fed SPP</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>

@@ -3,7 +3,7 @@
     <fullName>Funding_Type__c</fullName>
     <externalId>false</externalId>
     <label>Funding Type</label>
-    <required>false</required>
+    <required>true</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
@@ -16,34 +16,9 @@
                 <label>ACT</label>
             </value>
             <value>
-                <fullName>DOE-Direct Funding (WAS Form)</fullName>
+                <fullName>CRADA</fullName>
                 <default>false</default>
-                <label>DOE-Direct Funding (WAS Form)</label>
-            </value>
-            <value>
-                <fullName>DOE-Direct Proposal</fullName>
-                <default>false</default>
-                <label>DOE-Direct Proposal</label>
-            </value>
-            <value>
-                <fullName>IWO</fullName>
-                <default>false</default>
-                <label>IWO</label>
-            </value>
-            <value>
-                <fullName>SPP</fullName>
-                <default>false</default>
-                <label>SPP</label>
-            </value>
-            <value>
-                <fullName>Non-Fed SPP</fullName>
-                <default>false</default>
-                <label>Non-Fed SPP</label>
-            </value>
-            <value>
-                <fullName>SIPP</fullName>
-                <default>false</default>
-                <label>SIPP</label>
+                <label>CRADA</label>
             </value>
             <value>
                 <fullName>DHS</fullName>
@@ -51,9 +26,34 @@
                 <label>DHS</label>
             </value>
             <value>
+                <fullName>DOE Direct</fullName>
+                <default>false</default>
+                <label>DOE Direct</label>
+            </value>
+            <value>
+                <fullName>F-SPP</fullName>
+                <default>false</default>
+                <label>F-SPP</label>
+            </value>
+            <value>
+                <fullName>IWO</fullName>
+                <default>false</default>
+                <label>IWO</label>
+            </value>
+            <value>
+                <fullName>NF-SPP</fullName>
+                <default>false</default>
+                <label>NF-SPP</label>
+            </value>
+            <value>
                 <fullName>NIC-RW</fullName>
                 <default>false</default>
                 <label>NIC-RW</label>
+            </value>
+            <value>
+                <fullName>SIPP</fullName>
+                <default>false</default>
+                <label>SIPP</label>
             </value>
         </valueSetDefinition>
     </valueSet>
