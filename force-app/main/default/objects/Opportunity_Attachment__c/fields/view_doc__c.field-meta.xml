@@ -4,7 +4,7 @@
     <externalId>false</externalId>
     <formula>HYPERLINK(&quot;/&quot; +  AttachmentId__c ,&quot;CLICK HERE TO VIEW&quot;)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <label>View</label>
+    <label>Document Link</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>

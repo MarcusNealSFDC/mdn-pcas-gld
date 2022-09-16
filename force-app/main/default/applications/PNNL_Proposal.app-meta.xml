@@ -21,6 +21,24 @@
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Funding_Agreement_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Funding_Agreement_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>Opportunity_Record_Page</content>
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
@@ -39,20 +57,20 @@
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Funding_Agreement_Record_Page</content>
-        <formFactor>Large</formFactor>
+        <content>Project_Record_Page1</content>
+        <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
+        <pageOrSobjectType>Project__c</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Funding_Agreement_Record_Page</content>
-        <formFactor>Small</formFactor>
+        <content>Project_Record_Page1</content>
+        <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
+        <pageOrSobjectType>Project__c</pageOrSobjectType>
     </actionOverrides>
     <brand>
         <headerColor>#808487</headerColor>
@@ -74,6 +92,7 @@
     <tabs>Funding_Agreement__c</tabs>
     <tabs>Project__c</tabs>
     <tabs>PNNL_Contracts__c</tabs>
+    <tabs>Project_Allocation__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>PNNL_Proposal_UtilityBar</utilityBar>
 </CustomApplication>
