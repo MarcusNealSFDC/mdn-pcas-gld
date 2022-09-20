@@ -3,13 +3,14 @@
     "edition": "Enterprise",
     "release": "Preview",
     "features": ["Communities", "ContactsToMultipleAccounts", "SharedActivities", "DeferSharingCalc", "ForceComPlatform", "ProcessBuilder", "DebugApex",
-        "CaseClassification", "EnableSetPasswordInApi", "SalesUser", "RecordTypes", "FlowSites", "Interaction", "Workflow", 
+        "CaseClassification", "EnableSetPasswordInApi", "SalesUser", "RecordTypes", "FlowSites", "Interaction", "Workflow", "EnablePRM",
         "WorkflowFlowActionFeature"],
   
     "hasSampleData": false,
     "settings": {
         "communitiesSettings": {
-            "enableNetworksEnabled": true
+            "enableNetworksEnabled": true,
+            "enableEnablePRM": true
         },
         "experienceBundleSettings": {
             "enableExperienceBundleMetadata": true
@@ -25,6 +26,9 @@
         },
         "chatterSettings": {
             "enableChatter": true
+        },
+        "quoteSettings": {
+            "enableQuote": true
         }
     }
   }

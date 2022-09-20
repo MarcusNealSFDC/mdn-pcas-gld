@@ -147,6 +147,7 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>Proposal_Compact_View</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
     <externalSharingModel>Private</externalSharingModel>

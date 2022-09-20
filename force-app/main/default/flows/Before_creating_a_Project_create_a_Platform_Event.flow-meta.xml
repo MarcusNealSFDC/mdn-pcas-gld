@@ -57,7 +57,7 @@
         <connector>
             <targetReference>platform_event</targetReference>
         </connector>
-        <object>Opportunity</object>
+        <object>Project__c</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
