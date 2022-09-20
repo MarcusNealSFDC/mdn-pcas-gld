@@ -41,6 +41,7 @@
         <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>Project_Record_Page1</content>
         <formFactor>Small</formFactor>
+
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
         <pageOrSobjectType>Project__c</pageOrSobjectType>
@@ -57,20 +58,12 @@
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Opportunity_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
+
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Opportunity_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
     </actionOverrides>
     <brand>
         <headerColor>#808487</headerColor>
@@ -93,6 +86,7 @@
     <tabs>Project__c</tabs>
     <tabs>PNNL_Contracts__c</tabs>
     <tabs>Project_Allocation__c</tabs>
+    <tabs>Proposed_Amendment__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>PNNL_Proposal_UtilityBar</utilityBar>
 </CustomApplication>
