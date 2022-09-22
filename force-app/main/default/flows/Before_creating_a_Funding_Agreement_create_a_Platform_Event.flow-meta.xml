@@ -33,7 +33,7 @@
         <inputAssignments>
             <field>ObjectType__c</field>
             <value>
-                <stringValue>Funding _Agreement__c</stringValue>
+                <stringValue>Funding_Agreement__c</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
