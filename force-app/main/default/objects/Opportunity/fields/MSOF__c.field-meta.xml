@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>MSOF__c</fullName>
     <externalId>false</externalId>
+    <inlineHelpText>The Material and Services Order Form (MSOF) is used for non-research and development projects where there are no intellectual property (patents, trademarks, copyrights) concerns.</inlineHelpText>
     <label>MSOF</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
