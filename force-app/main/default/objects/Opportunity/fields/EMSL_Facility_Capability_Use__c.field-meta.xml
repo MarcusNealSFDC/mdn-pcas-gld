@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EMSL_Facility_Capability_Use__c</fullName>
+    <externalId>false</externalId>
+    <label>EMSL Facility/Capability Use</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Yes_No__gvs</valueSetName>
+    </valueSet>
+</CustomField>
