@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Funding_Agreement_Compact</fullName>
-    <fields>FA_Number__c</fields>
-    <fields>Status__c</fields>
+    <fields>WAS_Number__c</fields>
     <fields>Previous_Amount__c</fields>
     <fields>Change_Amount__c</fields>
     <fields>Revised_Amount__c</fields>
