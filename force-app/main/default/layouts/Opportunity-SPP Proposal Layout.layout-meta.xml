@@ -360,7 +360,7 @@
         <fields>Control_Point__c</fields>
         <fields>Fiscal_Year__c</fields>
         <fields>Revised_Amount__c</fields>
-        <relatedList>Funding_Agreement__c.Opportunity__c</relatedList>
+        <relatedList>Funding_Agreement__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -381,7 +381,11 @@
         <relatedList>PNNL_Contracts__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <relatedList>RelatedOpportunityHistoryList</relatedList>
+        <fields>NAME</fields>
+        <fields>Amendment_Authorized_Amount__c</fields>
+        <fields>Amendment_Fee_Amount__c</fields>
+        <relatedList>Proposed_Amendment__c.Proposal__c</relatedList>
+
     </relatedLists>
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>
@@ -392,6 +396,9 @@
         <fields>Funding_Type__c</fields>
         <fields>CREATEDBY_USER</fields>
         <relatedList>Opportunity_Attachment__c.Opportunity__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedOpportunityHistoryList</relatedList>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

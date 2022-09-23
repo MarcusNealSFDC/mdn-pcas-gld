@@ -33,7 +33,7 @@
         <inputAssignments>
             <field>ObjectType__c</field>
             <value>
-                <stringValue>Project</stringValue>
+                <stringValue>Project__c</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>

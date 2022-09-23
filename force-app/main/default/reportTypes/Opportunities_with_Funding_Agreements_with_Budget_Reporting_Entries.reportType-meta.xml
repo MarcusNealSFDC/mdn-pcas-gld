@@ -742,6 +742,16 @@
             <field>WAS_Number__c</field>
             <table>Opportunity.Funding_Agreements__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Proposal_Amendment__c</field>
+            <table>Opportunity.Funding_Agreements__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Proposed_Amendment__c</field>
+            <table>Opportunity.Funding_Agreements__r</table>
+        </columns>
         <masterLabel>Funding Agreements</masterLabel>
     </sections>
     <sections>
