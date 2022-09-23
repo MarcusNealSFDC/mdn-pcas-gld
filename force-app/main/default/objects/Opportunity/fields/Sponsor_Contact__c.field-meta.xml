@@ -3,6 +3,7 @@
     <fullName>Sponsor_Contact__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
+    <inlineHelpText>Please add the Sponsor Point of Contact Information</inlineHelpText>
     <label>Sponsor Contact</label>
     <referenceTo>Contact</referenceTo>
     <relationshipLabel>Sponsor Contact</relationshipLabel>
