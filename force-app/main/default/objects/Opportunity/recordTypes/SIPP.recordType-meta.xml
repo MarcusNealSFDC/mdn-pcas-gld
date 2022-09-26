@@ -50,6 +50,53 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Contract_Specialist__c</picklist>
+        <values>
+            <fullName>Abraham Mendoza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erin Enger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jennifer Winston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kelli Krisher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lara Neiffer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lexi Witham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mary Foraker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Melissa Forbes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mindy Wright</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shannon Davis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stephanie Burrier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Contract_Type__c</picklist>
         <values>
             <fullName>BOA - Basic Ordering Agreement</fullName>
@@ -113,6 +160,99 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>DOE_Site_Office_Approver__c</picklist>
+        <values>
+            <fullName>Genice Madera</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EMSL_Facility_Capability_Use__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FAC_Waiver__c</picklist>
+        <values>
+            <fullName>Ballistic Missile Defense Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter Terrorism and Homeland Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Defense Counter Proliferation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Defense Joint Advanced Strike Technology Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Homeland Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Institutions of higher education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intergovernmental Personnel Act Assignments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Institutes of Health %28NIH%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Reconnaissance Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Naval Reactors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Nuclear Munitions Technology Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Profit Entities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State and local governments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Environmental Research and Development Program %28SERDP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Enrichment Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Nuclear Detonation Detection System</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>ForecastCategoryName</picklist>
         <values>
             <fullName>Best Case</fullName>
@@ -132,6 +272,24 @@
         </values>
         <values>
             <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Foreign_Sponsor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Intellectual_Property__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -183,6 +341,213 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Lost to Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Budget %2F Lost Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision %2F Non-Responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MSOF__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Minimum_Standard_1__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Minimum_Standard_2__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Minimum_Standard_3__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Minimum_Standard_4__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Minimum_Standard_5__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Minimum_Standard_6__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Minimum_Standard_7__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>No_Cost_Time_Extension__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Non_Federal_SPP__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Non_Standard_T__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PNSO_Animal_Research_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PNSO_Animal_Researcher__c</picklist>
+        <values>
+            <fullName>Kimberly Harper</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PNSO_Technical_Rep__c</picklist>
+        <values>
+            <fullName>Bob McLeod</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colin Skowronski</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don Moody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erick Flieger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geoffrey Morse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kim Harper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Melanie Fletcher</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Price_Anderson_Amendments_Act_PAAA__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Program_Secretarial_Office__c</picklist>
+        <values>
+            <fullName>Office of Science</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Proposal_Status__c</picklist>
         <values>
             <fullName>Approved</fullName>
@@ -198,6 +563,104 @@
         </values>
         <values>
             <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPECIMEN_1_Detail__c</picklist>
+        <values>
+            <fullName>Sponsor is a United States entity%2E Specimen Agreement No%2E 1 %28DOE Approved Not Required%29</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPECIMEN_4_Detail__c</picklist>
+        <values>
+            <fullName>Sponsor is a Foreign Entity%2E Specimen Agreement No%2E 4 %28DOE Approval Required%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsor%27s funds come from federal funding%2C Bayh-Dole rights apply%2C PNNL entitled to take title%2E Specimen Agreement No%2E 4 %28DOE Approval NOT Required%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPECIMEN_6_Detail__c</picklist>
+        <values>
+            <fullName>Agreemnt is merely for standard laboratory analysis%2C technical assistance%2C and training%2E Specimen Agreement No%2E 6 %28DOE Approval NOT Required%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPP_Office_Reviewer__c</picklist>
+        <values>
+            <fullName>Ariel Noguera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bruce Simanton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farrah Taylor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>James Windle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janice McCartney</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jennifer Winston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kori West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lisa Johnson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mirna Barraza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monica Chavez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rachel Loosveldt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spencer Nield</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tanya Smith</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sensitive__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source_of_Funds__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
             <default>false</default>
         </values>
     </picklistValues>

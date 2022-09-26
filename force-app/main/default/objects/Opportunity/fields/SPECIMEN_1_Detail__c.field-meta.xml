@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPECIMEN_1_Detail__c</fullName>
+    <externalId>false</externalId>
+    <label>SPECIMEN 1 Detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SPECIMEN_1__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sponsor is a United States entity. Specimen Agreement No. 1 (DOE Approved Not Required)</fullName>
+                <default>false</default>
+                <label>Sponsor is a United States entity. Specimen Agreement No. 1 (DOE Approved Not Required)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Sponsor is a United States entity. Specimen Agreement No. 1 (DOE Approved Not Required)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
