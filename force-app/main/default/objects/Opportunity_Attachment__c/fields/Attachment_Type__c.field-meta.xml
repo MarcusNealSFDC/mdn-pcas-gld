@@ -208,10 +208,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <valueName>OCI Addendum</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>ACT</controllingFieldValue>
             <controllingFieldValue>CRADA</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>DOE Direct</controllingFieldValue>
