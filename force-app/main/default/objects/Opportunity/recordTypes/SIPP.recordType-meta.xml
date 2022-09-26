@@ -276,6 +276,24 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Foreign_Sponsor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Intellectual_Property__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>LeadSource</picklist>
         <values>
             <fullName>Advertisement</fullName>
@@ -434,6 +452,24 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Non_Federal_SPP__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Non_Standard_T__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>PNSO_Animal_Research_Required__c</picklist>
         <values>
             <fullName>No</fullName>
@@ -520,6 +556,31 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>SPECIMEN_1_Detail__c</picklist>
+        <values>
+            <fullName>Sponsor is a United States entity%2E Specimen Agreement No%2E 1 %28DOE Approved Not Required%29</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPECIMEN_4_Detail__c</picklist>
+        <values>
+            <fullName>Sponsor is a Foreign Entity%2E Specimen Agreement No%2E 4 %28DOE Approval Required%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsor%27s funds come from federal funding%2C Bayh-Dole rights apply%2C PNNL entitled to take title%2E Specimen Agreement No%2E 4 %28DOE Approval NOT Required%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPECIMEN_6_Detail__c</picklist>
+        <values>
+            <fullName>Agreemnt is merely for standard laboratory analysis%2C technical assistance%2C and training%2E Specimen Agreement No%2E 6 %28DOE Approval NOT Required%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>SPP_Office_Reviewer__c</picklist>
         <values>
             <fullName>Ariel Noguera</fullName>
@@ -582,6 +643,13 @@
         </values>
         <values>
             <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source_of_Funds__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
             <default>false</default>
         </values>
     </picklistValues>

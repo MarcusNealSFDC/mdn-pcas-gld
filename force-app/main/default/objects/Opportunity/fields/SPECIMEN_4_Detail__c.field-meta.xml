@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPECIMEN_4_Detail__c</fullName>
+    <externalId>false</externalId>
+    <label>SPECIMEN 4 Detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SPECIMEN_4__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sponsor is a Foreign Entity. Specimen Agreement No. 4 (DOE Approval Required)</fullName>
+                <default>false</default>
+                <label>Sponsor is a Foreign Entity. Specimen Agreement No. 4 (DOE Approval Required)</label>
+            </value>
+            <value>
+                <fullName>Sponsor&apos;s funds come from federal funding, Bayh-Dole rights apply, PNNL entitled to take title. Specimen Agreement No. 4 (DOE Approval NOT Required)</fullName>
+                <default>false</default>
+                <label>Sponsor&apos;s funds come from federal funding, Bayh-Dole rights apply, PNNL entitled to take title. Specimen Agreement No. 4 (DOE Approval NOT Required)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Sponsor is a Foreign Entity. Specimen Agreement No. 4 (DOE Approval Required)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Sponsor&apos;s funds come from federal funding, Bayh-Dole rights apply, PNNL entitled to take title. Specimen Agreement No. 4 (DOE Approval NOT Required)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
