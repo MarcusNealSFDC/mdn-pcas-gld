@@ -311,6 +311,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Comments__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.ContractId</field>
         <readable>false</readable>
@@ -392,12 +397,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Foreign_Sponsor__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Foreign_Travel__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Fund_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Intellectual_Property__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -512,6 +527,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Non_Federal_SPP__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Non_Standard_T__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Notes__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -546,6 +571,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.PSO_Point_of_Contact__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PartnerAccountId</field>
         <readable>false</readable>
@@ -559,11 +589,6 @@
         <editable>true</editable>
         <field>Opportunity.Probability</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.PartnerAccountId</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -647,6 +672,36 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.SPECIMEN_1_Detail__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.SPECIMEN_1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.SPECIMEN_4_Detail__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.SPECIMEN_4__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.SPECIMEN_6_Detail__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.SPECIMEN_6__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.SPP_Determination_1__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -703,6 +758,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Setup_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Source_of_Funds__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1129,15 +1189,15 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-DOE Direct Proposal Layout</layout>
-        <recordType>Opportunity.NF_SPP</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-DOE Direct Proposal Layout</layout>
         <recordType>Opportunity.NIC_RW</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-DOE Direct Proposal Layout</layout>
         <recordType>Opportunity.SIPP</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-NF-SPP Proposal Layout</layout>
+        <recordType>Opportunity.NF_SPP</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-SPP Proposal Layout</layout>
@@ -1352,6 +1412,14 @@
     <tabVisibilities>
         <tab>Project__c</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Proposals</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Proposed_Amendment__c</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Opportunity</tab>
@@ -1768,7 +1836,7 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>ManagePackageLicenses</name>
+        <name>ManagePartners</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
