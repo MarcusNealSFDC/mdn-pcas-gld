@@ -3,6 +3,6 @@
     <fullName>PNSO_Animal_Researcher</fullName>
     <active>true</active>
     <errorConditionFormula>IF( AND( ISPICKVAL(  PNSO_Animal_Research_Required__c  , &apos;Yes&apos; ),  ISPICKVAL(PNSO_Animal_Researcher__c , &apos;NULL&apos;)), true, false )</errorConditionFormula>
-    <errorDisplayField>Accession_Number__c</errorDisplayField>
+    <errorDisplayField>PNSO_Animal_Researcher__c</errorDisplayField>
     <errorMessage>Please add a PNSO Animal Research approver</errorMessage>
 </ValidationRule>

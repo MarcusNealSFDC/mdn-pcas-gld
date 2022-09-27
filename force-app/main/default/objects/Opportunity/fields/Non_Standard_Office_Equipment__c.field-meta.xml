@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Standard_Office_Equipment__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Will the project require the use of equipment outside of standard office equipment and computers?</inlineHelpText>
+    <label>Non-Standard Office Equipment?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Yes_No__gvs</valueSetName>
+    </valueSet>
+</CustomField>
