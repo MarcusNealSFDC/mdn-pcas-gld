@@ -13,6 +13,7 @@ env:
   SALESFORCE_ORG_DEV_URL: https://pnnl--pnnldev1.sandbox.my.salesforce.com # Salesforce URL of target org
   SALESFORCE_ORG_USERNAME: builduser@pnnl.doe.pnnldev1 # Salesforce username of target org
   TARGET_BRANCH: dev
+  ORG_NAME: PNNLPCASBuildDev
   SOURCE_DIR: force-app
 
 jobs:
@@ -47,19 +48,19 @@ jobs:
       
       - name: Authenticate Salesforce Org
         run: |
-          node_modules/sfdx-cli/bin/run force:auth:sfdxurl:store -f SFDX_AUTHURL -s -a PNNLDev
+          node_modules/sfdx-cli/bin/run force:auth:sfdxurl:store -f SFDX_AUTHURL -s -a ${{ env.ORG_NAME }}
 
       - name: Deploy source
         id: Deploy
         if: github.event_name == 'push'
         run:
-          node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u PNNLDev --loglevel fatal --verbose | tee results.txt
+          node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal --verbose
 
       - name: Validate source
         id: validate
         if: github.event_name == 'pull_request'
         run:
-          node_modules/sfdx-cli/bin/run force:source:deploy -c -p force-app -u PNNLDev --loglevel fatal --verbose | tee results.txt
+          node_modules/sfdx-cli/bin/run force:source:deploy -c -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal --verbose | tee results.txt
 
       # - name: Run Apex test
       #   run: 
