@@ -68,7 +68,7 @@ jobs:
           
       - name: Collect Results
         id: collect-results
-        if: ${{ always() }} 
+        if: github.event_name == 'pull_request' 
         run: |
           RESULTS=$(cat results.txt)
           echo "$RESULTS"
