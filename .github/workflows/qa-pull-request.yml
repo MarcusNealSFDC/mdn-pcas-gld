@@ -1,4 +1,4 @@
-name: Deployments:PR BUGFIXES/FEATURES - Pull Request Against DEV
+name: Deployments:PR BUGFIXES/FEATURES - Pull Request Against QA
 
 on:
   pull_request:
