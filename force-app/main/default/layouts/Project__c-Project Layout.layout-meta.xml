@@ -65,7 +65,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>EP_R_Signed_Date__c</field>
+                <field>EPR_Signed_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
