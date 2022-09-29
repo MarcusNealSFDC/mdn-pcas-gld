@@ -1544,7 +1544,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Proposed_Amendment__c</tab>
-        <visibility>Hidden</visibility>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Opportunity</tab>
