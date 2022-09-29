@@ -41,7 +41,6 @@
         <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>Project_Record_Page1</content>
         <formFactor>Small</formFactor>
-
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
         <pageOrSobjectType>Project__c</pageOrSobjectType>
@@ -58,12 +57,10 @@
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
     </actionOverrides>
     <brand>
         <headerColor>#808487</headerColor>
