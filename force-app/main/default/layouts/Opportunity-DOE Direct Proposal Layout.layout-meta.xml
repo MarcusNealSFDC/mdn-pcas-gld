@@ -188,7 +188,7 @@
         <fields>Control_Point__c</fields>
         <fields>Fiscal_Year__c</fields>
         <fields>Revised_Amount__c</fields>
-        <relatedList>Funding_Agreement__c.Opportunity__c</relatedList>
+        <relatedList>Funding_Agreement__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>

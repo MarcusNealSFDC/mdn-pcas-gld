@@ -37,7 +37,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Opportunity__c</field>
+                <field>Proposal__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
