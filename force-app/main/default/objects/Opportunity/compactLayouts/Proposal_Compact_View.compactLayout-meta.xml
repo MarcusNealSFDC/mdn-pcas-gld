@@ -3,8 +3,9 @@
     <fullName>Proposal_Compact_View</fullName>
     <fields>Proposal_Number__c</fields>
     <fields>AccountId</fields>
-    <fields>RecordType</fields>
+    <fields>RecordTypeId</fields>
     <fields>Proposal_Status__c</fields>
     <fields>OwnerId</fields>
+    <fields>Revison__c</fields>
     <label>Proposal Compact View</label>
 </CompactLayout>
