@@ -9,6 +9,6 @@
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
-        <valueSetName>Yes_No__gvs</valueSetName>
+        <valueSetName>Yes_No</valueSetName>
     </valueSet>
 </CustomField>
