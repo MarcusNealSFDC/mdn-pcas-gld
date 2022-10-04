@@ -84,6 +84,13 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>BER_Scientific_Focus_Area_SFA__c</picklist>
+        <values>
+            <fullName>00%2E Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>BMI_Client_Type__c</picklist>
         <values>
             <fullName>A</fullName>
@@ -123,6 +130,63 @@
         </values>
         <values>
             <fullName>Old</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Budget_Year__c</picklist>
+        <values>
+            <fullName>2022</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2023</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2026</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2027</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2028</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CRADA_Type__c</picklist>
+        <values>
+            <fullName>DOE Funded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOE with Funds In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Funds In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Master Scope of Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commercialization_Manager_CM__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -233,6 +297,13 @@
         </values>
         <values>
             <fullName>T%26M - Time and Materials</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DOE_Field_Element_Work_Proposal_Reviewer__c</picklist>
+        <values>
+            <fullName>Barreto%2C Crystal Lynn</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -360,6 +431,13 @@
         </values>
         <values>
             <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Headquarters_Organization__c</picklist>
+        <values>
+            <fullName>0 - Non Lead</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -657,9 +735,37 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Principal_Investigator__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Program_Secretarial_Office__c</picklist>
         <values>
             <fullName>Office of Science</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Management_Office__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Proposal_Purpose__c</picklist>
+        <values>
+            <fullName>Funding</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Proposal_Reason__c</picklist>
+        <values>
+            <fullName>New</fullName>
             <default>false</default>
         </values>
     </picklistValues>

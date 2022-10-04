@@ -8,7 +8,6 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <controllingField>SPECIMEN_6__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
@@ -18,9 +17,5 @@
                 <label>Agreemnt is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</label>
             </value>
         </valueSetDefinition>
-        <valueSettings>
-            <controllingFieldValue>checked</controllingFieldValue>
-            <valueName>Agreemnt is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</valueName>
-        </valueSettings>
     </valueSet>
 </CustomField>
