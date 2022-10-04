@@ -8,7 +8,6 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <controllingField>SPECIMEN_1__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
@@ -18,9 +17,5 @@
                 <label>Sponsor is a United States entity. Specimen Agreement No. 1 (DOE Approved Not Required)</label>
             </value>
         </valueSetDefinition>
-        <valueSettings>
-            <controllingFieldValue>checked</controllingFieldValue>
-            <valueName>Sponsor is a United States entity. Specimen Agreement No. 1 (DOE Approved Not Required)</valueName>
-        </valueSettings>
     </valueSet>
 </CustomField>
