@@ -208,9 +208,12 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
+            <valueName>OCI Addendum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT</controllingFieldValue>
             <controllingFieldValue>CRADA</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
-            <controllingFieldValue>DOE Direct</controllingFieldValue>
             <controllingFieldValue>F-SPP</controllingFieldValue>
             <controllingFieldValue>IWO</controllingFieldValue>
             <controllingFieldValue>NF-SPP</controllingFieldValue>
@@ -318,7 +321,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>DHS</controllingFieldValue>
-            <controllingFieldValue>DOE Direct</controllingFieldValue>
             <controllingFieldValue>F-SPP</controllingFieldValue>
             <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
@@ -348,10 +350,6 @@
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <valueName>Sub-contract Plan</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>DOE Direct</controllingFieldValue>
-            <valueName>Obligation Cost Roadmap</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>IWO</controllingFieldValue>
