@@ -96,12 +96,13 @@
         <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
+    <description>Use this app to manage Proposals, PNNL Contracts, Projects, and more.</description>
     <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
-    <label>PNNL Proposal Management</label>
+    <label>Proposal and Contract Authorization</label>
     <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>

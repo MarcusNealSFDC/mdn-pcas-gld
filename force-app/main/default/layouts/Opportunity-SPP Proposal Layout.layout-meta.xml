@@ -385,7 +385,6 @@
         <fields>Amendment_Authorized_Amount__c</fields>
         <fields>Amendment_Fee_Amount__c</fields>
         <relatedList>Proposed_Amendment__c.Proposal__c</relatedList>
-
     </relatedLists>
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>
