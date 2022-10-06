@@ -3,18 +3,9 @@
     <fullName>Sector__c</fullName>
     <externalId>false</externalId>
     <label>Sector</label>
+    <length>20</length>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <type>Picklist</type>
-    <valueSet>
-        <restricted>true</restricted>
-        <valueSetDefinition>
-            <sorted>false</sorted>
-            <value>
-                <fullName>TBD</fullName>
-                <default>false</default>
-                <label>TBD</label>
-            </value>
-        </valueSetDefinition>
-    </valueSet>
+    <type>Text</type>
+    <unique>false</unique>
 </CustomField>
