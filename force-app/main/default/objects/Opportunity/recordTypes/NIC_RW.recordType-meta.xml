@@ -2,7 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>NIC_RW</fullName>
     <active>true</active>
-    <businessProcess>DOE Direct</businessProcess>
+    <businessProcess>Non-DOE Sales Process</businessProcess>
     <compactLayoutAssignment>Proposal_Compact_View</compactLayoutAssignment>
     <description>Non-Integrated Contractor Reimbursable Work</description>
     <label>NIC-RW</label>

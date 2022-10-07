@@ -2,7 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>NF_SPP</fullName>
     <active>true</active>
-    <businessProcess>DOE Direct</businessProcess>
+    <businessProcess>Non-DOE Sales Process</businessProcess>
     <compactLayoutAssignment>Proposal_Compact_View</compactLayoutAssignment>
     <description>Non-Federal Strategic Partnership Projects</description>
     <label>NF-SPP</label>
