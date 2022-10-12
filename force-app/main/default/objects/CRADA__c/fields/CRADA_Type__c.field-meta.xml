@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRADA_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>CRADA Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DOE Funded</fullName>
+                <default>false</default>
+                <label>DOE Funded</label>
+            </value>
+            <value>
+                <fullName>DOE with Funds In</fullName>
+                <default>false</default>
+                <label>DOE with Funds In</label>
+            </value>
+            <value>
+                <fullName>Full Funds In</fullName>
+                <default>false</default>
+                <label>Full Funds In</label>
+            </value>
+            <value>
+                <fullName>Master Scope of Work</fullName>
+                <default>false</default>
+                <label>Master Scope of Work</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

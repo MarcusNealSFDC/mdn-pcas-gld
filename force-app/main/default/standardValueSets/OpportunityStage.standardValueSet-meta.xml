@@ -25,16 +25,16 @@
         <label>Proposal Draft</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>30</probability>
+        <probability>10</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Proposal Stage</fullName>
+        <fullName>Proposal Preparation</fullName>
         <default>false</default>
-        <label>Proposal Stage</label>
+        <label>Proposal Preparation</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>30</probability>
+        <probability>10</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -43,7 +43,7 @@
         <label>Proposal Submitted</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>30</probability>
+        <probability>10</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -52,16 +52,7 @@
         <label>Proposal Pending</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>30</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Proposal Reviewed</fullName>
-        <default>false</default>
-        <label>Proposal Reviewed</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>40</probability>
+        <probability>10</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -70,7 +61,70 @@
         <label>Proposal Approved</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>50</probability>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposal Reviewed</fullName>
+        <default>false</default>
+        <label>Proposal Reviewed</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Work Authorization Setup</fullName>
+        <default>false</default>
+        <label>Work Authorization Setup</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Work Authorization Breakdown</fullName>
+        <default>false</default>
+        <label>Work Authorization Breakdown</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Work Authorization Review</fullName>
+        <default>false</default>
+        <label>Work Authorization Review</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>40</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Work Authorization Approval: Funding &amp; Agreements</fullName>
+        <default>false</default>
+        <label>Work Authorization Approval: Funding &amp; Agreements</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Work Authorization Approval: PNSO Technical Rep</fullName>
+        <default>false</default>
+        <label>Work Authorization Approval: PNSO Technical Rep</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Work Authorization Approval: PNSO Contract Officer</fullName>
+        <default>false</default>
+        <label>Work Authorization Approval: PNSO Contract Officer</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -79,16 +133,16 @@
         <label>Funding Received</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>80</probability>
+        <probability>10</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Funding Stage</fullName>
+        <fullName>Funding Preparation</fullName>
         <default>false</default>
-        <label>Funding Stage</label>
+        <label>Funding Preparation</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>50</probability>
+        <probability>10</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -97,16 +151,16 @@
         <label>Funding Pending</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>50</probability>
+        <probability>10</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Funding Approved</fullName>
+        <fullName>Funding Approved - Project Active</fullName>
         <default>false</default>
-        <label>Funding Approved</label>
+        <label>Funding Approved - Project Active</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>90</probability>
+        <probability>10</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -115,7 +169,34 @@
         <label>Closeout</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>80</probability>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Project Items</fullName>
+        <default>false</default>
+        <label>Pending Project Items</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completed</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Funding Stage</fullName>
+        <default>false</default>
+        <label>Funding Stage</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
         <won>false</won>
     </standardValue>
 </StandardValueSet>

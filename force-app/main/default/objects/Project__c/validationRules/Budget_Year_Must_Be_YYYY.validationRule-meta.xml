@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Year_Must_Be_YYYY</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISNUMBER(Budget_Year__c))</errorConditionFormula>
+    <errorDisplayField>Budget_Year__c</errorDisplayField>
+    <errorMessage>Your entry does not match the allowed format YYYY.</errorMessage>
+</ValidationRule>
