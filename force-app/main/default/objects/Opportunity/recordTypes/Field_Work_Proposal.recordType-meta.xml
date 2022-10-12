@@ -2,7 +2,6 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Field_Work_Proposal</fullName>
     <active>true</active>
-    <businessProcess>DOE Direct</businessProcess>
     <description>Department of Energy Direct - Field Work Proposal</description>
     <label>Field Work Proposal</label>
     <picklistValues>
