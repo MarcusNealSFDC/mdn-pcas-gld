@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>PNSO_Coordinator__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
     <label>PNSO Coordinator</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>User.PNSO_Coordinator__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Opportunities9bRo</relationshipName>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>
-    <type>Picklist</type>
-    <valueSet>
-        <restricted>true</restricted>
-        <valueSetDefinition>
-            <sorted>false</sorted>
-            <value>
-                <fullName>TBD</fullName>
-                <default>false</default>
-                <label>TBD</label>
-            </value>
-        </valueSetDefinition>
-    </valueSet>
+    <type>Lookup</type>
 </CustomField>
