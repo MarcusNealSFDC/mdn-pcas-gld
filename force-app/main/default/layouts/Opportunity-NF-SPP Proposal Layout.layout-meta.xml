@@ -148,11 +148,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Contract_Specialist__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>PNSO_Technical_Rep__c</field>
+                <field>Master_Scope_of_Work__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

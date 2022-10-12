@@ -159,6 +159,41 @@
             </value>
         </valueSetDefinition>
         <valueSettings>
+            <controllingFieldValue>Field Work Proposal</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>FIN Place Proposal</controllingFieldValue>
+            <valueName>Biographical sketches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Field Work Proposal</controllingFieldValue>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>CRADA</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>IWO</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>FIN Place Proposal</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Field Work Proposal</controllingFieldValue>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>IWO</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <controllingFieldValue>FIN Place Proposal</controllingFieldValue>
+            <valueName>Statement of Work (hard gate)</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
             <valueName>ACT Agreement</valueName>
         </valueSettings>
@@ -212,19 +247,7 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>CRADA</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
-            <controllingFieldValue>F-SPP</controllingFieldValue>
-            <controllingFieldValue>IWO</controllingFieldValue>
-            <controllingFieldValue>NF-SPP</controllingFieldValue>
-            <controllingFieldValue>NIC-RW</controllingFieldValue>
-            <controllingFieldValue>SIPP</controllingFieldValue>
-            <valueName>Other</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>DHS</controllingFieldValue>
-            <controllingFieldValue>DOE Direct</controllingFieldValue>
             <controllingFieldValue>F-SPP</controllingFieldValue>
             <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
@@ -261,31 +284,11 @@
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
-            <controllingFieldValue>DOE Direct</controllingFieldValue>
-            <controllingFieldValue>F-SPP</controllingFieldValue>
-            <controllingFieldValue>IWO</controllingFieldValue>
-            <controllingFieldValue>NF-SPP</controllingFieldValue>
-            <controllingFieldValue>NIC-RW</controllingFieldValue>
-            <controllingFieldValue>SIPP</controllingFieldValue>
-            <valueName>Statement of Work (hard gate)</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>F-SPP</controllingFieldValue>
             <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
             <valueName>TPEC Foreign Approval</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>DHS</controllingFieldValue>
-            <controllingFieldValue>DOE Direct</controllingFieldValue>
-            <controllingFieldValue>F-SPP</controllingFieldValue>
-            <controllingFieldValue>NF-SPP</controllingFieldValue>
-            <controllingFieldValue>NIC-RW</controllingFieldValue>
-            <controllingFieldValue>SIPP</controllingFieldValue>
-            <valueName>Biographical sketches</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>DHS</controllingFieldValue>
