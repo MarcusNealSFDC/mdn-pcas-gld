@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>SPP_Office_Reviewer__c</fullName>
+    <fullName>Contract_Specialist2__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>SPP Office Reviewer</label>
+    <label>Contract Specialist</label>
     <lookupFilter>
         <active>true</active>
         <filterItems>
-            <field>User.SPP_Office_Reviewer__c</field>
+            <field>User.Contracts_Specialist__c</field>
             <operation>equals</operation>
             <value>True</value>
         </filterItems>
-        <isOptional>true</isOptional>
+        <isOptional>false</isOptional>
     </lookupFilter>
     <referenceTo>User</referenceTo>
-    <relationshipName>Opportunities5</relationshipName>
+    <relationshipName>Opportunities1</relationshipName>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>

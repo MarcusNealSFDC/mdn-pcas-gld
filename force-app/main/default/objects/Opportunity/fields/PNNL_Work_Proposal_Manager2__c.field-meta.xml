@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>PNSO_Technical_Rep__c</fullName>
+    <fullName>PNNL_Work_Proposal_Manager2__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>PNSO Technical Rep</label>
+    <label>PNNL Work Proposal Manager</label>
     <lookupFilter>
         <active>true</active>
         <filterItems>
-            <field>User.PNSO_Technical_Reviewer__c</field>
+            <field>User.PNNL_Work_Proposal_Manager_and_Principal__c</field>
             <operation>equals</operation>
             <value>True</value>
         </filterItems>
         <isOptional>true</isOptional>
     </lookupFilter>
     <referenceTo>User</referenceTo>
-    <relationshipName>Opportunities6</relationshipName>
+    <relationshipName>Opportunities7</relationshipName>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>
