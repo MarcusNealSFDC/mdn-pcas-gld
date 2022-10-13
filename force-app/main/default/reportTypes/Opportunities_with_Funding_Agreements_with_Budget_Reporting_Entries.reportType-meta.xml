@@ -936,57 +936,57 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Commercialization_Manager__c</field>
+            <field>Commercialization_Manager2__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Contract_Specialist__c</field>
+            <field>Contract_Specialist2__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>DOE_Field_Element_Work_Proposal_Reviewer__c</field>
+            <field>DOE_Field_Element_Work_Proposal_Review__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>PNNL_ACT_Office__c</field>
+            <field>PNNL_ACT_Office2__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>DOE_Site_Office_Approver__c</field>
+            <field>DOE_Site_Office_Approver2__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>SPP_Office_Reviewer__c</field>
+            <field>SPP_Office_Reviewer2__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>PNSO_Technical_Rep__c</field>
+            <field>PNSO_Technical_Rep2__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>PNNL_Work_Proposal_Manager__c</field>
+            <field>PNNL_Work_Proposal_Manager2__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Principal_Investigator__c</field>
+            <field>Principal_Investigator2__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>PNSO_Contracting_Officer__c</field>
+            <field>PNSO_Contracting_Officer2__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>PNSO_Coordinator__c</field>
+            <field>PNSO_Coordinator2__c</field>
             <table>Opportunity</table>
         </columns>
         <masterLabel>Opportunities</masterLabel>

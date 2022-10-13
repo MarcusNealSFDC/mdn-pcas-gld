@@ -211,7 +211,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Technical_Rep__c</fieldItem>
+                <fieldItem>Record.PNSO_Technical_Rep2__c</fieldItem>
                 <identifier>RecordPNSO_Technical_Rep_cField</identifier>
             </fieldInstance>
         </itemInstances>
