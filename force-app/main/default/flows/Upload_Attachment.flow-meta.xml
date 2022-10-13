@@ -298,7 +298,7 @@
             <targetReference>assign_opportunity</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>Content_Document_ID</name>
         <dataType>String</dataType>

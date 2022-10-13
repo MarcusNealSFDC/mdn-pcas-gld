@@ -1878,9 +1878,6 @@
         <layout>Proposed_Amendment__c-Proposed Amendment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>User-User Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>UserAlt-User Profile Layout</layout>
     </layoutAssignments>
     <objectPermissions>
