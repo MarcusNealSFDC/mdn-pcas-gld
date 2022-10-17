@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Headquarters_Organization__c</fullName>
+    <externalId>false</externalId>
+    <label>Headquarters Organization</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0 - Non Lead</fullName>
+                <default>false</default>
+                <label>0 - Non Lead</label>
+            </value>
+            <value>
+                <fullName>1 - Lead</fullName>
+                <default>false</default>
+                <label>1 - Lead</label>
+            </value>
+            <value>
+                <fullName>AR-1 - Advanced Research Projects Agency - (ARPA-E)</fullName>
+                <default>false</default>
+                <label>AR-1 - Advanced Research Projects Agency - (ARPA-E)</label>
+            </value>
+            <value>
+                <fullName>EE-12 - Office of Technology Advancement and Outreach</fullName>
+                <default>false</default>
+                <label>EE-12 - Office of Technology Advancement and Outreach</label>
+            </value>
+            <value>
+                <fullName>EE-13 - Office of Strategic Programs</fullName>
+                <default>false</default>
+                <label>EE-13 - Office of Strategic Programs</label>
+            </value>
+            <value>
+                <fullName>EE-20 - DAS for Technology Development</fullName>
+                <default>false</default>
+                <label>EE-20 - DAS for Technology Development</label>
+            </value>
+            <value>
+                <fullName>EE-2A - Solar Technologies Program</fullName>
+                <default>false</default>
+                <label>EE-2A - Solar Technologies Program</label>
+            </value>
+            <value>
+                <fullName>EE-2B - Office of Wind and Hydropower Technologies Program</fullName>
+                <default>false</default>
+                <label>EE-2B - Office of Wind and Hydropower Technologies Program</label>
+            </value>
+            <value>
+                <fullName>EE-2C - Office of Geothermal Technologies Program</fullName>
+                <default>false</default>
+                <label>EE-2C - Office of Geothermal Technologies Program</label>
+            </value>
+            <value>
+                <fullName>EE-2D - Distributed Energy Program</fullName>
+                <default>false</default>
+                <label>EE-2D - Distributed Energy Program</label>
+            </value>
+            <value>
+                <fullName>EE-2E - Office of Biomass Program</fullName>
+                <default>false</default>
+                <label>EE-2E - Office of Biomass Program</label>
+            </value>
+            <value>
+                <fullName>EE-2F - Office of Advanced Manufacturing Program</fullName>
+                <default>false</default>
+                <label>EE-2F - Office of Advanced Manufacturing Program</label>
+            </value>
+            <value>
+                <fullName>EE-2G - Office of Freedomcar and Vehicle Technologies Program</fullName>
+                <default>false</default>
+                <label>EE-2G - Office of Freedomcar and Vehicle Technologies Program</label>
+            </value>
+            <value>
+                <fullName>EE-2H - Office of Hydrogen Fuel Cells and Infrastructure Tech Program</fullName>
+                <default>false</default>
+                <label>EE-2H - Office of Hydrogen Fuel Cells and Infrastructure Tech Program</label>
+            </value>
+            <value>
+                <fullName>EE-2J - Office of Building Technologies Program</fullName>
+                <default>false</default>
+                <label>EE-2J - Office of Building Technologies Program</label>
+            </value>
+            <value>
+                <fullName>EE-2K - Office of Weatherization and Intergovernmental Program</fullName>
+                <default>false</default>
+                <label>EE-2K - Office of Weatherization and Intergovernmental Program</label>
+            </value>
+            <value>
+                <fullName>EE-2L - Office of Federal Energy Management Program</fullName>
+                <default>false</default>
+                <label>EE-2L - Office of Federal Energy Management Program</label>
+            </value>
+            <value>
+                <fullName>EE-30 - DAS for Business Administration</fullName>
+                <default>false</default>
+                <label>EE-30 - DAS for Business Administration</label>
+            </value>
+            <value>
+                <fullName>EE-3A - Office of Program Execution Support</fullName>
+                <default>false</default>
+                <label>EE-3A - Office of Program Execution Support</label>
+            </value>
+            <value>
+                <fullName>EE-3B - Office of Planning Budget Formulation and Analysis</fullName>
+                <default>false</default>
+                <label>EE-3B - Office of Planning Budget Formulation and Analysis</label>
+            </value>
+            <value>
+                <fullName>EE-3C - Office of Information and Business Management Systems</fullName>
+                <default>false</default>
+                <label>EE-3C - Office of Information and Business Management Systems</label>
+            </value>
+            <value>
+                <fullName>EE-3V - Vehicle Technologies Office</fullName>
+                <default>false</default>
+                <label>EE-3V - Vehicle Technologies Office</label>
+            </value>
+            <value>
+                <fullName>EE-4W - Wind and Water Power Technologies Office</fullName>
+                <default>false</default>
+                <label>EE-4W - Wind and Water Power Technologies Office</label>
+            </value>
+            <value>
+                <fullName>EI-A - Energy Information Administration</fullName>
+                <default>false</default>
+                <label>EI-A - Energy Information Administration</label>
+            </value>
+            <value>
+                <fullName>EPSA-10 - Office of Resource Management</fullName>
+                <default>false</default>
+                <label>EPSA-10 - Office of Resource Management</label>
+            </value>
+            <value>
+                <fullName>EPSA-20 - Office of Energy Policy and Systems Analysis (EPSA)</fullName>
+                <default>false</default>
+                <label>EPSA-20 - Office of Energy Policy and Systems Analysis (EPSA)</label>
+            </value>
+            <value>
+                <fullName>EPSA-40 - Office of EPSA, Energy Systems and Integration</fullName>
+                <default>false</default>
+                <label>EPSA-40 - Office of EPSA, Energy Systems and Integration</label>
+            </value>
+            <value>
+                <fullName>FE-1 - Office of Fossil Energy</fullName>
+                <default>false</default>
+                <label>FE-1 - Office of Fossil Energy</label>
+            </value>
+            <value>
+                <fullName>FE-20 - Office of Coal and Power Systems</fullName>
+                <default>false</default>
+                <label>FE-20 - Office of Coal and Power Systems</label>
+            </value>
+            <value>
+                <fullName>FE-22 - Clean Energy Systems</fullName>
+                <default>false</default>
+                <label>FE-22 - Clean Energy Systems</label>
+            </value>
+            <value>
+                <fullName>FE-24 - Sequestration Hydrogen and Clean Coal Fuels</fullName>
+                <default>false</default>
+                <label>FE-24 - Sequestration Hydrogen and Clean Coal Fuels</label>
+            </value>
+            <value>
+                <fullName>FE-26 - Planning and Environmental Analysis</fullName>
+                <default>false</default>
+                <label>FE-26 - Planning and Environmental Analysis</label>
+            </value>
+            <value>
+                <fullName>FE-27 - Clean Energy Collaboration</fullName>
+                <default>false</default>
+                <label>FE-27 - Clean Energy Collaboration</label>
+            </value>
+            <value>
+                <fullName>FE-3 - Office of Budget and Financial Management</fullName>
+                <default>false</default>
+                <label>FE-3 - Office of Budget and Financial Management</label>
+            </value>
+            <value>
+                <fullName>FE-30 - Office of Natural Gas and Petroleum Technology</fullName>
+                <default>false</default>
+                <label>FE-30 - Office of Natural Gas and Petroleum Technology</label>
+            </value>
+            <value>
+                <fullName>FE-32 - Research and Development</fullName>
+                <default>false</default>
+                <label>FE-32 - Research and Development</label>
+            </value>
+            <value>
+                <fullName>FE-34 - Import Export Activities</fullName>
+                <default>false</default>
+                <label>FE-34 - Import Export Activities</label>
+            </value>
+            <value>
+                <fullName>FE-35 - Planning and Environmental Analysis</fullName>
+                <default>false</default>
+                <label>FE-35 - Planning and Environmental Analysis</label>
+            </value>
+            <value>
+                <fullName>FE-40 - Office of Petroleum Reserves</fullName>
+                <default>false</default>
+                <label>FE-40 - Office of Petroleum Reserves</label>
+            </value>
+            <value>
+                <fullName>FE-42 - Planning and Engineering</fullName>
+                <default>false</default>
+                <label>FE-42 - Planning and Engineering</label>
+            </value>
+            <value>
+                <fullName>FE-43 - Operations and Readiness</fullName>
+                <default>false</default>
+                <label>FE-43 - Operations and Readiness</label>
+            </value>
+            <value>
+                <fullName>FE-6 - Office of Environmental Security Safety and Health</fullName>
+                <default>false</default>
+                <label>FE-6 - Office of Environmental Security Safety and Health</label>
+            </value>
+            <value>
+                <fullName>HS - Office of Health, Safety, and Security</fullName>
+                <default>false</default>
+                <label>HS - Office of Health, Safety, and Security</label>
+            </value>
+            <value>
+                <fullName>HS-20 - Office of Nuclear Safety and Environment</fullName>
+                <default>false</default>
+                <label>HS-20 - Office of Nuclear Safety and Environment</label>
+            </value>
+            <value>
+                <fullName>HS-30 - Office of Corporate Safety Analysis</fullName>
+                <default>false</default>
+                <label>HS-30 - Office of Corporate Safety Analysis</label>
+            </value>
+            <value>
+                <fullName>IA-33 - Office of American Affairs</fullName>
+                <default>false</default>
+                <label>IA-33 - Office of American Affairs</label>
+            </value>
+            <value>
+                <fullName>IA-41 - Office of International Climate and Clean Energy</fullName>
+                <default>false</default>
+                <label>IA-41 - Office of International Climate and Clean Energy</label>
+            </value>
+            <value>
+                <fullName>NA-11 - Stockpile Stewardship</fullName>
+                <default>false</default>
+                <label>NA-11 - Stockpile Stewardship</label>
+            </value>
+            <value>
+                <fullName>NA-22 - Office of Nonproliferation and Verification Research and Development</fullName>
+                <default>false</default>
+                <label>NA-22 - Office of Nonproliferation and Verification Research and Development</label>
+            </value>
+            <value>
+                <fullName>NE-1 - Office of Nuclear Energy</fullName>
+                <default>false</default>
+                <label>NE-1 - Office of Nuclear Energy</label>
+            </value>
+            <value>
+                <fullName>NE-10 - Resource Management</fullName>
+                <default>false</default>
+                <label>NE-10 - Resource Management</label>
+            </value>
+            <value>
+                <fullName>NE-20 - Advanced Nuclear Research</fullName>
+                <default>false</default>
+                <label>NE-20 - Advanced Nuclear Research</label>
+            </value>
+            <value>
+                <fullName>NE-2_2 - Office Operations and Management</fullName>
+                <default>false</default>
+                <label>NE-2_2 - Office Operations and Management</label>
+            </value>
+            <value>
+                <fullName>NE-2_3 - Office of Nuclear Operations</fullName>
+                <default>false</default>
+                <label>NE-2_3 - Office of Nuclear Operations</label>
+            </value>
+            <value>
+                <fullName>NE-2_4 - Office of Technology</fullName>
+                <default>false</default>
+                <label>NE-2_4 - Office of Technology</label>
+            </value>
+            <value>
+                <fullName>NE-30 - Nuclear Power Systems</fullName>
+                <default>false</default>
+                <label>NE-30 - Nuclear Power Systems</label>
+            </value>
+            <value>
+                <fullName>NE-40 - Nuclear Facilities Management</fullName>
+                <default>false</default>
+                <label>NE-40 - Nuclear Facilities Management</label>
+            </value>
+            <value>
+                <fullName>NE-50 - Space and Defense Power Systems</fullName>
+                <default>false</default>
+                <label>NE-50 - Space and Defense Power Systems</label>
+            </value>
+            <value>
+                <fullName>NE-60 - Nuclear Fuel Supply Security</fullName>
+                <default>false</default>
+                <label>NE-60 - Nuclear Fuel Supply Security</label>
+            </value>
+            <value>
+                <fullName>NE-7 - Nuclear Reactor Technology</fullName>
+                <default>false</default>
+                <label>NE-7 - Nuclear Reactor Technology</label>
+            </value>
+            <value>
+                <fullName>NE-70 - Integrated Safety and Project Management</fullName>
+                <default>false</default>
+                <label>NE-70 - Integrated Safety and Project Management</label>
+            </value>
+            <value>
+                <fullName>OE-40 - NETL Site Office</fullName>
+                <default>false</default>
+                <label>OE-40 - NETL Site Office</label>
+            </value>
+            <value>
+                <fullName>OE-1.1 - Resource Management Staff</fullName>
+                <default>false</default>
+                <label>OE-1.1 - Resource Management Staff</label>
+            </value>
+            <value>
+                <fullName>OE-10 - Deputy Assistant Secretary for Research and Development</fullName>
+                <default>false</default>
+                <label>OE-10 - Deputy Assistant Secretary for Research and Development</label>
+            </value>
+            <value>
+                <fullName>OP - Office of Policy</fullName>
+                <default>false</default>
+                <label>OP - Office of Policy</label>
+            </value>
+            <value>
+                <fullName>PI-1 - Assistant Secretary for Policy and International Affairs</fullName>
+                <default>false</default>
+                <label>PI-1 - Assistant Secretary for Policy and International Affairs</label>
+            </value>
+            <value>
+                <fullName>RW-1 - Office of Civilian Radioactive Waste Management</fullName>
+                <default>false</default>
+                <label>RW-1 - Office of Civilian Radioactive Waste Management</label>
+            </value>
+            <value>
+                <fullName>RW-2E - Office of Strategy and Program Development</fullName>
+                <default>false</default>
+                <label>RW-2E - Office of Strategy and Program Development</label>
+            </value>
+            <value>
+                <fullName>RW-40E - Office of Science and Technology and International</fullName>
+                <default>false</default>
+                <label>RW-40E - Office of Science and Technology and International</label>
+            </value>
+            <value>
+                <fullName>SC-2 - Office of the Principal Deputy Director</fullName>
+                <default>false</default>
+                <label>SC-2 - Office of the Principal Deputy Director</label>
+            </value>
+            <value>
+                <fullName>SC-21 - Office of Budget</fullName>
+                <default>false</default>
+                <label>SC-21 - Office of Budget</label>
+            </value>
+            <value>
+                <fullName>SC-24 - Office of Engineering and Technology</fullName>
+                <default>false</default>
+                <label>SC-24 - Office of Engineering and Technology</label>
+            </value>
+            <value>
+                <fullName>SC-24.2 - Accelerator R&amp;D and Production</fullName>
+                <default>false</default>
+                <label>SC-24.2 - Accelerator R&amp;D and Production</label>
+            </value>
+            <value>
+                <fullName>SC-24.3 - Isotope R&amp;D and Production</fullName>
+                <default>false</default>
+                <label>SC-24.3 - Isotope R&amp;D and Production</label>
+            </value>
+            <value>
+                <fullName>SC-3 - Director Office of the Deputy for Science Programs</fullName>
+                <default>false</default>
+                <label>SC-3 - Director Office of the Deputy for Science Programs</label>
+            </value>
+            <value>
+                <fullName>SC-3.2 - Office of Scientific and Technical Information</fullName>
+                <default>false</default>
+                <label>SC-3.2 - Office of Scientific and Technical Information</label>
+            </value>
+            <value>
+                <fullName>SC-3.3 - Office of Workforce Development for Teachers and Scientists</fullName>
+                <default>false</default>
+                <label>SC-3.3 - Office of Workforce Development for Teachers and Scientists</label>
+            </value>
+            <value>
+                <fullName>SC-31 - Office of Advanced Scientific Computing Research</fullName>
+                <default>false</default>
+                <label>SC-31 - Office of Advanced Scientific Computing Research</label>
+            </value>
+            <value>
+                <fullName>SC-31.1 - Computational Science Research and Partnership (SCIDAC) Division</fullName>
+                <default>false</default>
+                <label>SC-31.1 - Computational Science Research and Partnership (SCIDAC) Division</label>
+            </value>
+            <value>
+                <fullName>SC-31.2 - Facilities Division</fullName>
+                <default>false</default>
+                <label>SC-31.2 - Facilities Division</label>
+            </value>
+            <value>
+                <fullName>SC-31.3 - Advanced Computing Technology Division</fullName>
+                <default>false</default>
+                <label>SC-31.3 - Advanced Computing Technology Division</label>
+            </value>
+            <value>
+                <fullName>SC-32 - Office of Basic Energy Sciences</fullName>
+                <default>false</default>
+                <label>SC-32 - Office of Basic Energy Sciences</label>
+            </value>
+            <value>
+                <fullName>SC-32.1 - Chemical Sciences, Geosciences, and Biosciences Division</fullName>
+                <default>false</default>
+                <label>SC-32.1 - Chemical Sciences, Geosciences, and Biosciences Division</label>
+            </value>
+            <value>
+                <fullName>SC-32.2 - Materials Sciences and Engineering Division</fullName>
+                <default>false</default>
+                <label>SC-32.2 - Materials Sciences and Engineering Division</label>
+            </value>
+            <value>
+                <fullName>SC-32.3 - Scientific User Facilities Division</fullName>
+                <default>false</default>
+                <label>SC-32.3 - Scientific User Facilities Division</label>
+            </value>
+            <value>
+                <fullName>SC-33 - Office of Biological and Environmental Research</fullName>
+                <default>false</default>
+                <label>SC-33 - Office of Biological and Environmental Research</label>
+            </value>
+            <value>
+                <fullName>SC-33.1 - Earth and Environmental System Science Division</fullName>
+                <default>false</default>
+                <label>SC-33.1 - Earth and Environmental System Science Division</label>
+            </value>
+            <value>
+                <fullName>SC-33.2 - Biological Systems Science Division</fullName>
+                <default>false</default>
+                <label>SC-33.2 - Biological Systems Science Division</label>
+            </value>
+            <value>
+                <fullName>SC-34 - Office of Fusion Energy Sciences</fullName>
+                <default>false</default>
+                <label>SC-34 - Office of Fusion Energy Sciences</label>
+            </value>
+            <value>
+                <fullName>SC-34.1 - Facilities, Operations, and Project Division</fullName>
+                <default>false</default>
+                <label>SC-34.1 - Facilities, Operations, and Project Division</label>
+            </value>
+            <value>
+                <fullName>SC-34.2 - Research Division</fullName>
+                <default>false</default>
+                <label>SC-34.2 - Research Division</label>
+            </value>
+            <value>
+                <fullName>SC-35 - Office of High Energy Physics</fullName>
+                <default>false</default>
+                <label>SC-35 - Office of High Energy Physics</label>
+            </value>
+            <value>
+                <fullName>SC-35.1 - Research and Technology Division</fullName>
+                <default>false</default>
+                <label>SC-35.1 - Research and Technology Division</label>
+            </value>
+            <value>
+                <fullName>SC-35.2 - Facilities Division</fullName>
+                <default>false</default>
+                <label>SC-35.2 - Facilities Division</label>
+            </value>
+            <value>
+                <fullName>SC-36 - Office of Nuclear Physics</fullName>
+                <default>false</default>
+                <label>SC-36 - Office of Nuclear Physics</label>
+            </value>
+            <value>
+                <fullName>SC-36.1 - Physics Research Division</fullName>
+                <default>false</default>
+                <label>SC-36.1 - Physics Research Division</label>
+            </value>
+            <value>
+                <fullName>SC-36.2 - Facilities and Project Management Division</fullName>
+                <default>false</default>
+                <label>SC-36.2 - Facilities and Project Management Division</label>
+            </value>
+            <value>
+                <fullName>SC-4 - Office of the Deputy Director for Field Operations</fullName>
+                <default>false</default>
+                <label>SC-4 - Office of the Deputy Director for Field Operations</label>
+            </value>
+            <value>
+                <fullName>SC-41 - Office of Field Safety, Security, and Infrastructure</fullName>
+                <default>false</default>
+                <label>SC-41 - Office of Field Safety, Security, and Infrastructure</label>
+            </value>
+            <value>
+                <fullName>SC-42 - Office of Laboratory Policy</fullName>
+                <default>false</default>
+                <label>SC-42 - Office of Laboratory Policy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
