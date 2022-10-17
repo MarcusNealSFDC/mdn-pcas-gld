@@ -2543,10 +2543,6 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>ManageSearchPromotionRules</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
         <name>ManageSharing</name>
     </userPermissions>
     <userPermissions>
@@ -2652,10 +2648,6 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ShareFilesWithNetworks</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>ShareInternalArticles</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
