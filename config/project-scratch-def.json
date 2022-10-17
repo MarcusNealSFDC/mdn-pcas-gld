@@ -1,7 +1,6 @@
 {
     "orgName": "PNNL Scratch",
     "edition": "Enterprise",
-    "release": "Preview",
     "features": ["Communities", "ContactsToMultipleAccounts", "SharedActivities", "DeferSharingCalc", "ForceComPlatform", "ProcessBuilder", "DebugApex",
         "CaseClassification", "EnableSetPasswordInApi", "SalesUser", "RecordTypes", "FlowSites", "Interaction", "Workflow", "EnablePRM",
         "WorkflowFlowActionFeature"],
