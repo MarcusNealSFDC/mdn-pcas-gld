@@ -986,9 +986,19 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_ACT_Office__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.PNNL_Work_Proposal_Manager2__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNSO_ACT_Reviewer__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1006,9 +1016,19 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNSO_Contracting_Officer__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.PNSO_Coordinator2__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNSO_Coordinator__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1166,21 +1186,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.EMSL_Approval_Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.EMSL_Facility_Capability_Use__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Executive_Summary__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.ROI_Analysis_Completed__c</field>
         <readable>false</readable>
@@ -1291,11 +1296,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.SIPP_Response__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Sensitive__c</field>
         <readable>true</readable>
@@ -1303,21 +1303,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Setup_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Source_of_Funds__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Sponsor_Contact__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Statement_of_Consideration__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1559,6 +1544,11 @@
         <editable>true</editable>
         <field>PNNL_Contracts__c.Start_Date__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Data_Event__e.Action__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1859,10 +1849,6 @@
         <recordType>Opportunity.DHS</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-DHS Proposal Layout</layout>
-        <recordType>Opportunity.SIPP</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Opportunity-DOE Direct Proposal Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1874,16 +1860,20 @@
         <recordType>Opportunity.Field_Work_Proposal</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-DOE Direct Proposal Layout</layout>
-        <recordType>Opportunity.IWO</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Opportunity-NF-SPP Proposal Layout</layout>
         <recordType>Opportunity.NF_SPP</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-NIC-RW Proposal Layout</layout>
         <recordType>Opportunity.NIC_RW</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-NIC-RW Proposal Layout</layout>
+        <recordType>Opportunity.SIPP</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.IWO</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-SPP Proposal Layout</layout>
@@ -1913,7 +1903,7 @@
         <layout>Proposed_Amendment__c-Proposed Amendment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>UserAlt-User Profile Layout</layout>
+        <layout>User-User Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
