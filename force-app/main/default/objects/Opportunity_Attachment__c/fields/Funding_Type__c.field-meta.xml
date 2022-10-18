@@ -31,9 +31,9 @@
                 <label>Field Work Proposal</label>
             </value>
             <value>
-                <fullName>FIN Place Proposal</fullName>
+                <fullName>FIN Plan Proposal</fullName>
                 <default>false</default>
-                <label>FIN Place Proposal</label>
+                <label>FIN Plan Proposal</label>
             </value>
             <value>
                 <fullName>F-SPP</fullName>
