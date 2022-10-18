@@ -64,6 +64,12 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
+        <fields>MemberName</fields>
+        <fields>OppAccessLevel</fields>
+        <fields>TeamMemberRole</fields>
+        <relatedList>RelatedOpportunitySalesTeam</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>NAME</fields>
         <relatedList>Funding_Agreement__c.Proposal__c</relatedList>
     </relatedLists>
