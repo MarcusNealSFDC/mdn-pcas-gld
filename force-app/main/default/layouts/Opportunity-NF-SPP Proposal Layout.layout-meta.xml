@@ -352,6 +352,12 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
+        <fields>MemberName</fields>
+        <fields>OppAccessLevel</fields>
+        <fields>TeamMemberRole</fields>
+        <relatedList>RelatedOpportunitySalesTeam</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>NAME</fields>
         <fields>Control_Point__c</fields>
         <fields>Fiscal_Year__c</fields>
