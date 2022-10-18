@@ -943,6 +943,20 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>PNNL_ACT_Office__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PNSO_ACT_Reviewer__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>PNSO_Animal_Research_Required__c</picklist>
         <values>
             <fullName>No</fullName>
@@ -958,6 +972,20 @@
         <values>
             <fullName>Kimberly Harper</fullName>
             <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PNSO_Contracting_Officer__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PNSO_Coordinator__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
         </values>
     </picklistValues>
     <picklistValues>
