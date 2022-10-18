@@ -1849,10 +1849,6 @@
         <recordType>Opportunity.DHS</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-DHS Proposal Layout</layout>
-        <recordType>Opportunity.SIPP</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Opportunity-DOE Direct Proposal Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1864,16 +1860,20 @@
         <recordType>Opportunity.Field_Work_Proposal</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-DOE Direct Proposal Layout</layout>
-        <recordType>Opportunity.IWO</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Opportunity-NF-SPP Proposal Layout</layout>
         <recordType>Opportunity.NF_SPP</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-NIC-RW Proposal Layout</layout>
         <recordType>Opportunity.NIC_RW</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-NIC-RW Proposal Layout</layout>
+        <recordType>Opportunity.SIPP</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.IWO</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-SPP Proposal Layout</layout>
