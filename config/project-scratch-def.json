@@ -28,6 +28,9 @@
         },
         "quoteSettings": {
             "enableQuote": true
+        },
+        "opportunitySettings": {
+            "enableOpportunityTeam": true
         }
     }
   }
