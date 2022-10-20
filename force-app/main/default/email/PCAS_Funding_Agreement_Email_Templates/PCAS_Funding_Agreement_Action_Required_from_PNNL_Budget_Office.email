@@ -1,0 +1,9 @@
+The following item requires your action. Please click the link provided to view the details and take the appropriate action. <br>
+<br>
+WAS Number: <a href="https://power-velocity-3652.lightning.force.com/lightning/r/Funding_Agreement__c/{!Funding_Agreement__c.Id}/view">{!Funding_Agreement__c.WAS_Number__c}</a>
+<br>
+Revision Number: {!Funding_Agreement__c.Revision_Number__c}
+<br>
+Amount: {!Funding_Agreement__c.Revised_Amount__c}
+<br>
+Status: {!Funding_Agreement__c.Status__c}
