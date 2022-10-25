@@ -67,7 +67,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Budget_Reporting_Entry__c.CRADA__c</field>
+        <field>Budget_Reporting_Entry__c.CRADA_lookup__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Budget_Reporting_Entry__c.CRADA_picklist__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -78,6 +83,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Budget_Reporting_Entry__c.EPR_Current__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Budget_Reporting_Entry__c.EPR_Current_picklist__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -97,6 +107,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Budget_Reporting_Entry__c.Incremental_Funding_picklist__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Budget_Reporting_Entry__c.Opportunity__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -107,7 +122,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Budget_Reporting_Entry__c.Scope_Change_picklist__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Budget_Reporting_Entry__c.Statement_of_Work__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Budget_Reporting_Entry__c.Statement_of_Work_picklist__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -793,6 +818,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Human_Animal_Subjects__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Indefinite_Open__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

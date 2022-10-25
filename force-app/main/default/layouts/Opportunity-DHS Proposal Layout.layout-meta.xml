@@ -146,6 +146,10 @@
                 <behavior>Edit</behavior>
                 <field>Date_Submitted_to_Client__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Indefinite_Open__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

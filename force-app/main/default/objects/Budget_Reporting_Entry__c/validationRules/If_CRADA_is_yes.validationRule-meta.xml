@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_CRADA_is_yes</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(CRADA_picklist__c,&apos;yes&apos;)&amp;&amp;ISBLANK(CRADA_lookup__c)</errorConditionFormula>
+    <errorDisplayField>CRADA_lookup__c</errorDisplayField>
+    <errorMessage>If &apos;CRADA&apos; is yes, you must enter a CRADA record in the lookup field.</errorMessage>
+</ValidationRule>

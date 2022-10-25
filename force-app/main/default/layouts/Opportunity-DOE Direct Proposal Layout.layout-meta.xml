@@ -33,6 +33,10 @@
                 <behavior>Readonly</behavior>
                 <field>Revison__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Indefinite_Open__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

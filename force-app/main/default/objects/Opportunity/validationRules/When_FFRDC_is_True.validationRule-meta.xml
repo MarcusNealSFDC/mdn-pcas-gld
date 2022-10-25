@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>When_FFRDC_is_True</fullName>
+    <active>true</active>
+    <errorConditionFormula>(FFRDC__c)&amp;&amp;(RecordType.Name == &apos;Field Work Proposal&apos;)&amp;&amp;(ISBLANK(Program_Announcement_Number__c)||ISBLANK( Program_Announcement_Title__c))</errorConditionFormula>
+    <errorDisplayField>Program_Announcement_Number__c</errorDisplayField>
+    <errorMessage>If the field &apos;FFRDC&apos; is checked, Product Announcement Number &amp; Product Announcement Title must be completed.</errorMessage>
+</ValidationRule>
