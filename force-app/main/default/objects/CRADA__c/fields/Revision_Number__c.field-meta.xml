@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>EPR_Funding_Client__c</fullName>
+    <fullName>Revision_Number__c</fullName>
     <externalId>false</externalId>
-    <label>EPR Funding Client</label>
-    <length>1000</length>
-    <trackFeedHistory>false</trackFeedHistory>
+    <label>Revision Number</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>LongTextArea</type>
-    <visibleLines>5</visibleLines>
+    <type>Number</type>
+    <unique>false</unique>
 </CustomField>

@@ -4,20 +4,12 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>actionNames</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>Opportunity.Send_Cost_Sheet</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
                     <name>collapsed</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsConfiguration</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsInNative</name>
@@ -65,16 +57,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Scope__c</fieldItem>
-                <identifier>RecordScope_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Proposal_Number__c</fieldItem>
                 <identifier>RecordProposal_Number_cField</identifier>
             </fieldInstance>
@@ -85,8 +67,28 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Title__c</fieldItem>
-                <identifier>RecordProject_Title_cField</identifier>
+                <fieldItem>Record.Scope__c</fieldItem>
+                <identifier>RecordScope_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Revison__c</fieldItem>
+                <identifier>RecordRevison_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Official_Use_Only__c</fieldItem>
+                <identifier>RecordOfficial_Use_Only_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-e42b5582-9a7d-411d-946d-f97b6f727225</name>
@@ -119,8 +121,18 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Budget_Year__c</fieldItem>
-                <identifier>RecordBudget_Year_cField</identifier>
+                <fieldItem>Record.Project_Title__c</fieldItem>
+                <identifier>RecordProject_Title_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Product_Line__c</fieldItem>
+                <identifier>RecordProduct_Line_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-23d2eac5-764d-4194-bfe2-deb2e26752cb</name>
@@ -157,30 +169,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.EPR_Funding_Client__c</fieldItem>
-                <identifier>RecordEPR_Funding_Client_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Funding_Client__c</fieldItem>
-                <identifier>RecordFunding_Client_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-47ed02e6-f4b7-40e8-adc1-0f3ace0cf200</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.EPR_Contract_Client__c</fieldItem>
                 <identifier>RecordEPR_Contract_Client_cField</identifier>
             </fieldInstance>
@@ -193,6 +181,30 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Contract_Client__c</fieldItem>
                 <identifier>RecordContract_Client_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-47ed02e6-f4b7-40e8-adc1-0f3ace0cf200</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.EPR_Funding_Client__c</fieldItem>
+                <identifier>RecordEPR_Funding_Client_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Funding_Client__c</fieldItem>
+                <identifier>RecordFunding_Client_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-03131188-d767-43e7-b8a8-90a568cf241f</name>
@@ -239,18 +251,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Technical_Rep2__c</fieldItem>
-                <identifier>RecordPNSO_Technical_Rep_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Official_Use_Only__c</fieldItem>
-                <identifier>RecordOfficial_Use_Only_cField</identifier>
+                <fieldItem>Record.PNSO_Proposal_Reviewer__c</fieldItem>
+                <identifier>RecordPNSO_Proposal_Reviewer_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-22c168a8-d4e1-4315-bcce-79b3c084f0bb</name>
@@ -265,26 +267,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Market_Sector__c</fieldItem>
                 <identifier>RecordMarket_Sector_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.B_R__c</fieldItem>
-                <identifier>RecordB_R_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Organization_Code__c</fieldItem>
-                <identifier>RecordOrganization_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -415,7 +397,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>FIN Plan Project Details</value>
+                    <value>IWO Project Details</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection</identifier>
@@ -504,7 +486,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Description</value>
+                    <value>Work Proposal Description (Approach, Anticipated Benefits, in 200 words of less)</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection4</identifier>
@@ -616,7 +598,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
-                    <value>DOE Proposal Information</value>
+                    <value>IWO Information</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>detailTab</identifier>
@@ -744,7 +726,7 @@
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>FIN Plan Proposal Record Page</masterLabel>
+    <masterLabel>IWO Proposal Record Page</masterLabel>
     <parentFlexiPage>sfa__Opportunity_rec_L</parentFlexiPage>
     <sobjectType>Opportunity</sobjectType>
     <template>

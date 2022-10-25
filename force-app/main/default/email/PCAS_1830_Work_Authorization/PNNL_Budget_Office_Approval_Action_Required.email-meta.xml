@@ -3,7 +3,7 @@
     <available>true</available>
     <description>Work Authorization approval email for the PNNL Budget Office Approver</description>
     <encodingKey>UTF-8</encodingKey>
-    <name>PCAS 1830 Work Authorization - Action Required from PNNL Budget Office</name>
+    <name>PNNL Budget Office Approval - Action Required</name>
     <style>none</style>
     <subject>PNNL Budget Office Approval - Action Required</subject>
     <textOnly>The following item requires your action. Please click the link provided to view the details and take the appropriate action.
