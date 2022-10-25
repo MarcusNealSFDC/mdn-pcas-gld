@@ -30,7 +30,7 @@
   
     <apex:pageBlockSectionItem >
       <apex:outputLabel value="Type" for="type"/>
-      <apex:selectList value="{!selectedType}" size="1" id="type"> 
+      <apex:selectList size="1" id="type"> 
         <apex:selectOption itemValue="Biographical Sketches" itemLabel="Biographical Sketches"/>
         <apex:selectOption itemValue="Obligation Cost Roadmap" itemLabel="Obligation Cost Roadmap"/>
         <apex:selectOption itemValue="Other" itemLabel="Other"/>
