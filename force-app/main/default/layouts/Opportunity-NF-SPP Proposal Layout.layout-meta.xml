@@ -150,6 +150,10 @@
                 <behavior>Edit</behavior>
                 <field>Master_Scope_of_Work__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Indefinite_Open__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
