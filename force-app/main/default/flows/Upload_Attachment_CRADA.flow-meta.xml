@@ -65,7 +65,6 @@
             <targetReference>screen_Pick_Funding_and_Attachment_Type</targetReference>
         </connector>
     </assignments>
-    <description>Upload attachment to custom object CRADA_attachment__c for use in CRADA Record Page to allow for Attachment Types</description>
     <environments>Default</environments>
     <formulas>
         <name>formula_CRADA_Attachment_Name</name>
@@ -82,7 +81,7 @@
         <dataType>String</dataType>
         <expression>{!opportunity_record.RecordType.Name}</expression>
     </formulas>
-    <interviewLabel>Upload Attachment {!$Flow.CurrentDateTime}</interviewLabel>
+    <interviewLabel>Upload CRADA Attachment {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Upload CRADA Attachment</label>
     <loops>
         <name>loop_Content_Document_Ids</name>
@@ -180,22 +179,7 @@
         <fields>
             <fieldType>ObjectProvided</fieldType>
             <isRequired>false</isRequired>
-            <objectFieldReference>opportunity_Attachment.Funding_Type__c</objectFieldReference>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>opportunity_Attachment.Opportunity__r.Id</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <booleanValue>false</booleanValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
-        </fields>
-        <fields>
-            <fieldType>ObjectProvided</fieldType>
-            <isRequired>false</isRequired>
-            <objectFieldReference>opportunity_Attachment.Attachment_Type__c</objectFieldReference>
+            <objectFieldReference>CRADA_Attachment.Attachment_Type__c</objectFieldReference>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
