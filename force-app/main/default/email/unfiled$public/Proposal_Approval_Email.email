@@ -1,0 +1,9 @@
+The following item requires your action. Please click the link provided to view the details and take the appropriate action.<br>
+<br>
+Proposal Number: {!Opportunity.Name} 
+<br>
+Project Title: {!Opportunity.Project_Title__c}
+<br>
+Revision: {!Opportunity.Revison__c}
+<br>
+Work Authorization: {!Funding_Agreement__c.Name}

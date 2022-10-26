@@ -50,6 +50,10 @@
                 <behavior>Edit</behavior>
                 <field>Street__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Market_Sector_Title__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
