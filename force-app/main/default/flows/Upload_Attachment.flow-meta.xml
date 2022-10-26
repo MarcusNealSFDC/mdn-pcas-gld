@@ -7,7 +7,7 @@
         <locationX>418</locationX>
         <locationY>547</locationY>
         <assignmentItems>
-            <assignToReference>CRADA_Attachment.AttachmentId__c</assignToReference>
+            <assignToReference>opportunity_Attachment.AttachmentId__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>Content_Document_ID</elementReference>
@@ -36,42 +36,44 @@
     <assignments>
         <name>assign_Attachment_Name</name>
         <label>Attachment Name</label>
-        <locationX>712</locationX>
+        <locationX>713</locationX>
         <locationY>172</locationY>
         <assignmentItems>
-            <assignToReference>CRADA_Attachment.Name</assignToReference>
+            <assignToReference>opportunity_Attachment.Name</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>formula_CRADA_Attachment_Name</elementReference>
+                <elementReference>formula_Opportunity_Attachment_Name</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>create_CRADA_Attachment</targetReference>
+            <targetReference>create_Opportunity_Attachment</targetReference>
         </connector>
     </assignments>
     <assignments>
-        <name>assign_CRADA</name>
-        <label>CRADA</label>
+        <name>assign_opportunity</name>
+        <label>Opportunity</label>
         <locationX>415</locationX>
         <locationY>172</locationY>
         <assignmentItems>
-            <assignToReference>CRADA_Attachment.CRADA__c</assignToReference>
+            <assignToReference>opportunity_Attachment.Opportunity__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>CRADA_Record.Id</elementReference>
+                <elementReference>opportunity_record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>opportunity_Attachment.Funding_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>formula_record_type_name</elementReference>
             </value>
         </assignmentItems>
         <connector>
             <targetReference>screen_Pick_Funding_and_Attachment_Type</targetReference>
         </connector>
     </assignments>
-    <description>Upload attachment to custom object CRADA_attachment__c for use in CRADA Record Page to allow for Attachment Types</description>
+    <description>Upload attachment to custom object opportunity_attachment__c for use in Opportunity Record Page to allow for Attachment Types picklist dependent on Funding Type (Record Type)</description>
     <environments>Default</environments>
-    <formulas>
-        <name>formula_CRADA_Attachment_Name</name>
-        <dataType>String</dataType>
-        <expression>TEXT({!CRADA_Attachment.Attachment_Type__c})</expression>
-    </formulas>
     <formulas>
         <name>formula_Opportunity_Attachment_Name</name>
         <dataType>String</dataType>
@@ -83,7 +85,7 @@
         <expression>{!opportunity_record.RecordType.Name}</expression>
     </formulas>
     <interviewLabel>Upload Attachment {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Upload CRADA Attachment</label>
+    <label>Upload Opportunity Attachment</label>
     <loops>
         <name>loop_Content_Document_Ids</name>
         <label>loop Content Document Ids</label>
@@ -118,21 +120,21 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordCreates>
-        <name>create_CRADA_Attachment</name>
-        <label>CRADA Attachment</label>
+        <name>create_Opportunity_Attachment</name>
+        <label>Opportunity Attachment</label>
         <locationX>713</locationX>
         <locationY>335</locationY>
         <connector>
             <targetReference>Screen_with_File_Upload_Component</targetReference>
         </connector>
-        <inputReference>CRADA_Attachment</inputReference>
+        <inputReference>opportunity_Attachment</inputReference>
     </recordCreates>
     <recordUpdates>
         <name>update_opportunity_attachment</name>
         <label>update opportunity attachment</label>
         <locationX>715</locationX>
         <locationY>547</locationY>
-        <inputReference>CRADA_Attachment</inputReference>
+        <inputReference>opportunity_Attachment</inputReference>
     </recordUpdates>
     <screens>
         <name>screen_debug_content_document_Id</name>
@@ -153,8 +155,8 @@
     <screens>
         <name>screen_debug_current_item_loop_content_ids</name>
         <label>debug current item loop content ids</label>
-        <locationX>97</locationX>
-        <locationY>298</locationY>
+        <locationX>94</locationX>
+        <locationY>335</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -177,6 +179,26 @@
         <connector>
             <targetReference>assign_Attachment_Name</targetReference>
         </connector>
+        <fields>
+            <name>display_opportunity_id</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Opportunity ID:&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt; {!opportunity_record.Id}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>opportunity_record.Id</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue></stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>display_funding_type</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Funding Type:&lt;/strong&gt; {!opportunity_Attachment.Funding_Type__c}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
         <fields>
             <fieldType>ObjectProvided</fieldType>
             <isRequired>false</isRequired>
@@ -213,7 +235,7 @@
         </connector>
         <fields>
             <name>display_Sponsor_and_Attachment_Type</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;CRADA Record Type Name: {!formula_record_type_name}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Attachment Type: &lt;/p&gt;&lt;p&gt;{!CRADA_Attachment.Attachment_Type__c}&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Opportunity Record Type Name: {!formula_record_type_name}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Opportunity Record TypeID: {!opportunity_record.RecordTypeId}&lt;/p&gt;&lt;p&gt;Funding Type:  {!opportunity_Attachment.Funding_Type__c}&lt;/p&gt;&lt;p&gt;Attachment Type: {!opportunity_Attachment.Attachment_Type__c}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -283,7 +305,7 @@
         <locationX>458</locationX>
         <locationY>48</locationY>
         <connector>
-            <targetReference>assign_CRADA</targetReference>
+            <targetReference>assign_opportunity</targetReference>
         </connector>
     </start>
     <status>Active</status>
@@ -301,22 +323,6 @@
         <isCollection>true</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>CRADA_Attachment</name>
-        <dataType>SObject</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>CRADA_Attachment__c</objectType>
-    </variables>
-    <variables>
-        <name>CRADA_Record</name>
-        <dataType>SObject</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-        <objectType>CRADA__c</objectType>
     </variables>
     <variables>
         <description>To store the new Opportunity Record Id.</description>
