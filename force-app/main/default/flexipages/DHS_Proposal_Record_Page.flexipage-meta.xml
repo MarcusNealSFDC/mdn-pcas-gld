@@ -96,34 +96,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Client__c</fieldItem>
-                <identifier>RecordContract_Client_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-582f12f9-38c9-4b9e-8f13-163023deb340</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Funding_Client__c</fieldItem>
-                <identifier>RecordFunding_Client_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-c23787cc-8545-442d-a136-11642ce5188c</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Scope__c</fieldItem>
                 <identifier>RecordScope_cField</identifier>
             </fieldInstance>
