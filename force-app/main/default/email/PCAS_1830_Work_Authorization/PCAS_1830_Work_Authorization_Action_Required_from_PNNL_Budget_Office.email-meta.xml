@@ -5,7 +5,7 @@
     <encodingKey>UTF-8</encodingKey>
     <name>PCAS 1830 Work Authorization - Action Required from PNNL Budget Office</name>
     <style>none</style>
-    <subject>PCAS Work Authorization - Action Required</subject>
+    <subject>PNNL Budget Office Approval - Action Required</subject>
     <textOnly>The following item requires your action. Please click the link provided to view the details and take the appropriate action.
 
 WAS Number: &lt;a href=&quot;https://energy-flow-4069.lightning.force.com/lightning/r/Funding_Agreement__c/{!Funding_Agreement__c.Id}/view&quot;&gt;{!Funding_Agreement__c.WAS_Number__c}&lt;/a&gt; 
