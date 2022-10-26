@@ -141,6 +141,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CRADA_Attachment__c.AttachmentId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CRADA_Attachment__c.View__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CRADA_Attachment__c.view_CRADA_doc__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Budget_Reporting_Entry__c.Statement_of_Work_picklist__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1886,6 +1901,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CRADA_Attachment__c-Attachment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CRADA__c-CRADA Layout</layout>
