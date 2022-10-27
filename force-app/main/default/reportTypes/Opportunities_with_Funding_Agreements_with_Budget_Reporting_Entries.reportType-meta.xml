@@ -1277,7 +1277,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>CRADA_lookup__c</field>
+            <field>CRADA__c</field>
             <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
