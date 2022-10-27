@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scope_Change_must_be_Yes</fullName>
+    <active>true</active>
+    <errorConditionFormula>!(ISPICKVAL(Scope_Change_picklist__c,&apos;yes&apos;))</errorConditionFormula>
+    <errorDisplayField>Scope_Change_picklist__c</errorDisplayField>
+    <errorMessage>The field &apos;Scope Change&apos; must be yes.</errorMessage>
+</ValidationRule>
