@@ -71,12 +71,11 @@ jobs:
           node_modules/sfdx-cli/bin/run force:apex:test:run --resultformat tap --codecoverage -r human -l RunLocalTests -u ${{ env.ORG_NAME }} | tee results.txt
 
       - name: Check Scratch Org Push
-        id: ScratchOrg
+        id: ScratchOrgCreate
         if: github.event_name == 'pull_request'
         run: |
           node_modules/sfdx-cli/bin/run force:org:create -a PkgScratch -s -f config/project-scratch-def.json -v devhub
           node_modules/sfdx-cli/bin/run force:source:push -f -u PkgScratch
-          node_modules/sfdx-cli/bin/run force:org:delete -u PkgScratch -p
 
       - name: Collect Results
         id: collect-results
@@ -112,6 +111,12 @@ jobs:
               repo: context.repo.repo,
               body: output
             })
+
+      - name: Delete Scratch Org
+        id: ScratchOrgDelete
+        if: ${{ always() }}
+        run: |
+          node_modules/sfdx-cli/bin/run force:org:delete -u PkgScratch -p
     
   # QADeploy:
   #   name: Call QA Deploy
