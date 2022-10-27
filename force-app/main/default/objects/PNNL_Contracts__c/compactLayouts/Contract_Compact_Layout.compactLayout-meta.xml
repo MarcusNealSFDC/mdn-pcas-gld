@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Contract_Compact_Layout</fullName>
+    <fields>Contract__c</fields>
     <fields>Contract_Client__c</fields>
-    <fields>Funding_Client__c</fields>
-    <fields>Effective_Date__c</fields>
     <fields>Authorized_Amount__c</fields>
+    <fields>Start_Date__c</fields>
+    <fields>Effective_Date__c</fields>
+    <fields>Completion_Date__c</fields>
     <label>Contract Compact Layout</label>
 </CompactLayout>

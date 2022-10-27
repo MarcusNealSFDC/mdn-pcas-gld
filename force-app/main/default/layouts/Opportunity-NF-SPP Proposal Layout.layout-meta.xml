@@ -150,6 +150,10 @@
                 <behavior>Edit</behavior>
                 <field>Master_Scope_of_Work__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>of_SOW_Attachments__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Contract_Client__c</fullName>
     <externalId>false</externalId>
-    <formula>Project__r.Account__r.Name</formula>
+    <formula>Proposal__r.Contract_Client__r.Name</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Contract Client</label>
     <required>false</required>
