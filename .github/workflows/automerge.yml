@@ -69,7 +69,7 @@ jobs:
           node_modules/sfdx-cli/bin/run force:apex:test:run --resultformat tap --codecoverage -r human -l RunLocalTests -u ${{ env.ORG_NAME }} | tee results.txt
 
       - name: Check Scratch Org Push
-        id: validate
+        id: ScratchOrg
         if: github.event_name == 'pull_request'
         run: |
           node_modules/sfdx-cli/bin/run force:org:create -a PkgScratch -s -f config/project-scratch-def.json
