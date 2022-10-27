@@ -45,10 +45,12 @@ jobs:
       - name: 'Populate auth file with SFDX_URL secret'
         run: |
           echo "${{ secrets.SALESFORCE_AUTHURL_DEV }}" > SFDX_AUTHURL
+          echo "${{ secrets.SALESFORCE_AUTHURL_DEVHUB }}" > SFDX_AUTHURL_DEVHUB
       
       - name: Authenticate Salesforce Org
         run: |
           node_modules/sfdx-cli/bin/run force:auth:sfdxurl:store -f SFDX_AUTHURL -s -a ${{ env.ORG_NAME }}
+          node_modules/sfdx-cli/bin/run force:auth:sfdxurl:store -f SFDX_AUTHURL_DEVHUB -s -a devhub
 
       - name: Deploy source
         id: Deploy
@@ -72,7 +74,7 @@ jobs:
         id: ScratchOrg
         if: github.event_name == 'pull_request'
         run: |
-          node_modules/sfdx-cli/bin/run force:org:create -a PkgScratch -s -f config/project-scratch-def.json
+          node_modules/sfdx-cli/bin/run force:org:create -a PkgScratch -s -f config/project-scratch-def.json -v devhub
           node_modules/sfdx-cli/bin/run force:source:push -f -u PkgScratch
           node_modules/sfdx-cli/bin/run force:org:delete -u PkgScratch -p
 
