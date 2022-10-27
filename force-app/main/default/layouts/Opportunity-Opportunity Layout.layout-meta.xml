@@ -76,6 +76,8 @@
                 <field>Cost_Code__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>of_SOW_Attachments__c</field>
                 <behavior>Edit</behavior>
                 <field>Indefinite_Open__c</field>
             </layoutItems>
