@@ -62,10 +62,20 @@ jobs:
         run:
           node_modules/sfdx-cli/bin/run force:source:deploy -c -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal | tee results.txt
 
-      # - name: Run Apex test
-      #   run: 
-      #     node_modules/sfdx-cli/bin/run force:apex:test:run --resultformat tap --codecoverage -r human -l RunLocalTests -u PNNLDev | tee results.txt
-          
+      - name: Run Apex test
+        id: UnitTests
+        if: github.event_name == 'pull_request'
+        run: 
+          node_modules/sfdx-cli/bin/run force:apex:test:run --resultformat tap --codecoverage -r human -l RunLocalTests -u ${{ env.ORG_NAME }} | tee results.txt
+
+      - name: Check Scratch Org Push
+        id: validate
+        if: github.event_name == 'pull_request'
+        run: |
+          node_modules/sfdx-cli/bin/run force:org:create -a PkgScratch -s -f config/project-scratch-def.json
+          node_modules/sfdx-cli/bin/run force:source:push -f -u PkgScratch
+          node_modules/sfdx-cli/bin/run force:org:delete -u PkgScratch -p
+
       - name: Collect Results
         id: collect-results
         if: github.event_name == 'pull_request' 
