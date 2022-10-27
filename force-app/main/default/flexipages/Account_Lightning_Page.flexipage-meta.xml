@@ -115,6 +115,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Market_Sector_Title__c</fieldItem>
+                <identifier>RecordMarket_Sector_Title_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.BMI_Client_Type__c</fieldItem>
                 <identifier>RecordBMI_Client_Type_cField</identifier>
             </fieldInstance>

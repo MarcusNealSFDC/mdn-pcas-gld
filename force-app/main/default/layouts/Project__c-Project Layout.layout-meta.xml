@@ -167,6 +167,13 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>CRADA_Status__c</fields>
+        <fields>CRADA_Title__c</fields>
+        <fields>End_Date__c</fields>
+        <relatedList>CRADA__c.Project_Number__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
         <fields>Project_Num__c</fields>
         <fields>ALC_TOE__c</fields>
         <fields>TOE_Title__c</fields>
@@ -203,7 +210,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000nyFo</masterLabel>
+        <masterLabel>00h3R000000tC99</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

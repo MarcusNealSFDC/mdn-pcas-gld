@@ -5,7 +5,5 @@
     <fields>Contract_Client__c</fields>
     <fields>Funding_Client__c</fields>
     <fields>RecordTypeId</fields>
-    <fields>CloseDate</fields>
-    <fields>Revison__c</fields>
     <label>Proposal Compact View</label>
 </CompactLayout>
