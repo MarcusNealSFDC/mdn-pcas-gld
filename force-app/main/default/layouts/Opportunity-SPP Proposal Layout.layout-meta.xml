@@ -147,6 +147,10 @@
                 <field>Date_Submitted_to_Client__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>of_SOW_Attachments__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Indefinite_Open__c</field>
             </layoutItems>
@@ -486,9 +490,9 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Project_Title__c</fields>
+        <fields>Project_Title2__c</fields>
         <fields>Market_Sector__c</fields>
-        <fields>Project_Manager__c</fields>
+        <fields>Project_Manager2__c</fields>
         <relatedList>Project__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>

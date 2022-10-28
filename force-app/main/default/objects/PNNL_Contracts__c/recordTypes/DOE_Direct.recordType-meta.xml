@@ -47,6 +47,25 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Contract_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anticipatory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vaulted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>FAC__c</picklist>
         <values>
             <fullName>No</fullName>
