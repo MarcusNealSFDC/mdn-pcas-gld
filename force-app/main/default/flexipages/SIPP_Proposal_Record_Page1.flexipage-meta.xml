@@ -136,8 +136,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.No_Cost_Time_Extension__c</fieldItem>
-                <identifier>RecordNo_Cost_Time_Extension_cField2</identifier>
                 <fieldItem>Record.Indefinite_Open__c</fieldItem>
                 <identifier>RecordIndefinite_Open_cField</identifier>
             </fieldInstance>
