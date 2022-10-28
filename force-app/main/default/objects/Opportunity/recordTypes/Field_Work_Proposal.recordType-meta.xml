@@ -3,6 +3,7 @@
     <fullName>Field_Work_Proposal</fullName>
     <active>true</active>
     <businessProcess>DOE Direct</businessProcess>
+    <compactLayoutAssignment>Proposal_Compact_View</compactLayoutAssignment>
     <description>Department of Energy Direct - Field Work Proposal</description>
     <label>Field Work Proposal</label>
     <picklistValues>
