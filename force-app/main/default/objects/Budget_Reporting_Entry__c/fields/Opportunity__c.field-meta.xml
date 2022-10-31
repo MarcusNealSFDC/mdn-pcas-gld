@@ -3,7 +3,7 @@
     <fullName>Opportunity__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Opportunity #</label>
+    <label>Proposal #</label>
     <referenceTo>Opportunity</referenceTo>
     <relationshipLabel>Budget &amp; Reporting Entries</relationshipLabel>
     <relationshipName>Budget_Reporting_Entries</relationshipName>

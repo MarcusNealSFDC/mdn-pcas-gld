@@ -3,7 +3,7 @@
     <fullName>SIPP</fullName>
     <active>true</active>
     <businessProcess>Non-DOE Sales Process</businessProcess>
-    <compactLayoutAssignment>Proposal_Compact_View</compactLayoutAssignment>
+    <compactLayoutAssignment>Non_DOE_Compact_Layout</compactLayoutAssignment>
     <description>Strategic Intelligence Partnership Project</description>
     <label>SIPP</label>
     <picklistValues>

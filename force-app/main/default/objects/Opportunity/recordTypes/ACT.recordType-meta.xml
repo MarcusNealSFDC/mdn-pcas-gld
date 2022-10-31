@@ -3,7 +3,7 @@
     <fullName>ACT</fullName>
     <active>true</active>
     <businessProcess>Non-DOE Sales Process</businessProcess>
-    <compactLayoutAssignment>Proposal_Compact_View</compactLayoutAssignment>
+    <compactLayoutAssignment>Non_DOE_Compact_Layout</compactLayoutAssignment>
     <description>Agreements for Commercializing Technology</description>
     <label>ACT</label>
     <picklistValues>

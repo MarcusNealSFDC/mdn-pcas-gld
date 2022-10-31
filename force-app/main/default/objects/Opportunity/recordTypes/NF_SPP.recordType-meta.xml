@@ -3,7 +3,7 @@
     <fullName>NF_SPP</fullName>
     <active>true</active>
     <businessProcess>Non-DOE Sales Process</businessProcess>
-    <compactLayoutAssignment>Proposal_Compact_View</compactLayoutAssignment>
+    <compactLayoutAssignment>Non_DOE_Compact_Layout</compactLayoutAssignment>
     <description>Non-Federal Strategic Partnership Projects</description>
     <label>NF-SPP</label>
     <picklistValues>
