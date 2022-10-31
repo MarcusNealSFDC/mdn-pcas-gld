@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legacy_Client_Code__c</fullName>
+    <description>As an Admin, I need to have a field to store client codes from legacy systems so that we are accurately tracking historical information.</description>
+    <externalId>true</externalId>
+    <label>Legacy Client Code</label>
+    <length>4</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

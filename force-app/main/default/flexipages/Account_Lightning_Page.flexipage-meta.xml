@@ -82,6 +82,16 @@
                 <identifier>RecordOPI_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Legacy_Client_Code__c</fieldItem>
+                <identifier>RecordLegacy_Client_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-075632a0-e6dc-4db7-be97-006bbde2e57c</name>
         <type>Facet</type>
     </flexiPageRegions>
