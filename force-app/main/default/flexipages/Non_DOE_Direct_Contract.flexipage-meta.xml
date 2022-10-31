@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Non-DOE Contracts</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
@@ -161,6 +162,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Budget_Reporting_Code2__c</fieldItem>
                 <identifier>RecordBudget_Reporting_Code2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Billing_Code__c</fieldItem>
+                <identifier>RecordBilling_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
