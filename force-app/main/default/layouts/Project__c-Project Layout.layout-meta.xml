@@ -57,10 +57,6 @@
                 <behavior>Readonly</behavior>
                 <field>Project_Manager2__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Project_Title2__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -97,6 +93,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Revision_Number__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Project_Title2__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -192,6 +192,10 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Opportunity.Proposal_Number__c</fields>
+        <fields>Fund_Code__c</fields>
+        <fields>FY_Authorized_Amount__c</fields>
+        <fields>Fee_Amount__c</fields>
         <relatedList>PNNL_Contracts__c.Project__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -226,7 +230,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000tBZH</masterLabel>
+        <masterLabel>00h3R000000tXI3</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

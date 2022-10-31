@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Project Page</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
@@ -48,8 +49,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Scope_Num__c</fieldItem>
-                <identifier>RecordScope_Num_cField</identifier>
+                <fieldItem>Record.Project_Title2__c</fieldItem>
+                <identifier>RecordProject_Title2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -58,8 +59,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Title2__c</fieldItem>
-                <identifier>RecordProject_Title2_cField</identifier>
+                <fieldItem>Record.Budget_Year__c</fieldItem>
+                <identifier>RecordBudget_Year_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-926beea1-b664-4f61-a64d-f80a15a0ec13</name>

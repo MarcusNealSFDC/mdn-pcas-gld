@@ -67,24 +67,14 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.FAC__c</fieldItem>
-                <identifier>RecordFAC_cField</identifier>
+                <fieldItem>Record.MSW__c</fieldItem>
+                <identifier>RecordMSW_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-22e170f9-2a8f-4231-9f12-fd53050d4fa1</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Scope__c</fieldItem>
-                <identifier>RecordScope_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -113,6 +103,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.SPP_Code__c</fieldItem>
                 <identifier>RecordSPP_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.FAC__c</fieldItem>
+                <identifier>RecordFAC_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-95759a73-4880-4852-a86d-5e9995273798</name>
