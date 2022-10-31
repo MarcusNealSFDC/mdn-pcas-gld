@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Federal Strategic Partnership Projects</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
@@ -506,6 +507,16 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.No_Cost_Time_Extension__c</fieldItem>
+                <identifier>RecordNo_Cost_Time_Extension_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-72e2e6ff-80bc-4766-8a60-c43902f30e37</name>
         <type>Facet</type>
     </flexiPageRegions>

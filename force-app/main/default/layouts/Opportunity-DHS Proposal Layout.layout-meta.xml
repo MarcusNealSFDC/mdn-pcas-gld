@@ -153,7 +153,15 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Indefinite_Open__c</field>
-        </layoutItems>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Amendments_Total__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Unsold_Amount__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -478,13 +486,15 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Funding_Amount__c</fields>
+        <fields>Funds_Recieved__c</fields>
         <relatedList>Budget_Reporting_Entry__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Project_Title__c</fields>
+        <fields>Project_Title2__c</fields>
         <fields>Market_Sector__c</fields>
-        <fields>Project_Manager__c</fields>
+        <fields>Project_Manager2__c</fields>
         <relatedList>Project__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -493,6 +503,15 @@
         <fields>Effective_Date__c</fields>
         <fields>Authorized_Amount__c</fields>
         <relatedList>PNNL_Contracts__c.Proposal__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Action_Type__c</fields>
+        <fields>Funding_Agreement_Date__c</fields>
+        <fields>Funds_Received_Date__c</fields>
+        <fields>FAC_Amount__c</fields>
+        <fields>Amendment_Authorized_Amount__c</fields>
+        <relatedList>Funding_Action__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -525,7 +544,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-    <masterLabel>00h3S000000gr3K</masterLabel>
+        <masterLabel>00h3R000000tXI7</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

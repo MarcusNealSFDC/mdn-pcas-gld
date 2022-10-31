@@ -52,7 +52,7 @@
     <assignments>
         <name>assign_CRADA</name>
         <label>CRADA</label>
-        <locationX>415</locationX>
+        <locationX>414</locationX>
         <locationY>172</locationY>
         <assignmentItems>
             <assignToReference>CRADA_Attachment.CRADA__c</assignToReference>
@@ -62,24 +62,15 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>screen_Pick_Funding_and_Attachment_Type</targetReference>
+            <targetReference>screen_Pick_Attachment_Type</targetReference>
         </connector>
     </assignments>
+    <description>This flow was copied from Upload Opportunity Attachment and altered to fit the use case.</description>
     <environments>Default</environments>
     <formulas>
         <name>formula_CRADA_Attachment_Name</name>
         <dataType>String</dataType>
         <expression>TEXT({!CRADA_Attachment.Attachment_Type__c})</expression>
-    </formulas>
-    <formulas>
-        <name>formula_Opportunity_Attachment_Name</name>
-        <dataType>String</dataType>
-        <expression>TEXT({!opportunity_Attachment.Funding_Type__c}) + &quot; : &quot; + TEXT({!opportunity_Attachment.Attachment_Type__c})</expression>
-    </formulas>
-    <formulas>
-        <name>formula_record_type_name</name>
-        <dataType>String</dataType>
-        <expression>{!opportunity_record.RecordType.Name}</expression>
     </formulas>
     <interviewLabel>Upload CRADA Attachment {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Upload CRADA Attachment</label>
@@ -166,8 +157,8 @@
         <showHeader>true</showHeader>
     </screens>
     <screens>
-        <name>screen_Pick_Funding_and_Attachment_Type</name>
-        <label>Pick Funding and Attachment Type</label>
+        <name>screen_Pick_Attachment_Type</name>
+        <label>Pick Attachment Type</label>
         <locationX>563</locationX>
         <locationY>172</locationY>
         <allowBack>true</allowBack>
@@ -176,6 +167,21 @@
         <connector>
             <targetReference>assign_Attachment_Name</targetReference>
         </connector>
+        <fields>
+            <name>displayAttachmentId</name>
+            <fieldText>&lt;p&gt;CRADA Id: {!CRADA_Record.Id}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>CRADA_Record.Id</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue></stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
         <fields>
             <fieldType>ObjectProvided</fieldType>
             <isRequired>false</isRequired>
@@ -187,7 +193,7 @@
     <screens>
         <name>Screen_with_File_Upload_Component</name>
         <label>Screen with File Upload</label>
-        <locationX>561</locationX>
+        <locationX>560</locationX>
         <locationY>335</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -197,7 +203,7 @@
         </connector>
         <fields>
             <name>display_Sponsor_and_Attachment_Type</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;CRADA Record Type Name: {!formula_record_type_name}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Attachment Type: &lt;/p&gt;&lt;p&gt;{!CRADA_Attachment.Attachment_Type__c}&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;Attachment Type:&lt;/p&gt;&lt;p&gt;{!CRADA_Attachment.Attachment_Type__c}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -237,7 +243,7 @@
             <inputParameters>
                 <name>recordId</name>
                 <value>
-                    <elementReference>opportunity_Attachment.Id</elementReference>
+                    <elementReference>CRADA_Attachment.Id</elementReference>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -318,22 +324,6 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <objectType>OpportunityLineItem</objectType>
-    </variables>
-    <variables>
-        <name>opportunity_Attachment</name>
-        <dataType>SObject</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>Opportunity_Attachment__c</objectType>
-    </variables>
-    <variables>
-        <name>opportunity_record</name>
-        <dataType>SObject</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-        <objectType>Opportunity</objectType>
     </variables>
     <variables>
         <description>To store the Parent object Record Id to which we need to upload the file.</description>

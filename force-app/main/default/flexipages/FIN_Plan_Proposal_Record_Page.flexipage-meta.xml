@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>FIN Plan Proposals</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
@@ -272,6 +273,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Technical_Rep2__c</fieldItem>
                 <identifier>RecordPNSO_Technical_Rep_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Contracting_Officer2__c</fieldItem>
+                <identifier>RecordPNSO_Contracting_Officer2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

@@ -43,6 +43,14 @@
                 <behavior>Edit</behavior>
                 <field>Indefinite_Open__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Amendments_Total__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Unsold_Amount__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
@@ -182,23 +190,52 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>WAS_Number__c</fields>
+        <fields>Project_Number__c</fields>
+        <fields>Funding_Amount__c</fields>
+        <fields>Funding_Received__c</fields>
+        <fields>Revision_Number__c</fields>
+        <fields>Proposed_Amendment__c</fields>
         <relatedList>Funding_Agreement__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Funding_Amount__c</fields>
+        <fields>Funds_Recieved__c</fields>
         <relatedList>Budget_Reporting_Entry__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Project_Title2__c</fields>
+        <fields>Budget_Year__c</fields>
+        <fields>Effective_Date__c</fields>
+        <fields>Inactive_Date__c</fields>
+        <fields>Revision_Number__c</fields>
         <relatedList>Project__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Contract__c</fields>
+        <fields>Billing_Code__c</fields>
+        <fields>Contract_Client__c</fields>
+        <fields>Funding_Client__c</fields>
+        <fields>Authorized_Amount__c</fields>
         <relatedList>PNNL_Contracts__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Amendment_Authorized_Amount__c</fields>
+        <fields>Amendment_Fee_Amount__c</fields>
         <relatedList>Proposed_Amendment__c.Proposal__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Action_Type__c</fields>
+        <fields>Funding_Agreement_Date__c</fields>
+        <fields>Funds_Received_Date__c</fields>
+        <fields>FAC_Amount__c</fields>
+        <fields>Amendment_Authorized_Amount__c</fields>
+        <relatedList>Funding_Action__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -219,7 +256,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3S000000gr3J</masterLabel>
+        <masterLabel>00h3R000000tXI6</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
