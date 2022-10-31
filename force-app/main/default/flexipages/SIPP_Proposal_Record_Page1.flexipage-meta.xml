@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Strategic Intelligence Partnership Project</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
@@ -294,6 +295,36 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Project_Manager__c</fieldItem>
+                <identifier>RecordProject_Manager_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Contract_Specialist2__c</fieldItem>
+                <identifier>RecordContract_Specialist2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Technical_Rep2__c</fieldItem>
+                <identifier>RecordPNSO_Technical_Rep2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-22c168a8-d4e1-4315-bcce-79b3c084f0bb</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -1231,6 +1262,56 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Project_Specialist__c</fieldItem>
+                <identifier>RecordProject_Specialist_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Contract_Specialist2__c</fieldItem>
+                <identifier>RecordContract_Specialist2_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.SPP_Office_Reviewer2__c</fieldItem>
+                <identifier>RecordSPP_Office_Reviewer2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Technical_Rep2__c</fieldItem>
+                <identifier>RecordPNSO_Technical_Rep2_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.DOE_Site_Office_Approver2__c</fieldItem>
+                <identifier>RecordDOE_Site_Office_Approver2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-98b42027-a3f6-4df9-9f38-9a8a23db927f</name>
         <type>Facet</type>
     </flexiPageRegions>
