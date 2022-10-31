@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOW_Required</fullName>
+    <active>true</active>
+    <description>Validation rule where the Stage cannot move out of Proposal Draft If a Statement of Work is not attached or  No Cost Time Extension is No.</description>
+    <errorConditionFormula>(of_SOW_Attachments__c  ==0)&amp;&amp;
+(ISPICKVAL(StageName,&quot;Proposal Draft&quot;))</errorConditionFormula>
+    <errorMessage>Please ensure that a Statement of Work is attached</errorMessage>
+</ValidationRule>
