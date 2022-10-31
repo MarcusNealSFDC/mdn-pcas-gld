@@ -45,10 +45,12 @@ jobs:
       - name: 'Populate auth file with SFDX_URL secret'
         run: |
           echo "${{ secrets.SALESFORCE_AUTHURL_DEV }}" > SFDX_AUTHURL
+          echo "${{ secrets.SALESFORCE_AUTHURL_DEVHUB }}" > SFDX_AUTHURL_DEVHUB
       
       - name: Authenticate Salesforce Org
         run: |
           node_modules/sfdx-cli/bin/run force:auth:sfdxurl:store -f SFDX_AUTHURL -s -a ${{ env.ORG_NAME }}
+          node_modules/sfdx-cli/bin/run force:auth:sfdxurl:store -f SFDX_AUTHURL_DEVHUB -s -a devhub
 
       - name: Deploy source
         id: Deploy
@@ -62,10 +64,19 @@ jobs:
         run:
           node_modules/sfdx-cli/bin/run force:source:deploy -c -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal | tee results.txt
 
-      # - name: Run Apex test
-      #   run: 
-      #     node_modules/sfdx-cli/bin/run force:apex:test:run --resultformat tap --codecoverage -r human -l RunLocalTests -u PNNLDev | tee results.txt
-          
+      - name: Run Apex test
+        id: UnitTests
+        if: github.event_name == 'pull_request'
+        run: 
+          node_modules/sfdx-cli/bin/run force:apex:test:run --resultformat tap --codecoverage -r human -l RunLocalTests -u ${{ env.ORG_NAME }} | tee -a results.txt
+
+      - name: Check Scratch Org Push
+        id: ScratchOrgCreate
+        if: github.event_name == 'pull_request'
+        run: |
+          node_modules/sfdx-cli/bin/run force:org:create -a PkgScratch -s -f config/project-scratch-def.json -v devhub
+          node_modules/sfdx-cli/bin/run force:source:push -f -u PkgScratch
+
       - name: Collect Results
         id: collect-results
         if: github.event_name == 'pull_request' 
@@ -100,6 +111,12 @@ jobs:
               repo: context.repo.repo,
               body: output
             })
+
+      - name: Delete Scratch Org
+        id: ScratchOrgDelete
+        if: ${{ always() && github.event_name == 'pull_request' }} 
+        run: |
+          node_modules/sfdx-cli/bin/run force:org:delete -u PkgScratch -p
     
   # QADeploy:
   #   name: Call QA Deploy
