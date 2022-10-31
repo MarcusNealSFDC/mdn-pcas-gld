@@ -471,6 +471,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Funding_Action__c.Acceptance_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
