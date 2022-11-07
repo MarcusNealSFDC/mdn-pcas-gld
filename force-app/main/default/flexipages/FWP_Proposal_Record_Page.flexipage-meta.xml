@@ -1092,16 +1092,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Project_Coordinator__c</fieldItem>
-                <identifier>RecordProject_Coordinator_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-96083644-060d-4b53-b685-bbbb57e3d550</name>
         <type>Facet</type>
     </flexiPageRegions>
