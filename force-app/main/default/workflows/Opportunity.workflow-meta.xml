@@ -5,15 +5,38 @@
         <description>PNSO Approval of FIN Plan Proposal</description>
         <protected>false</protected>
         <recipients>
-            <field>Project_Coordinator__c</field>
-            <type>contactLookup</type>
+            <field>Contract_Specialist2__c</field>
+            <type>userLookup</type>
         </recipients>
         <recipients>
-            <field>Project_Manager__c</field>
-            <type>contactLookup</type>
+            <field>Project_Coordinators__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Project_Manager3__c</field>
+            <type>userLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>PCAS_1830_Work_Authorization/PCAS_1830_Work_Authorization_Action_Required_from_PNNL_Budget_Office</template>
+    </alerts>
+    <alerts>
+        <fullName>PNSO_Approval_of_SPP_Proposal</fullName>
+        <description>PNSO Approval of SPP  Proposal</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contract_Specialist2__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Project_Coordinators__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Project_Manager3__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Proposal_Approval_Email</template>
     </alerts>
     <fieldUpdates>
         <fullName>PNSO_Contracting_Officer_Approves</fullName>
@@ -36,10 +59,50 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Update_Field_to_Proposal_Prep</fullName>
+        <field>StageName</field>
+        <literalValue>Proposal Preparation</literalValue>
+        <name>Update Field to Proposal Prep</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_to_PNSO_Tech_Rep_Stage</fullName>
         <field>StageName</field>
         <literalValue>Work Authorization Approval: PNSO Technical Rep</literalValue>
         <name>Update to PNSO Tech Rep Stage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_to_Proposal_Pendinf</fullName>
+        <field>StageName</field>
+        <literalValue>Proposal Pending</literalValue>
+        <name>Update to Proposal Pendinf</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_to_Proposal_Prep</fullName>
+        <field>StageName</field>
+        <literalValue>Proposal Preparation</literalValue>
+        <name>Update to Proposal Prep</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_to_Proposal_Submitted</fullName>
+        <field>StageName</field>
+        <literalValue>Proposal Submitted</literalValue>
+        <name>Update to Proposal Submitted</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>

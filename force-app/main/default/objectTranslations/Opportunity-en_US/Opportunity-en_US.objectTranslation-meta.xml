@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Proposal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Proposals</value>
+    </caseValues>
+    <layouts>
+        <layout>ACT Proposal</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DHS Proposal Layout</layout>
+        <sections>
+            <label></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope Statement</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DOE Direct Proposal Layout</layout>
+        <sections>
+            <label></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope Statement</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IWO Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope Statement</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NF-SPP Proposal Layout</layout>
+        <sections>
+            <label></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope Statement</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NIC-RW Proposal Layout</layout>
+        <sections>
+            <label></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope Statement</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPP Proposal Layout</layout>
+        <sections>
+            <label></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope Statement</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Add_Attachment</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Create_a_Project</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Send_Cost_Sheet</name>
+    </quickActions>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>ACT</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>DHS</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FIN_Plan_Proposal</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>F_SPP</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Field_Work_Proposal</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>IWO</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>NF_SPP</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>NIC_RW</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>SIPP</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>EMSL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PNSO_Animal_Researcher</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>SOW_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>When_FFRDC_is_True</name>
+    </validationRules>
+</CustomObjectTranslation>

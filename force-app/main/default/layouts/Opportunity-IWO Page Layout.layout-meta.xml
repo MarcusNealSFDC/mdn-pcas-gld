@@ -47,10 +47,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Project_Coordinator__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Proposed_Amount__c</field>
             </layoutItems>
             <layoutItems>
@@ -135,10 +131,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Project_Specialist__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>PNSO_Animal_Research_Required__c</field>
             </layoutItems>
             <layoutItems>
@@ -152,6 +144,22 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Unsold_Amount__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Project_Coordinators__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Work_Location__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CRADA_Count__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Is_CRADA__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -389,6 +397,13 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>CRADA_Type__c</fields>
+        <fields>CRADA_Title__c</fields>
+        <fields>CRADA_Status__c</fields>
+        <relatedList>CRADA__c.Proposal__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
         <fields>Amendment_Authorized_Amount__c</fields>
         <fields>Amendment_Fee_Amount__c</fields>
         <relatedList>Proposed_Amendment__c.Proposal__c</relatedList>
@@ -402,24 +417,6 @@
         <fields>Amendment_Authorized_Amount__c</fields>
         <relatedList>Funding_Action__c.Proposal__c</relatedList>
     </relatedLists>
-    <relatedLists>
-        <excludeButtons>MassChangeOwner</excludeButtons>
-        <excludeButtons>New</excludeButtons>
-        <fields>NAME</fields>
-        <fields>view_doc__c</fields>
-        <fields>Attachment_Type__c</fields>
-        <fields>Funding_Type__c</fields>
-        <fields>CREATEDBY_USER</fields>
-        <relatedList>Opportunity_Attachment__c.Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>CreatedDate</fields>
-        <fields>StepStatus</fields>
-        <fields>OriginalActor</fields>
-        <fields>Actor</fields>
-        <fields>Comments</fields>
-        <relatedList>RelatedProcessHistoryList</relatedList>
-    </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>
@@ -427,7 +424,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000tXIE</masterLabel>
+        <masterLabel>00h3R000000tvbc</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

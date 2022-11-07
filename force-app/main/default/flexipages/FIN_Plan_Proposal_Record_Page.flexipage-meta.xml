@@ -261,16 +261,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Manager__c</fieldItem>
-                <identifier>RecordProject_Manager_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Technical_Rep2__c</fieldItem>
                 <identifier>RecordPNSO_Technical_Rep_cField</identifier>
             </fieldInstance>
