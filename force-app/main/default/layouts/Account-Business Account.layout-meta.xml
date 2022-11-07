@@ -26,6 +26,10 @@
                 <behavior>Edit</behavior>
                 <field>Street__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Legacy_Client_Code__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
