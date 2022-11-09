@@ -1,0 +1,45 @@
+{
+  "appPageId" : "b9d0e337-f366-46d0-8399-cb788b975a83",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "0d230c65-d6f9-4c8d-a3e9-8f1ffc21f0a3",
+  "label" : "Opportunity List",
+  "regions" : [ {
+    "id" : "74a7d4e4-5a94-4e57-a0b9-881c14793561",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "{!filterId}",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "{!objectName}",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "7615327e-7cef-44f3-aee7-25469667d09d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "30cb4fba-32fe-405f-ae02-2bbe3374b739",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "09d9f31e-fc13-4199-81c4-0891d76b7cfa",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-006"
+}

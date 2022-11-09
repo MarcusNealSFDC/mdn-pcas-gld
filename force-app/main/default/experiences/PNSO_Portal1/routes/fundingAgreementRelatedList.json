@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "28698802-ea6e-4c20-aede-6964956675f2",
+  "appPageId" : "b9d0e337-f366-46d0-8399-cb788b975a83",
+  "configurationTags" : [ ],
+  "id" : "c674db87-ac8b-4e25-9c9d-829a51a5ca94",
+  "label" : "Funding Agreement Related List",
+  "objectApiName" : "Funding_Agreement__c",
+  "routeType" : "relatedlist-a03",
+  "type" : "route",
+  "urlPrefix" : "funding-agreement"
+}

@@ -1,0 +1,64 @@
+{
+  "appPageId" : "b9d0e337-f366-46d0-8399-cb788b975a83",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "4c62bd79-71c1-48f5-ad4e-c7cf77eb0a4e",
+  "label" : "Funding Agreement Detail",
+  "regions" : [ {
+    "id" : "5c0645c0-0819-4aa5-938a-ccab06785bc5",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "5c2b2af4-2530-48b6-807a-3bdee9730758",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "detailsTabLabel" : "Details",
+        "discussionsTabLabel" : "Feed",
+        "recordId" : "{!recordId}",
+        "relatedTabLabel" : "Related",
+        "tab1Type" : "details",
+        "tab2Type" : "timeline",
+        "tab3Type" : "chatter",
+        "tab4Type" : "related",
+        "timelineTabLabel" : "Activity"
+      },
+      "componentName" : "forceCommunity:recordHomeTabs",
+      "id" : "033ef327-b55d-4ad8-ae54-c6554ff72c09",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a266bf5f-219e-479c-9537-1d1b1cf0f663",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "fb0089a4-6964-499b-863b-a0bc3ba7374f",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d6eb0d15-f4a9-4576-bd86-ee0242f3ee4c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2e3093f0-be83-4f5a-aa8e-7d97a0520f91",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a03"
+}

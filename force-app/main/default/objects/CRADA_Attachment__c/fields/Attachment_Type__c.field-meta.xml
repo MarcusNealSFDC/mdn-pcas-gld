@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attachment_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Attachment Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Appendix A</fullName>
+                <default>false</default>
+                <label>Appendix A</label>
+            </value>
+            <value>
+                <fullName>Appendix B</fullName>
+                <default>false</default>
+                <label>Appendix B</label>
+            </value>
+            <value>
+                <fullName>Appendix C</fullName>
+                <default>false</default>
+                <label>Appendix C</label>
+            </value>
+            <value>
+                <fullName>Appendix D</fullName>
+                <default>false</default>
+                <label>Appendix D</label>
+            </value>
+            <value>
+                <fullName>Appendix E</fullName>
+                <default>false</default>
+                <label>Appendix E</label>
+            </value>
+            <value>
+                <fullName>Conflict of Interest Form</fullName>
+                <default>false</default>
+                <label>Conflict of Interest Form</label>
+            </value>
+            <value>
+                <fullName>CRADA Agreement</fullName>
+                <default>false</default>
+                <label>CRADA Agreement</label>
+            </value>
+            <value>
+                <fullName>CRADA Agreement Amendment</fullName>
+                <default>false</default>
+                <label>CRADA Agreement Amendment</label>
+            </value>
+            <value>
+                <fullName>CRADA Agreement Fully Executed</fullName>
+                <default>false</default>
+                <label>CRADA Agreement Fully Executed</label>
+            </value>
+            <value>
+                <fullName>HQ Foreign Approval</fullName>
+                <default>false</default>
+                <label>HQ Foreign Approval</label>
+            </value>
+            <value>
+                <fullName>Joint Work Statement</fullName>
+                <default>false</default>
+                <label>Joint Work Statement</label>
+            </value>
+            <value>
+                <fullName>OSTI Final Report and Confirmation</fullName>
+                <default>false</default>
+                <label>OSTI Final Report and Confirmation</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PSO Foreign Approval</fullName>
+                <default>false</default>
+                <label>PSO Foreign Approval</label>
+            </value>
+            <value>
+                <fullName>SC Analysis Worksheet</fullName>
+                <default>false</default>
+                <label>SC Analysis Worksheet</label>
+            </value>
+            <value>
+                <fullName>SC Foreign Approval</fullName>
+                <default>false</default>
+                <label>SC Foreign Approval</label>
+            </value>
+            <value>
+                <fullName>Sponsor Registration Form</fullName>
+                <default>false</default>
+                <label>Sponsor Registration Form</label>
+            </value>
+            <value>
+                <fullName>WAS Document</fullName>
+                <default>false</default>
+                <label>WAS Document</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

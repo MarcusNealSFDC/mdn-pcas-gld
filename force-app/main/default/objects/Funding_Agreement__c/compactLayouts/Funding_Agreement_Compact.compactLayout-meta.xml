@@ -5,6 +5,7 @@
     <fields>Previous_Amount__c</fields>
     <fields>Change_Amount__c</fields>
     <fields>Revised_Amount__c</fields>
-    <fields>Revision_Number__c</fields>
+    <fields>PNNL_Sign_Date__c</fields>
+    <fields>PNSO_Sign_Date__c</fields>
     <label>Funding Agreement Compact</label>
 </CompactLayout>

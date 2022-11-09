@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Rich Adams</fullName>
+        <default>false</default>
+        <label>Rich Adams</label>
+    </customValue>
+    <customValue>
+        <fullName>Air Force</fullName>
+        <default>false</default>
+        <label>Air Force</label>
+    </customValue>
+    <customValue>
+        <fullName>AF Air Combat Command</fullName>
+        <default>false</default>
+        <label>AF Air Combat Command</label>
+    </customValue>
+    <customValue>
+        <fullName>AF Armstrong Labs</fullName>
+        <default>false</default>
+        <label>AF Armstrong Labs</label>
+    </customValue>
+    <customValue>
+        <fullName>Brooks AFB</fullName>
+        <default>false</default>
+        <label>Brooks AFB</label>
+    </customValue>
+    <customValue>
+        <fullName>Air Force Evolving</fullName>
+        <default>false</default>
+        <label>Air Force Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>AF Materiel Command Headquarters</fullName>
+        <default>false</default>
+        <label>AF Materiel Command Headquarters</label>
+    </customValue>
+    <customValue>
+        <fullName>AF Materiel Command</fullName>
+        <default>false</default>
+        <label>AF Materiel Command</label>
+    </customValue>
+    <customValue>
+        <fullName>AF All other AFMC</fullName>
+        <default>false</default>
+        <label>AF All other AFMC</label>
+    </customValue>
+    <customValue>
+        <fullName>AF Ogden ALC</fullName>
+        <default>false</default>
+        <label>AF Ogden ALC</label>
+    </customValue>
+    <customValue>
+        <fullName>AF Oklahoma ALC</fullName>
+        <default>false</default>
+        <label>AF Oklahoma ALC</label>
+    </customValue>
+    <customValue>
+        <fullName>AF All Other Air Force</fullName>
+        <default>false</default>
+        <label>AF All Other Air Force</label>
+    </customValue>
+    <customValue>
+        <fullName>AF Phillips Laboratory</fullName>
+        <default>false</default>
+        <label>AF Phillips Laboratory</label>
+    </customValue>
+    <customValue>
+        <fullName>AF Research Labs</fullName>
+        <default>false</default>
+        <label>AF Research Labs</label>
+    </customValue>
+    <customValue>
+        <fullName>AF Sacramento ALC</fullName>
+        <default>false</default>
+        <label>AF Sacramento ALC</label>
+    </customValue>
+    <customValue>
+        <fullName>AF Wright Labs</fullName>
+        <default>false</default>
+        <label>AF Wright Labs</label>
+    </customValue>
+    <customValue>
+        <fullName>AF Warner Robins ALC</fullName>
+        <default>false</default>
+        <label>AF Warner Robins ALC</label>
+    </customValue>
+    <customValue>
+        <fullName>Agriculture and Food</fullName>
+        <default>false</default>
+        <label>Agriculture and Food</label>
+    </customValue>
+    <customValue>
+        <fullName>AgFood</fullName>
+        <default>false</default>
+        <label>AgFood</label>
+    </customValue>
+    <customValue>
+        <fullName>APD Evolving</fullName>
+        <default>false</default>
+        <label>APD Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>Army/Marines</fullName>
+        <default>false</default>
+        <label>Army/Marines</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Materiel Command</fullName>
+        <default>false</default>
+        <label>Army Materiel Command</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Chem/BIO Defense</fullName>
+        <default>false</default>
+        <label>Army Chem/BIO Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Chem/Bio Def Command</fullName>
+        <default>false</default>
+        <label>Army Chem/Bio Def Command</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Other Chem/Bio Clients</fullName>
+        <default>false</default>
+        <label>Army Other Chem/Bio Clients</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Corps of Engineers</fullName>
+        <default>false</default>
+        <label>Army Corps of Engineers</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Chemical Weapons Demilitarization</fullName>
+        <default>false</default>
+        <label>Army Chemical Weapons Demilitarization</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Evolving</fullName>
+        <default>false</default>
+        <label>Army Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Environmental</fullName>
+        <default>false</default>
+        <label>Army Environmental</label>
+    </customValue>
+    <customValue>
+        <fullName>Marines</fullName>
+        <default>false</default>
+        <label>Marines</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Military Medicine</fullName>
+        <default>false</default>
+        <label>Army Military Medicine</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Munitions &amp; Ordnance/Active Defense</fullName>
+        <default>false</default>
+        <label>Army Munitions &amp; Ordnance/Active Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Medical Research and Materiel Command</fullName>
+        <default>false</default>
+        <label>Army Medical Research and Materiel Command</label>
+    </customValue>
+    <customValue>
+        <fullName>Army All Other</fullName>
+        <default>false</default>
+        <label>Army All Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Program Manager Chem Demil</fullName>
+        <default>false</default>
+        <label>Army Program Manager Chem Demil</label>
+    </customValue>
+    <customValue>
+        <fullName>Soldier Biological Systems Command</fullName>
+        <default>false</default>
+        <label>Soldier Biological Systems Command</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Soldier Systems Command</fullName>
+        <default>false</default>
+        <label>Army Soldier Systems Command</label>
+    </customValue>
+    <customValue>
+        <fullName>Army Training &amp; Doctrine Command</fullName>
+        <default>false</default>
+        <label>Army Training &amp; Doctrine Command</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive Products</fullName>
+        <default>false</default>
+        <label>Automotive Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Auto Evolving</fullName>
+        <default>false</default>
+        <label>Auto Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>Battelle Healthcare Products</fullName>
+        <default>false</default>
+        <label>Battelle Healthcare Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Bill Burke</fullName>
+        <default>false</default>
+        <label>Bill Burke</label>
+    </customValue>
+    <customValue>
+        <fullName>DOT California</fullName>
+        <default>false</default>
+        <label>DOT California</label>
+    </customValue>
+    <customValue>
+        <fullName>HHS Centers for Disease Control and Prevention</fullName>
+        <default>false</default>
+        <label>HHS Centers for Disease Control and Prevention</label>
+    </customValue>
+    <customValue>
+        <fullName>Dennis Cearlock</fullName>
+        <default>false</default>
+        <label>Dennis Cearlock</label>
+    </customValue>
+    <customValue>
+        <fullName>USCG Maint + Logistics</fullName>
+        <default>false</default>
+        <label>USCG Maint + Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>USCG Marine Safety</fullName>
+        <default>false</default>
+        <label>USCG Marine Safety</label>
+    </customValue>
+    <customValue>
+        <fullName>USCG Other</fullName>
+        <default>false</default>
+        <label>USCG Other</label>
+    </customValue>
+    <customValue>
+        <fullName>USCG R+D</fullName>
+        <default>false</default>
+        <label>USCG R+D</label>
+    </customValue>
+    <customValue>
+        <fullName>USCG Repair + Supply</fullName>
+        <default>false</default>
+        <label>USCG Repair + Supply</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemical Evolving</fullName>
+        <default>false</default>
+        <label>Chemical Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemical Products</fullName>
+        <default>false</default>
+        <label>Chemical Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Henry Cialone</fullName>
+        <default>false</default>
+        <label>Henry Cialone</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Durables and Building Products Rollup</fullName>
+        <default>false</default>
+        <label>Consumer Durables and Building Products Rollup</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Products</fullName>
+        <default>false</default>
+        <label>Consumer Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Products Evolving</fullName>
+        <default>false</default>
+        <label>Consumer Products Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>Chris Coburn</fullName>
+        <default>false</default>
+        <label>Chris Coburn</label>
+    </customValue>
+    <customValue>
+        <fullName>Core Technology Development</fullName>
+        <default>false</default>
+        <label>Core Technology Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Central R&amp;D Evolving</fullName>
+        <default>false</default>
+        <label>Central R&amp;D Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>Dahlgren</fullName>
+        <default>false</default>
+        <label>Dahlgren</label>
+    </customValue>
+    <customValue>
+        <fullName>Defense Advanced Research Projects Agency</fullName>
+        <default>false</default>
+        <label>Defense Advanced Research Projects Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Don McConnell - DOE</fullName>
+        <default>false</default>
+        <label>Don McConnell - DOE</label>
+    </customValue>
+    <customValue>
+        <fullName>Defense Chemical/Bio Clients</fullName>
+        <default>false</default>
+        <label>Defense Chemical/Bio Clients</label>
+    </customValue>
+    <customValue>
+        <fullName>Department of Defense</fullName>
+        <default>false</default>
+        <label>Department of Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>Defense Systems Information Agency</fullName>
+        <default>false</default>
+        <label>Defense Systems Information Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Department Of Energy</fullName>
+        <default>false</default>
+        <label>Department Of Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Office of Counter Intelligence</fullName>
+        <default>false</default>
+        <label>Office of Counter Intelligence</label>
+    </customValue>
+    <customValue>
+        <fullName>Nuclear Counterterrorism and Incident Response</fullName>
+        <default>false</default>
+        <label>Nuclear Counterterrorism and Incident Response</label>
+    </customValue>
+    <customValue>
+        <fullName>Defense Programs</fullName>
+        <default>false</default>
+        <label>Defense Programs</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Energy</fullName>
+        <default>false</default>
+        <label>Public Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Efficiency and Renewable Energy</fullName>
+        <default>false</default>
+        <label>Energy Efficiency and Renewable Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Environment, Safety and Health</fullName>
+        <default>false</default>
+        <label>Environment, Safety and Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmental Management</fullName>
+        <default>false</default>
+        <label>Environmental Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Fossil Energy</fullName>
+        <default>false</default>
+        <label>Fossil Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Office of Intelligence</fullName>
+        <default>false</default>
+        <label>Office of Intelligence</label>
+    </customValue>
+    <customValue>
+        <fullName>Materials Disposition</fullName>
+        <default>false</default>
+        <label>Materials Disposition</label>
+    </customValue>
+    <customValue>
+        <fullName>Nuclear Energy, Science and Technology</fullName>
+        <default>false</default>
+        <label>Nuclear Energy, Science and Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Defense Nuclear Nonproliferation</fullName>
+        <default>false</default>
+        <label>Defense Nuclear Nonproliferation</label>
+    </customValue>
+    <customValue>
+        <fullName>Office of Policy and Assessment</fullName>
+        <default>false</default>
+        <label>Office of Policy and Assessment</label>
+    </customValue>
+    <customValue>
+        <fullName>Other DOE</fullName>
+        <default>false</default>
+        <label>Other DOE</label>
+    </customValue>
+    <customValue>
+        <fullName>Pantex</fullName>
+        <default>false</default>
+        <label>Pantex</label>
+    </customValue>
+    <customValue>
+        <fullName>Office of Science</fullName>
+        <default>false</default>
+        <label>Office of Science</label>
+    </customValue>
+    <customValue>
+        <fullName>Office of Security and Emergency Operations</fullName>
+        <default>false</default>
+        <label>Office of Security and Emergency Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>OSD - Other Clients</fullName>
+        <default>false</default>
+        <label>OSD - Other Clients</label>
+    </customValue>
+    <customValue>
+        <fullName>Department of State</fullName>
+        <default>false</default>
+        <label>Department of State</label>
+    </customValue>
+    <customValue>
+        <fullName>Office of Secretary of Defense</fullName>
+        <default>false</default>
+        <label>Office of Secretary of Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>Department Of Transportation</fullName>
+        <default>false</default>
+        <label>Department Of Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>DOT Evolving</fullName>
+        <default>false</default>
+        <label>DOT Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>DOT Evolving Other</fullName>
+        <default>false</default>
+        <label>DOT Evolving Other</label>
+    </customValue>
+    <customValue>
+        <fullName>DOT Other</fullName>
+        <default>false</default>
+        <label>DOT Other</label>
+    </customValue>
+    <customValue>
+        <fullName>State &amp; Local DOT</fullName>
+        <default>false</default>
+        <label>State &amp; Local DOT</label>
+    </customValue>
+    <customValue>
+        <fullName>DOT Transit Authorities</fullName>
+        <default>false</default>
+        <label>DOT Transit Authorities</label>
+    </customValue>
+    <customValue>
+        <fullName>Pantex - DP</fullName>
+        <default>false</default>
+        <label>Pantex - DP</label>
+    </customValue>
+    <customValue>
+        <fullName>Pantex - EM</fullName>
+        <default>false</default>
+        <label>Pantex - EM</label>
+    </customValue>
+    <customValue>
+        <fullName>Defense Special Weapons Agency</fullName>
+        <default>false</default>
+        <label>Defense Special Weapons Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Commercial</fullName>
+        <default>false</default>
+        <label>Energy Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Evolving</fullName>
+        <default>false</default>
+        <label>Energy Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy International</fullName>
+        <default>false</default>
+        <label>Energy International</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Preferred</fullName>
+        <default>false</default>
+        <label>Energy Preferred</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Energy</fullName>
+        <default>false</default>
+        <label>Private Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Enviromental Protection Agency</fullName>
+        <default>false</default>
+        <label>Enviromental Protection Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>EPA Evolving</fullName>
+        <default>false</default>
+        <label>EPA Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>ESTD Strategic Alliance</fullName>
+        <default>false</default>
+        <label>ESTD Strategic Alliance</label>
+    </customValue>
+    <customValue>
+        <fullName>DOT FAA</fullName>
+        <default>false</default>
+        <label>DOT FAA</label>
+    </customValue>
+    <customValue>
+        <fullName>FAA Headquarters</fullName>
+        <default>false</default>
+        <label>FAA Headquarters</label>
+    </customValue>
+    <customValue>
+        <fullName>FAA Other</fullName>
+        <default>false</default>
+        <label>FAA Other</label>
+    </customValue>
+    <customValue>
+        <fullName>FAA Safety</fullName>
+        <default>false</default>
+        <label>FAA Safety</label>
+    </customValue>
+    <customValue>
+        <fullName>FAA Tech Center</fullName>
+        <default>false</default>
+        <label>FAA Tech Center</label>
+    </customValue>
+    <customValue>
+        <fullName>HHS Food and Drug Administration</fullName>
+        <default>false</default>
+        <label>HHS Food and Drug Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Federal DOT</fullName>
+        <default>false</default>
+        <label>Other Federal DOT</label>
+    </customValue>
+    <customValue>
+        <fullName>DOT FHWA</fullName>
+        <default>false</default>
+        <label>DOT FHWA</label>
+    </customValue>
+    <customValue>
+        <fullName>FHWA JPO/ITS</fullName>
+        <default>false</default>
+        <label>FHWA JPO/ITS</label>
+    </customValue>
+    <customValue>
+        <fullName>FHWA Office of Policy</fullName>
+        <default>false</default>
+        <label>FHWA Office of Policy</label>
+    </customValue>
+    <customValue>
+        <fullName>FHWA Other</fullName>
+        <default>false</default>
+        <label>FHWA Other</label>
+    </customValue>
+    <customValue>
+        <fullName>FHWA Turner Fairbanks</fullName>
+        <default>false</default>
+        <label>FHWA Turner Fairbanks</label>
+    </customValue>
+    <customValue>
+        <fullName>Fleet Command</fullName>
+        <default>false</default>
+        <label>Fleet Command</label>
+    </customValue>
+    <customValue>
+        <fullName>Greg Frank</fullName>
+        <default>false</default>
+        <label>Greg Frank</label>
+    </customValue>
+    <customValue>
+        <fullName>General Manufacturing</fullName>
+        <default>false</default>
+        <label>General Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Government Market Sectors</fullName>
+        <default>false</default>
+        <label>Government Market Sectors</label>
+    </customValue>
+    <customValue>
+        <fullName>Health and Human Services</fullName>
+        <default>false</default>
+        <label>Health and Human Services</label>
+    </customValue>
+    <customValue>
+        <fullName>HHS - Evolving</fullName>
+        <default>false</default>
+        <label>HHS - Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>HHS Other Clients</fullName>
+        <default>false</default>
+        <label>HHS Other Clients</label>
+    </customValue>
+    <customValue>
+        <fullName>International</fullName>
+        <default>false</default>
+        <label>International</label>
+    </customValue>
+    <customValue>
+        <fullName>Mike Kluse</fullName>
+        <default>false</default>
+        <label>Mike Kluse</label>
+    </customValue>
+    <customValue>
+        <fullName>Gabe Kovacs</fullName>
+        <default>false</default>
+        <label>Gabe Kovacs</label>
+    </customValue>
+    <customValue>
+        <fullName>Intelligence</fullName>
+        <default>false</default>
+        <label>Intelligence</label>
+    </customValue>
+    <customValue>
+        <fullName>Charles Lucius</fullName>
+        <default>false</default>
+        <label>Charles Lucius</label>
+    </customValue>
+    <customValue>
+        <fullName>Bill Madia</fullName>
+        <default>false</default>
+        <label>Bill Madia</label>
+    </customValue>
+    <customValue>
+        <fullName>Ben Maiden</fullName>
+        <default>false</default>
+        <label>Ben Maiden</label>
+    </customValue>
+    <customValue>
+        <fullName>Don McConnell</fullName>
+        <default>false</default>
+        <label>Don McConnell</label>
+    </customValue>
+    <customValue>
+        <fullName>Steve McLaughlin</fullName>
+        <default>false</default>
+        <label>Steve McLaughlin</label>
+    </customValue>
+    <customValue>
+        <fullName>Dave Mitchell</fullName>
+        <default>false</default>
+        <label>Dave Mitchell</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Products</fullName>
+        <default>false</default>
+        <label>Medical Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Products Evolving</fullName>
+        <default>false</default>
+        <label>Medical Products Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>NAVAIR</fullName>
+        <default>false</default>
+        <label>NAVAIR</label>
+    </customValue>
+    <customValue>
+        <fullName>NAVFAC</fullName>
+        <default>false</default>
+        <label>NAVFAC</label>
+    </customValue>
+    <customValue>
+        <fullName>Navy Office of Special Technology</fullName>
+        <default>false</default>
+        <label>Navy Office of Special Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Navy All Other</fullName>
+        <default>false</default>
+        <label>Navy All Other</label>
+    </customValue>
+    <customValue>
+        <fullName>National Aeronautics and Space Administration</fullName>
+        <default>false</default>
+        <label>National Aeronautics and Space Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>NASA Evolving</fullName>
+        <default>false</default>
+        <label>NASA Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>NAVSEA</fullName>
+        <default>false</default>
+        <label>NAVSEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Navy</fullName>
+        <default>false</default>
+        <label>Navy</label>
+    </customValue>
+    <customValue>
+        <fullName>Navy Evolving</fullName>
+        <default>false</default>
+        <label>Navy Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>HHS NIH National Cancer Institute</fullName>
+        <default>false</default>
+        <label>HHS NIH National Cancer Institute</label>
+    </customValue>
+    <customValue>
+        <fullName>NAFAC Environmental</fullName>
+        <default>false</default>
+        <label>NAFAC Environmental</label>
+    </customValue>
+    <customValue>
+        <fullName>HHS NIH National Institute of Environmental Health Sciences</fullName>
+        <default>false</default>
+        <label>HHS NIH National Institute of Environmental Health Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>HHS Other National Institute of Health Institutes</fullName>
+        <default>false</default>
+        <label>HHS Other National Institute of Health Institutes</label>
+    </customValue>
+    <customValue>
+        <fullName>Nuclear Regulatory Commission</fullName>
+        <default>false</default>
+        <label>Nuclear Regulatory Commission</label>
+    </customValue>
+    <customValue>
+        <fullName>OCEO Super Sector</fullName>
+        <default>false</default>
+        <label>OCEO Super Sector</label>
+    </customValue>
+    <customValue>
+        <fullName>OCEO Evolving</fullName>
+        <default>false</default>
+        <label>OCEO Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>Office of Naval Research</fullName>
+        <default>false</default>
+        <label>Office of Naval Research</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Clients</fullName>
+        <default>false</default>
+        <label>Other Clients</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Government</fullName>
+        <default>false</default>
+        <label>Other Government</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Industrial</fullName>
+        <default>false</default>
+        <label>Other Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Unassigned</fullName>
+        <default>false</default>
+        <label>Other Unassigned</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmaceutical</fullName>
+        <default>false</default>
+        <label>Pharmaceutical</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmaceuticals - Evolving</fullName>
+        <default>false</default>
+        <label>Pharmaceuticals - Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>Pipeline Business</fullName>
+        <default>false</default>
+        <label>Pipeline Business</label>
+    </customValue>
+    <customValue>
+        <fullName>DOE Evolving</fullName>
+        <default>false</default>
+        <label>DOE Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>PPD Evolving</fullName>
+        <default>false</default>
+        <label>PPD Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>PPD Evolving - Commercial</fullName>
+        <default>false</default>
+        <label>PPD Evolving - Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>PPD Evolving - Government</fullName>
+        <default>false</default>
+        <label>PPD Evolving - Government</label>
+    </customValue>
+    <customValue>
+        <fullName>PPD Evolving - International</fullName>
+        <default>false</default>
+        <label>PPD Evolving - International</label>
+    </customValue>
+    <customValue>
+        <fullName>PPD Evolving - Other</fullName>
+        <default>false</default>
+        <label>PPD Evolving - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>PPD Evolving - SLGOV</fullName>
+        <default>false</default>
+        <label>PPD Evolving - SLGOV</label>
+    </customValue>
+    <customValue>
+        <fullName>Rich Rosen</fullName>
+        <default>false</default>
+        <label>Rich Rosen</label>
+    </customValue>
+    <customValue>
+        <fullName>RX</fullName>
+        <default>false</default>
+        <label>RX</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmental Technology</fullName>
+        <default>false</default>
+        <label>Environmental Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>State and Local Government</fullName>
+        <default>false</default>
+        <label>State and Local Government</label>
+    </customValue>
+    <customValue>
+        <fullName>Special Programs</fullName>
+        <default>false</default>
+        <label>Special Programs</label>
+    </customValue>
+    <customValue>
+        <fullName>Special Programs Evolving</fullName>
+        <default>false</default>
+        <label>Special Programs Evolving</label>
+    </customValue>
+    <customValue>
+        <fullName>Corazon Steginsky</fullName>
+        <default>false</default>
+        <label>Corazon Steginsky</label>
+    </customValue>
+    <customValue>
+        <fullName>Special Technologies Program Office</fullName>
+        <default>false</default>
+        <label>Special Technologies Program Office</label>
+    </customValue>
+    <customValue>
+        <fullName>Tobacco Industries</fullName>
+        <default>false</default>
+        <label>Tobacco Industries</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation</fullName>
+        <default>false</default>
+        <label>Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>DOT USCG</fullName>
+        <default>false</default>
+        <label>DOT USCG</label>
+    </customValue>
+    <customValue>
+        <fullName>Volpe Coast Guard</fullName>
+        <default>false</default>
+        <label>Volpe Coast Guard</label>
+    </customValue>
+    <customValue>
+        <fullName>Volpe FAA</fullName>
+        <default>false</default>
+        <label>Volpe FAA</label>
+    </customValue>
+    <customValue>
+        <fullName>Volpe Onsite</fullName>
+        <default>false</default>
+        <label>Volpe Onsite</label>
+    </customValue>
+    <customValue>
+        <fullName>Volpe Other</fullName>
+        <default>false</default>
+        <label>Volpe Other</label>
+    </customValue>
+    <customValue>
+        <fullName>DOT Volpe</fullName>
+        <default>false</default>
+        <label>DOT Volpe</label>
+    </customValue>
+    <masterLabel>Market Sector Title</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
