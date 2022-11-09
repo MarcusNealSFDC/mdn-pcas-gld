@@ -92,6 +92,7 @@
                 <showRange>false</showRange>
                 <showTotal>true</showTotal>
                 <showValues>false</showValues>
+                <title>All pending approvals assigned to me</title>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>8</rowSpan>
@@ -112,7 +113,7 @@
                 <gaugeMax>96.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
                 <groupingSortProperties/>
-                <header>All Proposal Approvals</header>
+                <header>All Pending Proposal Approvals</header>
                 <indicatorBreakpoint1>48.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>72.0</indicatorBreakpoint2>
                 <indicatorHighColor>#C23934</indicatorHighColor>
@@ -123,6 +124,7 @@
                 <showRange>false</showRange>
                 <showTotal>true</showTotal>
                 <showValues>false</showValues>
+                <title>All outstanding proposal approvals</title>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>8</rowSpan>
@@ -201,7 +203,7 @@
                     <column>ProcessInstance$ElapsedTimeInHours</column>
                 </chartSummary>
                 <componentType>Gauge</componentType>
-                <decimalPrecision>0</decimalPrecision>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <gaugeMax>96.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
@@ -217,6 +219,7 @@
                 <showRange>false</showRange>
                 <showTotal>true</showTotal>
                 <showValues>false</showValues>
+                <title>Pending FA approvals assigned to me</title>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
             <rowSpan>8</rowSpan>

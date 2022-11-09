@@ -20,6 +20,10 @@
         <field>ProcessInstance$ElapsedTimeInHours</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ProcessInstance.Nodes$ElapsedTimeInHours</field>
+    </columns>
+    <columns>
         <field>ProcessInstance$LastActor</field>
     </columns>
     <columns>

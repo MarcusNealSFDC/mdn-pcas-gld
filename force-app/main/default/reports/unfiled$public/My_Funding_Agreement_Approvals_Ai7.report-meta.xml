@@ -4,10 +4,10 @@
         <aggregate>Sum</aggregate>
         <columnName>ProcessInstance$ElapsedTimeInHours</columnName>
         <highBreakpoint>72.0</highBreakpoint>
-        <highColor>#006714</highColor>
+        <highColor>#B50E03</highColor>
         <lowBreakpoint>24.0</lowBreakpoint>
-        <lowColor>#B50E03</lowColor>
-        <midColor>#B56200</midColor>
+        <lowColor>#006714</lowColor>
+        <midColor>#E6E830</midColor>
     </colorRanges>
     <columns>
         <field>ProcessInstance.Nodes$CompletedDate</field>
@@ -18,6 +18,10 @@
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>ProcessInstance$ElapsedTimeInHours</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ProcessInstance.Nodes$ElapsedTimeInHours</field>
     </columns>
     <columns>
         <field>ProcessInstance$LastActor</field>
@@ -43,15 +47,15 @@
         <aggregate>Sum</aggregate>
         <columnName>ProcessInstance$ElapsedTimeInHours</columnName>
         <values>
-            <backgroundColor>#B50E03</backgroundColor>
+            <backgroundColor>#006714</backgroundColor>
             <rangeUpperBound>24.0</rangeUpperBound>
         </values>
         <values>
-            <backgroundColor>#B56200</backgroundColor>
+            <backgroundColor>#E6E830</backgroundColor>
             <rangeUpperBound>72.0</rangeUpperBound>
         </values>
         <values>
-            <backgroundColor>#006714</backgroundColor>
+            <backgroundColor>#B50E03</backgroundColor>
         </values>
     </formattingRules>
     <groupingsDown>
