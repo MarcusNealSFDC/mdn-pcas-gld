@@ -128,7 +128,6 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>ScopeNumber__c</fields>
         <fields>Effective_Date__c</fields>
         <fields>Inactive_Date__c</fields>
         <relatedList>Project__c.Account__c</relatedList>

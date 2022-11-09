@@ -2,7 +2,7 @@
 <PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
     <active>true</active>
     <entityName>Opportunity</entityName>
-    <fieldName>BER_Scientific_Focus_Area_SFA__c</fieldName>
-    <masterLabel>NIC-RW</masterLabel>
+    <fieldName>StageName</fieldName>
+    <masterLabel>NICRW</masterLabel>
     <recordTypeName>NIC_RW</recordTypeName>
 </PathAssistant>
