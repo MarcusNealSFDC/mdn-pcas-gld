@@ -2,7 +2,7 @@
 <DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
     <folderShares>
         <accessLevel>Manage</accessLevel>
-        <sharedTo>cece.adams@salesforce.com.prod</sharedTo>
+        <sharedTo>default.user@pnnl.gov</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <name>PNNL Dashboards</name>
