@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>EPR_Funding_Client__c</fullName>
     <externalId>false</externalId>
-    <label>EPR Funding Client</label>
+    <label>EPR Funding Sponsor</label>
     <length>1000</length>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
