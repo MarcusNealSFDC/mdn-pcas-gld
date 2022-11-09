@@ -211,15 +211,14 @@
                 <header>My Pending Funding Agreement Approvals</header>
                 <indicatorBreakpoint1>24.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>72.0</indicatorBreakpoint2>
-                <indicatorHighColor>#C23934</indicatorHighColor>
-                <indicatorLowColor>#00716B</indicatorLowColor>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <report>unfiled$public/My_Funding_Agreement_Approvals_Ai7</report>
                 <showPercentage>false</showPercentage>
                 <showRange>false</showRange>
                 <showTotal>true</showTotal>
                 <showValues>false</showValues>
-                <title>Pending FA approvals assigned to me</title>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
             <rowSpan>8</rowSpan>
