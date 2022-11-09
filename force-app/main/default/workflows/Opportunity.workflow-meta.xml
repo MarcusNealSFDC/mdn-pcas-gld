@@ -15,6 +15,22 @@
         <senderType>CurrentUser</senderType>
         <template>PCAS_1830_Work_Authorization/PCAS_1830_Work_Authorization_Action_Required_from_PNNL_Budget_Office</template>
     </alerts>
+    <alerts>
+        <fullName>Scope_Clearance_Decision_No_Email_Alert</fullName>
+        <ccEmails>spp@pnnl.gov</ccEmails>
+        <description>Scope Clearance Decision No Email Alert</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Scope_Clearance_Decision_No</template>
+    </alerts>
+    <alerts>
+        <fullName>Scope_Clearance_Decision_Yes</fullName>
+        <ccEmails>spp@pnnl.gov</ccEmails>
+        <description>Scope Clearance Decision Yes Email Alert</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Scope_Clearance_Decision_Yes</template>
+    </alerts>
     <fieldUpdates>
         <fullName>PNSO_Contracting_Officer_Approves</fullName>
         <field>StageName</field>
