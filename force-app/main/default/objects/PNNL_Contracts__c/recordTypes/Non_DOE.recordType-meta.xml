@@ -47,6 +47,69 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>ContractType__c</picklist>
+        <values>
+            <fullName>BOA - Basic Ordering Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAF - Cost Plus Award Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPFF - Cost Plus Fixed Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPIF - Cost Plus Incentive Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPPC - Cost Plus Percentage of Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRADA - Cooperative Research and Development Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRC - Cost Reimbursable Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRG - Cost Reimbursable Grant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FPLOE - Firm Fixed Price%2C Level of Effort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FX - Firm Fixed Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ILA - Interlaboratory Authorization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP - Intellectual Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPA - Intergovernmental Personnel Act</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OC - Operating Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T%26M - Time and Materials</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Contract_Status__c</picklist>
         <values>
             <fullName>Active</fullName>

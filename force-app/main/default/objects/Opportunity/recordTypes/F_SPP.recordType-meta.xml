@@ -356,6 +356,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>ForeignTravel__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Foreign_Sponsor__c</picklist>
         <values>
             <fullName>No</fullName>
@@ -1543,6 +1554,28 @@
         <picklist>SPECIMEN_6_Detail__c</picklist>
         <values>
             <fullName>Agreemnt is merely for standard laboratory analysis%2C technical assistance%2C and training%2E Specimen Agreement No%2E 6 %28DOE Approval NOT Required%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPPDetermination2__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPPDetermination4__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
