@@ -2,8 +2,13 @@
 <DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
     <folderShares>
         <accessLevel>Manage</accessLevel>
-        <sharedTo>default.user@pnnl.gov</sharedTo>
-        <sharedToType>User</sharedToType>
+        <sharedTo>AllInternalUsers</sharedTo>
+        <sharedToType>Organization</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>AllPartnerUsers</sharedTo>
+        <sharedToType>AllPrmUsers</sharedToType>
     </folderShares>
     <name>PNNL Dashboards</name>
 </DashboardFolder>

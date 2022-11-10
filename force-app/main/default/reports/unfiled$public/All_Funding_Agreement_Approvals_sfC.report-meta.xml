@@ -39,7 +39,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Funding_Agreement__c</value>
+            <value>01I3R000000R2fO</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

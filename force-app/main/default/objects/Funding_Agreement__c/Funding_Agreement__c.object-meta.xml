@@ -156,6 +156,7 @@
     <label>Funding Agreement</label>
     <nameField>
         <label>Funding Agreement</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
