@@ -96,7 +96,7 @@
     }, {
       "components" : [ {
         "componentAttributes" : {
-          "NavigationMenuEditorRefresh" : "Default_Navigation",
+          "NavigationMenuEditorRefresh" : "PNSO_Navigation_Menu",
           "hideAppLauncher" : true,
           "hideHomeText" : true
         },
