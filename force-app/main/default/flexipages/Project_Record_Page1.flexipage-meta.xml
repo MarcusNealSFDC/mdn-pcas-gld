@@ -49,8 +49,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Title2__c</fieldItem>
-                <identifier>RecordProject_Title2_cField</identifier>
+                <fieldItem>Record.ScopeNumber__c</fieldItem>
+                <identifier>RecordScopeNumber_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -59,8 +59,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Budget_Year__c</fieldItem>
-                <identifier>RecordBudget_Year_cField</identifier>
+                <fieldItem>Record.Project_Title2__c</fieldItem>
+                <identifier>RecordProject_Title2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-926beea1-b664-4f61-a64d-f80a15a0ec13</name>
@@ -95,6 +95,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Inactive_Date__c</fieldItem>
                 <identifier>RecordInactive_Date_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Budget_Year__c</fieldItem>
+                <identifier>RecordBudget_Year_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-f42cec0e-921a-4195-919e-d2a397aded4b</name>
@@ -205,8 +215,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Report_Class__c</fieldItem>
-                <identifier>RecordReport_Class_cField</identifier>
+                <fieldItem>Record.ReportClass__c</fieldItem>
+                <identifier>RecordReportClass_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -265,16 +275,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.OwnerId</fieldItem>
                 <identifier>RecordOwnerIdField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Opportunity__c</fieldItem>
-                <identifier>RecordOpportunity_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-b46f1e12-638a-478e-ace1-b6690efec9f1</name>

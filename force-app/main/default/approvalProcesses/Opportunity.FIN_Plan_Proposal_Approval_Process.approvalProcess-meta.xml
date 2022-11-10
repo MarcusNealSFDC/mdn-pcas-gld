@@ -19,7 +19,7 @@
         </approvalActions>
         <assignedApprover>
             <approver>
-                <type>userHierarchyField</type>
+                <type>adhoc</type>
             </approver>
         </assignedApprover>
         <label>Budget Office Manager Approval</label>
