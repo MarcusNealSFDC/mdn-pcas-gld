@@ -59,17 +59,6 @@
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
-    }, {
-      "componentAttributes" : {
-        "numberOfArticles" : 5,
-        "title" : "Trending Articles",
-        "topicId" : "{!topicId}"
-      },
-      "componentName" : "selfService:topicTrendingArticles42",
-      "id" : "274426d2-6319-42f5-a63e-1e30011fafb1",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
     } ],
     "id" : "0d2e0475-65a5-4bb4-a72c-41c6e2c25a8f",
     "regionName" : "sidebar",
