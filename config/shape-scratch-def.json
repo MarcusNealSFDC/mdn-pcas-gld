@@ -1,7 +1,14 @@
 {
     "orgName": "pnnl-hub",
     "sourceOrg": "00D8z0000008anN",
+    "features": ["Communities", "ForceComPlatform"],
     "settings": {
+        "communitiesSettings": {
+            "enableNetworksEnabled": true
+        },
+        "experienceBundleSettings": {
+            "enableExperienceBundleMetadata": true
+        },
         "opportunitySettings": {
             "enableOpportunityTeam": true
         }
