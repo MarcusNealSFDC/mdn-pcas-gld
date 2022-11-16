@@ -1021,17 +1021,22 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Project_Coordinators__c</field>
+            <field>Approval_in_Process__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Project_Manager3__c</field>
+            <field>Final_Approval_Received__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Work_Location__c</field>
+            <field>Approval_Recalled__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Approval_Rejected__c</field>
             <table>Opportunity</table>
         </columns>
         <masterLabel>Opportunities</masterLabel>
@@ -1214,7 +1219,22 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>CRADALU__c</field>
+            <field>Approval_in_Process__c</field>
+            <table>Opportunity.Funding_Agreements__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Final_Approval_Received__c</field>
+            <table>Opportunity.Funding_Agreements__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Approval_Recalled__c</field>
+            <table>Opportunity.Funding_Agreements__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Approval_Rejected__c</field>
             <table>Opportunity.Funding_Agreements__r</table>
         </columns>
         <masterLabel>Funding Agreements</masterLabel>
@@ -1278,11 +1298,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>EPR_Current__c</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Project__c</field>
             <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
