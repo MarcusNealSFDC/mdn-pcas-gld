@@ -4,7 +4,7 @@
     <containerType>Network</containerType>
     <label>Default Navigation</label>
     <navigationMenuItem>
-        <defaultListViewId>My_Proposals_Awaiting_Approval</defaultListViewId>
+        <!-- <defaultListViewId>My_Proposals_Awaiting_Approval</defaultListViewId> -->
         <label>Proposals</label>
         <position>1</position>
         <publiclyAvailable>false</publiclyAvailable>
@@ -12,7 +12,7 @@
         <type>SalesforceObject</type>
     </navigationMenuItem>
     <navigationMenuItem>
-        <defaultListViewId>My_Proposals_Awaiting_Approval</defaultListViewId>
+        <!-- <defaultListViewId>My_Proposals_Awaiting_Approval</defaultListViewId> -->
         <label>Funding Agreements</label>
         <position>2</position>
         <publiclyAvailable>false</publiclyAvailable>
