@@ -19,19 +19,6 @@
       "type" : "component"
     }, {
       "componentAttributes" : {
-        "enableVoting" : true,
-        "recordId" : "{!recordId}",
-        "showTitleInArticleHeader" : true,
-        "showTopicPills" : true,
-        "urlName" : "{!urlName}"
-      },
-      "componentName" : "selfService:singleArticleView",
-      "id" : "56213d1f-14d3-4cad-9736-23ab545c10fe",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
-    }, {
-      "componentAttributes" : {
         "context" : "RECORD",
         "recordId" : "{!recordId}",
         "width" : "WIDE"
@@ -77,17 +64,6 @@
       },
       "componentName" : "forceCommunity:follow",
       "id" : "d0cd4004-6aaf-4f3b-8f14-9b392957a214",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
-    }, {
-      "componentAttributes" : {
-        "numberOfItems" : 5,
-        "showViewCounts" : true,
-        "title" : "Related Articles"
-      },
-      "componentName" : "selfService:similarArticles42",
-      "id" : "d05b88b8-6e46-4d92-8e42-5cde8f7d4d42",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"

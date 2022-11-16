@@ -102,7 +102,7 @@
     }, {
       "components" : [ {
         "componentAttributes" : {
-          "NavigationMenuEditorRefresh" : "Default_Navigation",
+          "NavigationMenuEditorRefresh" : "",
           "hideAppLauncher" : true,
           "hideHomeText" : true
         },

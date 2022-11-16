@@ -56,24 +56,6 @@
           "id" : "d1ff86ad-e1e7-4d39-a858-6427c42c0c86",
           "renditionMap" : { },
           "type" : "component"
-        }, {
-          "componentAttributes" : {
-            "bodyField" : "Description",
-            "categoryField" : "__",
-            "dataFieldsConfig" : "",
-            "highlight" : "__",
-            "highlightColor" : "#007DB8",
-            "listLabel" : "",
-            "listViewName" : "",
-            "showImage" : true,
-            "sortBy" : "Name",
-            "sortOrder" : "Ascending",
-            "titleField" : "Name"
-          },
-          "componentName" : "forceCommunity:campaignTileList",
-          "id" : "0730d63c-ea45-4210-a719-855991b40f29",
-          "renditionMap" : { },
-          "type" : "component"
         } ],
         "id" : "b8284261-e1fc-4990-a2c2-5aa960120278",
         "regionLabel" : "Campaign Marketplace",

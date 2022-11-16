@@ -17,18 +17,6 @@
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
-    }, {
-      "componentAttributes" : {
-        "numberOfArticles" : 5,
-        "showTitle" : true,
-        "title" : "Articles",
-        "topicList" : [ ]
-      },
-      "componentName" : "forceCommunity:topArticleList",
-      "id" : "117fb50f-a732-4f78-9722-c26af0bdb4e3",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
     } ],
     "id" : "6b3b7c4a-f9c4-4e9f-89ac-8e4b84b6811b",
     "regionName" : "content",
