@@ -55,19 +55,23 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Approval_in_Process__c</field>
+                <field>Project_Coordinators__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Final_Approval_Received__c</field>
+                <field>Work_Location__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CRADA_Count__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Is_CRADA__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Approval_Recalled__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Approval_Rejected__c</field>
+                <field>SPPDetermination2__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -338,6 +342,13 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>CRADA_Type__c</fields>
+        <fields>CRADA_Title__c</fields>
+        <fields>CRADA_Status__c</fields>
+        <relatedList>CRADA__c.Proposal__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
         <fields>Amendment_Authorized_Amount__c</fields>
         <fields>Amendment_Fee_Amount__c</fields>
         <relatedList>Proposed_Amendment__c.Proposal__c</relatedList>
@@ -367,7 +378,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3S000000h3kf</masterLabel>
+        <masterLabel>00h3R000000tvbH</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

@@ -20,9 +20,6 @@
                             <value>Submit</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Opportunity.Create_a_Project</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>RecordShareHierarchy</value>
                         </valueListItems>
                         <valueListItems>
@@ -1089,6 +1086,56 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-b2aeeb04-3280-4a69-81d0-6a300be2878a</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>Facet-96083644-060d-4b53-b685-bbbb57e3d550</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>Facet-789efd6c-b2f3-45e6-a978-82dbb61d3c01</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-96083644-060d-4b53-b685-bbbb57e3d550</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column16</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-789efd6c-b2f3-45e6-a978-82dbb61d3c01</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column17</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-b472ed2c-6c2c-4d2a-aec2-be55be098681</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-b472ed2c-6c2c-4d2a-aec2-be55be098681</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Approvals Team</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-03548dfb-f545-4a69-8841-7c2c5aab29d4</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>

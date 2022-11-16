@@ -3,12 +3,13 @@
     <fullName>Funding_Client__c</fullName>
     <deleteConstraint>Restrict</deleteConstraint>
     <externalId>false</externalId>
-    <label>Funding Client</label>
+    <label>Funding Sponsor</label>
     <referenceTo>Account</referenceTo>
     <relationshipLabel>Funding Client</relationshipLabel>
     <relationshipName>Funding_Client</relationshipName>
     <required>true</required>
     <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>
 </CustomField>

@@ -6,6 +6,7 @@
     <summarizedField>Proposed_Amendment__c.Amendment_Authorized_Amount__c</summarizedField>
     <summaryForeignKey>Proposed_Amendment__c.Proposal__c</summaryForeignKey>
     <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Summary</type>
 </CustomField>

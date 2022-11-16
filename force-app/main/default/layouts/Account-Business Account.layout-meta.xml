@@ -26,6 +26,10 @@
                 <behavior>Edit</behavior>
                 <field>Street__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Legacy_Client_Code__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -124,7 +128,6 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Scope_Num__c</fields>
         <fields>Effective_Date__c</fields>
         <fields>Inactive_Date__c</fields>
         <relatedList>Project__c.Account__c</relatedList>
