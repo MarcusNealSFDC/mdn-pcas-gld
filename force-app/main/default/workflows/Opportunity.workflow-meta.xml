@@ -38,6 +38,21 @@
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/Proposal_Approval_Email</template>
     </alerts>
+    <alerts>
+        <fullName>Scope_Clearance_Decision_Email_Template_to_Assigned_PM</fullName>
+        <description>Scope Clearance Decision Email Template to Assigned PM</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Project_Management_Office_Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Project_Manager3__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Email_Template_to_Assigned_PM</template>
+    </alerts>
     <fieldUpdates>
         <fullName>PNSO_Contracting_Officer_Approves</fullName>
         <field>StageName</field>

@@ -1348,6 +1348,11 @@
             <field>SPPDetermination4__c</field>
             <table>Opportunity</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Project_Management_Office_Email_Address__c</field>
+            <table>Opportunity</table>
+        </columns>
         <masterLabel>Proposals</masterLabel>
     </sections>
 </ReportType>
