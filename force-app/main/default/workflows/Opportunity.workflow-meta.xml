@@ -19,6 +19,25 @@
         <senderType>CurrentUser</senderType>
         <template>PCAS_1830_Work_Authorization/PCAS_1830_Work_Authorization_Action_Required_from_PNNL_Budget_Office</template>
     </alerts>
+    <alerts>
+        <fullName>PNSO_Approval_of_SPP_Proposal</fullName>
+        <description>PNSO Approval of SPP  Proposal</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contract_Specialist2__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Project_Coordinators__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Project_Manager3__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Proposal_Approval_Email</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Approval_Not_In_Process</fullName>
         <description>Field update to indicate the proposal is no longer in the approval process</description>
@@ -63,25 +82,6 @@
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
-    <alerts>
-        <fullName>PNSO_Approval_of_SPP_Proposal</fullName>
-        <description>PNSO Approval of SPP  Proposal</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Contract_Specialist2__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <recipients>
-            <field>Project_Coordinators__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <recipients>
-            <field>Project_Manager3__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Proposal_Approval_Email</template>
-    </alerts>
     <fieldUpdates>
         <fullName>PNSO_Contracting_Officer_Approves</fullName>
         <field>StageName</field>

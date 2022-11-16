@@ -278,16 +278,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Contracting_Officer2__c</fieldItem>
-                <identifier>RecordPNSO_Contracting_Officer2_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Official_Use_Only__c</fieldItem>
                 <identifier>RecordOfficial_Use_Only_cField</identifier>
             </fieldInstance>

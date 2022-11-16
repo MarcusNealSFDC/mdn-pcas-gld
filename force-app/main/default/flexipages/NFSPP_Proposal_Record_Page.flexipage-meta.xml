@@ -332,16 +332,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Date_Prepared__c</fieldItem>
-                <identifier>RecordDate_Prepared_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Organization_Code__c</fieldItem>
                 <identifier>RecordOrganization_Code_cField</identifier>
             </fieldInstance>
@@ -1863,16 +1853,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Project_Manager3__c</fieldItem>
                 <identifier>RecordProject_Manager3_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Specialist2__c</fieldItem>
-                <identifier>RecordContract_Specialist2_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
