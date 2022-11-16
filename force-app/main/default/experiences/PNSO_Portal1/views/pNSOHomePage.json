@@ -1,0 +1,74 @@
+{
+  "appPageId" : "f2d5f7de-8370-4654-af13-800b2cb6710c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "3466ba02-cf1f-43da-8fa7-2c661dd7afd8",
+  "label" : "PNSO Home Page",
+  "regions" : [ {
+    "id" : "82e73767-6069-4b57-89c6-e1937feb2799",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "height" : "485",
+        "recordId" : "01Z3R000000LmqdUAC"
+      },
+      "componentName" : "forceCommunity:dashboard",
+      "id" : "03b26c73-b78e-4aa4-9b87-869755107083",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "00B3R000001g3LIUAY",
+        "layout" : "STANDARD",
+        "pageSize" : 10,
+        "scope" : "Opportunity",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "f39f0aef-c49f-4a09-a81a-47a513f47ae8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ae81c3ae-6b1f-4366-8b37-fffec2ad2257",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "ae56eddb-cdfc-4454-aa45-31b5477a56a3",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "57d61149-3192-4fa1-a680-a93596dab1f4",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a84cbb4d-bfb5-446a-ac54-28b7f793dd93",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5d9dfb74-cee5-4709-a83e-f566990c1afb",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}
