@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Project_Title__c</fullName>
+    <fullName>Special_Reporting_Funds__c</fullName>
     <externalId>false</externalId>
-    <formula>Project_Number__r.Opportunity__r.Project_Title__c</formula>
+    <formula>TEXT(Opportunity__r.Special_Reporting_Funds__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <label>Project Title</label>
+    <label>Special Reporting Funds</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
