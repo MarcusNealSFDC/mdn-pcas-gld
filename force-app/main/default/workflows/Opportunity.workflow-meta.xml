@@ -98,6 +98,17 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Final_Approval_Received</fullName>
+        <description>Field update to indicate the Final Approval has been received.</description>
+        <field>Final_Approval_Received__c</field>
+        <literalValue>1</literalValue>
+        <name>Final Approval Received</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>PNSO_Contracting_Officer_Approves</fullName>
         <field>StageName</field>
         <literalValue>Work Authorization Approval: PNSO Contract Officer</literalValue>
@@ -122,6 +133,17 @@
         <field>StageName</field>
         <literalValue>Proposal Approved</literalValue>
         <name>Proposal Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Proposal_Submitted</fullName>
+        <description>Field to indicate a proposal has been submitted for approval</description>
+        <field>StageName</field>
+        <literalValue>Proposal Submitted</literalValue>
+        <name>Proposal Submitted</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -182,6 +204,16 @@
         <field>StageName</field>
         <literalValue>Proposal Submitted</literalValue>
         <name>Update to Proposal Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Work_Authorization_Review</fullName>
+        <field>StageName</field>
+        <literalValue>Work Authorization Review</literalValue>
+        <name>Work Authorization Review</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
