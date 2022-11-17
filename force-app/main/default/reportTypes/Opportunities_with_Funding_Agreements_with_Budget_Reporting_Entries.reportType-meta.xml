@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Opportunity</baseObject>
     <category>opportunities</category>
     <deployed>true</deployed>
-    <description>Opportunities with Funding Agreements with Budget &amp; Reporting Entries</description>
+    <description
+  >Opportunities with Funding Agreements with Budget &amp; Reporting Entries</description>
     <join>
         <join>
             <outerJoin>false</outerJoin>
@@ -12,7 +13,8 @@
         <outerJoin>false</outerJoin>
         <relationship>Funding_Agreements__r</relationship>
     </join>
-    <label>Opportunities with Funding Agreements with Budget &amp; Reporting Entries</label>
+    <label
+  >Opportunities with Funding Agreements with Budget &amp; Reporting Entries</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
@@ -347,11 +349,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Scope__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Market_Sector__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -891,11 +888,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Project_Management_Office__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Agreement_Term_Months__c</field>
             <table>Opportunity</table>
         </columns>
@@ -1223,92 +1215,110 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Id</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Name</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CreatedDate</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CreatedBy</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedDate</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedBy</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastActivityDate</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Funding_Amount__c</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Funds_Recieved__c</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Incremental_Funding__c</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Statement_of_Work__c</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>EPR_Current__c</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Project__c</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Opportunity__c</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CRADA__c</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Commen__c</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CPS_Number__c</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Budget_Reporting_Code__c</field>
-            <table>Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
+            <table
+      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
         </columns>
         <masterLabel>Budget &amp; Reporting Entries</masterLabel>
     </sections>
@@ -1346,6 +1356,16 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>SPPDetermination4__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Market_Sector_pnnl__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Project_Management_Office_pnnl__c</field>
             <table>Opportunity</table>
         </columns>
         <masterLabel>Proposals</masterLabel>

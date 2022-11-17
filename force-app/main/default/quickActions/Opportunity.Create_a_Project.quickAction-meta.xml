@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Button to create a Project with prepopulated fields</description>
+    <description
+  >Button to create a Project with prepopulated fields</description>
     <fieldOverrides>
         <field>Account__c</field>
         <formula>Opportunity.AccountId</formula>
     </fieldOverrides>
     <fieldOverrides>
         <field>Market_Sector__c</field>
-        <formula>TEXT( Opportunity.Market_Sector__c )</formula>
+        <formula>Opportunity.Market_Sector_pnnl__c</formula>
     </fieldOverrides>
     <fieldOverrides>
         <field>Opportunity__c</field>
