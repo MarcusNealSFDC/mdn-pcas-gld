@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Management_Office_Email_Address__c</fullName>
+    <description>PMO Email address</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please insert email PMO Email address</inlineHelpText>
+    <label>Project Management Office Email Address</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>
