@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>DOE Direct Contract</description>
+    <description>DOE Contracts</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
@@ -38,6 +38,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Project__c</fieldItem>
+                <identifier>RecordProject_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Contract__c</fieldItem>
                 <identifier>RecordContract_cField</identifier>
             </fieldInstance>
@@ -50,6 +60,128 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Contract_Account_Number__c</fieldItem>
                 <identifier>RecordContract_Account_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.CPS__c</fieldItem>
+                <identifier>RecordCPS_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-22e170f9-2a8f-4231-9f12-fd53050d4fa1</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Master_Scope_of_Work_Proposal__c</fieldItem>
+                <identifier>RecordMaster_Scope_of_Work_Proposal_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.CRADA2__c</fieldItem>
+                <identifier>RecordCRADA2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Contract_Administrator__c</fieldItem>
+                <identifier>RecordContract_Administrator_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Contract_Status__c</fieldItem>
+                <identifier>RecordContract_Status_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-95759a73-4880-4852-a86d-5e9995273798</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-22e170f9-2a8f-4231-9f12-fd53050d4fa1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-95759a73-4880-4852-a86d-5e9995273798</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-e44bcf71-36b0-47a4-831b-5cf4defe42df</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.ContractType__c</fieldItem>
+                <identifier>RecordContractType_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Budget_Reporting_Code2__c</fieldItem>
+                <identifier>RecordBudget_Reporting_Code2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Billing_Code__c</fieldItem>
+                <identifier>RecordBilling_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Project_Code__c</fieldItem>
+                <identifier>RecordProject_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -78,72 +210,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Billing_Code__c</fieldItem>
-                <identifier>RecordBilling_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Budget_Reporting_Code2__c</fieldItem>
-                <identifier>RecordBudget_Reporting_Code2_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-97899eed-6f9d-4e3e-bf0f-8af195fcc499</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Scope__c</fieldItem>
-                <identifier>RecordScope_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Project__c</fieldItem>
-                <identifier>RecordProject_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Proposal__c</fieldItem>
-                <identifier>RecordProposal_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Object_Class__c</fieldItem>
                 <identifier>RecordObject_Class_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.SPP_Code__c</fieldItem>
-                <identifier>RecordSPP_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -156,98 +224,10 @@
                 <identifier>RecordLocal_Use_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-430abf5b-086e-4b21-8512-f9687d690950</name>
+        <name>Facet-f2691759-9993-4590-891f-a8da4058c4c1</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-97899eed-6f9d-4e3e-bf0f-8af195fcc499</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-430abf5b-086e-4b21-8512-f9687d690950</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column2</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-53b3c0a9-9501-4e75-ae9c-c9bb986f23af</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Client__c</fieldItem>
-                <identifier>RecordContract_Client_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Client_Reference__c</fieldItem>
-                <identifier>RecordContract_Client_Reference_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Funding_Client__c</fieldItem>
-                <identifier>RecordFunding_Client_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Funding_Client_Reference__c</fieldItem>
-                <identifier>RecordFunding_Client_Reference_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.CPS__c</fieldItem>
-                <identifier>RecordCPS_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-251603b6-5617-4a4c-8782-3f4578e69eee</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.CRADA__c</fieldItem>
-                <identifier>RecordCRADA_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -274,8 +254,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Effective_Date__c</fieldItem>
-                <identifier>RecordEffective_Date_cField</identifier>
+                <fieldItem>Record.Completion_Date__c</fieldItem>
+                <identifier>RecordCompletion_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -284,8 +264,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Completion_Date__c</fieldItem>
-                <identifier>RecordCompletion_Date_cField</identifier>
+                <fieldItem>Record.Effective_Date__c</fieldItem>
+                <identifier>RecordEffective_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -298,7 +278,7 @@
                 <identifier>RecordClose_Out_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-f8c2704a-c4d5-4436-a139-ec17c6b5ab17</name>
+        <name>Facet-817d5222-10c4-4306-ba89-b91b8a590342</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -306,7 +286,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-251603b6-5617-4a4c-8782-3f4578e69eee</value>
+                    <value>Facet-f2691759-9993-4590-891f-a8da4058c4c1</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
                 <identifier>flexipage_column3</identifier>
@@ -316,13 +296,13 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-f8c2704a-c4d5-4436-a139-ec17c6b5ab17</value>
+                    <value>Facet-817d5222-10c4-4306-ba89-b91b8a590342</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
                 <identifier>flexipage_column4</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-8c86408b-87a8-4c42-bf51-fdd6694ae9bc</name>
+        <name>Facet-5873bdf9-9697-4015-9043-4b149607d39d</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -332,8 +312,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Prior_FY_Carryover__c</fieldItem>
-                <identifier>RecordPrior_FY_Carryover_cField</identifier>
+                <fieldItem>Record.Contract_Client__c</fieldItem>
+                <identifier>RecordContract_Client_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -342,11 +322,79 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.FY_Authorized_Amount__c</fieldItem>
-                <identifier>RecordFY_Authorized_Amount_cField</identifier>
+                <fieldItem>Record.Funding_Client__c</fieldItem>
+                <identifier>RecordFunding_Client_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-6cea38a9-fdf1-445e-9e2a-79bbdf17aba8</name>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Client_Contract_Representative__c</fieldItem>
+                <identifier>RecordClient_Contract_Representative_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-5356b46f-deba-4eee-b95a-cef19c5209ef</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Contract_Client_Reference__c</fieldItem>
+                <identifier>RecordContract_Client_Reference_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Funding_Client_Reference__c</fieldItem>
+                <identifier>RecordFunding_Client_Reference_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Client_Technical_Rep__c</fieldItem>
+                <identifier>RecordClient_Technical_Rep_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-96fc95da-7cf0-4269-94eb-84c8daa583f6</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-5356b46f-deba-4eee-b95a-cef19c5209ef</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-96fc95da-7cf0-4269-94eb-84c8daa583f6</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-71475e18-13d5-4687-801f-d36f76e0f1c7</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -366,11 +414,35 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Contract_Amount__c</fieldItem>
+                <identifier>RecordContract_Amount_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-d401a876-10ad-4c77-bc80-2d3504fb5895</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Prior_FY_Carryover__c</fieldItem>
+                <identifier>RecordPrior_FY_Carryover_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Balance_Order__c</fieldItem>
                 <identifier>RecordBalance_Order_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-d9e3bcbb-46d2-4d6e-8e63-b71bd0daf8d2</name>
+        <name>Facet-273aa6e5-b897-41b1-9e8e-1375c948b3c2</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -378,23 +450,65 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-6cea38a9-fdf1-445e-9e2a-79bbdf17aba8</value>
+                    <value>Facet-d401a876-10ad-4c77-bc80-2d3504fb5895</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column5</identifier>
+                <identifier>flexipage_column7</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-d9e3bcbb-46d2-4d6e-8e63-b71bd0daf8d2</value>
+                    <value>Facet-273aa6e5-b897-41b1-9e8e-1375c948b3c2</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column6</identifier>
+                <identifier>flexipage_column8</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-8f6cd976-3ecc-44c6-9349-76235251f13f</name>
+        <name>Facet-36cdd256-6387-4bb0-871c-bf4405563805</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Notes__c</fieldItem>
+                <identifier>RecordNotes_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-bb76dfef-bee7-458a-97f7-ec64bd750f94</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>Facet-f84b1291-966c-478d-9421-de4e2f14fa81</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-bb76dfef-bee7-458a-97f7-ec64bd750f94</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-f84b1291-966c-478d-9421-de4e2f14fa81</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-b3961311-6dac-445b-83cb-1e95123e420c</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -402,11 +516,11 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
-                    <value>Facet-53b3c0a9-9501-4e75-ae9c-c9bb986f23af</value>
+                    <value>Facet-e44bcf71-36b0-47a4-831b-5cf4defe42df</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Contract Information</value>
+                    <value>DOE Direct Contract Information</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection</identifier>
@@ -416,11 +530,11 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
-                    <value>Facet-8c86408b-87a8-4c42-bf51-fdd6694ae9bc</value>
+                    <value>Facet-5873bdf9-9697-4015-9043-4b149607d39d</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Client Details &amp; Dates</value>
+                    <value>Contract Details</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection2</identifier>
@@ -430,14 +544,42 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
-                    <value>Facet-8f6cd976-3ecc-44c6-9349-76235251f13f</value>
+                    <value>Facet-71475e18-13d5-4687-801f-d36f76e0f1c7</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Financials</value>
+                    <value>Sponsor Information</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-36cdd256-6387-4bb0-871c-bf4405563805</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Financial Details</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-b3961311-6dac-445b-83cb-1e95123e420c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Notes and Descriptions</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection5</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>
@@ -465,7 +607,7 @@
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>DOE Direct Lightning Page</masterLabel>
+    <masterLabel>DOE Direct Contract</masterLabel>
     <sobjectType>PNNL_Contracts__c</sobjectType>
     <template>
         <name>flexipage:recordHomeTemplateDesktop</name>

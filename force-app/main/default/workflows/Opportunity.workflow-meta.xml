@@ -49,6 +49,26 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>PNSO_Signed_Date</fullName>
+        <field>PNSO_Signed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>PNSO Signed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Proposal_Approved</fullName>
+        <field>StageName</field>
+        <literalValue>Proposal Approved</literalValue>
+        <name>Proposal Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Recalled</fullName>
         <field>StageName</field>
         <literalValue>Work Authorization Review</literalValue>

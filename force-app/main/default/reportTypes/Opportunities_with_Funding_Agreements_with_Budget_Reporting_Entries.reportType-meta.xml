@@ -1348,6 +1348,26 @@
             <field>SPPDetermination4__c</field>
             <table>Opportunity</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PNSO_Signed_Date__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Special_Reporting_Funds__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Risk_Assessment_Link__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FWP__c</field>
+            <table>Opportunity</table>
+        </columns>
         <masterLabel>Proposals</masterLabel>
     </sections>
 </ReportType>
