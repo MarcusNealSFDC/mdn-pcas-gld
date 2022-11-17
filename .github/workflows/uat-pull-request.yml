@@ -13,7 +13,7 @@ env:
   SALESFORCE_ORG_DEV_URL: https://pnnl--uat.sandbox.my.salesforce.com # Salesforce URL of target org
   SALESFORCE_ORG_USERNAME: builduser@pnnl.gov.uat # Salesforce username of target org
   TARGET_BRANCH: uat
-  ORG_NAME: PNNLPCASBuildUAT
+  ORG_NAME: pnnl-uat
   SOURCE_DIR: force-app
 
 jobs:
