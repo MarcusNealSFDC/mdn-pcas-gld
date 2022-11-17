@@ -1819,16 +1819,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Specialist2__c</fieldItem>
-                <identifier>RecordContract_Specialist2_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Project_Coordinators__c</fieldItem>
                 <identifier>RecordProject_Coordinators_cField2</identifier>
             </fieldInstance>
@@ -1935,7 +1925,7 @@
                 <identifier>RecordPNSO_Signed_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-e51d55d1-d326-44bd-b199-1d11ed48ed92</name>
+        <name>Facet-e51d55d1-d326-44bd-b199-1d11ed48ed92</name>    
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>

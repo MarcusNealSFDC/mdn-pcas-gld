@@ -1573,16 +1573,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Specialist2__c</fieldItem>
-                <identifier>RecordContract_Specialist2_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.SPP_Office_Reviewer2__c</fieldItem>
                 <identifier>RecordSPP_Office_Reviewer2_cField</identifier>
             </fieldInstance>
@@ -1864,6 +1854,12 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tabset</componentName>
                 <identifier>flexipage_tabset</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>oppCostDetailTable</componentName>
+                <identifier>c_oppCostDetailTable</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
