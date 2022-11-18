@@ -382,6 +382,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Limited_Term_Funds__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Loss_Reason__c</picklist>
         <values>
             <fullName>Lost to Competitor</fullName>
@@ -1261,13 +1272,6 @@
     </picklistValues>
     <picklistValues>
         <picklist>PNNL_ACT_Office__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>PNSO_ACT_Reviewer__c</picklist>
         <values>
             <fullName>TBD</fullName>
             <default>false</default>

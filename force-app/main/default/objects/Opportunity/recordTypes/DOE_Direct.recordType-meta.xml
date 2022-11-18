@@ -3,6 +3,7 @@
     <fullName>DOE_Direct</fullName>
     <active>true</active>
     <businessProcess>DOE Direct</businessProcess>
+    <description>Department of Energy Direct</description>
     <label>DOE Direct</label>
     <picklistValues>
         <picklist>ACT_Disclose_6C__c</picklist>
@@ -876,6 +877,17 @@
         </values>
         <values>
             <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Limited_Term_Funds__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1759,13 +1771,6 @@
     </picklistValues>
     <picklistValues>
         <picklist>PNNL_ACT_Office__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>PNSO_ACT_Reviewer__c</picklist>
         <values>
             <fullName>TBD</fullName>
             <default>false</default>
