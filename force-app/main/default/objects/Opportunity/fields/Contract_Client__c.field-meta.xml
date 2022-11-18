@@ -3,11 +3,11 @@
     <fullName>Contract_Client__c</fullName>
     <deleteConstraint>Restrict</deleteConstraint>
     <externalId>false</externalId>
-    <label>Contract Client</label>
+    <label>Contract Sponsor</label>
     <referenceTo>Account</referenceTo>
     <relationshipLabel>Contract Client</relationshipLabel>
     <relationshipName>Contract_Client</relationshipName>
-    <required>true</required>
+    <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>

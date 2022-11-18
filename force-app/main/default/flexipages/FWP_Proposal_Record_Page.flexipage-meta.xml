@@ -20,9 +20,6 @@
                             <value>Submit</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Opportunity.Create_a_Project</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>RecordShareHierarchy</value>
                         </valueListItems>
                         <valueListItems>
@@ -149,6 +146,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.FFRDC__c</fieldItem>
                 <identifier>RecordFFRDC_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Risk_Assessment_Link__c</fieldItem>
+                <identifier>RecordRisk_Assessment_Link_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1092,16 +1099,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Project_Coordinator__c</fieldItem>
-                <identifier>RecordProject_Coordinator_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-96083644-060d-4b53-b685-bbbb57e3d550</name>
         <type>Facet</type>
     </flexiPageRegions>

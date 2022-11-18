@@ -54,7 +54,7 @@ jobs:
         id: Deploy
         if: github.event_name == 'push'
         run:
-          node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal --verbose
+          node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal --verbose --ignorewarnings
 
       - name: Validate source
         id: validate

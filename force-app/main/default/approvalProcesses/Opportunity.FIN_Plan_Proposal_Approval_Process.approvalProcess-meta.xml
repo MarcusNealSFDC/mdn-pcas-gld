@@ -19,7 +19,7 @@
         </approvalActions>
         <assignedApprover>
             <approver>
-                <type>userHierarchyField</type>
+                <type>adhoc</type>
             </approver>
         </assignedApprover>
         <label>Budget Office Manager Approval</label>
@@ -78,12 +78,36 @@
     </entryCriteria>
     <finalApprovalActions>
         <action>
+            <name>Approval_Not_In_Process</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Final_Approval_Received</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
             <name>PNSO_Approval_of_FIN_Plan_Proposal</name>
             <type>Alert</type>
         </action>
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Approval_Not_In_Process</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Approval_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Approval_in_Process</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
     <label>FIN Plan Proposal Approval Process</label>
     <nextAutomatedApprover>
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
@@ -91,6 +115,14 @@
     </nextAutomatedApprover>
     <processOrder>1</processOrder>
     <recallActions>
+        <action>
+            <name>Approval_Not_In_Process</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Approval_Recalled</name>
+            <type>FieldUpdate</type>
+        </action>
         <action>
             <name>Recalled</name>
             <type>FieldUpdate</type>
