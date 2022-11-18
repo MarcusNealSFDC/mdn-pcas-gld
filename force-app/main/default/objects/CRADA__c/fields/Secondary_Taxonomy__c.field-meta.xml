@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_Taxonomy__c</fullName>
+    <externalId>false</externalId>
+    <label>Secondary Taxonomy</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Taxonomy__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3D Scanning/Imaging</fullName>
+                <default>false</default>
+                <label>3D Scanning/Imaging</label>
+            </value>
+            <value>
+                <fullName>Accelerators</fullName>
+                <default>false</default>
+                <label>Accelerators</label>
+            </value>
+            <value>
+                <fullName>Additive and Precise Manufacturing</fullName>
+                <default>false</default>
+                <label>Additive and Precise Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Aerodynamics</fullName>
+                <default>false</default>
+                <label>Aerodynamics</label>
+            </value>
+            <value>
+                <fullName>Aerospace</fullName>
+                <default>false</default>
+                <label>Aerospace</label>
+            </value>
+            <value>
+                <fullName>Agricultural</fullName>
+                <default>false</default>
+                <label>Agricultural</label>
+            </value>
+            <value>
+                <fullName>Analysis</fullName>
+                <default>false</default>
+                <label>Analysis</label>
+            </value>
+            <value>
+                <fullName>Architecture</fullName>
+                <default>false</default>
+                <label>Architecture</label>
+            </value>
+            <value>
+                <fullName>Artificial Intelligence</fullName>
+                <default>false</default>
+                <label>Artificial Intelligence</label>
+            </value>
+            <value>
+                <fullName>Atmosphere/Climate</fullName>
+                <default>false</default>
+                <label>Atmosphere/Climate</label>
+            </value>
+            <value>
+                <fullName>Batteries</fullName>
+                <default>false</default>
+                <label>Batteries</label>
+            </value>
+            <value>
+                <fullName>Biodefense</fullName>
+                <default>false</default>
+                <label>Biodefense</label>
+            </value>
+            <value>
+                <fullName>BiofueIs - liquid</fullName>
+                <default>false</default>
+                <label>BiofueIs - liquid</label>
+            </value>
+            <value>
+                <fullName>Biofuel Performance</fullName>
+                <default>false</default>
+                <label>Biofuel Performance</label>
+            </value>
+            <value>
+                <fullName>Biofuels - gaseous</fullName>
+                <default>false</default>
+                <label>Biofuels - gaseous</label>
+            </value>
+            <value>
+                <fullName>Biology Proteomics</fullName>
+                <default>false</default>
+                <label>Biology Proteomics</label>
+            </value>
+            <value>
+                <fullName>Biomarkers</fullName>
+                <default>false</default>
+                <label>Biomarkers</label>
+            </value>
+            <value>
+                <fullName>Biomedical Instrumentation</fullName>
+                <default>false</default>
+                <label>Biomedical Instrumentation</label>
+            </value>
+            <value>
+                <fullName>Biomimetics</fullName>
+                <default>false</default>
+                <label>Biomimetics</label>
+            </value>
+            <value>
+                <fullName>Biopower</fullName>
+                <default>false</default>
+                <label>Biopower</label>
+            </value>
+            <value>
+                <fullName>Buildings</fullName>
+                <default>false</default>
+                <label>Buildings</label>
+            </value>
+            <value>
+                <fullName>Carbon Capture and Storage</fullName>
+                <default>false</default>
+                <label>Carbon Capture and Storage</label>
+            </value>
+            <value>
+                <fullName>Carbon Capture and Utilization</fullName>
+                <default>false</default>
+                <label>Carbon Capture and Utilization</label>
+            </value>
+            <value>
+                <fullName>Catalysts</fullName>
+                <default>false</default>
+                <label>Catalysts</label>
+            </value>
+            <value>
+                <fullName>Chemical Imaging</fullName>
+                <default>false</default>
+                <label>Chemical Imaging</label>
+            </value>
+            <value>
+                <fullName>Chemical Processes</fullName>
+                <default>false</default>
+                <label>Chemical Processes</label>
+            </value>
+            <value>
+                <fullName>Chemistry</fullName>
+                <default>false</default>
+                <label>Chemistry</label>
+            </value>
+            <value>
+                <fullName>Cloud Provisioning Workflows</fullName>
+                <default>false</default>
+                <label>Cloud Provisioning Workflows</label>
+            </value>
+            <value>
+                <fullName>Coal</fullName>
+                <default>false</default>
+                <label>Coal</label>
+            </value>
+            <value>
+                <fullName>Coatings</fullName>
+                <default>false</default>
+                <label>Coatings</label>
+            </value>
+            <value>
+                <fullName>Combined Heat and Power</fullName>
+                <default>false</default>
+                <label>Combined Heat and Power</label>
+            </value>
+            <value>
+                <fullName>Combustion</fullName>
+                <default>false</default>
+                <label>Combustion</label>
+            </value>
+            <value>
+                <fullName>Communications</fullName>
+                <default>false</default>
+                <label>Communications</label>
+            </value>
+            <value>
+                <fullName>Computing Infrastructure</fullName>
+                <default>false</default>
+                <label>Computing Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Concentrated Solar</fullName>
+                <default>false</default>
+                <label>Concentrated Solar</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity</fullName>
+                <default>false</default>
+                <label>Cybersecurity</label>
+            </value>
+            <value>
+                <fullName>Damage Resistance</fullName>
+                <default>false</default>
+                <label>Damage Resistance</label>
+            </value>
+            <value>
+                <fullName>Data Emulytics</fullName>
+                <default>false</default>
+                <label>Data Emulytics</label>
+            </value>
+            <value>
+                <fullName>Defense Systems</fullName>
+                <default>false</default>
+                <label>Defense Systems</label>
+            </value>
+            <value>
+                <fullName>Detectors</fullName>
+                <default>false</default>
+                <label>Detectors</label>
+            </value>
+            <value>
+                <fullName>Diagnostics</fullName>
+                <default>false</default>
+                <label>Diagnostics</label>
+            </value>
+            <value>
+                <fullName>Eco-System Monitoring</fullName>
+                <default>false</default>
+                <label>Eco-System Monitoring</label>
+            </value>
+            <value>
+                <fullName>Electron Tomography</fullName>
+                <default>false</default>
+                <label>Electron Tomography</label>
+            </value>
+            <value>
+                <fullName>Emergency Planning</fullName>
+                <default>false</default>
+                <label>Emergency Planning</label>
+            </value>
+            <value>
+                <fullName>Energetic Materials</fullName>
+                <default>false</default>
+                <label>Energetic Materials</label>
+            </value>
+            <value>
+                <fullName>Energy Storage - Batteries</fullName>
+                <default>false</default>
+                <label>Energy Storage - Batteries</label>
+            </value>
+            <value>
+                <fullName>Energy Storage - Capacitors</fullName>
+                <default>false</default>
+                <label>Energy Storage - Capacitors</label>
+            </value>
+            <value>
+                <fullName>Energy Storage - Supercapacitors</fullName>
+                <default>false</default>
+                <label>Energy Storage - Supercapacitors</label>
+            </value>
+            <value>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+                <label>Engineering</label>
+            </value>
+            <value>
+                <fullName>Engines</fullName>
+                <default>false</default>
+                <label>Engines</label>
+            </value>
+            <value>
+                <fullName>Epidemiology</fullName>
+                <default>false</default>
+                <label>Epidemiology</label>
+            </value>
+            <value>
+                <fullName>Forensics</fullName>
+                <default>false</default>
+                <label>Forensics</label>
+            </value>
+            <value>
+                <fullName>Fossil Fuels - Downstream/ Distribution</fullName>
+                <default>false</default>
+                <label>Fossil Fuels - Downstream/ Distribution</label>
+            </value>
+            <value>
+                <fullName>Fossil Fuels - Upstream</fullName>
+                <default>false</default>
+                <label>Fossil Fuels - Upstream</label>
+            </value>
+            <value>
+                <fullName>Gas Separation/Membranes</fullName>
+                <default>false</default>
+                <label>Gas Separation/Membranes</label>
+            </value>
+            <value>
+                <fullName>Geo-location</fullName>
+                <default>false</default>
+                <label>Geo-location</label>
+            </value>
+            <value>
+                <fullName>Geonomics</fullName>
+                <default>false</default>
+                <label>Geonomics</label>
+            </value>
+            <value>
+                <fullName>Geophysics and Seismology</fullName>
+                <default>false</default>
+                <label>Geophysics and Seismology</label>
+            </value>
+            <value>
+                <fullName>Geothermal</fullName>
+                <default>false</default>
+                <label>Geothermal</label>
+            </value>
+            <value>
+                <fullName>Graphing</fullName>
+                <default>false</default>
+                <label>Graphing</label>
+            </value>
+            <value>
+                <fullName>Heating and Cooling</fullName>
+                <default>false</default>
+                <label>Heating and Cooling</label>
+            </value>
+            <value>
+                <fullName>HPC - Design and Methods</fullName>
+                <default>false</default>
+                <label>HPC - Design and Methods</label>
+            </value>
+            <value>
+                <fullName>Hydro</fullName>
+                <default>false</default>
+                <label>Hydro</label>
+            </value>
+            <value>
+                <fullName>Hydrogen Storage</fullName>
+                <default>false</default>
+                <label>Hydrogen Storage</label>
+            </value>
+            <value>
+                <fullName>Imaging</fullName>
+                <default>false</default>
+                <label>Imaging</label>
+            </value>
+            <value>
+                <fullName>Indoor Air Purification</fullName>
+                <default>false</default>
+                <label>Indoor Air Purification</label>
+            </value>
+            <value>
+                <fullName>Industrial Control Systems</fullName>
+                <default>false</default>
+                <label>Industrial Control Systems</label>
+            </value>
+            <value>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+                <label>Instrumentation</label>
+            </value>
+            <value>
+                <fullName>Instrument Calibration and Control Systems</fullName>
+                <default>false</default>
+                <label>Instrument Calibration and Control Systems</label>
+            </value>
+            <value>
+                <fullName>Lasers &amp; Optics</fullName>
+                <default>false</default>
+                <label>Lasers &amp; Optics</label>
+            </value>
+            <value>
+                <fullName>LEDs</fullName>
+                <default>false</default>
+                <label>LEDs</label>
+            </value>
+            <value>
+                <fullName>Light Water Reactor</fullName>
+                <default>false</default>
+                <label>Light Water Reactor</label>
+            </value>
+            <value>
+                <fullName>Machining</fullName>
+                <default>false</default>
+                <label>Machining</label>
+            </value>
+            <value>
+                <fullName>Marine Hydrokinetic</fullName>
+                <default>false</default>
+                <label>Marine Hydrokinetic</label>
+            </value>
+            <value>
+                <fullName>Materials and Components</fullName>
+                <default>false</default>
+                <label>Materials and Components</label>
+            </value>
+            <value>
+                <fullName>Materials Characterization</fullName>
+                <default>false</default>
+                <label>Materials Characterization</label>
+            </value>
+            <value>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+                <label>Medical Devices</label>
+            </value>
+            <value>
+                <fullName>Membranes</fullName>
+                <default>false</default>
+                <label>Membranes</label>
+            </value>
+            <value>
+                <fullName>Metabolomics</fullName>
+                <default>false</default>
+                <label>Metabolomics</label>
+            </value>
+            <value>
+                <fullName>Molecular Biology</fullName>
+                <default>false</default>
+                <label>Molecular Biology</label>
+            </value>
+            <value>
+                <fullName>Natural Gas</fullName>
+                <default>false</default>
+                <label>Natural Gas</label>
+            </value>
+            <value>
+                <fullName>New Processes</fullName>
+                <default>false</default>
+                <label>New Processes</label>
+            </value>
+            <value>
+                <fullName>New Products</fullName>
+                <default>false</default>
+                <label>New Products</label>
+            </value>
+            <value>
+                <fullName>Next Generation Electronics</fullName>
+                <default>false</default>
+                <label>Next Generation Electronics</label>
+            </value>
+            <value>
+                <fullName>Nonproliferation</fullName>
+                <default>false</default>
+                <label>Nonproliferation</label>
+            </value>
+            <value>
+                <fullName>Nuclear Waste Management</fullName>
+                <default>false</default>
+                <label>Nuclear Waste Management</label>
+            </value>
+            <value>
+                <fullName>Packaging</fullName>
+                <default>false</default>
+                <label>Packaging</label>
+            </value>
+            <value>
+                <fullName>Pathogen Detection</fullName>
+                <default>false</default>
+                <label>Pathogen Detection</label>
+            </value>
+            <value>
+                <fullName>Pharmaceuticals</fullName>
+                <default>false</default>
+                <label>Pharmaceuticals</label>
+            </value>
+            <value>
+                <fullName>Physical Security</fullName>
+                <default>false</default>
+                <label>Physical Security</label>
+            </value>
+            <value>
+                <fullName>Plasma Physics - Astrophysics</fullName>
+                <default>false</default>
+                <label>Plasma Physics - Astrophysics</label>
+            </value>
+            <value>
+                <fullName>Plasma Physics - Fusion Energy</fullName>
+                <default>false</default>
+                <label>Plasma Physics - Fusion Energy</label>
+            </value>
+            <value>
+                <fullName>Plasma Physics – General</fullName>
+                <default>false</default>
+                <label>Plasma Physics – General</label>
+            </value>
+            <value>
+                <fullName>Quantum Computing</fullName>
+                <default>false</default>
+                <label>Quantum Computing</label>
+            </value>
+            <value>
+                <fullName>Rad/Chem/Bio Sensors</fullName>
+                <default>false</default>
+                <label>Rad/Chem/Bio Sensors</label>
+            </value>
+            <value>
+                <fullName>Radar</fullName>
+                <default>false</default>
+                <label>Radar</label>
+            </value>
+            <value>
+                <fullName>Radiation exposures</fullName>
+                <default>false</default>
+                <label>Radiation exposures</label>
+            </value>
+            <value>
+                <fullName>Radiation Hardening</fullName>
+                <default>false</default>
+                <label>Radiation Hardening</label>
+            </value>
+            <value>
+                <fullName>Reactor Fuels</fullName>
+                <default>false</default>
+                <label>Reactor Fuels</label>
+            </value>
+            <value>
+                <fullName>Recovery</fullName>
+                <default>false</default>
+                <label>Recovery</label>
+            </value>
+            <value>
+                <fullName>Remediation</fullName>
+                <default>false</default>
+                <label>Remediation</label>
+            </value>
+            <value>
+                <fullName>Renewable Energy Integration</fullName>
+                <default>false</default>
+                <label>Renewable Energy Integration</label>
+            </value>
+            <value>
+                <fullName>Risk Assessment</fullName>
+                <default>false</default>
+                <label>Risk Assessment</label>
+            </value>
+            <value>
+                <fullName>Risk Management</fullName>
+                <default>false</default>
+                <label>Risk Management</label>
+            </value>
+            <value>
+                <fullName>Robotics/Prosthetics</fullName>
+                <default>false</default>
+                <label>Robotics/Prosthetics</label>
+            </value>
+            <value>
+                <fullName>Robotics and Adaptive Automation</fullName>
+                <default>false</default>
+                <label>Robotics and Adaptive Automation</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Semiconductors/Microelectronics</fullName>
+                <default>false</default>
+                <label>Semiconductors/Microelectronics</label>
+            </value>
+            <value>
+                <fullName>Semiconductors/PV</fullName>
+                <default>false</default>
+                <label>Semiconductors/PV</label>
+            </value>
+            <value>
+                <fullName>Sensors</fullName>
+                <default>false</default>
+                <label>Sensors</label>
+            </value>
+            <value>
+                <fullName>Sensors, Systems, and Controls</fullName>
+                <default>false</default>
+                <label>Sensors, Systems, and Controls</label>
+            </value>
+            <value>
+                <fullName>Sensors and System Control</fullName>
+                <default>false</default>
+                <label>Sensors and System Control</label>
+            </value>
+            <value>
+                <fullName>Small Modular Reactors</fullName>
+                <default>false</default>
+                <label>Small Modular Reactors</label>
+            </value>
+            <value>
+                <fullName>Spectroscopy and Microscopy</fullName>
+                <default>false</default>
+                <label>Spectroscopy and Microscopy</label>
+            </value>
+            <value>
+                <fullName>Stationary Fuel Cells</fullName>
+                <default>false</default>
+                <label>Stationary Fuel Cells</label>
+            </value>
+            <value>
+                <fullName>Structural Materials</fullName>
+                <default>false</default>
+                <label>Structural Materials</label>
+            </value>
+            <value>
+                <fullName>Superconducting Magnet Energy Storage</fullName>
+                <default>false</default>
+                <label>Superconducting Magnet Energy Storage</label>
+            </value>
+            <value>
+                <fullName>Superconductors</fullName>
+                <default>false</default>
+                <label>Superconductors</label>
+            </value>
+            <value>
+                <fullName>Synthesis</fullName>
+                <default>false</default>
+                <label>Synthesis</label>
+            </value>
+            <value>
+                <fullName>System Health and Diagnostics</fullName>
+                <default>false</default>
+                <label>System Health and Diagnostics</label>
+            </value>
+            <value>
+                <fullName>Thermoelastic Cooling</fullName>
+                <default>false</default>
+                <label>Thermoelastic Cooling</label>
+            </value>
+            <value>
+                <fullName>Thermoelectric Power</fullName>
+                <default>false</default>
+                <label>Thermoelectric Power</label>
+            </value>
+            <value>
+                <fullName>Threat/Risk/Vulnerability Assessment</fullName>
+                <default>false</default>
+                <label>Threat/Risk/Vulnerability Assessment</label>
+            </value>
+            <value>
+                <fullName>Tooling</fullName>
+                <default>false</default>
+                <label>Tooling</label>
+            </value>
+            <value>
+                <fullName>Transmission and Distribution Components</fullName>
+                <default>false</default>
+                <label>Transmission and Distribution Components</label>
+            </value>
+            <value>
+                <fullName>Vaccine and Vaccine Delivery</fullName>
+                <default>false</default>
+                <label>Vaccine and Vaccine Delivery</label>
+            </value>
+            <value>
+                <fullName>Vehicle Efficiency</fullName>
+                <default>false</default>
+                <label>Vehicle Efficiency</label>
+            </value>
+            <value>
+                <fullName>Vehicle Lightweighting</fullName>
+                <default>false</default>
+                <label>Vehicle Lightweighting</label>
+            </value>
+            <value>
+                <fullName>Veterinary</fullName>
+                <default>false</default>
+                <label>Veterinary</label>
+            </value>
+            <value>
+                <fullName>Waste Management</fullName>
+                <default>false</default>
+                <label>Waste Management</label>
+            </value>
+            <value>
+                <fullName>Water Resources</fullName>
+                <default>false</default>
+                <label>Water Resources</label>
+            </value>
+            <value>
+                <fullName>Wind</fullName>
+                <default>false</default>
+                <label>Wind</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Nuclear</controllingFieldValue>
+            <valueName>Chemistry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nuclear</controllingFieldValue>
+            <valueName>Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nuclear</controllingFieldValue>
+            <valueName>Light Water Reactor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nuclear</controllingFieldValue>
+            <valueName>Materials and Components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nuclear</controllingFieldValue>
+            <valueName>Nuclear Waste Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nuclear</controllingFieldValue>
+            <valueName>Radiation Hardening</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nuclear</controllingFieldValue>
+            <valueName>Reactor Fuels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nuclear</controllingFieldValue>
+            <valueName>Risk Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nuclear</controllingFieldValue>
+            <valueName>Risk Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nuclear</controllingFieldValue>
+            <valueName>Small Modular Reactors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physics Applications</controllingFieldValue>
+            <valueName>Accelerators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physics Applications</controllingFieldValue>
+            <valueName>Detectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physics Applications</controllingFieldValue>
+            <valueName>Lasers &amp; Optics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physics Applications</controllingFieldValue>
+            <valueName>Plasma Physics - Astrophysics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physics Applications</controllingFieldValue>
+            <valueName>Plasma Physics - Fusion Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physics Applications</controllingFieldValue>
+            <valueName>Plasma Physics – General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physics Applications</controllingFieldValue>
+            <valueName>Radar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physics Applications</controllingFieldValue>
+            <valueName>Semiconductors/Microelectronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physics Applications</controllingFieldValue>
+            <valueName>Spectroscopy and Microscopy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Distribution</controllingFieldValue>
+            <valueName>Architecture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Distribution</controllingFieldValue>
+            <valueName>Communications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Distribution</controllingFieldValue>
+            <valueName>Energy Storage - Batteries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Distribution</controllingFieldValue>
+            <valueName>Energy Storage - Capacitors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Distribution</controllingFieldValue>
+            <valueName>Energy Storage - Supercapacitors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Distribution</controllingFieldValue>
+            <valueName>Renewable Energy Integration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Distribution</controllingFieldValue>
+            <valueName>Sensors and System Control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Distribution</controllingFieldValue>
+            <valueName>Superconducting Magnet Energy Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Distribution</controllingFieldValue>
+            <valueName>Thermoelectric Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Distribution</controllingFieldValue>
+            <valueName>Transmission and Distribution Components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renewable Power</controllingFieldValue>
+            <valueName>Biopower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renewable Power</controllingFieldValue>
+            <valueName>Combined Heat and Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renewable Power</controllingFieldValue>
+            <valueName>Concentrated Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renewable Power</controllingFieldValue>
+            <valueName>Geothermal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renewable Power</controllingFieldValue>
+            <valueName>Hydro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renewable Power</controllingFieldValue>
+            <valueName>Hydrogen Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renewable Power</controllingFieldValue>
+            <valueName>Marine Hydrokinetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renewable Power</controllingFieldValue>
+            <controllingFieldValue>Advanced Materials</controllingFieldValue>
+            <valueName>Semiconductors/PV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renewable Power</controllingFieldValue>
+            <valueName>Stationary Fuel Cells</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renewable Power</controllingFieldValue>
+            <valueName>Wind</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Aerodynamics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Batteries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>BiofueIs - liquid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Biofuel Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Biofuels - gaseous</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Engines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Heating and Cooling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Sensors, Systems, and Controls</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Vehicle Efficiency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Vehicle Lightweighting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Computation</controllingFieldValue>
+            <valueName>Artificial Intelligence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Computation</controllingFieldValue>
+            <valueName>Cloud Provisioning Workflows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Computation</controllingFieldValue>
+            <valueName>Computing Infrastructure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Computation</controllingFieldValue>
+            <valueName>Data Emulytics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Computation</controllingFieldValue>
+            <valueName>Electron Tomography</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Computation</controllingFieldValue>
+            <valueName>Graphing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Computation</controllingFieldValue>
+            <valueName>HPC - Design and Methods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Computation</controllingFieldValue>
+            <valueName>Quantum Computing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Materials</controllingFieldValue>
+            <valueName>Damage Resistance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Materials</controllingFieldValue>
+            <valueName>Energetic Materials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Materials</controllingFieldValue>
+            <valueName>Materials Characterization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Materials</controllingFieldValue>
+            <valueName>Membranes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Materials</controllingFieldValue>
+            <valueName>Structural Materials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Materials</controllingFieldValue>
+            <valueName>Superconductors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bioscience Applications</controllingFieldValue>
+            <controllingFieldValue>Earth and Environmental</controllingFieldValue>
+            <valueName>Agricultural</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bioscience Applications</controllingFieldValue>
+            <valueName>Biodefense</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bioscience Applications</controllingFieldValue>
+            <valueName>Biology Proteomics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bioscience Applications</controllingFieldValue>
+            <valueName>Biomarkers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bioscience Applications</controllingFieldValue>
+            <valueName>Biomimetics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bioscience Applications</controllingFieldValue>
+            <valueName>Geonomics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bioscience Applications</controllingFieldValue>
+            <valueName>Metabolomics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bioscience Applications</controllingFieldValue>
+            <valueName>Molecular Biology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carbon Fuels</controllingFieldValue>
+            <valueName>Carbon Capture and Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carbon Fuels</controllingFieldValue>
+            <valueName>Carbon Capture and Utilization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carbon Fuels</controllingFieldValue>
+            <valueName>Coal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carbon Fuels</controllingFieldValue>
+            <valueName>Combustion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carbon Fuels</controllingFieldValue>
+            <valueName>Fossil Fuels - Downstream/ Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carbon Fuels</controllingFieldValue>
+            <valueName>Fossil Fuels - Upstream</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carbon Fuels</controllingFieldValue>
+            <valueName>Natural Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carbon Fuels</controllingFieldValue>
+            <valueName>Recovery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carbon Fuels</controllingFieldValue>
+            <valueName>Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemical Science (non-nuclear)</controllingFieldValue>
+            <valueName>Analysis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemical Science (non-nuclear)</controllingFieldValue>
+            <valueName>Catalysts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemical Science (non-nuclear)</controllingFieldValue>
+            <valueName>Chemical Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemical Science (non-nuclear)</controllingFieldValue>
+            <valueName>Chemical Processes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemical Science (non-nuclear)</controllingFieldValue>
+            <valueName>Gas Separation/Membranes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemical Science (non-nuclear)</controllingFieldValue>
+            <valueName>Instrumentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemical Science (non-nuclear)</controllingFieldValue>
+            <valueName>Synthesis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Earth and Environmental</controllingFieldValue>
+            <valueName>Atmosphere/Climate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Earth and Environmental</controllingFieldValue>
+            <valueName>Eco-System Monitoring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Earth and Environmental</controllingFieldValue>
+            <valueName>Geophysics and Seismology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Earth and Environmental</controllingFieldValue>
+            <valueName>Indoor Air Purification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Earth and Environmental</controllingFieldValue>
+            <valueName>Packaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Earth and Environmental</controllingFieldValue>
+            <valueName>Remediation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Earth and Environmental</controllingFieldValue>
+            <valueName>Waste Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Earth and Environmental</controllingFieldValue>
+            <valueName>Water Resources</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Energy Efficiency</controllingFieldValue>
+            <valueName>Buildings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Energy Efficiency</controllingFieldValue>
+            <valueName>Coatings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Energy Efficiency</controllingFieldValue>
+            <valueName>Industrial Control Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Energy Efficiency</controllingFieldValue>
+            <valueName>LEDs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Energy Efficiency</controllingFieldValue>
+            <valueName>New Processes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Energy Efficiency</controllingFieldValue>
+            <valueName>New Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Energy Efficiency</controllingFieldValue>
+            <valueName>Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Energy Efficiency</controllingFieldValue>
+            <valueName>Thermoelastic Cooling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>3D Scanning/Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Additive and Precise Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Instrument Calibration and Control Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Machining</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Next Generation Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Robotics and Adaptive Automation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>System Health and Diagnostics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Tooling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical</controllingFieldValue>
+            <valueName>Biomedical Instrumentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical</controllingFieldValue>
+            <valueName>Diagnostics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical</controllingFieldValue>
+            <valueName>Epidemiology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical</controllingFieldValue>
+            <controllingFieldValue>National Security</controllingFieldValue>
+            <valueName>Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical</controllingFieldValue>
+            <valueName>Medical Devices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical</controllingFieldValue>
+            <valueName>Pathogen Detection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical</controllingFieldValue>
+            <valueName>Pharmaceuticals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical</controllingFieldValue>
+            <valueName>Radiation exposures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical</controllingFieldValue>
+            <valueName>Robotics/Prosthetics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical</controllingFieldValue>
+            <valueName>Vaccine and Vaccine Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical</controllingFieldValue>
+            <valueName>Veterinary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>National Security</controllingFieldValue>
+            <valueName>Aerospace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>National Security</controllingFieldValue>
+            <valueName>Cybersecurity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>National Security</controllingFieldValue>
+            <valueName>Defense Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>National Security</controllingFieldValue>
+            <valueName>Emergency Planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>National Security</controllingFieldValue>
+            <valueName>Forensics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>National Security</controllingFieldValue>
+            <valueName>Geo-location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>National Security</controllingFieldValue>
+            <valueName>Nonproliferation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>National Security</controllingFieldValue>
+            <valueName>Physical Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>National Security</controllingFieldValue>
+            <valueName>Rad/Chem/Bio Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>National Security</controllingFieldValue>
+            <valueName>Threat/Risk/Vulnerability Assessment</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
