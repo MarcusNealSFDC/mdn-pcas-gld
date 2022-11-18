@@ -60,7 +60,7 @@ jobs:
         id: validate
         if: github.event_name == 'pull_request'
         run:
-          node_modules/sfdx-cli/bin/run force:source:deploy -c -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal --verbose --ignorewarnings | tee results.txt
+          node_modules/sfdx-cli/bin/run force:source:deploy -c -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal | tee results.txt
 
       # - name: Run Apex test
       #   run: 
