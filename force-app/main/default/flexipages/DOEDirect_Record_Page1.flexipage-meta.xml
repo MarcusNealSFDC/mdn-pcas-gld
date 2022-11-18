@@ -223,6 +223,16 @@
                 <identifier>RecordB_R_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.StageName</fieldItem>
+                <identifier>RecordStageNameField2</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-23d2eac5-764d-4194-bfe2-deb2e26752cb</name>
         <type>Facet</type>
     </flexiPageRegions>

@@ -94,6 +94,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>OppCostDetailTableController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>OppCostDetailTableControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>SiteLoginController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -446,11 +454,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CRADA__c.Property__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>CRADA__c.Revision_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1299,6 +1302,16 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Limited_Term_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Limited_Term_Funds__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Loss_Reason__c</field>
         <readable>false</readable>
@@ -1494,9 +1507,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.PNSO_ACT_Reviewer__c</field>
-        <readable>false</readable>
+        <editable>true</editable>
+        <field>Opportunity.PNSOACTReviewer__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1899,11 +1912,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.of_SOW_Attachments__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Work_Proposal_Description__c</field>
         <readable>true</readable>
@@ -2021,16 +2029,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>PNNL_Contracts__c.Completion_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>PNNL_Contracts__c.Contract_Administrator__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>PNNL_Contracts__c.Contract_Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2260,11 +2258,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Project__c.Budget_Year__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Project__c.Budget_and_Reporting_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2342,6 +2335,11 @@
         <editable>false</editable>
         <field>Project__c.ReportClass__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Report_Class__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -2556,14 +2554,6 @@
     <layoutAssignments>
         <layout>Opportunity-DOE Direct Proposal Layout</layout>
         <recordType>Opportunity.DOE_Direct</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-DOE Direct Proposal Layout</layout>
-        <recordType>Opportunity.FIN_Plan_Proposal</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-DOE Direct Proposal Layout</layout>
-        <recordType>Opportunity.Field_Work_Proposal</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-IWO Page Layout</layout>
@@ -2849,23 +2839,13 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.DOE_Direct</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
         <default>true</default>
-        <recordType>Opportunity.FIN_Plan_Proposal</recordType>
+        <recordType>Opportunity.DOE_Direct</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.F_SPP</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.Field_Work_Proposal</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -2933,6 +2913,10 @@
     <tabVisibilities>
         <tab>Project__c</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Proposals</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Proposed_Amendment__c</tab>
@@ -3061,6 +3045,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>OverrideForecasts</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>RemoveDirectMessageMembers</name>
     </userPermissions>
     <userPermissions>
@@ -3074,6 +3062,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>SelectFilesFromSalesforce</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>SendExternalEmailAvailable</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

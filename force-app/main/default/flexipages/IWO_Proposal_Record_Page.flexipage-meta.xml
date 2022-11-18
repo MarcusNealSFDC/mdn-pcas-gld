@@ -316,6 +316,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
+                <identifier>RecordSpecial_Reporting_Funds_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Product_Line__c</fieldItem>
                 <identifier>RecordProduct_Line_cField</identifier>
             </fieldInstance>
