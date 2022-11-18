@@ -29,6 +29,9 @@
         "quoteSettings": {
             "enableQuote": true
         },
+        "orgPreferenceSettings": {
+            "consentManagementEnabled": false
+        },
         "opportunitySettings": {
             "enableOpportunityTeam": true
         }
