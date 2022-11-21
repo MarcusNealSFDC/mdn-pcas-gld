@@ -71,6 +71,22 @@
                 <field>SPPDetermination2__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PNSO_Signed_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Special_Reporting_Funds__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Risk_Assessment_Link__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>FWP__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Market_Sector_pnnl__c</field>
             </layoutItems>
@@ -229,7 +245,6 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>Project_Title2__c</fields>
-        <fields>Budget_Year__c</fields>
         <fields>Effective_Date__c</fields>
         <fields>Inactive_Date__c</fields>
         <fields>Revision_Number__c</fields>
@@ -281,7 +296,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000tvbF</masterLabel>
+        <masterLabel>00h3R000000v2GR</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

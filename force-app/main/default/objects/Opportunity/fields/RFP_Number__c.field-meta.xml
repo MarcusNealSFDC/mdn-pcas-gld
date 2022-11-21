@@ -3,7 +3,7 @@
     <fullName>RFP_Number__c</fullName>
     <externalId>false</externalId>
     <label>RFP Number</label>
-    <length>12</length>
+    <length>20</length>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>

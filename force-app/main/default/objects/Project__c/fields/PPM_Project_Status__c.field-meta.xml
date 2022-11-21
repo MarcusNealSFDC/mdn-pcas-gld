@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>PPM_Project_Status__c</fullName>
     <externalId>false</externalId>
+    <inlineHelpText>Provides current status of the project ex: Active</inlineHelpText>
     <label>PPM Project Status</label>
     <length>6</length>
     <required>false</required>

@@ -968,11 +968,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>PNSO_ACT_Reviewer__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>PNSO_Coordinator__c</field>
             <table>Opportunity</table>
         </columns>
@@ -1013,17 +1008,22 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Project_Coordinators__c</field>
+            <field>Approval_in_Process__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Project_Manager3__c</field>
+            <field>Final_Approval_Received__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Work_Location__c</field>
+            <field>Approval_Recalled__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Approval_Rejected__c</field>
             <table>Opportunity</table>
         </columns>
         <masterLabel>Opportunities</masterLabel>
@@ -1206,7 +1206,22 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>CRADALU__c</field>
+            <field>Approval_in_Process__c</field>
+            <table>Opportunity.Funding_Agreements__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Final_Approval_Received__c</field>
+            <table>Opportunity.Funding_Agreements__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Approval_Recalled__c</field>
+            <table>Opportunity.Funding_Agreements__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Approval_Rejected__c</field>
             <table>Opportunity.Funding_Agreements__r</table>
         </columns>
         <masterLabel>Funding Agreements</masterLabel>
@@ -1286,12 +1301,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Project__c</field>
-            <table
-      >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Opportunity__c</field>
             <table
       >Opportunity.Funding_Agreements__r.Budget_Reporting_Entries__r</table>
@@ -1360,12 +1369,37 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Market_Sector_pnnl__c</field>
+            <field>PNSO_Signed_Date__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Project_Management_Office_pnnl__c</field>
+            <field>Special_Reporting_Funds__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Risk_Assessment_Link__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FWP__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PNSOACTReviewer__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Limited_Term_Funds__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Limited_Term_Date__c</field>
             <table>Opportunity</table>
         </columns>
         <masterLabel>Proposals</masterLabel>

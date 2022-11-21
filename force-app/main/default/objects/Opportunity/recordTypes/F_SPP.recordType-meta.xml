@@ -336,6 +336,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>FWP__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>ForecastCategoryName</picklist>
         <values>
             <fullName>Best Case</fullName>
@@ -438,6 +449,17 @@
         </values>
         <values>
             <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Limited_Term_Funds__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -594,13 +616,6 @@
     </picklistValues>
     <picklistValues>
         <picklist>PNNL_ACT_Office__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>PNSO_ACT_Reviewer__c</picklist>
         <values>
             <fullName>TBD</fullName>
             <default>false</default>
@@ -877,6 +892,25 @@
         <picklist>Source_of_Funds__c</picklist>
         <values>
             <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Special_Reporting_Funds__c</picklist>
+        <values>
+            <fullName>BIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIJA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
             <default>false</default>
         </values>
     </picklistValues>

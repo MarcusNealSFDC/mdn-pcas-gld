@@ -170,6 +170,22 @@
                 <field>SPPDetermination2__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PNSO_Signed_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Special_Reporting_Funds__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Risk_Assessment_Link__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>FWP__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Market_Sector_pnnl__c</field>
             </layoutItems>
@@ -397,14 +413,14 @@
             <sortOrder>9</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Submit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>11</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>RecordShareHierarchy</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>10</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Submit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>11</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>Delete</actionName>
@@ -543,7 +559,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000tvbd</masterLabel>
+        <masterLabel>00h3R000000v2Ga</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
