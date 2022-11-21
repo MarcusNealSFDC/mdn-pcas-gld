@@ -54,13 +54,13 @@ jobs:
         id: Deploy
         if: github.event_name == 'push'
         run:
-          node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal --verbose
+          node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal --verbose --ignorewarnings
 
       - name: Validate source
         id: validate
         if: github.event_name == 'pull_request'
         run:
-          node_modules/sfdx-cli/bin/run force:source:deploy -c -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal --verbose | tee results.txt
+          node_modules/sfdx-cli/bin/run force:source:deploy -c -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal --ignorewarnings | tee results.txt
 
       # - name: Run Apex test
       #   run: 

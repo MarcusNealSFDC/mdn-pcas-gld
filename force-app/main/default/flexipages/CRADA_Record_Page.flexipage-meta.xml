@@ -41,6 +41,26 @@
                 <identifier>RecordProposal_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.MSW__c</fieldItem>
+                <identifier>RecordMSW_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.MSW_CRADA__c</fieldItem>
+                <identifier>RecordMSW_CRADA_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-c5447c6a-f465-4f0e-a384-a48e05f2531e</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -51,18 +71,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Number__c</fieldItem>
-                <identifier>RecordProject_Number_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Project_Title__c</fieldItem>
-                <identifier>RecordProject_Title_cField</identifier>
+                <fieldItem>Record.ProjectTitle__c</fieldItem>
+                <identifier>RecordProjectTitle_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-f4547e1c-0838-457c-bf84-885b2131ae2f</name>
@@ -339,6 +349,36 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Parallel_Categorization__c</fieldItem>
+                <identifier>RecordParallel_Categorization_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Primary_Taxonomy__c</fieldItem>
+                <identifier>RecordPrimary_Taxonomy_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Secondary_Taxonomy__c</fieldItem>
+                <identifier>RecordSecondary_Taxonomy_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-6a837abf-8910-4530-974d-53264a982029</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -367,16 +407,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.MSW__c</fieldItem>
-                <identifier>RecordMSW_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -485,7 +515,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>CRADA Additional Details</value>
+                    <value>CRADA Project Team</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection2</identifier>
@@ -513,7 +543,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Work Authorization Information</value>
+                    <value>Work Authorization Information &amp; DOE - OTT</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection8</identifier>
@@ -691,50 +721,30 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <name>Facet-93d07610-c2ff-4997-967d-4bd89c3814a0</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <name>Facet-c6f9b8b3-5b2e-43a7-8837-6b2224f9b691</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-93d07610-c2ff-4997-967d-4bd89c3814a0</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column9</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-c6f9b8b3-5b2e-43a7-8837-6b2224f9b691</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column10</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-d909154a-8cd8-471d-8649-e8844dbb0df7</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>columns</name>
-                    <value>Facet-d909154a-8cd8-471d-8649-e8844dbb0df7</value>
+                    <name>parentFieldApiName</name>
+                    <value>CRADA__c.Id</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Approval Options</value>
+                    <name>relatedListApiName</name>
+                    <value>ProcessSteps</value>
                 </componentInstanceProperties>
-                <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection6</identifier>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer2</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-rbf5f6t3her</name>

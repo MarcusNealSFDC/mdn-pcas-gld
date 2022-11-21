@@ -118,6 +118,16 @@
                 <identifier>RecordProposed_Amount_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Risk_Assessment_Link__c</fieldItem>
+                <identifier>RecordRisk_Assessment_Link_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-e42b5582-9a7d-411d-946d-f97b6f727225</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -150,6 +160,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Proposed_Start_Date__c</fieldItem>
                 <identifier>RecordProposed_Start_Date_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.StageName</fieldItem>
+                <identifier>RecordStageNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -699,6 +719,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.EMSL_Approval_Number__c</fieldItem>
                 <identifier>RecordEMSL_Approval_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
+                <identifier>RecordSpecial_Reporting_Funds_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1435,6 +1465,34 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Signed_Date__c</fieldItem>
+                <identifier>RecordPNSO_Signed_Date_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-7f3113cc-0c77-4062-b9cb-4818de8ea5ae</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-7f3113cc-0c77-4062-b9cb-4818de8ea5ae</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column17</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-81dafa38-d39e-474a-b0d2-f5d55ae04890</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
@@ -1446,6 +1504,20 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection22</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-81dafa38-d39e-474a-b0d2-f5d55ae04890</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>PNSO Approval Signed Date</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection11</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>

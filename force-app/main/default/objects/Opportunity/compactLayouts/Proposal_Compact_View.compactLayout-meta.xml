@@ -8,5 +8,6 @@
     <fields>Funding_Agreement_Total__c</fields>
     <fields>Amendments_Total__c</fields>
     <fields>Unsold_Amount__c</fields>
+    <fields>StageName</fields>
     <label>Proposal Compact View</label>
 </CompactLayout>

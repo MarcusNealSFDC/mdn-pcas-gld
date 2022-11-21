@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -52,7 +52,11 @@
         <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>PNSO_Contracting_Officer_Approves</name>
+                <name>PNSO_Signed_Date</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Proposal_Approved</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
@@ -90,7 +94,7 @@
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <label>IWO Approval</label>
-    <processOrder>2</processOrder>
+    <processOrder>3</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>

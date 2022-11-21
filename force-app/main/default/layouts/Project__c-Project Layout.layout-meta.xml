@@ -61,12 +61,20 @@
                 <behavior>Readonly</behavior>
                 <field>ScopeNumber__c</field>
             </layoutItems>
-        </layoutColumns>
-        <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Budget_Year__c</field>
+                <field>Project_Account_Number__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Special_Reporting_Funds__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CRADA__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Report_Period__c</field>
@@ -111,10 +119,6 @@
         <editHeading>true</editHeading>
         <label>Budget Office Details</label>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Account_Number__c</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Product_Line__c</field>
@@ -177,13 +181,6 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>CRADA_Status__c</fields>
-        <fields>CRADA_Title__c</fields>
-        <fields>End_Date__c</fields>
-        <relatedList>CRADA__c.Project_Number__c</relatedList>
-    </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
         <fields>Project_Num__c</fields>
