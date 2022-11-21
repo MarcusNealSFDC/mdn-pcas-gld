@@ -5,7 +5,7 @@
         <label>Scope Clearance Decision</label>
         <locationX>176</locationX>
         <locationY>335</locationY>
-        <actionName>Opportunity.Scope_Clearance_Decision_Email_Template_to_Assigned_PM</actionName>
+        <actionName>Opportunity.Scope_Clearance_Decision_Email_Template_to_Assigned_PM_PMO</actionName>
         <actionType>emailAlert</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Scope Clearance Decision Email Template to Funding and Agreements Team</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>PNNL_Logo</letterhead>
+    <name>Scope Clearance Decision No</name>
+    <style>formalLetter</style>
+    <subject>Scope Clearance Decision {!Opportunity.Scope__c}</subject>
+    <textOnly>Scope has not been cleared for Scope Number {!Opportunity.Scope__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
