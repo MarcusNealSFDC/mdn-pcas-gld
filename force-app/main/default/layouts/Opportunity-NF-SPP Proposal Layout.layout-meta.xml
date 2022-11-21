@@ -519,7 +519,7 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>Project_Title2__c</fields>
-        <fields>Market_Sector__c</fields>
+        <fields>Market_Sector_pnnl__c</fields>
         <fields>Project_Manager2__c</fields>
         <relatedList>Project__c.Opportunity__c</relatedList>
     </relatedLists>

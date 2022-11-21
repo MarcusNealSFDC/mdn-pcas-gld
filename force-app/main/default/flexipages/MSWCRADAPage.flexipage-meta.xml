@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <flexiPageRegions>
         <itemInstances>
@@ -85,10 +85,8 @@
                     <name>body</name>
                     <value>Facet-f4547e1c-0838-457c-bf84-885b2131ae2f</value>
                 </componentInstanceProperties>
-                <componentName
-        >flexipage:column</componentName>
-                <identifier
-        >flexipage_column12</identifier>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column12</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-798d9ae9-b85b-4f55-b985-c73c9a887d44</name>
@@ -96,8 +94,6 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
-=======
->>>>>>> dev:force-app/main/default/flexipages/MSWCRADAPage.flexipage-meta.xml
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
@@ -212,7 +208,7 @@
                     <value>Facet-c4dd3020-475c-43a7-aa2d-d3438df0c80e</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column11</identifier>
+                <identifier>flexipage_column</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -222,7 +218,7 @@
                     <value>Facet-cd76c86b-b3f5-4e33-97fe-df33a8c08617</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column12</identifier>
+                <identifier>flexipage_column2</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-ff56e7a2-5d3c-4542-a0dc-9df1f1aeb9d7</name>

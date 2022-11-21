@@ -1323,7 +1323,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.Market_Sector__c</field>
+        <field>Opportunity.Market_Sector_pnnl__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1628,7 +1628,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.Project_Management_Office__c</field>
+        <field>Opportunity.Project_Management_Office_pnnl__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
