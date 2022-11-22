@@ -3,10 +3,11 @@
     <available>true</available>
     <description>Alert Email send to the Project Manager regarding the Scope Clearance Decision</description>
     <encodingKey>UTF-8</encodingKey>
-    <name>Scope Clearance Decision Email Template to Assigned PM</name>
-    <style>none</style>
+    <letterhead>PNNL_Logo</letterhead>
+    <name>Scope Clearance Decision Email Template for PM/PMO</name>
+    <style>formalLetter</style>
     <subject>Scope Clearance Decision {!Opportunity.Scope__c}</subject>
     <textOnly>Scope has been cleared for Scope Number {!Opportunity.Scope__c}</textOnly>
-    <type>custom</type>
+    <type>html</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

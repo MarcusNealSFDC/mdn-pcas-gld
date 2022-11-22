@@ -152,9 +152,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.Legacy_Client_Code__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -164,6 +164,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.OPI__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Project_Management_Office__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1322,8 +1327,8 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Market_Sector__c</field>
+        <editable>false</editable>
+        <field>Opportunity.Market_Sector_pnnl__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1628,7 +1633,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Project_Management_Office__c</field>
+        <field>Opportunity.Project_Management_Office_pnnl__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2292,6 +2297,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Market_Sector_pnnl__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Project__c.Official_User_Only__c</field>
         <readable>true</readable>
@@ -2320,6 +2330,11 @@
         <editable>true</editable>
         <field>Project__c.Project_Account_Number__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Project_Management_Office_pnnl__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -2916,7 +2931,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Proposals</tab>
-        <visibility>Hidden</visibility>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Proposed_Amendment__c</tab>
@@ -3062,6 +3077,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>SelectFilesFromSalesforce</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>SendExternalEmailAvailable</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

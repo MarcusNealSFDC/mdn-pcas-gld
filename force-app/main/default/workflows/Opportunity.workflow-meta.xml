@@ -39,8 +39,8 @@
         <template>unfiled$public/Proposal_Approval_Email</template>
     </alerts>
     <alerts>
-        <fullName>Scope_Clearance_Decision_Email_Template_to_Assigned_PM</fullName>
-        <description>Scope Clearance Decision Email Template to Assigned PM</description>
+        <fullName>Scope_Clearance_Decision_Email_Template_to_Assigned_PM_PMO</fullName>
+        <description>Scope Clearance Decision Email Template to Assigned PM/PMO</description>
         <protected>false</protected>
         <recipients>
             <field>Project_Management_Office_Email_Address__c</field>
@@ -51,7 +51,7 @@
             <type>userLookup</type>
         </recipients>
         <senderType>DefaultWorkflowUser</senderType>
-        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Email_Template_to_Assigned_PM</template>
+        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Email_Template_for_PM_PMO</template>
     </alerts>
     <fieldUpdates>
         <fullName>Approval_Not_In_Process</fullName>
