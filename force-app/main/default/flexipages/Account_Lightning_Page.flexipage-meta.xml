@@ -12,6 +12,12 @@
                         <valueListItems>
                             <value>AccountHierarchy</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>EnableAsPartner</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>DisablePartnerPortalAccount</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
