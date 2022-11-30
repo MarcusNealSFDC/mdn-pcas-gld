@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>NF_SPP</fullName>
     <active>true</active>
@@ -206,8 +206,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName
-      >CRADA - Cooperative Research and Development Agreement</fullName>
+            <fullName>CRADA - Cooperative Research and Development Agreement</fullName>
             <default>false</default>
         </values>
         <values>
@@ -597,8 +596,7 @@
     <picklistValues>
         <picklist>Program_Secretarial_Office__c</picklist>
         <values>
-            <fullName
-      >Administrator of National Nuclear Security Administration</fullName>
+            <fullName>Administrator of National Nuclear Security Administration</fullName>
             <default>false</default>
         </values>
         <values>
@@ -606,13 +604,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName
-      >Assistant Secretary for Efficiency and Renewable Energy</fullName>
+            <fullName>Assistant Secretary for Efficiency and Renewable Energy</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName
-      >Assistant Secretary for Environmental Management</fullName>
+            <fullName>Assistant Secretary for Environmental Management</fullName>
             <default>false</default>
         </values>
         <values>
@@ -620,8 +616,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName
-      >Assistant Secretary for Policy and International Affairs</fullName>
+            <fullName>Assistant Secretary for Policy and International Affairs</fullName>
             <default>false</default>
         </values>
         <values>
@@ -641,8 +636,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName
-      >Office of Congressional and Intergovernmental Affairs</fullName>
+            <fullName>Office of Congressional and Intergovernmental Affairs</fullName>
             <default>false</default>
         </values>
         <values>
@@ -650,8 +644,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName
-      >Office of Electricity Delivery and Energy Reliability</fullName>
+            <fullName>Office of Electricity Delivery and Energy Reliability</fullName>
             <default>false</default>
         </values>
         <values>
@@ -755,29 +748,25 @@
     <picklistValues>
         <picklist>SPECIMEN_1_Detail__c</picklist>
         <values>
-            <fullName
-      >Sponsor is a United States entity%2E Specimen Agreement No%2E 1 %28DOE Approved Not Required%29</fullName>
+            <fullName>Sponsor is a United States entity%2E Specimen Agreement No%2E 1 %28DOE Approved Not Required%29</fullName>
             <default>true</default>
         </values>
     </picklistValues>
     <picklistValues>
         <picklist>SPECIMEN_4_Detail__c</picklist>
         <values>
-            <fullName
-      >Sponsor is a Foreign Entity%2E Specimen Agreement No%2E 4 %28DOE Approval Required%29</fullName>
+            <fullName>Sponsor is a Foreign Entity%2E Specimen Agreement No%2E 4 %28DOE Approval Required%29</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName
-      >Sponsor%27s funds come from federal funding%2C Bayh-Dole rights apply%2C PNNL entitled to take title%2E Specimen Agreement No%2E 4 %28DOE Approval NOT Required%29</fullName>
+            <fullName>Sponsor%27s funds come from federal funding%2C Bayh-Dole rights apply%2C PNNL entitled to take title%2E Specimen Agreement No%2E 4 %28DOE Approval NOT Required%29</fullName>
             <default>false</default>
         </values>
     </picklistValues>
     <picklistValues>
         <picklist>SPECIMEN_6_Detail__c</picklist>
         <values>
-            <fullName
-      >Agreemnt is merely for standard laboratory analysis%2C technical assistance%2C and training%2E Specimen Agreement No%2E 6 %28DOE Approval NOT Required%29</fullName>
+            <fullName>Agreemnt is merely for standard laboratory analysis%2C technical assistance%2C and training%2E Specimen Agreement No%2E 6 %28DOE Approval NOT Required%29</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -851,11 +840,15 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Anticipatory</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Cleared</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Closed %28C</fullName>
+            <fullName>Closed</fullName>
             <default>false</default>
         </values>
         <values>
@@ -871,7 +864,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Vaultable</fullName>
+            <fullName>Vaulted</fullName>
             <default>false</default>
         </values>
         <values>
