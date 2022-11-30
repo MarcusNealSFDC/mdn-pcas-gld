@@ -17,14 +17,19 @@
                 <label>Active</label>
             </value>
             <value>
+                <fullName>Anticipatory</fullName>
+                <default>false</default>
+                <label>Anticipatory</label>
+            </value>            
+            <value>
                 <fullName>Cleared</fullName>
                 <default>false</default>
                 <label>Cleared</label>
             </value>
             <value>
-                <fullName>Closed (C</fullName>
+                <fullName>Closed</fullName>
                 <default>false</default>
-                <label>Closed (C</label>
+                <label>Closed</label>
             </value>
             <value>
                 <fullName>Not Cleared</fullName>
@@ -42,9 +47,9 @@
                 <label>Rejected</label>
             </value>
             <value>
-                <fullName>Vaultable</fullName>
+                <fullName>Vaulted</fullName>
                 <default>false</default>
-                <label>Vaultable</label>
+                <label>Vaulted</label>
             </value>
             <value>
                 <fullName>Withdrawn</fullName>
