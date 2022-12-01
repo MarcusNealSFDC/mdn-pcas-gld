@@ -5,8 +5,8 @@
     <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
     <communityRoles/>
     <disableReputationRecordConversations>true</disableReputationRecordConversations>
-    <emailSenderAddress>mallen@acumensolutions.com</emailSenderAddress>
-    <emailSenderName>PNSO_Portal</emailSenderName>
+    <emailSenderAddress>marcus.neal@salesforce.com</emailSenderAddress>
+    <emailSenderName>PNSO Portal</emailSenderName>
     <enableApexCDNCaching>true</enableApexCDNCaching>
     <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
     <enableDirectMessages>true</enableDirectMessages>
