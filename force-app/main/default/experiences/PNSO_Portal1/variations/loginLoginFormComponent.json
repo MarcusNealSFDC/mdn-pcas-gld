@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "e6fd8b64-4c65-471f-9cbd-b3934b9d8462",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "2971a2eb-34a7-4fb0-b351-590063355456",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Login_Login_Form_Component",
+  "id" : "4dbb0aac-17c6-495b-a8eb-b04ebdfe5ec0",
+  "type" : "experienceVariation"
+}

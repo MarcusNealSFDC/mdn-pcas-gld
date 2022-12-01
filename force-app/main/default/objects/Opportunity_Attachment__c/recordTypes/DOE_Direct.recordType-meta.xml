@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DOE_Direct</fullName>
+    <active>true</active>
+    <description>DOE Direct Funding Type</description>
+    <label>DOE Direct</label>
+    <picklistValues>
+        <picklist>Attachment_Type__c</picklist>
+        <values>
+            <fullName>ACT Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Animal Use %E2%80%93 SC Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Animal Use Worksheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biographical sketches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CI Foreign Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOE Approved Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HQ Foreign Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP Management Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IWO Funding Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incoming WAS Email from PNSO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSOF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NF-SPP Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCI Addendum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obligation Cost Roadmap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSO Foreign Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC Analysis Worksheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC Foreign Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPP Justification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsor Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statement of Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub-contract Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TPEC Foreign Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Authorization Document</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Funding_Type__c</picklist>
+        <values>
+            <fullName>ACT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F-SPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IWO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NF-SPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NIC-RW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIPP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
