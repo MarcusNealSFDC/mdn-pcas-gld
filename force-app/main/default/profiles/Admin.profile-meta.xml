@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
         <application>PNNL_Proposal</application>
@@ -94,11 +94,11 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>OppCostDetailTableController</apexClass>
+        <apexClass>PNNL_OppCostDetailTableController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>OppCostDetailTableControllerTest</apexClass>
+        <apexClass>PNNL_OppCostDetailTableControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -118,11 +118,11 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>UploadAttachmentController</apexClass>
+        <apexClass>PNNL_UploadAttachmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>UploadAttachmentControllerTest</apexClass>
+        <apexClass>PNNL_UploadAttachmentControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -2654,10 +2654,12 @@
         <recordType>Account.Business_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
+        <layout
+    >Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
+        <layout
+    >Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CRADA_Attachment__c-Attachment Layout</layout>
