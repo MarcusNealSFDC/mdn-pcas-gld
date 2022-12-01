@@ -851,11 +851,15 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Anticipatory</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Cleared</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Closed %28C</fullName>
+            <fullName>Closed</fullName>
             <default>false</default>
         </values>
         <values>
@@ -871,7 +875,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Vaultable</fullName>
+            <fullName>Vaulted</fullName>
             <default>false</default>
         </values>
         <values>

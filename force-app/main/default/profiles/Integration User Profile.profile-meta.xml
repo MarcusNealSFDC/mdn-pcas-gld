@@ -2173,6 +2173,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>PNNL_Contracts__c.PNNL_Limited_Term_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Contracts__c.PNNL_Limited_Term_Funds__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>PNNL_Contracts__c.Prior_FY_Carryover__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2612,6 +2622,10 @@
         <layout>Opportunity_Attachment__c-Attachment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity_Attachment__c-Attachment Layout</layout>
+        <recordType>Opportunity_Attachment__c.DOE_Direct</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>PNNL_Contracts__c-DOE Direct</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2906,6 +2920,11 @@
         <default>false</default>
         <recordType>Opportunity.SIPP</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Opportunity_Attachment__c.DOE_Direct</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>

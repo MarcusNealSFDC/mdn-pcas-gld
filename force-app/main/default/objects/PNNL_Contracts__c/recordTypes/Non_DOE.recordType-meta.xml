@@ -181,6 +181,13 @@
         </values>
         <values>
             <fullName>Physical</fullName>
+        <picklist>PNNL_Limited_Term_Funds__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
