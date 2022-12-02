@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PNNL_Primary_Taxonomy__c</fullName>
+    <description>Lab selects primary taxonomy</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lab selects primary taxonomy</inlineHelpText>
+    <label>Primary Taxonomy</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advanced Computation</fullName>
+                <default>false</default>
+                <label>Advanced Computation</label>
+            </value>
+            <value>
+                <fullName>Advanced Materials</fullName>
+                <default>false</default>
+                <label>Advanced Materials</label>
+            </value>
+            <value>
+                <fullName>Bioscience Applications</fullName>
+                <default>false</default>
+                <label>Bioscience Applications</label>
+            </value>
+            <value>
+                <fullName>Carbon Fuels</fullName>
+                <default>false</default>
+                <label>Carbon Fuels</label>
+            </value>
+            <value>
+                <fullName>Chemical Science (non-nuclear)</fullName>
+                <default>false</default>
+                <label>Chemical Science (non-nuclear)</label>
+            </value>
+            <value>
+                <fullName>Earth and Environmental</fullName>
+                <default>false</default>
+                <label>Earth and Environmental</label>
+            </value>
+            <value>
+                <fullName>Energy Efficiency</fullName>
+                <default>false</default>
+                <label>Energy Efficiency</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>National Security</fullName>
+                <default>false</default>
+                <label>National Security</label>
+            </value>
+            <value>
+                <fullName>Nuclear</fullName>
+                <default>false</default>
+                <label>Nuclear</label>
+            </value>
+            <value>
+                <fullName>Physics Applications</fullName>
+                <default>false</default>
+                <label>Physics Applications</label>
+            </value>
+            <value>
+                <fullName>Power Distribution</fullName>
+                <default>false</default>
+                <label>Power Distribution</label>
+            </value>
+            <value>
+                <fullName>Renewable Power</fullName>
+                <default>false</default>
+                <label>Renewable Power</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
