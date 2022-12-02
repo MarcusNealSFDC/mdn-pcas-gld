@@ -249,7 +249,6 @@
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Client_Code__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Sector__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Agency_Loc_CD__c</searchResultsAdditionalFields>
     </searchLayouts>
