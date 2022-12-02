@@ -24,7 +24,7 @@
             </approver>
             <whenMultipleApprovers>Unanimous</whenMultipleApprovers>
         </assignedApprover>
-        <label>Step 1</label>
+        <label>Project Coordinator Approval</label>
         <name>Step_1</name>
     </approvalStep>
     <approvalStep>
@@ -49,6 +49,21 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>PNNL_IP_Approver__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>PNNL IP Approval</label>
+        <name>PNNL_IP_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
         <allowDelegate>true</allowDelegate>
         <approvalActions>
             <action>
@@ -58,13 +73,13 @@
         </approvalActions>
         <assignedApprover>
             <approver>
-                <name>SPP_Office_Reviewer2__c</name>
+                <name>PNNL_ACT_Office2__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>SPP Office Reviewer Approval</label>
-        <name>SPP_Office_Reviewer_Approval</name>
+        <label>ACT Office Reviewer Approval</label>
+        <name>ACT_Office_Reviewer_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -73,13 +88,13 @@
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>DOE_Site_Office_Approver2__c</name>
+                <name>PNSOACTReviewer__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>DOE Site Office Approver</label>
-        <name>DOE_Site_Office_Approver</name>
+        <label>PNSO Act Office Approver</label>
+        <name>PNSO_Act_Office_Approver</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -95,6 +110,28 @@
         </assignedApprover>
         <label>PNSO Technical Rep Approval</label>
         <name>PNSO_Technical_Rep_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>PNSO_Coordinator_Foreign_Approver__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.PNSO_Coordinator_Foreign_Approver__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>PNSO Coordinator - Foreign Sponsor Approval</label>
+        <name>PNSO_Coordinator_Foreign_Sponsor_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -118,7 +155,7 @@
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>PNSO Contract Rep Approval</label>
+        <label>PNSO Contracting Officer Approval</label>
         <name>PNSO_Contract_Rep_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
@@ -130,7 +167,7 @@
         <criteriaItems>
             <field>Opportunity.RecordType</field>
             <operation>equals</operation>
-            <value>DHS,F-SPP,NF-SPP,NIC-RW,SIPP</value>
+            <value>ACT</value>
         </criteriaItems>
         <criteriaItems>
             <field>Opportunity.StageName</field>
@@ -146,8 +183,8 @@
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
-    <label>Non-DOE Approvals</label>
-    <processOrder>4</processOrder>
+    <label>ACT Approvals</label>
+    <processOrder>3</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>
