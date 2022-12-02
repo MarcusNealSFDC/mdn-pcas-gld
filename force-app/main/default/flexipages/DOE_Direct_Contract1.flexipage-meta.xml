@@ -50,18 +50,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Name</fieldItem>
                 <identifier>RecordNameField</identifier>
-                <fieldItem>Record.Proposal__c</fieldItem>
-                <identifier>RecordProposal_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Contract__c</fieldItem>
-                <identifier>RecordContract_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -288,26 +276,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Close_Out_Date__c</fieldItem>
                 <identifier>RecordClose_Out_Date_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNNL_Limited_Term_Funds__c</fieldItem>
-                <identifier>RecordPNNL_Limited_Term_Funds_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNNL_Limited_Term_Date__c</fieldItem>
-                <identifier>RecordPNNL_Limited_Term_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-817d5222-10c4-4306-ba89-b91b8a590342</name>
