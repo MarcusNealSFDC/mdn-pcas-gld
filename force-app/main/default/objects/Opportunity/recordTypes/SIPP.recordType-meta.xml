@@ -1314,6 +1314,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Project_ObjectiveYN__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Proposal_Purpose__c</picklist>
         <values>
             <fullName>Funding</fullName>

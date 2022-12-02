@@ -48,8 +48,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Contract__c</fieldItem>
-                <identifier>RecordContract_cField</identifier>
+                <fieldItem>Record.Name</fieldItem>
+                <identifier>RecordNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -438,16 +438,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Anticipatory_Amount__c</fieldItem>
-                <identifier>RecordAnticipatory_Amount_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Prior_FY_Carryover__c</fieldItem>
                 <identifier>RecordPrior_FY_Carryover_cField</identifier>
             </fieldInstance>
@@ -490,6 +480,97 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Billing_Sponsor_Code__c</fieldItem>
+                <identifier>RecordBilling_Sponsor_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Invoice_Type__c</fieldItem>
+                <identifier>RecordInvoice_Type_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Invoice_Address_Field__c</fieldItem>
+                <identifier>RecordInvoice_Address_Field_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Invoice_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Physical</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Invoice_Email_Address__c</fieldItem>
+                <identifier>RecordInvoice_Email_Address_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Invoice_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Electronic</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.G_Invoicing_Line_of_Accounting__c</fieldItem>
+                <identifier>RecordG_Invoicing_Line_of_Accounting_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Invoice_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>G Invoicing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.IPAC_Line_of_Accounting__c</fieldItem>
+                <identifier>RecordIPAC_Line_of_Accounting_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.GL_Sub_Accounts__c</fieldItem>
+                <identifier>RecordGL_Sub_Accounts_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-4c72fc9b-81e3-4162-a653-7873d7e93d18</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -500,8 +581,72 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.IPAC_Line_of_Accounting__c</fieldItem>
-                <identifier>RecordIPAC_Line_of_Accounting_cField</identifier>
+                <fieldItem>Record.Anticipatory_Amount__c</fieldItem>
+                <identifier>RecordAnticipatory_Amount_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Anticipatory_Note__c</fieldItem>
+                <identifier>RecordAnticipatory_Note_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.BETC_Code__c</fieldItem>
+                <identifier>RecordBETC_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Advance_Received__c</fieldItem>
+                <identifier>RecordAdvance_Received_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Advance__c</fieldItem>
+                <identifier>RecordAdvance_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Advance_Received__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Advance_Amount__c</fieldItem>
+                <identifier>RecordAdvance_Amount_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Advance_Received__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-0a0d3f12-07a4-48e3-8ad5-4af683be1768</name>

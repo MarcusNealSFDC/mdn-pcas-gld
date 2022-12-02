@@ -88,6 +88,26 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Amendment_Number__c</fieldItem>
+                <identifier>RecordAmendment_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Revison__c</fieldItem>
+                <identifier>RecordRevison_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Risk_Assessment_Link__c</fieldItem>
                 <identifier>RecordRisk_Assessment_Link_cField</identifier>
             </fieldInstance>
