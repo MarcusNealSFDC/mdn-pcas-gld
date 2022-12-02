@@ -291,6 +291,10 @@
                 <behavior>Edit</behavior>
                 <field>Probability</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Project_ObjectiveYN__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -429,16 +433,6 @@
         <fields>OppAccessLevel</fields>
         <fields>TeamMemberRole</fields>
         <relatedList>RelatedOpportunitySalesTeam</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>WAS_Number__c</fields>
-        <fields>Project_Number__c</fields>
-        <fields>Funding_Amount__c</fields>
-        <fields>Funding_Received__c</fields>
-        <fields>Revision_Number__c</fields>
-        <fields>Proposed_Amendment__c</fields>
-        <relatedList>Funding_Agreement__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Address_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+    AND(
+        TEXT( Invoice_Type__c ) = &quot;Physical&quot;, 
+        ISBLANK( Invoice_Address_Field__c )), True, False)</errorConditionFormula>
+    <errorDisplayField>Invoice_Address_Field__c</errorDisplayField>
+    <errorMessage>Please provide an invoice address</errorMessage>
+</ValidationRule>
