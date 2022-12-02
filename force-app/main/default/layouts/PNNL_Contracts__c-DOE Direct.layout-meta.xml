@@ -182,6 +182,14 @@
                 <behavior>Edit</behavior>
                 <field>CPS__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PNNL_Limited_Term_Funds__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PNNL_Limited_Term_Date__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
