@@ -75,6 +75,16 @@
                 <identifier>RecordProjectTitle_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Market_Sector__c</fieldItem>
+                <identifier>RecordMarket_Sector_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-f4547e1c-0838-457c-bf84-885b2131ae2f</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -235,6 +245,16 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Project_Coordinator__c</fieldItem>
+                <identifier>RecordProject_Coordinator_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
