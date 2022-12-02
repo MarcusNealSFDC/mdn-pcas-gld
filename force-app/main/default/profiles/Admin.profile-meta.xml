@@ -142,11 +142,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.Client_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Country__c</field>
         <readable>true</readable>
@@ -164,6 +159,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.OPI__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.PNNL_Contract_Sponsor_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.PNNL_Funding_Sponsor_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
