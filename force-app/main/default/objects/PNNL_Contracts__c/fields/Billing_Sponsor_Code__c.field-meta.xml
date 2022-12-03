@@ -3,6 +3,7 @@
     <fullName>Billing_Sponsor_Code__c</fullName>
     <externalId>false</externalId>
     <formula>Proposal__r.Funding_Client__r.Client_Code__c</formula>
+    <formula>Proposal__r.Funding_Client__r.Legacy_Client_Code__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Billing Sponsor Code</label>
     <required>false</required>

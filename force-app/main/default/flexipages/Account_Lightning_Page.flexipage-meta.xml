@@ -52,10 +52,20 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Client_Code__c</fieldItem>
-                <identifier>RecordClient_Code_cField</identifier>
+                <fieldItem>Record.PNNL_Funding_Sponsor_Code__c</fieldItem>
+                <identifier>RecordPNNL_Funding_Sponsor_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNNL_Contract_Sponsor_Code__c</fieldItem>
+                <identifier>RecordPNNL_Contract_Sponsor_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

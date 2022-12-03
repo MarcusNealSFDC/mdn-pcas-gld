@@ -148,6 +148,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+
         <field>Account.Country__c</field>
         <readable>false</readable>
     </fieldPermissions>
