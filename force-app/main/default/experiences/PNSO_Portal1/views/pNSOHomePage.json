@@ -11,7 +11,7 @@
     "components" : [ {
       "componentAttributes" : {
         "height" : "485",
-        "recordId" : "01Z3R000000LmqdUAC"
+        "recordId" : "01Z3S000000JFDoUAO"
       },
       "componentName" : "forceCommunity:dashboard",
       "id" : "03b26c73-b78e-4aa4-9b87-869755107083",
@@ -21,7 +21,7 @@
     }, {
       "componentAttributes" : {
         "enableInlineEdit" : true,
-        "filterName" : "My_Proposals_Awaiting_Approval",
+        "filterName" : "00B3S000001PUhTUAW",
         "layout" : "STANDARD",
         "pageSize" : 10,
         "scope" : "Opportunity",
