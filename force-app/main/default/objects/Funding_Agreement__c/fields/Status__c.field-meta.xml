@@ -13,34 +13,85 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Work Authorization Setup</fullName>
+                <default>false</default>
+                <label>Work Authorization Setup</label>
+            </value>
+            <value>
+                <fullName>Work Authorization Breakdown</fullName>
+                <default>false</default>
+                <label>Work Authorization Breakdown</label>
+            </value>
+            <value>
+                <fullName>Work Authorization Review</fullName>
+                <default>false</default>
+                <label>Work Authorization Review</label>
+            </value>
+            <value>
+                <fullName>Work Authorization Approval: Funding &amp; Agreements</fullName>
+                <default>false</default>
+                <label>Work Authorization Approval: Funding &amp; Agreements</label>
+            </value>
+            <value>
+                <fullName>Work Authorization Approval: PNSO Technical Rep</fullName>
+                <default>false</default>
+                <label>Work Authorization Approval: PNSO Technical Rep</label>
+            </value>
+            <value>
+                <fullName>Work Authorization Approval: PNSO Contract Officer</fullName>
+                <default>false</default>
+                <label>Work Authorization Approval: PNSO Contract Officer</label>
+            </value>
+            <value>
+                <fullName>Funding Received</fullName>
+                <default>false</default>
+                <label>Funding Received</label>
+            </value>
+            <value>
+                <fullName>Pending Project Items</fullName>
+                <default>false</default>
+                <label>Pending Project Items</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
                 <fullName>Awaiting Budget Office Update</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Awaiting Budget Office Update</label>
             </value>
             <value>
                 <fullName>Budget Office Review</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Budget Office Review</label>
+            </value>
+            <value>
+                <fullName>Completed - Funds Received</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Completed - Funds Received</label>
             </value>
             <value>
                 <fullName>Pending HQ Correction</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Pending HQ Correction</label>
             </value>
             <value>
                 <fullName>Pending Obs Action</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Pending Obs Action</label>
             </value>
             <value>
                 <fullName>Void/Withdrawn</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Void/Withdrawn</label>
-            </value>
-            <value>
-                <fullName>Completed - Funds Received</fullName>
-                <default>false</default>
-                <label>Completed - Funds Received</label>
             </value>
         </valueSetDefinition>
     </valueSet>
