@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Field Work Proposals</description>
+    <description>Lightning Record Page for DOE Direct</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>actionNames</name>
                     <valueList>
+                        <valueListItems>
+                            <value>Opportunity.Amendment</value>
+                        </valueListItems>
                         <valueListItems>
                             <value>Edit</value>
                         </valueListItems>

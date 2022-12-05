@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposals_Scope_Cleared</fullName>
+    <columns>Proposal_Number__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Project_Title__c</columns>
+    <columns>Contract_Client__c</columns>
+    <columns>Date_Prepared__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Scope Cleared</value>
+    </filters>
+    <label>Proposals - Scope Cleared</label>
+</ListView>
