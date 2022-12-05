@@ -311,16 +311,6 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>FeedItem.TextPost</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>FeedItem.ContentPost</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>1</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>FeedItem.RypplePost</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>2</sortOrder>
@@ -405,6 +395,16 @@
             <actionType>StandardButton</actionType>
             <sortOrder>18</sortOrder>
         </platformActionListItems>
+        <platformActionListItems>
+            <actionName>FeedItem.TextPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>FeedItem.ContentPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>1</sortOrder>
+        </platformActionListItems>
     </platformActionList>
     <relatedContent>
         <relatedContentItems>
@@ -442,6 +442,7 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+
         <fields>Project_Title2__c</fields>
         <fields>Effective_Date__c</fields>
         <fields>Inactive_Date__c</fields>
@@ -466,12 +467,6 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Amendment_Authorized_Amount__c</fields>
-        <fields>Amendment_Fee_Amount__c</fields>
-        <relatedList>Proposed_Amendment__c.Proposal__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <fields>Action_Type__c</fields>
         <fields>Funding_Agreement_Date__c</fields>
         <fields>Funds_Received_Date__c</fields>
@@ -483,6 +478,9 @@
         <fields>NAME</fields>
         <relatedList>Opportunity_Attachment__c.Opportunity__c</relatedList>
     </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedFileList</relatedList>
+    </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
@@ -490,7 +488,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3S000000jtgi</masterLabel>
+        <masterLabel>00h3S000000kKES</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
