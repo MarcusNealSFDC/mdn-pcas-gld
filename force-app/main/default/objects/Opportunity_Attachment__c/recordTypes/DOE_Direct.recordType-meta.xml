@@ -134,6 +134,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>DOE Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>F-SPP</fullName>
             <default>false</default>
         </values>
