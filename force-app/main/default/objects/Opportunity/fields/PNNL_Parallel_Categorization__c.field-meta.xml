@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PNNL_Parallel_Categorization__c</fullName>
+    <description>Lab selects parallel categorization to identify what type of work is being done</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lab selects parallel categorization to identify what type of work is being done</inlineHelpText>
+    <label>Parallel Categorization</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Data Analytics</fullName>
+                <default>false</default>
+                <label>Data Analytics</label>
+            </value>
+            <value>
+                <fullName>Education/Training</fullName>
+                <default>false</default>
+                <label>Education/Training</label>
+            </value>
+            <value>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+                <label>Hardware</label>
+            </value>
+            <value>
+                <fullName>Inorganic Chemistry</fullName>
+                <default>false</default>
+                <label>Inorganic Chemistry</label>
+            </value>
+            <value>
+                <fullName>Life Sciences</fullName>
+                <default>false</default>
+                <label>Life Sciences</label>
+            </value>
+            <value>
+                <fullName>Market Analysis</fullName>
+                <default>false</default>
+                <label>Market Analysis</label>
+            </value>
+            <value>
+                <fullName>Modeling and Simulation</fullName>
+                <default>false</default>
+                <label>Modeling and Simulation</label>
+            </value>
+            <value>
+                <fullName>Organic Chemistry</fullName>
+                <default>false</default>
+                <label>Organic Chemistry</label>
+            </value>
+            <value>
+                <fullName>Process</fullName>
+                <default>false</default>
+                <label>Process</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>Technical Systems Analysis</fullName>
+                <default>false</default>
+                <label>Technical Systems Analysis</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
