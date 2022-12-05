@@ -2277,6 +2277,9 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>PNNL_Contracts__c.Local_Use__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <field>PNNL_Contracts__c.Invoice_Email_Address__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2304,6 +2307,8 @@
         <editable>false</editable>
         <field>PNNL_Contracts__c.PNNL_Limited_Term_Funds__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>PNNL_Contracts__c.Overrun__c</field>
         <readable>true</readable>
