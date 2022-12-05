@@ -110,8 +110,9 @@
         </assignedApprover>
         <entryCriteria>
             <criteriaItems>
-                <field>Opportunity.PNSO_Coordinator_Foreign_Approver__c</field>
-                <operation>notEqual</operation>
+                <field>Opportunity.Foreign_Sponsor__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
             </criteriaItems>
         </entryCriteria>
         <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
