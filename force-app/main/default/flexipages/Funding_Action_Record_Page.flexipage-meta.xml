@@ -292,16 +292,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.SPP_Billing_Address__c</fieldItem>
-                <identifier>RecordSPP_Billing_Address_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Client_Property__c</fieldItem>
                 <identifier>RecordClient_Property_cField</identifier>
             </fieldInstance>
