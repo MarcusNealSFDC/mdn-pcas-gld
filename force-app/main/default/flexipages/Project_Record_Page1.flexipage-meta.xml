@@ -99,6 +99,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Invalid__c</fieldItem>
+                <identifier>RecordInvalid_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Cost_Code__c</fieldItem>
                 <identifier>RecordCost_Code_cField</identifier>
             </fieldInstance>
@@ -205,6 +215,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Inactive_Date__c</fieldItem>
                 <identifier>RecordInactive_Date_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Last_Cost_Date__c</fieldItem>
+                <identifier>RecordLast_Cost_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
