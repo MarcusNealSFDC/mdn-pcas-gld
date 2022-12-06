@@ -116,12 +116,22 @@
         <criteriaItems>
             <field>Opportunity.RecordType</field>
             <operation>equals</operation>
-            <value>Field Work Proposal</value>
+            <value>DOE Direct</value>
         </criteriaItems>
         <criteriaItems>
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
             <value>Proposal Draft</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.FWP__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.B_R__c</field>
+            <operation>startsWith</operation>
+            <value>AZ,AR,AT</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>

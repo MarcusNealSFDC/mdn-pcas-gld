@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Intellectual_Property__c</fullName>
     <externalId>false</externalId>
@@ -15,6 +15,16 @@
                 <fullName>TBD</fullName>
                 <default>false</default>
                 <label>TBD</label>
+            </value>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
             </value>
         </valueSetDefinition>
     </valueSet>

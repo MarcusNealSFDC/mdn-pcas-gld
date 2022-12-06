@@ -68,12 +68,17 @@
         <criteriaItems>
             <field>Opportunity.RecordType</field>
             <operation>equals</operation>
-            <value>FIN Plan Proposal</value>
+            <value>DOE Direct</value>
         </criteriaItems>
         <criteriaItems>
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
             <value>Work Authorization Review</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.FWP__c</field>
+            <operation>equals</operation>
+            <value>No</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
