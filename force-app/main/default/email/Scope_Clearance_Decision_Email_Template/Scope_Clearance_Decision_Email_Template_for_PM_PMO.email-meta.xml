@@ -6,8 +6,8 @@
     <letterhead>PNNL_Logo</letterhead>
     <name>Scope Clearance Decision Email Template for PM/PMO</name>
     <style>formalLetter</style>
-    <subject>Scope Clearance Decision {!Opportunity.Scope__c}</subject>
-    <textOnly>Scope has been cleared for Scope Number {!Opportunity.Scope__c}</textOnly>
+    <subject>Scope Clearance Decision {!Opportunity.Scope_Temp__c}</subject>
+    <textOnly>Scope has been cleared for Scope Number {!Opportunity.Scope_Temp__c}</textOnly>
     <type>html</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>
