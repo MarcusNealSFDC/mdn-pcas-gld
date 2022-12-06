@@ -1,6 +1,6 @@
 {
   "activeBrandingSetId" : "45dc4013-cafd-44cc-b2e5-15a5866f983a",
-  "customCSS" : "",
+  "customCSS" : ".slds-global-header__item--search { background-color: white; }",
   "developerName" : "prm",
   "id" : "d3d4ac67-ea54-44cb-a57f-46f7d9f13ca6",
   "label" : "Partner Central",
@@ -52,16 +52,13 @@
           "searchLabel" : "Search...",
           "searchObjects" : [ {
             "isPublic" : false,
-            "name" : "Lead"
-          }, {
-            "isPublic" : false,
             "name" : "Opportunity"
           }, {
             "isPublic" : false,
-            "name" : "Campaign"
-          }, {
-            "isPublic" : false,
             "name" : "ContentDocument"
+          }, {
+            "isPublic" : true,
+            "name" : "Funding_Agreement__c"
           } ]
         },
         "componentName" : "forceCommunity:globalSearchInput",

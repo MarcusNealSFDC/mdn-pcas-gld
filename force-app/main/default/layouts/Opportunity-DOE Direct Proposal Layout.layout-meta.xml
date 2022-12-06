@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <layoutSections>
         <customLabel>false</customLabel>
@@ -42,18 +42,6 @@
                 <field>Indefinite_Open__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Funding_Agreement_Total__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Amendments_Total__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Unsold_Amount__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Project_Coordinators__c</field>
             </layoutItems>
@@ -62,32 +50,16 @@
                 <field>Work_Location__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CRADA_Count__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Is_CRADA__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>SPPDetermination2__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PNSO_Signed_Date__c</field>
+                <field>Project_Manager3__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Special_Reporting_Funds__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Risk_Assessment_Link__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>FWP__c</field>
+                <field>Project_Management_Office_Email_Address__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -96,6 +68,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Project_Management_Office_pnnl__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Project_ObjectiveYN__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -159,7 +135,7 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Description Information</label>
-        <layoutColumns />
+        <layoutColumns/>
         <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
@@ -167,8 +143,8 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Other Information</label>
-        <layoutColumns />
-        <layoutColumns />
+        <layoutColumns/>
+        <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
@@ -211,9 +187,9 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Custom Links</label>
-        <layoutColumns />
-        <layoutColumns />
-        <layoutColumns />
+        <layoutColumns/>
+        <layoutColumns/>
+        <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
     <platformActionList>
@@ -336,19 +312,12 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Control_Point__c</fields>
-        <fields>Fiscal_Year__c</fields>
-        <fields>Revised_Amount__c</fields>
-        <relatedList>Funding_Agreement__c.Proposal__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <relatedList>Budget_Reporting_Entry__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
         <fields>Project_Title2__c</fields>
-        <fields>Market_Sector__c</fields>
+        <fields>Market_Sector_pnnl__c</fields>
         <fields>Project_Manager2__c</fields>
         <relatedList>Project__c.Opportunity__c</relatedList>
     </relatedLists>
@@ -397,7 +366,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000v2GY</masterLabel>
+        <masterLabel>00h3R000000ur4J</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
