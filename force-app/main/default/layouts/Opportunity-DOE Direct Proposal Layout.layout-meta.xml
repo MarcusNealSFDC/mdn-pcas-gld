@@ -42,18 +42,6 @@
                 <field>Indefinite_Open__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Funding_Agreement_Total__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Amendments_Total__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Unsold_Amount__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Project_Coordinators__c</field>
             </layoutItems>
@@ -62,20 +50,28 @@
                 <field>Work_Location__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CRADA_Count__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Is_CRADA__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>SPPDetermination2__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Project_Manager3__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Project_Management_Office_Email_Address__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Market_Sector_pnnl__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Project_Management_Office_pnnl__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Project_ObjectiveYN__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -316,19 +312,12 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Control_Point__c</fields>
-        <fields>Fiscal_Year__c</fields>
-        <fields>Revised_Amount__c</fields>
-        <relatedList>Funding_Agreement__c.Proposal__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <relatedList>Budget_Reporting_Entry__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
         <fields>Project_Title2__c</fields>
-        <fields>Market_Sector__c</fields>
+        <fields>Market_Sector_pnnl__c</fields>
         <fields>Project_Manager2__c</fields>
         <relatedList>Project__c.Opportunity__c</relatedList>
     </relatedLists>
@@ -377,7 +366,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000tvbH</masterLabel>
+        <masterLabel>00h3R000000ur4J</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

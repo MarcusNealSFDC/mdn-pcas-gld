@@ -3,7 +3,7 @@
     <fullName>Client_Technical_Rep__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Client Technical Rep</label>
+    <label>Sponsor Technical Rep</label>
     <referenceTo>Contact</referenceTo>
     <relationshipLabel>Client Technical Rep</relationshipLabel>
     <relationshipName>PNNL_Contact2</relationshipName>

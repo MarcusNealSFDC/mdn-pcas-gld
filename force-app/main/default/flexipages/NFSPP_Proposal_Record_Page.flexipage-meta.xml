@@ -128,6 +128,36 @@
                 <identifier>RecordProposed_Amount_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Amendment_Number__c</fieldItem>
+                <identifier>RecordAmendment_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Revison__c</fieldItem>
+                <identifier>RecordRevison_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Risk_Assessment_Link__c</fieldItem>
+                <identifier>RecordRisk_Assessment_Link_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-e42b5582-9a7d-411d-946d-f97b6f727225</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -342,28 +372,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Market_Sector__c</fieldItem>
-                <identifier>RecordMarket_Sector_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Product_Line__c</fieldItem>
-                <identifier>RecordProduct_Line_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Official_Use_Only__c</fieldItem>
-                <identifier>RecordOfficial_Use_Only_cField</identifier>
+                <fieldItem>Record.Market_Sector_pnnl__c</fieldItem>
+                <identifier>RecordMarket_Sector_pnnl_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-388fef72-b9f4-4b05-a730-58236f80273c</name>
@@ -400,6 +410,58 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Product_Line__c</fieldItem>
+                <identifier>RecordProduct_Line_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-ca7dece7-987e-440f-90a1-e89a9404ccd1</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Official_Use_Only__c</fieldItem>
+                <identifier>RecordOfficial_Use_Only_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-1cd82187-4808-4add-8946-9469b41f243a</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-ca7dece7-987e-440f-90a1-e89a9404ccd1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column36</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-1cd82187-4808-4add-8946-9469b41f243a</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column34</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-05c6cf3d-2b94-49fc-99df-309c446f10eb</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Scope_Statement__c</fieldItem>
                 <identifier>RecordScope_Statement_cField</identifier>
             </fieldInstance>
@@ -419,6 +481,68 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-09f4219a-86e8-406a-a585-9f31b390806f</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNNL_Parallel_Categorization__c</fieldItem>
+                <identifier>RecordPNNL_Parallel_Categorization_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-d9172ae7-f72d-4d17-9b67-542c53fff242</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNNL_Primary_Taxonomy__c</fieldItem>
+                <identifier>RecordPNNL_Primary_Taxonomy_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNNL_Secondary_Taxonomy__c</fieldItem>
+                <identifier>RecordPNNL_Secondary_Taxonomy_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-b4f0add8-8469-43c8-add7-9a5163625c93</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-d9172ae7-f72d-4d17-9b67-542c53fff242</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column37</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-b4f0add8-8469-43c8-add7-9a5163625c93</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column38</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-f2cdf27b-9af5-4ec7-9a66-dff1d151353d</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -510,6 +634,20 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
+                    <value>Facet-05c6cf3d-2b94-49fc-99df-309c446f10eb</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>FFRDC &amp; Official Use</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection27</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
                     <value>Facet-09f4219a-86e8-406a-a585-9f31b390806f</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -518,6 +656,20 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-f2cdf27b-9af5-4ec7-9a66-dff1d151353d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Taxonomy Categorization</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection28</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -699,6 +851,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.EMSL_Approval_Number__c</fieldItem>
                 <identifier>RecordEMSL_Approval_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
+                <identifier>RecordSpecial_Reporting_Funds_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1815,16 +1977,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Specialist2__c</fieldItem>
-                <identifier>RecordContract_Specialist2_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.SPP_Office_Reviewer2__c</fieldItem>
                 <identifier>RecordSPP_Office_Reviewer2_cField</identifier>
             </fieldInstance>
@@ -1882,6 +2034,34 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Signed_Date__c</fieldItem>
+                <identifier>RecordPNSO_Signed_Date_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-dbbb6920-8b8c-4afe-86d1-9e7306d09c62</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-dbbb6920-8b8c-4afe-86d1-9e7306d09c62</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column32</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-c2e4e915-5df4-4c3e-9b14-c4d15f83abda</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
@@ -1889,10 +2069,24 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Section</value>
+                    <value>Proposal Routing</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection22</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-c2e4e915-5df4-4c3e-9b14-c4d15f83abda</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>PNSO Approved Signed Date</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection25</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-cfbe5c6a-da62-46f8-b6a3-f505fae86acc</name>
@@ -2021,7 +2215,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
-                    <value>Proposal Routing</value>
+                    <value>Approval Status</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab5</identifier>

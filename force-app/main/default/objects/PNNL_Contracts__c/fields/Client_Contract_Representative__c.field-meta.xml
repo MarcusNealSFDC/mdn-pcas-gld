@@ -3,7 +3,7 @@
     <fullName>Client_Contract_Representative__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Client Contract Representative</label>
+    <label>Sponsor Contract Representative</label>
     <referenceTo>Contact</referenceTo>
     <relationshipLabel>PNNL Contracts</relationshipLabel>
     <relationshipName>PNNL_Contracts</relationshipName>

@@ -2,8 +2,19 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Non_DOE</fullName>
     <active>true</active>
-    <compactLayoutAssignment>Contract_Compact_Layout</compactLayoutAssignment>
-    <label>Non-DOE</label>
+    <compactLayoutAssignment>SPP_Contract_Compact</compactLayoutAssignment>
+    <label>SPP</label>
+    <picklistValues>
+        <picklist>Advance_Received__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
     <picklistValues>
         <picklist>Advance__c</picklist>
         <values>
@@ -12,6 +23,17 @@
         </values>
         <values>
             <fullName>Partial Advance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BETC_Code__c</picklist>
+        <values>
+            <fullName>DISGF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISNGF</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -136,6 +158,29 @@
         </values>
         <values>
             <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoice_Type__c</picklist>
+        <values>
+            <fullName>DOEPAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G Invoicing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical</fullName>
             <default>false</default>
         </values>
     </picklistValues>

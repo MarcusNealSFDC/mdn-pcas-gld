@@ -39,10 +39,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Market_Sector__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Organization_Code__c</field>
             </layoutItems>
             <layoutItems>
@@ -142,14 +138,6 @@
                 <field>Indefinite_Open__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Amendments_Total__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Unsold_Amount__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Project_Coordinators__c</field>
             </layoutItems>
@@ -158,20 +146,40 @@
                 <field>Work_Location__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CRADA_Count__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Is_CRADA__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>SPPDetermination2__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Project_Management_Office_Email_Address__c</field>
+                <field>PNSO_Signed_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Special_Reporting_Funds__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Risk_Assessment_Link__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>FWP__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Market_Sector_pnnl__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Project_Management_Office_pnnl__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Project_ObjectiveYN__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PNNL_Secondary_Taxonomy__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -343,6 +351,11 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>FeedItem.TextPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>FeedItem.ContentPost</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>1</sortOrder>
@@ -356,11 +369,6 @@
             <actionName>FeedItem.LinkPost</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>3</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>FeedItem.TextPost</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>0</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>FeedItem.PollPost</actionName>
@@ -485,13 +493,6 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Control_Point__c</fields>
-        <fields>Fiscal_Year__c</fields>
-        <fields>Revised_Amount__c</fields>
-        <relatedList>Funding_Agreement__c.Proposal__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <fields>Funding_Amount__c</fields>
         <fields>Funds_Recieved__c</fields>
         <relatedList>Budget_Reporting_Entry__c.Opportunity__c</relatedList>
@@ -499,7 +500,7 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>Project_Title2__c</fields>
-        <fields>Market_Sector__c</fields>
+        <fields>Market_Sector_pnnl__c</fields>
         <fields>Project_Manager2__c</fields>
         <relatedList>Project__c.Opportunity__c</relatedList>
     </relatedLists>
@@ -544,7 +545,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000tvbG</masterLabel>
+        <masterLabel>00h3R000000v2GS</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

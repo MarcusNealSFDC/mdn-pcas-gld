@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <caseValues>
-        <plural>false</plural>
-        <value>Proposal</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Proposals</value>
-    </caseValues>
     <layouts>
         <layout>ACT Proposal</layout>
         <sections>
@@ -110,17 +102,12 @@
     <recordTypes>
         <description></description>
         <label></label>
-        <name>FIN_Plan_Proposal</name>
+        <name>DOE_Direct</name>
     </recordTypes>
     <recordTypes>
         <description></description>
         <label></label>
         <name>F_SPP</name>
-    </recordTypes>
-    <recordTypes>
-        <description></description>
-        <label></label>
-        <name>Field_Work_Proposal</name>
     </recordTypes>
     <recordTypes>
         <description></description>
@@ -142,10 +129,13 @@
         <label></label>
         <name>SIPP</name>
     </recordTypes>
-    <startsWith>Vowel</startsWith>
     <validationRules>
         <errorMessage></errorMessage>
         <name>EMSL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>NCTE_Validation</name>
     </validationRules>
     <validationRules>
         <errorMessage></errorMessage>

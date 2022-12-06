@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>SPECIMEN_6_Detail__c</fullName>
     <externalId>false</externalId>
     <label>SPECIMEN 6 Detail</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
@@ -13,9 +12,11 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Agreemnt is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</fullName>
+                <fullName
+        >Agreemnt is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</fullName>
                 <default>false</default>
-                <label>Agreemnt is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</label>
+                <label
+        >Agreemnt is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</label>
             </value>
         </valueSetDefinition>
     </valueSet>
