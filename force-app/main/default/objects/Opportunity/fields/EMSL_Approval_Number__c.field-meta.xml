@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>EMSL_Approval_Number__c</fullName>
     <externalId>false</externalId>
-    <inlineHelpText
-  >If an EMSL User Agreement is required, provide the User Agreement number in the EMSL Approval No. box.  Provide the following in the Additional Comments box- Address whether the sponsor will be coming onsite to work within the EMSL space.</inlineHelpText>
+    <inlineHelpText>If an EMSL User Agreement is required, provide the User Agreement number in the EMSL Approval No. box.  Provide the following in the Additional Comments box- Address whether the sponsor will be coming onsite to work within the EMSL space.</inlineHelpText>
     <label>EMSL Approval Number</label>
     <length>10</length>
     <required>false</required>
