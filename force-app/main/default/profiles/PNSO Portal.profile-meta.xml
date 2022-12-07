@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+
+<?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
         <application>PNNL_Proposal</application>
@@ -2609,6 +2610,10 @@
         <recordType>Account.Business_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
         <layout
     >Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
     </layoutAssignments>
