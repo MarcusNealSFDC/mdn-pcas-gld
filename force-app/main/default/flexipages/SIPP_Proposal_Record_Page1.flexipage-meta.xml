@@ -107,7 +107,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Scope_Temp__c</fieldItem>
+                <fieldItem>Record.Scope__c</fieldItem>
                 <identifier>RecordScope_cField</identifier>
             </fieldInstance>
         </itemInstances>
