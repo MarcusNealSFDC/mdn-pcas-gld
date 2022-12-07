@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>true</active>
+    <active>false</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -68,12 +68,17 @@
         <criteriaItems>
             <field>Opportunity.RecordType</field>
             <operation>equals</operation>
-            <value>FIN Plan Proposal</value>
+            <value>DOE Direct</value>
         </criteriaItems>
         <criteriaItems>
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
             <value>Work Authorization Review</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.FWP__c</field>
+            <operation>equals</operation>
+            <value>No</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>

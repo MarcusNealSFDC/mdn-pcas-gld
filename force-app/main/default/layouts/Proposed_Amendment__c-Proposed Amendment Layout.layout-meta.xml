@@ -82,13 +82,6 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Proposal__c</fields>
-        <fields>Revised_Amount__c</fields>
-        <fields>Status__c</fields>
-        <relatedList>Funding_Agreement__c.Proposed_Amendment__c</relatedList>
-    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

@@ -19,7 +19,7 @@
       "type" : "component"
     }, {
       "componentAttributes" : {
-        "detailsTabLabel" : "Details",
+        "detailsTabLabel" : "Proposal Details ",
         "discussionsTabLabel" : "Feed",
         "recordId" : "{!recordId}",
         "relatedTabLabel" : "Related",
