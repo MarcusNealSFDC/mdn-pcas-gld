@@ -43,19 +43,14 @@
                 <label>Work Authorization Approval: PNSO Contract Officer</label>
             </value>
             <value>
+                <fullName>Pending_Obligations</fullName>
+                <default>false</default>
+                <label>Pending Obligations</label>
+            </value>
+            <value>
                 <fullName>Funding Received</fullName>
                 <default>false</default>
                 <label>Funding Received</label>
-            </value>
-            <value>
-                <fullName>Pending Project Items</fullName>
-                <default>false</default>
-                <label>Pending Project Items</label>
-            </value>
-            <value>
-                <fullName>Completed</fullName>
-                <default>false</default>
-                <label>Completed</label>
             </value>
             <value>
                 <fullName>Awaiting Budget Office Update</fullName>
