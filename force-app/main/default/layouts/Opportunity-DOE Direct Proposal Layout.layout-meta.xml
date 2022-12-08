@@ -73,6 +73,10 @@
                 <behavior>Edit</behavior>
                 <field>Project_ObjectiveYN__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Trigger_Approval_Process_Queue_Update__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

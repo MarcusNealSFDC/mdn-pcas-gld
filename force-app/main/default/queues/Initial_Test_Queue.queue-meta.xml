@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Initial Test Queue</name>
+    <queueMembers>
+        <users>
+            <user>integration@00d3r0000008uwguaq.com</user>
+            <user>insightssecurity@00d3r0000008uwguaq.com</user>
+            <user>test-taq2q1bhgl7x@example.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>
