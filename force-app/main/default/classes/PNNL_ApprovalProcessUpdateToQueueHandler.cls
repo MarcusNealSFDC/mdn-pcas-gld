@@ -94,6 +94,7 @@ public with sharing class PNNL_ApprovalProcessUpdateToQueueHandler {
         System.Debug('***processInstanceWorkItemList: ' + processInstanceWorkItemList) ;
 
         processInstanceWorkItemList[0].ActorId = tmpQueueId ;
+        processInstanceWorkItemList[0].OriginalActorId = tmpQueueId ;
         update processInstanceWorkItemList ;
     }
 }
