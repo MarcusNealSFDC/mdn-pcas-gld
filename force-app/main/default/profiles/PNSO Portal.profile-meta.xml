@@ -1,5 +1,4 @@
-
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
         <application>PNNL_Proposal</application>
@@ -254,11 +253,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Budget_Reporting_Entry__c.New_Project__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Budget_Reporting_Entry__c.Opportunity__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -270,11 +264,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Budget_Reporting_Entry__c.Scope_Change_picklist__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Budget_Reporting_Entry__c.Scope__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -709,11 +698,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Funding_Action__c.Status__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Funding_Action__c.TAS_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -835,21 +819,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Agreement__c.PNNL_Sign_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Agreement__c.PNSO_Contracting_Officer__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Agreement__c.PNSO_Sign_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Agreement__c.PNSO_Technical_Reviewer__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1264,11 +1238,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.Have_Objectives_Changed__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.Headquarters_Operations_Office_Manager__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1544,7 +1513,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.PNSO_Animal_Researcher2__c</field>
+        <field>Opportunity.PNSO_Animal_Researcher__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1605,11 +1574,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Performance_Measures_Expectations__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Please_Explain__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2589,11 +2553,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>User.PNSO_Animal_Researcher__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>User.PNSO_CRADA_Coordinator__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2650,10 +2609,6 @@
         <recordType>Account.Business_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
         <layout
     >Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
     </layoutAssignments>
