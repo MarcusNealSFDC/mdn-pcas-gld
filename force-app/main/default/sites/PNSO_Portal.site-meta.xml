@@ -24,6 +24,6 @@
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
     <serverIsDown>SNA_PNSO_Portal1_sf_default_cdn_9zspf</serverIsDown>
     <siteAdmin>marcus.neal@salesforce.com.prod</siteAdmin>
-    <siteGuestRecordDefaultOwner>marcus.neal@salesforce.com.prodm</siteGuestRecordDefaultOwner>
+    <siteGuestRecordDefaultOwner>marcus.neal@salesforce.com.prod</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
 </CustomSite>
