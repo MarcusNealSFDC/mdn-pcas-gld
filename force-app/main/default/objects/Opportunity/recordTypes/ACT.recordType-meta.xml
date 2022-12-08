@@ -330,7 +330,15 @@
     <picklistValues>
         <picklist>Intellectual_Property__c</picklist>
         <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -539,7 +547,11 @@
     <picklistValues>
         <picklist>Non_Standard_T__c</picklist>
         <values>
-            <fullName>TBD</fullName>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1292,25 +1304,53 @@
     <picklistValues>
         <picklist>SPECIMEN_1_Detail__c</picklist>
         <values>
-            <fullName>Sponsor is a United States entity%2E Specimen Agreement No%2E 1 %28DOE Approved Not Required%29</fullName>
-            <default>true</default>
+            <fullName>Battelle is lead party%2E Battelle will report new inventions to Sponsor%2C under the terms of a separate option IP option Sponsor may license new IP from Battelle%2E %28DOE Approval NOT Required%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battelle is lead party%2E No IP transferred%2C but Sponsor can own technical information %28TI%29 created under the agreement %28DOE Approval NOT Required%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battelle is lead party%2E Sponsor gets royalty-free right to use TI subject to Battelle IP rights%2E %28DOE Approval NOT Required%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other- Please work with IPLS for phrasing-%28DOE Approval may or may not be Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsor is lead party%2E  Takes on all responsibilities under the class waiver%2E %28DOE Approval NOT Required%29</fullName>
+            <default>false</default>
         </values>
     </picklistValues>
     <picklistValues>
         <picklist>SPECIMEN_4_Detail__c</picklist>
         <values>
-            <fullName>Sponsor is a Foreign Entity%2E Specimen Agreement No%2E 4 %28DOE Approval Required%29</fullName>
+            <fullName>No IP transferred%2E Battelle owns IP under terms of M%26O contract %28DOE Approval Required%29</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Sponsor%27s funds come from federal funding%2C Bayh-Dole rights apply%2C PNNL entitled to take title%2E Specimen Agreement No%2E 4 %28DOE Approval NOT Required%29</fullName>
+            <fullName>No IP transferred%2E Sponsor own IP under terms reviewed and approved by DOE %28DOE Approval Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other- Please work with IPLS for phrasing %28DOE Approval Required%29</fullName>
             <default>false</default>
         </values>
     </picklistValues>
     <picklistValues>
         <picklist>SPECIMEN_6_Detail__c</picklist>
         <values>
-            <fullName>Agreemnt is merely for standard laboratory analysis%2C technical assistance%2C and training%2E Specimen Agreement No%2E 6 %28DOE Approval NOT Required%29</fullName>
+            <fullName>Battelle is lead party%2C TI subject to 5 year protection limitation %28DOE Approval Required%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other- Please work with IPLS for phrasing %28DOE Approval Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsor is lead party%2E  TI subject to 5 year protection limitation %28DOE Approval Required%29</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1350,7 +1390,11 @@
     <picklistValues>
         <picklist>Source_of_Funds__c</picklist>
         <values>
-            <fullName>TBD</fullName>
+            <fullName>Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Federal</fullName>
             <default>false</default>
         </values>
     </picklistValues>
