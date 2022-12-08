@@ -829,7 +829,15 @@
     <picklistValues>
         <picklist>Intellectual_Property__c</picklist>
         <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1038,7 +1046,11 @@
     <picklistValues>
         <picklist>Non_Standard_T__c</picklist>
         <values>
-            <fullName>TBD</fullName>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1857,6 +1869,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Project_ObjectiveYN__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Proposal_Purpose__c</picklist>
         <values>
             <fullName>Agreement</fullName>
@@ -1986,7 +2009,11 @@
     <picklistValues>
         <picklist>Source_of_Funds__c</picklist>
         <values>
-            <fullName>TBD</fullName>
+            <fullName>Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Federal</fullName>
             <default>false</default>
         </values>
     </picklistValues>

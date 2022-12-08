@@ -5,6 +5,17 @@
     <compactLayoutAssignment>Contract_Compact_Layout</compactLayoutAssignment>
     <label>DOE Direct</label>
     <picklistValues>
+        <picklist>Advance_Received__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Advance__c</picklist>
         <values>
             <fullName>Full Advance</fullName>
@@ -12,6 +23,17 @@
         </values>
         <values>
             <fullName>Partial Advance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BETC_Code__c</picklist>
+        <values>
+            <fullName>DISGF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISNGF</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -140,13 +162,25 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>PNNL_Limited_Term_Funds__c</picklist>
+        <picklist>Invoice_Type__c</picklist>
         <values>
-            <fullName>No</fullName>
+            <fullName>DOEPAC</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Yes</fullName>
+            <fullName>Electronic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G Invoicing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical</fullName>
             <default>false</default>
         </values>
     </picklistValues>

@@ -3,7 +3,7 @@
     <fullName>ORO_Budget_Approver__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>ORO Budget Approver</label>
+    <label>CSC Budget Approver</label>
     <referenceTo>User</referenceTo>
     <relationshipName>Funding_Actions5</relationshipName>
     <required>false</required>

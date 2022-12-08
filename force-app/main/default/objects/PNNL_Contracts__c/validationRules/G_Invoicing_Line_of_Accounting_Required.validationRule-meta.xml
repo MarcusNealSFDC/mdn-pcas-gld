@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G_Invoicing_Line_of_Accounting_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+AND(
+TEXT( Invoice_Type__c ) = &quot;G Invoicing&quot;,
+ISBLANK(  G_Invoicing_Line_of_Accounting__c  )), True, False)</errorConditionFormula>
+    <errorDisplayField>G_Invoicing_Line_of_Accounting__c</errorDisplayField>
+    <errorMessage>Please enter a G-Invoicing Line of Accounting</errorMessage>
+</ValidationRule>

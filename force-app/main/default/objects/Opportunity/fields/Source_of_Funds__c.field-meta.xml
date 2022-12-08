@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Source_of_Funds__c</fullName>
     <externalId>false</externalId>
@@ -12,9 +12,14 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>TBD</fullName>
+                <fullName>Federal</fullName>
                 <default>false</default>
-                <label>TBD</label>
+                <label>Federal</label>
+            </value>
+            <value>
+                <fullName>Non-Federal</fullName>
+                <default>false</default>
+                <label>Non-Federal</label>
             </value>
         </valueSetDefinition>
     </valueSet>
