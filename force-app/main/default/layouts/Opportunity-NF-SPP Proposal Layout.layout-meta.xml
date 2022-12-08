@@ -35,7 +35,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Scope_Temp__c</field>
+                <field>Scope__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
