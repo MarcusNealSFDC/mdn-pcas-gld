@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
@@ -1957,6 +1958,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>OpportunityLineItem.Cost_Sheet_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>OpportunityLineItem.External_Id__c</field>
         <readable>false</readable>
@@ -1965,6 +1971,11 @@
         <editable>false</editable>
         <field>OpportunityLineItem.Fiscal_Year__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>OpportunityLineItem.Revision_Number__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -2387,6 +2398,16 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Project__c.Invalid__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Project__c.Last_Cost_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Project__c.Market_Sector__c</field>
         <readable>false</readable>
@@ -2633,6 +2654,12 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
+        <layout
+    >Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout
+    >Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CRADA_Attachment__c-Attachment Layout</layout>
