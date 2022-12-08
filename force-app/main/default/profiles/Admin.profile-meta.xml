@@ -2177,7 +2177,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>PNNL_Contracts__c.Invoice_Email_Address__c</field>
         <readable>true</readable>
     </fieldPermissions>
