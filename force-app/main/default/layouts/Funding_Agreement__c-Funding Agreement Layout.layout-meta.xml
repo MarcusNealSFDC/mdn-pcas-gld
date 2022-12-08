@@ -208,6 +208,7 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>Budget_Reporting_Code__c</fields>
+        <fields>Project__c</fields>
         <fields>Funding_Amount__c</fields>
         <fields>Funds_Recieved__c</fields>
         <relatedList>Budget_Reporting_Entry__c.Funding_Agreement__c</relatedList>
@@ -221,7 +222,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3S000000jsdo</masterLabel>
+        <masterLabel>00h3S000000kKEK</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
