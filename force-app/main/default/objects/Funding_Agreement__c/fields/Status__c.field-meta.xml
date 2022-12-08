@@ -9,7 +9,6 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -51,42 +50,6 @@
                 <fullName>Funding Received</fullName>
                 <default>false</default>
                 <label>Funding Received</label>
-            </value>
-            <value>
-                <fullName>Awaiting Budget Office Update</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Awaiting Budget Office Update</label>
-            </value>
-            <value>
-                <fullName>Budget Office Review</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Budget Office Review</label>
-            </value>
-            <value>
-                <fullName>Completed - Funds Received</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Completed - Funds Received</label>
-            </value>
-            <value>
-                <fullName>Pending HQ Correction</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Pending HQ Correction</label>
-            </value>
-            <value>
-                <fullName>Pending Obs Action</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Pending Obs Action</label>
-            </value>
-            <value>
-                <fullName>Void/Withdrawn</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Void/Withdrawn</label>
             </value>
         </valueSetDefinition>
     </valueSet>
