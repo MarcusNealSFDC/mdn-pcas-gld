@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Update_Approval_Process_User_to_Queue</name>
+        <label>Update Approval Process User to Queue</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>PNNL_ApprovalProcessUpdateToQueueHandler</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Set_Triggering_Field_to_False</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>tmpObjectIDs</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
     <apiVersion>55.0</apiVersion>
     <decisions>
         <name>If_Approval_Process_Queue_Update_Needed</name>
         <label>If Approval Process Queue Update Needed</label>
-        <locationX>176</locationX>
+        <locationX>182</locationX>
         <locationY>335</locationY>
         <defaultConnector>
             <targetReference>platform_event</targetReference>
@@ -21,7 +39,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>platform_event</targetReference>
+                <targetReference>Update_Approval_Process_User_to_Queue</targetReference>
             </connector>
             <label>If True Trigger Apex</label>
         </rules>
@@ -54,8 +72,8 @@ Before updating an Opportunity, create a Platform Event.</description>
         <description>Insert platform event records.</description>
         <name>platform_event</name>
         <label>Platform Event(||s|)</label>
-        <locationX>176</locationX>
-        <locationY>551</locationY>
+        <locationX>182</locationX>
+        <locationY>791</locationY>
         <inputAssignments>
             <field>ObjectType__c</field>
             <value>
@@ -77,8 +95,24 @@ Before updating an Opportunity, create a Platform Event.</description>
         <object>PNNL_Data_Event__e</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
-    <start>
+    <recordUpdates>
+        <name>Set_Triggering_Field_to_False</name>
+        <label>Set Triggering Field to False</label>
         <locationX>50</locationX>
+        <locationY>575</locationY>
+        <connector>
+            <targetReference>platform_event</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Trigger_Approval_Process_Queue_Update__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>If_Approval_Process_Queue_Update_Needed</targetReference>
@@ -87,5 +121,5 @@ Before updating an Opportunity, create a Platform Event.</description>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>
