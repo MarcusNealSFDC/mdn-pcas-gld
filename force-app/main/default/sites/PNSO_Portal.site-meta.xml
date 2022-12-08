@@ -23,7 +23,7 @@
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
     <serverIsDown>SNA_PNSO_Portal1_sf_default_cdn_9zspf</serverIsDown>
-    <siteAdmin>default.user@pnnl.gov</siteAdmin>
-    <siteGuestRecordDefaultOwner>default.user@pnnl.gov</siteGuestRecordDefaultOwner>
+    <siteAdmin>test-jmynugs3c5is@example.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>test-jmynugs3c5is@example.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
 </CustomSite>

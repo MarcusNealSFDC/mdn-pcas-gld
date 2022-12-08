@@ -92,6 +92,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Proposal__c</fieldItem>
+                <identifier>RecordProposal_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.CRADA2__c</fieldItem>
                 <identifier>RecordCRADA2_cField</identifier>
             </fieldInstance>
