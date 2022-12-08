@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPP_Contract_Compact</fullName>
+    <fields>Name</fields>
+    <fields>Contract_Amount__c</fields>
+    <fields>Authorized_Amount__c</fields>
+    <fields>Fund_Code__c</fields>
+    <fields>Contract_Client_Reference__c</fields>
+    <fields>Start_Date__c</fields>
+    <fields>Completion_Date__c</fields>
+    <label>SPP Contract Compact</label>
+</CompactLayout>

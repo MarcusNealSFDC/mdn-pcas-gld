@@ -5,7 +5,6 @@
     <label>Scope Text</label>
     <length>32768</length>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Html</type>
     <visibleLines>25</visibleLines>

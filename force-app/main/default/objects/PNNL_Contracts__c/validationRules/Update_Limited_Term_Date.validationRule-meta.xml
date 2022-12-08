@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Limited_Term_Date</fullName>
+    <active>true</active>
+    <description>This validation rule is created if the user answers &quot;Yes&quot; to the Limited Term Funds Fields</description>
+    <errorConditionFormula>AND(ISPICKVAL(PNNL_Limited_Term_Funds__c , &quot;Yes&quot;),ISNULL( PNNL_Limited_Term_Date__c))</errorConditionFormula>
+    <errorDisplayField>PNNL_Limited_Term_Date__c</errorDisplayField>
+    <errorMessage>Please update the Limited Term Date Field</errorMessage>
+</ValidationRule>

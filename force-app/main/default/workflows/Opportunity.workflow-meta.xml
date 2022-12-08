@@ -38,11 +38,112 @@
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/Proposal_Approval_Email</template>
     </alerts>
+    <alerts>
+        <fullName>Scope_Clearance_Decision_Email_Template_to_Assigned_PM_PMO</fullName>
+        <description>Scope Clearance Decision Email Template to Assigned PM/PMO</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Project_Management_Office_Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Project_Manager3__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Email_Template_for_PM_PMO</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approval_Not_In_Process</fullName>
+        <description>Field update to indicate the proposal is no longer in the approval process</description>
+        <field>Approval_in_Process__c</field>
+        <literalValue>0</literalValue>
+        <name>Approval Not In Process</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Recalled</fullName>
+        <description>FIeld update to indicate an approval has been recalled for the proposal</description>
+        <field>Approval_Recalled__c</field>
+        <literalValue>1</literalValue>
+        <name>Approval Recalled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Rejected</fullName>
+        <description>Field update to indicate that the approval has been rejected for the proposal</description>
+        <field>Approval_Rejected__c</field>
+        <literalValue>1</literalValue>
+        <name>Approval Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_in_Process</fullName>
+        <description>Field to indicate that an approval is in process for this proposal</description>
+        <field>Approval_in_Process__c</field>
+        <literalValue>1</literalValue>
+        <name>Approval in Process</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Final_Approval_Received</fullName>
+        <description>Field update to indicate the Final Approval has been received.</description>
+        <field>Final_Approval_Received__c</field>
+        <literalValue>1</literalValue>
+        <name>Final Approval Received</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
     <fieldUpdates>
         <fullName>PNSO_Contracting_Officer_Approves</fullName>
         <field>StageName</field>
         <literalValue>Work Authorization Approval: PNSO Contract Officer</literalValue>
         <name>PNSO Contracting Officer Approves</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PNSO_Signed_Date</fullName>
+        <field>PNSO_Signed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>PNSO Signed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Proposal_Approved</fullName>
+        <field>StageName</field>
+        <literalValue>Proposal Approved</literalValue>
+        <name>Proposal Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Proposal_Submitted</fullName>
+        <description>Field to indicate a proposal has been submitted for approval</description>
+        <field>StageName</field>
+        <literalValue>Proposal Submitted</literalValue>
+        <name>Proposal Submitted</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -103,6 +204,16 @@
         <field>StageName</field>
         <literalValue>Proposal Submitted</literalValue>
         <name>Update to Proposal Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Work_Authorization_Review</fullName>
+        <field>StageName</field>
+        <literalValue>Work Authorization Review</literalValue>
+        <name>Work Authorization Review</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>

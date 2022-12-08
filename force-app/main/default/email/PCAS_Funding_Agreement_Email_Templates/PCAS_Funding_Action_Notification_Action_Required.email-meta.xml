@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>PCAS Funding Action Notification - Action Required</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>PNNL_Logo</letterhead>
+    <name>PCAS Funding Action Notification - Action Required</name>
+    <style>formalLetter</style>
+    <subject>PCAS Funding Action Notification - Approval Required</subject>
+    <textOnly>The following item requires your action. Please click the link provided to view the details and take the appropriate action.
+
+{!Opportunity.Link}
+{!Funding_Agreement__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -5,7 +5,6 @@
     <label>SPECIMEN 6 Detail</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
@@ -15,7 +14,22 @@
             <value>
                 <fullName>Agreemnt is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</fullName>
                 <default>false</default>
-                <label>Agreemnt is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</label>
+                <label>Agreement is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</label>
+            </value>
+            <value>
+                <fullName>Battelle is lead party, TI subject to 5 year protection limitation (DOE Approval Required)</fullName>
+                <default>false</default>
+                <label>Battelle is lead party, TI subject to 5 year protection limitation (DOE Approval Required)</label>
+            </value>
+            <value>
+                <fullName>Sponsor is lead party.  TI subject to 5 year protection limitation (DOE Approval Required)</fullName>
+                <default>false</default>
+                <label>Sponsor is lead party.  TI subject to 5 year protection limitation (DOE Approval Required)</label>
+            </value>
+            <value>
+                <fullName>Other- Please work with IPLS for phrasing (DOE Approval Required</fullName>
+                <default>false</default>
+                <label>Other- Please work with IPLS for phrasing (DOE Approval Required</label>
             </value>
         </valueSetDefinition>
     </valueSet>

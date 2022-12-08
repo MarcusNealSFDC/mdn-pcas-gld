@@ -6,7 +6,6 @@
     <inlineHelpText>Select if this proposal is a Master Scope of Work</inlineHelpText>
     <label>Master Scope of Work</label>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>
 </CustomField>

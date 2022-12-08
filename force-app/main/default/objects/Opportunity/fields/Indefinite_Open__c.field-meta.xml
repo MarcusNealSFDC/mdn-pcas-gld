@@ -5,7 +5,6 @@
     <externalId>false</externalId>
     <label>Indefinite/Open</label>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>
 </CustomField>

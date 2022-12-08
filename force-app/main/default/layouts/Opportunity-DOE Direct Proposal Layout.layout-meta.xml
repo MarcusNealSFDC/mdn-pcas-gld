@@ -42,18 +42,6 @@
                 <field>Indefinite_Open__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Funding_Agreement_Total__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Amendments_Total__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Unsold_Amount__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Project_Coordinators__c</field>
             </layoutItems>
@@ -62,16 +50,28 @@
                 <field>Work_Location__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CRADA_Count__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Is_CRADA__c</field>
+                <behavior>Edit</behavior>
+                <field>SPPDetermination2__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>SPPDetermination2__c</field>
+                <field>Project_Manager3__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Project_Management_Office_Email_Address__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Market_Sector_pnnl__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Project_Management_Office_pnnl__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Project_ObjectiveYN__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -312,19 +312,8 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Control_Point__c</fields>
-        <fields>Fiscal_Year__c</fields>
-        <fields>Revised_Amount__c</fields>
-        <relatedList>Funding_Agreement__c.Proposal__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Budget_Reporting_Entry__c.Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <fields>Project_Title2__c</fields>
-        <fields>Market_Sector__c</fields>
+        <fields>Market_Sector_pnnl__c</fields>
         <fields>Project_Manager2__c</fields>
         <relatedList>Project__c.Opportunity__c</relatedList>
     </relatedLists>
@@ -349,14 +338,7 @@
         <relatedList>Proposed_Amendment__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <excludeButtons>MassChangeOwner</excludeButtons>
-        <excludeButtons>New</excludeButtons>
-        <fields>NAME</fields>
-        <fields>view_doc__c</fields>
-        <fields>Attachment_Type__c</fields>
-        <fields>Funding_Type__c</fields>
-        <fields>CREATEDBY_USER</fields>
-        <relatedList>Opportunity_Attachment__c.Opportunity__c</relatedList>
+        <relatedList>RelatedFileList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>CreatedDate</fields>
@@ -373,7 +355,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000tvbH</masterLabel>
+        <masterLabel>00h3S000000kKEo</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

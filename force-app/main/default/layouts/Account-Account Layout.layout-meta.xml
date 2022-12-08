@@ -23,10 +23,6 @@
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Client_Code__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Agency_Loc_CD__c</field>
             </layoutItems>
@@ -57,6 +53,18 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Legacy_Client_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Project_Management_Office__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PNNL_Funding_Sponsor_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PNNL_Contract_Sponsor_Code__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

@@ -4,7 +4,6 @@
     <fields>Name</fields>
     <fields>CRADA_Title__c</fields>
     <fields>CRADA_Type__c</fields>
-    <fields>Scope_Class__c</fields>
     <fields>Agreement_Term_Months__c</fields>
     <label>CRADA Compact View</label>
 </CompactLayout>
