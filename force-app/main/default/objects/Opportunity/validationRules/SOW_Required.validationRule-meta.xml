@@ -4,6 +4,6 @@
     <active>true</active>
     <description>Validation rule where the Stage cannot move out of Proposal Draft If a Statement of Work is not attached or  No Cost Time Extension is No.</description>
     <errorConditionFormula>(of_SOW_Attachments__c  ==0)&amp;&amp;
-(ISPICKVAL(StageName,&quot;Proposal Draft&quot;))</errorConditionFormula>
+(ISPICKVAL(StageName,&quot;Proposal Submitted&quot;))</errorConditionFormula>
     <errorMessage>Please ensure that a Statement of Work is attached</errorMessage>
 </ValidationRule>

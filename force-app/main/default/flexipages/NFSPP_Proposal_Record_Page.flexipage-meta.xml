@@ -375,8 +375,28 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Product_Line__c</fieldItem>
+                <identifier>RecordProduct_Line_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Market_Sector_pnnl__c</fieldItem>
                 <identifier>RecordMarket_Sector_pnnl_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Official_Use_Only__c</fieldItem>
+                <identifier>RecordOfficial_Use_Only_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-388fef72-b9f4-4b05-a730-58236f80273c</name>
@@ -404,58 +424,6 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-2237ff44-8291-4331-9413-056d6debb557</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Product_Line__c</fieldItem>
-                <identifier>RecordProduct_Line_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-ca7dece7-987e-440f-90a1-e89a9404ccd1</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Official_Use_Only__c</fieldItem>
-                <identifier>RecordOfficial_Use_Only_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-1cd82187-4808-4add-8946-9469b41f243a</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-ca7dece7-987e-440f-90a1-e89a9404ccd1</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column36</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-1cd82187-4808-4add-8946-9469b41f243a</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column34</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-05c6cf3d-2b94-49fc-99df-309c446f10eb</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -631,20 +599,6 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection3</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>columns</name>
-                    <value>Facet-05c6cf3d-2b94-49fc-99df-309c446f10eb</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>FFRDC &amp; Official Use</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection27</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -862,8 +816,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
-                <identifier>RecordSpecial_Reporting_Funds_cField</identifier>
+                <fieldItem>Record.Work_Location__c</fieldItem>
+                <identifier>RecordWork_Location_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -872,8 +826,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Work_Location__c</fieldItem>
-                <identifier>RecordWork_Location_cField</identifier>
+                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
+                <identifier>RecordSpecial_Reporting_Funds_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-bba87aa2-086f-4b5b-a3e5-72d9e7ea6b1b</name>
@@ -2004,6 +1958,23 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Coordinator_Foreign_Approver__c</fieldItem>
+                <identifier>RecordPNSO_Coordinator_Foreign_Approver_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Foreign_Sponsor__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Contracting_Officer2__c</fieldItem>
                 <identifier>RecordPNSO_Contracting_Officer2_cField</identifier>
             </fieldInstance>
@@ -2218,7 +2189,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
-                    <value>Approval Status</value>
+                    <value>Proposal Routing</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab5</identifier>

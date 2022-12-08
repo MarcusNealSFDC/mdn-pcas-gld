@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>SPECIMEN_1_Detail__c</fullName>
     <externalId>false</externalId>
@@ -12,11 +12,34 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName
-        >Sponsor is a United States entity. Specimen Agreement No. 1 (DOE Approved Not Required)</fullName>
+                <fullName>Sponsor is a United States entity. Specimen Agreement No. 1 (DOE Approved Not Required)</fullName>
                 <default>false</default>
-                <label
-        >Sponsor is a United States entity. Specimen Agreement No. 1 (DOE Approved Not Required)</label>
+                <label>Sponsor is a United States entity. Specimen Agreement No. 1 (DOE Approved Not Required)</label>
+            </value>
+            <value>
+                <fullName>Battelle is lead party. No IP transferred, but Sponsor can own technical information (TI) created under the agreement (DOE Approval NOT Required)</fullName>
+                <default>false</default>
+                <label>Battelle is lead party. No IP transferred, but Sponsor can own technical information (TI) created under the agreement (DOE Approval NOT Required)</label>
+            </value>
+            <value>
+                <fullName>Battelle is lead party. Sponsor gets royalty-free right to use TI subject to Battelle IP rights. (DOE Approval NOT Required)</fullName>
+                <default>false</default>
+                <label>Battelle is lead party. Sponsor gets royalty-free right to use TI subject to Battelle IP rights. (DOE Approval NOT Required)</label>
+            </value>
+            <value>
+                <fullName>Battelle is lead party. Battelle will report new inventions to Sponsor, under the terms of a separate option IP option Sponsor may license new IP from Battelle. (DOE Approval NOT Required)</fullName>
+                <default>false</default>
+                <label>Battelle is lead party. Battelle will report new inventions to Sponsor, under the terms of a separate option IP option Sponsor may license new IP from Battelle. (DOE Approval NOT Required)</label>
+            </value>
+            <value>
+                <fullName>Sponsor is lead party.  Takes on all responsibilities under the class waiver. (DOE Approval NOT Required)</fullName>
+                <default>false</default>
+                <label>Sponsor is lead party.  Takes on all responsibilities under the class waiver. (DOE Approval NOT Required)</label>
+            </value>
+            <value>
+                <fullName>Other- Please work with IPLS for phrasing-(DOE Approval may or may not be Required</fullName>
+                <default>false</default>
+                <label>Other- Please work with IPLS for phrasing-(DOE Approval may or may not be Required</label>
             </value>
         </valueSetDefinition>
     </valueSet>

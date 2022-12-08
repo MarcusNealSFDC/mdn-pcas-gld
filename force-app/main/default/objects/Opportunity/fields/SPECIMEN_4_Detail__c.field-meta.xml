@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>SPECIMEN_4_Detail__c</fullName>
     <externalId>false</externalId>
@@ -12,18 +12,29 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName
-        >Sponsor is a Foreign Entity. Specimen Agreement No. 4 (DOE Approval Required)</fullName>
+                <fullName>Sponsor is a Foreign Entity. Specimen Agreement No. 4 (DOE Approval Required)</fullName>
                 <default>false</default>
-                <label
-        >Sponsor is a Foreign Entity. Specimen Agreement No. 4 (DOE Approval Required)</label>
+                <label>Sponsor is a Foreign Entity. Specimen Agreement No. 4 (DOE Approval Required)</label>
             </value>
             <value>
-                <fullName
-        >Sponsor&apos;s funds come from federal funding, Bayh-Dole rights apply, PNNL entitled to take title. Specimen Agreement No. 4 (DOE Approval NOT Required)</fullName>
+                <fullName>Sponsor&apos;s funds come from federal funding, Bayh-Dole rights apply, PNNL entitled to take title. Specimen Agreement No. 4 (DOE Approval NOT Required)</fullName>
                 <default>false</default>
-                <label
-        >Sponsor&apos;s funds come from federal funding, Bayh-Dole rights apply, PNNL entitled to take title. Specimen Agreement No. 4 (DOE Approval NOT Required)</label>
+                <label>Sponsor&apos;s funds come from federal funding, Bayh-Dole rights apply, PNNL entitled to take title. Specimen Agreement No. 4 (DOE Approval NOT Required)</label>
+            </value>
+            <value>
+                <fullName>No IP transferred. Battelle owns IP under terms of M&amp;O contract (DOE Approval Required)</fullName>
+                <default>false</default>
+                <label>No IP transferred. Battelle owns IP under terms of M&amp;O contract (DOE Approval Required)</label>
+            </value>
+            <value>
+                <fullName>Other- Please work with IPLS for phrasing (DOE Approval Required)</fullName>
+                <default>false</default>
+                <label>Other- Please work with IPLS for phrasing (DOE Approval Required)</label>
+            </value>
+            <value>
+                <fullName>No IP transferred. Sponsor own IP under terms reviewed and approved by DOE (DOE Approval Required</fullName>
+                <default>false</default>
+                <label>No IP transferred. Sponsor own IP under terms reviewed and approved by DOE (DOE Approval Required</label>
             </value>
         </valueSetDefinition>
     </valueSet>
