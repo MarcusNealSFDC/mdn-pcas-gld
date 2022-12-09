@@ -321,6 +321,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Have_Objectives_Changed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Headquarters_Organization__c</picklist>
         <values>
             <fullName>0 - Non Lead</fullName>
@@ -1216,13 +1227,6 @@
         <values>
             <fullName>Yes</fullName>
             <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>PNSO_Animal_Researcher__c</picklist>
-        <values>
-            <fullName>Kimberly Harper</fullName>
-            <default>true</default>
         </values>
     </picklistValues>
     <picklistValues>

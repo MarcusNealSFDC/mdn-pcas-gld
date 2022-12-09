@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_WAS_Approval_PNSO_Tech</fullName>
+        <field>Status__c</field>
+        <literalValue>Work Authorization Approval: PNSO Technical Rep</literalValue>
+        <name>Update WAS Approval PNSO Tech</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>
