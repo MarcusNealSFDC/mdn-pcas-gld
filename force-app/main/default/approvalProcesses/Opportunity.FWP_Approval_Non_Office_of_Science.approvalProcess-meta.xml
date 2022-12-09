@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -123,6 +123,10 @@
             <type>FieldUpdate</type>
         </action>
         <action>
+            <name>Flag_Approval_Process_Queue_Update</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
             <name>Work_Authorization_Review</name>
             <type>FieldUpdate</type>
         </action>
@@ -132,7 +136,7 @@
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>
     </nextAutomatedApprover>
-    <processOrder>2</processOrder>
+    <processOrder>5</processOrder>
     <recallActions>
         <action>
             <name>Approval_Not_In_Process</name>

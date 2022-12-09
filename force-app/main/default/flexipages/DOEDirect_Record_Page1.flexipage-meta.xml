@@ -11,6 +11,9 @@
                             <value>Opportunity.Amendment</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>Opportunity.Revision</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
