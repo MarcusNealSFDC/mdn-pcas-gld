@@ -10,4 +10,44 @@
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WA_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Pending_Obligations</literalValue>
+        <name>WA Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WA_Stage_Update_to_PNSO_Technical</fullName>
+        <field>Status__c</field>
+        <literalValue>Work Authorization Approval: PNSO Technical Rep</literalValue>
+        <name>WA Stage Update to PNSO Technical</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WA_Status_to_FA_Approval</fullName>
+        <field>Status__c</field>
+        <literalValue>Work Authorization Approval: Funding &amp; Agreements</literalValue>
+        <name>WA Status to FA  Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WA_Update_to_PNSO_Contracting</fullName>
+        <field>Status__c</field>
+        <literalValue>Work Authorization Approval: PNSO Contract Officer</literalValue>
+        <name>WA Update to PNSO Contracting</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
 </Workflow>
