@@ -30,8 +30,8 @@
     <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
     <networkMemberGroups>
-        <profile>pnso portal</profile>
-        <profile>Admin</profile>
+        <profile>admin</profile>
+        <profile>PNSO Portal</profile>
     </networkMemberGroups>
     <networkPageOverrides>
         <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
@@ -45,7 +45,7 @@
     <sendWelcomeEmail>true</sendWelcomeEmail>
     <site>PNSO_Portal</site>
     <siteArchiveStatus>NotArchived</siteArchiveStatus>
-    <status>DownForMaintenance</status>
+    <status>Live</status>
     <tabs>
         <defaultTab>home</defaultTab>
         <standardTab>Chatter</standardTab>
