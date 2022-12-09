@@ -11,6 +11,9 @@
                             <value>Opportunity.Amendment</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>Opportunity.Revision</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
@@ -95,10 +98,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Proposal_Number__c</fieldItem>
-                <identifier>RecordProposal_Number_cField</identifier>
+                <fieldItem>Record.Name</fieldItem>
+                <identifier>RecordNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -151,6 +154,16 @@
                 <identifier>RecordRevison_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Risk_Assessment_Link__c</fieldItem>
+                <identifier>RecordRisk_Assessment_Link_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-e42b5582-9a7d-411d-946d-f97b6f727225</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -163,6 +176,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Project_Title__c</fieldItem>
                 <identifier>RecordProject_Title_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.StageName</fieldItem>
+                <identifier>RecordStageNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -191,16 +214,6 @@
                     <name>uiBehavior</name>
                     <value>required</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.StageName</fieldItem>
-                <identifier>RecordStageNameField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.CloseDate</fieldItem>
                 <identifier>RecordCloseDateField</identifier>
             </fieldInstance>
@@ -211,8 +224,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Risk_Assessment_Link__c</fieldItem>
-                <identifier>RecordRisk_Assessment_Link_cField</identifier>
+                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
+                <identifier>RecordSpecial_Reporting_Funds_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-23d2eac5-764d-4194-bfe2-deb2e26752cb</name>
@@ -517,16 +530,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Name</fieldItem>
-                <identifier>RecordNameField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-ab4c0496-30b6-40eb-abe7-5df3ef870cba</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -700,16 +703,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Foreign_Sponsor__c</fieldItem>
                 <identifier>RecordForeign_Sponsor_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
-                <identifier>RecordSpecial_Reporting_Funds_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1887,19 +1880,33 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Please_Explain__c</fieldItem>
+                <identifier>RecordPlease_Explain_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-54d1fbe5-724a-448c-a87c-ae6f32cc2b63</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
+                    <name>body</name>
+                    <value>Facet-54d1fbe5-724a-448c-a87c-ae6f32cc2b63</value>
                 </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>richTextValue</name>
-                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(15, 15, 15);&quot;&gt;IP Checklist&lt;/strong&gt;&lt;/p&gt;</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText5</identifier>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column40</identifier>
             </componentInstance>
         </itemInstances>
+        <name>Facet-ec18688e-996e-441c-b6de-4a11f8531c5a</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -1912,6 +1919,20 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection24</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-ec18688e-996e-441c-b6de-4a11f8531c5a</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Please provide an explanation for your selection below.</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection32</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-6e25553f-99c2-4ab2-970b-34fd324262ad</name>

@@ -11,6 +11,9 @@
                             <value>Opportunity.Amendment</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>Opportunity.Revision</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
@@ -95,10 +98,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Proposal_Number__c</fieldItem>
-                <identifier>RecordProposal_Number_cField</identifier>
+                <fieldItem>Record.Name</fieldItem>
+                <identifier>RecordNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -193,6 +196,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.CloseDate</fieldItem>
                 <identifier>RecordCloseDateField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
+                <identifier>RecordSpecial_Reporting_Funds_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-23d2eac5-764d-4194-bfe2-deb2e26752cb</name>
@@ -668,16 +681,6 @@
                 <identifier>RecordEMSL_Approval_Number_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
-                <identifier>RecordSpecial_Reporting_Funds_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-bba87aa2-086f-4b5b-a3e5-72d9e7ea6b1b</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -810,6 +813,23 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Have_Objectives_Changed__c</fieldItem>
+                <identifier>RecordHave_Objectives_Changed_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Amendment_Number__c}</leftValue>
+                        <operator>GT</operator>
+                        <rightValue>0</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -1476,10 +1496,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>required</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Animal_Researcher__c</fieldItem>
-                <identifier>RecordPNSO_Animal_Researcher_cField</identifier>
+                <fieldItem>Record.PNSO_Animal_Researcher2__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Researcher2_cField</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.PNSO_Animal_Research_Required__c}</leftValue>

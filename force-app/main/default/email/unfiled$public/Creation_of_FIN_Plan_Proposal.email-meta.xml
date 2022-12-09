@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Creation of FIN Plan Proposal</name>
+    <style>none</style>
+    <subject>PNNL FIN Plan Proposal Created</subject>
+    <textOnly>The following PNNL proposal has been created and is available for review. Please click the link provided to view the details, no action is required at this time  
+
+Proposal Number: {!Opportunity.Name} 
+Project Title: {!Opportunity.Project_Title__c} 
+Revision: {!Opportunity.Revison__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
