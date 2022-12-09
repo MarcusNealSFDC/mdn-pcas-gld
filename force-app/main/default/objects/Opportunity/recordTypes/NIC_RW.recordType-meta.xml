@@ -321,6 +321,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Have_Objectives_Changed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Headquarters_Organization__c</picklist>
         <values>
             <fullName>0 - Non Lead</fullName>
@@ -330,7 +341,15 @@
     <picklistValues>
         <picklist>Intellectual_Property__c</picklist>
         <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -539,7 +558,11 @@
     <picklistValues>
         <picklist>Non_Standard_T__c</picklist>
         <values>
-            <fullName>TBD</fullName>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1207,13 +1230,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>PNSO_Animal_Researcher__c</picklist>
-        <values>
-            <fullName>Kimberly Harper</fullName>
-            <default>true</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>PNSO_Contracting_Officer__c</picklist>
         <values>
             <fullName>TBD</fullName>
@@ -1350,7 +1366,11 @@
     <picklistValues>
         <picklist>Source_of_Funds__c</picklist>
         <values>
-            <fullName>TBD</fullName>
+            <fullName>Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Federal</fullName>
             <default>false</default>
         </values>
     </picklistValues>

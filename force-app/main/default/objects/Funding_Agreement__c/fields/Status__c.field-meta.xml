@@ -9,38 +9,47 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Awaiting Budget Office Update</fullName>
+                <fullName>Work Authorization Setup</fullName>
                 <default>false</default>
-                <label>Awaiting Budget Office Update</label>
+                <label>Work Authorization Setup</label>
             </value>
             <value>
-                <fullName>Budget Office Review</fullName>
+                <fullName>Work Authorization Breakdown</fullName>
                 <default>false</default>
-                <label>Budget Office Review</label>
+                <label>Work Authorization Breakdown</label>
             </value>
             <value>
-                <fullName>Pending HQ Correction</fullName>
+                <fullName>Work Authorization Review</fullName>
                 <default>false</default>
-                <label>Pending HQ Correction</label>
+                <label>Work Authorization Review</label>
             </value>
             <value>
-                <fullName>Pending Obs Action</fullName>
+                <fullName>Work Authorization Approval: Funding &amp; Agreements</fullName>
                 <default>false</default>
-                <label>Pending Obs Action</label>
+                <label>Work Authorization Approval: Funding &amp; Agreements</label>
             </value>
             <value>
-                <fullName>Void/Withdrawn</fullName>
+                <fullName>Work Authorization Approval: PNSO Technical Rep</fullName>
                 <default>false</default>
-                <label>Void/Withdrawn</label>
+                <label>Work Authorization Approval: PNSO Technical Rep</label>
             </value>
             <value>
-                <fullName>Completed - Funds Received</fullName>
+                <fullName>Work Authorization Approval: PNSO Contract Officer</fullName>
                 <default>false</default>
-                <label>Completed - Funds Received</label>
+                <label>Work Authorization Approval: PNSO Contract Officer</label>
+            </value>
+            <value>
+                <fullName>Pending_Obligations</fullName>
+                <default>false</default>
+                <label>Pending Obligations</label>
+            </value>
+            <value>
+                <fullName>Funding Received</fullName>
+                <default>false</default>
+                <label>Funding Received</label>
             </value>
         </valueSetDefinition>
     </valueSet>

@@ -12,21 +12,25 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <type>adhoc</type>
+                <name>Accounts_Receivable_Reviewer__c</name>
+                <type>relatedUserField</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Step 1</label>
-        <name>Step_1</name>
+        <label>Accounts Receivable Approval</label>
+        <name>Accounts_Receivable_Approval</name>
     </approvalStep>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <type>adhoc</type>
+                <name>ORO_Budget_Approver__c</name>
+                <type>relatedUserField</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Test Approval Step 2</label>
-        <name>Test_Approval_Step_2</name>
+        <label>CSC Approval</label>
+        <name>CSC_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -35,27 +39,23 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <type>adhoc</type>
+                <name>PNSO_Contracting_Officer__c</name>
+                <type>relatedUserField</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Test Approval Step 3</label>
-        <name>Test_Approval_Step_3</name>
+        <label>PNSO Contracting Officer Approval</label>
+        <name>PNSO_Contracting_Officer_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
     </approvalStep>
+    <emailTemplate>PCAS_Funding_Agreement_Email_Templates/PCAS_Funding_Action_Notification_Action_Required</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
-    <entryCriteria>
-        <criteriaItems>
-            <field>Funding_Agreement__c.Status__c</field>
-            <operation>equals</operation>
-            <value>Awaiting Budget Office Update</value>
-        </criteriaItems>
-    </entryCriteria>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
-    <label>Test Funding Agreement  Approval Process</label>
-    <processOrder>1</processOrder>
-    <recordEditability>AdminOnly</recordEditability>
+    <label>Funding Action Approval</label>
+    <processOrder>0</processOrder>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>

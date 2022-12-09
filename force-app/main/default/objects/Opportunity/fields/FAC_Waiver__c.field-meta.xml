@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>FAC_Waiver__c</fullName>
     <defaultValue>&quot;Not Applicable&quot;</defaultValue>
@@ -14,7 +14,7 @@
             <sorted>false</sorted>
             <value>
                 <fullName>Not Applicable</fullName>
-                <default>true</default>
+                <default>false</default>
                 <label>Not Applicable</label>
             </value>
             <value>
@@ -33,11 +33,9 @@
                 <label>Department of Defense Counter Proliferation</label>
             </value>
             <value>
-                <fullName
-        >Department of Defense Joint Advanced Strike Technology Program</fullName>
+                <fullName>Department of Defense Joint Advanced Strike Technology Program</fullName>
                 <default>false</default>
-                <label
-        >Department of Defense Joint Advanced Strike Technology Program</label>
+                <label>Department of Defense Joint Advanced Strike Technology Program</label>
             </value>
             <value>
                 <fullName>Department of Homeland Security</fullName>
@@ -90,11 +88,9 @@
                 <label>State and local governments</label>
             </value>
             <value>
-                <fullName
-        >Strategic Environmental Research and Development Program (SERDP)</fullName>
+                <fullName>Strategic Environmental Research and Development Program (SERDP)</fullName>
                 <default>false</default>
-                <label
-        >Strategic Environmental Research and Development Program (SERDP)</label>
+                <label>Strategic Environmental Research and Development Program (SERDP)</label>
             </value>
             <value>
                 <fullName>US Enrichment Corporation</fullName>

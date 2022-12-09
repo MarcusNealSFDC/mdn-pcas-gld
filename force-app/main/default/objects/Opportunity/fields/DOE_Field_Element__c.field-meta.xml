@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>DOE_Field_Element__c</fullName>
+    <defaultValue>&quot;Pacific Northwest Site Office&quot;</defaultValue>
     <externalId>false</externalId>
     <label>DOE Field Element</label>
-    <length>15</length>
+    <length>100</length>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>
