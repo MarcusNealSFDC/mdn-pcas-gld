@@ -94,6 +94,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PNNL_ApprovalProcessUpdateToQueueHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PNNL_OppCostDetailTableController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -198,6 +202,16 @@
         <editable>true</editable>
         <field>Account.Street__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Node__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Replacement_Queue__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1941,6 +1955,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Trigger_Approval_Process_Queue_Update__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Type</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2265,14 +2284,14 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>PNNL_Contracts__c.PNNL_Limited_Term_Date__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>PNNL_Contracts__c.PNNL_Limited_Term_Funds__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -2660,6 +2679,9 @@
     <layoutAssignments>
         <layout>Account-Business Account</layout>
         <recordType>Account.Business_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Approval_Process_Node_To_Queue_Mapping__mdt-Approval Process Node To Queue Mapping Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>

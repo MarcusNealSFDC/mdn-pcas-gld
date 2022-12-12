@@ -152,6 +152,16 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Flag_Approval_Process_Queue_Update</fullName>
+        <field>Trigger_Approval_Process_Queue_Update__c</field>
+        <literalValue>1</literalValue>
+        <name>Flag Approval Process Queue Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>PNSO_Contracting_Officer_Approves</fullName>
         <field>StageName</field>
         <literalValue>Work Authorization Approval: PNSO Contract Officer</literalValue>
