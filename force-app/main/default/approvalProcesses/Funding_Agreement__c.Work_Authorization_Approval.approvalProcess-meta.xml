@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
-        <field>Owner</field>
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>Update_to_PNSO_Tech_Rep_Stage</name>
+                <name>WA_Stage_Update_to_PNSO_Technical</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
         <assignedApprover>
             <approver>
-                <type>adhoc</type>
+                <name>Budget_Office_Queue</name>
+                <type>queue</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Budget Office Manager Approval</label>
-        <name>Budget_Office_Manager_Approval</name>
+        <label>Budget Manager Approval</label>
+        <name>Budget_Manager_Approval</name>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>true</allowDelegate>
+        <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>PNSO_Contracting_Officer_Approves</name>
+                <name>WA_Update_to_PNSO_Contracting</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
         <assignedApprover>
             <approver>
-                <name>PNSO_Technical_Rep2__c</name>
+                <name>PNSO_Technical_Reviewer__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -48,9 +49,15 @@
     </approvalStep>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>WA_Approved</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
-                <name>PNSO_Contracting_Officer2__c</name>
+                <name>PNSO_Contracting_Officer__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -61,73 +68,25 @@
             <type>RejectRequest</type>
         </rejectBehavior>
     </approvalStep>
-    <description>Approval process for use in FIN Plan proposal Type</description>
     <emailTemplate>unfiled$public/Proposal_Approval_Email</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>
-            <field>Opportunity.RecordType</field>
-            <operation>equals</operation>
-            <value>FIN Plan Proposal</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Opportunity.StageName</field>
+            <field>Funding_Agreement__c.Status__c</field>
             <operation>equals</operation>
             <value>Work Authorization Review</value>
         </criteriaItems>
     </entryCriteria>
-    <finalApprovalActions>
-        <action>
-            <name>Approval_Not_In_Process</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Final_Approval_Received</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>PNSO_Approval_of_FIN_Plan_Proposal</name>
-            <type>Alert</type>
-        </action>
-    </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
-    <finalRejectionActions>
-        <action>
-            <name>Approval_Not_In_Process</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Approval_Rejected</name>
-            <type>FieldUpdate</type>
-        </action>
-    </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
-            <name>Approval_in_Process</name>
+            <name>WA_Status_to_FA_Approval</name>
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>FIN Plan Proposal Approval Process</label>
-    <nextAutomatedApprover>
-        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
-        <userHierarchyField>Manager</userHierarchyField>
-    </nextAutomatedApprover>
+    <label>Work Authorization Approval</label>
     <processOrder>1</processOrder>
-    <recallActions>
-        <action>
-            <name>Approval_Not_In_Process</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Approval_Recalled</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Recalled</name>
-            <type>FieldUpdate</type>
-        </action>
-    </recallActions>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>

@@ -19,8 +19,10 @@
         </approvalActions>
         <assignedApprover>
             <approver>
-                <type>userHierarchyField</type>
+                <name>Project_Coordinators__c</name>
+                <type>relatedUserField</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <label>Project Coordinator Approval</label>
         <name>Project_Coordinator_Approval</name>
@@ -35,7 +37,7 @@
         </approvalActions>
         <assignedApprover>
             <approver>
-                <name>PNSO_Technical_Rep2__c</name>
+                <name>PNNL_Work_Proposal_Manager2__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -50,13 +52,12 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>PNSO_Contracting_Officer2__c</name>
-                <type>relatedUserField</type>
+                <type>adhoc</type>
             </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Office of Science Approval</label>
-        <name>Office_of_Science_Approval</name>
+        <description>To Business Office Queue</description>
+        <label>Business Office Approval</label>
+        <name>Business_Office_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -68,19 +69,7 @@
                 <type>adhoc</type>
             </approver>
         </assignedApprover>
-        <label>Non-Office of Science Approval</label>
-        <name>Non_Office_of_Science_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>false</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <type>adhoc</type>
-            </approver>
-        </assignedApprover>
+        <description>To Budget Office Queue</description>
         <label>Budget Office Approval</label>
         <name>Budget_Office_Approval</name>
         <rejectBehavior>
@@ -116,12 +105,22 @@
         <criteriaItems>
             <field>Opportunity.RecordType</field>
             <operation>equals</operation>
-            <value>Field Work Proposal</value>
+            <value>DOE Direct</value>
         </criteriaItems>
         <criteriaItems>
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
             <value>Proposal Draft</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.FWP__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.B_R__c</field>
+            <operation>startsWith</operation>
+            <value>AT,KA,KB,KC,KL,KP,KX,KJ,ST,FS10</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
@@ -160,7 +159,7 @@
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>FWP Proposal Approval Process - Phase 1</label>
+    <label>FWP - Office of Science Approval</label>
     <nextAutomatedApprover>
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>

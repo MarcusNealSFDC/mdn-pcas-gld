@@ -7,7 +7,7 @@
         <label>Opportunity Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>Proposal_Number__c</field>
             </layoutItems>
             <layoutItems>
@@ -72,6 +72,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Project_ObjectiveYN__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Trigger_Approval_Process_Queue_Update__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -158,7 +162,7 @@
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>AccountId</field>
             </layoutItems>
             <layoutItems>
@@ -312,10 +316,6 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>Budget_Reporting_Entry__c.Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <fields>Project_Title2__c</fields>
         <fields>Market_Sector_pnnl__c</fields>
         <fields>Project_Manager2__c</fields>
@@ -342,14 +342,7 @@
         <relatedList>Proposed_Amendment__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <excludeButtons>MassChangeOwner</excludeButtons>
-        <excludeButtons>New</excludeButtons>
-        <fields>NAME</fields>
-        <fields>view_doc__c</fields>
-        <fields>Attachment_Type__c</fields>
-        <fields>Funding_Type__c</fields>
-        <fields>CREATEDBY_USER</fields>
-        <relatedList>Opportunity_Attachment__c.Opportunity__c</relatedList>
+        <relatedList>RelatedFileList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>CreatedDate</fields>
@@ -366,7 +359,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000ur4J</masterLabel>
+        <masterLabel>00h3R000000wMog</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>SPECIMEN_6_Detail__c</fullName>
     <externalId>false</externalId>
@@ -12,11 +12,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName
-        >Agreemnt is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</fullName>
+                <fullName>Agreemnt is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</fullName>
                 <default>false</default>
-                <label
-        >Agreemnt is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</label>
+                <label>Agreement is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</label>
+            </value>
+            <value>
+                <fullName>Battelle is lead party, TI subject to 5 year protection limitation (DOE Approval Required)</fullName>
+                <default>false</default>
+                <label>Battelle is lead party, TI subject to 5 year protection limitation (DOE Approval Required)</label>
+            </value>
+            <value>
+                <fullName>Sponsor is lead party.  TI subject to 5 year protection limitation (DOE Approval Required)</fullName>
+                <default>false</default>
+                <label>Sponsor is lead party.  TI subject to 5 year protection limitation (DOE Approval Required)</label>
+            </value>
+            <value>
+                <fullName>Other- Please work with IPLS for phrasing (DOE Approval Required</fullName>
+                <default>false</default>
+                <label>Other- Please work with IPLS for phrasing (DOE Approval Required</label>
             </value>
         </valueSetDefinition>
     </valueSet>

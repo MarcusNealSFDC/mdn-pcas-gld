@@ -3,18 +3,6 @@
     <fullName>DOE Direct</fullName>
     <isActive>true</isActive>
     <values>
-        <fullName>Completed</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Funding Received</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Pending Project Items</fullName>
-        <default>false</default>
-    </values>
-    <values>
         <fullName>Proposal Approved</fullName>
         <default>false</default>
     </values>
@@ -32,26 +20,6 @@
     </values>
     <values>
         <fullName>Scope Filed</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Work Authorization Approval%3A PNSO Contract Officer</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Work Authorization Approval%3A PNSO Technical Rep</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Work Authorization Breakdown</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Work Authorization Review</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Work Authorization Setup</fullName>
         <default>false</default>
     </values>
 </BusinessProcess>
