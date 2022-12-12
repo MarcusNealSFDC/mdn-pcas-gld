@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
         <name>Open</name>
@@ -26,7 +26,7 @@
             <assignToReference>RecordToClone.Id</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue />
+                <stringValue></stringValue>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -41,6 +41,13 @@
             <operator>Add</operator>
             <value>
                 <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.StageName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Proposal Draft</stringValue>
             </value>
         </assignmentItems>
         <connector>
@@ -84,8 +91,7 @@
         <label>GetRecords</label>
         <locationX>176</locationX>
         <locationY>158</locationY>
-        <assignNullValuesIfNoRecordsFound
-    >false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>AssignRecordValues</targetReference>
         </connector>
