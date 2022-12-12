@@ -22,6 +22,10 @@
                 <behavior>Edit</behavior>
                 <field>PNSO_ACT_Reviewer__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PNSO_Animal_Researcher__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>

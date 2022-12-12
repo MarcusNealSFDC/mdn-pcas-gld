@@ -1513,7 +1513,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.PNSO_Animal_Researcher__c</field>
+        <field>Opportunity.PNSO_Animal_Researcher2__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
