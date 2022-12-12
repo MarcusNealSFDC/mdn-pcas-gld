@@ -58,16 +58,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Proposal__c</fieldItem>
-                <identifier>RecordProposal_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Contract_Account_Number__c</fieldItem>
                 <identifier>RecordContract_Account_Number_cField</identifier>
             </fieldInstance>
