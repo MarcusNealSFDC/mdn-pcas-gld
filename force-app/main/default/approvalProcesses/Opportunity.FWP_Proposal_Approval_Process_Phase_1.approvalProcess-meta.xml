@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -19,8 +19,10 @@
         </approvalActions>
         <assignedApprover>
             <approver>
-                <type>userHierarchyField</type>
+                <name>Project_Coordinators__c</name>
+                <type>relatedUserField</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <label>Project Coordinator Approval</label>
         <name>Project_Coordinator_Approval</name>
@@ -29,13 +31,17 @@
         <allowDelegate>true</allowDelegate>
         <approvalActions>
             <action>
+                <name>Flag_Approval_Process_Queue_Update</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
                 <name>PNSO_Contracting_Officer_Approves</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
         <assignedApprover>
             <approver>
-                <name>PNSO_Technical_Rep2__c</name>
+                <name>PNNL_Work_Proposal_Manager2__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -48,15 +54,20 @@
     </approvalStep>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Flag_Approval_Process_Queue_Update</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
-                <name>PNSO_Contracting_Officer2__c</name>
-                <type>relatedUserField</type>
+                <type>adhoc</type>
             </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Office of Science Approval</label>
-        <name>Office_of_Science_Approval</name>
+        <description>To Business Office Queue</description>
+        <label>Business Office Approval</label>
+        <name>Business_Office_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -68,19 +79,7 @@
                 <type>adhoc</type>
             </approver>
         </assignedApprover>
-        <label>Non-Office of Science Approval</label>
-        <name>Non_Office_of_Science_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>false</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <type>adhoc</type>
-            </approver>
-        </assignedApprover>
+        <description>To Budget Office Queue</description>
         <label>Budget Office Approval</label>
         <name>Budget_Office_Approval</name>
         <rejectBehavior>
@@ -131,7 +130,7 @@
         <criteriaItems>
             <field>Opportunity.B_R__c</field>
             <operation>startsWith</operation>
-            <value>AZ,AR,AT</value>
+            <value>AT,KA,KB,KC,KL,KP,KX,KJ,ST,FS10</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
@@ -170,12 +169,12 @@
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>FWP Proposal Approval Process - Phase 1</label>
+    <label>FWP - Office of Science Approval</label>
     <nextAutomatedApprover>
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>
     </nextAutomatedApprover>
-    <processOrder>2</processOrder>
+    <processOrder>4</processOrder>
     <recallActions>
         <action>
             <name>Approval_Not_In_Process</name>

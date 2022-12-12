@@ -38,8 +38,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project__c</fieldItem>
-                <identifier>RecordProject_cField</identifier>
+                <fieldItem>Record.Name</fieldItem>
+                <identifier>RecordNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -48,8 +48,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Name</fieldItem>
-                <identifier>RecordNameField</identifier>
+                <fieldItem>Record.Project__c</fieldItem>
+                <identifier>RecordProject_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -84,6 +84,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Master_Scope_of_Work_Proposal__c</fieldItem>
                 <identifier>RecordMaster_Scope_of_Work_Proposal_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Proposal__c</fieldItem>
+                <identifier>RecordProposal_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
