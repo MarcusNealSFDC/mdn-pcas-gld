@@ -11,19 +11,44 @@
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
-        <approvalActions>
-            <action>
-                <name>Update_to_PNSO_Tech_Rep_Stage</name>
-                <type>FieldUpdate</type>
-            </action>
-        </approvalActions>
         <assignedApprover>
             <approver>
                 <type>adhoc</type>
             </approver>
         </assignedApprover>
-        <label>Budget Office Manager Approval</label>
-        <name>Budget_Office_Manager_Approval</name>
+        <description>To Budget Office Queue</description>
+        <label>Budget Office Approval</label>
+        <name>Budget_Office_Approval</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Project_Coordinators__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Project Coordinator Approval</label>
+        <name>Project_Coordinator_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Project_Manager3__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Project Manager Approval</label>
+        <name>Project_Manager_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -46,22 +71,7 @@
             <type>RejectRequest</type>
         </rejectBehavior>
     </approvalStep>
-    <approvalStep>
-        <allowDelegate>false</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>PNSO_Contracting_Officer2__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <label>PNSO Contracting Officer Approval</label>
-        <name>PNSO_Contracting_Officer_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
-    </approvalStep>
-    <description>Approval process for use in FIN Plan proposal Type</description>
+    <description>Approval process for use in FWP proposal Type - Phase 2 which includes PNSO approval</description>
     <emailTemplate>unfiled$public/Proposal_Approval_Email</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
@@ -73,12 +83,12 @@
         <criteriaItems>
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
-            <value>Work Authorization Review</value>
+            <value>Proposal Draft</value>
         </criteriaItems>
         <criteriaItems>
             <field>Opportunity.FWP__c</field>
             <operation>equals</operation>
-            <value>No</value>
+            <value>Yes</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
@@ -112,13 +122,17 @@
             <name>Approval_in_Process</name>
             <type>FieldUpdate</type>
         </action>
+        <action>
+            <name>Work_Authorization_Review</name>
+            <type>FieldUpdate</type>
+        </action>
     </initialSubmissionActions>
-    <label>FIN Plan Proposal Approval Process</label>
+    <label>FWP Approval - Non Office of Science</label>
     <nextAutomatedApprover>
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>
     </nextAutomatedApprover>
-    <processOrder>1</processOrder>
+    <processOrder>2</processOrder>
     <recallActions>
         <action>
             <name>Approval_Not_In_Process</name>
