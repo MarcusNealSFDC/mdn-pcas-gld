@@ -94,6 +94,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PNNL_ApprovalProcessUpdateToQHandlerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PNNL_ApprovalProcessUpdateToQueueHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1547,21 +1551,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.PNNL_Parallel_Categorization__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.PNNL_Primary_Taxonomy__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.PNNL_Secondary_Taxonomy__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.PNNL_Work_Proposal_Manager2__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2723,6 +2712,10 @@
         <layout>Funding_Agreement__c-Funding Agreement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity-IWO Page Layout</layout>
+        <recordType>Opportunity.IWO</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2740,10 +2733,6 @@
     <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
         <recordType>Opportunity.F_SPP</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.IWO</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>

@@ -226,18 +226,14 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>Funding_Agreement__c.CRADALU__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Budget_Reporting_Entry__c.CRADA_lookup__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <fields>view_CRADA_doc__c</fields>
         <fields>Attachment_Type__c</fields>
         <fields>CREATEDBY_USER</fields>
         <relatedList>CRADA_Attachment__c.CRADA__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Budget_Reporting_Entry__c.CRADA_lookup__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>CreatedDate</fields>
@@ -253,7 +249,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3S000000iwln</masterLabel>
+        <masterLabel>00h3S000000l36H</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

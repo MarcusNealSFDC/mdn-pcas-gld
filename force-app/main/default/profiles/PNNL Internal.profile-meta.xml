@@ -94,6 +94,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PNNL_ApprovalProcessUpdateToQHandlerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PNNL_ApprovalProcessUpdateToQueueHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -103,14 +107,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PNNL_OppCostDetailTableControllerTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>PNNL_UploadAttachmentController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>PNNL_UploadAttachmentControllerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
