@@ -18,6 +18,10 @@
                 <behavior>Edit</behavior>
                 <field>PNSO_Coordinator_Foreign_Approver__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PNSO_Animal_Researcher__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -76,6 +80,8 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <layoutColumns/>
+        <layoutColumns/>
+        <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
@@ -95,7 +101,7 @@
         <fields>Definition</fields>
         <fields>Message</fields>
         <fields>Giver</fields>
-    <relatedList>WorkBadgeRelatedList</relatedList>
+        <relatedList>WorkBadgeRelatedList</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>UserFollowersList</relatedList>
