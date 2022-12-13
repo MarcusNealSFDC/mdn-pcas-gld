@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Non_DOE_Funding_Agreement_Email_Approval_Alert_for_PNSO_Contracting_Officers</fullName>
+        <description>Non DOE Funding Agreement Email Approval Alert for PNSO Contracting Officers</description>
+        <protected>false</protected>
+        <recipients>
+            <field>PNSO_Contracting_Officer__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Funding_Agreement/PNNL_Non_DOE_Funding_Agreement_Approval_Email</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Update_WAS_Approval_PNSO_Tech</fullName>
         <field>Status__c</field>
