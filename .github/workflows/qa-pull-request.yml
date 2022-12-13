@@ -3,16 +3,16 @@ name: Deployments:PR BUGFIXES/FEATURES - Pull Request Against QA
 on:
   pull_request:
     branches:
-    - qa 
+    - org/02-qa 
   push:
     branches:
-    - qa 
+    - org/02-qa 
 
 env:
   SFDX_AUDIENCE_URL: https://test.salesforce.com # Use https://login.salesforce.com for production instances. Use https://test.salesforce.com for sandboxes
   SALESFORCE_ORG_DEV_URL: https://pnnl--qa.sandbox.my.salesforce.com # Salesforce URL of target org
   SALESFORCE_ORG_USERNAME: builduser@pnnl.gov.qa # Salesforce username of target org
-  TARGET_BRANCH: qa
+  TARGET_BRANCH: org/02-qa
   ORG_NAME: PNNLPCASBuildQA
   SOURCE_DIR: force-app
 
