@@ -5,7 +5,7 @@
 </tr>
 <tr valign="top" height="300" >
 <td tEditID="c1r2" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
-<![CDATA[<div><font face="arial"><b>&nbsp;RrWork Authorization Number:</b></font></div><div><span style="font-size: 12pt;">{!Funding_Agreement__c.Name}</span></div><div><b><br></b></div><div><b>Record Detail Link:</b></div><div style="font-size: 12pt;"><font face="arial">{!Funding_Agreement__c.Link}</font></div>]]></td>
+<![CDATA[<div><font face="arial"><b>Work Authorization Number:</b></font></div><div><span style="font-size: 12pt;">{!Funding_Agreement__c.Name}</span></div><div><b><br></b></div><div><b>Record Detail Link:</b></div><div style="font-size: 12pt;"><font face="arial">{!Funding_Agreement__c.Link}</font></div>]]></td>
 </tr>
 <tr valign="top" height="50" >
 <td tEditID="c1r3" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
