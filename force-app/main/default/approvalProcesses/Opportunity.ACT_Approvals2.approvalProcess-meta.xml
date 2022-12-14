@@ -85,16 +85,24 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>true</allowDelegate>
+        <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>PNSOACTReviewer__c</name>
+                <name>PNSO_Animal_Researcher2__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>PNSO Act Office Approver</label>
-        <name>PNSO_Act_Office_Approver</name>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.PNSO_Animal_Research_Required__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>PNSO Animal Research Approval</label>
+        <name>PNSO_Animal_Research_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -184,7 +192,7 @@
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
-    <label>ACT Approvals</label>
+    <label>ACT Approvals2</label>
     <processOrder>3</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
