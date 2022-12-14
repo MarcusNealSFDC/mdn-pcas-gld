@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Proposal_Stage__c</fullName>
     <externalId>false</externalId>
-    <formula>TEXT(Proposal__r.Status__c)</formula>
+    <formula>TEXT( Proposal__r.StageName )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Proposal Stage</label>
     <required>false</required>
