@@ -52,12 +52,6 @@
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
-        <approvalActions>
-            <action>
-                <name>PNSO_Contracting_Officer_Approves</name>
-                <type>FieldUpdate</type>
-            </action>
-        </approvalActions>
         <assignedApprover>
             <approver>
                 <name>PNSO_Technical_Rep2__c</name>
@@ -115,6 +109,14 @@
             <name>Approval_Rejected</name>
             <type>FieldUpdate</type>
         </action>
+        <action>
+            <name>PNSO_Signed_Date</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Proposal_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
     </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
@@ -126,17 +128,13 @@
             <name>Flag_Approval_Process_Queue_Update</name>
             <type>FieldUpdate</type>
         </action>
-        <action>
-            <name>Work_Authorization_Review</name>
-            <type>FieldUpdate</type>
-        </action>
     </initialSubmissionActions>
     <label>FWP Approval - Non Office of Science</label>
     <nextAutomatedApprover>
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>
     </nextAutomatedApprover>
-    <processOrder>5</processOrder>
+    <processOrder>4</processOrder>
     <recallActions>
         <action>
             <name>Approval_Not_In_Process</name>

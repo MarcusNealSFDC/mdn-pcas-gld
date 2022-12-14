@@ -262,14 +262,4 @@
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Work_Authorization_Review</fullName>
-        <field>StageName</field>
-        <literalValue>Work Authorization Review</literalValue>
-        <name>Work Authorization Review</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
 </Workflow>

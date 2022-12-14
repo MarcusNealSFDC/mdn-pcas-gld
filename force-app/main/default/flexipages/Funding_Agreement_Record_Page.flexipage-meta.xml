@@ -182,7 +182,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNNL_Sign_Date__c</fieldItem>
                 <identifier>RecordPNNL_Sign_Date_cField</identifier>
@@ -192,7 +192,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Sign_Date__c</fieldItem>
                 <identifier>RecordPNSO_Sign_Date_cField</identifier>
