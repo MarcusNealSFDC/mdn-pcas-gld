@@ -3,16 +3,16 @@ name: Deployments:PR BUGFIXES/FEATURES - Pull Request Against DEV
 on:
   pull_request:
     branches:
-    - dev 
+    - org/01-dev 
   push:
     branches:
-    - dev 
+    - org/01-dev 
 
 env:
   SFDX_AUDIENCE_URL: https://test.salesforce.com # Use https://login.salesforce.com for production instances. Use https://test.salesforce.com for sandboxes
   SALESFORCE_ORG_DEV_URL: https://pnnl--pnnldev1.sandbox.my.salesforce.com # Salesforce URL of target org
   SALESFORCE_ORG_USERNAME: builduser@pnnl.doe.pnnldev1 # Salesforce username of target org
-  TARGET_BRANCH: dev
+  TARGET_BRANCH: org/01-dev
   ORG_NAME: PNNLPCASBuildDev
   SOURCE_DIR: force-app
 
