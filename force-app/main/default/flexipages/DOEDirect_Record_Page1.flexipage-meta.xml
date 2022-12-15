@@ -8,12 +8,6 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Opportunity.Amendment</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.Revision</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
@@ -120,6 +114,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Amendment_Number__c</fieldItem>
+                <identifier>RecordAmendment_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Revison__c</fieldItem>
                 <identifier>RecordRevison_cField</identifier>
             </fieldInstance>
@@ -142,23 +146,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Proposal_Reason__c</fieldItem>
                 <identifier>RecordProposal_Reason_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.FWP__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>Yes</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Proposal_Purpose__c</fieldItem>
-                <identifier>RecordProposal_Purpose_cField</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.FWP__c}</leftValue>
@@ -227,6 +214,23 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.B_R__c</fieldItem>
                 <identifier>RecordB_R_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Proposal_Purpose__c</fieldItem>
+                <identifier>RecordProposal_Purpose_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.FWP__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-23d2eac5-764d-4194-bfe2-deb2e26752cb</name>
@@ -1323,10 +1327,6 @@
                 <identifier>RecordPNNL_Work_Proposal_Manager2_cField2</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-0062c3d8-da23-4bb4-af89-c0903be9ef0f</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -1335,6 +1335,20 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Technical_Rep2__c</fieldItem>
                 <identifier>RecordPNSO_Technical_Rep2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-0062c3d8-da23-4bb4-af89-c0903be9ef0f</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Signed_Date__c</fieldItem>
+                <identifier>RecordPNSO_Signed_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-be63b23d-f257-4b54-a83c-01026780abbf</name>

@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldUpdates>
+        <fullName>PNNL_Signed_Date</fullName>
+        <field>PNNL_Sign_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>PNNL Signed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PNSO_Signed_Date</fullName>
+        <field>PNSO_Sign_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>PNSO Signed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_WAS_Approval_PNSO_Tech</fullName>
         <field>Status__c</field>
         <literalValue>Work Authorization Approval: PNSO Technical Rep</literalValue>
