@@ -339,11 +339,6 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>FeedItem.TextPost</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>FeedItem.ContentPost</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>1</sortOrder>
@@ -387,6 +382,11 @@
             <actionName>Clone</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>9</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>FeedItem.TextPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>0</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>SendSurveyInvitation</actionName>
@@ -469,6 +469,19 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
+        <excludeButtons>ChoosePricebook</excludeButtons>
+        <excludeButtons>EditAllProduct</excludeButtons>
+        <excludeButtons>MultiEdit</excludeButtons>
+        <excludeButtons>Sort</excludeButtons>
+        <excludeButtons>SortLineItem</excludeButtons>
+        <fields>Product2</fields>
+        <fields>Fiscal_Year__c</fields>
+        <fields>Quantity</fields>
+        <fields>UnitPrice</fields>
+        <fields>TotalPrice</fields>
+        <relatedList>RelatedLineItemList</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>MemberName</fields>
         <fields>OppAccessLevel</fields>
         <fields>TeamMemberRole</fields>
@@ -522,7 +535,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3S000000l36L</masterLabel>
+        <masterLabel>00h3R000000x3q7</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
