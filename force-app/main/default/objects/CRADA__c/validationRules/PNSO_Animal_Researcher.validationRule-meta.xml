@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PNSO_Animal_Researcher</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( AND( ISPICKVAL(   Animal_Research_Required__c   , &apos;Yes&apos; ), ISBLANK(PNSO_Animal_Researcher__c )), true, false )</errorConditionFormula>
+    <errorMessage>Please select a PNSO Animal Researcher</errorMessage>
+</ValidationRule>
