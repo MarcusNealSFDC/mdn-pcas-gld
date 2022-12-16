@@ -33,6 +33,18 @@
                 <behavior>Edit</behavior>
                 <field>PNNL_Secondary_Taxonomy__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Client_Reference_Number__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Action_Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Current_Action_Amount__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -442,7 +454,6 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-
         <fields>Project_Title2__c</fields>
         <fields>Effective_Date__c</fields>
         <fields>Inactive_Date__c</fields>

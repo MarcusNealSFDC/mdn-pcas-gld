@@ -1066,6 +1066,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Action_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Additional_Comments__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1176,6 +1181,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Client_Reference_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Comments__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1222,6 +1232,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Costing_Comments__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Current_Action_Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1387,6 +1402,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Human_Animal_Subjects__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.IWO_Specialist__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1721,6 +1741,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Previous_Total_Amount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Price_Anderson_Amendments_Act_PAAA__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1792,6 +1817,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Project_Title__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Project__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1872,6 +1902,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Reporting_Requirements__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Revised_Total__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2692,6 +2727,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>User.DOE_Site_Office_Approver__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>User.IWO_Specialist__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
