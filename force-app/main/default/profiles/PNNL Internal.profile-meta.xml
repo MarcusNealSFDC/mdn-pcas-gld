@@ -336,6 +336,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CRADA__c.Animal_Research_Required__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CRADA__c.Appendix_B_Field_Use__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -357,6 +362,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CRADA__c.Appendix_E_Competitiveness_Worksheet__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CRADA__c.CRADA_Contracts_Manager__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -386,7 +396,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CRADA__c.Commercialization_Manager__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CRADA__c.Contract_Specialist2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CRADA__c.Contract_Specialist__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CRADA__c.DOE_IP_Approver2__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -436,7 +461,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CRADA__c.PNNL_IP_Approver2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CRADA__c.PNNL_IP_Approver__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CRADA__c.PNSO_Animal_Researcher__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CRADA__c.PNSO_CRADA_Coordinator2__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -446,7 +486,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CRADA__c.PNSO_Contracting_Officer2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CRADA__c.PNSO_Contracting_Officer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CRADA__c.PNSO_Coordinator_Foreign_Approver__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CRADA__c.PNSO_Technical_Reviewer2__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -497,6 +552,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CRADA__c.Project_Management_Office__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CRADA__c.Project_Title2__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -575,6 +635,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.B_R_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Funding_Action__c.Client_Action_Description__c</field>
         <readable>true</readable>
@@ -610,6 +675,16 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.Fund_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.Fund_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Funding_Action__c.Funding_Agreement_Date__c</field>
         <readable>true</readable>
@@ -617,6 +692,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Funding_Action__c.Funding_Authority__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Funding_Action__c.Funding_Source_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -677,6 +757,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Funding_Action__c.PNSO_Technical_Reviewer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.Program_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2210,6 +2295,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>PNNL_Contracts__c.Document_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>PNNL_Contracts__c.Effective_Date__c</field>
         <readable>true</readable>
@@ -2261,6 +2351,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>PNNL_Contracts__c.G_Invoicing_Document_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>PNNL_Contracts__c.G_Invoicing_Line_of_Accounting__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2287,6 +2382,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>PNNL_Contracts__c.Invoice_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>PNNL_Contracts__c.Link__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
