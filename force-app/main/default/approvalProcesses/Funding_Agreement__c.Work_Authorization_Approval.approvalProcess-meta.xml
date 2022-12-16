@@ -7,10 +7,15 @@
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
+        <field>Owner</field>
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
         <approvalActions>
+            <action>
+                <name>PNNL_Signed_Date</name>
+                <type>FieldUpdate</type>
+            </action>
             <action>
                 <name>WA_Stage_Update_to_PNSO_Technical</name>
                 <type>FieldUpdate</type>
@@ -50,6 +55,10 @@
     <approvalStep>
         <allowDelegate>false</allowDelegate>
         <approvalActions>
+            <action>
+                <name>PNSO_Signed_Date</name>
+                <type>FieldUpdate</type>
+            </action>
             <action>
                 <name>WA_Approved</name>
                 <type>FieldUpdate</type>
