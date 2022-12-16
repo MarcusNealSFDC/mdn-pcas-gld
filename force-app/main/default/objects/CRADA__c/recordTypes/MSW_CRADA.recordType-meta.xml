@@ -5,6 +5,17 @@
     <description>Use this record type to create a Master Scope of Work CRADA record</description>
     <label>MSW CRADA</label>
     <picklistValues>
+        <picklist>Animal_Research_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>CRADA_Specialist__c</picklist>
         <values>
             <fullName>Monica Chavez</fullName>
@@ -14,27 +25,23 @@
     <picklistValues>
         <picklist>CRADA_Status__c</picklist>
         <values>
-            <fullName>Approved</fullName>
+            <fullName>Proposal Approved</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Cancelled</fullName>
+            <fullName>Proposal Draft</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Closed</fullName>
+            <fullName>Proposal Pending</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Draft</fullName>
+            <fullName>Proposal Preparation</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Pending</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Rejected</fullName>
+            <fullName>Proposal Submitted</fullName>
             <default>false</default>
         </values>
     </picklistValues>
