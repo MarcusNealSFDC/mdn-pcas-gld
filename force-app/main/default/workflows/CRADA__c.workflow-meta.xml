@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CRADA_Approved</fullName>
+        <description>CRADA Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contract_Specialist2__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Project_Coordinator__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Proposal_Approval_Email</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Proposal_Approved</fullName>
+        <field>CRADA_Status__c</field>
+        <literalValue>Proposal Approved</literalValue>
+        <name>Proposal Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_to_Proposal_Pending</fullName>
+        <field>CRADA_Status__c</field>
+        <literalValue>Proposal Pending</literalValue>
+        <name>Update to Proposal Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_to_Proposal_Prep</fullName>
+        <field>CRADA_Status__c</field>
+        <literalValue>Proposal Preparation</literalValue>
+        <name>Update to Proposal Prep</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_to_Proposal_Submitted</fullName>
+        <field>CRADA_Status__c</field>
+        <literalValue>Proposal Submitted</literalValue>
+        <name>Update to Proposal Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>
