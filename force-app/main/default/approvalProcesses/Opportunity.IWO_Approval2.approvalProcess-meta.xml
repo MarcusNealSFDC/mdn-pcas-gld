@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -11,30 +11,39 @@
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
-        <approvalActions>
-            <action>
-                <name>Update_to_Proposal_Prep</name>
-                <type>FieldUpdate</type>
-            </action>
-        </approvalActions>
         <assignedApprover>
             <approver>
-                <name>PNSO_Contracting_Officer2__c</name>
+                <name>Project_Coordinators__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Step 1</label>
+        <label>Project Coordinator Approval</label>
         <name>Step_1</name>
     </approvalStep>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>Update_to_Proposal_Submitted</name>
+                <name>Proposal_Submitted</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>IWO_Specialist__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>IWO Specialist Approval</label>
+        <name>IWO_Specialist_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>PNSO_Proposal_Reviewer__c</name>
@@ -44,6 +53,21 @@
         </assignedApprover>
         <label>PNSO Proposal Reviewer</label>
         <name>PNSO_Proposal_Reviewer</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>PNSO_Technical_Rep2__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>PNSO Technical Rep Approval</label>
+        <name>PNSO_Technical_Rep_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -62,11 +86,13 @@
         </approvalActions>
         <assignedApprover>
             <approver>
-                <type>adhoc</type>
+                <name>PNSO_Contracting_Officer2__c</name>
+                <type>relatedUserField</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Pnso Contract Admin</label>
-        <name>Pnso_Contract_Admin</name>
+        <label>PNSO Contracting Officer Approval</label>
+        <name>PNSO_Contracting_Officer_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -90,11 +116,25 @@
             <name>PNSO_Approval_of_SPP_Proposal</name>
             <type>Alert</type>
         </action>
+        <action>
+            <name>PNSO_Signed_Date</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Proposal_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Update_Field_to_Proposal_Prep</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
     <label>IWO Approval</label>
-    <processOrder>3</processOrder>
+    <processOrder>5</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>
