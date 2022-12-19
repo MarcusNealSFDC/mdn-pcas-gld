@@ -538,11 +538,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-<<<<<<< HEAD
         <masterLabel>00h3R000000wx7x</masterLabel>
-=======
-        <masterLabel>00h3R000000x3q7</masterLabel>
->>>>>>> a51a66d2adcb1df5a9353fa7ea93370636ef3fd2
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
