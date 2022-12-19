@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Template for PNSO Contracting Officer on Non DOE Funding Agreement</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>PNNL_Logo</letterhead>
+    <name>NON Doe F/A approval  email template</name>
+    <style>newsletter</style>
+    <subject>PCAS 1Funding Action Notification - Approval Required</subject>
+    <textOnly>The following item requires your action.  Please click the link provided to view the details and take the appropriate action. Work Authorization Number:
+{!Funding_Agreement__c.Name}
+
+Record Detail Link:
+{!Funding_Agreement__c.Link}
+Approval History:
+{!Funding_Agreement__c.Approval_in_Process__c}
+
+Status:
+{!Funding_Agreement__c.Status__c}
+
+Fiscal Year:
+{!Funding_Agreement__c.Fiscal_Year__c}
+HQ Sign Date:
+{!Funding_Agreement__c.HQ_Sign_Date__c}
+
+PNNL Sign Date:
+{!Funding_Agreement__c.PNNL_Sign_Date__c}
+
+PNSO Sign Date:
+{!Funding_Agreement__c.PNSO_Sign_Date__c}
+Previous Amount:
+{!Funding_Agreement__c.Previous_Amount__c}
+
+Change Amount:
+{!Funding_Agreement__c.Change_Amount__c}
+
+Revised Amount:
+{!Funding_Agreement__c.Revised_Amount__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
