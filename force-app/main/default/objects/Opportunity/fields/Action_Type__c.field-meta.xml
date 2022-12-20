@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Action Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Funds</fullName>
+                <default>false</default>
+                <label>Funds</label>
+            </value>
+            <value>
+                <fullName>Time Extension</fullName>
+                <default>false</default>
+                <label>Time Extension</label>
+            </value>
+            <value>
+                <fullName>Funds &amp; Time</fullName>
+                <default>false</default>
+                <label>Funds &amp; Time</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Close</fullName>
+                <default>false</default>
+                <label>Close</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
