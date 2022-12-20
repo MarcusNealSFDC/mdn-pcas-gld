@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
@@ -9,6 +10,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Name</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CRADA_Status__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -225,14 +230,18 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>view_CRADA_doc__c</fields>
-        <fields>Attachment_Type__c</fields>
-        <fields>CREATEDBY_USER</fields>
-        <relatedList>CRADA_Attachment__c.CRADA__c</relatedList>
+        <relatedList>Funding_Agreement__c.CRADALU__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>Budget_Reporting_Entry__c.CRADA_lookup__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>view_CRADA_doc__c</fields>
+        <fields>Attachment_Type__c</fields>
+        <fields>CREATEDBY_USER</fields>
+        <relatedList>CRADA_Attachment__c.CRADA__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>CreatedDate</fields>
@@ -248,7 +257,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000wx7t</masterLabel>
+        <masterLabel>00h3S000000l9vr</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
