@@ -1347,8 +1347,18 @@
                     <name>uiBehavior</name>
                     <value>readonly</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Signed_Date__c</fieldItem>
-                <identifier>RecordPNSO_Signed_Date_cField</identifier>
+                <fieldItem>Record.PNNL_Program_Manager__c</fieldItem>
+                <identifier>RecordPNNL_Program_Manager_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Technical_Rep2__c</fieldItem>
+                <identifier>RecordPNSO_Technical_Rep2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-be63b23d-f257-4b54-a83c-01026780abbf</name>
