@@ -4,7 +4,7 @@
     <description>Reporting year of opportunity line item.  Populated via integration.</description>
     <externalId>false</externalId>
     <label>Fiscal Year</label>
-    <precision>5</precision>
+    <precision>4</precision>
     <required>false</required>
     <scale>0</scale>
     <type>Number</type>
