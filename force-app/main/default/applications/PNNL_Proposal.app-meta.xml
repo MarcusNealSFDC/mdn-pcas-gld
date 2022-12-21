@@ -134,6 +134,24 @@
         <type>Flexipage</type>
         <pageOrSobjectType>Proposed_Amendment__c</pageOrSobjectType>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Approval_Request_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>ProcessInstanceWorkitem</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Approval_Request_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>ProcessInstanceWorkitem</pageOrSobjectType>
+    </actionOverrides>
     <brand>
         <headerColor>#808487</headerColor>
         <logo>download</logo>
@@ -461,156 +479,156 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
+        <content>IWO_Proposal_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.IWO</recordType>
+        <type>Flexipage</type>
+        <profile>PNNL Internal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IWO_Proposal_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.IWO</recordType>
+        <type>Flexipage</type>
+        <profile>PNNL Internal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IWO_Proposal_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.IWO</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>IWO_Proposal_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.IWO</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>DOE_Direct_Contract1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.DOE_Direct</recordType>
+        <type>Flexipage</type>
+        <profile>PNNL Internal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>DOE_Direct_Contract1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.DOE_Direct</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>DOE_Direct_Contract1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.DOE_Direct</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>DOE_Direct_Contract1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.DOE_Direct</recordType>
+        <type>Flexipage</type>
+        <profile>PNNL Internal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>MSWCRADAPage</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
+        <recordType>CRADA__c.MSW_CRADA</recordType>
+        <type>Flexipage</type>
+        <profile>PNNL Internal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>MSWCRADAPage</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
+        <recordType>CRADA__c.MSW_CRADA</recordType>
+        <type>Flexipage</type>
+        <profile>PNNL Internal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>MSWCRADAPage</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
+        <recordType>CRADA__c.MSW_CRADA</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>MSWCRADAPage</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
+        <recordType>CRADA__c.MSW_CRADA</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>DOEDirect_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.DOE_Direct</recordType>
+        <type>Flexipage</type>
+        <profile>PNNL Internal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>DOEDirect_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.DOE_Direct</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>DOEDirect_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.DOE_Direct</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>DOEDirect_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.DOE_Direct</recordType>
+        <type>Flexipage</type>
+        <profile>PNNL Internal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
         <content>NICRW_Proposal_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
         <recordType>Opportunity.NIC_RW</recordType>
         <type>Flexipage</type>
         <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>IWO_Proposal_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.IWO</recordType>
-        <type>Flexipage</type>
-        <profile>PNNL Internal</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>IWO_Proposal_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.IWO</recordType>
-        <type>Flexipage</type>
-        <profile>PNNL Internal</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>IWO_Proposal_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.IWO</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>IWO_Proposal_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.IWO</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>DOE_Direct_Contract1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
-        <recordType>PNNL_Contracts__c.DOE_Direct</recordType>
-        <type>Flexipage</type>
-        <profile>PNNL Internal</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>DOE_Direct_Contract1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
-        <recordType>PNNL_Contracts__c.DOE_Direct</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>DOE_Direct_Contract1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
-        <recordType>PNNL_Contracts__c.DOE_Direct</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>DOE_Direct_Contract1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
-        <recordType>PNNL_Contracts__c.DOE_Direct</recordType>
-        <type>Flexipage</type>
-        <profile>PNNL Internal</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>MSWCRADAPage</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
-        <recordType>CRADA__c.MSW_CRADA</recordType>
-        <type>Flexipage</type>
-        <profile>PNNL Internal</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>MSWCRADAPage</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
-        <recordType>CRADA__c.MSW_CRADA</recordType>
-        <type>Flexipage</type>
-        <profile>PNNL Internal</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>MSWCRADAPage</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
-        <recordType>CRADA__c.MSW_CRADA</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>MSWCRADAPage</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
-        <recordType>CRADA__c.MSW_CRADA</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>DOEDirect_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.DOE_Direct</recordType>
-        <type>Flexipage</type>
-        <profile>PNNL Internal</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>DOEDirect_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.DOE_Direct</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>DOEDirect_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.DOE_Direct</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>DOEDirect_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.DOE_Direct</recordType>
-        <type>Flexipage</type>
-        <profile>PNNL Internal</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>standard-Account</tabs>
