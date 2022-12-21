@@ -1327,16 +1327,6 @@
                 <identifier>RecordPNNL_Work_Proposal_Manager2_cField2</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Technical_Rep2__c</fieldItem>
-                <identifier>RecordPNSO_Technical_Rep2_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-0062c3d8-da23-4bb4-af89-c0903be9ef0f</name>
         <type>Facet</type>
     </flexiPageRegions>
