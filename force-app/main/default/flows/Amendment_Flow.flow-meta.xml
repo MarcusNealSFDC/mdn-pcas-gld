@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>CopyAttachments</name>
+        <label>CopyAttachments</label>
+        <locationX>176</locationX>
+        <locationY>638</locationY>
+        <actionName>PNNL_CopyAttachment</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>OpenNewRecord</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>opptyIds</name>
+            <value>
+                <elementReference>OpportunityIdList</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
     <actionCalls>
         <name>OpenNewRecord</name>
         <label>OpenNewRecord</label>
         <locationX>176</locationX>
-        <locationY>518</locationY>
+        <locationY>758</locationY>
         <actionName>c:OpenOpportunity</actionName>
         <actionType>component</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -17,6 +35,29 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </actionCalls>
     <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>AssignIdsToList</name>
+        <label>AssignIdsToList</label>
+        <locationX>176</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>OpportunityIdList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>OpportunityIdList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>RecordToClone.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>CopyAttachments</targetReference>
+        </connector>
+    </assignments>
     <assignments>
         <name>AssignRecordValues</name>
         <label>AssignRecordValues</label>
@@ -33,11 +74,12 @@
             <assignToReference>RecordToClone.Id</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue></stringValue>
+                <stringValue />
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>RecordToClone.Amendment_Number__c</assignToReference>
+            <assignToReference
+      >RecordToClone.Amendment_Number__c</assignToReference>
             <operator>Add</operator>
             <value>
                 <numberValue>1.0</numberValue>
@@ -82,7 +124,7 @@
         <locationX>176</locationX>
         <locationY>398</locationY>
         <connector>
-            <targetReference>OpenNewRecord</targetReference>
+            <targetReference>AssignIdsToList</targetReference>
         </connector>
         <inputReference>RecordToClone</inputReference>
     </recordCreates>
@@ -91,7 +133,8 @@
         <label>GetRecords</label>
         <locationX>176</locationX>
         <locationY>158</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound
+    >false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>AssignRecordValues</targetReference>
         </connector>
@@ -114,7 +157,14 @@
             <targetReference>GetRecords</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
+    <variables>
+        <name>OpportunityIdList</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
     <variables>
         <name>recordId</name>
         <dataType>String</dataType>
