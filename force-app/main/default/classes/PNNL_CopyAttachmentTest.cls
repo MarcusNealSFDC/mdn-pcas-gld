@@ -2,6 +2,7 @@
 private class PNNL_CopyAttachmentTest {
   static Map<Id, Opportunity> insertedOpportunities;
   static Map<Id, Opportunity_Attachment__c> attachments;
+  static Map<Id, ContentVersion> contentVersions;
 
   @TestSetup
   static void loadData() {
@@ -10,8 +11,9 @@ private class PNNL_CopyAttachmentTest {
 
     //  Create Opportunity to Add Opp Line Items
     Id opportunityId = createOpportunity(accountId);
+    system.debug(opportunityId);
     Id duplicateOpportunityId = createOpportunity(accountId);
-
+    system.debug(duplicateOpportunityId);
     //  Create Opportunity Attachment
     Id attachmentId = createOpportunityAttachment(opportunityId);
 
@@ -96,6 +98,9 @@ private class PNNL_CopyAttachmentTest {
     attachments = new Map<Id, Opportunity_Attachment__c>(
       [SELECT Id, Name FROM Opportunity_Attachment__c]
     );
+    contentVersions = new Map<Id, ContentVersion>(
+      [SELECT Id, Title FROM ContentVersion]
+    );
 
     for (Opportunity opp : insertedOpportunities.values()) {
       System.debug(
@@ -113,6 +118,7 @@ private class PNNL_CopyAttachmentTest {
   //
   @isTest
   static void testAttachmentCopy() {
+    system.debug([SELECT id FROM opportunity].size());
     List<List<Id>> listOfIds = new List<List<Id>>();
     List<Id> listToAdd = new List<Id>();
     getIds();
@@ -128,11 +134,27 @@ private class PNNL_CopyAttachmentTest {
     }
 
     listOfIds.add(listToAdd);
-    for (Id i : listOfIds[0]) {
-      system.debug('xxxxxxxxxxxxxxxxxxxxxxxOpportunity Id:' + i);
-    }
-    PNNL_CopyAttachment.clone_opptyAttachments(listOfIds);
+
+    PNNL_CopyAttachment.CopyAttachment(listOfIds);
+    getIds();
+
     System.assertEquals(2, insertedOpportunities.Size());
+
     System.assertEquals(2, attachments.Size());
+
+    System.assertEquals(2, contentVersions.size());
+
+    // check the links
+    List<Id> checkLinkItems = new List<Id>();
+    for (Opportunity_Attachment__c attachment : attachments.values()) {
+      List<ContentDocumentLink> docLinkItems = [
+        SELECT Id, LinkedEntityId, ContentDocumentId
+        FROM ContentDocumentLink
+        WHERE LinkedEntityId = :attachment.Id
+      ];
+      checkLinkItems.add(docLinkItems[0].Id);
+    }
+
+    System.assertEquals(2, checkLinkItems.size());
   }
 }
