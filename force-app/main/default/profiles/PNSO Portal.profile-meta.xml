@@ -2240,11 +2240,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>PNNL_Contracts__c.Balance_Order__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>PNNL_Contracts__c.Billing_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
