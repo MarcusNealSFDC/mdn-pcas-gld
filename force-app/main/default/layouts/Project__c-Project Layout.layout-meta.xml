@@ -119,10 +119,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Market_Sector__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Revision_Number__c</field>
             </layoutItems>
             <layoutItems>
