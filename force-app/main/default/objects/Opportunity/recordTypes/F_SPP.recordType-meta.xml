@@ -84,6 +84,33 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Action_Type__c</picklist>
+        <values>
+            <fullName>Close</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funds %26 Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time Extension</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>BER_Scientific_Focus_Area_SFA__c</picklist>
         <values>
             <fullName>00%2E Not Applicable</fullName>

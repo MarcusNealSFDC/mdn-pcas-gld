@@ -155,9 +155,10 @@
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>Project Allocation</label>
     <nameField>
+        <displayFormat>PNNL{000000}</displayFormat>
         <label>Project Allocations</label>
         <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Project Allocations</pluralLabel>
     <searchLayouts></searchLayouts>
