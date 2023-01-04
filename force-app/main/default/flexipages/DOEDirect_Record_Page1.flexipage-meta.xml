@@ -703,16 +703,6 @@
                 </visibilityRule>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Project_Management_Office_pnnl__c</fieldItem>
-                <identifier>RecordProject_Management_Office_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-388fef72-b9f4-4b05-a730-58236f80273c</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -1325,6 +1315,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNNL_Work_Proposal_Manager2__c</fieldItem>
                 <identifier>RecordPNNL_Work_Proposal_Manager2_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNNL_Program_Manager__c</fieldItem>
+                <identifier>RecordPNNL_Program_Manager_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
