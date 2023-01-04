@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Office_Directorate_Queue__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Office Directorate Queue</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EED</fullName>
+                <default>false</default>
+                <label>EED</label>
+            </value>
+            <value>
+                <fullName>NSD</fullName>
+                <default>false</default>
+                <label>NSD</label>
+            </value>
+            <value>
+                <fullName>EBSD/PCSD</fullName>
+                <default>false</default>
+                <label>EBSD/PCSD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

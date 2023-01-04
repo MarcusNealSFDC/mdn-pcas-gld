@@ -2225,11 +2225,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>PNNL_Contracts__c.Authorized_Amount__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>PNNL_Contracts__c.BETC_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2241,11 +2236,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>PNNL_Contracts__c.Backup_Level_Descriptions__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>PNNL_Contracts__c.Balance_Order__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2627,11 +2617,6 @@
         <editable>true</editable>
         <field>Project__c.Last_Cost_Date__c</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Project__c.Market_Sector__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
