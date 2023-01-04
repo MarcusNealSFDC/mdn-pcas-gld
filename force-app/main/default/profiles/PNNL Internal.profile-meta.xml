@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
         <application>PNNL_Proposal</application>
@@ -201,26 +201,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field
-    >Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Node__c</field>
+        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Node__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field
-    >Approval_Process_Node_To_Queue_Mapping__mdt.Replacement_Queue__c</field>
+        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Replacement_Queue__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field
-    >Approval_Process_Signing_Ceremony__mdt.PNSO_Contracting_Officer_Copy__c</field>
+        <field>Approval_Process_Signing_Ceremony__mdt.PNSO_Contracting_Officer_Copy__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field
-    >Approval_Process_Signing_Ceremony__mdt.Signing_Ceremony_Copy_Long__c</field>
+        <field>Approval_Process_Signing_Ceremony__mdt.Signing_Ceremony_Copy_Long__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1704,6 +1700,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_Program_Manager__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.PNNL_Secondary_Taxonomy__c</field>
         <readable>true</readable>
@@ -2175,6 +2176,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>OpportunityLineItem.PNNL_Project_Account_No__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>OpportunityLineItem.Revision_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2525,6 +2531,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>PNNL_Data_Event__e.Cost_Sheet_No__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Data_Event__e.Cost_Sheet_Rev_No__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>PNNL_Data_Event__e.ObjectType__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2805,6 +2821,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>User.PNNL_Program_Manager__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>User.PNNL_Work_Proposal_Manager_and_Principal__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2876,20 +2897,16 @@
         <recordType>Account.Business_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout
-    >Approval_Process_Node_To_Queue_Mapping__mdt-Approval Process Node To Queue Mapping Layout</layout>
+        <layout>Approval_Process_Node_To_Queue_Mapping__mdt-Approval Process Node To Queue Mapping Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout
-    >Approval_Process_Signing_Ceremony__mdt-Approval Process Signing Ceremony Layout</layout>
+        <layout>Approval_Process_Signing_Ceremony__mdt-Approval Process Signing Ceremony Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout
-    >Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
+        <layout>Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout
-    >Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
+        <layout>Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CRADA_Attachment__c-Attachment Layout</layout>
