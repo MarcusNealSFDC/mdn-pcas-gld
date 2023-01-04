@@ -122,6 +122,10 @@
                 <behavior>Edit</behavior>
                 <field>Project_ObjectiveYN__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ACT_IP_Checklist_B__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
