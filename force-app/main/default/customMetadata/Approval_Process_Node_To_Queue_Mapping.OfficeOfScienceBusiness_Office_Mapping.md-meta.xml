@@ -4,10 +4,10 @@
     <protected>false</protected>
     <values>
         <field>Approval_Process_Node__c</field>
-        <value xsi:type="xsd:string">04bBZ000000Cs5QYAS</value>
+        <value xsi:type="xsd:string">04b3R000000FGD3QAO</value>
     </values>
     <values>
         <field>Replacement_Queue__c</field>
-        <value xsi:type="xsd:string">00GBZ000000bSUZ</value>
+        <value xsi:type="xsd:string">00G3R000000sswR</value>
     </values>
 </CustomMetadata>

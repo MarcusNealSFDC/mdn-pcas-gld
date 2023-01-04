@@ -11,12 +11,6 @@
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
-        <approvalActions>
-            <action>
-                <name>Update_to_PNSO_Tech_Rep_Stage</name>
-                <type>FieldUpdate</type>
-            </action>
-        </approvalActions>
         <assignedApprover>
             <approver>
                 <name>Project_Coordinators__c</name>
@@ -32,10 +26,6 @@
         <approvalActions>
             <action>
                 <name>Flag_Approval_Process_Queue_Update</name>
-                <type>FieldUpdate</type>
-            </action>
-            <action>
-                <name>PNSO_Contracting_Officer_Approves</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
@@ -146,6 +136,14 @@
             <name>PNSO_Approval_of_FIN_Plan_Proposal</name>
             <type>Alert</type>
         </action>
+        <action>
+            <name>PNSO_Signed_Date</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Proposal_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionActions>
@@ -174,7 +172,7 @@
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>
     </nextAutomatedApprover>
-    <processOrder>4</processOrder>
+    <processOrder>5</processOrder>
     <recallActions>
         <action>
             <name>Approval_Not_In_Process</name>
