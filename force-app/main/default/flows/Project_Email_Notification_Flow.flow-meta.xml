@@ -14,7 +14,7 @@
         <inputParameters>
             <name>emailBody</name>
             <value>
-                <stringValue>{!Loop_Through_Project.Name} is scheduled to close in 90 days. Please review the record for any closing actions needed. Record Id is  {!Loop_Through_Project.Id}</stringValue>
+                <stringValue>The information below is designed to assist you in managing your projects. For contracts that are close to expiring in either funds or time, this message is automatically sent on a monthly basis to the cognizant Project Manager and Contract Administrator.  The Project(s) listed below have contracts that currently meet one, or both, of the following criteria: 1.    Is within 3 months of expending the authorized amount at the current average monthly spending rate, or 2.    Is within 90 days of the max contract completion date.  If there are issues on cost, schedule or milestones, please contact the Project Manager or their Administrator to meet project/contract requirements. As a reminder, if your project is continuing and you are approaching a stop work situation because you have not received all of your funding or work authorizations, please contact your Business Office for assistance.  Select the project number below to view the contracts detail tab in the Project Management Reports. {!Loop_Through_Project.Name} is scheduled to close in 90 days. Please review the record for any closing actions needed. Record Id is  {!Loop_Through_Project.Id}</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -50,7 +50,7 @@
         <inputParameters>
             <name>emailBody</name>
             <value>
-                <stringValue>{!Loop_Through_Project.Name} is set to close in 90 days. Please review the record for any closing actions needed. Record Id is  {!Loop_Through_Project.Id}</stringValue>
+                <stringValue>The information below is designed to assist you in managing your projects. For contracts that are close to expiring in either funds or time, this message is automatically sent on a monthly basis to the cognizant Project Manager and Contract Administrator.  The Project(s) listed below have contracts that currently meet one, or both, of the following criteria: 1.    Is within 3 months of expending the authorized amount at the current average monthly spending rate, or 2.    Is within 90 days of the max contract completion date.  If there are issues on cost, schedule or milestones, please contact the Project Manager or their Administrator to meet project/contract requirements. As a reminder, if your project is continuing and you are approaching a stop work situation because you have not received all of your funding or work authorizations, please contact your Business Office for assistance.  Select the project number below to view the contracts detail tab in the Project Management Reports. {!Loop_Through_Project.Name} is scheduled to close in 90 days. Please review the record for any closing actions needed. Record Id is  {!Loop_Through_Project.Id}</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -86,7 +86,7 @@
         <inputParameters>
             <name>emailBody</name>
             <value>
-                <stringValue>{!Loop_Through_Project.Name} is scheduled to close in 60 days. Please review the record for any closing actions needed. Record Id is  {!Loop_Through_Project.Id}</stringValue>
+                <stringValue>The information below is designed to assist you in managing your projects. For contracts that are close to expiring in either funds or time, this message is automatically sent on a monthly basis to the cognizant Project Manager and Contract Administrator.  The Project(s) listed below have contracts that currently meet one, or both, of the following criteria: 1.    Is within 3 months of expending the authorized amount at the current average monthly spending rate, or 2.    Is within 90 days of the max contract completion date.  If there are issues on cost, schedule or milestones, please contact the Project Manager or their Administrator to meet project/contract requirements. As a reminder, if your project is continuing and you are approaching a stop work situation because you have not received all of your funding or work authorizations, please contact your Business Office for assistance.  Select the project number below to view the contracts detail tab in the Project Management Reports. {!Loop_Through_Project.Name} is scheduled to close in 90 days. Please review the record for any closing actions needed. Record Id is  {!Loop_Through_Project.Id}</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -384,7 +384,7 @@
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>EmailCollection</name>
         <dataType>String</dataType>
