@@ -298,21 +298,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.TickerSymbol</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Type</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Website</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Alpha_Code__c.Business_Office_Directorate_Queue__c</field>
         <readable>true</readable>
@@ -2355,6 +2340,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>OpportunityLineItem.Fiscal_Year__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>OpportunityLineItem.PNNL_Project_Account_No__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
