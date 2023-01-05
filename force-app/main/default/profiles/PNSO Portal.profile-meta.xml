@@ -2659,11 +2659,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Project_Allocation__c.Project__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Project_Allocation__c.Rate_Multiplier__c</field>
         <readable>false</readable>
     </fieldPermissions>

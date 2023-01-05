@@ -2659,7 +2659,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Project_Allocation__c.Project__c</field>
+        <field>Project_Allocation__c.Projects__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
