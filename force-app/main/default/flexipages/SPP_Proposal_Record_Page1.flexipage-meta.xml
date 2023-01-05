@@ -346,8 +346,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Management_Office_Email_Address__c</fieldItem>
-                <identifier>RecordProject_Management_Office_Email_Address_cField</identifier>
+                <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Research_Required_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -358,6 +358,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Project_Management_Office_pnnl__c</fieldItem>
                 <identifier>RecordProject_Management_Office_pnnl_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Project_Management_Office_Email_Address__c</fieldItem>
+                <identifier>RecordProject_Management_Office_Email_Address_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -597,8 +607,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.ForeignTravel__c</fieldItem>
-                <identifier>RecordForeignTravel_cField</identifier>
+                <fieldItem>Record.Foreign_Sponsor__c</fieldItem>
+                <identifier>RecordForeign_Sponsor_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1666,6 +1676,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Project_Staff_Reviewer__c</fieldItem>
+                <identifier>RecordProject_Staff_Reviewer_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.SPP_Office_Reviewer2__c</fieldItem>
                 <identifier>RecordSPP_Office_Reviewer2_cField</identifier>
             </fieldInstance>
@@ -1682,6 +1702,30 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
                 <identifier>RecordPNSO_Animal_Research_Required_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.PNSO_Animal_Research_Required__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Coordinator_Foreign_Approver__c</fieldItem>
+                <identifier>RecordPNSO_Coordinator_Foreign_Approver_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Foreign_Sponsor__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
