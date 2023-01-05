@@ -7,10 +7,6 @@
         <formula>Opportunity.AccountId</formula>
     </fieldOverrides>
     <fieldOverrides>
-        <field>Market_Sector__c</field>
-        <formula>Opportunity.Market_Sector_pnnl__c</formula>
-    </fieldOverrides>
-    <fieldOverrides>
         <field>Opportunity__c</field>
         <formula>Opportunity.Id</formula>
     </fieldOverrides>

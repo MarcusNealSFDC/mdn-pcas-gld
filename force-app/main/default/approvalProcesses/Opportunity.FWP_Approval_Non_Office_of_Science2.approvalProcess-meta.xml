@@ -51,6 +51,20 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>adhoc</type>
+            </approver>
+        </assignedApprover>
+        <description>To Business Office Queue</description>
+        <label>Business Office Approval</label>
+        <name>Business_Office_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
@@ -134,7 +148,7 @@
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>
     </nextAutomatedApprover>
-    <processOrder>4</processOrder>
+    <processOrder>5</processOrder>
     <recallActions>
         <action>
             <name>Approval_Not_In_Process</name>
