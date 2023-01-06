@@ -408,6 +408,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Research_Required_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Product_Line__c</fieldItem>
                 <identifier>RecordProduct_Line_cField</identifier>
             </fieldInstance>
@@ -649,8 +659,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.ForeignTravel__c</fieldItem>
-                <identifier>RecordForeignTravel_cField</identifier>
+                <fieldItem>Record.FAC_Waiver__c</fieldItem>
+                <identifier>RecordFAC_Waiver_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -659,8 +669,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.FAC_Waiver__c</fieldItem>
-                <identifier>RecordFAC_Waiver_cField</identifier>
+                <fieldItem>Record.ForeignTravel__c</fieldItem>
+                <identifier>RecordForeignTravel_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1942,6 +1952,23 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Technical_Rep2__c</fieldItem>
                 <identifier>RecordPNSO_Technical_Rep2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Animal_Researcher2__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Researcher2_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.PNSO_Animal_Research_Required__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
