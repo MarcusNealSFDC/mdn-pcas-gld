@@ -38,6 +38,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Balance_Order2__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Billing_Type__c</picklist>
         <values>
             <fullName>ACT</fullName>
@@ -181,6 +192,17 @@
         </values>
         <values>
             <fullName>Physical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PNNL_Limited_Term_Funds__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
