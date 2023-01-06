@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
         <application>PNNL_Proposal</application>
@@ -102,6 +102,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PNNL_CopyAttachment</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PNNL_CopyAttachmentTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PNNL_OppCostDetailTableController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -201,26 +209,27 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field
-    >Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Node__c</field>
+        <field>Alpha_Code__c.Business_Office_Directorate_Queue__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field
-    >Approval_Process_Node_To_Queue_Mapping__mdt.Replacement_Queue__c</field>
+        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Node__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field
-    >Approval_Process_Signing_Ceremony__mdt.PNSO_Contracting_Officer_Copy__c</field>
+        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Replacement_Queue__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field
-    >Approval_Process_Signing_Ceremony__mdt.Signing_Ceremony_Copy_Long__c</field>
+        <field>Approval_Process_Signing_Ceremony__mdt.PNSO_Contracting_Officer_Copy__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Approval_Process_Signing_Ceremony__mdt.Signing_Ceremony_Copy_Long__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -710,12 +719,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Funding_Action__c.FAC_Amount__c</field>
+        <field>Funding_Action__c.Contract_Specialist__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.FAC_Amount2__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Action__c.FAC_Waiver__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.Fee_Amount2__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -840,6 +859,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Funding_Action__c.SPP_Office_Reviewer__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Funding_Action__c.Sensitive_Project__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -890,6 +914,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Funding_Agreement__c.Alpha_Code2__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Funding_Agreement__c.Alpha_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -911,6 +940,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Agreement__c.Assistant_Secretary__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Agreement__c.B_R_Entries_Funding_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Agreement__c.B_R_Entries_Funding_Received__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1040,6 +1079,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Funding_Agreement__c.Total_WAS_Amount_Received__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.ACT_Disclose_6C__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1091,6 +1135,36 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.ACT_Disclosure_9__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.ACT_IP_Checklist_A_Details__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.ACT_IP_Checklist_A__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.ACT_IP_Checklist_B_Details__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.ACT_IP_Checklist_B__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.ACT_IP_Checklist_C_Details__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.ACT_IP_Checklist_C__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1705,6 +1779,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.PNNL_Program_Manager__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.PNNL_Secondary_Taxonomy__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1866,6 +1945,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Project_Objective__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Project_Staff_Reviewer__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2240,6 +2324,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>PNNL_Contracts__c.Balance_Order2__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>PNNL_Contracts__c.Billing_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2356,6 +2445,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>PNNL_Contracts__c.FY_Authorized_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Contracts__c.Fee_Amount2__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2480,6 +2574,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>PNNL_Contracts__c.Project_Allocation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>PNNL_Contracts__c.Project_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2515,6 +2614,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>PNNL_Data_Event__e.Cost_Sheet_No__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Data_Event__e.Cost_Sheet_Rev_No__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>PNNL_Data_Event__e.ObjectType__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2540,17 +2649,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Project_Allocation__c.Effective_Date__c</field>
+        <field>Project_Allocation__c.Effective_Date2__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Project_Allocation__c.Inactive_Date__c</field>
+        <field>Project_Allocation__c.Inactive_Date2__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Project_Allocation__c.Project_Num__c</field>
+        <field>Project_Allocation__c.Rate_Multiplier__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2790,6 +2899,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>User.PNNL_Program_Manager__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>User.PNNL_Work_Proposal_Manager_and_Principal__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2835,6 +2949,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>User.Project_Staff_Reviewer__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>User.SPP_Contract_Specialist__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2861,20 +2980,19 @@
         <recordType>Account.Business_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout
-    >Approval_Process_Node_To_Queue_Mapping__mdt-Approval Process Node To Queue Mapping Layout</layout>
+        <layout>Alpha_Code__c-Alpha Code Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout
-    >Approval_Process_Signing_Ceremony__mdt-Approval Process Signing Ceremony Layout</layout>
+        <layout>Approval_Process_Node_To_Queue_Mapping__mdt-Approval Process Node To Queue Mapping Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout
-    >Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
+        <layout>Approval_Process_Signing_Ceremony__mdt-Approval Process Signing Ceremony Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout
-    >Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
+        <layout>Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CRADA_Attachment__c-Attachment Layout</layout>
@@ -2894,7 +3012,15 @@
         <layout>CommunityMemberLayout-Community Member Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contact-Contact Layout</layout>
+        <layout>Contact-PNNL Contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-PNNL Contact Layout</layout>
+        <recordType>Contact.PNNL_Contact</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-PNNL Contact Layout</layout>
+        <recordType>Contact.Sponsor_Contact</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Funding_Action__c-Funding Action Layout</layout>
@@ -3094,6 +3220,16 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Contact.PNNL_Contact</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contact.Sponsor_Contact</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <default>false</default>
         <recordType>Contract.DOE_Direct</recordType>
         <visible>false</visible>
@@ -3153,6 +3289,10 @@
         <recordType>PNNL_Contracts__c.Non_DOE</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Alpha_Code__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>Budget_Reporting_Code__c</tab>
         <visibility>Hidden</visibility>
