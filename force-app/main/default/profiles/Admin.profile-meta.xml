@@ -226,6 +226,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Budget_Reporting_Code__c.PNNL_Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Budget_Reporting_Code__c.PNNL_B_R_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
