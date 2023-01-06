@@ -72,8 +72,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Control_Point__c</fieldItem>
-                <identifier>RecordControl_Point_cField</identifier>
+                <fieldItem>Record.Alpha_Code2__c</fieldItem>
+                <identifier>RecordAlpha_Code2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -82,8 +82,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Alpha_Code__c</fieldItem>
-                <identifier>RecordAlpha_Code_cField</identifier>
+                <fieldItem>Record.Control_Point__c</fieldItem>
+                <identifier>RecordControl_Point_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -261,6 +261,68 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.B_R_Entries_Funding_Amount__c</fieldItem>
+                <identifier>RecordB_R_Entries_Funding_Amount_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.B_R_Entries_Funding_Received__c</fieldItem>
+                <identifier>RecordB_R_Entries_Funding_Received_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-73489843-951a-47ba-9b0a-8a4a51bbe1fd</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Total_WAS_Amount_Received__c</fieldItem>
+                <identifier>RecordTotal_WAS_Amount_Received_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-1deae7f8-1dcf-4905-88ce-cdd13466145d</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-73489843-951a-47ba-9b0a-8a4a51bbe1fd</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-1deae7f8-1dcf-4905-88ce-cdd13466145d</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-9d692234-a794-45a1-bba5-eef70bcf585e</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
@@ -286,6 +348,20 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-9d692234-a794-45a1-bba5-eef70bcf585e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>WAS Analysis</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection4</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-79d34c90-5641-4762-bac6-f71a7f497ed6</name>
