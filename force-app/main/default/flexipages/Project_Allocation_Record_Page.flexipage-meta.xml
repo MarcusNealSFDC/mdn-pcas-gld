@@ -72,6 +72,16 @@
                 <identifier>RecordRate_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Rate_Multiplier__c</fieldItem>
+                <identifier>RecordRate_Multiplier_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-c5403b8e-9150-4c1e-9625-1aa00f589679</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -82,7 +92,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project__c</fieldItem>
+                <fieldItem>Record.Projects__c</fieldItem>
                 <identifier>RecordProject_cField</identifier>
             </fieldInstance>
         </itemInstances>
@@ -92,8 +102,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Effective_Date__c</fieldItem>
-                <identifier>RecordEffective_Date_cField</identifier>
+                <fieldItem>Record.Effective_Date2__c</fieldItem>
+                <identifier>RecordEffective_Date2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -102,8 +112,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Inactive_Date__c</fieldItem>
-                <identifier>RecordInactive_Date_cField</identifier>
+                <fieldItem>Record.Inactive_Date2__c</fieldItem>
+                <identifier>RecordInactive_Date2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
