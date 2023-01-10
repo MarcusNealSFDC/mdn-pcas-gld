@@ -26,7 +26,7 @@
                             <value>Submit</value>
                             <visibilityRule>
                                 <criteria>
-                                    <leftValue>{!Record.test_checkbox__c}</leftValue>
+                                    <leftValue>{!Record.PNNL_ACT_Submit_Approval_Checkbox__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
                                 </criteria>
