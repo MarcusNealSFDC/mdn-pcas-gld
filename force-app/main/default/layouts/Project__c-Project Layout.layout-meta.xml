@@ -198,16 +198,6 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Project_Num__c</fields>
-        <fields>ALC_TOE__c</fields>
-        <fields>TOE_Title__c</fields>
-        <fields>Effective_Date2__c</fields>
-        <fields>Inactive_Date2__c</fields>
-        <fields>Deactivate__c</fields>
-        <relatedList>Project_Allocation__c.Projects__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <fields>SPP_Code__c</fields>
         <fields>B_R_Number__c</fields>
         <fields>Amendment_Authorized_Amount__c</fields>

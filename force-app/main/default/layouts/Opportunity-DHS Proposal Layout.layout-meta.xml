@@ -536,7 +536,7 @@
         <fields>Action_Type__c</fields>
         <fields>Funding_Agreement_Date__c</fields>
         <fields>Funds_Received_Date__c</fields>
-        <fields>FAC_Amount__c</fields>
+        <fields>FAC_Amount2__c</fields>
         <fields>Amendment_Authorized_Amount__c</fields>
         <relatedList>Funding_Action__c.Proposal__c</relatedList>
     </relatedLists>
