@@ -24,6 +24,13 @@
                         </valueListItems>
                         <valueListItems>
                             <value>Submit</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.PNNL_NF_SPP_Submit_Approval_Checkbox__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>Share</value>

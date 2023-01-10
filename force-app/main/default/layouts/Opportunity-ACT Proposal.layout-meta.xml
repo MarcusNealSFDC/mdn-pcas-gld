@@ -37,6 +37,10 @@
                 <behavior>Edit</behavior>
                 <field>ACT_IP_Checklist_B__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>test_checkbox__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -350,11 +354,6 @@
             <sortOrder>6</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Edit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>7</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>DeepClone</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>8</sortOrder>
@@ -413,6 +412,11 @@
             <actionName>Opportunity.Send_Cost_Sheet</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>19</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Edit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>7</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedContent>
