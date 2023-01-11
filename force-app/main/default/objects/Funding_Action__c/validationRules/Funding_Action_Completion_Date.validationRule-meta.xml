@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Action_Completion_Date</fullName>
+    <active>true</active>
+    <description>Funding Action completion date needs reference the funding document</description>
+    <errorConditionFormula>Completion_Date__c  &gt; PNNL_Contract__r.Proposal__r.CloseDate</errorConditionFormula>
+    <errorMessage>Completion Date can&apos;t be greater than the Proposal End Date</errorMessage>
+</ValidationRule>

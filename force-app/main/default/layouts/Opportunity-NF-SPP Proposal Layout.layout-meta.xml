@@ -205,6 +205,10 @@
                 <behavior>Edit</behavior>
                 <field>Current_Action_Amount__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ACT_IP_Checklist_B__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -510,19 +514,6 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
-        <excludeButtons>ChoosePricebook</excludeButtons>
-        <excludeButtons>EditAllProduct</excludeButtons>
-        <excludeButtons>MultiEdit</excludeButtons>
-        <excludeButtons>Sort</excludeButtons>
-        <excludeButtons>SortLineItem</excludeButtons>
-        <fields>Product2</fields>
-        <fields>Fiscal_Year__c</fields>
-        <fields>Quantity</fields>
-        <fields>UnitPrice</fields>
-        <fields>TotalPrice</fields>
-        <relatedList>RelatedLineItemList</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>MemberName</fields>
         <fields>OppAccessLevel</fields>
         <fields>TeamMemberRole</fields>
@@ -539,7 +530,6 @@
         <fields>NAME</fields>
         <fields>Contract__c</fields>
         <fields>Effective_Date__c</fields>
-        <fields>Authorized_Amount__c</fields>
         <relatedList>PNNL_Contracts__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -548,13 +538,6 @@
         <fields>CRADA_Title__c</fields>
         <fields>CRADA_Status__c</fields>
         <relatedList>CRADA__c.Proposal__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Status__c</fields>
-        <fields>Amendment_Authorized_Amount__c</fields>
-        <fields>Amendment_Fee_Amount__c</fields>
-        <relatedList>Proposed_Amendment__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -583,7 +566,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000wx7y</masterLabel>
+        <masterLabel>00h3S000000l9xS</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

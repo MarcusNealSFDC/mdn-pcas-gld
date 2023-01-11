@@ -364,16 +364,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Management_Office_Email_Address__c</fieldItem>
-                <identifier>RecordProject_Management_Office_Email_Address_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Contract_Specialist2__c</fieldItem>
                 <identifier>RecordContract_Specialist2_cField</identifier>
             </fieldInstance>
@@ -703,6 +693,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Foreign_Sponsor__c</fieldItem>
                 <identifier>RecordForeign_Sponsor_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Research_Required_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1833,8 +1833,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.SPECIMEN_1__c</fieldItem>
-                <identifier>RecordSPECIMEN_1_cField</identifier>
+                <fieldItem>Record.ACT_IP_Checklist_A__c</fieldItem>
+                <identifier>RecordACT_IP_Checklist_A_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1843,8 +1843,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.SPECIMEN_1_Detail__c</fieldItem>
-                <identifier>RecordSPECIMEN_1_Detail_cField</identifier>
+                <fieldItem>Record.ACT_IP_Checklist_A_Details__c</fieldItem>
+                <identifier>RecordACT_IP_Checklist_A_Details_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1853,8 +1853,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.SPECIMEN_4__c</fieldItem>
-                <identifier>RecordSPECIMEN_4_cField</identifier>
+                <fieldItem>Record.ACT_IP_Checklist_B__c</fieldItem>
+                <identifier>RecordACT_IP_Checklist_B_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1863,8 +1863,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.SPECIMEN_4_Detail__c</fieldItem>
-                <identifier>RecordSPECIMEN_4_Detail_cField</identifier>
+                <fieldItem>Record.ACT_IP_Checklist_B_Details__c</fieldItem>
+                <identifier>RecordACT_IP_Checklist_B_Details_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1873,8 +1873,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.SPECIMEN_6__c</fieldItem>
-                <identifier>RecordSPECIMEN_6_cField</identifier>
+                <fieldItem>Record.ACT_IP_Checklist_C__c</fieldItem>
+                <identifier>RecordACT_IP_Checklist_C_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1883,8 +1883,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.SPECIMEN_6_Detail__c</fieldItem>
-                <identifier>RecordSPECIMEN_6_Detail_cField</identifier>
+                <fieldItem>Record.ACT_IP_Checklist_C_Details__c</fieldItem>
+                <identifier>RecordACT_IP_Checklist_C_Details_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-695053a3-e8dd-4ad0-b3bc-aaa2d3420580</name>
@@ -2075,6 +2075,23 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Coordinator2__c</fieldItem>
                 <identifier>RecordPNSO_Coordinator2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Animal_Researcher2__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Researcher2_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.PNSO_Animal_Research_Required__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

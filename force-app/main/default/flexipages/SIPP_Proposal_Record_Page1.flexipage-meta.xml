@@ -707,6 +707,16 @@
                 <identifier>RecordEMSL_Approval_Number_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Research_Required_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-bba87aa2-086f-4b5b-a3e5-72d9e7ea6b1b</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -1508,16 +1518,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
-                <identifier>RecordPNSO_Animal_Research_Required_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>

@@ -358,6 +358,16 @@
                 <identifier>RecordPNSO_Technical_Rep2_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.FFRDC__c</fieldItem>
+                <identifier>RecordFFRDC_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-22c168a8-d4e1-4315-bcce-79b3c084f0bb</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -398,8 +408,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Management_Office_Email_Address__c</fieldItem>
-                <identifier>RecordProject_Management_Office_Email_Address_cField</identifier>
+                <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Research_Required_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -410,16 +420,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Official_Use_Only__c</fieldItem>
                 <identifier>RecordOfficial_Use_Only_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.FFRDC__c</fieldItem>
-                <identifier>RecordFFRDC_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-388fef72-b9f4-4b05-a730-58236f80273c</name>
@@ -1457,8 +1457,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
-                <identifier>RecordPNSO_Animal_Research_Required_cField</identifier>
+                <fieldItem>Record.SPP_Office_Reviewer2__c</fieldItem>
+                <identifier>RecordSPP_Office_Reviewer2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1476,16 +1476,6 @@
                         <rightValue>Yes</rightValue>
                     </criteria>
                 </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.SPP_Office_Reviewer2__c</fieldItem>
-                <identifier>RecordSPP_Office_Reviewer2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
