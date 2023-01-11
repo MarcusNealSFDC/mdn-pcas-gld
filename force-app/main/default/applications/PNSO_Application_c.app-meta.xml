@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#808487</headerColor>
+        <logo>download</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Use this app to manage Proposals, PNNL Contracts, Projects, and more.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>PNSO Application</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Project_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Project__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Project_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Project__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Funding_Action_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Funding_Action_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Proposals</tabs>
+    <tabs>Funding_Agreement__c</tabs>
+    <tabs>Project__c</tabs>
+    <tabs>PNNL_Contracts__c</tabs>
+    <tabs>Project_Allocation__c</tabs>
+    <tabs>Proposed_Amendment__c</tabs>
+    <tabs>CRADA__c</tabs>
+    <tabs>Funding_Action__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>PNSO_Application_UtilityBar</utilityBar>
+</CustomApplication>
