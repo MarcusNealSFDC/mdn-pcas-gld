@@ -63,16 +63,6 @@
                 <identifier>RecordAccountIdField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Hanford_ID__c</fieldItem>
-                <identifier>RecordHanford_ID_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-470cbe7a-840d-49b2-8e89-e482b1b50e4c</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -270,7 +260,7 @@
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Contact Record Page</masterLabel>
+    <masterLabel>Contact Sponsor Record Page</masterLabel>
     <parentFlexiPage>sfa__Contact_rec_L</parentFlexiPage>
     <sobjectType>Contact</sobjectType>
     <template>
