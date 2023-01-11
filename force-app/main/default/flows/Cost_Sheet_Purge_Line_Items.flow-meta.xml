@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Records_Returned_Assignment</name>
+        <label>Records Returned Assignment</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>RecordCount</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>Get_OppLineItems</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Have_records_been_returned</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Evaluates whether any records have been returned.</description>
+        <name>Have_records_been_returned</name>
+        <label>Have records been returned?</label>
+        <locationX>176</locationX>
+        <locationY>518</locationY>
+        <defaultConnector>
+            <targetReference>Purge_OppLineItems</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No_Records</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>RecordCount</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Finish</targetReference>
+            </connector>
+            <label>No Records</label>
+        </rules>
+    </decisions>
+    <description>Remove all opportunity line items associated with a parent Opportunity (Propoosal).</description>
+    <environments>Default</environments>
+    <interviewLabel>Cost Sheet - Purge Line Items {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Cost Sheet - Purge Line Items</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordDeletes>
+        <description>Remove all opportunity line items returned in previous query.</description>
+        <name>Purge_OppLineItems</name>
+        <label>Purge OppLineItems</label>
+        <locationX>264</locationX>
+        <locationY>638</locationY>
+        <connector>
+            <targetReference>Finish</targetReference>
+        </connector>
+        <inputReference>Get_OppLineItems</inputReference>
+    </recordDeletes>
+    <recordLookups>
+        <description>Retrieve all the line items related to a Cost Sheet proposal.</description>
+        <name>Get_OppLineItems</name>
+        <label>Get OppLineItems</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Records_Returned_Assignment</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>OpportunityLineItem</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>DefaultMode</runInMode>
+    <screens>
+        <name>Finish</name>
+        <label>Finish</label>
+        <locationX>176</locationX>
+        <locationY>854</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>ConfirmationMessage</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 24px;&quot;&gt;Records Purged: &lt;/strong&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;{!RecordCount}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Purging_cost_details</name>
+        <label>Purging cost details</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Get_OppLineItems</targetReference>
+        </connector>
+        <fields>
+            <name>PurgingCostDetailsText</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 24px;&quot;&gt;Purging cost details.﻿..&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>landingPageAutoComplete</name>
+            <extensionName>c:autoCompleteScreenFlow</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>maxTime</name>
+                <value>
+                    <stringValue>0:0:0:0</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Purging_cost_details</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Records the number of records returned.</description>
+        <name>RecordCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Record identifier for Proposal (Opportunity) to which the Opportunity Line Items to be deleted are related.</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>
