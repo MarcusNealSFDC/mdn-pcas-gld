@@ -210,7 +210,6 @@
         <fields>NAME</fields>
         <fields>SPP_Code__c</fields>
         <fields>B_R_Number__c</fields>
-        <fields>Amendment_Authorized_Amount__c</fields>
         <relatedList>Funding_Action__c.Project__c</relatedList>
     </relatedLists>
     <relatedLists>
