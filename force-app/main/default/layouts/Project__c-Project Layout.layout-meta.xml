@@ -198,7 +198,6 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Project_Num__c</fields>
         <fields>ALC_TOE__c</fields>
         <fields>TOE_Title__c</fields>
         <fields>Effective_Date2__c</fields>
