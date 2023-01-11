@@ -119,10 +119,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Market_Sector__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Revision_Number__c</field>
             </layoutItems>
             <layoutItems>
@@ -212,10 +208,16 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>SPP_Code__c</fields>
+        <fields>B_R_Number__c</fields>
+        <fields>Amendment_Authorized_Amount__c</fields>
         <relatedList>Funding_Action__c.Project__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Budget_Reporting_Code__c</fields>
+        <fields>Funding_Amount__c</fields>
+        <fields>Funds_Recieved__c</fields>
         <relatedList>Budget_Reporting_Entry__c.Project__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -262,7 +264,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000wMoa</masterLabel>
+        <masterLabel>00h3R000000wx7q</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

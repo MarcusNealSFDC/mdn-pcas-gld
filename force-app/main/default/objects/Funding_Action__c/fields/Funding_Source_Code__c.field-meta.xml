@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Authorized_Amount__c</fullName>
+    <fullName>Funding_Source_Code__c</fullName>
     <externalId>false</externalId>
-    <label>Authorized Amount</label>
-    <precision>7</precision>
+    <label>Funding Source Code</label>
+    <length>60</length>
     <required>false</required>
-    <scale>0</scale>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Currency</type>
+    <type>Text</type>
+    <unique>false</unique>
 </CustomField>

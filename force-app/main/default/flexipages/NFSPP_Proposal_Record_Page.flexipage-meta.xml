@@ -172,6 +172,16 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.StageName</fieldItem>
+                <identifier>RecordStageNameField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Proposed_Start_Date__c</fieldItem>
@@ -378,6 +388,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Market_Sector_pnnl__c</fieldItem>
+                <identifier>RecordMarket_Sector_pnnl_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Organization_Code__c</fieldItem>
                 <identifier>RecordOrganization_Code_cField</identifier>
             </fieldInstance>
@@ -390,16 +410,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Product_Line__c</fieldItem>
                 <identifier>RecordProduct_Line_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Market_Sector_pnnl__c</fieldItem>
-                <identifier>RecordMarket_Sector_pnnl_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

@@ -47,16 +47,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Proposal_Stage__c</fieldItem>
-                <identifier>RecordProposal_Stage_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.MSW__c</fieldItem>
                 <identifier>RecordMSW_cField</identifier>
             </fieldInstance>
