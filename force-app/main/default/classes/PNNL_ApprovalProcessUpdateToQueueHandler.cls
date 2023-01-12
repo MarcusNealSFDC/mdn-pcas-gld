@@ -1,7 +1,4 @@
 public with sharing class PNNL_ApprovalProcessUpdateToQueueHandler {
-    public PNNL_ApprovalProcessUpdateToQueueHandler() {
-
-    }
 
     @InvocableMethod
     public static void UpdateApprovalProcessesForObject(List<Id> tmpObjectIDs) {
@@ -10,20 +7,46 @@ public with sharing class PNNL_ApprovalProcessUpdateToQueueHandler {
 
     @future
     public static void UpdateApprovalProcessesForObject_future(List<Id> tmpObjectIDs) {
-            List<Approval_Process_Node_To_Queue_Mapping__mdt> queueMappings = [
-                SELECT 
-                    Label, 
-                    DeveloperName, 
-                    Approval_Process_Node__c, 
-                    Replacement_Queue__c 
-                FROM Approval_Process_Node_To_Queue_Mapping__mdt
-            ] ;
+        List<Approval_Process_Node_To_Queue_Mapping__mdt> queueMappings = [
+            SELECT 
+                Label, 
+                DeveloperName, 
+                Approval_Process_Developer_Name__c,
+                Approval_Step_Developer_Name__c, 
+                Replacement_Queue__c 
+            FROM Approval_Process_Node_To_Queue_Mapping__mdt
+        ] ;
         if(queueMappings.isEmpty()) return ;
         System.Debug('***queueMappings: ' + queueMappings) ;
 
-        Map<Id,Id> nodeId2QueueIDMap = new Map<Id, Id>() ;
+        Map<String,String> approvalStepToQueueMap = new Map<String, String>() ;
+        Set<String> definitionDeveloperNameSet = new Set<String>() ;
+        Set<String> nodeDeveloperNameSet = new Set<String>() ;
+        Set<String> queueDeveloperNameSet = new Set<String>() ;
         for(Approval_Process_Node_To_Queue_Mapping__mdt tmpMapping: queueMappings) {
-            nodeId2QueueIDMap.put(tmpMapping.Approval_Process_Node__c, tmpMapping.Replacement_Queue__c) ;
+            definitionDeveloperNameSet.add(tmpMapping.Approval_Process_Developer_Name__c) ;
+            nodeDeveloperNameSet.add(tmpMapping.Approval_Step_Developer_Name__c) ;
+            queueDeveloperNameSet.add(tmpMapping.Replacement_Queue__c) ;
+            // Using the concatenated DeveloperNames we can create a unique key that defines the Queue to use
+            approvalStepToQueueMap.put(tmpMapping.Approval_Process_Developer_Name__c+tmpMapping.Approval_Step_Developer_Name__c, 
+                    tmpMapping.Replacement_Queue__c) ;
+        }
+
+        List<Group> groupList = [
+            SELECT 
+                Name, 
+                Type, 
+                DeveloperName 
+            FROM Group 
+                WHERE Type = 'Queue' 
+                    AND DeveloperName IN :queueDeveloperNameSet
+        ] ;
+        if(groupList.isEmpty()) return ;
+        System.Debug('***groupList: ' + groupList) ;
+
+        Map<String, Id> mapQueueToId = new Map<String, Id>() ;
+        for(Group tmpGroup: groupList) {
+            mapQueueToId.put(tmpGroup.DeveloperName, tmpGroup.Id) ;
         }
 
         List<ProcessInstance> processInstanceList = [
@@ -35,17 +58,19 @@ public with sharing class PNNL_ApprovalProcessUpdateToQueueHandler {
                     ElapsedTimeInMinutes, 
                     LastActorId, 
                     Status, 
-                    ProcessDefinition.Name, 
+                    ProcessDefinition.Name,
+                    ProcessDefinition.DeveloperName, 
                     TargetObjectId 
                 FROM ProcessInstance 
                 WHERE TargetObjectId = :tmpObjectIDs
                     AND Status = 'Pending'
+                    AND ProcessDefinition.DeveloperName IN :definitionDeveloperNameSet
             ] ;
         if(processInstanceList.isEmpty()) return ;
         System.Debug('***processInstanceList: ' + processInstanceList) ;
 
         Id processInstanceID = processInstanceList[0].Id ;
-        Set<Id> idSet = nodeId2QueueIDMap.keySet() ;
+        String processDefinitionDeveloperName = processInstanceList[0].ProcessDefinition.DeveloperName ;
 
         List<ProcessInstanceNode> processInstanceNodeList = [
                 SELECT 
@@ -58,22 +83,28 @@ public with sharing class PNNL_ApprovalProcessUpdateToQueueHandler {
                     NodeStatus, 
                     ProcessInstanceId, 
                     ProcessNodeId, 
-                    ProcessNodeName 
+                    ProcessNodeName,
+                    ProcessNode.DeveloperName 
                 FROM ProcessInstanceNode
                 WHERE ProcessInstanceId = :processInstanceID
                     AND NodeStatus = 'Pending'
-                    AND ProcessNodeId IN :idSet
+                    AND ProcessNode.DeveloperName IN :nodeDeveloperNameSet
             ] ;
         if(processInstanceNodeList.isEmpty()) return ;
         System.Debug('***processInstanceNodeList: ' + processInstanceNodeList) ;
 
         ProcessInstanceNode tmpNode = processInstanceNodeList[0] ;
+        String nodeDeveloperName = tmpNode.ProcessNode.DeveloperName ;
         ID tmpQueueId ;
 
-        if(!nodeId2QueueIDMap.containsKey(tmpNode.ProcessNodeId)) {
+        if(!approvalStepToQueueMap.containsKey(processDefinitionDeveloperName+nodeDeveloperName)) {
             return ;
         } else {
-            tmpQueueId = nodeId2QueueIDMap.get(tmpNode.ProcessNodeId) ;
+            if(!mapQueueToId.containsKey(approvalStepToQueueMap.get(processDefinitionDeveloperName+nodeDeveloperName))) {
+                return ;
+            } else {
+                tmpQueueId = mapQueueToId.get(approvalStepToQueueMap.get(processDefinitionDeveloperName+nodeDeveloperName)) ;
+            }
         }
 
         List<ProcessInstanceWorkItem> processInstanceWorkItemList = [

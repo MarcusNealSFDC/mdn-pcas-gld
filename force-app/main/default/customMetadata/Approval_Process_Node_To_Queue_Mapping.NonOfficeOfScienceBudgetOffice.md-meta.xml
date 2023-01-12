@@ -3,11 +3,15 @@
     <label>NonOfficeOfScienceBudgetOffice</label>
     <protected>false</protected>
     <values>
-        <field>Approval_Process_Node__c</field>
-        <value xsi:type="xsd:string">04bBZ000000Cs5qYAC</value>
+        <field>Approval_Process_Developer_Name__c</field>
+        <value xsi:type="xsd:string">FWP_Approval_Non_Office_of_Science2</value>
+    </values>
+    <values>
+        <field>Approval_Step_Developer_Name__c</field>
+        <value xsi:type="xsd:string">Budget_Office_Approval</value>
     </values>
     <values>
         <field>Replacement_Queue__c</field>
-        <value xsi:type="xsd:string">00GBZ000000bSUY</value>
+        <value xsi:type="xsd:string">Budget_Office_Queue</value>
     </values>
 </CustomMetadata>
