@@ -12,6 +12,13 @@
                         </valueListItems>
                         <valueListItems>
                             <value>Submit</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.PNNL_NIC_RW_Submit_Approval_Checkbox__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>Opportunity.Amendment</value>
@@ -153,20 +160,20 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Title__c</fieldItem>
-                <identifier>RecordProject_Title_cField</identifier>
+                <fieldItem>Record.StageName</fieldItem>
+                <identifier>RecordStageNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>required</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.StageName</fieldItem>
-                <identifier>RecordStageNameField</identifier>
+                <fieldItem>Record.Project_Title__c</fieldItem>
+                <identifier>RecordProject_Title_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
