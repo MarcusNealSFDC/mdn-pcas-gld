@@ -17,7 +17,7 @@
                             <value>Submit</value>
                             <visibilityRule>
                                 <criteria>
-                                    <leftValue>{!Record.PNNL_ACT_Submit_Approval_Checkbox__c}</leftValue>
+                                    <leftValue>{!Record.PNNL_DHS_Submit_Approval_Checkbox__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
                                 </criteria>
@@ -25,9 +25,6 @@
                         </valueListItems>
                         <valueListItems>
                             <value>Opportunity.Send_Cost_Sheet</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Submit</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Edit</value>
