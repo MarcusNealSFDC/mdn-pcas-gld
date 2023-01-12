@@ -110,10 +110,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>PNNL_OppCostDetailTableController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>PNNL_UploadAttachmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -315,7 +311,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Node__c</field>
+        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Developer_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Step_Developer_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

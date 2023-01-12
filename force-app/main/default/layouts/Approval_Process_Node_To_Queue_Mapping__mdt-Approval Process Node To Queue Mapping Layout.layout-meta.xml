@@ -16,11 +16,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Approval_Process_Node__c</field>
+                <field>Replacement_Queue__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Replacement_Queue__c</field>
+                <field>Approval_Process_Developer_Name__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Approval_Step_Developer_Name__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -58,6 +62,8 @@
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
+        <layoutColumns/>
+        <layoutColumns/>
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>

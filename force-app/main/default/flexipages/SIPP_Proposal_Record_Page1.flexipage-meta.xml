@@ -8,12 +8,6 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Edit</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Submit</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Opportunity.Amendment</value>
                         </valueListItems>
                         <valueListItems>
@@ -21,6 +15,12 @@
                         </valueListItems>
                         <valueListItems>
                             <value>Opportunity.Send_Cost_Sheet</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Submit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Delete</value>

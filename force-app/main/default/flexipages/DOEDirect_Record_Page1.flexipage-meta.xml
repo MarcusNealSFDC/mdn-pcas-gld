@@ -11,16 +11,10 @@
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Submit</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.Amendment</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.Revision</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Opportunity.Send_Cost_Sheet</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Submit</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Delete</value>
