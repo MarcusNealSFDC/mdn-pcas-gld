@@ -136,7 +136,7 @@
         <backButtonLabel>Cancel</backButtonLabel>
         <fields>
             <name>content</name>
-            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 20px;&quot;&gt;Signing Ceremony Acknowledgement &lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Signing Ceremony Acknowledgement &lt;/strong&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
