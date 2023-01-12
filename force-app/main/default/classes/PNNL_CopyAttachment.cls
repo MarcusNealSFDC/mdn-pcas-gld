@@ -12,9 +12,7 @@ public class PNNL_CopyAttachment {
   public static void clone_opptyAttachments(List<List<Id>> opptyIds) {
     string opptyId = opptyIds[0][0];
     string clonedOppty = opptyIds[0][1];
-    System.debug(
-      'Number of Queries used in this apex code so far: ' + Limits.getQueries()
-    );
+
     Map<Id, Opportunity_Attachment__c> oppAttachItems = new Map<Id, Opportunity_Attachment__c>(
       [
         SELECT
@@ -28,19 +26,15 @@ public class PNNL_CopyAttachment {
         WHERE Opportunity__c = :opptyId
       ]
     );
-    System.debug(
-      'Number of Queries used in this apex code so far: ' + Limits.getQueries()
-    );
-    Map<Id, ContentVersion> versionItem = new Map<Id, ContentVersion>(
+
+    List<ContentVersion> versionItem = new List<ContentVersion>(
       [
         SELECT fields(standard)
         FROM ContentVersion
         WHERE IsLatest = TRUE AND IsDeleted = FALSE
       ]
     );
-    System.debug(
-      'Number of Queries used in this apex code so far: ' + Limits.getQueries()
-    );
+
     // loop at the attachment list and place clone records in a list
     List<Opportunity_Attachment__c> attchList = new List<Opportunity_Attachment__c>();
     for (Opportunity_Attachment__c oppAttachItem : oppAttachItems.values()) {
@@ -60,9 +54,7 @@ public class PNNL_CopyAttachment {
     }
     // insert the list of attachment records
     insert attchList;
-    System.debug(
-      'Number of Queries used in this apex code so far: ' + Limits.getQueries()
-    );
+
     // Execute select statement once for all opportunity_attachment__c records
     // outside of a loop.
     List<ContentDocumentLink> docLinkItems = [
@@ -70,10 +62,7 @@ public class PNNL_CopyAttachment {
       FROM ContentDocumentLink
       WHERE LinkedEntityId IN :oppAttachItems.keySet()
     ];
-    System.debug(
-      'Number of Queries used after retreiving the doclinkitems: ' +
-      Limits.getQueries()
-    );
+
     //for debugging only
     /*  for (ContentDocumentLink cdl : docLinkItems){
           system.debug('The original doclinkedItems:');
@@ -83,10 +72,14 @@ public class PNNL_CopyAttachment {
       for (Opportunity_Attachment__c newCloneAttachment: [select id, name from Opportunity_Attachment__c where id IN :attchList]){
           system.debug('This is the new list of attachments: '+ newCloneAttachment);
       }
-      */
-    integer oppattachCount = 0;
-    integer doclinkCount = 0;
+      
+      for (ContentVersion cv: versionItem){
+          system.debug('Looping through the contentversion records: '+cv);
+      }
+	  */
+
     boolean foundDocument = false;
+    List<String> foundCVs = new List<String>();
     ContentDocumentLink[] cdls = new List<ContentDocumentLink>();
     for (Opportunity_Attachment__c newCloneAttachment : [
       SELECT id, name
@@ -95,29 +88,28 @@ public class PNNL_CopyAttachment {
     ]) {
       //Loop at document link items
       //
-      //
-      doclinkCount = 0;
       for (ContentDocumentLink docLinkItem : docLinkItems) {
-        Id versionItemId;
         Id linkedEntity = docLinkItem.LinkedEntityId;
+        foundDocument = false;
         // need to find the document version record that matches the original document link record
         // in order to copy it.
-        for (ContentVersion item : versionItem.values()) {
-          if (docLinkItem.ContentDocumentId == item.ContentDocumentId) {
+        for (ContentVersion item : versionItem) {
+          if (
+            (docLinkItem.ContentDocumentId == item.ContentDocumentId) &&
+            !(foundCVs.contains(item.id))
+          ) {
+            foundCVs.add(item.id);
             foundDocument = true;
-            versionItemId = item.Id;
-            ContentVersion versionItemfound = versionItem.get(versionItemId);
             ContentVersion versionNew = new ContentVersion(
-              VersionData = versionItemfound.VersionData,
-              Title = versionItemfound.Title,
-              ContentUrl = versionItemfound.ContentUrl,
-              PathOnClient = versionItemfound.PathOnClient
+              VersionData = item.VersionData,
+              Title = item.Title,
+              ContentUrl = item.ContentUrl,
+              PathOnClient = item.PathOnClient
             );
             //System.debug('Number of DML statements used so far : ' + Limits.getDmlStatements());
             insert versionNew;
             //System.debug('Number of DML statements used so far : ' + Limits.getDmlStatements());
             system.debug('VersionNew Id value: ' + versionNew.Id);
-            system.debug('after the insert for version record.');
             ContentVersion versionNewQueried = [
               SELECT ContentDocumentId
               FROM ContentVersion
@@ -135,11 +127,15 @@ public class PNNL_CopyAttachment {
           }
           //system.debug('content document id:' + linkedEntity);
           //system.debug('Linked Entity id: '+ docLinkItem.LinkedEntityId);
-          if (foundDocument)
+          if (foundDocument) {
             break;
+          }
         }
         system.debug('the content document list');
         system.debug(cdls);
+        if (foundDocument) {
+          break;
+        }
       }
     }
     insert cdls;
