@@ -157,11 +157,15 @@
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Revison__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Amendment_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Budget_Year__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Project_Title__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Proposed_Amount__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>B_R__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
 </CustomObject>

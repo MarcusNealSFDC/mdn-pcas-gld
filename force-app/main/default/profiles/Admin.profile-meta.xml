@@ -110,14 +110,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>PNNL_OppCostDetailTableController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>PNNL_OppCostDetailTableControllerTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>PNNL_UploadAttachmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -319,7 +311,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Node__c</field>
+        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Developer_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Step_Developer_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1983,8 +1980,33 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_ACT_Submit_Approval_Checkbox__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_DHS_Submit_Approval_Checkbox__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_DOE_Submit_Approval_Checkbox__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_F_SPP_Submit_Approval_Checkbox__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.PNNL_IP_Approver__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_IWO_Submit_Approval_Checkbox__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1995,6 +2017,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.PNNL_Integration_Status_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_NF_SPP_Submit_Approval_Checkbox__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_NIC_RW_Submit_Approval_Checkbox__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2011,6 +2043,11 @@
         <editable>false</editable>
         <field>Opportunity.PNNL_Program_Manager__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_SIPP_Submit_Approval_Checkbox__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -2495,6 +2532,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>OpportunityLineItem.Revision_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.Summary_Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
