@@ -3,11 +3,15 @@
     <label>OfficeOfScienceBusiness Office Mapping</label>
     <protected>false</protected>
     <values>
-        <field>Approval_Process_Node__c</field>
-        <value xsi:type="xsd:string">04b3R000000FGD3QAO</value>
+        <field>Approval_Process_Developer_Name__c</field>
+        <value xsi:type="xsd:string">FWP_Proposal_Approval_Process_Phase_1</value>
+    </values>
+    <values>
+        <field>Approval_Step_Developer_Name__c</field>
+        <value xsi:type="xsd:string">Business_Office_Approval</value>
     </values>
     <values>
         <field>Replacement_Queue__c</field>
-        <value xsi:type="xsd:string">00G3R000000sswR</value>
+        <value xsi:type="xsd:string">EBSD_PCSD_Business_Office_Queue</value>
     </values>
 </CustomMetadata>
