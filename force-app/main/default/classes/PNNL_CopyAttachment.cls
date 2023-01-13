@@ -48,7 +48,6 @@ public class PNNL_CopyAttachment {
         false,
         false
       );
-      oppAttachClone.Name = oppAttachClone.Name;
       oppAttachClone.Opportunity__c = clonedOppty;
       attchList.add(oppAttachClone);
     }
