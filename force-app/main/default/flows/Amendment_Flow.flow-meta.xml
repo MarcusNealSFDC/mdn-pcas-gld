@@ -51,6 +51,13 @@
                 <stringValue>Proposal Draft</stringValue>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Revison__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>CreateOppRecord</targetReference>
         </connector>
@@ -116,7 +123,7 @@
             <targetReference>GetRecords</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>OpportunityIdList</name>
         <dataType>String</dataType>
