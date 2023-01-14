@@ -4,10 +4,6 @@
         <application>PNSO_Application_c</application>
         <visible>true</visible>
     </applicationVisibilities>
-    <customMetadataTypeAccesses>
-        <enabled>true</enabled>
-        <name>Approval_Process_Signing_Ceremony__mdt</name>
-    </customMetadataTypeAccesses>
     <description>This permission set will be user to grant addionational permission to the pnso tech rep</description>
     <fieldPermissions>
         <editable>false</editable>
@@ -1971,8 +1967,4 @@
         <tab>standard-ProcessInstanceWorkitem</tab>
         <visibility>Visible</visibility>
     </tabSettings>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>RunFlow</name>
-    </userPermissions>
 </PermissionSet>
