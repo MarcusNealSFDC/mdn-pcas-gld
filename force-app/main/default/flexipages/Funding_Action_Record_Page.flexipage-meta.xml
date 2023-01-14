@@ -266,8 +266,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Amendment_Authorized_Amount__c</fieldItem>
-                <identifier>RecordAmendment_Authorized_Amount_cField</identifier>
+                <fieldItem>Record.Agreement_Amount__c</fieldItem>
+                <identifier>RecordAgreement_Amount_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -276,8 +276,18 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.FAC_Amount__c</fieldItem>
-                <identifier>RecordFAC_Amount_cField</identifier>
+                <fieldItem>Record.FAC_Amount2__c</fieldItem>
+                <identifier>RecordFAC_Amount2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Fee_Amount2__c</fieldItem>
+                <identifier>RecordFee_Amount2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -548,6 +558,68 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.G_Invoicing_Document_Number__c</fieldItem>
+                <identifier>RecordG_Invoicing_Document_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Document_Type__c</fieldItem>
+                <identifier>RecordDocument_Type_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-551c2d6e-260f-401d-afce-b92551ec15a5</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.G_Invoicing_Link__c</fieldItem>
+                <identifier>RecordG_Invoicing_Link_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-0a2ece3d-17c9-494e-af1b-517f481d0062</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-551c2d6e-260f-401d-afce-b92551ec15a5</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-0a2ece3d-17c9-494e-af1b-517f481d0062</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-7e3d55df-8559-4670-b5bf-8d32eeb1247b</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Project_Admin__c</fieldItem>
                 <identifier>RecordPNSO_Project_Admin_cField</identifier>
             </fieldInstance>
@@ -674,6 +746,20 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
+                    <value>Facet-7e3d55df-8559-4670-b5bf-8d32eeb1247b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>G-Invoicing Order Information</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
                     <value>Facet-1ed0b69b-178b-4220-8739-bc044519eef4</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -753,13 +839,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.SPP_Office_Reviewer__c</fieldItem>
                 <identifier>RecordSPP_Office_Reviewer_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Proposal_Type__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>ACT</rightValue>
-                    </criteria>
-                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -770,40 +849,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Project_Staff_Reviewer__c</fieldItem>
                 <identifier>RecordProject_Staff_Reviewer_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Proposal_Type__c}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>ACT</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_SPP_Office_Reviewer__c</fieldItem>
-                <identifier>RecordPNSO_SPP_Office_Reviewer_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Proposal_Type__c}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>ACT</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Contracting_Officer__c</fieldItem>
-                <identifier>RecordPNSO_Contracting_Officer_cField</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Proposal_Type__c}</leftValue>
@@ -845,6 +890,40 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.ORO_Budget_Approver__c</fieldItem>
                 <identifier>RecordORO_Budget_Approver_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Proposal_Type__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>ACT</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_SPP_Office_Reviewer__c</fieldItem>
+                <identifier>RecordPNSO_SPP_Office_Reviewer_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Proposal_Type__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>ACT</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Contracting_Officer__c</fieldItem>
+                <identifier>RecordPNSO_Contracting_Officer_cField</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Proposal_Type__c}</leftValue>
