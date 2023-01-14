@@ -4,7 +4,7 @@
         <application>PNSO_Application_c</application>
         <visible>true</visible>
     </applicationVisibilities>
-    <description>This permission set is created for the CSC users</description>
+    <description>This permission set is created for the CSC users.</description>
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Action__c.Acceptance_Date__c</field>
