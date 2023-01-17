@@ -135,14 +135,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>PNNL_OppCostDetailTableController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>PNNL_OppCostDetailTableControllerTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>PNNL_UploadAttachmentController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -2649,21 +2641,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Project_Allocation__c.ALC_TOE__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Project_Allocation__c.Deactivate__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Project_Allocation__c.Inactive_Date__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Project_Allocation__c.Project_Num__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
