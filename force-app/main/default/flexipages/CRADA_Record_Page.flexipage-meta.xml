@@ -167,16 +167,6 @@
                 <identifier>RecordCRADA_Title_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Participants__c</fieldItem>
-                <identifier>RecordParticipants_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-c4dd3020-475c-43a7-aa2d-d3438df0c80e</name>
         <type>Facet</type>
     </flexiPageRegions>
