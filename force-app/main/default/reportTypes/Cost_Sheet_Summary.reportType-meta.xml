@@ -90,4 +90,12 @@
         </columns>
         <masterLabel>Products</masterLabel>
     </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PNNL_Budget_Reporting_Number__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <masterLabel>Opportunities</masterLabel>
+    </sections>
 </ReportType>

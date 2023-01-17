@@ -356,6 +356,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Budget_Reporting_Code__c.PNNL_Budget_Reporting_Number_External__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Budget_Reporting_Code__c.PNNL_Control_Level__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1887,6 +1892,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PNNL_ACT_Submit_Approval_Checkbox__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.PNNL_Budget_Reporting_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
