@@ -10,9 +10,9 @@ public class PNNL_CopyAttachment {
   }
 
   public static void clone_opptyAttachments(List<List<Id>> opptyIds) {
-    System.debug('Original Opty: ' + opptyIds[0][0]);
+    //System.debug('Original Opty: ' + opptyIds[0][0]);
     string opptyId = opptyIds[0][0];
-    System.debug('Cloned Opty: ' + opptyIds[0][1]);
+    //System.debug('Cloned Opty: ' + opptyIds[0][1]);
     string clonedOppty = opptyIds[0][1];
     Set<Id> ContentDocumentIds = new Set<Id>();
     ContentDocumentLink[] cdls = new List<ContentDocumentLink>();
@@ -34,16 +34,16 @@ public class PNNL_CopyAttachment {
     );
 
     if (oppAttachItems.isEmpty()) {
-      System.debug('No Attachments to copy.');
+      //System.debug('No Attachments to copy.');
       return;
     }
 
     // loop at the attachment list and place content document records in a list
     for (Opportunity_Attachment__c attachmentRecord : oppAttachItems.values()) {
-      System.debug('Attachment Id is : ' + attachmentRecord.AttachmentId__c);
+      //System.debug('Attachment Id is : ' + attachmentRecord.AttachmentId__c);
       ContentDocumentIds.add(attachmentRecord.AttachmentId__c);
     }
-    System.debug('ContentDocumentIds: ' + ContentDocumentIds);
+    //System.debug('ContentDocumentIds: ' + ContentDocumentIds);
     Map<Id, ContentVersion> versionItem = new Map<Id, ContentVersion>(
       [
         SELECT fields(standard)
@@ -56,7 +56,7 @@ public class PNNL_CopyAttachment {
     );
 
     if (versionItem.isEmpty()) {
-      System.debug('No Content Version Records found for the attachment file.');
+      //System.debug('No Content Version Records found for the attachment file.');
       return;
     }
 
@@ -84,11 +84,11 @@ System.debug('version record: '+ versionItem.get(cvId));
 
     //loop over newly created attachments and update the attachment_id field
     for (Opportunity_Attachment__c attachment : attchList) {
-      System.debug('ContentDocumentIds: ' + ContentDocumentIds);
+      //System.debug('ContentDocumentIds: ' + ContentDocumentIds);
       //loop over version records to find the one where contentdocumentid = attachmentId__c
       //
       for (ContentVersion cv : versionItem.values()) {
-        System.debug('version record: ' + cv);
+        //System.debug('version record: ' + cv);
         if (cv.contentdocumentid == attachment.AttachmentId__c) {
           //found the record.
           //
@@ -100,7 +100,7 @@ System.debug('version record: '+ versionItem.get(cvId));
           );
           insert versionNew;
           //System.debug('Number of DML statements used so far : ' + Limits.getDmlStatements());
-          system.debug('VersionNew Id value: ' + versionNew.Id);
+          //system.debug('VersionNew Id value: ' + versionNew.Id);
           ContentVersion versionNewQueried = [
             SELECT ContentDocumentId
             FROM ContentVersion
@@ -138,14 +138,13 @@ system.debug('This is the new list of attachments: '+ newCloneAttachment);
 for (ContentVersion cv: versionItem){
 system.debug('Looping through the contentversion records: '+cv);
 }
-*/
+
     System.debug(
       'Final number of script statements used : ' + Limits.getDmlStatements()
     );
     System.debug('Heap size Limit: ' + Limits.getLimitHeapSize());
     System.debug('Final heap size: ' + Limits.getHeapSize());
-    System.debug(
-      'Number of Queries used in this apex code so far: ' + Limits.getQueries()
-    );
+    System.debug('Number of Queries used in this apex code so far: ' + Limits.getQueries());
+*/
   }
 }
