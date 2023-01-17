@@ -248,11 +248,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Node__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Approval_Process_Node_To_Queue_Mapping__mdt.Replacement_Queue__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -718,11 +713,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Funding_Action__c.Amendment_Authorized_Amount__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Funding_Action__c.Appropriation_Years__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -759,11 +749,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Action__c.Contract_Specialist__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Action__c.FAC_Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

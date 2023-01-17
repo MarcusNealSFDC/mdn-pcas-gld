@@ -27,11 +27,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Funding_Action__c.Amendment_Authorized_Amount__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Funding_Action__c.Appropriation_Years__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -68,11 +63,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Action__c.Contract_Specialist__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Action__c.FAC_Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
