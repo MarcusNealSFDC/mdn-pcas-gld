@@ -2658,11 +2658,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Project_Allocation__c.Effective_Date__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Project_Allocation__c.Inactive_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
