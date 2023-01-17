@@ -110,10 +110,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>PNNL_OppCostDetailTableController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>PNNL_UploadAttachmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -315,7 +311,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Node__c</field>
+        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Developer_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Step_Developer_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1979,9 +1980,34 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_ACT_Submit_Approval_Checkbox__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_DHS_Submit_Approval_Checkbox__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_DOE_Submit_Approval_Checkbox__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_F_SPP_Submit_Approval_Checkbox__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.PNNL_IP_Approver__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_IWO_Submit_Approval_Checkbox__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1992,6 +2018,16 @@
         <editable>true</editable>
         <field>Opportunity.PNNL_Integration_Status_Name__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_NF_SPP_Submit_Approval_Checkbox__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_NIC_RW_Submit_Approval_Checkbox__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -2006,6 +2042,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PNNL_Program_Manager__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_SIPP_Submit_Approval_Checkbox__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3328,6 +3369,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>PNNL_Contracts__c-Non-DOE Layout</layout>
+        <recordType>PNNL_Contracts__c.ACT</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PNNL_Contracts__c-Non-DOE Layout</layout>
         <recordType>PNNL_Contracts__c.Non_DOE</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -3654,6 +3699,11 @@
         <default>false</default>
         <recordType>Opportunity_Attachment__c.DOE_Direct</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>PNNL_Contracts__c.ACT</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>

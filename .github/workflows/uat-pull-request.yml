@@ -1,41 +1,109 @@
-name: UAT Pull Request Against QA
+name: Deployments:PR BUGFIXES/FEATURES - Pull Request Against uat
 
 on:
-  workflow_dispatch:
-  #push:
+  pull_request:
+    branches:
+    - org/03-uat 
+  push:
+    branches:
+    - org/03-uat 
 
 env:
   SFDX_AUDIENCE_URL: https://test.salesforce.com # Use https://login.salesforce.com for production instances. Use https://test.salesforce.com for sandboxes
-  BITBUCKET_CREDS: ${{ secrets.BITBUCKET_CREDS }} # Bitbucket username:app password
-  SALESFORCE_ORG_USERNAME: #builduser@acumensolutions.com.uschrecruiting.qa  Salesforce username of target org
-  TARGET_BRANCH: uat # Git branch to merge feature branch into
-  SOURCE_BRANCH: qa # Git branch to merge feature branch into
-  SOURCE_PATH: force-app
-  
+  SALESFORCE_ORG_DEV_URL: https://pnnl--uat.sandbox.my.salesforce.com # Salesforce URL of target org
+  SALESFORCE_ORG_USERNAME: builduser@pnnl.gov.uat # Salesforce username of target org
+  TARGET_BRANCH: org/03-uat
+  ORG_NAME: pnnl-uat
+  SOURCE_DIR: force-app
+
 jobs:
   Deploy:
-    name: QA to UAT Merge-Process
+    name: Bugfixes/Features Merge-Process 
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with:
+      - if: github.event_name == 'pull_request'
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ env.GITHUB_HEAD_REF }}
+          fetch-depth: 0
+      - if: github.event_name == 'push'
+        uses: actions/checkout@v2
+        with:
           ref: ${{ env.TARGET_BRANCH }}
-    
-    - name: Setup Git User
-      run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
-    
-    - name: Checkout the head commit of the branch
-      if: ${{ github.event_name != 'pull_request_target' }}
-      uses: actions/checkout@v2
+          fetch-depth: 0
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '>=14'
+          check-latest: true
       
-    - name: Merge Feature Branch into Target Branch
-      run: |
-          git fetch --all
-          git merge --no-ff origin/${SOURCE_BRANCH}  -m "Merge ${SOURCE_BRANCH} into ${TARGET_BRANCH}" --allow-unrelated-histories
+      - name: Install SFDX
+        run: |
+          npm install sfdx-cli
+          node_modules/sfdx-cli/bin/run --version
+          node_modules/sfdx-cli/bin/run plugins --core
+
+      - name: 'Populate auth file with SFDX_URL secret'
+        run: |
+          echo "${{ secrets.SALESFORCE_AUTHURL_UAT }}" > SFDX_AUTHURL
+      
+      - name: Authenticate Salesforce Org
+        run: |
+          node_modules/sfdx-cli/bin/run force:auth:sfdxurl:store -f SFDX_AUTHURL -s -a ${{ env.ORG_NAME }}
+
+      - name: Deploy source
+        id: Deploy
+        if: github.event_name == 'push'
+        run:
+          node_modules/sfdx-cli/bin/run force:source:deploy -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal --ignorewarnings --verbose
+
+      - name: Validate source
+        id: validate
+        if: github.event_name == 'pull_request'
+        run:
+          node_modules/sfdx-cli/bin/run force:source:deploy -c -p force-app -u ${{ env.ORG_NAME }} --loglevel fatal --ignorewarnings | tee results.txt
+
+      # - name: Run Apex test
+      #   run: 
+      #     node_modules/sfdx-cli/bin/run force:apex:test:run --resultformat tap --codecoverage -r human -l RunLocalTests -u PNNLDev | tee results.txt
           
-    - name: Push Changes to Repository
-      if: ${{ success() }}
-      run: |
-          git push -u origin --force "${TARGET_BRANCH}"
+      - name: Collect Results
+        id: collect-results
+        if: github.event_name == 'pull_request' 
+        run: |
+          RESULTS=$(cat results.txt)
+          echo "$RESULTS"
+          RESULTS="${RESULTS//'%'/'%25'}"
+          RESULTS="${RESULTS//$'\n'/'%0A'}"
+          RESULTS="${RESULTS//$'\r'/'%0D'}"
+          echo "::set-output name=results::$RESULTS"
+          
+      - name: Update Pull Request
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v5.0.0
+        with:
+          script: |
+            const output = `#### Validation to Salesforce: \`${{ steps.Deploy.outcome }}\`
+            
+            <details><summary>Show Salesforce Validation Output</summary>
+            
+            \`\`\`\n
+            ${{ steps.collect-results.outputs.results }}
+            \`\`\`
+            
+            </details>
+            
+            *Pusher: @${{ github.actor }}, Workflow: \`${{ github.workflow }}\`, Workflow Run Number: \`${{ github.run_number }}\`*`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: output
+            })
+    
+  # UATDeploy:
+  #   name: Call uat Deploy
+  #   needs: Deploy
+  #   uses: CSGAMERSServices/dhs-us-coast-guard-gangway/.github/workflows/uat-pull-request.yml@uat
+  #   secrets:
+  #     token: ${{ secrets.JWTKEY }}

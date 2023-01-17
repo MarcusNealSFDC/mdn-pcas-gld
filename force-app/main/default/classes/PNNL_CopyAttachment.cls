@@ -1,9 +1,6 @@
 public class PNNL_CopyAttachment {
   public static string clonedOppty;
 
-  public PNNL_CopyAttachment() {
-  }
-
   @InvocableMethod
   public static void CopyAttachment(List<List<Id>> opptyIds) {
     clone_opptyAttachments(opptyIds);
