@@ -1134,10 +1134,6 @@
                     <value>Opportunity.Id</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>reportName</name>
-                    <value>DOE_Direct_Cost_Sheet_Summary</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
                     <name>showRefreshButton</name>
                     <value>true</value>
                 </componentInstanceProperties>
