@@ -1137,7 +1137,6 @@
                     <name>showRefreshButton</name>
                     <value>true</value>
                 </componentInstanceProperties>
-                <identifier>flexipage_reportChart</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-2e67a03d-05d7-4fd1-9aaf-c7435a529a3d</name>
