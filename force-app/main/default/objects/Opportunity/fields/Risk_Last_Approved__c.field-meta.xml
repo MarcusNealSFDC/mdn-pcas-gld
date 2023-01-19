@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Last_Approved__c</fullName>
+    <description>EPR RISK_LAST_APPROVED_DATE</description>
+    <externalId>false</externalId>
+    <inlineHelpText>RISK_LAST_APPROVED_DATE</inlineHelpText>
+    <label>Risk Last Approved</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>
