@@ -213,8 +213,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.B_R__c</fieldItem>
-                <identifier>RecordB_R_cField</identifier>
+                <fieldItem>Record.PNNL_Budget_Reporting_Number__c</fieldItem>
+                <identifier>RecordPNNL_Budget_Reporting_Number_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
