@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template for when Scope has been cleared.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Approvals</letterhead>
+    <name>Scope Clearance Decision Yes</name>
+    <style>freeForm</style>
+    <subject>Scope Clearance Decision {Scope #}</subject>
+    <textOnly>Scope has been cleared for Scope Number {Scope #}
+
+Description:
+Unique Name:
+Object:
+Email Template: Scope Clearance Description:
+Recipient Type:
+Recipient(s): Funding Agreement Team
+
+From: PNNL PCAS (pcas@pnnl.gov)
+To: Funding Agreement Team (email2example@pnnl.gov)
+Additional Email Addresses: (spp@pnnl.gov)</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

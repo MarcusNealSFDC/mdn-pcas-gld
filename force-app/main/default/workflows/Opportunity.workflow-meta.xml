@@ -31,70 +31,20 @@
         <template>PCAS_1830_Work_Authorization/PCAS_1830_Work_Authorization_Action_Required_from_PNNL_Budget_Office</template>
     </alerts>
     <alerts>
-        <fullName>PNSO_Approval_of_SPP_Proposal</fullName>
-        <description>PNSO Approval of SPP  Proposal</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Contract_Specialist2__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <recipients>
-            <field>Project_Coordinators__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <recipients>
-            <field>Project_Manager3__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <senderType>DefaultWorkflowUser</senderType>
-        <template>unfiled$public/Proposal_Approval_Email</template>
-    </alerts>
-    <alerts>
-        <fullName>Scope_Clearance_Decision</fullName>
+        <fullName>Scope_Clearance_Decision_No_Email_Alert</fullName>
         <ccEmails>spp@pnnl.gov</ccEmails>
-        <description>Scope Clearance Decision-YES</description>
+        <description>Scope Clearance Decision No Email Alert</description>
         <protected>false</protected>
-        <recipients>
-            <field>Project_Coordinators__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <recipients>
-            <field>Project_Manager3__c</field>
-            <type>userLookup</type>
-        </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Yes</template>
+        <template>unfiled$public/Scope_Clearance_Decision_No</template>
     </alerts>
     <alerts>
-        <fullName>Scope_Clearance_Decision_Email_Template_to_Assigned_PM_PMO</fullName>
-        <description>Scope Clearance Decision Email Template to Assigned PM/PMO</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Project_Management_Office_Email_Address__c</field>
-            <type>email</type>
-        </recipients>
-        <recipients>
-            <field>Project_Manager3__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <senderType>DefaultWorkflowUser</senderType>
-        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Email_Template_for_PM_PMO</template>
-    </alerts>
-    <alerts>
-        <fullName>Scope_Clearance_Decision_NO</fullName>
+        <fullName>Scope_Clearance_Decision_Yes</fullName>
         <ccEmails>spp@pnnl.gov</ccEmails>
-        <description>Scope Clearance Decision-NO</description>
+        <description>Scope Clearance Decision Yes Email Alert</description>
         <protected>false</protected>
-        <recipients>
-            <field>Project_Coordinators__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <recipients>
-            <field>Project_Manager3__c</field>
-            <type>userLookup</type>
-        </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_No</template>
+        <template>unfiled$public/Scope_Clearance_Decision_Yes</template>
     </alerts>
     <fieldUpdates>
         <fullName>Approval_Not_In_Process</fullName>
