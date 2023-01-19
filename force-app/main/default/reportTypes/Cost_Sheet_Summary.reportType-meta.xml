@@ -93,7 +93,6 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>PNNL_Budget_Reporting_Number__c</field>
             <field>Project_Manager__c</field>
             <table>Opportunity</table>
         </columns>
