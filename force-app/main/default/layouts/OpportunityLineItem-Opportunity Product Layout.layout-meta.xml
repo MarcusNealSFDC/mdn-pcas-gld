@@ -33,6 +33,10 @@
                 <behavior>Readonly</behavior>
                 <field>TotalPrice</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Summary_Amount__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -43,6 +47,10 @@
             </layoutItems>
             <layoutItems>
                 <emptySpace>true</emptySpace>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PNNL_Project_Account_No__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -94,7 +102,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000x3gg</masterLabel>
+        <masterLabel>00h3R000000ybWX</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

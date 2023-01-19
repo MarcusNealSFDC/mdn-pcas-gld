@@ -161,7 +161,16 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Work Authorizations</pluralLabel>
-    <searchLayouts></searchLayouts>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Revision_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>AFP_Month__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Fiscal_Year__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Assistant_Secretary__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Control_Point__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Change_Amount__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PNSO_Sign_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

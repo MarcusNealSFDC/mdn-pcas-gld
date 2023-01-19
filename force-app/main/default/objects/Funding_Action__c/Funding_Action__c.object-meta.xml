@@ -160,6 +160,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Funding Actions</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts></searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

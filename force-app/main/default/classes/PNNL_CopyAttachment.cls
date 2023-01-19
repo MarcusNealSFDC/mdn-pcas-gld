@@ -1,17 +1,19 @@
 public class PNNL_CopyAttachment {
   public static string clonedOppty;
 
-  public PNNL_CopyAttachment() {
-  }
-
   @InvocableMethod
   public static void CopyAttachment(List<List<Id>> opptyIds) {
     clone_opptyAttachments(opptyIds);
   }
 
   public static void clone_opptyAttachments(List<List<Id>> opptyIds) {
+    //System.debug('Original Opty: ' + opptyIds[0][0]);
     string opptyId = opptyIds[0][0];
+    //System.debug('Cloned Opty: ' + opptyIds[0][1]);
     string clonedOppty = opptyIds[0][1];
+    Set<Id> ContentDocumentIds = new Set<Id>();
+    ContentDocumentLink[] cdls = new List<ContentDocumentLink>();
+    List<Opportunity_Attachment__c> attchList = new List<Opportunity_Attachment__c>();
 
     Map<Id, Opportunity_Attachment__c> oppAttachItems = new Map<Id, Opportunity_Attachment__c>(
       [
@@ -21,80 +23,125 @@ public class PNNL_CopyAttachment {
           Funding_Type__c,
           Attachment_Type__c,
           RecordTypeId,
-          Opportunity__c
+          Opportunity__c,
+          AttachmentId__c
         FROM Opportunity_Attachment__c
         WHERE Opportunity__c = :opptyId
       ]
     );
 
+    if (oppAttachItems.isEmpty()) {
+      //System.debug('No Attachments to copy.');
+      return;
+    }
+
+    // loop at the attachment list and place content document records in a list
+    for (Opportunity_Attachment__c attachmentRecord : oppAttachItems.values()) {
+      //System.debug('Attachment Id is : ' + attachmentRecord.AttachmentId__c);
+      ContentDocumentIds.add(attachmentRecord.AttachmentId__c);
+    }
+    //System.debug('ContentDocumentIds: ' + ContentDocumentIds);
     Map<Id, ContentVersion> versionItem = new Map<Id, ContentVersion>(
-      [SELECT FIELDS(STANDARD) FROM ContentVersion WHERE IsLatest = TRUE]
+      [
+        SELECT fields(standard)
+        FROM ContentVersion
+        WHERE
+          IsLatest = TRUE
+          AND IsDeleted = FALSE
+          AND ContentDocumentId IN :ContentDocumentIds
+      ]
     );
 
-    // loop at Map values for attachments
-    for (Opportunity_Attachment__c oppAttachItem : oppAttachItems.values()) {
-      system.debug(oppAttachItem);
+    if (versionItem.isEmpty()) {
+      //System.debug('No Content Version Records found for the attachment file.');
+      return;
+    }
 
+    //debugging only
+    /*
+System.debug('Looping through the content version Map');
+for (Id cvId : versionItem.keySet()){
+System.debug('version record: '+ versionItem.get(cvId));
+}
+*/
+
+    for (Opportunity_Attachment__c attachment : oppAttachItems.values()) {
       //	Clone Attachment Record
-      Opportunity_Attachment__c oppAttachClone = oppAttachItem.clone(
+      Opportunity_Attachment__c oppAttachClone = attachment.clone(
         false,
         true,
         false,
         false
       );
-      oppAttachClone.Name = oppAttachClone.Name;
       oppAttachClone.Opportunity__c = clonedOppty;
-      insert oppAttachClone;
+      attchList.add(oppAttachClone);
+    }
+    // insert the list of attachment records
+    insert attchList;
 
-      // This select statement in the for loop is unavoidable because the query to the ContentDocumentLink object must include a where clause
-      // with either the linkedEntityId or ContentDocumentId - neither of which is available outside of a loop.
-      List<ContentDocumentLink> docLinkItems = [
-        SELECT Id, LinkedEntityId, ContentDocumentId
-        FROM ContentDocumentLink
-        WHERE LinkedEntityId = :oppAttachItem.Id
-      ];
-      system.debug('oppAttachClone:' + oppAttachClone.Id);
-      system.debug(oppAttachClone);
-
-      //Loop at document link items
-      for (ContentDocumentLink docLinkItem : docLinkItems) {
-        Id versionItemId;
-        // need to loop over the map of contentDocuments
-        // and find the right one rather than query inside the loop
-        for (ContentVersion item : versionItem.values()) {
-          if (docLinkItem.ContentDocumentId == item.ContentDocumentId)
-            versionItemId = item.Id;
+    //loop over newly created attachments and update the attachment_id field
+    for (Opportunity_Attachment__c attachment : attchList) {
+      //System.debug('ContentDocumentIds: ' + ContentDocumentIds);
+      //loop over version records to find the one where contentdocumentid = attachmentId__c
+      //
+      for (ContentVersion cv : versionItem.values()) {
+        //System.debug('version record: ' + cv);
+        if (cv.contentdocumentid == attachment.AttachmentId__c) {
+          //found the record.
+          //
+          ContentVersion versionNew = new ContentVersion(
+            VersionData = cv.VersionData,
+            Title = cv.Title,
+            ContentUrl = cv.ContentUrl,
+            PathOnClient = cv.PathOnClient
+          );
+          insert versionNew;
+          //System.debug('Number of DML statements used so far : ' + Limits.getDmlStatements());
+          //system.debug('VersionNew Id value: ' + versionNew.Id);
+          ContentVersion versionNewQueried = [
+            SELECT ContentDocumentId
+            FROM ContentVersion
+            WHERE Id = :versionNew.Id
+            LIMIT 1
+          ];
+          cdls.add(
+            new ContentDocumentLink(
+              LinkedEntityId = attachment.Id,
+              ContentDocumentId = versionNewQueried.ContentDocumentId
+            )
+          );
+          attachment.AttachmentId__c = versionNewQueried.ContentDocumentId;
+          //break out of the loop
+          break;
         }
-
-        ContentVersion versionItemfound = versionItem.get(versionItemId);
-
-        System.savepoint sp = Database.setSavepoint();
-        //	Clone ContentVersion Record
-        ContentVersion versionNew = new ContentVersion(
-          VersionData = versionItemfound.VersionData,
-          Title = versionItemfound.Title,
-          ContentUrl = versionItemfound.ContentUrl,
-          PathOnClient = versionItemfound.PathOnClient
-        );
-        insert versionNew;
-
-        //	Retrieve ContentDocumentId
-        //	This query retrieves the newly created ContentDocumentId - also unavoidable.
-        ContentVersion versionNewQueried = [
-          SELECT ContentDocumentId
-          FROM ContentVersion
-          WHERE Id = :versionNew.Id
-          LIMIT 1
-        ];
-        system.debug(versionNewQueried.ContentDocumentId);
-
-        //	Create ContentDocument Link
-        ContentDocumentLink docLinkNew = new ContentDocumentLink(
-          LinkedEntityId = oppAttachClone.Id,
-          ContentDocumentId = versionNewQueried.ContentDocumentId
-        );
-        insert docLinkNew;
       }
     }
+    //update the attachment list with new content document id ids
+    update attchList;
+    //insert the document link items to associate the new file to the opportunity
+    insert cdls;
+
+    //for debugging only
+    /*  
+* for (ContentDocumentLink cdl : docLinkItems){
+system.debug('The original doclinkedItems:');
+system.debug(cdl);
+}
+
+for (Opportunity_Attachment__c newCloneAttachment: [select id, name from Opportunity_Attachment__c where id IN :attchList]){
+system.debug('This is the new list of attachments: '+ newCloneAttachment);
+}
+
+for (ContentVersion cv: versionItem){
+system.debug('Looping through the contentversion records: '+cv);
+}
+
+    System.debug(
+      'Final number of script statements used : ' + Limits.getDmlStatements()
+    );
+    System.debug('Heap size Limit: ' + Limits.getLimitHeapSize());
+    System.debug('Final heap size: ' + Limits.getHeapSize());
+    System.debug('Number of Queries used in this apex code so far: ' + Limits.getQueries());
+*/
   }
 }
