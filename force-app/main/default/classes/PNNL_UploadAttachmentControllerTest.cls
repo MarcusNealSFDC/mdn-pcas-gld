@@ -14,7 +14,7 @@ public class PNNL_UploadAttachmentControllerTest {
     );
     insert opp;
     Opportunity_Attachment__c OppA = new Opportunity_Attachment__c(
-      Funding_Type__c = 'FIN Plan Proposal',
+      Funding_Type__c = 'ACT',
       Attachment_Type__c = 'Other',
       Opportunity__c = opp.Id
     );

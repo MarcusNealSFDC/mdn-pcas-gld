@@ -11,6 +11,11 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Animal Work</fullName>
+                <default>false</default>
+                <label>Animal Work</label>
+            </value>
+            <value>
                 <fullName>Appendix A</fullName>
                 <default>false</default>
                 <label>Appendix A</label>
