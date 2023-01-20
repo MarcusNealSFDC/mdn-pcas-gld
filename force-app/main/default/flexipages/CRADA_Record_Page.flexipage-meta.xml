@@ -85,8 +85,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.ProjectTitle__c</fieldItem>
-                <identifier>RecordProjectTitle_cField</identifier>
+                <fieldItem>Record.Project_Title2__c</fieldItem>
+                <identifier>RecordProject_Title2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -165,16 +165,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.CRADA_Title__c</fieldItem>
                 <identifier>RecordCRADA_Title_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Participants__c</fieldItem>
-                <identifier>RecordParticipants_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-c4dd3020-475c-43a7-aa2d-d3438df0c80e</name>
@@ -348,6 +338,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Animal_Research_Required__c</fieldItem>
                 <identifier>RecordAnimal_Research_Required_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Animal_Researcher__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Researcher_cField</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Animal_Research_Required__c}</leftValue>
@@ -493,16 +493,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Short_Form__c</fieldItem>
                 <identifier>RecordShort_Form_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Foreign__c</fieldItem>
-                <identifier>RecordForeign_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-4ce6f37a-2c40-4419-ac91-85c1b00daa2c</name>

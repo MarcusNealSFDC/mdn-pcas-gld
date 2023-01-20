@@ -11,10 +11,23 @@
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Opportunity.Send_Cost_Sheet</value>
+                            <value>Submit</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.PNNL_DOE_Submit_Approval_Checkbox__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
-                            <value>Submit</value>
+                            <value>Opportunity.Amendment</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Revision</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Send_Cost_Sheet</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Delete</value>
@@ -588,8 +601,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Manager3__c</fieldItem>
-                <identifier>RecordProject_Manager3_cField</identifier>
+                <fieldItem>Record.Project_Manager__c</fieldItem>
+                <identifier>RecordProject_Manager_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-22c168a8-d4e1-4315-bcce-79b3c084f0bb</name>
@@ -1760,32 +1773,6 @@
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
                 <identifier>force_relatedListSingleContainer10</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>parentFieldApiName</name>
-                    <value>Opportunity.Id</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListApiName</name>
-                    <value>AttachedContentDocuments</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListComponentOverride</name>
-                    <value>NONE</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>rowsToDisplay</name>
-                    <value>10</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer9</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>

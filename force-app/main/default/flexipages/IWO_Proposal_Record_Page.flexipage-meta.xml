@@ -8,10 +8,20 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Edit</value>
+                            <value>Submit</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.PNNL_IWO_Submit_Approval_Checkbox__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
-                            <value>Submit</value>
+                            <value>Delete</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Opportunity.Amendment</value>
@@ -302,8 +312,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Manager3__c</fieldItem>
-                <identifier>RecordProject_Manager3_cField</identifier>
+                <fieldItem>Record.Project_Manager__c</fieldItem>
+                <identifier>RecordProject_Manager_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
