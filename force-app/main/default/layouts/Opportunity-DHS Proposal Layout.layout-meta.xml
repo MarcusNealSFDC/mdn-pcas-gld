@@ -186,6 +186,10 @@
                 <field>ACT_IP_Checklist_B__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>PNNL_DHS_Submit_Approval_Checkbox__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Risk_Last_Approved__c</field>
             </layoutItems>

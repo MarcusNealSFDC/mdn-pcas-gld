@@ -16,7 +16,7 @@ public class PNNL_UploadAttachmentController {
     Opportunity_Attachment__c obj = new Opportunity_Attachment__c();
     obj.opportunity__c = opportunity.Id;
     if (test.isRunningTest()) {
-      obj.Funding_Type__c = 'Fin Plan Proposal';
+      obj.Funding_Type__c = 'ACT';
       obj.Attachment_Type__c = 'Other';
     }
     return Database.insert(obj);
@@ -40,6 +40,7 @@ public class PNNL_UploadAttachmentController {
     fileBody = Blob.valueOf(' ');
     return result;
   }
+
   private boolean handleError(database.SaveResult dbsr) {
     boolean returnValue = false;
     if (dbsr == null || !dbsr.isSuccess() || testExceptionValidation == true) {
@@ -53,6 +54,7 @@ public class PNNL_UploadAttachmentController {
     }
     return returnValue;
   }
+  
   /**
    * Upload process is:
    *  1. Insert new Opportunity_Attachment__c record
