@@ -10,7 +10,7 @@
         <field>Owner</field>
     </approvalPageFields>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <approvalActions>
             <action>
                 <name>Update_Field_to_Proposal_Prep</name>
@@ -49,7 +49,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>PNNL_IP_Approver__c</name>
@@ -85,7 +85,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>PNSO_Animal_Researcher2__c</name>
@@ -123,7 +123,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>PNSO_Coordinator_Foreign_Approver__c</name>
@@ -146,7 +146,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <approvalActions>
             <action>
                 <name>PNSO_Signed_Date</name>
