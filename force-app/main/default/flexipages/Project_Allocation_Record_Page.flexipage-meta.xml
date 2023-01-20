@@ -92,7 +92,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project__c</fieldItem>
+                <fieldItem>Record.Projects__c</fieldItem>
                 <identifier>RecordProject_cField</identifier>
             </fieldInstance>
         </itemInstances>
