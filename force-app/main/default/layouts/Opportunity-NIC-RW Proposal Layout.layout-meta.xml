@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <layoutSections>
         <customLabel>false</customLabel>
@@ -183,15 +183,19 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Client_Reference_Number__c</field>
+                <field>ACT_IP_Checklist_B__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Action_Type__c</field>
+                <field>Risk_Last_Approved__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Current_Action_Amount__c</field>
+                <field>Last_Cost_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>BO_Tax_Credit__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -303,7 +307,7 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Description Information</label>
-        <layoutColumns/>
+        <layoutColumns />
         <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
@@ -311,8 +315,8 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Other Information</label>
-        <layoutColumns/>
-        <layoutColumns/>
+        <layoutColumns />
+        <layoutColumns />
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
@@ -355,9 +359,9 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Custom Links</label>
-        <layoutColumns/>
-        <layoutColumns/>
-        <layoutColumns/>
+        <layoutColumns />
+        <layoutColumns />
+        <layoutColumns />
         <style>CustomLinks</style>
     </layoutSections>
     <platformActionList>
@@ -462,6 +466,16 @@
             <actionType>StandardButton</actionType>
             <sortOrder>19</sortOrder>
         </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Opportunity.Send_Cost_Sheet</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>20</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Opportunity.Purge_Cost_Sheet</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>21</sortOrder>
+        </platformActionListItems>
     </platformActionList>
     <quickActionList>
         <quickActionListItems>
@@ -527,7 +541,6 @@
         <fields>NAME</fields>
         <fields>Contract__c</fields>
         <fields>Effective_Date__c</fields>
-        <fields>Authorized_Amount__c</fields>
         <relatedList>PNNL_Contracts__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -542,9 +555,15 @@
         <fields>Action_Type__c</fields>
         <fields>Funding_Agreement_Date__c</fields>
         <fields>Funds_Received_Date__c</fields>
-        <fields>FAC_Amount__c</fields>
-        <fields>Amendment_Authorized_Amount__c</fields>
         <relatedList>Funding_Action__c.Proposal__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <excludeButtons>New</excludeButtons>
+        <fields>NAME</fields>
+        <fields>Funding_Type__c</fields>
+        <fields>Attachment_Type__c</fields>
+        <relatedList>Opportunity_Attachment__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedFileList</relatedList>
@@ -564,7 +583,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000x3q9</masterLabel>
+        <masterLabel>00h3R000000zLTO</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <layoutSections>
         <customLabel>true</customLabel>
@@ -35,15 +35,19 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Client_Reference_Number__c</field>
+                <field>ACT_IP_Checklist_B__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Action_Type__c</field>
+                <field>Risk_Last_Approved__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Current_Action_Amount__c</field>
+                <field>Last_Cost_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>BO_Tax_Credit__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -253,7 +257,8 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Explain How the Proposed Work is aligned with DOE / PNNL Missions.</label>
+        <label
+    >Explain How the Proposed Work is aligned with DOE / PNNL Missions.</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -266,7 +271,8 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Will the Proposed Work Adversely Impact  DOE-Assigned Projects?</label>
+        <label
+    >Will the Proposed Work Adversely Impact  DOE-Assigned Projects?</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -315,18 +321,13 @@
         <detailHeading>true</detailHeading>
         <editHeading>false</editHeading>
         <label>Custom Links</label>
-        <layoutColumns/>
-        <layoutColumns/>
-        <layoutColumns/>
+        <layoutColumns />
+        <layoutColumns />
+        <layoutColumns />
         <style>CustomLinks</style>
     </layoutSections>
     <platformActionList>
         <actionListContext>Record</actionListContext>
-        <platformActionListItems>
-            <actionName>FeedItem.TextPost</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
         <platformActionListItems>
             <actionName>FeedItem.ContentPost</actionName>
             <actionType>QuickAction</actionType>
@@ -343,14 +344,19 @@
             <sortOrder>3</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+            <actionName>FeedItem.PollPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>4</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>ChangeOwnerOne</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>5</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>PrintableView</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>6</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Edit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>7</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>DeepClone</actionName>
@@ -408,14 +414,19 @@
             <sortOrder>18</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>FeedItem.PollPost</actionName>
+            <actionName>Opportunity.Send_Cost_Sheet</actionName>
             <actionType>QuickAction</actionType>
-            <sortOrder>4</sortOrder>
+            <sortOrder>19</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>ChangeOwnerOne</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>5</sortOrder>
+            <actionName>Opportunity.Purge_Cost_Sheet</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>20</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>FeedItem.TextPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>0</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedContent>
@@ -433,6 +444,12 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
+        <fields>MemberName</fields>
+        <fields>OppAccessLevel</fields>
+        <fields>TeamMemberRole</fields>
+        <relatedList>RelatedOpportunitySalesTeam</relatedList>
+    </relatedLists>
+    <relatedLists>
         <excludeButtons>ChoosePricebook</excludeButtons>
         <excludeButtons>EditAllProduct</excludeButtons>
         <excludeButtons>MultiEdit</excludeButtons>
@@ -446,24 +463,12 @@
         <relatedList>RelatedLineItemList</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>CreatedDate</fields>
-        <fields>StepStatus</fields>
-        <fields>OriginalActor</fields>
-        <fields>Actor</fields>
-        <fields>Comments</fields>
-        <relatedList>RelatedProcessHistoryList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>MemberName</fields>
-        <fields>OppAccessLevel</fields>
-        <fields>TeamMemberRole</fields>
-        <relatedList>RelatedOpportunitySalesTeam</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>NAME</fields>
-        <fields>Funding_Amount__c</fields>
-        <fields>Funds_Recieved__c</fields>
-        <relatedList>Budget_Reporting_Entry__c.Opportunity__c</relatedList>
+        <fields>Status__c</fields>
+        <fields>Amendment_Fee_Amount__c</fields>
+        <fields>Amendment_Authorized_Amount__c</fields>
+        <fields>Notes__c</fields>
+        <relatedList>Proposed_Amendment__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -479,8 +484,14 @@
         <fields>Billing_Code__c</fields>
         <fields>Contract_Client__c</fields>
         <fields>Funding_Client__c</fields>
-        <fields>Authorized_Amount__c</fields>
         <relatedList>PNNL_Contracts__c.Proposal__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Action_Type__c</fields>
+        <fields>Funding_Agreement_Date__c</fields>
+        <fields>Funds_Received_Date__c</fields>
+        <relatedList>Funding_Action__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -490,20 +501,21 @@
         <relatedList>CRADA__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>NAME</fields>
-        <fields>Action_Type__c</fields>
-        <fields>Funding_Agreement_Date__c</fields>
-        <fields>Funds_Received_Date__c</fields>
-        <fields>FAC_Amount__c</fields>
-        <fields>Amendment_Authorized_Amount__c</fields>
-        <relatedList>Funding_Action__c.Proposal__c</relatedList>
-    </relatedLists>
-    <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <relatedList>Opportunity_Attachment__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedFileList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>CreatedDate</fields>
+        <fields>StepStatus</fields>
+        <fields>OriginalActor</fields>
+        <fields>Actor</fields>
+        <fields>Comments</fields>
+        <relatedList>RelatedProcessHistoryList</relatedList>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
@@ -512,7 +524,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000x3oc</masterLabel>
+        <masterLabel>00h3R000000zLTJ</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

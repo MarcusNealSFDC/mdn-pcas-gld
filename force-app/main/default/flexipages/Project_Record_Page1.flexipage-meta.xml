@@ -1,20 +1,31 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Project Page</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>Edit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Clone</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>collapsed</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsConfiguration</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsInNative</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
@@ -79,38 +90,18 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Market_Sector_pnnl__c</fieldItem>
+                <identifier>RecordMarket_Sector_pnnl_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Project_Manager2__c</fieldItem>
                 <identifier>RecordProject_Manager2_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PPM_Project_Status__c</fieldItem>
-                <identifier>RecordPPM_Project_Status_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Invalid__c</fieldItem>
-                <identifier>RecordInvalid_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Cost_Code__c</fieldItem>
-                <identifier>RecordCost_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -129,16 +120,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Product_Line__c</fieldItem>
-                <identifier>RecordProduct_Line_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.EPR_Signed_Date__c</fieldItem>
                 <identifier>RecordEPR_Signed_Date_cField</identifier>
             </fieldInstance>
@@ -149,8 +130,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
-                <identifier>RecordSpecial_Reporting_Funds_cField2</identifier>
+                <fieldItem>Record.Project_Account_Number__c</fieldItem>
+                <identifier>RecordProject_Account_Number_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-926beea1-b664-4f61-a64d-f80a15a0ec13</name>
@@ -173,18 +154,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.LastModifiedById</fieldItem>
-                <identifier>RecordLastModifiedByIdField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Setup_Date__c</fieldItem>
-                <identifier>RecordSetup_Date_cField</identifier>
+                <fieldItem>Record.PPM_Project_Status__c</fieldItem>
+                <identifier>RecordPPM_Project_Status_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -195,6 +166,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.CRADA__c</fieldItem>
                 <identifier>RecordCRADA_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Setup_Date__c</fieldItem>
+                <identifier>RecordSetup_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -243,48 +224,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Account_Number__c</fieldItem>
-                <identifier>RecordProject_Account_Number_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Report_Contract_Number__c</fieldItem>
-                <identifier>RecordReport_Contract_Number_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
-                <identifier>RecordSpecial_Reporting_Funds_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Country_Code__c</fieldItem>
-                <identifier>RecordCountry_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.ReportClass__c</fieldItem>
-                <identifier>RecordReportClass_cField</identifier>
+                <fieldItem>Record.Invalid__c</fieldItem>
+                <identifier>RecordInvalid_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-f42cec0e-921a-4195-919e-d2a397aded4b</name>
@@ -316,6 +257,98 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.ReportClass__c</fieldItem>
+                <identifier>RecordReportClass_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Cost_Code__c</fieldItem>
+                <identifier>RecordCost_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Country_Code__c</fieldItem>
+                <identifier>RecordCountry_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-da676584-bc9e-4c8d-84e1-f91f2ee7264d</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Product_Line__c</fieldItem>
+                <identifier>RecordProduct_Line_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Report_Contract_Number__c</fieldItem>
+                <identifier>RecordReport_Contract_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
+                <identifier>RecordSpecial_Reporting_Funds_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-debd4289-fbb3-4f0c-9df2-b7a451879feb</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-da676584-bc9e-4c8d-84e1-f91f2ee7264d</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-debd4289-fbb3-4f0c-9df2-b7a451879feb</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-95b92b87-98a0-4f7a-87a3-7ddee4557fe0</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
@@ -327,6 +360,20 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-95b92b87-98a0-4f7a-87a3-7ddee4557fe0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Project Details</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection2</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
