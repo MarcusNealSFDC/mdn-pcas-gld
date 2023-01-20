@@ -9,7 +9,7 @@
         <field>Name</field>
     </approvalPageFields>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>Project_Staff_Reviewer__c</name>
@@ -28,7 +28,7 @@
         <name>Project_Staff_Reviewer_Approval</name>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>SPP_Office_Reviewer__c</name>
@@ -50,7 +50,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <approvalActions>
             <action>
                 <name>Funding_Preparation_Approval</name>
@@ -78,7 +78,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <approvalActions>
             <action>
                 <name>Funding_Pending_Approval</name>
@@ -106,7 +106,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <type>adhoc</type>
