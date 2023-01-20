@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template for when Scope has not been cleared.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Approvals</letterhead>
+    <name>Scope Clearance Decision No</name>
+    <style>freeForm</style>
+    <subject>Scope Clearance Decision {Scope #}</subject>
+    <textOnly>Scope has not been cleared for Scope Number {Scope #}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

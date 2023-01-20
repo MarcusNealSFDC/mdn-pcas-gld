@@ -44,11 +44,16 @@
             <label>If True Trigger Apex</label>
         </rules>
     </decisions>
-    <description>A Platform Event is created before each opportunity is updated.
-Before updating an Opportunity, create a Platform Event.</description>
+    <description>A Platform Event is created before each opportunity is created or updated.
+Before creating or updating an Opportunity, create a Platform Event.</description>
     <environments>Default</environments>
+    <formulas>
+        <name>Event_Type</name>
+        <dataType>String</dataType>
+        <expression>IF(ISNEW(), &apos;Create&apos;, &apos;Update&apos;)</expression>
+    </formulas>
     <interviewLabel>Before creating an Opportunity, create a Platform Event. {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Before updating an Opportunity, create a Platform Event.</label>
+    <label>Before creating or updating an Opportunity, create a Platform Event.</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -89,7 +94,7 @@ Before updating an Opportunity, create a Platform Event.</description>
         <inputAssignments>
             <field>UpdateType__c</field>
             <value>
-                <stringValue>Update</stringValue>
+                <elementReference>Event_Type</elementReference>
             </value>
         </inputAssignments>
         <object>PNNL_Data_Event__e</object>
@@ -118,7 +123,7 @@ Before updating an Opportunity, create a Platform Event.</description>
             <targetReference>If_Approval_Process_Queue_Update_Needed</targetReference>
         </connector>
         <object>Opportunity</object>
-        <recordTriggerType>Update</recordTriggerType>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>

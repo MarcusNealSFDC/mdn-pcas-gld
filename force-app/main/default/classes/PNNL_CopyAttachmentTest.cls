@@ -82,6 +82,11 @@ private class PNNL_CopyAttachmentTest {
       LinkedEntityId = oppAttachment,
       ContentDocumentId = versionNewQueried.ContentDocumentId
     );
+    Opportunity_Attachment__c opAttach = new Opportunity_Attachment__c(
+      Id = oppAttachment,
+      AttachmentId__c = versionNewQueried.ContentDocumentId
+    );
+    update opAttach;
     insert docLinkNew;
     return docLinkNew.Id;
   }
