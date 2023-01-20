@@ -162,7 +162,17 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Projects</pluralLabel>
-    <searchLayouts></searchLayouts>
+    <searchLayouts>
+        <searchResultsAdditionalFields>ScopeNumber__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Project_Title2__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Effective_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Inactive_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Report_Contract_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Project_Manager2__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Responsible_Org__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Line__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

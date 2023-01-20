@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Non-Federal SPP</description>
     <flexiPageRegions>
@@ -11,28 +11,23 @@
                             <value>Opportunity.Amendment</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Opportunity.Revision</value>
+                            <value>Submit</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.PNNL_NF_SPP_Submit_Approval_Checkbox__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
-                            <value>Edit</value>
+                            <value>Opportunity.Revision</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Opportunity.Send_Cost_Sheet</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>ChangeOwnerOne</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Submit</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Share</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>RecordShareHierarchy</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>ChangeRecordType</value>
+                            <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Delete</value>
@@ -40,7 +35,8 @@
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>CONTAINS</operator>
-                                    <rightValue>System Administrator</rightValue>
+                                    <rightValue
+                  >System Administrator</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -60,7 +56,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
@@ -85,8 +81,10 @@
                     <name>variant</name>
                     <value>linear</value>
                 </componentInstanceProperties>
-                <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
-                <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
+                <componentName
+        >runtime_sales_pathassistant:pathAssistant</componentName>
+                <identifier
+        >runtime_sales_pathassistant_pathAssistant</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -388,6 +386,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Market_Sector_pnnl__c</fieldItem>
+                <identifier>RecordMarket_Sector_pnnl_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Organization_Code__c</fieldItem>
                 <identifier>RecordOrganization_Code_cField</identifier>
             </fieldInstance>
@@ -398,8 +406,9 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Product_Line__c</fieldItem>
-                <identifier>RecordProduct_Line_cField</identifier>
+                <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
+                <identifier
+        >RecordPNSO_Animal_Research_Required_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -408,8 +417,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Market_Sector_pnnl__c</fieldItem>
-                <identifier>RecordMarket_Sector_pnnl_cField</identifier>
+                <fieldItem>Record.Product_Line__c</fieldItem>
+                <identifier>RecordProduct_Line_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -485,7 +494,8 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNNL_Parallel_Categorization__c</fieldItem>
-                <identifier>RecordPNNL_Parallel_Categorization_cField</identifier>
+                <identifier
+        >RecordPNNL_Parallel_Categorization_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-d9172ae7-f72d-4d17-9b67-542c53fff242</name>
@@ -649,8 +659,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.ForeignTravel__c</fieldItem>
-                <identifier>RecordForeignTravel_cField</identifier>
+                <fieldItem>Record.FAC_Waiver__c</fieldItem>
+                <identifier>RecordFAC_Waiver_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -659,8 +669,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.FAC_Waiver__c</fieldItem>
-                <identifier>RecordFAC_Waiver_cField</identifier>
+                <fieldItem>Record.ForeignTravel__c</fieldItem>
+                <identifier>RecordForeignTravel_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -782,7 +792,8 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.EMSL_Facility_Capability_Use__c</fieldItem>
-                <identifier>RecordEMSL_Facility_Capability_Use_cField</identifier>
+                <identifier
+        >RecordEMSL_Facility_Capability_Use_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -835,8 +846,10 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Price_Anderson_Amendments_Act_PAAA__c</fieldItem>
-                <identifier>RecordPrice_Anderson_Amendments_Act_PAAA_cField</identifier>
+                <fieldItem
+        >Record.Price_Anderson_Amendments_Act_PAAA__c</fieldItem>
+                <identifier
+        >RecordPrice_Anderson_Amendments_Act_PAAA_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1278,8 +1291,10 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Minimum_Standard_1_Additional_Details_c__c</fieldItem>
-                <identifier>RecordMinimum_Standard_1_Additional_Details_c_cField</identifier>
+                <fieldItem
+        >Record.Minimum_Standard_1_Additional_Details_c__c</fieldItem>
+                <identifier
+        >RecordMinimum_Standard_1_Additional_Details_c_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-ef4b913a-18cf-427e-af2e-452c17ae97aa</name>
@@ -1316,8 +1331,10 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Minimum_Standard_2_Additional_Details__c</fieldItem>
-                <identifier>RecordMinimum_Standard_2_Additional_Details_cField</identifier>
+                <fieldItem
+        >Record.Minimum_Standard_2_Additional_Details__c</fieldItem>
+                <identifier
+        >RecordMinimum_Standard_2_Additional_Details_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-b13a5bd5-0e48-43e2-b508-a11343a4b62a</name>
@@ -1354,8 +1371,10 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Minimum_Standard_3_Additional_Details__c</fieldItem>
-                <identifier>RecordMinimum_Standard_3_Additional_Details_cField</identifier>
+                <fieldItem
+        >Record.Minimum_Standard_3_Additional_Details__c</fieldItem>
+                <identifier
+        >RecordMinimum_Standard_3_Additional_Details_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-432e6ffd-ffa0-436c-a39f-e1aaba502f68</name>
@@ -1392,8 +1411,10 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Minimum_Standard_4_Additional_Details__c</fieldItem>
-                <identifier>RecordMinimum_Standard_4_Additional_Details_cField</identifier>
+                <fieldItem
+        >Record.Minimum_Standard_4_Additional_Details__c</fieldItem>
+                <identifier
+        >RecordMinimum_Standard_4_Additional_Details_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-2f331295-d12c-4c4f-8540-8b57492045e0</name>
@@ -1430,8 +1451,10 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Minimum_Standard_5_Additional_Details__c</fieldItem>
-                <identifier>RecordMinimum_Standard_5_Additional_Details_cField</identifier>
+                <fieldItem
+        >Record.Minimum_Standard_5_Additional_Details__c</fieldItem>
+                <identifier
+        >RecordMinimum_Standard_5_Additional_Details_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-4f6f54bf-0a73-4c5a-89d8-c32019dc2bb6</name>
@@ -1468,8 +1491,10 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Minimum_Standard_6_Additional_Details__c</fieldItem>
-                <identifier>RecordMinimum_Standard_6_Additional_Details_cField</identifier>
+                <fieldItem
+        >Record.Minimum_Standard_6_Additional_Details__c</fieldItem>
+                <identifier
+        >RecordMinimum_Standard_6_Additional_Details_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-f50a0338-3784-491e-b209-b91f450c1171</name>
@@ -1506,8 +1531,10 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Minimum_Standard_7_Additional_Details__c</fieldItem>
-                <identifier>RecordMinimum_Standard_7_Additional_Details_cField</identifier>
+                <fieldItem
+        >Record.Minimum_Standard_7_Additional_Details__c</fieldItem>
+                <identifier
+        >RecordMinimum_Standard_7_Additional_Details_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-501ee53c-3673-47ee-98de-10b024423a01</name>
@@ -1536,7 +1563,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px; color: rgb(0, 0, 0);&quot;&gt;Project Objectives&lt;/strong&gt;&lt;/p&gt;</value>
+                    <value
+          >&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px; color: rgb(0, 0, 0);&quot;&gt;Project Objectives&lt;/strong&gt;&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText</identifier>
@@ -1550,7 +1578,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Summarize the Overall Objectives of the Project</value>
+                    <value
+          >Summarize the Overall Objectives of the Project</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection10</identifier>
@@ -1564,7 +1593,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;SPP Determination&lt;/strong&gt;&lt;/p&gt;</value>
+                    <value
+          >&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;SPP Determination&lt;/strong&gt;&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText2</identifier>
@@ -1578,7 +1608,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Explain How the Proposed Work is Consistent with or Complementary to DOE / PNNL Missions.</value>
+                    <value
+          >Explain How the Proposed Work is Consistent with or Complementary to DOE / PNNL Missions.</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection11</identifier>
@@ -1592,7 +1623,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Will the Proposed Work Adversely Impact PNNL&apos;s Execution of DOE-Assigned Projects?</value>
+                    <value
+          >Will the Proposed Work Adversely Impact PNNL&apos;s Execution of DOE-Assigned Projects?</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection12</identifier>
@@ -1606,7 +1638,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Explain how the Proposed Work Will Not Place PNNL in Direct Competition with the Domestic or Private Sector</value>
+                    <value
+          >Explain how the Proposed Work Will Not Place PNNL in Direct Competition with the Domestic or Private Sector</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection13</identifier>
@@ -1620,7 +1653,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Will the Proposed Work Create a Detrimental Future Burden of DOE Resources?</value>
+                    <value
+          >Will the Proposed Work Create a Detrimental Future Burden of DOE Resources?</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection14</identifier>
@@ -1634,7 +1668,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;Minimum Standards&lt;/strong&gt;&lt;/p&gt;</value>
+                    <value
+          >&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;Minimum Standards&lt;/strong&gt;&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText3</identifier>
@@ -1648,7 +1683,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Is This Proposal in Response to a Broad Agency Announcement or Similar Solicitation?  (if yes, please explain)</value>
+                    <value
+          >Is This Proposal in Response to a Broad Agency Announcement or Similar Solicitation?  (if yes, please explain)</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection21</identifier>
@@ -1662,7 +1698,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Will the work involve Construction or Facility Modifications? (May provide additional details as needed)</value>
+                    <value
+          >Will the work involve Construction or Facility Modifications? (May provide additional details as needed)</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection20</identifier>
@@ -1676,7 +1713,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Will the work involve Human or Animal Subjects?  (May provide details as needed)</value>
+                    <value
+          >Will the work involve Human or Animal Subjects?  (May provide details as needed)</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection19</identifier>
@@ -1690,7 +1728,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Will the work be performed outside of the US?  (May prove additional details as needed)</value>
+                    <value
+          >Will the work be performed outside of the US?  (May prove additional details as needed)</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection18</identifier>
@@ -1704,7 +1743,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Will the Work Involve the Procurement of Equipment and/or Materials?</value>
+                    <value
+          >Will the Work Involve the Procurement of Equipment and/or Materials?</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection17</identifier>
@@ -1718,7 +1758,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Are there any Special ES&amp;H Compliance Actions Required During the Course of the Project?</value>
+                    <value
+          >Are there any Special ES&amp;H Compliance Actions Required During the Course of the Project?</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection16</identifier>
@@ -1732,7 +1773,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Does the Work Have Planned Use of Subcontractors?</value>
+                    <value
+          >Does the Work Have Planned Use of Subcontractors?</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection15</identifier>
@@ -1828,7 +1870,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(15, 15, 15);&quot;&gt;IP Checklist&lt;/strong&gt;&lt;/p&gt;</value>
+                    <value
+          >&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(15, 15, 15);&quot;&gt;IP Checklist&lt;/strong&gt;&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText5</identifier>
@@ -1842,7 +1885,8 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>ALLOCATION OF PATENT RIGHTS UNDER NON-FEDERAL WORK FOR OTHERS</value>
+                    <value
+          >ALLOCATION OF PATENT RIGHTS UNDER NON-FEDERAL WORK FOR OTHERS</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection24</identifier>
@@ -1856,7 +1900,8 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>flowArguments</name>
-                    <value>[{&quot;label&quot;:&quot;opportunity_record&quot;,&quot;dataType&quot;:&quot;SObject&quot;,&quot;supportsRecordId&quot;:true,&quot;value&quot;:&quot;{!Record.Id}&quot;}]</value>
+                    <value
+          >[{&quot;label&quot;:&quot;opportunity_record&quot;,&quot;dataType&quot;:&quot;SObject&quot;,&quot;supportsRecordId&quot;:true,&quot;value&quot;:&quot;{!Record.Id}&quot;}]</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>flowLayout</name>
@@ -1950,8 +1995,28 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Coordinator_Foreign_Approver__c</fieldItem>
-                <identifier>RecordPNSO_Coordinator_Foreign_Approver_cField</identifier>
+                <fieldItem>Record.PNSO_Animal_Researcher2__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Researcher2_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue
+            >{!Record.PNSO_Animal_Research_Required__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem
+        >Record.PNSO_Coordinator_Foreign_Approver__c</fieldItem>
+                <identifier
+        >RecordPNSO_Coordinator_Foreign_Approver_cField</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Foreign_Sponsor__c}</leftValue>
@@ -2224,6 +2289,14 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Opportunity.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>OpportunityTeamMembers</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
                     <value>NONE</value>
                 </componentInstanceProperties>
@@ -2235,46 +2308,164 @@
                     <name>showActionBar</name>
                     <value>true</value>
                 </componentInstanceProperties>
-                <componentName>force:relatedListContainer</componentName>
-                <identifier>force_relatedListContainer</identifier>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer3</identifier>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
-        <name>relatedListTabContent</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>active</name>
+                    <name>parentFieldApiName</name>
+                    <value>Opportunity.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>Projects__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
                     <value>true</value>
                 </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>relatedListTabContent</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Standard.Tab.relatedLists</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>relatedListTab</identifier>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer6</identifier>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
-        <name>sidebartabs</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>tabs</name>
-                    <value>sidebartabs</value>
+                    <name>parentFieldApiName</name>
+                    <value>Opportunity.Id</value>
                 </componentInstanceProperties>
-                <componentName>flexipage:tabset</componentName>
-                <identifier>flexipage_sidebar_tabset</identifier>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>PNNL_Contracts__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Opportunity.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>Proposed_Amendments__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Opportunity.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>Funding_Actions__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Opportunity.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>CRADA__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Opportunity.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>OpportunityLineItems</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer5</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
