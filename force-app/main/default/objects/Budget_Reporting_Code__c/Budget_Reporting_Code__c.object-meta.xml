@@ -155,10 +155,9 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Budget &amp; Reporting Code</label>
     <nameField>
-        <displayFormat>{00000}</displayFormat>
-        <label>Budget &amp; Reporting Code Number</label>
+        <label>Budget &amp; Reporting Number</label>
         <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
+        <type>Text</type>
     </nameField>
     <pluralLabel>Budget &amp; Reporting Codes</pluralLabel>
     <searchLayouts></searchLayouts>

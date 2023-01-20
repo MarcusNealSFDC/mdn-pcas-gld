@@ -11,7 +11,8 @@
                             <value>Submit</value>
                             <visibilityRule>
                                 <criteria>
-                                    <leftValue>{!Record.PNNL_F_SPP_Submit_Approval_Checkbox__c}</leftValue>
+                                    <leftValue
+                  >{!Record.PNNL_F_SPP_Submit_Approval_Checkbox__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
                                 </criteria>
@@ -208,6 +209,16 @@
                 <identifier>RecordSpecial_Reporting_Funds_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNNL_Budget_Reporting_Number__c</fieldItem>
+                <identifier>RecordPNNL_Budget_Reporting_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-23d2eac5-764d-4194-bfe2-deb2e26752cb</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -324,8 +335,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Manager3__c</fieldItem>
-                <identifier>RecordProject_Manager3_cField</identifier>
+                <fieldItem>Record.Project_Manager__c</fieldItem>
+                <identifier>RecordProject_Manager_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -720,6 +731,31 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>cacheAge</name>
+                    <value>1440</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>reportFilter</name>
+                    <value>OPPORTUNITY_ID</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>reportName</name>
+                    <value>New_Opportunities_with_Products_Report_Y08</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showRefreshButton</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:reportChart</componentName>
+                <identifier>flexipage_reportChart</identifier>
+            </componentInstance>
+        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -1746,8 +1782,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Manager3__c</fieldItem>
-                <identifier>RecordProject_Manager3_cField2</identifier>
+                <fieldItem>Record.Project_Manager__c</fieldItem>
+                <identifier>RecordProject_Manager_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
