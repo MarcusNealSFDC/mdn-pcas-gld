@@ -10,4 +10,14 @@
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Project_Status</fullName>
+        <field>PPM_Project_Status__c</field>
+        <formula>&apos;Closed&apos;</formula>
+        <name>Update Project Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
 </Workflow>

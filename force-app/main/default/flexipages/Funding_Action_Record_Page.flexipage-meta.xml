@@ -228,8 +228,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.FAC_Amount2__c</fieldItem>
-                <identifier>RecordFAC_Amount2_cField</identifier>
+                <fieldItem>Record.FAC_Amount__c</fieldItem>
+                <identifier>RecordFAC_Amount_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
