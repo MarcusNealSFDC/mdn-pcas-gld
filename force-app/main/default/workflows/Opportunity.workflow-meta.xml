@@ -36,7 +36,7 @@
         <description>Scope Clearance Decision No Email Alert</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Scope_Clearance_Decision_No</template>
+        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_No</template>
     </alerts>
     <alerts>
         <fullName>Scope_Clearance_Decision_Yes</fullName>
@@ -44,7 +44,7 @@
         <description>Scope Clearance Decision Yes Email Alert</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Scope_Clearance_Decision_Yes</template>
+        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Yes</template>
     </alerts>
     <fieldUpdates>
         <fullName>Approval_Not_In_Process</fullName>
