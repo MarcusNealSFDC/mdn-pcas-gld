@@ -9,7 +9,7 @@
         <field>Name</field>
     </approvalPageFields>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>Project_Staff_Reviewer__c</name>
@@ -28,7 +28,7 @@
         <name>Project_Staff_Reviewer</name>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>SPP_Office_Reviewer__c</name>
@@ -50,7 +50,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>Accounts_Receivable_Reviewer__c</name>
@@ -72,7 +72,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>ORO_Budget_Approver__c</name>
@@ -94,7 +94,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>PNSO_Contracting_Officer__c</name>
@@ -110,10 +110,22 @@
     </approvalStep>
     <emailTemplate>PCAS_Funding_Agreement_Email_Templates/PCAS_Funding_Action_Notification_Action_Required</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Funding_Action__c.Proposal_Type__c</field>
+            <operation>notEqual</operation>
+            <value>ACT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Funding_Action__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Funding Preparation</value>
+        </criteriaItems>
+    </entryCriteria>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <label>Funding Action Approval</label>
-    <processOrder>1</processOrder>
+    <processOrder>2</processOrder>
     <recordEditability>AdminOrCurrentApprover</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>

@@ -7,7 +7,7 @@
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Required</behavior>
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
@@ -91,6 +91,22 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Close_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>User__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Accounts_Receivable_Reviewer__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SPP_Office_Reviewer__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Project_Coordinator__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -196,9 +212,47 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <platformActionList>
+        <actionListContext>Record</actionListContext>
+        <platformActionListItems>
+            <actionName>Edit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Clone</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>1</sortOrder>
+        </platformActionListItems>
+    </platformActionList>
+    <quickActionList>
+        <quickActionListItems>
+            <quickActionName>FeedItem.TextPost</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>FeedItem.ContentPost</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>FeedItem.MobileSmartActions</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>FeedItem.RypplePost</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>FeedItem.LinkPost</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>FeedItem.PollPost</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>FeedItem.QuestionPost</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>FeedItem.ContentNote</quickActionName>
+        </quickActionListItems>
+    </quickActionList>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Project_Num__c</fields>
         <fields>ALC_TOE__c</fields>
         <fields>TOE_Title__c</fields>
         <fields>Effective_Date2__c</fields>
@@ -210,7 +264,6 @@
         <fields>NAME</fields>
         <fields>SPP_Code__c</fields>
         <fields>B_R_Number__c</fields>
-        <fields>Amendment_Authorized_Amount__c</fields>
         <relatedList>Funding_Action__c.Project__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -222,8 +275,7 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Opportunity.Proposal_Number__c</fields>
-        <fields>Fund_Code__c</fields>
+        <fields>Contract_Status__c</fields>
         <fields>FY_Authorized_Amount__c</fields>
         <fields>Fee_Amount__c</fields>
         <relatedList>PNNL_Contracts__c.Project__c</relatedList>
@@ -264,7 +316,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000wx7q</masterLabel>
+        <masterLabel>00h3R0000010XBD</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

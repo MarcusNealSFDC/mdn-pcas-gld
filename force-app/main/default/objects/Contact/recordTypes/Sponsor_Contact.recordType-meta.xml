@@ -2,6 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Sponsor_Contact</fullName>
     <active>true</active>
+    <compactLayoutAssignment>Contact_Compact_Layout</compactLayoutAssignment>
     <label>Sponsor Contact</label>
     <picklistValues>
         <picklist>Contact_Type__c</picklist>

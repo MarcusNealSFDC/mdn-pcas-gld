@@ -10,15 +10,15 @@
     <description>This logo will be used for PNNL Email Templates.</description>
     <footer>
         <backgroundColor>#000000</backgroundColor>
-        <height>100</height>
+        <height>50</height>
         <horizontalAlignment>Left</horizontalAlignment>
         <verticalAlignment>Top</verticalAlignment>
     </footer>
     <header>
         <backgroundColor>#000000</backgroundColor>
-        <height>100</height>
+        <height>50</height>
         <horizontalAlignment>Left</horizontalAlignment>
-        <logo>PNNL_Portal_and_Email_logo/PNNL_Portal_and_Email_logo.png</logo>
+        <logo>PNNL_Portal_and_Email_logo/PNNL_Email_Logo_Image.png</logo>
         <verticalAlignment>Top</verticalAlignment>
     </header>
     <middleLine>
