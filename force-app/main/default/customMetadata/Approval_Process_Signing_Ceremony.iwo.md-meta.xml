@@ -4,7 +4,7 @@
     <protected>false</protected>
     <values>
         <field>Approval_Process_Dev_Name__c</field>
-        <value xsi:type="xsd:string">IWO_Approval</value>
+        <value xsi:type="xsd:string">IWO_Approval2</value>
     </values>
     <values>
         <field>PNSO_Contracting_Officer_Copy__c</field>
@@ -12,6 +12,6 @@
     </values>
     <values>
         <field>Signing_Ceremony_Copy_Long__c</field>
-        <value xsi:type="xsd:string">IWOC - By granting approval, you are validating, to the best of your knowledge, that the following funding information is accurate and correct.</value>
+        <value xsi:type="xsd:string">By granting approval, you are validating, to the best of your knowledge, that the following funding information is accurate and correct.</value>
     </values>
 </CustomMetadata>
