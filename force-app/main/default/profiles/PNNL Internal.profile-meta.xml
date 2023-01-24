@@ -10,26 +10,6 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Chatter</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Marketing</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Sales</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Service</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
     <classAccesses>
         <apexClass>ChangePasswordController</apexClass>
         <enabled>false</enabled>
@@ -380,7 +360,12 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <field>Budget_Reporting_Code__c.PNNL_Budget_Reporting_Number_External__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Budget_Reporting_Code__c.PNNL_Control_Level__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1912,7 +1897,12 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PNNL_ACT_Submit_Approval_Checkbox__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.PNNL_Budget_Reporting_Number__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1922,12 +1912,12 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PNNL_DOE_Submit_Approval_Checkbox__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PNNL_F_SPP_Submit_Approval_Checkbox__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1937,7 +1927,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PNNL_IWO_Submit_Approval_Checkbox__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1952,12 +1942,12 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PNNL_NF_SPP_Submit_Approval_Checkbox__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PNNL_NIC_RW_Submit_Approval_Checkbox__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1977,7 +1967,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PNNL_SIPP_Submit_Approval_Checkbox__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -2125,7 +2115,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Opportunity.Project_Management_Office_pnnl__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3343,9 +3333,9 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
+        <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
+        <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Budget_Reporting_Code__c</object>
