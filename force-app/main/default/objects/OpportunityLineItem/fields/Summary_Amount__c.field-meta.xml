@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Summary_Amount__c</fullName>
+    <description>Some cost sheet line items will display actual cost of line while others will display units of resource utilized.  This formula field adjusts for those lines.</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(Quantity &gt; 0, UnitPrice == 0),Quantity,TotalPrice)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Summary Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

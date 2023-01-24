@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PNNL_ACT_Submit_Approval_Checkbox__c</fullName>
+    <description>Future Recommendation is to leverage Salesforce Trigger or Flow</description>
+    <externalId>false</externalId>
+    <formula>AND(
+RecordType.Name = &quot;ACT&quot;,
+ISPICKVAL(StageName,&quot;Proposal Draft&quot;),
+NOT(ISBLANK(Project_Coordinators__c)),
+NOT(ISBLANK(Project_Manager__c)),
+NOT(ISBLANK(PNNL_ACT_Office2__c)),
+NOT(ISBLANK(PNNL_IP_Approver__c)),
+NOT(ISBLANK(PNSOACTReviewer__c)),
+NOT(ISBLANK(PNSO_Coordinator2__c)),
+NOT(ISBLANK(PNSO_Technical_Rep2__c))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ACT Submit  Approval Checkbox</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

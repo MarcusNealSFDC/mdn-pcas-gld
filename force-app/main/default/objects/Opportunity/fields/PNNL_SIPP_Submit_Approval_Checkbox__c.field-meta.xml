@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PNNL_SIPP_Submit_Approval_Checkbox__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+RecordType.Name = &quot;SIPP&quot;,
+ISPICKVAL(StageName,&quot;Proposal Draft&quot;),
+NOT(ISBLANK(Project_Coordinators__c)),
+NOT(ISBLANK(Project_Manager__c)),
+NOT(ISBLANK(Contract_Specialist2__c)),
+NOT(ISBLANK(SPP_Office_Reviewer2__c)),
+NOT(ISBLANK(PNSO_Technical_Rep2__c)),
+NOT(ISBLANK(PNSO_Contracting_Officer2__c))
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SIPP Submit Approval Checkbox</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
