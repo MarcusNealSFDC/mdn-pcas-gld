@@ -30,4 +30,8 @@
         <fullName>Scope Filed</fullName>
         <default>false</default>
     </values>
+    <values>
+        <fullName>Scope Validated</fullName>
+        <default>false</default>
+    </values>
 </BusinessProcess>

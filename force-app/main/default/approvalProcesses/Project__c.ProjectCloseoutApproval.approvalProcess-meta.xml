@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>true</active>
+    <active>false</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -13,18 +13,22 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <type>adhoc</type>
+                <name>Project_Coordinator__c</name>
+                <type>relatedUserField</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Project Manager</label>
-        <name>Project_Manager</name>
+        <label>Project Coordinator Approval</label>
+        <name>Project_Coordinator_Approval</name>
     </approvalStep>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <type>adhoc</type>
+                <name>User__c</name>
+                <type>relatedUserField</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <label>Contract Specialist</label>
         <name>Contract_Specialist</name>
@@ -36,8 +40,10 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <type>adhoc</type>
+                <name>Accounts_Receivable_Reviewer__c</name>
+                <type>relatedUserField</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <label>Accounts Receivable</label>
         <name>Accounts_Receivable</name>
@@ -49,8 +55,10 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <type>adhoc</type>
+                <name>SPP_Office_Reviewer__c</name>
+                <type>relatedUserField</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <label>SPP Office Reviewer</label>
         <name>SPP_Office_Reviewer</name>
@@ -59,9 +67,22 @@
         </rejectBehavior>
     </approvalStep>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Project__c.PPM_Project_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending Close</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Update_Project_Status</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
-    <label>ProjectApproval</label>
+    <label>ProjectCloseoutApproval</label>
     <processOrder>1</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
