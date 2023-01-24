@@ -3725,8 +3725,6 @@
         <enabled>true</enabled>
         <name>ViewHelpLink</name>
     </userPermissions>
-        <name>RunReports</name>
-    </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
         <name>SelectFilesFromSalesforce</name>

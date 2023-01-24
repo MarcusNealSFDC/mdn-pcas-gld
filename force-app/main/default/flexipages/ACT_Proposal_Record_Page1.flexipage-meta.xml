@@ -2586,7 +2586,6 @@
             <componentInstance>
                     <name>rowsToDisplay</name>
                     <value>10</value>
-                </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showActionBar</name>
                     <value>true</value>
