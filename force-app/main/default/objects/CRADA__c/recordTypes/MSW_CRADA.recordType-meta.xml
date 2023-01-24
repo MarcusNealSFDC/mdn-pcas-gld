@@ -5,6 +5,17 @@
     <description>Use this record type to create a Master Scope of Work CRADA record</description>
     <label>MSW CRADA</label>
     <picklistValues>
+        <picklist>Animal_Research_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>CRADA_Specialist__c</picklist>
         <values>
             <fullName>Monica Chavez</fullName>
@@ -14,27 +25,23 @@
     <picklistValues>
         <picklist>CRADA_Status__c</picklist>
         <values>
-            <fullName>Approved</fullName>
+            <fullName>Proposal Approved</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Cancelled</fullName>
+            <fullName>Proposal Draft</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Closed</fullName>
+            <fullName>Proposal Pending</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Draft</fullName>
+            <fullName>Proposal Preparation</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Pending</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Rejected</fullName>
+            <fullName>Proposal Submitted</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -270,7 +277,119 @@
     <picklistValues>
         <picklist>Program_Secretarial_Office__c</picklist>
         <values>
-            <fullName>TBD</fullName>
+            <fullName>AR - Advanced Research Projects Agency %E2%80%93 Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF - Office of the Chief Financial Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CI - Office of Congressional and Intergovernmental Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ED - Office of Economic Impact and Diversity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EE - Assistant Secretary for Efficiency and Renewable Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EI - Energy Information Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EM - Assistant Secretary for Environmental Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ET - Office of Energy and Threat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FE - Assistant Secretary for Fossil Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC - Office of the General Counsel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC - Office of Human Capital Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HG - Office of Hearings and Appeals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HS - Office of Health%2C Safety%2C and Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE - Office of Indian Energy Policy %26 Programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IG - Office of Inspector General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IM - Office of the Chief Information Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LM - Office of Legacy Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LP - Loan Programs Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA - Office of Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA - Administrator for National Nuclear Security Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE - Assistant Secretary for Nuclear Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OE - Office of Electricity Delivery and Energy Reliability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA - Office of Public Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PI - Assistant Secretary for Policy and International Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RC - Federal Energy Regulatory Commission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC - Office of Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE - Southeastern Power Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW - Southwestern Power Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA - Western Area Power Administration</fullName>
             <default>false</default>
         </values>
     </picklistValues>

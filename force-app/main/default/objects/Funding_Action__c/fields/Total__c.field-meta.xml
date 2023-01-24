@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Total__c</fullName>
     <externalId>false</externalId>
-    <formula>Amendment_Authorized_Amount__c + FAC_Amount__c</formula>
+    <formula>Agreement_Amount__c + FAC_Amount2__c +  Fee_Amount2__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Total</label>
     <precision>18</precision>

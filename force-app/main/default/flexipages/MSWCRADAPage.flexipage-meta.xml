@@ -4,16 +4,27 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>Edit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Clone</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>collapsed</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsConfiguration</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsInNative</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
@@ -25,6 +36,20 @@
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
                 <identifier>force_highlightsPanel</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>hideUpdateButton</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>variant</name>
+                    <value>linear</value>
+                </componentInstanceProperties>
+                <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
+                <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
             </componentInstance>
         </itemInstances>
         <name>header</name>
@@ -47,6 +72,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.CRADA_Status__c</fieldItem>
+                <identifier>RecordCRADA_Status_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.MSW__c</fieldItem>
                 <identifier>RecordMSW_cField</identifier>
             </fieldInstance>
@@ -61,8 +96,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.ProjectTitle__c</fieldItem>
-                <identifier>RecordProjectTitle_cField</identifier>
+                <fieldItem>Record.Project_Title2__c</fieldItem>
+                <identifier>RecordProject_Title2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -241,8 +276,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Principal_Investigator__c</fieldItem>
-                <identifier>RecordPrincipal_Investigator_cField</identifier>
+                <fieldItem>Record.Contract_Specialist2__c</fieldItem>
+                <identifier>RecordContract_Specialist2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -251,8 +286,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Commercialization_Manager_CM__c</fieldItem>
-                <identifier>RecordCommercialization_Manager_CM_cField</identifier>
+                <fieldItem>Record.Commercialization_Manager__c</fieldItem>
+                <identifier>RecordCommercialization_Manager_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-42f2042c-8c17-4aad-85e8-c87f91d4c34b</name>
@@ -267,16 +302,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Project_Management_Office__c</fieldItem>
                 <identifier>RecordProject_Management_Office_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Specialist__c</fieldItem>
-                <identifier>RecordContract_Specialist_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-2c3554c4-6ba8-4c1e-b19c-e5312ae5de84</name>
@@ -341,24 +366,14 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Funding_Agreement__c</fieldItem>
-                <identifier>RecordFunding_Agreement_cField</identifier>
+                <fieldItem>Record.Parallel_Categorization__c</fieldItem>
+                <identifier>RecordParallel_Categorization_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-11b5fd91-f401-40c7-8d8b-755f105c24aa</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Parallel_Categorization__c</fieldItem>
-                <identifier>RecordParallel_Categorization_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -425,6 +440,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Foreign__c</fieldItem>
                 <identifier>RecordForeign_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Animal_Research_Required__c</fieldItem>
+                <identifier>RecordAnimal_Research_Required_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-4ce6f37a-2c40-4419-ac91-85c1b00daa2c</name>
@@ -568,112 +593,6 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Appendix_B_Field_Use__c</fieldItem>
-                <identifier>RecordAppendix_B_Field_Use_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Is_Appendix_C_Applicable__c</fieldItem>
-                <identifier>RecordIs_Appendix_C_Applicable_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Appendix_C_Software_Format_Description__c</fieldItem>
-                <identifier>RecordAppendix_C_Software_Format_Description_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Appendix_D_Contractor_Background_IP__c</fieldItem>
-                <identifier>RecordAppendix_D_Contractor_Background_IP_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Appendix_D_Participant_Background_IP__c</fieldItem>
-                <identifier>RecordAppendix_D_Participant_Background_IP_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Is_Appendix_E_Applicable__c</fieldItem>
-                <identifier>RecordIs_Appendix_E_Applicable_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Appendix_E_Competitiveness_Worksheet__c</fieldItem>
-                <identifier>RecordAppendix_E_Competitiveness_Worksheet_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-fb645944-2f62-4a10-b184-9fad918362e9</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-fb645944-2f62-4a10-b184-9fad918362e9</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column8</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-66ba5fba-2bfb-4e61-83d4-82259b1142af</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>columns</name>
-                    <value>Facet-66ba5fba-2bfb-4e61-83d4-82259b1142af</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Appendix Input</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection5</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-0e7d62dd-fde6-4e24-a35b-7e63abcdafcd</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>flowArguments</name>
@@ -718,6 +637,160 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-mp8pf1whtnk</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Contract_Specialist2__c</fieldItem>
+                <identifier>RecordContract_Specialist2_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Commercialization_Manager__c</fieldItem>
+                <identifier>RecordCommercialization_Manager_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNNL_IP_Approver2__c</fieldItem>
+                <identifier>RecordPNNL_IP_Approver2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Animal_Researcher__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Researcher_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Animal_Research_Required__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-bab7cf1f-4827-46ca-bf8f-d8179476998e</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.DOE_IP_Approver2__c</fieldItem>
+                <identifier>RecordDOE_IP_Approver2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_CRADA_Coordinator2__c</fieldItem>
+                <identifier>RecordPNSO_CRADA_Coordinator2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Technical_Reviewer2__c</fieldItem>
+                <identifier>RecordPNSO_Technical_Reviewer2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Coordinator_Foreign_Approver__c</fieldItem>
+                <identifier>RecordPNSO_Coordinator_Foreign_Approver_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Foreign__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Contracting_Officer2__c</fieldItem>
+                <identifier>RecordPNSO_Contracting_Officer2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-668698eb-1d75-4348-b3f2-291eb3d74571</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-bab7cf1f-4827-46ca-bf8f-d8179476998e</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-668698eb-1d75-4348-b3f2-291eb3d74571</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-6176f53a-f4fe-4132-b21f-37135beec068</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-6176f53a-f4fe-4132-b21f-37135beec068</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Approvers</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-c101245f-615a-44d1-a944-a90145a73df9</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -769,20 +842,6 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-0e7d62dd-fde6-4e24-a35b-7e63abcdafcd</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Appendix Generation</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
                     <value>Facet-mp8pf1whtnk</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -791,6 +850,20 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-c101245f-615a-44d1-a944-a90145a73df9</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>CRADA Approval Routing</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>

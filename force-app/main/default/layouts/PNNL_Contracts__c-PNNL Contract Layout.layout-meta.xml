@@ -91,14 +91,6 @@
                 <field>FY_Authorized_Amount__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Authorized_Amount__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Balance_Order__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Scope__c</field>
             </layoutItems>
@@ -214,6 +206,18 @@
                 <behavior>Readonly</behavior>
                 <field>Billing_Sponsor_Code__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Document_Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Link__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Balance_Order2__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
@@ -267,6 +271,9 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Action_Type__c</fields>
+        <fields>Start_Date__c</fields>
+        <fields>Status__c</fields>
         <relatedList>Funding_Action__c.PNNL_Contract__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>

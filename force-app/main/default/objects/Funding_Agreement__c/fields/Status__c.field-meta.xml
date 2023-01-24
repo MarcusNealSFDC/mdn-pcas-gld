@@ -13,7 +13,7 @@
             <sorted>false</sorted>
             <value>
                 <fullName>Work Authorization Setup</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>Work Authorization Setup</label>
             </value>
             <value>
