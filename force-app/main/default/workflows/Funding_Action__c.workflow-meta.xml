@@ -9,6 +9,6 @@
             <type>userLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>unfiled$public/PCAS_Funding_Action_Notification_Action_Required</template>
+        <template>PCAS_Funding_agreement_Email_Templates/PCAS_Funding_Action_Notification_Action_Required</template>
     </alerts>
 </Workflow>
