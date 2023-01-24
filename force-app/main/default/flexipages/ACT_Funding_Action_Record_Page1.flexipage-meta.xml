@@ -625,8 +625,6 @@
                         <rightValue>ACT</rightValue>
                     </criteria>
                 </visibilityRule>
-                <fieldItem>Record.Project_Staff_Reviewer__c</fieldItem>
-                <identifier>RecordProject_Staff_Reviewer_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

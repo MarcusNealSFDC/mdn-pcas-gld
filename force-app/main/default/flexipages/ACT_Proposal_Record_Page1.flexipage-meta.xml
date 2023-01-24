@@ -2584,18 +2584,6 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                    <name>rowsToDisplay</name>
-                    <value>10</value>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer7</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
                 <componentInstanceProperties>
                     <name>parentFieldApiName</name>
                     <value>Opportunity.Id</value>

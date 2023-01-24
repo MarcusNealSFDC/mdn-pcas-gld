@@ -211,25 +211,6 @@
         <type>Flexipage</type>
         <profile>PNNL Internal</profile>
     </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>ACT_Funding_Action_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
-        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
-        <type>Flexipage</type>
-        <profile>PNNL Internal</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>ACT_Funding_Action_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
-        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
         <actionName>View</actionName>
         <content>ACT_Funding_Action_Record_Page1</content>
         <formFactor>Large</formFactor>
