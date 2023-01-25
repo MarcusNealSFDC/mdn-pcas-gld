@@ -643,6 +643,15 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Project_Staff_Reviewer__c</fieldItem>
+                <identifier>RecordProject_Staff_Reviewer_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Proposal_Type__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>ACT</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-603c82f1-a349-4c1a-bb26-afca6484af18</name>
@@ -718,8 +727,6 @@
                         <rightValue>ACT</rightValue>
                     </criteria>
                 </visibilityRule>
-                <fieldItem>Record.Accounts_Receivable_Manager__c</fieldItem>
-                <identifier>RecordAccounts_Receivable_Manager_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-0d4ac75c-6ba8-46ec-8677-2ef750360327</name>
