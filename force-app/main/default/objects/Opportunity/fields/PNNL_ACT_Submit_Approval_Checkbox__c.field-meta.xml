@@ -7,7 +7,7 @@
 RecordType.Name = &quot;ACT&quot;,
 ISPICKVAL(StageName,&quot;Proposal Draft&quot;),
 NOT(ISBLANK(Project_Coordinators__c)),
-NOT(ISBLANK(Project_Manager3__c)),
+NOT(ISBLANK(Project_Manager__c)),
 NOT(ISBLANK(PNNL_ACT_Office2__c)),
 NOT(ISBLANK(PNNL_IP_Approver__c)),
 NOT(ISBLANK(PNSOACTReviewer__c)),
