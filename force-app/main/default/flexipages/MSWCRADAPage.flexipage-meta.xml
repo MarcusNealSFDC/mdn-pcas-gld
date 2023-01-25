@@ -174,8 +174,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.CRADA_Title__c</fieldItem>
-                <identifier>RecordCRADA_Title_cField</identifier>
+                <fieldItem>Record.Property__c</fieldItem>
+                <identifier>RecordProperty_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -184,8 +184,18 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Participants__c</fieldItem>
-                <identifier>RecordParticipants_cField</identifier>
+                <fieldItem>Record.Animal_Research_Required__c</fieldItem>
+                <identifier>RecordAnimal_Research_Required_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Foreign__c</fieldItem>
+                <identifier>RecordForeign_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-c4dd3020-475c-43a7-aa2d-d3438df0c80e</name>
@@ -208,8 +218,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Property__c</fieldItem>
-                <identifier>RecordProperty_cField</identifier>
+                <fieldItem>Record.CRADA_Title__c</fieldItem>
+                <identifier>RecordCRADA_Title_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -220,6 +230,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Agreement_Term_Months__c</fieldItem>
                 <identifier>RecordAgreement_Term_Months_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Participants__c</fieldItem>
+                <identifier>RecordParticipants_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -685,6 +705,16 @@
                         <rightValue>Yes</rightValue>
                     </criteria>
                 </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.CRADA_Contracts_Manager__c</fieldItem>
+                <identifier>RecordCRADA_Contracts_Manager_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-bab7cf1f-4827-46ca-bf8f-d8179476998e</name>
