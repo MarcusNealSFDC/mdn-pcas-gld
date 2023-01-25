@@ -455,6 +455,7 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Project__c</fields>
         <fields>Funding_Amount__c</fields>
         <fields>Funds_Recieved__c</fields>
         <relatedList>Budget_Reporting_Entry__c.Opportunity__c</relatedList>
@@ -507,7 +508,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000010XFQ</masterLabel>
+        <masterLabel>00h3R0000011suC</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

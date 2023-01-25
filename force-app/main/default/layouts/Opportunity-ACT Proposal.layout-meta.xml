@@ -458,6 +458,7 @@
         <excludeButtons>MassChangeOwner</excludeButtons>
         <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
+        <fields>Attachment_Type__c</fields>
         <relatedList>Opportunity_Attachment__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -478,7 +479,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000010XFP</masterLabel>
+        <masterLabel>00h3R0000011suB</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
