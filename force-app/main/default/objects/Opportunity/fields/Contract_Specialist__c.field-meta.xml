@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Specialist__c</fullName>
+    <externalId>false</externalId>
+    <label>Contract Specialist</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abraham Mendoza</fullName>
+                <default>false</default>
+                <label>Abraham Mendoza</label>
+            </value>
+            <value>
+                <fullName>Erin Enger</fullName>
+                <default>false</default>
+                <label>Erin Enger</label>
+            </value>
+            <value>
+                <fullName>Jennifer Winston</fullName>
+                <default>false</default>
+                <label>Jennifer Winston</label>
+            </value>
+            <value>
+                <fullName>Kelli Krisher</fullName>
+                <default>false</default>
+                <label>Kelli Krisher</label>
+            </value>
+            <value>
+                <fullName>Lara Neiffer</fullName>
+                <default>false</default>
+                <label>Lara Neiffer</label>
+            </value>
+            <value>
+                <fullName>Lexi Witham</fullName>
+                <default>false</default>
+                <label>Lexi Witham</label>
+            </value>
+            <value>
+                <fullName>Mary Foraker</fullName>
+                <default>false</default>
+                <label>Mary Foraker</label>
+            </value>
+            <value>
+                <fullName>Melissa Forbes</fullName>
+                <default>false</default>
+                <label>Melissa Forbes</label>
+            </value>
+            <value>
+                <fullName>Mindy Wright</fullName>
+                <default>false</default>
+                <label>Mindy Wright</label>
+            </value>
+            <value>
+                <fullName>Shannon Davis</fullName>
+                <default>false</default>
+                <label>Shannon Davis</label>
+            </value>
+            <value>
+                <fullName>Stephanie Burrier</fullName>
+                <default>false</default>
+                <label>Stephanie Burrier</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
