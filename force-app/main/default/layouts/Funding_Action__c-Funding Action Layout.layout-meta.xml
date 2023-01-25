@@ -199,10 +199,6 @@
                 <field>SPP_Office_Reviewer__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>FAC_Amount2__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Fee_Amount2__c</field>
             </layoutItems>
@@ -221,6 +217,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>G_Invoicing_Link__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>FAC_Amount__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>
