@@ -4074,8 +4074,6 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-    <userPermissions>
-        <enabled>true</enabled>
         <name>ViewRoles</name>
     </userPermissions>
     <userPermissions>
