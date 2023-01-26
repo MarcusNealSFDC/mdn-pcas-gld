@@ -177,6 +177,26 @@
                 <identifier>RecordCRADA_Title_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Foreign__c</fieldItem>
+                <identifier>RecordForeign_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Animal_Research_Required__c</fieldItem>
+                <identifier>RecordAnimal_Research_Required_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-c4dd3020-475c-43a7-aa2d-d3438df0c80e</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -275,38 +295,38 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Principal_Investigator__c</fieldItem>
-                <identifier>RecordPrincipal_Investigator_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Commercialization_Manager_CM__c</fieldItem>
-                <identifier>RecordCommercialization_Manager_CM_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Project_Management_Office__c</fieldItem>
-                <identifier>RecordProject_Management_Office_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Contract_Specialist2__c</fieldItem>
                 <identifier>RecordContract_Specialist2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Commercialization_Manager__c</fieldItem>
+                <identifier>RecordCommercialization_Manager_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNNL_IP_Approver2__c</fieldItem>
+                <identifier>RecordPNNL_IP_Approver2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Principal_Investigators__c</fieldItem>
+                <identifier>RecordPrincipal_Investigators_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-42f2042c-8c17-4aad-85e8-c87f91d4c34b</name>
@@ -319,8 +339,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Foreign__c</fieldItem>
-                <identifier>RecordForeign_cField2</identifier>
+                <fieldItem>Record.DOE_IP_Approver2__c</fieldItem>
+                <identifier>RecordDOE_IP_Approver2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -346,16 +366,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Animal_Research_Required__c</fieldItem>
-                <identifier>RecordAnimal_Research_Required_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Animal_Researcher__c</fieldItem>
                 <identifier>RecordPNSO_Animal_Researcher_cField</identifier>
                 <visibilityRule>
@@ -365,6 +375,46 @@
                         <rightValue>Yes</rightValue>
                     </criteria>
                 </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_CRADA_Coordinator2__c</fieldItem>
+                <identifier>RecordPNSO_CRADA_Coordinator2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Technical_Reviewer2__c</fieldItem>
+                <identifier>RecordPNSO_Technical_Reviewer2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Contracting_Officer2__c</fieldItem>
+                <identifier>RecordPNSO_Contracting_Officer2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.CRADA_Contracts_Manager__c</fieldItem>
+                <identifier>RecordCRADA_Contracts_Manager_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-2c3554c4-6ba8-4c1e-b19c-e5312ae5de84</name>

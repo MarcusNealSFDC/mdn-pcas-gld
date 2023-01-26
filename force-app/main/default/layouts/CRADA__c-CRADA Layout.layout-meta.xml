@@ -179,6 +179,10 @@
                 <behavior>Edit</behavior>
                 <field>Project_Coordinator__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Principal_Investigators__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
