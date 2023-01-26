@@ -9,7 +9,7 @@
         <field>Name</field>
     </approvalPageFields>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>Project_Staff_Reviewer__c</name>
@@ -28,7 +28,7 @@
         <name>Project_Staff_Reviewer</name>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>SPP_Office_Reviewer__c</name>
@@ -50,7 +50,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>Accounts_Receivable_Reviewer__c</name>
@@ -72,7 +72,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>ORO_Budget_Approver__c</name>
@@ -94,7 +94,7 @@
         </rejectBehavior>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>PNSO_Contracting_Officer__c</name>
