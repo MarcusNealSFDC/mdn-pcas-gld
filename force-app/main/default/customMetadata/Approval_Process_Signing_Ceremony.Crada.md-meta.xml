@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <label>Funding Action Approval</label>
+    <label>Crada</label>
     <protected>false</protected>
     <values>
         <field>Approval_Process_Dev_Name__c</field>
-        <value xsi:type="xsd:string">Funding_Action_Approval2</value>
+        <value xsi:type="xsd:string">CRADA_Approvalv3</value>
     </values>
     <values>
         <field>PNSO_Contracting_Officer_Copy__c</field>
@@ -12,6 +12,6 @@
     </values>
     <values>
         <field>Signing_Ceremony_Copy_Long__c</field>
-        <value xsi:type="xsd:string">By granting approval you are validating, to the best of your knowledge, that the following funding information is accurate and correct.</value>
+        <value xsi:type="xsd:string">By granting approval you are validating, to the best of your knowledge, that this CRADA meets the requirements for your area of review.</value>
     </values>
 </CustomMetadata>

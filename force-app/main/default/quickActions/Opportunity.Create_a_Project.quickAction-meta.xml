@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description
-  >Button to create a Project with prepopulated fields</description>
+    <description>Button to create a Project with prepopulated fields</description>
     <fieldOverrides>
         <field>Account__c</field>
         <formula>Opportunity.AccountId</formula>
@@ -53,11 +52,6 @@
             <quickActionLayoutItems>
                 <emptySpace>false</emptySpace>
                 <field>Responsible_Org__c</field>
-                <uiBehavior>Required</uiBehavior>
-            </quickActionLayoutItems>
-            <quickActionLayoutItems>
-                <emptySpace>false</emptySpace>
-                <field>Report_Contract_Number__c</field>
                 <uiBehavior>Required</uiBehavior>
             </quickActionLayoutItems>
             <quickActionLayoutItems>
