@@ -9,13 +9,11 @@
             <axisBinding>y</axisBinding>
             <column>Opportunity.OpportunityLineItems$Summary_Amount__c</column>
         </chartSummaries>
-        <chartType>VerticalColumnStacked</chartType>
+        <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Opportunity.OpportunityLineItems$PricebookEntry.Product2.Family</groupingColumn>
-        <legendPosition>Bottom</legendPosition>
+        <groupingColumn>Opportunity.OpportunityLineItems$PricebookEntry.Product2.Name</groupingColumn>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Opportunity.OpportunityLineItems$PricebookEntry.Product2.Name</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -31,7 +29,7 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>Opportunity.OpportunityLineItems$Summary_Amount__c</field>
     </columns>
-    <description>Cost Sheet Summary report for DOE Direct proposal record types.</description>
+    <description>Cost Sheet Summary report for Non DOE Direct proposal record types.</description>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
@@ -40,15 +38,10 @@
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.OpportunityLineItems$PricebookEntry.Product2.Family</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
         <field>Opportunity.OpportunityLineItems$PricebookEntry.Product2.Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Cost Sheet Summary - DOE Direct</name>
+    <name>Cost Sheet Summary - Non-Direct</name>
     <params>
         <name>co</name>
         <value>0</value>
@@ -56,6 +49,6 @@
     <reportType>Cost_Sheet_Summary__c</reportType>
     <scope>organization</scope>
     <showDetails>false</showDetails>
-    <showGrandTotal>false</showGrandTotal>
+    <showGrandTotal>true</showGrandTotal>
     <showSubTotals>false</showSubTotals>
 </Report>
