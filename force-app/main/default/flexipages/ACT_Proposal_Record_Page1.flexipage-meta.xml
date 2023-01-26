@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Agreements for Commercializing Technology</description>
     <flexiPageRegions>
@@ -17,8 +17,7 @@
                             <value>Submit</value>
                             <visibilityRule>
                                 <criteria>
-                                    <leftValue
-                  >{!Record.PNNL_ACT_Submit_Approval_Checkbox__c}</leftValue>
+                                    <leftValue>{!Record.PNNL_ACT_Submit_Approval_Checkbox__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
                                 </criteria>
@@ -36,8 +35,7 @@
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>CONTAINS</operator>
-                                    <rightValue
-                  >System Administrator</rightValue>
+                                    <rightValue>System Administrator</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -82,10 +80,8 @@
                     <name>variant</name>
                     <value>linear</value>
                 </componentInstanceProperties>
-                <componentName
-        >runtime_sales_pathassistant:pathAssistant</componentName>
-                <identifier
-        >runtime_sales_pathassistant_pathAssistant</identifier>
+                <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
+                <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -474,8 +470,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNNL_Parallel_Categorization__c</fieldItem>
-                <identifier
-        >RecordPNNL_Parallel_Categorization_cField</identifier>
+                <identifier>RecordPNNL_Parallel_Categorization_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-646c7c89-8a58-44e3-81d7-df6f12c001c6</name>
@@ -658,8 +653,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Principal_Place_of_Performance__c</fieldItem>
-                <identifier
-        >RecordPrincipal_Place_of_Performance_cField</identifier>
+                <identifier>RecordPrincipal_Place_of_Performance_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -669,8 +663,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.EMSL_Facility_Capability_Use__c</fieldItem>
-                <identifier
-        >RecordEMSL_Facility_Capability_Use_cField2</identifier>
+                <identifier>RecordEMSL_Facility_Capability_Use_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -714,8 +707,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
-                <identifier
-        >RecordPNSO_Animal_Research_Required_cField</identifier>
+                <identifier>RecordPNSO_Animal_Research_Required_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -725,8 +717,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Non_Standard_Office_Equipment__c</fieldItem>
-                <identifier
-        >RecordNon_Standard_Office_Equipment_cField</identifier>
+                <identifier>RecordNon_Standard_Office_Equipment_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -736,8 +727,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Non_Standard_Equipment_Utilized__c</fieldItem>
-                <identifier
-        >RecordNon_Standard_Equipment_Utilized_cField</identifier>
+                <identifier>RecordNon_Standard_Equipment_Utilized_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-9f4e0eeb-ca28-4a3e-a528-e7987b18bc4b</name>
@@ -774,10 +764,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem
-        >Record.Price_Anderson_Amendments_Act_PAAA__c</fieldItem>
-                <identifier
-        >RecordPrice_Anderson_Amendments_Act_PAAA_cField2</identifier>
+                <fieldItem>Record.Price_Anderson_Amendments_Act_PAAA__c</fieldItem>
+                <identifier>RecordPrice_Anderson_Amendments_Act_PAAA_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -915,11 +903,26 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-e32ce238-d5d9-4938-9331-993aaeed0e72</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Costing</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>cacheAge</name>
                     <value>1440</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
+                    <value>Cost Sheet Records</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>reportFilter</name>
@@ -940,15 +943,27 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>columns</name>
-                    <value>Facet-e32ce238-d5d9-4938-9331-993aaeed0e72</value>
+                    <name>cacheAge</name>
+                    <value>1440</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Costing</value>
+                    <value>Cost Sheet Summary</value>
                 </componentInstanceProperties>
-                <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection6</identifier>
+                <componentInstanceProperties>
+                    <name>reportFilter</name>
+                    <value>Opportunity.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>reportName</name>
+                    <value>Cost_Sheet_Summary_NonDirect_eqK</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showRefreshButton</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:reportChart</componentName>
+                <identifier>flexipage_reportChart2</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -1165,10 +1180,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem
-        >Record.Minimum_Standard_3_Additional_Details__c</fieldItem>
-                <identifier
-        >RecordMinimum_Standard_3_Additional_Details_cField</identifier>
+                <fieldItem>Record.Minimum_Standard_3_Additional_Details__c</fieldItem>
+                <identifier>RecordMinimum_Standard_3_Additional_Details_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-432e6ffd-ffa0-436c-a39f-e1aaba502f68</name>
@@ -1299,10 +1312,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem
-        >Record.Organization_Conflict_of_Interest__c</fieldItem>
-                <identifier
-        >RecordOrganization_Conflict_of_Interest_cField</identifier>
+                <fieldItem>Record.Organization_Conflict_of_Interest__c</fieldItem>
+                <identifier>RecordOrganization_Conflict_of_Interest_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-4f6f54bf-0a73-4c5a-89d8-c32019dc2bb6</name>
@@ -1555,8 +1566,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value
-          >&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Project Abstract&lt;/strong&gt;&lt;/p&gt;</value>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Project Abstract&lt;/strong&gt;&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText</identifier>
@@ -1570,8 +1580,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Provide an executive summary suitable for public release.</value>
+                    <value>Provide an executive summary suitable for public release.</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection10</identifier>
@@ -1585,8 +1594,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value
-          >&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;ACT Determinations&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</value>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;ACT Determinations&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText2</identifier>
@@ -1600,8 +1608,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Explain How the Proposed Work is Consistent with or Complementary to DOE / PNNL Missions.</value>
+                    <value>Explain How the Proposed Work is Consistent with or Complementary to DOE / PNNL Missions.</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection11</identifier>
@@ -1615,8 +1622,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Will the Proposed Work Adversely Impact PNNL&apos;s Execution of DOE-Assigned Projects?</value>
+                    <value>Will the Proposed Work Adversely Impact PNNL&apos;s Execution of DOE-Assigned Projects?</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection12</identifier>
@@ -1630,8 +1636,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Explain how the Proposed Work Will Not Place PNNL in Direct Competition with the Domestic or Private Sector</value>
+                    <value>Explain how the Proposed Work Will Not Place PNNL in Direct Competition with the Domestic or Private Sector</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection13</identifier>
@@ -1645,8 +1650,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Will the Proposed Work Create a Detrimental Future Burden of DOE Resources?</value>
+                    <value>Will the Proposed Work Create a Detrimental Future Burden of DOE Resources?</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection14</identifier>
@@ -1660,8 +1664,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value
-          >&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;ACT Disclosure Requirements&lt;/strong&gt;&lt;/p&gt;</value>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;ACT Disclosure Requirements&lt;/strong&gt;&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText3</identifier>
@@ -1675,8 +1678,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Statement of Consideration. If this proposal includes a fee, charges beyond full cost recovery, or other compensation, address the risk that is being assumed</value>
+                    <value>Statement of Consideration. If this proposal includes a fee, charges beyond full cost recovery, or other compensation, address the risk that is being assumed</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection7</identifier>
@@ -1690,8 +1692,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Will the work involve Human or Animal Subjects?  (May provide details as needed)</value>
+                    <value>Will the work involve Human or Animal Subjects?  (May provide details as needed)</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection19</identifier>
@@ -1705,8 +1706,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Will the work be performed for a foreign entity, or foreign owned or controlled entity?</value>
+                    <value>Will the work be performed for a foreign entity, or foreign owned or controlled entity?</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection21</identifier>
@@ -1720,8 +1720,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Does the work involve an high risk or special ES&amp;H compliance actions required during the course of the project e.g., permits for use of hazardous materials, environmental assessments, environmental protection measures, etc?</value>
+                    <value>Does the work involve an high risk or special ES&amp;H compliance actions required during the course of the project e.g., permits for use of hazardous materials, environmental assessments, environmental protection measures, etc?</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection20</identifier>
@@ -1735,8 +1734,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Does the work involve a classified or sensitive subject matter?</value>
+                    <value>Does the work involve a classified or sensitive subject matter?</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection18</identifier>
@@ -1750,8 +1748,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Organization Conflict of Interest Requirements under ACT</value>
+                    <value>Organization Conflict of Interest Requirements under ACT</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection17</identifier>
@@ -1765,8 +1762,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Full Disclosure, Client Certification of ACT Mechanism Selection</value>
+                    <value>Full Disclosure, Client Certification of ACT Mechanism Selection</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection16</identifier>
@@ -1780,8 +1776,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Priority of Work - Is this proposed work given more priority than other work at PNNL?</value>
+                    <value>Priority of Work - Is this proposed work given more priority than other work at PNNL?</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection15</identifier>
@@ -1795,8 +1790,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Does the work involve a Battelle Corporate affiliate, subsidiary or firm in which Battelle has an equity interest?</value>
+                    <value>Does the work involve a Battelle Corporate affiliate, subsidiary or firm in which Battelle has an equity interest?</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection23</identifier>
@@ -1866,8 +1860,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value
-          >&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px; color: rgb(116, 116, 116);&quot;&gt;Additional Comments&lt;/strong&gt;&lt;/p&gt;</value>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px; color: rgb(116, 116, 116);&quot;&gt;Additional Comments&lt;/strong&gt;&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText6</identifier>
@@ -2005,8 +1998,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >ALLOCATION OF PATENT RIGHTS UNDER NON-FEDERAL WORK FOR OTHERS</value>
+                    <value>ALLOCATION OF PATENT RIGHTS UNDER NON-FEDERAL WORK FOR OTHERS</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection24</identifier>
@@ -2020,8 +2012,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value
-          >Please provide an explanation for your selection below.</value>
+                    <value>Please provide an explanation for your selection below.</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection32</identifier>
@@ -2035,8 +2026,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>flowArguments</name>
-                    <value
-          >[{&quot;label&quot;:&quot;opportunity_record&quot;,&quot;dataType&quot;:&quot;SObject&quot;,&quot;supportsRecordId&quot;:true,&quot;value&quot;:&quot;{!Record.Id}&quot;}]</value>
+                    <value>[{&quot;label&quot;:&quot;opportunity_record&quot;,&quot;dataType&quot;:&quot;SObject&quot;,&quot;supportsRecordId&quot;:true,&quot;value&quot;:&quot;{!Record.Id}&quot;}]</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>flowLayout</name>
@@ -2154,8 +2144,7 @@
                 <identifier>RecordPNSO_Animal_Researcher2_cField</identifier>
                 <visibilityRule>
                     <criteria>
-                        <leftValue
-            >{!Record.PNSO_Animal_Research_Required__c}</leftValue>
+                        <leftValue>{!Record.PNSO_Animal_Research_Required__c}</leftValue>
                         <operator>EQUAL</operator>
                         <rightValue>Yes</rightValue>
                     </criteria>
@@ -2168,10 +2157,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem
-        >Record.PNSO_Coordinator_Foreign_Approver__c</fieldItem>
-                <identifier
-        >RecordPNSO_Coordinator_Foreign_Approver_cField</identifier>
+                <fieldItem>Record.PNSO_Coordinator_Foreign_Approver__c</fieldItem>
+                <identifier>RecordPNSO_Coordinator_Foreign_Approver_cField</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.Foreign_Sponsor__c}</leftValue>
