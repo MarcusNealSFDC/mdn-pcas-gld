@@ -47,6 +47,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>ObjectType__c</field>
+            <value>
+                <stringValue>Opportunity</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>RecordId__c</field>
             <value>
                 <elementReference>recordId</elementReference>
