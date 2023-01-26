@@ -109,8 +109,10 @@
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <type>adhoc</type>
+                <name>Accounts_Receivable_Manager__c</name>
+                <type>relatedUserField</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <label>Accounts Receivable Manager</label>
         <name>Accounts_Receivable_Manager</name>
@@ -129,7 +131,7 @@
         <criteriaItems>
             <field>Funding_Action__c.Status__c</field>
             <operation>equals</operation>
-            <value>Funding Received</value>
+            <value>Funding Preparation</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
@@ -144,8 +146,14 @@
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Update_to_Funding_Pending</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
     <label>Funding Action Approval - ACT</label>
-    <processOrder>2</processOrder>
+    <processOrder>1</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>
