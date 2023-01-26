@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
         <application>PNNL_Proposal</application>
@@ -316,27 +316,32 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Developer_Name__c</field>
+        <field
+    >Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Process_Developer_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Step_Developer_Name__c</field>
+        <field
+    >Approval_Process_Node_To_Queue_Mapping__mdt.Approval_Step_Developer_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Approval_Process_Node_To_Queue_Mapping__mdt.Replacement_Queue__c</field>
+        <field
+    >Approval_Process_Node_To_Queue_Mapping__mdt.Replacement_Queue__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Approval_Process_Signing_Ceremony__mdt.PNSO_Contracting_Officer_Copy__c</field>
+        <field
+    >Approval_Process_Signing_Ceremony__mdt.PNSO_Contracting_Officer_Copy__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Approval_Process_Signing_Ceremony__mdt.Signing_Ceremony_Copy_Long__c</field>
+        <field
+    >Approval_Process_Signing_Ceremony__mdt.Signing_Ceremony_Copy_Long__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -361,7 +366,8 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Budget_Reporting_Code__c.PNNL_Budget_Reporting_Number_External__c</field>
+        <field
+    >Budget_Reporting_Code__c.PNNL_Budget_Reporting_Number_External__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2307,7 +2313,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.ROI_Analysis_Completed__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -2330,7 +2336,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Opportunity.Revison__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2437,7 +2443,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Scope__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -3320,16 +3326,20 @@
         <layout>Alpha_Code__c-Alpha Code Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Approval_Process_Node_To_Queue_Mapping__mdt-Approval Process Node To Queue Mapping Layout</layout>
+        <layout
+    >Approval_Process_Node_To_Queue_Mapping__mdt-Approval Process Node To Queue Mapping Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Approval_Process_Signing_Ceremony__mdt-Approval Process Signing Ceremony Layout</layout>
+        <layout
+    >Approval_Process_Signing_Ceremony__mdt-Approval Process Signing Ceremony Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
+        <layout
+    >Budget_Reporting_Code__c-Budget %26 Reporting Code Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
+        <layout
+    >Budget_Reporting_Entry__c-Budget %26 Reporting Entry Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CRADA_Attachment__c-Attachment Layout</layout>
