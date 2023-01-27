@@ -27,9 +27,6 @@
                             <value>Opportunity.Revision</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Opportunity.Send_Cost_Sheet</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Delete</value>
                             <visibilityRule>
                                 <criteria>
@@ -38,6 +35,12 @@
                                     <rightValue>System Administrator</rightValue>
                                 </criteria>
                             </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Send_Cost_Sheet</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Purge_Cost_Sheet</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
