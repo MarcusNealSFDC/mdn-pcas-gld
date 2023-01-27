@@ -51,4 +51,14 @@
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_to_Funding_Pending</fullName>
+        <field>Status__c</field>
+        <literalValue>Funding Pending</literalValue>
+        <name>Update to Funding Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
 </Workflow>
