@@ -218,16 +218,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.FAC_Amount__c</fieldItem>
-                <identifier>RecordFAC_Amount_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Total__c</fieldItem>
                 <identifier>RecordTotal_cField</identifier>
             </fieldInstance>
@@ -616,8 +606,15 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Staff_Reviewer__c</fieldItem>
-                <identifier>RecordProject_Staff_Reviewer_cField</identifier>
+                <fieldItem>Record.Contract_Specialist__c</fieldItem>
+                <identifier>RecordContract_Specialist_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Proposal_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>ACT</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -636,8 +633,15 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Specialist__c</fieldItem>
-                <identifier>RecordContract_Specialist_cField</identifier>
+                <fieldItem>Record.Project_Staff_Reviewer__c</fieldItem>
+                <identifier>RecordProject_Staff_Reviewer_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Proposal_Type__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>ACT</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-603c82f1-a349-4c1a-bb26-afca6484af18</name>
@@ -670,8 +674,49 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Accounts_Receivable_Manager__c</fieldItem>
-                <identifier>RecordAccounts_Receivable_Manager_cField</identifier>
+                <fieldItem>Record.ORO_Budget_Approver__c</fieldItem>
+                <identifier>RecordORO_Budget_Approver_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Proposal_Type__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>ACT</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_SPP_Office_Reviewer__c</fieldItem>
+                <identifier>RecordPNSO_SPP_Office_Reviewer_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Proposal_Type__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>ACT</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Contracting_Officer__c</fieldItem>
+                <identifier>RecordPNSO_Contracting_Officer_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Proposal_Type__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>ACT</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-0d4ac75c-6ba8-46ec-8677-2ef750360327</name>
@@ -705,6 +750,24 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>flowArguments</name>
+                    <value>[{&quot;label&quot;:&quot;recordId&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;supportsRecordId&quot;:true,&quot;value&quot;:&quot;{!Record.Id}&quot;}]</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>flowLayout</name>
+                    <value>oneColumn</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>flowName</name>
+                    <value>PNNL_Signing_Ceremony</value>
+                </componentInstanceProperties>
+                <componentName>flowruntime:interview</componentName>
+                <identifier>flowruntime_interview</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>columns</name>
                     <value>Facet-e6597312-7a14-49ef-93a8-7534f780fe33</value>
                 </componentInstanceProperties>
@@ -714,6 +777,32 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Funding_Action__c.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>ProcessSteps</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer3</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-f00r5d2yxs</name>
@@ -788,6 +877,14 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Funding_Action__c.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>AttachedContentDocuments</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
                     <value>NONE</value>
                 </componentInstanceProperties>
@@ -799,8 +896,8 @@
                     <name>showActionBar</name>
                     <value>true</value>
                 </componentInstanceProperties>
-                <componentName>force:relatedListContainer</componentName>
-                <identifier>force_relatedListContainer</identifier>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>

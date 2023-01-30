@@ -39,13 +39,13 @@
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>Project_Manager3__c</name>
+                <name>Project_Coordinators__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Project Manager Approval</label>
-        <name>Project_Manager_Approval</name>
+        <label>Project Coordinator Approval</label>
+        <name>Project_Coordinator_Approval2</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
