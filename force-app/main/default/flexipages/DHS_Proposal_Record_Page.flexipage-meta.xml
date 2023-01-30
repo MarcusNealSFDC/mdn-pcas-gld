@@ -17,7 +17,7 @@
                             <value>Submit</value>
                             <visibilityRule>
                                 <criteria>
-                                    <leftValue>{!Record.PNNL_DHS_Submit_Approval_Checkbox__c}</leftValue>v
+                                    <leftValue>{!Record.PNNL_DHS_Submit_Approval_Checkbox__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
                                 </criteria>
@@ -342,8 +342,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Manager__c</fieldItem>
-                <identifier>RecordProject_Manager_cField</identifier>
+                <fieldItem>Record.Project_Manager3__c</fieldItem>
+                <identifier>RecordProject_Manager3_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1493,8 +1493,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Manager__c</fieldItem>
-                <identifier>RecordProject_Manager_cField2</identifier>
+                <fieldItem>Record.Project_Manager3__c</fieldItem>
+                <identifier>RecordProject_Manager3_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
