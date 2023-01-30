@@ -32,15 +32,6 @@
         <field>Opportunity.OpportunityLineItems$Summary_Amount__c</field>
     </columns>
     <description>Cost Sheet Summary report for DOE Direct proposal record types.</description>
-    <filter>
-        <criteriaItems>
-            <column>Opportunity$Id</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>0063R0000029mOW</value>
-        </criteriaItems>
-    </filter>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
@@ -57,7 +48,7 @@
         <field>Opportunity.OpportunityLineItems$PricebookEntry.Product2.Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>DOE Direct - Cost Sheet Summary</name>
+    <name>Cost Sheet Summary - DOE Direct</name>
     <params>
         <name>co</name>
         <value>0</value>
