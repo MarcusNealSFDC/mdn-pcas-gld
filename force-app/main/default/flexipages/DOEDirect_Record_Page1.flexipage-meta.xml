@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Lightning Record Page for DOE Direct</description>
     <flexiPageRegions>
@@ -14,8 +14,7 @@
                             <value>Submit</value>
                             <visibilityRule>
                                 <criteria>
-                                    <leftValue
-                  >{!Record.PNNL_DOE_Submit_Approval_Checkbox__c}</leftValue>
+                                    <leftValue>{!Record.PNNL_DOE_Submit_Approval_Checkbox__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
                                 </criteria>
@@ -28,18 +27,20 @@
                             <value>Opportunity.Revision</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Opportunity.Send_Cost_Sheet</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Delete</value>
                             <visibilityRule>
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>CONTAINS</operator>
-                                    <rightValue
-                  >System Administrator</rightValue>
+                                    <rightValue>System Administrator</rightValue>
                                 </criteria>
                             </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Send_Cost_Sheet</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Purge_Cost_Sheet</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
@@ -82,10 +83,8 @@
                     <name>variant</name>
                     <value>linear</value>
                 </componentInstanceProperties>
-                <componentName
-        >runtime_sales_pathassistant:pathAssistant</componentName>
-                <identifier
-        >runtime_sales_pathassistant_pathAssistant</identifier>
+                <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
+                <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -466,8 +465,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Program_Announcement_Number__c</fieldItem>
-                <identifier
-        >RecordProgram_Announcement_Number_cField</identifier>
+                <identifier>RecordProgram_Announcement_Number_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-89d3fc14-37e9-4bf0-b9c2-eb5628e054f5</name>
@@ -521,10 +519,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem
-        >Record.Headquarters_Operations_Office_Manager__c</fieldItem>
-                <identifier
-        >RecordHeadquarters_Operations_Office_Manager_cField</identifier>
+                <fieldItem>Record.Headquarters_Operations_Office_Manager__c</fieldItem>
+                <identifier>RecordHeadquarters_Operations_Office_Manager_cField</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.FWP__c}</leftValue>
@@ -541,8 +537,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.BER_Scientific_Focus_Area_SFA__c</fieldItem>
-                <identifier
-        >RecordBER_Scientific_Focus_Area_SFA_cField</identifier>
+                <identifier>RecordBER_Scientific_Focus_Area_SFA_cField</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.FWP__c}</leftValue>
@@ -558,10 +553,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem
-        >Record.DOE_Field_Element_Work_Proposal_Review__c</fieldItem>
-                <identifier
-        >RecordDOE_Field_Element_Work_Proposal_Review_cField</identifier>
+                <fieldItem>Record.DOE_Field_Element_Work_Proposal_Review__c</fieldItem>
+                <identifier>RecordDOE_Field_Element_Work_Proposal_Review_cField</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.FWP__c}</leftValue>
@@ -578,8 +571,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNNL_Work_Proposal_Manager2__c</fieldItem>
-                <identifier
-        >RecordPNNL_Work_Proposal_Manager2_cField</identifier>
+                <identifier>RecordPNNL_Work_Proposal_Manager2_cField</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.FWP__c}</leftValue>
@@ -962,8 +954,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Relationship_to_Other_Projects__c</fieldItem>
-                <identifier
-        >RecordRelationship_to_Other_Projects_cField</identifier>
+                <identifier>RecordRelationship_to_Other_Projects_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1002,10 +993,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem
-        >Record.Performance_Measures_Expectations__c</fieldItem>
-                <identifier
-        >RecordPerformance_Measures_Expectations_cField</identifier>
+                <fieldItem>Record.Performance_Measures_Expectations__c</fieldItem>
+                <identifier>RecordPerformance_Measures_Expectations_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1184,6 +1173,32 @@
                 <identifier>flexipage_reportChart</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Opportunity.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>OpportunityLineItems</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>ADVGRID</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer9</identifier>
+            </componentInstance>
+        </itemInstances>
         <name>Facet-2e67a03d-05d7-4fd1-9aaf-c7435a529a3d</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -1319,8 +1334,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>flowArguments</name>
-                    <value
-          >[{&quot;label&quot;:&quot;opportunity_record&quot;,&quot;dataType&quot;:&quot;SObject&quot;,&quot;supportsRecordId&quot;:true,&quot;value&quot;:&quot;{!Record.Id}&quot;}]</value>
+                    <value>[{&quot;label&quot;:&quot;opportunity_record&quot;,&quot;dataType&quot;:&quot;SObject&quot;,&quot;supportsRecordId&quot;:true,&quot;value&quot;:&quot;{!Record.Id}&quot;}]</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>flowLayout</name>
@@ -1381,8 +1395,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNNL_Work_Proposal_Manager2__c</fieldItem>
-                <identifier
-        >RecordPNNL_Work_Proposal_Manager2_cField2</identifier>
+                <identifier>RecordPNNL_Work_Proposal_Manager2_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
