@@ -129,8 +129,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Name</fieldItem>
-                <identifier>RecordNameField</identifier>
+                <fieldItem>Record.Opportunity__c</fieldItem>
+                <identifier>RecordOpportunity_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -139,8 +139,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Opportunity__c</fieldItem>
-                <identifier>RecordOpportunity_cField</identifier>
+                <fieldItem>Record.Name</fieldItem>
+                <identifier>RecordNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -191,6 +191,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Project_Account_Number__c</fieldItem>
                 <identifier>RecordProject_Account_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNNL_Contract__c</fieldItem>
+                <identifier>RecordPNNL_Contract_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-926beea1-b664-4f61-a64d-f80a15a0ec13</name>
@@ -283,6 +293,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Cost_Code__c</fieldItem>
+                <identifier>RecordCost_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Invalid__c</fieldItem>
                 <identifier>RecordInvalid_cField</identifier>
             </fieldInstance>
@@ -331,16 +351,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Cost_Code__c</fieldItem>
-                <identifier>RecordCost_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Country_Code__c</fieldItem>
                 <identifier>RecordCountry_Code_cField</identifier>
             </fieldInstance>
@@ -357,16 +367,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Product_Line__c</fieldItem>
                 <identifier>RecordProduct_Line_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Report_Contract_Number__c</fieldItem>
-                <identifier>RecordReport_Contract_Number_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
