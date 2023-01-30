@@ -12,6 +12,6 @@
     </values>
     <values>
         <field>Signing_Ceremony_Copy_Long__c</field>
-        <value xsi:type="xsd:string">SPP- By granting approval, you are validating, to the best of your knowledge, this proposal meets the requirements of Clause H-29 for your area of review.</value>
+        <value xsi:type="xsd:string">By granting approval, you are validating, to the best of your knowledge, this proposal meets the requirements of Clause H-29 for your area of review.</value>
     </values>
 </CustomMetadata>

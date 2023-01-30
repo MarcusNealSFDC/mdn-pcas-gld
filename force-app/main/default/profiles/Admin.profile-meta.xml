@@ -706,6 +706,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CRADA__c.Principal_Investigators__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CRADA__c.Program_Secretarial_Office__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -830,7 +835,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Funding_Action__c.Contract_Amendment__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -842,11 +847,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Funding_Action__c.Document_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Action__c.FAC_Amount2__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3087,6 +3087,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Project__c.Report_Class__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Report_Contract_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Report_Period__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
