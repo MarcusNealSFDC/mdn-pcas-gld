@@ -4025,6 +4025,10 @@
         <name>ContentWorkspaces</name>
     </userPermissions>
     <userPermissions>
+        <enabled>false</enabled>
+        <name>ConvertLeads</name>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>CreateCustomizeFilters</name>
     </userPermissions>
@@ -4073,7 +4077,9 @@
         <name>ExportReport</name>
     </userPermissions>
     <userPermissions>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
+        <name>ImportPersonal</name>
+    </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
         <name>ViewRoles</name>
