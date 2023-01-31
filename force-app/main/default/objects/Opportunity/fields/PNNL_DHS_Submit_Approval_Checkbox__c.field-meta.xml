@@ -5,7 +5,7 @@
     <formula>AND(
 RecordType.Name = &quot;DHS&quot;,
 ISPICKVAL(StageName,&quot;Proposal Draft&quot;),
-NOT(ISBLANK(Project_Manager__c)),
+NOT(ISBLANK(Project_Manager3__c)),
 NOT(ISBLANK(Project_Coordinators__c)),
 NOT(ISBLANK(Contract_Specialist2__c)),
 NOT(ISBLANK(SPP_Office_Reviewer2__c)),
