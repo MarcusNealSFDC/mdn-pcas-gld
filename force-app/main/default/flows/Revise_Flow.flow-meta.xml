@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
         <name>Copy_Attachment</name>
         <label>Copy Attachment</label>
-        <locationX>176</locationX>
-        <locationY>638</locationY>
+        <locationX>50</locationX>
+        <locationY>758</locationY>
         <actionName>PNNL_CopyAttachment</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -21,8 +21,8 @@
     <actionCalls>
         <name>Open</name>
         <label>OpenNewRecord</label>
-        <locationX>176</locationX>
-        <locationY>758</locationY>
+        <locationX>182</locationX>
+        <locationY>974</locationY>
         <actionName>c:OpenOpportunity</actionName>
         <actionType>component</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -38,7 +38,7 @@
     <assignments>
         <name>AssignIdsToList</name>
         <label>AssignIdsToList</label>
-        <locationX>176</locationX>
+        <locationX>182</locationX>
         <locationY>518</locationY>
         <assignmentItems>
             <assignToReference>OpportunityIdList</assignToReference>
@@ -55,19 +55,19 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Copy_Attachment</targetReference>
+            <targetReference>DOEIWO</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>AssignRecordValues</name>
         <label>AssignRecordValues</label>
-        <locationX>176</locationX>
+        <locationX>182</locationX>
         <locationY>278</locationY>
         <assignmentItems>
             <assignToReference>RecordToClone.Id</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue />
+                <stringValue></stringValue>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -95,6 +95,38 @@
             <targetReference>CreateOpportunityRecord</targetReference>
         </connector>
     </assignments>
+    <decisions>
+        <name>DOEIWO</name>
+        <label>DOEIWO</label>
+        <locationX>182</locationX>
+        <locationY>638</locationY>
+        <defaultConnector>
+            <targetReference>Open</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ISDOEIWO</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>RecordToClone.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DOE Direct</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>RecordToClone.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>IWO</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_Attachment</targetReference>
+            </connector>
+            <label>ISDOEIWO</label>
+        </rules>
+    </decisions>
     <environments>Default</environments>
     <interviewLabel>Revise Flow {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Revise Flow</label>
@@ -120,7 +152,7 @@
     <recordCreates>
         <name>CreateOpportunityRecord</name>
         <label>CreateOpportunityRecord</label>
-        <locationX>176</locationX>
+        <locationX>182</locationX>
         <locationY>398</locationY>
         <connector>
             <targetReference>AssignIdsToList</targetReference>
@@ -130,10 +162,9 @@
     <recordLookups>
         <name>GetRecords</name>
         <label>GetRecords</label>
-        <locationX>176</locationX>
+        <locationX>182</locationX>
         <locationY>158</locationY>
-        <assignNullValuesIfNoRecordsFound
-    >false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>AssignRecordValues</targetReference>
         </connector>
@@ -150,7 +181,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
-        <locationX>50</locationX>
+        <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>GetRecords</targetReference>
