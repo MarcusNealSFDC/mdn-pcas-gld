@@ -74,7 +74,7 @@ jobs:
         id: ScratchOrgCreate
         if: github.event_name == 'pull_request'
         run: |
-          node_modules/sfdx-cli/bin/run force:org:create -a PkgScratch -s -f config/shape-scratch-def.json -v devhub
+          node_modules/sfdx-cli/bin/run force:org:create -a PkgScratch -s -f config/shape-scratch-def.json -v devhub -d 1 -w 10
           node_modules/sfdx-cli/bin/run force:source:push -f -u PkgScratch --ignorewarnings
 
       - name: Collect Results
