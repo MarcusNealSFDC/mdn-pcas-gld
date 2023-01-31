@@ -111,11 +111,11 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>Report_Period__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>EPR_Signed_Date__c</field>
             </layoutItems>
             <layoutItems>
@@ -165,7 +165,7 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>Responsible_Org__c</field>
             </layoutItems>
             <layoutItems>
@@ -316,7 +316,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000011dlq</masterLabel>
+        <masterLabel>00h3R0000012ai7</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
