@@ -1024,6 +1024,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Funding_Action__c.PNNL_SPP_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Funding_Action__c.PNSO_Contracting_Officer__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2869,6 +2874,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>PNNL_Contracts__c.Funding_Action_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>PNNL_Contracts__c.Funding_Action__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>PNNL_Contracts__c.Funding_Client_Reference__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2955,6 +2970,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>PNNL_Contracts__c.PNNL_Limited_Term_Funds__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Contracts__c.PNNL_SPP_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
