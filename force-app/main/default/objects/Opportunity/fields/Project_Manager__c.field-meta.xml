@@ -6,7 +6,7 @@
     <label>Project Manager</label>
     <referenceTo>Contact</referenceTo>
     <relationshipLabel>Opportunities (Project Manager)</relationshipLabel>
-    <relationshipName>Project_Manager</relationshipName>
+    <relationshipName>Opportunities12</relationshipName>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>

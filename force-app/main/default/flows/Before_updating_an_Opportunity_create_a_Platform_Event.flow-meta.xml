@@ -1,11 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Update_Approval_Process_User_to_Queue</name>
+        <label>Update Approval Process User to Queue</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>PNNL_ApprovalProcessUpdateToQueueHandler</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Set_Triggering_Field_to_False</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>tmpObjectIDs</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
     <apiVersion>55.0</apiVersion>
-    <description>A Platform Event is created before each opportunity is updated.
-Before updating an Opportunity, create a Platform Event.</description>
+    <decisions>
+        <name>If_Approval_Process_Queue_Update_Needed</name>
+        <label>If Approval Process Queue Update Needed</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>If_Opportunity_Does_Not_Have_a_Default_Pricebook</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_True_Trigger_Apex</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Trigger_Approval_Process_Queue_Update__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Approval_Process_User_to_Queue</targetReference>
+            </connector>
+            <label>If True Trigger Apex</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Evaluate whether or not a default Pricebook has been assigned to the Opportunity.</description>
+        <name>If_Opportunity_Does_Not_Have_a_Default_Pricebook</name>
+        <label>If Opportunity Does Not Have a Default Pricebook</label>
+        <locationX>182</locationX>
+        <locationY>791</locationY>
+        <defaultConnector>
+            <targetReference>platform_event</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_Empty_Pricebook2Id_Field</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pricebook2Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Standard_Pricebook</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>If Empty Pricebook2Id Field</label>
+        </rules>
+    </decisions>
+    <description>A Platform Event is created before each opportunity is created or updated.
+Before creating or updating an Opportunity, create a Platform Event.</description>
     <environments>Default</environments>
+    <formulas>
+        <name>Event_Type</name>
+        <dataType>String</dataType>
+        <expression>IF(ISNEW(), &apos;Create&apos;, &apos;Update&apos;)</expression>
+    </formulas>
     <interviewLabel>Before creating an Opportunity, create a Platform Event. {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Before updating an Opportunity, create a Platform Event.</label>
+    <label>Before creating or updating an Opportunity, create a Platform Event.</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -29,8 +104,8 @@ Before updating an Opportunity, create a Platform Event.</description>
         <description>Insert platform event records.</description>
         <name>platform_event</name>
         <label>Platform Event(||s|)</label>
-        <locationX>176</locationX>
-        <locationY>335</locationY>
+        <locationX>182</locationX>
+        <locationY>1247</locationY>
         <inputAssignments>
             <field>ObjectType__c</field>
             <value>
@@ -46,20 +121,76 @@ Before updating an Opportunity, create a Platform Event.</description>
         <inputAssignments>
             <field>UpdateType__c</field>
             <value>
-                <stringValue>Update</stringValue>
+                <elementReference>Event_Type</elementReference>
             </value>
         </inputAssignments>
         <object>PNNL_Data_Event__e</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
-    <start>
+    <recordLookups>
+        <description>Retrieve standard pricebook for assignment to Opportunity.</description>
+        <name>Get_Standard_Pricebook</name>
+        <label>Get Standard Pricebook</label>
         <locationX>50</locationX>
-        <locationY>0</locationY>
+        <locationY>911</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Pricebook_Id</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Standard Price Book</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Pricebook2</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Set pricebook identifier on Opportunity</description>
+        <name>Set_Pricebook_Id</name>
+        <label>Set Pricebook Id</label>
+        <locationX>50</locationX>
+        <locationY>1031</locationY>
         <connector>
             <targetReference>platform_event</targetReference>
         </connector>
+        <inputAssignments>
+            <field>Pricebook2Id</field>
+            <value>
+                <elementReference>Get_Standard_Pricebook.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Triggering_Field_to_False</name>
+        <label>Set Triggering Field to False</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <connector>
+            <targetReference>If_Opportunity_Does_Not_Have_a_Default_Pricebook</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Trigger_Approval_Process_Queue_Update__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>If_Approval_Process_Queue_Update_Needed</targetReference>
+        </connector>
         <object>Opportunity</object>
-        <recordTriggerType>Update</recordTriggerType>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>

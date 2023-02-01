@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BER_Scientific_Focus_Area_SFA__c</fullName>
+    <externalId>false</externalId>
+    <label>BER Scientific Focus Area (SFA)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>00. Not Applicable</fullName>
+                <default>false</default>
+                <label>00. Not Applicable</label>
+            </value>
+            <value>
+                <fullName>11. Genomics: GTL - Biofuels</fullName>
+                <default>false</default>
+                <label>11. Genomics: GTL - Biofuels</label>
+            </value>
+            <value>
+                <fullName>13. Genomics: GTL Fundamental Science</fullName>
+                <default>false</default>
+                <label>13. Genomics: GTL Fundamental Science</label>
+            </value>
+            <value>
+                <fullName>15. Low Dose Radiation</fullName>
+                <default>false</default>
+                <label>15. Low Dose Radiation</label>
+            </value>
+            <value>
+                <fullName>22. Climate and Earth System Modeling</fullName>
+                <default>false</default>
+                <label>22. Climate and Earth System Modeling</label>
+            </value>
+            <value>
+                <fullName>32. Subsurface Biogeochemical Research</fullName>
+                <default>false</default>
+                <label>32. Subsurface Biogeochemical Research</label>
+            </value>
+            <value>
+                <fullName>62. Atmospheric System Research</fullName>
+                <default>false</default>
+                <label>62. Atmospheric System Research</label>
+            </value>
+            <value>
+                <fullName>63. Radiochemistry &amp; Imaging Instrumentation</fullName>
+                <default>false</default>
+                <label>63. Radiochemistry &amp; Imaging Instrumentation</label>
+            </value>
+            <value>
+                <fullName>64. Systems Biology Knowledgebase</fullName>
+                <default>false</default>
+                <label>64. Systems Biology Knowledgebase</label>
+            </value>
+            <value>
+                <fullName>65. Terrestrial Ecosystem Science</fullName>
+                <default>false</default>
+                <label>65. Terrestrial Ecosystem Science</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

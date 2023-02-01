@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FAC_Waiver__c</fullName>
+    <defaultValue>&quot;Not Applicable&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>FAC Waiver</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Ballistic Missile Defense Program</fullName>
+                <default>false</default>
+                <label>Ballistic Missile Defense Program</label>
+            </value>
+            <value>
+                <fullName>Counter Terrorism and Homeland Security</fullName>
+                <default>false</default>
+                <label>Counter Terrorism and Homeland Security</label>
+            </value>
+            <value>
+                <fullName>Department of Defense Counter Proliferation</fullName>
+                <default>false</default>
+                <label>Department of Defense Counter Proliferation</label>
+            </value>
+            <value>
+                <fullName>Department of Defense Joint Advanced Strike Technology Program</fullName>
+                <default>false</default>
+                <label>Department of Defense Joint Advanced Strike Technology Program</label>
+            </value>
+            <value>
+                <fullName>Department of Homeland Security</fullName>
+                <default>false</default>
+                <label>Department of Homeland Security</label>
+            </value>
+            <value>
+                <fullName>Institutions of higher education</fullName>
+                <default>false</default>
+                <label>Institutions of higher education</label>
+            </value>
+            <value>
+                <fullName>Intergovernmental Personnel Act Assignments</fullName>
+                <default>false</default>
+                <label>Intergovernmental Personnel Act Assignments</label>
+            </value>
+            <value>
+                <fullName>National Institutes of Health (NIH)</fullName>
+                <default>false</default>
+                <label>National Institutes of Health (NIH)</label>
+            </value>
+            <value>
+                <fullName>National Reconnaissance Office</fullName>
+                <default>false</default>
+                <label>National Reconnaissance Office</label>
+            </value>
+            <value>
+                <fullName>Naval Reactors</fullName>
+                <default>false</default>
+                <label>Naval Reactors</label>
+            </value>
+            <value>
+                <fullName>Non-Nuclear Munitions Technology Program</fullName>
+                <default>false</default>
+                <label>Non-Nuclear Munitions Technology Program</label>
+            </value>
+            <value>
+                <fullName>Non-Profit Entities</fullName>
+                <default>false</default>
+                <label>Non-Profit Entities</label>
+            </value>
+            <value>
+                <fullName>Small business</fullName>
+                <default>false</default>
+                <label>Small business</label>
+            </value>
+            <value>
+                <fullName>State and local governments</fullName>
+                <default>false</default>
+                <label>State and local governments</label>
+            </value>
+            <value>
+                <fullName>Strategic Environmental Research and Development Program (SERDP)</fullName>
+                <default>false</default>
+                <label>Strategic Environmental Research and Development Program (SERDP)</label>
+            </value>
+            <value>
+                <fullName>US Enrichment Corporation</fullName>
+                <default>false</default>
+                <label>US Enrichment Corporation</label>
+            </value>
+            <value>
+                <fullName>US Nuclear Detonation Detection System</fullName>
+                <default>false</default>
+                <label>US Nuclear Detonation Detection System</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

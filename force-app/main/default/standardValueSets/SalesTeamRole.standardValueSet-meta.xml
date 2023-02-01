@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Project Specialist</fullName>
+        <default>false</default>
+        <label>Project Specialist</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Specialist</fullName>
+        <default>false</default>
+        <label>Contract Specialist</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SPP Office Reviewer</fullName>
+        <default>false</default>
+        <label>SPP Office Reviewer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>DOE Site Office Approver</fullName>
+        <default>false</default>
+        <label>DOE Site Office Approver</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PNSO Technical Reviewer</fullName>
+        <default>false</default>
+        <label>PNSO Technical Reviewer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PNSO Contracting Officer</fullName>
+        <default>false</default>
+        <label>PNSO Contracting Officer</label>
+    </standardValue>
+</StandardValueSet>

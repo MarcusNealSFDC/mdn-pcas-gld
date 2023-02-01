@@ -1,0 +1,5 @@
+The following item requires your action. Please click the link provided to view the details and take the appropriate action.
+
+Proposal Number: {!Opportunity.Name}
+Project Title: {!Opportunity.Project_Title__c}
+Revision: {!Opportunity.Revison__c}

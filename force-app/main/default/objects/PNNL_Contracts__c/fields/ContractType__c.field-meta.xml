@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContractType__c</fullName>
+    <externalId>false</externalId>
+    <label>Contract Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BOA - Basic Ordering Agreement</fullName>
+                <default>false</default>
+                <label>BOA - Basic Ordering Agreement</label>
+            </value>
+            <value>
+                <fullName>CPAF - Cost Plus Award Fee</fullName>
+                <default>false</default>
+                <label>CPAF - Cost Plus Award Fee</label>
+            </value>
+            <value>
+                <fullName>CPFF - Cost Plus Fixed Fee</fullName>
+                <default>false</default>
+                <label>CPFF - Cost Plus Fixed Fee</label>
+            </value>
+            <value>
+                <fullName>CPIF - Cost Plus Incentive Fee</fullName>
+                <default>false</default>
+                <label>CPIF - Cost Plus Incentive Fee</label>
+            </value>
+            <value>
+                <fullName>CPPC - Cost Plus Percentage of Cost</fullName>
+                <default>false</default>
+                <label>CPPC - Cost Plus Percentage of Cost</label>
+            </value>
+            <value>
+                <fullName>CRADA - Cooperative Research and Development Agreement</fullName>
+                <default>false</default>
+                <label>CRADA - Cooperative Research and Development Agreement</label>
+            </value>
+            <value>
+                <fullName>CRC - Cost Reimbursable Contract</fullName>
+                <default>false</default>
+                <label>CRC - Cost Reimbursable Contract</label>
+            </value>
+            <value>
+                <fullName>CRG - Cost Reimbursable Grant</fullName>
+                <default>false</default>
+                <label>CRG - Cost Reimbursable Grant</label>
+            </value>
+            <value>
+                <fullName>FPLOE - Firm Fixed Price, Level of Effort</fullName>
+                <default>false</default>
+                <label>FPLOE - Firm Fixed Price, Level of Effort</label>
+            </value>
+            <value>
+                <fullName>FX - Firm Fixed Price</fullName>
+                <default>false</default>
+                <label>FX - Firm Fixed Price</label>
+            </value>
+            <value>
+                <fullName>ILA - Interlaboratory Authorization</fullName>
+                <default>false</default>
+                <label>ILA - Interlaboratory Authorization</label>
+            </value>
+            <value>
+                <fullName>IPA - Intergovernmental Personnel Act</fullName>
+                <default>false</default>
+                <label>IPA - Intergovernmental Personnel Act</label>
+            </value>
+            <value>
+                <fullName>IP - Intellectual Property</fullName>
+                <default>false</default>
+                <label>IP - Intellectual Property</label>
+            </value>
+            <value>
+                <fullName>OC - Operating Contract</fullName>
+                <default>false</default>
+                <label>OC - Operating Contract</label>
+            </value>
+            <value>
+                <fullName>T&amp;M - Time and Materials</fullName>
+                <default>false</default>
+                <label>T&amp;M - Time and Materials</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

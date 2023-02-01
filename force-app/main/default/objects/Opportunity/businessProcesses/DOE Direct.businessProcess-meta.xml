@@ -3,26 +3,6 @@
     <fullName>DOE Direct</fullName>
     <isActive>true</isActive>
     <values>
-        <fullName>Closeout</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Funding Approved</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Funding Pending</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Funding Received</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Funding Stage</fullName>
-        <default>false</default>
-    </values>
-    <values>
         <fullName>Proposal Approved</fullName>
         <default>false</default>
     </values>
@@ -31,19 +11,19 @@
         <default>false</default>
     </values>
     <values>
-        <fullName>Proposal Pending</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Proposal Reviewed</fullName>
-        <default>false</default>
-    </values>
-    <values>
         <fullName>Proposal Submitted</fullName>
         <default>false</default>
     </values>
     <values>
         <fullName>Scope Cleared</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Scope Filed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Scope Validated</fullName>
         <default>false</default>
     </values>
 </BusinessProcess>

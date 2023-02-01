@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>FWP Approval - Non Office of Science</label>
+    <protected>false</protected>
+    <values>
+        <field>Approval_Process_Dev_Name__c</field>
+        <value xsi:type="xsd:string">FWP_Approval_Non_Office_of_Science2</value>
+    </values>
+    <values>
+        <field>PNSO_Contracting_Officer_Copy__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Signing_Ceremony_Copy_Long__c</field>
+        <value xsi:type="xsd:string">By granting approval you are validating, to the best of your knowledge, this proposal is complete and accurate, and costs and obligations support the scope of work defined within the proposal.</value>
+    </values>
+</CustomMetadata>

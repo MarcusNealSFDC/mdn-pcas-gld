@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_DOE_Compact_Layout</fullName>
+    <fields>Proposal_Number__c</fields>
+    <fields>Amendment_Number__c</fields>
+    <fields>Revison__c</fields>
+    <fields>Contract_Client__c</fields>
+    <fields>Funding_Client__c</fields>
+    <fields>RecordTypeId</fields>
+    <label>Non-DOE Compact Layout</label>
+</CompactLayout>
