@@ -91,7 +91,7 @@
             <field>PPM_Project_Status__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Pending Close</stringValue>
+                <stringValue>Closed</stringValue>
             </value>
         </filters>
         <object>Project__c</object>
