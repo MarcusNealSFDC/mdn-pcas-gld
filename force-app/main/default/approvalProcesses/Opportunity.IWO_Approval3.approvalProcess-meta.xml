@@ -13,73 +13,31 @@
         <allowDelegate>true</allowDelegate>
         <approvalActions>
             <action>
-                <name>Update_Field_to_Proposal_Prep</name>
+                <name>Proposal_Submitted</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
         <assignedApprover>
             <approver>
-                <name>Project_Coordinators__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>Unanimous</whenMultipleApprovers>
-        </assignedApprover>
-        <label>Project Coordinator Approval</label>
-        <name>Step_1</name>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <approvalActions>
-            <action>
-                <name>Update_to_Proposal_Submitted</name>
-                <type>FieldUpdate</type>
-            </action>
-        </approvalActions>
-        <assignedApprover>
-            <approver>
-                <name>Contract_Specialist2__c</name>
+                <name>IWO_Specialist__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Contract Specialist Approval</label>
-        <name>Contract_Specialist_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <approvalActions>
-            <action>
-                <name>Update_to_Proposal_Pendinf</name>
-                <type>FieldUpdate</type>
-            </action>
-        </approvalActions>
-        <assignedApprover>
-            <approver>
-                <name>SPP_Office_Reviewer2__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <label>SPP Office Reviewer Approval</label>
-        <name>SPP_Office_Reviewer_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
+        <label>IWO Specialist Approval</label>
+        <name>IWO_Specialist_Approval</name>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>DOE_Site_Office_Approver2__c</name>
+                <name>PNSO_Proposal_Reviewer__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>DOE Site Office Approver</label>
-        <name>DOE_Site_Office_Approver</name>
+        <label>PNSO Proposal Reviewer</label>
+        <name>PNSO_Proposal_Reviewer</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -95,29 +53,6 @@
         </assignedApprover>
         <label>PNSO Technical Rep Approval</label>
         <name>PNSO_Technical_Rep_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>PNSO_Coordinator_Foreign_Approver__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <entryCriteria>
-            <criteriaItems>
-                <field>Opportunity.Foreign_Sponsor__c</field>
-                <operation>equals</operation>
-                <value>Yes</value>
-            </criteriaItems>
-        </entryCriteria>
-        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
-        <label>PNSO Coordinator - Foreign Sponsor Approval</label>
-        <name>PNSO_Coordinator_Foreign_Sponsor_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -142,7 +77,7 @@
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <label>PNSO Contracting Officer Approval</label>
-        <name>PNSO_Contract_Rep_Approval</name>
+        <name>PNSO_Contracting_Officer_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -153,7 +88,7 @@
         <criteriaItems>
             <field>Opportunity.RecordType</field>
             <operation>equals</operation>
-            <value>DHS,F-SPP,NF-SPP,NIC-RW,SIPP</value>
+            <value>IWO</value>
         </criteriaItems>
         <criteriaItems>
             <field>Opportunity.StageName</field>
@@ -166,11 +101,25 @@
             <name>PNSO_Approval_of_SPP_Proposal</name>
             <type>Alert</type>
         </action>
+        <action>
+            <name>PNSO_Signed_Date</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Proposal_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
-    <label>SPP Approvals</label>
-    <processOrder>2</processOrder>
+    <initialSubmissionActions>
+        <action>
+            <name>Update_Field_to_Proposal_Prep</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>IWO Approval</label>
+    <processOrder>5</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>

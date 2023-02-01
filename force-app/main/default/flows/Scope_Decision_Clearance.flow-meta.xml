@@ -53,7 +53,7 @@
             </value>
         </filters>
         <filters>
-            <field>Project_Manager__c</field>
+            <field>Project_Manager3__c</field>
             <operator>IsNull</operator>
             <value>
                 <booleanValue>false</booleanValue>
@@ -70,5 +70,5 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>
