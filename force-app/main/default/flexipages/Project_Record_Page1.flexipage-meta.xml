@@ -8,6 +8,22 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
+                            <value>Submit</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!$User.Profile.Name}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Non-PNNL Users</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.PPM_Project_Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Pending Close</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
                             <value>FeedItem.TextPost</value>
                         </valueListItems>
                         <valueListItems>
@@ -45,16 +61,6 @@
                         </valueListItems>
                         <valueListItems>
                             <value>RecordShareHierarchy</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Submit</value>
-                            <visibilityRule>
-                                <criteria>
-                                    <leftValue>{!$User.Profile.Name}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Non-PNNL Users</rightValue>
-                                </criteria>
-                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>Edit</value>
