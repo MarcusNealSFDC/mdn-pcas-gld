@@ -2,8 +2,8 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Minimum_Standard_7_Additional_Details__c</fullName>
     <externalId>false</externalId>
-    <label>Minimum Standard 7 Additional Details</label>
-    <length>1000</length>
+    <label>Additional Details</label>
+    <length>3000</length>
     <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>
     <type>LongTextArea</type>

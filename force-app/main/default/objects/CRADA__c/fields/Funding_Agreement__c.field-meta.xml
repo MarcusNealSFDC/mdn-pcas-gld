@@ -3,7 +3,7 @@
     <fullName>Funding_Agreement__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Funding Agreement</label>
+    <label>Work Authorization</label>
     <referenceTo>Funding_Agreement__c</referenceTo>
     <relationshipLabel>CRADA</relationshipLabel>
     <relationshipName>CRADA</relationshipName>

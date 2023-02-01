@@ -3,30 +3,6 @@
     <fullName>Non-DOE Sales Process</fullName>
     <isActive>true</isActive>
     <values>
-        <fullName>Closeout</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Completed</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Funding Approved - Project Active</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Funding Pending</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Funding Preparation</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Funding Received</fullName>
-        <default>false</default>
-    </values>
-    <values>
         <fullName>Proposal Approved</fullName>
         <default>false</default>
     </values>
@@ -52,6 +28,10 @@
     </values>
     <values>
         <fullName>Scope Filed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Scope Validated</fullName>
         <default>false</default>
     </values>
 </BusinessProcess>

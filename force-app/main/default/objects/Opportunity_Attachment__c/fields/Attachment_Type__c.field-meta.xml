@@ -37,9 +37,9 @@
                 <label>CI Foreign Approval</label>
             </value>
             <value>
-                <fullName>Client Certification (hard gate)</fullName>
+                <fullName>Client Certification</fullName>
                 <default>false</default>
-                <label>Client Certification (hard gate)</label>
+                <label>Client Certification</label>
             </value>
             <value>
                 <fullName>DOE Approved Proposal</fullName>
@@ -62,9 +62,9 @@
                 <label>IP Management Plan</label>
             </value>
             <value>
-                <fullName>IWO Funding Document (hard gate)</fullName>
+                <fullName>IWO Funding Document</fullName>
                 <default>false</default>
-                <label>IWO Funding Document (hard gate)</label>
+                <label>IWO Funding Document</label>
             </value>
             <value>
                 <fullName>MSOF</fullName>
@@ -132,9 +132,9 @@
                 <label>SPP Justification</label>
             </value>
             <value>
-                <fullName>Statement of Work (hard gate)</fullName>
+                <fullName>Statement of Work</fullName>
                 <default>false</default>
-                <label>Statement of Work (hard gate)</label>
+                <label>Statement of Work</label>
             </value>
             <value>
                 <fullName>Sub-contract Plan</fullName>
@@ -159,17 +159,16 @@
             </value>
         </valueSetDefinition>
         <valueSettings>
-            <controllingFieldValue>Field Work Proposal</controllingFieldValue>
+            <controllingFieldValue>DOE Direct</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>F-SPP</controllingFieldValue>
             <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
-            <controllingFieldValue>FIN Place Proposal</controllingFieldValue>
             <valueName>Biographical sketches</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Field Work Proposal</controllingFieldValue>
+            <controllingFieldValue>DOE Direct</controllingFieldValue>
             <controllingFieldValue>ACT</controllingFieldValue>
             <controllingFieldValue>CRADA</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
@@ -178,11 +177,29 @@
             <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
-            <controllingFieldValue>FIN Place Proposal</controllingFieldValue>
             <valueName>Other</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Field Work Proposal</controllingFieldValue>
+            <controllingFieldValue>DOE Direct</controllingFieldValue>
+            <controllingFieldValue>ACT</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <valueName>Proposal Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOE Direct</controllingFieldValue>
+            <controllingFieldValue>DHS</controllingFieldValue>
+            <controllingFieldValue>F-SPP</controllingFieldValue>
+            <controllingFieldValue>NF-SPP</controllingFieldValue>
+            <controllingFieldValue>NIC-RW</controllingFieldValue>
+            <controllingFieldValue>SIPP</controllingFieldValue>
+            <valueName>Research Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOE Direct</controllingFieldValue>
             <controllingFieldValue>ACT</controllingFieldValue>
             <controllingFieldValue>DHS</controllingFieldValue>
             <controllingFieldValue>F-SPP</controllingFieldValue>
@@ -190,8 +207,7 @@
             <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
-            <controllingFieldValue>FIN Place Proposal</controllingFieldValue>
-            <valueName>Statement of Work (hard gate)</valueName>
+            <valueName>Statement of Work</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
@@ -226,7 +242,7 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
-            <valueName>Client Certification (hard gate)</valueName>
+            <valueName>Client Certification</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
@@ -244,15 +260,6 @@
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
             <valueName>OCI Addendum</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>ACT</controllingFieldValue>
-            <controllingFieldValue>DHS</controllingFieldValue>
-            <controllingFieldValue>F-SPP</controllingFieldValue>
-            <controllingFieldValue>NF-SPP</controllingFieldValue>
-            <controllingFieldValue>NIC-RW</controllingFieldValue>
-            <controllingFieldValue>SIPP</controllingFieldValue>
-            <valueName>Proposal Letter</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>ACT</controllingFieldValue>
@@ -328,14 +335,6 @@
             <controllingFieldValue>NF-SPP</controllingFieldValue>
             <controllingFieldValue>NIC-RW</controllingFieldValue>
             <controllingFieldValue>SIPP</controllingFieldValue>
-            <valueName>Research Plan</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>DHS</controllingFieldValue>
-            <controllingFieldValue>F-SPP</controllingFieldValue>
-            <controllingFieldValue>NF-SPP</controllingFieldValue>
-            <controllingFieldValue>NIC-RW</controllingFieldValue>
-            <controllingFieldValue>SIPP</controllingFieldValue>
             <valueName>Sponsor Registration</valueName>
         </valueSettings>
         <valueSettings>
@@ -356,7 +355,7 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>IWO</controllingFieldValue>
-            <valueName>IWO Funding Document (hard gate)</valueName>
+            <valueName>IWO Funding Document</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

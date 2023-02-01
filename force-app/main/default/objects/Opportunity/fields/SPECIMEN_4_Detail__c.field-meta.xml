@@ -21,6 +21,21 @@
                 <default>false</default>
                 <label>Sponsor&apos;s funds come from federal funding, Bayh-Dole rights apply, PNNL entitled to take title. Specimen Agreement No. 4 (DOE Approval NOT Required)</label>
             </value>
+            <value>
+                <fullName>No IP transferred. Battelle owns IP under terms of M&amp;O contract (DOE Approval Required)</fullName>
+                <default>false</default>
+                <label>No IP transferred. Battelle owns IP under terms of M&amp;O contract (DOE Approval Required)</label>
+            </value>
+            <value>
+                <fullName>Other- Please work with IPLS for phrasing (DOE Approval Required)</fullName>
+                <default>false</default>
+                <label>Other- Please work with IPLS for phrasing (DOE Approval Required)</label>
+            </value>
+            <value>
+                <fullName>No IP transferred. Sponsor own IP under terms reviewed and approved by DOE (DOE Approval Required</fullName>
+                <default>false</default>
+                <label>No IP transferred. Sponsor own IP under terms reviewed and approved by DOE (DOE Approval Required</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

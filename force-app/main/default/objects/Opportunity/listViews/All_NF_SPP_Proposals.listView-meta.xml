@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_NF_SPP_Proposals</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Revison__c</columns>
+    <columns>Amendment_Number__c</columns>
+    <columns>Budget_Year__c</columns>
+    <columns>Project_Title__c</columns>
+    <columns>OPPORTUNITY.RECORDTYPE</columns>
+    <columns>Proposed_Amount__c</columns>
+    <columns>B_R__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.NF_SPP</value>
+    </filters>
+    <label>All NF-SPP Proposals</label>
+</ListView>

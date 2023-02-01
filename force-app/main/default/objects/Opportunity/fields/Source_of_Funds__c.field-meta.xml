@@ -12,9 +12,14 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>TBD</fullName>
+                <fullName>Federal</fullName>
                 <default>false</default>
-                <label>TBD</label>
+                <label>Federal</label>
+            </value>
+            <value>
+                <fullName>Non-Federal</fullName>
+                <default>false</default>
+                <label>Non-Federal</label>
             </value>
         </valueSetDefinition>
     </valueSet>

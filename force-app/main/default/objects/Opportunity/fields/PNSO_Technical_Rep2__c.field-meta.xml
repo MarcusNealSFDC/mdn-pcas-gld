@@ -3,7 +3,7 @@
     <fullName>PNSO_Technical_Rep2__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>PNSO Technical Rep</label>
+    <label>PNSO Technical Representative</label>
     <lookupFilter>
         <active>true</active>
         <filterItems>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Non_DOE_Funding_Agreement_Email_Approval_Alert_for_PNSO_Contracting_Officers</fullName>
+        <description>Non DOE Funding Agreement Email Approval Alert for PNSO Contracting Officers</description>
+        <protected>false</protected>
+        <recipients>
+            <field>PNSO_Contracting_Officer__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Funding_Agreement/PNNL_Non_DOE_Funding_Agreement_Approval_Email</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>PNNL_Signed_Date</fullName>
+        <field>PNNL_Sign_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>PNNL Signed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PNSO_Signed_Date</fullName>
+        <field>PNSO_Sign_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>PNSO Signed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_WAS_Approval_PNSO_Tech</fullName>
+        <field>Status__c</field>
+        <literalValue>Work Authorization Approval: PNSO Technical Rep</literalValue>
+        <name>Update WAS Approval PNSO Tech</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WA_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Pending_Obligations</literalValue>
+        <name>WA Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WA_Stage_Update_to_PNSO_Technical</fullName>
+        <field>Status__c</field>
+        <literalValue>Work Authorization Approval: PNSO Technical Rep</literalValue>
+        <name>WA Stage Update to PNSO Technical</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WA_Status_to_FA_Approval</fullName>
+        <field>Status__c</field>
+        <literalValue>Work Authorization Approval: Funding &amp; Agreements</literalValue>
+        <name>WA Status to FA  Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WA_Update_to_PNSO_Contracting</fullName>
+        <field>Status__c</field>
+        <literalValue>Work Authorization Approval: PNSO Contract Officer</literalValue>
+        <name>WA Update to PNSO Contracting</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

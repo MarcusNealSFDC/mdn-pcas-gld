@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Authority__c</fullName>
+    <externalId>false</externalId>
+    <label>Funding Authority</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Atomic Energy Act of 1954 (P.L. 83-703)</fullName>
+                <default>false</default>
+                <label>Atomic Energy Act of 1954 (P.L. 83-703)</label>
+            </value>
+            <value>
+                <fullName>Clear Air Act Sec/103 (b) (2)</fullName>
+                <default>false</default>
+                <label>Clear Air Act Sec/103 (b) (2)</label>
+            </value>
+            <value>
+                <fullName>Clean Water Act. 33 U.S.C. 1254</fullName>
+                <default>false</default>
+                <label>Clean Water Act. 33 U.S.C. 1254</label>
+            </value>
+            <value>
+                <fullName>DHS Act 6 U.S.C. 189</fullName>
+                <default>false</default>
+                <label>DHS Act 6 U.S.C. 189</label>
+            </value>
+            <value>
+                <fullName>Economy Acr 31 U.S.C.1535</fullName>
+                <default>false</default>
+                <label>Economy Acr 31 U.S.C.1535</label>
+            </value>
+            <value>
+                <fullName>Energy Reorganization Act (42 U.S.C. 5845)</fullName>
+                <default>false</default>
+                <label>Energy Reorganization Act (42 U.S.C. 5845)</label>
+            </value>
+            <value>
+                <fullName>Foreign Assistance Act 22 U.S.C.2395 (b)</fullName>
+                <default>false</default>
+                <label>Foreign Assistance Act 22 U.S.C.2395 (b)</label>
+            </value>
+            <value>
+                <fullName>Meteorological Services 49 U.S.C. 44720 (b)</fullName>
+                <default>false</default>
+                <label>Meteorological Services 49 U.S.C. 44720 (b)</label>
+            </value>
+            <value>
+                <fullName>National Aeronautical and Space Act of 1958 as amended (&quot;Space Act&quot;) 51 U.S.C. 20113</fullName>
+                <default>false</default>
+                <label>National Aeronautical and Space Act of 1958 as amended (&quot;Space Act&quot;) 51 U.S.C. 20113</label>
+            </value>
+            <value>
+                <fullName>National Aeronautical and Space Act of 1958 42 U.S.C. 241</fullName>
+                <default>false</default>
+                <label>National Aeronautical and Space Act of 1958 42 U.S.C. 241</label>
+            </value>
+            <value>
+                <fullName>Outer Continental Shelf 43 U.S.C. 1331 et seq (OCS) Lands Act of 1953 as amended</fullName>
+                <default>false</default>
+                <label>Outer Continental Shelf 43 U.S.C. 1331 et seq (OCS) Lands Act of 1953 as amended</label>
+            </value>
+            <value>
+                <fullName>Public Health Services Act 42 U.S.C. 285a-2(B)(8)</fullName>
+                <default>false</default>
+                <label>Public Health Services Act 42 U.S.C. 285a-2(B)(8)</label>
+            </value>
+            <value>
+                <fullName>Public Health and Welfare 42 U.S.C. 241</fullName>
+                <default>false</default>
+                <label>Public Health and Welfare 42 U.S.C. 241</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

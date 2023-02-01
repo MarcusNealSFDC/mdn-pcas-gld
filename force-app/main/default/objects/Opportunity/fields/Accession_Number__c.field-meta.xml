@@ -3,7 +3,7 @@
     <fullName>Accession_Number__c</fullName>
     <externalId>false</externalId>
     <label>Accession Number</label>
-    <length>6</length>
+    <length>7</length>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>

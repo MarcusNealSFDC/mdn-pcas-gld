@@ -26,16 +26,6 @@
                 <label>DHS</label>
             </value>
             <value>
-                <fullName>Field Work Proposal</fullName>
-                <default>false</default>
-                <label>Field Work Proposal</label>
-            </value>
-            <value>
-                <fullName>FIN Place Proposal</fullName>
-                <default>false</default>
-                <label>FIN Place Proposal</label>
-            </value>
-            <value>
                 <fullName>F-SPP</fullName>
                 <default>false</default>
                 <label>F-SPP</label>
@@ -63,8 +53,19 @@
             <value>
                 <fullName>DOE Direct</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
                 <label>DOE Direct</label>
+            </value>
+            <value>
+                <fullName>FIN Plan Proposal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FIN Plan Proposal</label>
+            </value>
+            <value>
+                <fullName>Field Work Proposal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Field Work Proposal</label>
             </value>
         </valueSetDefinition>
     </valueSet>
