@@ -127,8 +127,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.SPP_Code__c</fieldItem>
-                <identifier>RecordSPP_Code_cField</identifier>
+                <fieldItem>Record.PNNL_SPP_Code__c</fieldItem>
+                <identifier>RecordPNNL_SPP_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
