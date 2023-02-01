@@ -11,7 +11,7 @@ NOT(ISBLANK(PNSO_Technical_Rep2__c)),
 
 OR(
 NOT(ISBLANK(PNNL_Work_Proposal_Manager2__c)),
-NOT(ISBLANK(Project_Manager__c))
+NOT(ISBLANK(Project_Manager3__c))
 )
 
 )</formula>

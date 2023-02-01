@@ -138,10 +138,6 @@
                 <behavior>Edit</behavior>
                 <field>BO_Tax_Credit__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Project_Manager__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

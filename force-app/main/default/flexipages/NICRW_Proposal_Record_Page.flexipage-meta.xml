@@ -8,15 +8,12 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Edit</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Submit</value>
+                            <value>Opportunity.Assign_to_Contract_Specialist</value>
                             <visibilityRule>
                                 <criteria>
-                                    <leftValue>{!Record.PNNL_NIC_RW_Submit_Approval_Checkbox__c}</leftValue>
+                                    <leftValue>{!Record.StageName}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>true</rightValue>
+                                    <rightValue>Proposal Draft</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -25,6 +22,22 @@
                         </valueListItems>
                         <valueListItems>
                             <value>Opportunity.Revision</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Submit</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.PNNL_NIC_RW_Submit_Approval_Checkbox__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Proposal Preparation</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>Delete</value>
@@ -58,11 +71,11 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
-                    <value>5</value>
+                    <value>10</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
                 <identifier>force_highlightsPanel</identifier>
@@ -342,8 +355,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Manager__c</fieldItem>
-                <identifier>RecordProject_Manager_cField</identifier>
+                <fieldItem>Record.Project_Manager3__c</fieldItem>
+                <identifier>RecordProject_Manager3_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1503,8 +1516,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Manager__c</fieldItem>
-                <identifier>RecordProject_Manager_cField2</identifier>
+                <fieldItem>Record.Project_Manager3__c</fieldItem>
+                <identifier>RecordProject_Manager3_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
