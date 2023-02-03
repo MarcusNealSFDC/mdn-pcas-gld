@@ -8,7 +8,6 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <controllingField>Report_Period__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
@@ -93,69 +92,5 @@
                 <label>D5915 - Equipment Other</label>
             </value>
         </valueSetDefinition>
-        <valueSettings>
-            <controllingFieldValue>FY</controllingFieldValue>
-            <valueName>D5000 - DOE Financial Plan</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5005 - DOE Related Serv Projects</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5008 - Bonneville Power Admin</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5009 - Non-IC Reimbursable Work</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5010 - Related Services-Non DOE (SPP)</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5012 - Joint Appointments-Out</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5013 - Joint Appointment Out - ACT</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5015 - Homeland Security</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5040 - ACT Federal</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5908 - DOE Sites Cap</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5909 - Line Item Construction Projects</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5910 - Construction Work in Prog GF</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5911 - Equipment Work in Prog  GF</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5912 - Construction Work in Prog</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5913 - Equipment Work in Progress</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>TD</controllingFieldValue>
-            <valueName>D5915 - Equipment Other</valueName>
-        </valueSettings>
     </valueSet>
 </CustomField>

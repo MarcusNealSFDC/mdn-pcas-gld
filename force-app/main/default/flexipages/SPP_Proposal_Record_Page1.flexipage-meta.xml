@@ -8,12 +8,21 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
+                            <value>Opportunity.Assign_to_Contract_Specialist</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Submit</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.PNNL_F_SPP_Submit_Approval_Checkbox__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Proposal Preparation</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -31,6 +40,9 @@
                         </valueListItems>
                         <valueListItems>
                             <value>Opportunity.Send_Cost_Sheet</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Purge_Cost_Sheet</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
@@ -332,8 +344,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Manager__c</fieldItem>
-                <identifier>RecordProject_Manager_cField</identifier>
+                <fieldItem>Record.Project_Manager3__c</fieldItem>
+                <identifier>RecordProject_Manager3_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1768,8 +1780,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Manager__c</fieldItem>
-                <identifier>RecordProject_Manager_cField2</identifier>
+                <fieldItem>Record.Project_Manager3__c</fieldItem>
+                <identifier>RecordProject_Manager3_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
