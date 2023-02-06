@@ -1456,11 +1456,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.Commercialization_Manager_CM__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.ContractId</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1932,11 +1927,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PNNL_ACT_Office2__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.PNNL_ACT_Office__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
