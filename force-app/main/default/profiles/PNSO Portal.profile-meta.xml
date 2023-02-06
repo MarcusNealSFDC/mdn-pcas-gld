@@ -706,6 +706,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CRADA__c.Principal_Investigators__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CRADA__c.Program_Secretarial_Office__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1007,6 +1012,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Action__c.PNNL_Contract__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.PNNL_SPP_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1427,7 +1437,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Amendment_Number__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1551,11 +1561,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.Commercialization_Manager_CM__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.ContractId</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1572,11 +1577,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Contract_Specialist2__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Contract_Specialist__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1616,22 +1616,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.DOE_Field_Element_Work_Proposal_Reviewer__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.DOE_Field_Element__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.DOE_Site_Office_Approver2__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.DOE_Site_Office_Approver__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2031,13 +2021,13 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.PNNL_ACT_Office__c</field>
+        <field>Opportunity.PNNL_ACT_Submit_Approval_Checkbox__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.PNNL_ACT_Submit_Approval_Checkbox__c</field>
-        <readable>false</readable>
+        <field>Opportunity.PNNL_Budget_Reporting_Number__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -2407,7 +2397,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Revison__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -2491,11 +2481,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.SPP_Office_Reviewer__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.Scope_Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2517,7 +2502,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Scope__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -2851,6 +2836,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>PNNL_Contracts__c.Funding_Action_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Contracts__c.Funding_Action__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>PNNL_Contracts__c.Funding_Client_Reference__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2937,6 +2932,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>PNNL_Contracts__c.PNNL_Limited_Term_Funds__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Contracts__c.PNNL_SPP_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3091,6 +3091,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Project__c.Country_Code1__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Project__c.EPR_Signed_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3146,6 +3151,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Project__c.PPM_Project__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Product_Line__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Project__c.Project_Account_Number__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3166,6 +3181,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Project__c.Project_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Project__c.Project_Title2__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3177,6 +3197,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Project__c.Report_Class__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Report_Contract_Number1__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Report_Period__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3207,6 +3237,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Project__c.Setup_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Special_Reporting_Funds1__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3484,12 +3519,12 @@
         <recordType>Opportunity.NIC_RW</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-NIC-RW Proposal Layout</layout>
-        <recordType>Opportunity.SIPP</recordType>
+        <layout>Opportunity-SPP Proposal Layout</layout>
+        <recordType>Opportunity.F_SPP</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-SPP Proposal Layout</layout>
-        <recordType>Opportunity.F_SPP</recordType>
+        <recordType>Opportunity.SIPP</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>OpportunityLineItem-Opportunity Product Layout</layout>

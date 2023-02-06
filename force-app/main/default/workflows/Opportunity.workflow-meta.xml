@@ -50,22 +50,6 @@
         <template>unfiled$public/Proposal_Approval_Email</template>
     </alerts>
     <alerts>
-        <fullName>Scope_Clearance_Decision</fullName>
-        <ccEmails>spp@pnnl.gov</ccEmails>
-        <description>Scope Clearance Decision-YES</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Project_Coordinators__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <recipients>
-            <field>Project_Manager3__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Yes</template>
-    </alerts>
-    <alerts>
         <fullName>Scope_Clearance_Decision_Email_Template_to_Assigned_PM_PMO</fullName>
         <description>Scope Clearance Decision Email Template to Assigned PM/PMO</description>
         <protected>false</protected>
@@ -81,20 +65,20 @@
         <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Email_Template_for_PM_PMO</template>
     </alerts>
     <alerts>
-        <fullName>Scope_Clearance_Decision_NO</fullName>
+        <fullName>Scope_Clearance_Decision_No_Email_Alert</fullName>
         <ccEmails>spp@pnnl.gov</ccEmails>
-        <description>Scope Clearance Decision-NO</description>
+        <description>Scope Clearance Decision No Email Alert</description>
         <protected>false</protected>
-        <recipients>
-            <field>Project_Coordinators__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <recipients>
-            <field>Project_Manager3__c</field>
-            <type>userLookup</type>
-        </recipients>
         <senderType>CurrentUser</senderType>
         <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_No</template>
+    </alerts>
+    <alerts>
+        <fullName>Scope_Clearance_Decision_Yes</fullName>
+        <ccEmails>spp@pnnl.gov</ccEmails>
+        <description>Scope Clearance Decision Yes Email Alert</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Yes</template>
     </alerts>
     <fieldUpdates>
         <fullName>Approval_Not_In_Process</fullName>
@@ -135,17 +119,6 @@
         <field>Approval_in_Process__c</field>
         <literalValue>1</literalValue>
         <name>Approval in Process</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Final_Approval_Received</fullName>
-        <description>Field update to indicate the Final Approval has been received.</description>
-        <field>Final_Approval_Received__c</field>
-        <literalValue>1</literalValue>
-        <name>Final Approval Received</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
