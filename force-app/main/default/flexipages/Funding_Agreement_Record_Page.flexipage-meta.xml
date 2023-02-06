@@ -130,16 +130,6 @@
                 <identifier>RecordAFP_Month_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Number__c</fieldItem>
-                <identifier>RecordContract_Number_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-e809e0c1-4c0e-4383-94f9-3240daaec90f</name>
         <type>Facet</type>
     </flexiPageRegions>
