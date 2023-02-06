@@ -129,10 +129,6 @@
             <type>FieldUpdate</type>
         </action>
         <action>
-            <name>Final_Approval_Received</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
             <name>PNSO_Approval_of_FIN_Plan_Proposal</name>
             <type>Alert</type>
         </action>
