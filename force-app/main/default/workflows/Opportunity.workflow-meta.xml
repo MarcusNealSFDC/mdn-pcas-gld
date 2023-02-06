@@ -12,6 +12,25 @@
         <template>unfiled$public/Creation_of_FIN_Plan_Proposal</template>
     </alerts>
     <alerts>
+        <fullName>PNSO_Approval_of_FIN_Plan_Proposal</fullName>
+        <description>PNSO Approval of FIN Plan Proposal</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contract_Specialist2__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Project_Coordinators__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Project_Manager3__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>PCAS_1830_Work_Authorization/PCAS_1830_Work_Authorization_Action_Required_from_PNNL_Budget_Office</template>
+    </alerts>
+    <alerts>
         <fullName>PNSO_Approval_of_SPP_Proposal</fullName>
         <description>PNSO Approval of SPP  Proposal</description>
         <protected>false</protected>
@@ -44,25 +63,6 @@
         </recipients>
         <senderType>DefaultWorkflowUser</senderType>
         <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Email_Template_for_PM_PMO</template>
-    </alerts>
-    <alerts>
-        <fullName>PNSO_Approval_of_FIN_Plan_Proposal</fullName>
-        <description>PNSO Approval of FIN Plan Proposal</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Contract_Specialist2__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <recipients>
-            <field>Project_Coordinators__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <recipients>
-            <field>Project_Manager3__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <senderType>DefaultWorkflowUser</senderType>
-        <template>PCAS_1830_Work_Authorization/PCAS_1830_Work_Authorization_Action_Required_from_PNNL_Budget_Office</template>
     </alerts>
     <alerts>
         <fullName>Scope_Clearance_Decision_No_Email_Alert</fullName>
@@ -119,17 +119,6 @@
         <field>Approval_in_Process__c</field>
         <literalValue>1</literalValue>
         <name>Approval in Process</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Final_Approval_Received</fullName>
-        <description>Field update to indicate the Final Approval has been received.</description>
-        <field>Final_Approval_Received__c</field>
-        <literalValue>1</literalValue>
-        <name>Final Approval Received</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>

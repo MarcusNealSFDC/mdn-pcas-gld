@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
@@ -167,7 +167,7 @@
         <searchResultsAdditionalFields>Project_Title2__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Effective_Date__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Inactive_Date__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Report_Contract_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields xsi:nil="true"></searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Project_Manager2__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Responsible_Org__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Product_Line__c</searchResultsAdditionalFields>

@@ -110,7 +110,19 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PNNL_Contract__c</field>
+                <field>Project_Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Report_Contract_Number1__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Special_Reporting_Funds1__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Country_Code1__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -161,10 +173,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>BO_Tax_Cr_Cd__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Country_Code__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

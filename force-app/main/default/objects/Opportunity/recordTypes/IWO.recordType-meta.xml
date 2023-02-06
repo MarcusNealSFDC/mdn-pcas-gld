@@ -264,60 +264,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Commercialization_Manager_CM__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Contract_Specialist__c</picklist>
-        <values>
-            <fullName>Abraham Mendoza</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Erin Enger</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Jennifer Winston</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Kelli Krisher</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Lara Neiffer</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Lexi Witham</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Mary Foraker</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Melissa Forbes</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Mindy Wright</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Shannon Davis</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Stephanie Burrier</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Contract_Type__c</picklist>
         <values>
             <fullName>BOA - Basic Ordering Agreement</fullName>
@@ -378,52 +324,6 @@
         <values>
             <fullName>T%26M - Time and Materials</fullName>
             <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>DOE_Field_Element_Work_Proposal_Reviewer__c</picklist>
-        <values>
-            <fullName>Barreto%2C Crystal Lynn</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Diaz-Guzman%2C Omar</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Fletcher%2C Melanie Paige</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Flieger%2C Erick Louis</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Gallagher%2C Ronald Paul</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Harp%2C Clora Sue</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Harper%2C Kimberly Lynn</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Madera%2C Genise</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Mcleod%2C Robert Guy</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>DOE_Site_Office_Approver__c</picklist>
-        <values>
-            <fullName>Genice Madera</fullName>
-            <default>true</default>
         </values>
     </picklistValues>
     <picklistValues>
@@ -1470,13 +1370,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>PNNL_ACT_Office__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>PNNL_Parallel_Categorization__c</picklist>
         <values>
             <fullName>Data Analytics</fullName>
@@ -2308,61 +2201,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>SPP_Office_Reviewer__c</picklist>
-        <values>
-            <fullName>Ariel Noguera</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Bruce Simanton</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Farrah Taylor</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>James Windle</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Janice McCartney</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Jennifer Winston</fullName>
-            <default>true</default>
-        </values>
-        <values>
-            <fullName>Kori West</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Lisa Johnson</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Mirna Barraza</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Monica Chavez</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Rachel Loosveldt</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Spencer Nield</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Tanya Smith</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Sensitive__c</picklist>
         <values>
             <fullName>No</fullName>
@@ -2396,10 +2234,6 @@
         </values>
         <values>
             <fullName>IRA</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>None</fullName>
             <default>false</default>
         </values>
     </picklistValues>
