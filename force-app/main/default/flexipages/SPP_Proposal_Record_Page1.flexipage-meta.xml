@@ -108,7 +108,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Scope__c</fieldItem>
                 <identifier>RecordScope_cField</identifier>
@@ -128,7 +128,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Amendment_Number__c</fieldItem>
                 <identifier>RecordAmendment_Number_cField</identifier>
@@ -166,16 +166,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Project_Title__c</fieldItem>
                 <identifier>RecordProject_Title_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.StageName</fieldItem>
-                <identifier>RecordStageNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -222,7 +212,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNNL_Budget_Reporting_Number__c</fieldItem>
                 <identifier>RecordPNNL_Budget_Reporting_Number_cField</identifier>
@@ -378,6 +368,26 @@
                 <identifier>RecordFFRDC_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Official_Use_Only__c</fieldItem>
+                <identifier>RecordOfficial_Use_Only_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Project_Management_Office_pnnl__c</fieldItem>
+                <identifier>RecordProject_Management_Office_pnnl_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-22c168a8-d4e1-4315-bcce-79b3c084f0bb</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -418,8 +428,42 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Management_Office_pnnl__c</fieldItem>
-                <identifier>RecordProject_Management_Office_pnnl_cField</identifier>
+                <fieldItem>Record.PNSO_Animal_Researcher2__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Researcher2_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.PNSO_Animal_Research_Required__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Foreign_Sponsor__c</fieldItem>
+                <identifier>RecordForeign_Sponsor_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Coordinator_Foreign_Approver__c</fieldItem>
+                <identifier>RecordPNSO_Coordinator_Foreign_Approver_cField2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Foreign_Sponsor__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -430,16 +474,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Project_Management_Office_Email_Address__c</fieldItem>
                 <identifier>RecordProject_Management_Office_Email_Address_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Official_Use_Only__c</fieldItem>
-                <identifier>RecordOfficial_Use_Only_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-388fef72-b9f4-4b05-a730-58236f80273c</name>

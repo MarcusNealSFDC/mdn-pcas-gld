@@ -246,6 +246,16 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Project_Code__c</fieldItem>
+                <identifier>RecordProject_Code_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Project_Code__c</fieldItem>
                 <identifier>RecordProject_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
