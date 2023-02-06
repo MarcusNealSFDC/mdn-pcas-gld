@@ -219,7 +219,7 @@
             <inputParameters>
                 <name>accept</name>
                 <value>
-                    <stringValue>.jpg, .png, .pdf, .xls, .xlsx</stringValue>
+                    <stringValue>.jpg, .png, .pdf, .xls, .xlsx, .docx, .doc, .msg</stringValue>
                 </value>
             </inputParameters>
             <inputParameters>
