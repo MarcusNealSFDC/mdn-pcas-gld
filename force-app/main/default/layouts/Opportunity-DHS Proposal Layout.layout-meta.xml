@@ -483,7 +483,7 @@
         <fields>NAME</fields>
         <fields>Action_Type__c</fields>
         <fields>Funding_Agreement_Date__c</fields>
-        <fields>Funds_Received_Date__c</fields>
+        <fields>Agreement_Amount__c</fields>
         <relatedList>Funding_Action__c.Proposal__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -504,7 +504,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000011suC</masterLabel>
+        <masterLabel>00h3R0000013sK1</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

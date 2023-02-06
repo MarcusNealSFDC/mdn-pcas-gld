@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>B_R_Number__c</fullName>
     <externalId>false</externalId>
-    <formula>Project__r.Opportunity__r.B_R__c</formula>
+    <formula>null</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>B&amp;R Number</label>
     <required>false</required>
