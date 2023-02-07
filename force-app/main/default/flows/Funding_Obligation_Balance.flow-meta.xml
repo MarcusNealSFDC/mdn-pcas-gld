@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>56.0</apiVersion>
-    <description>Create flow to update Budget And Reporting Number(External) custom fields that is marked as an external id and unique.</description>
     <environments>Default</environments>
-    <interviewLabel>Update Budget And Reporting Number(External) {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Update Budget And Reporting Number(External)</label>
+    <formulas>
+        <name>BalanceUpdate</name>
+        <dataType>Currency</dataType>
+        <expression>{!$Record.Fund_Code__r.PNNL_Balance__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Funding Obligation Balance {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Funding Obligation Balance</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -25,14 +30,14 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordUpdates>
-        <name>PNNL_Update_B_R_Number_External</name>
-        <label>Update B&amp;R Number(External)</label>
+        <name>Funding_Obligation_Balance_Update</name>
+        <label>Funding Obligation  Balance Update</label>
         <locationX>176</locationX>
         <locationY>335</locationY>
         <inputAssignments>
-            <field>PNNL_Budget_Reporting_Number_External__c</field>
+            <field>PNNL_Balance__c</field>
             <value>
-                <elementReference>$Record.Name</elementReference>
+                <elementReference>BalanceUpdate</elementReference>
             </value>
         </inputAssignments>
         <inputReference>$Record</inputReference>
@@ -41,11 +46,11 @@
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>PNNL_Update_B_R_Number_External</targetReference>
+            <targetReference>Funding_Obligation_Balance_Update</targetReference>
         </connector>
-        <object>Budget_Reporting_Code__c</object>
+        <object>PNNL_Funding_Obligation__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
 </Flow>

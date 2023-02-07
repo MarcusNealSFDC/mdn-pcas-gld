@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Fund_Code__c</fullName>
+    <fullName>PNNL_Fund_Code_Fiscal_Year__c</fullName>
     <externalId>false</externalId>
-    <formula>PNNL_Contract__r.PNNL_Fund_Code__r.Name</formula>
+    <formula>TEXT(Fund_Code__r.Fiscal_Year__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <label>Fund Code</label>
+    <label>Fund Code Fiscal Year</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
