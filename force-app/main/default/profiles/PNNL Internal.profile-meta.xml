@@ -2364,11 +2364,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Project_Manager__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Opportunity.Project_ObjectiveYN__c</field>
         <readable>true</readable>
     </fieldPermissions>

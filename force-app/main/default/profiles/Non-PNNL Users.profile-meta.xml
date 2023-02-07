@@ -3659,7 +3659,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Funding_Agreement__c-Funding Agreement Layout</layout>
-        <layout>Funding_Action_Attachment__c-Funding Action Attachment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Funding_Action__c-Funding Action Layout</layout>
