@@ -3,7 +3,7 @@
     <fullName>Summary_Amount__c</fullName>
     <description>Some cost sheet line items will display actual cost of line while others will display units of resource utilized.  This formula field adjusts for those lines.</description>
     <externalId>false</externalId>
-    <formula>IF(AND(Quantity &gt; 0, UnitPrice == 0),Quantity,TotalPrice)</formula>
+    <formula>IF(AND(Quantity &gt; 0, UnitPrice == 0, Manual_Override__c==FALSE),Quantity,TotalPrice)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Summary Amount</label>
     <precision>18</precision>
