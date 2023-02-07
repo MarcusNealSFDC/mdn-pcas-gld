@@ -7,14 +7,14 @@
         <locationX>418</locationX>
         <locationY>547</locationY>
         <assignmentItems>
-            <assignToReference>opportunity_Attachment.AttachmentId__c</assignToReference>
+            <assignToReference>Funding_Action_Attachment.AttachmentId__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>Content_Document_ID</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>update_opportunity_attachment</targetReference>
+            <targetReference>update_funding_action_attachment</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -36,56 +36,63 @@
     <assignments>
         <name>assign_Attachment_Name</name>
         <label>Attachment Name</label>
-        <locationX>713</locationX>
+        <locationX>712</locationX>
         <locationY>172</locationY>
         <assignmentItems>
-            <assignToReference>opportunity_Attachment.Name</assignToReference>
+            <assignToReference>Funding_Action_Attachment.Name</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>formula_Opportunity_Attachment_Name</elementReference>
+                <elementReference>formula_Funding_Action_Attachment_Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Funding_Action_Attachment.Funding_Action__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Funding_Action_Record.Id</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>create_Opportunity_Attachment</targetReference>
+            <targetReference>create_Funding_Action_Attachment</targetReference>
         </connector>
     </assignments>
     <assignments>
-        <name>assign_opportunity</name>
-        <label>Opportunity</label>
-        <locationX>415</locationX>
-        <locationY>172</locationY>
+        <name>assign_Funding_Attachment</name>
+        <label>Funding Attachment</label>
+        <locationX>303</locationX>
+        <locationY>133</locationY>
         <assignmentItems>
-            <assignToReference>opportunity_Attachment.Opportunity__c</assignToReference>
+            <assignToReference>Funding_Action_Attachment.Funding_Action__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>opportunity_record.Id</elementReference>
+                <elementReference>recordId</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>opportunity_Attachment.Funding_Type__c</assignToReference>
+            <assignToReference>Funding_Action_Attachment.Funding_Type__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>formula_record_type_name</elementReference>
+                <elementReference>Funding_Action_Record.RecordType.Name</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>screen_Pick_Funding_and_Attachment_Type</targetReference>
+            <targetReference>screen_Pick_Attachment_Type</targetReference>
         </connector>
     </assignments>
-    <description>Upload attachment to custom object opportunity_attachment__c for use in Opportunity Record Page to allow for Attachment Types picklist dependent on Funding Type (Record Type)</description>
+    <description>This flow was copied from CRADA Upload attachment flow</description>
     <environments>Default</environments>
     <formulas>
-        <name>formula_Opportunity_Attachment_Name</name>
+        <name>formula_Funding_Action_Attachment_Name</name>
         <dataType>String</dataType>
-        <expression>TEXT({!opportunity_Attachment.Funding_Type__c}) + &quot; : &quot; + TEXT({!opportunity_Attachment.Attachment_Type__c})</expression>
+        <expression>TEXT({!Funding_Action_Attachment.Funding_Type__c}) + &quot; : &quot; + TEXT({!Funding_Action_Attachment.Attachment_Type__c})</expression>
     </formulas>
     <formulas>
-        <name>formula_record_type_name</name>
+        <name>Funding_Type_Formula</name>
         <dataType>String</dataType>
-        <expression>{!opportunity_record.RecordType.Name}</expression>
+        <expression>{!Funding_Action_Record.Id}</expression>
     </formulas>
-    <interviewLabel>Upload Attachment {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Upload Opportunity Attachment</label>
+    <interviewLabel>Upload Funding Action Attachment {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Upload Funding Action Attachment</label>
     <loops>
         <name>loop_Content_Document_Ids</name>
         <label>loop Content Document Ids</label>
@@ -120,22 +127,23 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordCreates>
-        <name>create_Opportunity_Attachment</name>
-        <label>Opportunity Attachment</label>
+        <name>create_Funding_Action_Attachment</name>
+        <label>Funding Action Attachment</label>
         <locationX>713</locationX>
-        <locationY>335</locationY>
+        <locationY>336</locationY>
         <connector>
             <targetReference>Screen_with_File_Upload_Component</targetReference>
         </connector>
-        <inputReference>opportunity_Attachment</inputReference>
+        <inputReference>Funding_Action_Attachment</inputReference>
     </recordCreates>
     <recordUpdates>
-        <name>update_opportunity_attachment</name>
-        <label>update opportunity attachment</label>
+        <name>update_funding_action_attachment</name>
+        <label>update funding action attachment</label>
         <locationX>715</locationX>
         <locationY>547</locationY>
-        <inputReference>opportunity_Attachment</inputReference>
+        <inputReference>Funding_Action_Attachment</inputReference>
     </recordUpdates>
+    <runInMode>DefaultMode</runInMode>
     <screens>
         <name>screen_debug_content_document_Id</name>
         <label>debug content document id</label>
@@ -155,8 +163,8 @@
     <screens>
         <name>screen_debug_current_item_loop_content_ids</name>
         <label>debug current item loop content ids</label>
-        <locationX>94</locationX>
-        <locationY>335</locationY>
+        <locationX>97</locationX>
+        <locationY>298</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -169,8 +177,8 @@
         <showHeader>true</showHeader>
     </screens>
     <screens>
-        <name>screen_Pick_Funding_and_Attachment_Type</name>
-        <label>Pick Funding and Attachment Type</label>
+        <name>screen_Pick_Attachment_Type</name>
+        <label>Pick Attachment Type</label>
         <locationX>563</locationX>
         <locationY>172</locationY>
         <allowBack>true</allowBack>
@@ -180,33 +188,33 @@
             <targetReference>assign_Attachment_Name</targetReference>
         </connector>
         <fields>
-            <name>display_opportunity_id</name>
-            <fieldText>&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Opportunity ID:&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt; {!opportunity_record.Id}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <name>display_attachment_id</name>
+            <fieldText>&lt;p&gt;Funding Action Record Id: {!Funding_Action_Record.Id}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Funding Action Record Type: &lt;/p&gt;&lt;p&gt;Record Type in formula: {!Funding_Type_Formula}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
-                    <leftValueReference>opportunity_record.Id</leftValueReference>
+                    <leftValueReference>Funding_Action_Attachment.Id</leftValueReference>
                     <operator>EqualTo</operator>
                     <rightValue>
-                        <stringValue></stringValue>
+                        <booleanValue>false</booleanValue>
                     </rightValue>
                 </conditions>
             </visibilityRule>
         </fields>
         <fields>
-            <name>display_funding_type</name>
-            <fieldText>&lt;p&gt;&lt;strong&gt;Funding Type:&lt;/strong&gt; {!opportunity_Attachment.Funding_Type__c}&lt;/p&gt;</fieldText>
+            <name>Funding_Action_Type</name>
+            <fieldText>&lt;p&gt;Funding Action Type: &lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!Funding_Action_Record.RecordType.Name}&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
             <fieldType>ObjectProvided</fieldType>
             <isRequired>false</isRequired>
-            <objectFieldReference>opportunity_Attachment.Funding_Type__c</objectFieldReference>
+            <objectFieldReference>Funding_Action_Attachment.Funding_Type__c</objectFieldReference>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
-                    <leftValueReference>opportunity_Attachment.Opportunity__r.Id</leftValueReference>
+                    <leftValueReference>Funding_Action_Attachment.Id</leftValueReference>
                     <operator>EqualTo</operator>
                     <rightValue>
                         <booleanValue>false</booleanValue>
@@ -217,7 +225,7 @@
         <fields>
             <fieldType>ObjectProvided</fieldType>
             <isRequired>false</isRequired>
-            <objectFieldReference>opportunity_Attachment.Attachment_Type__c</objectFieldReference>
+            <objectFieldReference>Funding_Action_Attachment.Attachment_Type__c</objectFieldReference>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -225,7 +233,7 @@
     <screens>
         <name>Screen_with_File_Upload_Component</name>
         <label>Screen with File Upload</label>
-        <locationX>561</locationX>
+        <locationX>560</locationX>
         <locationY>335</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -235,7 +243,7 @@
         </connector>
         <fields>
             <name>display_Sponsor_and_Attachment_Type</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Opportunity Record Type Name: {!formula_record_type_name}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Opportunity Record TypeID: {!opportunity_record.RecordTypeId}&lt;/p&gt;&lt;p&gt;Funding Type:  {!opportunity_Attachment.Funding_Type__c}&lt;/p&gt;&lt;p&gt;Attachment Type: {!opportunity_Attachment.Attachment_Type__c}&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;Funding Type:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;{!Funding_Action_Attachment.Funding_Type__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;Attachment Type:&lt;/span&gt;{!Funding_Action_Attachment.Attachment_Type__c}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -275,7 +283,7 @@
             <inputParameters>
                 <name>recordId</name>
                 <value>
-                    <elementReference>opportunity_Attachment.Id</elementReference>
+                    <elementReference>Funding_Action_Attachment.Id</elementReference>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -305,7 +313,7 @@
         <locationX>458</locationX>
         <locationY>48</locationY>
         <connector>
-            <targetReference>assign_opportunity</targetReference>
+            <targetReference>assign_Funding_Attachment</targetReference>
         </connector>
     </start>
     <status>Active</status>
@@ -342,20 +350,20 @@
         <objectType>OpportunityLineItem</objectType>
     </variables>
     <variables>
-        <name>opportunity_Attachment</name>
-        <dataType>SObject</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>Opportunity_Attachment__c</objectType>
-    </variables>
-    <variables>
-        <name>opportunity_record</name>
+        <name>Funding_Action_Attachment</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
-        <objectType>Opportunity</objectType>
+        <objectType>Funding_Action_Attachment__c</objectType>
+    </variables>
+    <variables>
+        <name>Funding_Action_Record</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Funding_Action__c</objectType>
     </variables>
     <variables>
         <description>To store the Parent object Record Id to which we need to upload the file.</description>
