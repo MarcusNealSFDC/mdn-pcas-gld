@@ -37,6 +37,10 @@
                 <behavior>Readonly</behavior>
                 <field>Summary_Amount__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Manual_Override__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
