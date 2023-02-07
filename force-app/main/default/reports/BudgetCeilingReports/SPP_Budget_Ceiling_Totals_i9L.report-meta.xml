@@ -45,7 +45,7 @@
         <value>0</value>
     </params>
     <reportType>CustomEntityCustomEntity$PNNL_Fund_Code__c$PNNL_Funding_Obligation__c@PNNL_Funding_Obligation__c.Funding_Action__c</reportType>
-    <scope>user</scope>
+    <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>false</showGrandTotal>
     <showSubTotals>true</showSubTotals>

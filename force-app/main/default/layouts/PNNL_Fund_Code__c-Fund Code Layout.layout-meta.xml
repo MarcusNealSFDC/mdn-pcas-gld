@@ -10,11 +10,11 @@
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>PNNL_Active__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>Fiscal_Year__c</field>
             </layoutItems>
             <layoutItems>
@@ -110,9 +110,10 @@
         <relatedList>PNNL_Contracts__c.PNNL_Fund_Code__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>Fiscal_Year__c</fields>
         <fields>NAME</fields>
         <fields>PNNL_Amount__c</fields>
+        <fields>CREATEDBY_USER</fields>
+        <fields>CREATED_DATE</fields>
         <relatedList>PNNL_Funding_Obligation__c.Fund_Code__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>

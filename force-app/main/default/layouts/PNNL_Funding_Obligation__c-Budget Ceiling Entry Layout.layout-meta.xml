@@ -30,7 +30,7 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>PNNL_Balance__c</field>
             </layoutItems>
         </layoutColumns>
