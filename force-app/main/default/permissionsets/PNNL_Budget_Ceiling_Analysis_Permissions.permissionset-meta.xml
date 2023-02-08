@@ -96,7 +96,7 @@
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
+        <modifyAllRecords>false</modifyAllRecords>
         <object>PNNL_Funding_Obligation__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
