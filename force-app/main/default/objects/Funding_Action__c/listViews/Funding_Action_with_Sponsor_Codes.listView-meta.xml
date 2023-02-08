@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Action_with_Sponsor_Codes</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>NAME</columns>
+    <columns>Sponsor_Group_Code__c</columns>
+    <columns>PNNL_SC_Approved_Level__c</columns>
+    <columns>Agreement_Amount__c</columns>
+    <columns>PNNL_Remaining_Agreement__c</columns>
+    <columns>PNNL_Budget_Ceiling_Availability__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Funding Action with Sponsor Codes</label>
+</ListView>

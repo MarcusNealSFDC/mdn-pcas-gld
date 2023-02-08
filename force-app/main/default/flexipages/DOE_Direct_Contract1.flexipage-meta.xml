@@ -225,8 +225,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Fund_Code__c</fieldItem>
-                <identifier>RecordFund_Code_cField</identifier>
+                <fieldItem>Record.PNNL_Fund_Code__c</fieldItem>
+                <identifier>RecordPNNL_Fund_Code_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
