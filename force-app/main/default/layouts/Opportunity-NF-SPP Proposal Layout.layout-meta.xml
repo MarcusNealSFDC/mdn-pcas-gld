@@ -223,7 +223,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Project_Manager__c</field>
+                <field>Project_Manager3__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
