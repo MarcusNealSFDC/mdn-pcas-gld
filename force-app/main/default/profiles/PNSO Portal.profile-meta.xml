@@ -1596,6 +1596,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Cost_Sheet_Line_Rollup__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Cost_Sheet_Link__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2622,6 +2627,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>OpportunityLineItem.Fiscal_Year__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.Manual_Override__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

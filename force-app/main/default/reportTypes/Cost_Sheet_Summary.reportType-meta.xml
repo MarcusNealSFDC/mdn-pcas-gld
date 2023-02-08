@@ -73,6 +73,11 @@
             <field>PricebookEntry.Product2.ProductCode</field>
             <table>Opportunity.OpportunityLineItems</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Manual_Override__c</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
         <masterLabel>Opportunity Product</masterLabel>
     </sections>
     <sections>
@@ -94,6 +99,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Project_Manager3__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cost_Sheet_Line_Rollup__c</field>
             <table>Opportunity</table>
         </columns>
         <masterLabel>Opportunities</masterLabel>
