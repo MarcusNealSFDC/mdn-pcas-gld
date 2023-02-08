@@ -29,7 +29,7 @@
         <value>0</value>
     </params>
     <reportType>CustomEntity$PNNL_Fund_Code__c</reportType>
-    <scope>user</scope>
+    <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>false</showGrandTotal>
     <showSubTotals>false</showSubTotals>

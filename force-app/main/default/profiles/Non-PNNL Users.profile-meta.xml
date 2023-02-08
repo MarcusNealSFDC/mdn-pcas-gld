@@ -6,7 +6,7 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>PNSO_Application_c</application>
+        <application>PNSO_Application</application>
         <default>true</default>
         <visible>true</visible>
     </applicationVisibilities>
@@ -112,14 +112,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PNNL_CopyAttachmentTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>PNNL_PreventBudgetCodeDeletionTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>PNNL_PreventBudgetCodeEditTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -353,21 +345,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Approval_Process_Signing_Ceremony__mdt.Signing_Ceremony_Copy_Long__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Budget_Reporting_Code__c.Number_Of_Opportunities__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Budget_Reporting_Code__c.Number_of_B_R_Entries__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Budget_Reporting_Code__c.Number_of_PNNL_Contracts__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -894,21 +871,6 @@
         <editable>false</editable>
         <field>Fin_Plan_Data__c.WFO__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Funding_Action_Attachment__c.AttachmentId__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Action_Attachment__c.Document_Link__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Action_Attachment__c.View__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -2947,16 +2909,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>PNNL_Contracts__c.Funding_Action_Id__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>PNNL_Contracts__c.Funding_Action__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>PNNL_Contracts__c.Funding_Client_Reference__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3048,11 +3000,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>PNNL_Contracts__c.PNNL_Limited_Term_Funds__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>PNNL_Contracts__c.PNNL_SPP_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3287,11 +3234,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Project__c.Country_Code__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Project__c.EPR_Signed_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3337,27 +3279,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Project__c.PNNL_Contract__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Project__c.PNSO_Proposal_Reviewer__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Project__c.PPM_Project_Status__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Project__c.PPM_Project__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Project__c.Product_Line__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3661,53 +3588,6 @@
         <layout>Funding_Agreement__c-Funding Agreement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Funding_Action__c-Funding Action Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.ACT</recordType>
-        <layout>Funding_Action__c-Funding Action Layout</layout>
-        <recordType>Funding_Action__c.DOE_Direct</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Funding_Action__c-Funding Action Layout</layout>
-        <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.DHS</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.DOE_Direct</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.F_SPP</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.IWO</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.NF_SPP</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.NIC_RW</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.SIPP</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OpportunityLineItem-Opportunity Product Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3917,12 +3797,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>Funding_Action__c.DOE_Direct</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>

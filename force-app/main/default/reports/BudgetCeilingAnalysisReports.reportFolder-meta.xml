@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>EditAllContents</accessLevel>
+        <sharedTo>marcus.neal@salesforce.com.fas</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>test-lesi7fcfh9f5@example.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <name>Budget Ceiling Analysis Reports</name>
+</ReportFolder>

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>Home_Page_Default</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>Approval_Request_Record_Page</content>
@@ -17,14 +25,6 @@
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
         <pageOrSobjectType>ProcessInstanceWorkitem</pageOrSobjectType>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <content>Home_Page_Default</content>
-        <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
     </actionOverrides>
     <brand>
         <headerColor>#808487</headerColor>
@@ -114,22 +114,6 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Funding_Action_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Funding_Action_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
         <content>DHS_Proposal_Record_Page</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
@@ -433,6 +417,7 @@
         <content>Funding_Action_Record_Page</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
         <type>Flexipage</type>
         <profile>Non-PNNL Users</profile>
     </profileActionOverrides>
@@ -441,8 +426,117 @@
         <content>Funding_Action_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
         <type>Flexipage</type>
         <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Funding_Action_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Funding_Action_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Funding_Action_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Funding_Action_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Funding_Action_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Funding_Action_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Contract</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>Integration User Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Contract</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>Integration User Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Contract</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>PNNL Internal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Contract</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>PNNL Internal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Contract</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Contract</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>Proposals</tabs>
@@ -450,6 +544,8 @@
     <tabs>CRADA__c</tabs>
     <tabs>Funding_Action__c</tabs>
     <tabs>Project__c</tabs>
+    <tabs>PNNL_Funding_Obligation__c</tabs>
+    <tabs>PNNL_Fund_Code__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>PNSO_Application_UtilityBar</utilityBar>
 </CustomApplication>

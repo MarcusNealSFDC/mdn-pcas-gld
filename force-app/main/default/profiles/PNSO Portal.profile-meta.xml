@@ -6,7 +6,7 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>PNSO_Application_c</application>
+        <application>PNSO_Application</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
@@ -706,6 +706,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CRADA__c.Principal_Investigators__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CRADA__c.Program_Secretarial_Office__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1006,7 +1011,37 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Funding_Action__c.PNNL_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.PNNL_Budget_Ceiling_Availability__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Funding_Action__c.PNNL_Contract__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.PNNL_Obligation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.PNNL_Remaining_Agreement__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.PNNL_SC_Approved_Level__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.PNNL_Total_Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1092,6 +1127,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Action__c.Service_Description__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.Sponsor_Group_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2041,6 +2081,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.PNNL_Budget_Reporting_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.PNNL_DHS_Submit_Approval_Checkbox__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2287,6 +2332,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Project_Manager3__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Project_Manager__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2931,6 +2981,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>PNNL_Contracts__c.PNNL_Fund_Code__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>PNNL_Contracts__c.PNNL_Limited_Term_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3012,6 +3067,86 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>PNNL_Data_Event__e.UpdateType__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.Fiscal_Year__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Active__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Approved_Ceiling__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Approved__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Balance__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Obligated__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_PNNL_Contract__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Request_minus_Approved__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Requested_Ceiling__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Total_Obligations__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Funding_Obligation__c.Fiscal_Year__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Funding_Obligation__c.PNNL_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Funding_Obligation__c.PNNL_Balance__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Funding_Obligation__c.PNNL_Fund_Code_Fiscal_Year__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Funding_Obligation__c.PNNL_Obligations__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3177,6 +3312,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Project__c.Report_Class__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Report_Contract_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Report_Period__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3443,17 +3588,6 @@
         <layout>Fin_Plan_Data__c-Fin Plan Data Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Funding_Action__c-Funding Action Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Funding_Action__c-Funding Action Layout</layout>
-        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Funding_Action__c-Funding Action Layout</layout>
-        <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Funding_Agreement__c-Funding Agreement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3515,6 +3649,12 @@
     <layoutAssignments>
         <layout>PNNL_Contracts__c-Non-DOE Layout</layout>
         <recordType>PNNL_Contracts__c.ACT</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PNNL_Fund_Code__c-Fund Code Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PNNL_Funding_Obligation__c-Budget Ceiling Entry Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Project_Allocation__c-Project Allocation Layout</layout>
@@ -3779,6 +3919,14 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>PNNL_Contracts__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>PNNL_Fund_Code__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>PNNL_Funding_Obligation__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
