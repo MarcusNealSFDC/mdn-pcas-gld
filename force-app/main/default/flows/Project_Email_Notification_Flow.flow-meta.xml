@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
         <name>SendEmailNotice</name>
@@ -14,8 +14,7 @@
         <inputParameters>
             <name>emailBody</name>
             <value>
-                <stringValue
-        >The information below is designed to assist you in managing your projects. For contracts that are close to expiring in either funds or time, this message is automatically sent on a monthly basis to the cognizant Project Manager and Contract Administrator.  The Project(s) listed below have contracts that currently meet one, or both, of the following criteria: 1.    Is within 3 months of expending the authorized amount at the current average monthly spending rate, or 2.    Is within 90 days of the max contract completion date.  If there are issues on cost, schedule or milestones, please contact the Project Manager or their Administrator to meet project/contract requirements. As a reminder, if your project is continuing and you are approaching a stop work situation because you have not received all of your funding or work authorizations, please contact your Business Office for assistance.  Select the project number below to view the contracts detail tab in the Project Management Reports. {!Loop_Through_Project.Name} is scheduled to close in 90 days. Please review the record for any closing actions needed. Record Id is  {!Loop_Through_Project.Id}</stringValue>
+                <stringValue>The information below is designed to assist you in managing your projects. For contracts that are close to expiring in either funds or time, this message is automatically sent on a monthly basis to the cognizant Project Manager and Contract Administrator.  The Project(s) listed below have contracts that currently meet one, or both, of the following criteria: 1.    Is within 3 months of expending the authorized amount at the current average monthly spending rate, or 2.    Is within 90 days of the max contract completion date.  If there are issues on cost, schedule or milestones, please contact the Project Manager or their Administrator to meet project/contract requirements. As a reminder, if your project is continuing and you are approaching a stop work situation because you have not received all of your funding or work authorizations, please contact your Business Office for assistance.  Select the project number below to view the contracts detail tab in the Project Management Reports. {!Loop_Through_Project.Name} is scheduled to close in 90 days. Please review the record for any closing actions needed. Record Id is  {!Loop_Through_Project.Id}</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -27,15 +26,13 @@
         <inputParameters>
             <name>senderAddress</name>
             <value>
-                <elementReference
-        >Loop_Through_Project.Owner:User.Email</elementReference>
+                <elementReference>Loop_Through_Project.Owner:User.Email</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
             <name>emailSubject</name>
             <value>
-                <stringValue
-        >{!Loop_Through_Project.Name} is scheduled to close 90 days from today.</stringValue>
+                <stringValue>{!Loop_Through_Project.Name} is scheduled to close 90 days from today.</stringValue>
             </value>
         </inputParameters>
     </actionCalls>
@@ -53,8 +50,7 @@
         <inputParameters>
             <name>emailBody</name>
             <value>
-                <stringValue
-        >The information below is designed to assist you in managing your projects. For contracts that are close to expiring in either funds or time, this message is automatically sent on a monthly basis to the cognizant Project Manager and Contract Administrator.  The Project(s) listed below have contracts that currently meet one, or both, of the following criteria: 1.    Is within 3 months of expending the authorized amount at the current average monthly spending rate, or 2.    Is within 90 days of the max contract completion date.  If there are issues on cost, schedule or milestones, please contact the Project Manager or their Administrator to meet project/contract requirements. As a reminder, if your project is continuing and you are approaching a stop work situation because you have not received all of your funding or work authorizations, please contact your Business Office for assistance.  Select the project number below to view the contracts detail tab in the Project Management Reports. {!Loop_Through_Project.Name} is scheduled to close in 90 days. Please review the record for any closing actions needed. Record Id is  {!Loop_Through_Project.Id}</stringValue>
+                <stringValue>The information below is designed to assist you in managing your projects. For contracts that are close to expiring in either funds or time, this message is automatically sent on a monthly basis to the cognizant Project Manager and Contract Administrator.  The Project(s) listed below have contracts that currently meet one, or both, of the following criteria: 1.    Is within 3 months of expending the authorized amount at the current average monthly spending rate, or 2.    Is within 90 days of the max contract completion date.  If there are issues on cost, schedule or milestones, please contact the Project Manager or their Administrator to meet project/contract requirements. As a reminder, if your project is continuing and you are approaching a stop work situation because you have not received all of your funding or work authorizations, please contact your Business Office for assistance.  Select the project number below to view the contracts detail tab in the Project Management Reports. {!Loop_Through_Project.Name} is scheduled to close in 90 days. Please review the record for any closing actions needed. Record Id is  {!Loop_Through_Project.Id}</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -66,15 +62,13 @@
         <inputParameters>
             <name>senderAddress</name>
             <value>
-                <elementReference
-        >Loop_Through_Project.Owner:User.Email</elementReference>
+                <elementReference>Loop_Through_Project.Owner:User.Email</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
             <name>emailSubject</name>
             <value>
-                <stringValue
-        >{!Loop_Through_Project.Name} is set to close 30 days from today.</stringValue>
+                <stringValue>{!Loop_Through_Project.Name} is set to close 30 days from today.</stringValue>
             </value>
         </inputParameters>
     </actionCalls>
@@ -92,8 +86,7 @@
         <inputParameters>
             <name>emailBody</name>
             <value>
-                <stringValue
-        >The information below is designed to assist you in managing your projects. For contracts that are close to expiring in either funds or time, this message is automatically sent on a monthly basis to the cognizant Project Manager and Contract Administrator.  The Project(s) listed below have contracts that currently meet one, or both, of the following criteria: 1.    Is within 3 months of expending the authorized amount at the current average monthly spending rate, or 2.    Is within 90 days of the max contract completion date.  If there are issues on cost, schedule or milestones, please contact the Project Manager or their Administrator to meet project/contract requirements. As a reminder, if your project is continuing and you are approaching a stop work situation because you have not received all of your funding or work authorizations, please contact your Business Office for assistance.  Select the project number below to view the contracts detail tab in the Project Management Reports. {!Loop_Through_Project.Name} is scheduled to close in 90 days. Please review the record for any closing actions needed. Record Id is  {!Loop_Through_Project.Id}</stringValue>
+                <stringValue>The information below is designed to assist you in managing your projects. For contracts that are close to expiring in either funds or time, this message is automatically sent on a monthly basis to the cognizant Project Manager and Contract Administrator.  The Project(s) listed below have contracts that currently meet one, or both, of the following criteria: 1.    Is within 3 months of expending the authorized amount at the current average monthly spending rate, or 2.    Is within 90 days of the max contract completion date.  If there are issues on cost, schedule or milestones, please contact the Project Manager or their Administrator to meet project/contract requirements. As a reminder, if your project is continuing and you are approaching a stop work situation because you have not received all of your funding or work authorizations, please contact your Business Office for assistance.  Select the project number below to view the contracts detail tab in the Project Management Reports. {!Loop_Through_Project.Name} is scheduled to close in 90 days. Please review the record for any closing actions needed. Record Id is  {!Loop_Through_Project.Id}</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -105,15 +98,13 @@
         <inputParameters>
             <name>senderAddress</name>
             <value>
-                <elementReference
-        >Loop_Through_Project.Owner:User.Email</elementReference>
+                <elementReference>Loop_Through_Project.Owner:User.Email</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
             <name>emailSubject</name>
             <value>
-                <stringValue
-        >{!Loop_Through_Project.Name} is scheduled to close 60 days from today.</stringValue>
+                <stringValue>{!Loop_Through_Project.Name} is scheduled to close 60 days from today.</stringValue>
             </value>
         </inputParameters>
     </actionCalls>
@@ -127,32 +118,28 @@
             <assignToReference>EmailCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference
-        >Loop_Through_Project.Opportunity__r.Contract_Specialist2__r.Email</elementReference>
+                <elementReference>Loop_Through_Project.Opportunity__r.Contract_Specialist2__r.Email</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>EmailCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference
-        >Loop_Through_Project.Opportunity__r.Project_Manager3__r.Email</elementReference>
+                <elementReference>Loop_Through_Project.Opportunity__r.Project_Manager3__r.Email</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>EmailCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference
-        >Loop_Through_Project.Opportunity__r.Project_Coordinators__r.Email</elementReference>
+                <elementReference>Loop_Through_Project.Opportunity__r.Project_Coordinators__r.Email</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>EmailCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference
-        >Loop_Through_Project.Opportunity__r.Project_Management_Office_Email_Address__c</elementReference>
+                <elementReference>Loop_Through_Project.Opportunity__r.Project_Management_Office_Email_Address__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -168,32 +155,28 @@
             <assignToReference>EmailCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference
-        >Loop_Through_Project.Opportunity__r.Contract_Specialist2__r.Email</elementReference>
+                <elementReference>Loop_Through_Project.Opportunity__r.Contract_Specialist2__r.Email</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>EmailCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference
-        >Loop_Through_Project.Opportunity__r.Project_Manager3__r.Email</elementReference>
+                <elementReference>Loop_Through_Project.Opportunity__r.Project_Manager3__r.Email</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>EmailCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference
-        >Loop_Through_Project.Opportunity__r.Project_Coordinators__r.Email</elementReference>
+                <elementReference>Loop_Through_Project.Opportunity__r.Project_Coordinators__r.Email</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>EmailCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference
-        >Loop_Through_Project.Opportunity__r.Project_Management_Office_Email_Address__c</elementReference>
+                <elementReference>Loop_Through_Project.Opportunity__r.Project_Management_Office_Email_Address__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -209,32 +192,28 @@
             <assignToReference>EmailCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference
-        >Loop_Through_Project.Opportunity__r.Contract_Specialist2__r.Email</elementReference>
+                <elementReference>Loop_Through_Project.Opportunity__r.Contract_Specialist2__r.Email</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>EmailCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference
-        >Loop_Through_Project.Opportunity__r.Project_Manager3__r.Email</elementReference>
+                <elementReference>Loop_Through_Project.Opportunity__r.Project_Manager3__r.Email</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>EmailCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference
-        >Loop_Through_Project.Opportunity__r.Project_Coordinators__r.Email</elementReference>
+                <elementReference>Loop_Through_Project.Opportunity__r.Project_Coordinators__r.Email</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>EmailCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference
-        >Loop_Through_Project.Opportunity__r.Project_Management_Office_Email_Address__c</elementReference>
+                <elementReference>Loop_Through_Project.Opportunity__r.Project_Management_Office_Email_Address__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -275,8 +254,7 @@
             <name>NinetyDaysNotice</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference
-        >Loop_Through_Project.Close_Date__c</leftValueReference>
+                <leftValueReference>Loop_Through_Project.Close_Date__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <elementReference>NinetyDaysFromToday</elementReference>
@@ -291,8 +269,7 @@
             <name>SixtyDaysNotice</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference
-        >Loop_Through_Project.Close_Date__c</leftValueReference>
+                <leftValueReference>Loop_Through_Project.Close_Date__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <elementReference>SixtyDaysFromToday</elementReference>
@@ -307,8 +284,7 @@
             <name>ThirtyDaysNotice</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference
-        >Loop_Through_Project.Close_Date__c</leftValueReference>
+                <leftValueReference>Loop_Through_Project.Close_Date__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <elementReference>ThirtyDaysFromToday</elementReference>
@@ -341,8 +317,7 @@
         <dataType>Date</dataType>
         <expression>Today()</expression>
     </formulas>
-    <interviewLabel
-  >Project Email Notification Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <interviewLabel>Project Email Notification Flow {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Project Email Notification Flow</label>
     <loops>
         <name>Loop_Through_Project</name>
@@ -379,8 +354,7 @@
         <label>Get Project Records</label>
         <locationX>176</locationX>
         <locationY>276</locationY>
-        <assignNullValuesIfNoRecordsFound
-    >false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_Through_Project</targetReference>
         </connector>

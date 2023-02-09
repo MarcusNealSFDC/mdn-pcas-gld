@@ -7,7 +7,7 @@
         <label>Opportunity Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>Proposal_Number__c</field>
             </layoutItems>
             <layoutItems>
@@ -39,15 +39,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Organization_Code__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Proposed_Amount__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Proposed_Start_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Is_Locked__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -209,6 +209,22 @@
                 <behavior>Readonly</behavior>
                 <field>Cost_Sheet_Line_Rollup__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>EPR_Signed_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>B_R_Text__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ACT_Determinations_2__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ACT_Determinations_4__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -342,7 +358,7 @@
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>AccountId</field>
             </layoutItems>
             <layoutItems>
@@ -509,6 +525,13 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Amendment_Fee_Amount__c</fields>
+        <fields>Amendment_Authorized_Amount__c</fields>
+        <fields>Setup_Date__c</fields>
+        <relatedList>Proposed_Amendment__c.Proposal__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
         <fields>Project_Title2__c</fields>
         <fields>Market_Sector_pnnl__c</fields>
         <fields>Project_Manager2__c</fields>
@@ -558,7 +581,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000013sK6</masterLabel>
+        <masterLabel>00h3R000000st0t</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

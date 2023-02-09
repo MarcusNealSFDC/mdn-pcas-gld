@@ -5,7 +5,7 @@
     <externalId>false</externalId>
     <formula>AND(
 RecordType.Name = &quot;DOE Direct&quot;,
-ISPICKVAL(StageName,&quot;Proposal Draft&quot;),
+ISPICKVAL(StageName,&quot;Proposal Preparation&quot;),
 NOT(ISBLANK(Project_Coordinators__c)),
 NOT(ISBLANK(PNSO_Technical_Rep2__c)),
 

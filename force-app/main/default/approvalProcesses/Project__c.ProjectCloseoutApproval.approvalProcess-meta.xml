@@ -3,7 +3,8 @@
     <active>true</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
-        <type>owner</type>
+        <submitter>Internal_PNNL_Users</submitter>
+        <type>group</type>
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>

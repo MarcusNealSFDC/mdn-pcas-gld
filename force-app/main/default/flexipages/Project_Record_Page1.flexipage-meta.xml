@@ -104,6 +104,20 @@
                 <identifier>force_highlightsPanel</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>hideUpdateButton</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>variant</name>
+                    <value>non-linear</value>
+                </componentInstanceProperties>
+                <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
+                <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
         <mode>Replace</mode>
         <name>header</name>
         <type>Region</type>
@@ -145,16 +159,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PPM_Project__c</fieldItem>
-                <identifier>RecordPPM_Project_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Market_Sector_pnnl__c</fieldItem>
                 <identifier>RecordMarket_Sector_pnnl_cField</identifier>
             </fieldInstance>
@@ -175,8 +179,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.BO_Tax_Cr_Cd__c</fieldItem>
-                <identifier>RecordBO_Tax_Cr_Cd_cField</identifier>
+                <fieldItem>Record.Cost_Code__c</fieldItem>
+                <identifier>RecordCost_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -229,8 +233,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Status__c</fieldItem>
-                <identifier>RecordProject_Status_cField</identifier>
+                <fieldItem>Record.PPM_Project__c</fieldItem>
+                <identifier>RecordPPM_Project_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -297,16 +301,6 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Cost_Code__c</fieldItem>
-                <identifier>RecordCost_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
                     <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Invalid__c</fieldItem>
@@ -349,6 +343,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.ReportClass__c</fieldItem>
                 <identifier>RecordReportClass_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.BO_Tax_Cr_Cd__c</fieldItem>
+                <identifier>RecordBO_Tax_Cr_Cd_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -573,20 +577,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>hideUpdateButton</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>variant</name>
-                    <value>linear</value>
-                </componentInstanceProperties>
-                <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
-                <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
-            </componentInstance>
-        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

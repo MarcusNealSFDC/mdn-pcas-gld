@@ -4,9 +4,8 @@
     <fields>Name</fields>
     <fields>Fund_Code__c</fields>
     <fields>Program_Code__c</fields>
-    <fields>Budget_and_Reporting_Code__c</fields>
     <fields>Project_Code__c</fields>
     <fields>Object_Class__c</fields>
-    <fields>Local_Use__c</fields>
+    <fields>Report_Class__c</fields>
     <label>Contract Compact Layout</label>
 </CompactLayout>

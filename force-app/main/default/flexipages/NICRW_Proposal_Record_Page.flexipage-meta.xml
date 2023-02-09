@@ -26,16 +26,10 @@
                         <valueListItems>
                             <value>Submit</value>
                             <visibilityRule>
-                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.PNNL_NIC_RW_Submit_Approval_Checkbox__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.StageName}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>Proposal Preparation</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -90,7 +84,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>hideUpdateButton</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>variant</name>
@@ -98,6 +92,27 @@
                 </componentInstanceProperties>
                 <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
                 <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(241, 15, 15); font-size: 18px;&quot;&gt;This Proposal has been approved and can not be edited.﻿&lt;/strong&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Is_Locked__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -165,6 +180,16 @@
                 <identifier>RecordRisk_Assessment_Link_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.EPR_Signed_Date__c</fieldItem>
+                <identifier>RecordEPR_Signed_Date_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-e42b5582-9a7d-411d-946d-f97b6f727225</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -177,6 +202,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Project_Title__c</fieldItem>
                 <identifier>RecordProject_Title_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.StageName</fieldItem>
+                <identifier>RecordStageNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -389,8 +424,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Organization_Code__c</fieldItem>
-                <identifier>RecordOrganization_Code_cField</identifier>
+                <fieldItem>Record.Market_Sector_pnnl__c</fieldItem>
+                <identifier>RecordMarket_Sector_pnnl_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -399,8 +434,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Market_Sector_pnnl__c</fieldItem>
-                <identifier>RecordMarket_Sector_pnnl_cField</identifier>
+                <fieldItem>Record.Cost_Code__c</fieldItem>
+                <identifier>RecordCost_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -698,6 +733,16 @@
                 <identifier>RecordCosting_Comments_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.BO_Tax_Credit__c</fieldItem>
+                <identifier>RecordBO_Tax_Credit_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-72e2e6ff-80bc-4766-8a60-c43902f30e37</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -896,8 +941,25 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Research_Required_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Animal_Researcher2__c</fieldItem>
                 <identifier>RecordPNSO_Animal_Researcher2_cField2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.PNSO_Animal_Research_Required__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
