@@ -3,7 +3,8 @@
     <active>true</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
-        <type>owner</type>
+        <submitter>Internal_PNNL_Users</submitter>
+        <type>group</type>
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
@@ -118,14 +119,14 @@
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
-            <field>Opportunity.B_R__c</field>
+            <field>Opportunity.B_R_Text__c</field>
             <operation>startsWith</operation>
             <value>AT,KA,KB,KC,KL,KP,KX,KJ,ST,FS10</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
         <action>
-            <name>Approval_Not_In_Process</name>
+            <name>Lock_Record</name>
             <type>FieldUpdate</type>
         </action>
         <action>
@@ -141,23 +142,9 @@
             <type>FieldUpdate</type>
         </action>
     </finalApprovalActions>
-    <finalApprovalRecordLock>true</finalApprovalRecordLock>
-    <finalRejectionActions>
-        <action>
-            <name>Approval_Not_In_Process</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Approval_Rejected</name>
-            <type>FieldUpdate</type>
-        </action>
-    </finalRejectionActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
-        <action>
-            <name>Approval_in_Process</name>
-            <type>FieldUpdate</type>
-        </action>
         <action>
             <name>Proposal_Submitted</name>
             <type>FieldUpdate</type>
@@ -168,21 +155,7 @@
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>
     </nextAutomatedApprover>
-    <processOrder>4</processOrder>
-    <recallActions>
-        <action>
-            <name>Approval_Not_In_Process</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Approval_Recalled</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Recalled</name>
-            <type>FieldUpdate</type>
-        </action>
-    </recallActions>
+    <processOrder>2</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>

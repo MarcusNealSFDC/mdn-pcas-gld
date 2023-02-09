@@ -235,16 +235,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Billing_Code__c</fieldItem>
-                <identifier>RecordBilling_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Project_Code__c</fieldItem>
                 <identifier>RecordProject_Code_cField2</identifier>
             </fieldInstance>
@@ -255,8 +245,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Code__c</fieldItem>
-                <identifier>RecordProject_Code_cField</identifier>
+                <fieldItem>Record.Program_Code__c</fieldItem>
+                <identifier>RecordProgram_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

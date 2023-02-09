@@ -5,7 +5,7 @@
     <externalId>false</externalId>
     <formula>AND( 
 RecordType.Name = &quot;IWO&quot;,
-ISPICKVAL(StageName,&quot;Proposal Draft&quot;),
+ISPICKVAL(StageName,&quot;Proposal Preparation&quot;),
 NOT(ISBLANK(Project_Coordinators__c)),
 NOT(ISBLANK(IWO_Specialist__c)),
 NOT(ISBLANK(PNSO_Proposal_Reviewer__c)), 

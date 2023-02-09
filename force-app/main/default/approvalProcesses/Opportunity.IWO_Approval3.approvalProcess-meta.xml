@@ -3,7 +3,8 @@
     <active>true</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
-        <type>owner</type>
+        <submitter>Internal_PNNL_Users</submitter>
+        <type>group</type>
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
@@ -93,24 +94,20 @@
         <criteriaItems>
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
-            <value>Proposal Draft</value>
+            <value>Proposal Preparation</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
         <action>
+            <name>Lock_Record</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
             <name>PNSO_Approval_of_SPP_Proposal</name>
             <type>Alert</type>
         </action>
-        <action>
-            <name>PNSO_Signed_Date</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Proposal_Approved</name>
-            <type>FieldUpdate</type>
-        </action>
     </finalApprovalActions>
-    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
@@ -119,7 +116,7 @@
         </action>
     </initialSubmissionActions>
     <label>IWO Approval</label>
-    <processOrder>5</processOrder>
+    <processOrder>4</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>

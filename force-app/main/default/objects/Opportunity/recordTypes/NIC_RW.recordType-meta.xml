@@ -7,6 +7,28 @@
     <description>Non-Integrated Contractor Reimbursable Work</description>
     <label>NIC-RW</label>
     <picklistValues>
+        <picklist>ACT_Determinations_2__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ACT_Determinations_4__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>ACT_Disclose_6C__c</picklist>
         <values>
             <fullName>No</fullName>
@@ -1370,6 +1392,13 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>PNNL_ACT_Office__c</picklist>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>PNNL_Parallel_Categorization__c</picklist>
         <values>
             <fullName>Data Analytics</fullName>
@@ -2105,6 +2134,62 @@
     <picklistValues>
         <picklist>Program_Secretarial_Office__c</picklist>
         <values>
+            <fullName>Administrator of National Nuclear Security Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Research Projects Agency - Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistant Secretary for Efficiency and Renewable Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistant Secretary for Environmental Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistant Secretary for Fossil Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistant Secretary for Policy and International Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistant Secretary of Nuclear Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Information Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal Energy Regulatory Commission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan Programs Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of Congressional and Intergovernmental Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of Economic Impact and Diversity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of Electricity Delivery and Energy Reliability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of Energy and Threat</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Office of Science</fullName>
             <default>false</default>
         </values>
@@ -2234,45 +2319,6 @@
         </values>
         <values>
             <fullName>IRA</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Status__c</picklist>
-        <values>
-            <fullName>Active</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Anticipatory</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Cleared</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Closed</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Not Cleared</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Proposed</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Rejected</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Vaulted</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Withdrawn</fullName>
             <default>false</default>
         </values>
     </picklistValues>
