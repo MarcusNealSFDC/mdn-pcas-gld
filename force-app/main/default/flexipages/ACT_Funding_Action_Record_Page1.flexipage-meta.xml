@@ -616,8 +616,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Staff_Reviewer__c</fieldItem>
-                <identifier>RecordProject_Staff_Reviewer_cField</identifier>
+                <fieldItem>Record.Contract_Specialist__c</fieldItem>
+                <identifier>RecordContract_Specialist_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-603c82f1-a349-4c1a-bb26-afca6484af18</name>

@@ -23,6 +23,7 @@
 		<members>CRADA__c.CRADA_Approvalv3</members>
 		<members>Funding_Action__c.Funding_Action_Approval2</members>
 		<members>Funding_Action__c.Funding_Action_Approval_ACT2</members>
+		<members>Funding_Action__c.Funding_Action_Approval_ACT3</members>
 		<members>Funding_Agreement__c.Work_Authorization_Approval</members>
 		<members>Opportunity.ACT_Approvals6</members>
 		<members>Opportunity.FWP_Approval_Non_Office_of_Science2</members>

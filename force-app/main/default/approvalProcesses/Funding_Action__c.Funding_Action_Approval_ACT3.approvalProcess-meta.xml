@@ -3,30 +3,12 @@
     <active>true</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
-        <type>creator</type>
+        <submitter>Internal_PNNL_Users</submitter>
+        <type>group</type>
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
     </approvalPageFields>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>Project_Staff_Reviewer__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <entryCriteria>
-            <criteriaItems>
-                <field>Funding_Action__c.Project_Staff_Reviewer__c</field>
-                <operation>notEqual</operation>
-            </criteriaItems>
-        </entryCriteria>
-        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
-        <label>Project Staff Reviewer Approval</label>
-        <name>Project_Staff_Reviewer_Approval</name>
-    </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
@@ -45,9 +27,6 @@
         <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
         <label>SPP Office Reviewer Approval</label>
         <name>SPP_Office_Reviewer_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -153,7 +132,7 @@
         </action>
     </initialSubmissionActions>
     <label>Funding Action Approval - ACT</label>
-    <processOrder>1</processOrder>
+    <processOrder>2</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>
