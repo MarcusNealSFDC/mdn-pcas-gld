@@ -159,6 +159,10 @@
                 <behavior>Edit</behavior>
                 <field>Funding_Action_Id__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Authorized_Amount__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

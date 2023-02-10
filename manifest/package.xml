@@ -27,7 +27,7 @@
 		<members>Opportunity.ACT_Approvals6</members>
 		<members>Opportunity.FWP_Approval_Non_Office_of_Science2</members>
 		<members>Opportunity.FWP_Proposal_Approval_Process_Phase_1</members>
-		<members>Opportunity.IWO_Approval3</members>
+		<members>Opportunity.IWO_Approval4</members>
 		<members>Opportunity.SApprovals5</members>
 		<members>Project__c.ProjectCloseoutApproval</members>
 		<name>ApprovalProcess</name>

@@ -63,6 +63,12 @@
                 <elementReference>GetProposalRecords.IWO_Specialist__r.Id</elementReference>
             </value>
         </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>Proposal Preparation</stringValue>
+            </value>
+        </inputAssignments>
         <object>Opportunity</object>
     </recordUpdates>
     <start>

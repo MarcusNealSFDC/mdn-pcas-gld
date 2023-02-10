@@ -91,6 +91,13 @@
                 <stringValue>Proposal Draft</stringValue>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Is_Locked__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>CreateOpportunityRecord</targetReference>
         </connector>

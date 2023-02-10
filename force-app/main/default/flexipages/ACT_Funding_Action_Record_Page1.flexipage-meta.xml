@@ -82,18 +82,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Proposal_Amendment__c</fieldItem>
-                <identifier>RecordProposal_Amendment_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Amendment__c</fieldItem>
-                <identifier>RecordContract_Amendment_cField</identifier>
+                <fieldItem>Record.CRADA__c</fieldItem>
+                <identifier>RecordCRADA_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-891cadc1-9828-4c8b-bdd5-e28b967772db</name>
@@ -118,6 +108,26 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Status__c</fieldItem>
                 <identifier>RecordStatus_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Proposal_Amendment__c</fieldItem>
+                <identifier>RecordProposal_Amendment_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Contract_Amendment__c</fieldItem>
+                <identifier>RecordContract_Amendment_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-5b6679f5-24eb-492e-a3db-665ce8e167db</name>

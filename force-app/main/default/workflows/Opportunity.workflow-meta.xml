@@ -177,7 +177,7 @@
         <fullName>Proposal_Submitted</fullName>
         <description>Field to indicate a proposal has been submitted for approval</description>
         <field>StageName</field>
-        <literalValue>Proposal Submitted</literalValue>
+        <literalValue>Proposal Pending</literalValue>
         <name>Proposal Submitted</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
@@ -197,7 +197,7 @@
     <fieldUpdates>
         <fullName>Update_Field_to_Proposal_Prep</fullName>
         <field>StageName</field>
-        <literalValue>Proposal Preparation</literalValue>
+        <literalValue>Proposal Submitted</literalValue>
         <name>Update Field to Proposal Prep</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
