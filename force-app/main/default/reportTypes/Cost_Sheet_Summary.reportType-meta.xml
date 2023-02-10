@@ -98,11 +98,6 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Project_Manager__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Cost_Sheet_Line_Rollup__c</field>
             <table>Opportunity</table>
         </columns>

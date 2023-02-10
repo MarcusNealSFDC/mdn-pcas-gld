@@ -7,10 +7,6 @@
         <label>Opportunity Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Proposal_Number__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>Funding_Client__c</field>
             </layoutItems>
@@ -200,10 +196,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>BO_Tax_Credit__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Project_Manager__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

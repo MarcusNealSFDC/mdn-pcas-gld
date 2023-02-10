@@ -69,10 +69,6 @@
                 <field>Project_Management_Office_pnnl__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Special_Reporting_Funds__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CRADA__c</field>
             </layoutItems>
