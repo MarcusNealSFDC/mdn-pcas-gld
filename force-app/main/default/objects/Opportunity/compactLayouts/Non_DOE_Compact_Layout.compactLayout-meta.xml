@@ -8,5 +8,6 @@
     <fields>Funding_Client__c</fields>
     <fields>RecordTypeId</fields>
     <fields>OwnerId</fields>
+    <fields>StageName</fields>
     <label>Non-DOE Compact Layout</label>
 </CompactLayout>

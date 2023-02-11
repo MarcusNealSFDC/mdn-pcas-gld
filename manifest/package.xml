@@ -194,6 +194,7 @@
 		<members>DOE_Direct_Contract1</members>
 		<members>Funding_Action_Record_Page</members>
 		<members>Funding_Agreement_Record_Page</members>
+		<members>IWO_Contract</members>
 		<members>IWO_Proposal_Record_Page</members>
 		<members>MSWCRADAPage</members>
 		<members>NFSPP_Proposal_Record_Page</members>
