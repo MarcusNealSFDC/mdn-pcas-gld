@@ -20,10 +20,16 @@
                         <valueListItems>
                             <value>Submit</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.PNNL_IWO_Submit_Approval_Checkbox__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Proposal Preparation</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -52,7 +58,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
@@ -71,7 +77,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>hideUpdateButton</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>variant</name>
@@ -766,8 +772,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Amendment_Number__c</fieldItem>
-                <identifier>RecordAmendment_Number_cField2</identifier>
+                <fieldItem>Record.IWO_Amendment_Number__c</fieldItem>
+                <identifier>RecordIWO_Amendment_Number_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-e0f0dcf2-a7e9-46be-8e2d-d223e29c39ef</name>

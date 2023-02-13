@@ -98,11 +98,6 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Project_Manager__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Cost_Sheet_Line_Rollup__c</field>
             <table>Opportunity</table>
         </columns>
@@ -134,6 +129,16 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>ACT_Determinations_2__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IWO_Amendment_Number__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Parent_Opportunity__c</field>
             <table>Opportunity</table>
         </columns>
         <masterLabel>Opportunities</masterLabel>

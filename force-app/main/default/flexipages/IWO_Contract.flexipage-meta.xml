@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Non-DOE Contracts</description>
+    <description>IWO Contracts</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
@@ -29,11 +29,11 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
-                    <value>3</value>
+                    <value>5</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
                 <identifier>force_highlightsPanel</identifier>
@@ -117,16 +117,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.FAC__c</fieldItem>
-                <identifier>RecordFAC_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.BOA_Number__c</fieldItem>
                 <identifier>RecordBOA_Number_cField</identifier>
             </fieldInstance>
@@ -147,8 +137,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Status__c</fieldItem>
-                <identifier>RecordContract_Status_cField</identifier>
+                <fieldItem>Record.CRADA2__c</fieldItem>
+                <identifier>RecordCRADA2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -157,8 +147,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.CRADA2__c</fieldItem>
-                <identifier>RecordCRADA2_cField</identifier>
+                <fieldItem>Record.Contract_Status__c</fieldItem>
+                <identifier>RecordContract_Status_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-95759a73-4880-4852-a86d-5e9995273798</name>
@@ -225,28 +215,18 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Code__c</fieldItem>
-                <identifier>RecordProject_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.SPP_Code__c</fieldItem>
-                <identifier>RecordSPP_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Fund_Code__c</fieldItem>
                 <identifier>RecordFund_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Fund_Type__c</fieldItem>
+                <identifier>RecordFund_Type_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-f2691759-9993-4590-891f-a8da4058c4c1</name>
@@ -303,16 +283,6 @@
                 <identifier>RecordClose_Out_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Fund_Type__c</fieldItem>
-                <identifier>RecordFund_Type_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-817d5222-10c4-4306-ba89-b91b8a590342</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -341,16 +311,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Authorized_Amount__c</fieldItem>
-                <identifier>RecordAuthorized_Amount_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -449,6 +409,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Authorized_Amount__c</fieldItem>
+                <identifier>RecordAuthorized_Amount_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Contract_Amount__c</fieldItem>
                 <identifier>RecordContract_Amount_cField</identifier>
             </fieldInstance>
@@ -459,8 +429,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Fee_Amount__c</fieldItem>
-                <identifier>RecordFee_Amount_cField</identifier>
+                <fieldItem>Record.Overrun__c</fieldItem>
+                <identifier>RecordOverrun_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-d401a876-10ad-4c77-bc80-2d3504fb5895</name>
@@ -485,16 +455,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Balance_Order2__c</fieldItem>
                 <identifier>RecordBalance_Order2_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Overrun__c</fieldItem>
-                <identifier>RecordOverrun_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-273aa6e5-b897-41b1-9e8e-1375c948b3c2</name>
@@ -545,6 +505,10 @@
                 <identifier>RecordInvoice_Type_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <name>Facet-4c72fc9b-81e3-4162-a653-7873d7e93d18</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -592,104 +556,6 @@
                         <leftValue>{!Record.Invoice_Type__c}</leftValue>
                         <operator>EQUAL</operator>
                         <rightValue>G Invoicing</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.IPAC_Line_of_Accounting__c</fieldItem>
-                <identifier>RecordIPAC_Line_of_Accounting_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.GL_Sub_Accounts__c</fieldItem>
-                <identifier>RecordGL_Sub_Accounts_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-4c72fc9b-81e3-4162-a653-7873d7e93d18</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Anticipatory_Amount__c</fieldItem>
-                <identifier>RecordAnticipatory_Amount_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Anticipatory_Note__c</fieldItem>
-                <identifier>RecordAnticipatory_Note_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.BETC_Code__c</fieldItem>
-                <identifier>RecordBETC_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Advance_Received__c</fieldItem>
-                <identifier>RecordAdvance_Received_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Advance__c</fieldItem>
-                <identifier>RecordAdvance_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Advance_Received__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>Yes</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Advance_Amount__c</fieldItem>
-                <identifier>RecordAdvance_Amount_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Advance_Received__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>Yes</rightValue>
                     </criteria>
                 </visibilityRule>
             </fieldInstance>
@@ -782,7 +648,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>ACT Contract Information</value>
+                    <value>IWO Contract Information</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection</identifier>
@@ -883,7 +749,7 @@
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>ACT Contract</masterLabel>
+    <masterLabel>IWO Contract</masterLabel>
     <sobjectType>PNNL_Contracts__c</sobjectType>
     <template>
         <name>flexipage:recordHomeTemplateDesktop</name>

@@ -380,11 +380,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Budget_Reporting_Entry__c.Incremental_Funding__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Budget_Reporting_Entry__c.Incremental_Funding_picklist__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -411,11 +406,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Budget_Reporting_Entry__c.Scope__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Budget_Reporting_Entry__c.Statement_of_Work__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -510,11 +500,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>CRADA__c.Commercialization_Manager_CM__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>CRADA__c.Commercialization_Manager__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -525,17 +510,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>CRADA__c.Contract_Specialist__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>CRADA__c.DOE_IP_Approver2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>CRADA__c.DOE_IP_Approver__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -585,11 +560,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>CRADA__c.PNNL_IP_Approver__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>CRADA__c.PNSO_Animal_Researcher__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -600,17 +570,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>CRADA__c.PNSO_CRADA_Coordinator__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>CRADA__c.PNSO_Contracting_Officer2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>CRADA__c.PNSO_Contracting_Officer__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -621,11 +581,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CRADA__c.PNSO_Technical_Reviewer2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>CRADA__c.PNSO_Technical_Reviewer__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -650,11 +605,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>CRADA__c.Principal_Investigator__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>CRADA__c.Principal_Investigators__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -671,11 +621,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CRADA__c.Project_Coordinator__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>CRADA__c.Project_Management_Office__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -980,6 +925,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Funding_Action__c.CRADA__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Funding_Action__c.Client_Action_Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1221,26 +1171,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Funding_Agreement__c.Alpha_Code2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Funding_Agreement__c.Alpha_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Funding_Agreement__c.Approval_Recalled__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Funding_Agreement__c.Approval_Rejected__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Funding_Agreement__c.Approval_in_Process__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1556,21 +1486,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Approach__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Approval_Recalled__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Approval_Rejected__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Approval_in_Process__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1905,6 +1820,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.IWO_Amendment_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.IWO_Specialist__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1967,11 +1887,6 @@
         <editable>true</editable>
         <field>Opportunity.MSOF__c</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Market_Sector__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -2149,11 +2064,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.PNNL_ACT_Office__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PNNL_ACT_Submit_Approval_Checkbox__c</field>
         <readable>true</readable>
@@ -2240,18 +2150,8 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.PNNL_Work_Proposal_Manager__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Opportunity.PNSOACTReviewer__c</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.PNSO_ACT_Reviewer__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -2265,17 +2165,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.PNSO_Animal_Researcher__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Opportunity.PNSO_Contracting_Officer2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.PNSO_Contracting_Officer__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2286,11 +2176,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.PNSO_Coordinator_Foreign_Approver__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.PNSO_Coordinator__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2310,12 +2195,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.PNSO_Technical_Rep__c</field>
+        <field>Opportunity.PSO_Point_of_Contact__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.PSO_Point_of_Contact__c</field>
+        <field>Opportunity.Parent_Opportunity__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2355,11 +2240,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Principal_Investigator__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Opportunity.Principal_Place_of_Performance__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2390,11 +2270,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Project_Coordinator__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Opportunity.Project_Coordinators__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2411,11 +2286,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Project_Manager3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Project_Manager__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2845,6 +2715,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>PNNL_Contracts__c.Authorized_Amount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>PNNL_Contracts__c.BETC_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2976,11 +2851,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>PNNL_Contracts__c.FY_Authorized_Amount__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>PNNL_Contracts__c.Fee_Amount2__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3275,11 +3145,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Project__c.EP_R_Signed_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Project__c.Effective_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3297,11 +3162,6 @@
         <editable>true</editable>
         <field>Project__c.Last_Cost_Date__c</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Project__c.Market_Sector__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -3431,11 +3291,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Project__c.Special_Reporting_Funds1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Project__c.Special_Reporting_Funds__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3732,6 +3587,10 @@
     <layoutAssignments>
         <layout>PNNL_Contracts__c-Non-DOE Layout</layout>
         <recordType>PNNL_Contracts__c.ACT</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PNNL_Contracts__c-Non-DOE Layout</layout>
+        <recordType>PNNL_Contracts__c.IWO</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>PNNL_Contracts__c-Non-DOE Layout</layout>
@@ -4095,6 +3954,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>PNNL_Contracts__c.DOE_Direct</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>PNNL_Contracts__c.IWO</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -4679,10 +4543,6 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>SendCustomNotifications</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>SendExternalEmailAvailable</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

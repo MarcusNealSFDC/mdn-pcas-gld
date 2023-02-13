@@ -26,10 +26,16 @@
                         <valueListItems>
                             <value>Submit</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.PNNL_NF_SPP_Submit_Approval_Checkbox__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Proposal Preparation</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -84,7 +90,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>hideUpdateButton</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>variant</name>

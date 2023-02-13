@@ -7,8 +7,7 @@
 RecordType.Name = &quot;IWO&quot;,
 ISPICKVAL(StageName,&quot;Proposal Preparation&quot;),
 NOT(ISBLANK(Project_Coordinators__c)),
-NOT(ISBLANK(IWO_Specialist__c)),
-NOT(ISBLANK(PNSO_Proposal_Reviewer__c)), 
+NOT(ISBLANK(IWO_Specialist__c)), 
 NOT(ISBLANK(PNSO_Technical_Rep2__c)),
 NOT(ISBLANK(PNSO_Contracting_Officer2__c))
 )</formula>

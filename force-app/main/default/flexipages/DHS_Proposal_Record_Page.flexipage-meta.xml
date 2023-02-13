@@ -26,10 +26,16 @@
                         <valueListItems>
                             <value>Submit</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.PNNL_DHS_Submit_Approval_Checkbox__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Proposal Preparation</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -65,7 +71,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
@@ -456,6 +462,23 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
                 <identifier>RecordPNSO_Animal_Research_Required_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Animal_Researcher2__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Researcher2_cField2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.PNSO_Animal_Research_Required__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

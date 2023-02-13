@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IWO</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>SPP_Contract_Compact</compactLayoutAssignment>
+    <label>IWO</label>
+    <picklistValues>
+        <picklist>Advance_Received__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Advance__c</picklist>
+        <values>
+            <fullName>Full Advance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Advance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BETC_Code__c</picklist>
+        <values>
+            <fullName>DISGF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISNGF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Balance_Order2__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Billing_Type__c</picklist>
+        <values>
+            <fullName>ACT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOEPAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G-Invoicing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NICRW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Fed SPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIPP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ContractType__c</picklist>
+        <values>
+            <fullName>BOA - Basic Ordering Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPAF - Cost Plus Award Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPFF - Cost Plus Fixed Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPIF - Cost Plus Incentive Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPPC - Cost Plus Percentage of Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRADA - Cooperative Research and Development Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRC - Cost Reimbursable Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRG - Cost Reimbursable Grant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FPLOE - Firm Fixed Price%2C Level of Effort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FX - Firm Fixed Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ILA - Interlaboratory Authorization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP - Intellectual Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPA - Intergovernmental Personnel Act</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OC - Operating Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T%26M - Time and Materials</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vaulted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FAC__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoice_Type__c</picklist>
+        <values>
+            <fullName>DOEPAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G Invoicing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PNNL_Limited_Term_Funds__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
