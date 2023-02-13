@@ -49,6 +49,9 @@
         <label>Assign IWO Specialist</label>
         <locationX>176</locationX>
         <locationY>278</locationY>
+        <connector>
+            <targetReference>Assign_IWO_Specialist2</targetReference>
+        </connector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -71,6 +74,22 @@
         </inputAssignments>
         <object>Opportunity</object>
     </recordUpdates>
+    <screens>
+        <name>Assign_IWO_Specialist2</name>
+        <label>Assign IWO Specialist2</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>IWO_Assignment</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://pnnl--uat.sandbox.file.force.com/sfc/servlet.shepherd/version/download/0683R000000sE4J?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;company_logo_348910.png&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 18px; color: rgb(131, 131, 131); background-color: rgb(255, 255, 255);&quot;&gt;The IWO Specialist has been assigned to the Proposal&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
