@@ -282,13 +282,20 @@
         <fields>NAME</fields>
         <relatedList>PNNL_Contracts__c.Funding_Action__c</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>Fiscal_Year__c</fields>
+        <fields>PNNL_Fund_Code__c.NAME</fields>
+        <fields>PNNL_Amount__c</fields>
+        <fields>PNNL_Balance__c</fields>
+        <relatedList>PNNL_Funding_Obligation__c.Funding_Action__c</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000014VGW</masterLabel>
+        <masterLabel>00h3S000000nVV8</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
