@@ -520,6 +520,13 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
+        <fields>NAME</fields>
+        <fields>Account__c</fields>
+        <fields>Cost_Sheet_Number__c</fields>
+        <fields>Revision_Number__c</fields>
+        <relatedList>Cost_Sheet_Rollup__c.OpportunityId__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <excludeButtons>ChoosePricebook</excludeButtons>
         <excludeButtons>EditAllProduct</excludeButtons>
         <excludeButtons>MultiEdit</excludeButtons>
@@ -591,7 +598,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000zLTO</masterLabel>
+        <masterLabel>00h3R00000169Ak</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

@@ -239,11 +239,6 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>Opportunity.Purge_Cost_Sheet</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>14</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>Opportunity.Add_Attachment</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>0</sortOrder>
@@ -313,6 +308,11 @@
             <actionType>QuickAction</actionType>
             <sortOrder>13</sortOrder>
         </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Opportunity.Purge_Cost_Sheet</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>14</sortOrder>
+        </platformActionListItems>
     </platformActionList>
     <quickActionList>
         <quickActionListItems>
@@ -348,6 +348,13 @@
             </layoutItem>
         </relatedContentItems>
     </relatedContent>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Account__c</fields>
+        <fields>Cost_Sheet_Number__c</fields>
+        <fields>Revision_Number__c</fields>
+        <relatedList>Cost_Sheet_Rollup__c.OpportunityId__c</relatedList>
+    </relatedLists>
     <relatedLists>
         <excludeButtons>ChoosePricebook</excludeButtons>
         <excludeButtons>EditAllProduct</excludeButtons>
@@ -437,7 +444,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000ygKc</masterLabel>
+        <masterLabel>00h3R0000016947</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
