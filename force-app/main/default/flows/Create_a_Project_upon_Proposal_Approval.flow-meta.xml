@@ -29,6 +29,18 @@
         <locationX>176</locationX>
         <locationY>335</locationY>
         <inputAssignments>
+            <field>BO_Tax_Cr_Cd__c</field>
+            <value>
+                <elementReference>$Record.BO_Tax_Credit__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Cost_Code__c</field>
+            <value>
+                <elementReference>$Record.Cost_Code__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Name</field>
             <value>
                 <elementReference>$Record.Name</elementReference>

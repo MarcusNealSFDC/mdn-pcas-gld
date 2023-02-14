@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
         <name>OpenNewRecord</name>
         <label>OpenNewRecord</label>
-        <locationX>176</locationX>
-        <locationY>518</locationY>
+        <locationX>182</locationX>
+        <locationY>974</locationY>
         <actionName>c:OpenOpportunity</actionName>
         <actionType>component</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -18,10 +18,56 @@
     </actionCalls>
     <apiVersion>56.0</apiVersion>
     <assignments>
+        <name>AmendmentCount2</name>
+        <label>AmendmentCount2</label>
+        <locationX>314</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>AmendmentCount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GetAllChildOpptyRecords.Amendment_Number__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AmendmentCount</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AssignRecordValues</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>AssignAmendmentCount</name>
+        <label>Assign Amendment Count</label>
+        <locationX>50</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>AmendmentCount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GetAllRelatedOpptyRecords.Amendment_Number__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AmendmentCount</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AssignRecordValues_withParent</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>AssignRecordValues</name>
         <label>AssignRecordValues</label>
-        <locationX>176</locationX>
-        <locationY>278</locationY>
+        <locationX>314</locationX>
+        <locationY>638</locationY>
         <assignmentItems>
             <assignToReference>RecordToClone</assignToReference>
             <operator>Assign</operator>
@@ -33,15 +79,14 @@
             <assignToReference>RecordToClone.Id</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue />
+                <stringValue></stringValue>
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference
-      >RecordToClone.Amendment_Number__c</assignToReference>
+            <assignToReference>RecordToClone.Amendment_Number__c</assignToReference>
             <operator>Add</operator>
             <value>
-                <numberValue>1.0</numberValue>
+                <elementReference>AmendmentCount</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -58,10 +103,93 @@
                 <numberValue>0.0</numberValue>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Parent_Opportunity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>CreateOppRecord</targetReference>
         </connector>
     </assignments>
+    <assignments>
+        <name>AssignRecordValues_withParent</name>
+        <label>AssignRecordValues</label>
+        <locationX>50</locationX>
+        <locationY>638</locationY>
+        <assignmentItems>
+            <assignToReference>RecordToClone</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GetRecords</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Amendment_Number__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AmendmentCount</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.StageName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Proposal Draft</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Revison__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Parent_Opportunity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GetRecords.Parent_Opportunity__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>CreateOppRecord</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Parent_Opportunity</name>
+        <label>Check Parent Opportunity</label>
+        <locationX>182</locationX>
+        <locationY>278</locationY>
+        <defaultConnector>
+            <targetReference>GetAllChildOpptyRecords</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Opportunity_has_parent</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>GetRecords.Parent_Opportunity__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetAllRelatedOpptyRecords</targetReference>
+            </connector>
+            <label>Opportunity has parent</label>
+        </rules>
+    </decisions>
     <environments>Default</environments>
     <interviewLabel>Amendment Flow {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Amendment Flow</label>
@@ -87,22 +215,67 @@
     <recordCreates>
         <name>CreateOppRecord</name>
         <label>CreateOppRecord</label>
-        <locationX>176</locationX>
-        <locationY>398</locationY>
+        <locationX>182</locationX>
+        <locationY>854</locationY>
         <connector>
             <targetReference>OpenNewRecord</targetReference>
         </connector>
         <inputReference>RecordToClone</inputReference>
     </recordCreates>
     <recordLookups>
+        <name>GetAllChildOpptyRecords</name>
+        <label>GetAllChildOpptyRecords</label>
+        <locationX>314</locationX>
+        <locationY>398</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>AmendmentCount2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Parent_Opportunity__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <sortField>Amendment_Number__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetAllRelatedOpptyRecords</name>
+        <label>GetAllRelatedOpptyRecords</label>
+        <locationX>50</locationX>
+        <locationY>398</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>AssignAmendmentCount</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Parent_Opportunity__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRecords.Parent_Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <sortField>Amendment_Number__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>GetRecords</name>
         <label>GetRecords</label>
-        <locationX>176</locationX>
+        <locationX>182</locationX>
         <locationY>158</locationY>
-        <assignNullValuesIfNoRecordsFound
-    >false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>AssignRecordValues</targetReference>
+            <targetReference>Check_Parent_Opportunity</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -117,13 +290,21 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
-        <locationX>50</locationX>
+        <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>GetRecords</targetReference>
         </connector>
     </start>
     <status>Active</status>
+    <variables>
+        <name>AmendmentCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
     <variables>
         <name>OpportunityIdList</name>
         <dataType>String</dataType>

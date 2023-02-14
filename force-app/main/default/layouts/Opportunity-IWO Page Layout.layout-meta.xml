@@ -8,10 +8,6 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Proposal_Number__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>Funding_Client__c</field>
             </layoutItems>
             <layoutItems>
@@ -39,10 +35,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Organization_Code__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Proposed_Amount__c</field>
             </layoutItems>
             <layoutItems>
@@ -52,6 +44,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Official_Use_Only__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Is_Locked__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -186,12 +182,28 @@
                 <field>BO_Tax_Credit__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Cost_Sheet_Line_Rollup__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Project_Manager__c</field>
+                <field>EPR_Signed_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Cost_Sheet_Line_Rollup__c</field>
+                <field>B_R_Text__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ACT_Determinations_2__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ACT_Determinations_4__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>IWO_Amendment_Number__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -326,7 +338,7 @@
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>AccountId</field>
             </layoutItems>
             <layoutItems>
@@ -516,6 +528,14 @@
         <relatedList>RelatedLineItemList</relatedList>
     </relatedLists>
     <relatedLists>
+        <fields>NAME</fields>
+        <fields>Advance_Payment_Requested__c</fields>
+        <fields>Amendment_Fee_Amount__c</fields>
+        <fields>Amendment_Authorized_Amount__c</fields>
+        <fields>Setup_Date__c</fields>
+        <relatedList>Proposed_Amendment__c.Proposal__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>MemberName</fields>
         <fields>OppAccessLevel</fields>
         <fields>TeamMemberRole</fields>
@@ -526,6 +546,9 @@
         <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <relatedList>Opportunity_Attachment__c.Opportunity__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedFileList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -562,6 +585,12 @@
         <fields>Comments</fields>
         <relatedList>RelatedProcessHistoryList</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>OPPORTUNITY.CLOSE_DATE</fields>
+        <relatedList>Opportunity.Parent_Opportunity__c</relatedList>
+    </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>
@@ -569,7 +598,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000013sK3</masterLabel>
+        <masterLabel>00h3R000000tfPH</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

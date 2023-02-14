@@ -3,6 +3,6 @@
     <fullName>Do_Not_Allow_Edit_of_InEditable_Records</fullName>
     <active>true</active>
     <description>Records that do not have &quot;Manual_Override__c&quot; set to true are not editable by anyone other than the System Administrator.</description>
-    <errorConditionFormula>AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;, Manual_Override__c&lt;&gt;TRUE)</errorConditionFormula>
+    <errorConditionFormula>AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;Integration User Profile&apos;,Manual_Override__c&lt;&gt;TRUE)</errorConditionFormula>
     <errorMessage>This record is not available for edit.</errorMessage>
 </ValidationRule>

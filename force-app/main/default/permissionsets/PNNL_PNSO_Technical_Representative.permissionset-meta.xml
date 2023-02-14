@@ -77,11 +77,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>CRADA__c.Commercialization_Manager_CM__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>CRADA__c.Commercialization_Manager__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -92,17 +87,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>CRADA__c.Contract_Specialist__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>CRADA__c.DOE_IP_Approver2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>CRADA__c.DOE_IP_Approver__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -152,11 +137,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>CRADA__c.PNNL_IP_Approver__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>CRADA__c.PNSO_Animal_Researcher__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -167,17 +147,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>CRADA__c.PNSO_CRADA_Coordinator__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>CRADA__c.PNSO_Contracting_Officer2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>CRADA__c.PNSO_Contracting_Officer__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -188,11 +158,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CRADA__c.PNSO_Technical_Reviewer2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>CRADA__c.PNSO_Technical_Reviewer__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -217,11 +182,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>CRADA__c.Principal_Investigator__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>CRADA__c.Program_Secretarial_Office__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -233,11 +193,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CRADA__c.Project_Coordinator__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>CRADA__c.Project_Management_Office__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -527,26 +482,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Funding_Agreement__c.Alpha_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Agreement__c.Approval_Recalled__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Agreement__c.Approval_Rejected__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Agreement__c.Approval_in_Process__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Funding_Agreement__c.Assistant_Secretary__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -823,21 +758,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Approach__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Approval_Recalled__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Approval_Rejected__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Approval_in_Process__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1417,22 +1337,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.PNSO_Contracting_Officer__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.PNSO_Coordinator2__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.PNSO_Coordinator_Foreign_Approver__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.PNSO_Coordinator__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1778,11 +1688,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Statement_of_Consideration__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

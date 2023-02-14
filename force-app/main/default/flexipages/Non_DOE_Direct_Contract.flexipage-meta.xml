@@ -13,6 +13,9 @@
                         <valueListItems>
                             <value>Clone</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>ChangeRecordType</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -235,16 +238,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Billing_Code__c</fieldItem>
-                <identifier>RecordBilling_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Project_Code__c</fieldItem>
                 <identifier>RecordProject_Code_cField2</identifier>
             </fieldInstance>
@@ -255,8 +248,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Code__c</fieldItem>
-                <identifier>RecordProject_Code_cField</identifier>
+                <fieldItem>Record.Program_Code__c</fieldItem>
+                <identifier>RecordProgram_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -453,6 +446,16 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Authorized_Amount__c</fieldItem>
+                <identifier>RecordAuthorized_Amount_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>

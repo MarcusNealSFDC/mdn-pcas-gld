@@ -32,11 +32,6 @@
                 <label>DHS Act 6 U.S.C. 189</label>
             </value>
             <value>
-                <fullName>Economy Acr 31 U.S.C.1535</fullName>
-                <default>false</default>
-                <label>Economy Acr 31 U.S.C.1535</label>
-            </value>
-            <value>
                 <fullName>Energy Reorganization Act (42 U.S.C. 5845)</fullName>
                 <default>false</default>
                 <label>Energy Reorganization Act (42 U.S.C. 5845)</label>
@@ -75,6 +70,17 @@
                 <fullName>Public Health and Welfare 42 U.S.C. 241</fullName>
                 <default>false</default>
                 <label>Public Health and Welfare 42 U.S.C. 241</label>
+            </value>
+            <value>
+                <fullName>Economy Act 31 U.S.C.1535</fullName>
+                <default>false</default>
+                <label>Economy Act 31 U.S.C.1535</label>
+            </value>
+            <value>
+                <fullName>Economy Acr 31 U.S.C.1535</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Economy Acr 31 U.S.C.1535</label>
             </value>
         </valueSetDefinition>
     </valueSet>
