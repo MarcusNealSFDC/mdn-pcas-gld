@@ -104,6 +104,20 @@
                 <identifier>force_highlightsPanel</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>hideUpdateButton</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>variant</name>
+                    <value>non-linear</value>
+                </componentInstanceProperties>
+                <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
+                <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
         <mode>Replace</mode>
         <name>header</name>
         <type>Region</type>
@@ -115,8 +129,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PPM_Project__c</fieldItem>
-                <identifier>RecordPPM_Project_cField</identifier>
+                <fieldItem>Record.Name</fieldItem>
+                <identifier>RecordNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -145,16 +159,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Name</fieldItem>
-                <identifier>RecordNameField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Market_Sector_pnnl__c</fieldItem>
                 <identifier>RecordMarket_Sector_pnnl_cField</identifier>
             </fieldInstance>
@@ -175,8 +179,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.BO_Tax_Cr_Cd__c</fieldItem>
-                <identifier>RecordBO_Tax_Cr_Cd_cField</identifier>
+                <fieldItem>Record.Cost_Code__c</fieldItem>
+                <identifier>RecordCost_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -205,8 +209,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PNNL_Contract__c</fieldItem>
-                <identifier>RecordPNNL_Contract_cField</identifier>
+                <fieldItem>Record.Report_Contract_Number1__c</fieldItem>
+                <identifier>RecordReport_Contract_Number1_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-926beea1-b664-4f61-a64d-f80a15a0ec13</name>
@@ -229,8 +233,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PPM_Project_Status__c</fieldItem>
-                <identifier>RecordPPM_Project_Status_cField</identifier>
+                <fieldItem>Record.PPM_Project__c</fieldItem>
+                <identifier>RecordPPM_Project_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -297,17 +301,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Cost_Code__c</fieldItem>
-                <identifier>RecordCost_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Invalid__c</fieldItem>
                 <identifier>RecordInvalid_cField</identifier>
@@ -357,8 +351,18 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Country_Code__c</fieldItem>
-                <identifier>RecordCountry_Code_cField</identifier>
+                <fieldItem>Record.BO_Tax_Cr_Cd__c</fieldItem>
+                <identifier>RecordBO_Tax_Cr_Cd_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Country_Code1__c</fieldItem>
+                <identifier>RecordCountry_Code1_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-da676584-bc9e-4c8d-84e1-f91f2ee7264d</name>
@@ -381,8 +385,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Special_Reporting_Funds__c</fieldItem>
-                <identifier>RecordSpecial_Reporting_Funds_cField</identifier>
+                <fieldItem>Record.Special_Reporting_Funds1__c</fieldItem>
+                <identifier>RecordSpecial_Reporting_Funds1_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-debd4289-fbb3-4f0c-9df2-b7a451879feb</name>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
-        <type>owner</type>
+        <submitter>Internal_PNNL_Users</submitter>
+        <type>group</type>
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
@@ -69,14 +70,14 @@
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>
-            <field>Project__c.PPM_Project_Status__c</field>
+            <field>Project__c.Project_Status__c</field>
             <operation>equals</operation>
             <value>Pending Close</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
         <action>
-            <name>Update_Project_Status</name>
+            <name>Close_Project_Update</name>
             <type>FieldUpdate</type>
         </action>
     </finalApprovalActions>

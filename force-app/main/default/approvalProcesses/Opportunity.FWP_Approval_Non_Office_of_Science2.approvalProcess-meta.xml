@@ -3,7 +3,8 @@
     <active>true</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
-        <type>owner</type>
+        <submitter>Internal_PNNL_Users</submitter>
+        <type>group</type>
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
@@ -101,27 +102,12 @@
     </entryCriteria>
     <finalApprovalActions>
         <action>
-            <name>Approval_Not_In_Process</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Final_Approval_Received</name>
+            <name>Lock_Record</name>
             <type>FieldUpdate</type>
         </action>
         <action>
             <name>PNSO_Approval_of_FIN_Plan_Proposal</name>
             <type>Alert</type>
-        </action>
-    </finalApprovalActions>
-    <finalApprovalRecordLock>true</finalApprovalRecordLock>
-    <finalRejectionActions>
-        <action>
-            <name>Approval_Not_In_Process</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Approval_Rejected</name>
-            <type>FieldUpdate</type>
         </action>
         <action>
             <name>PNSO_Signed_Date</name>
@@ -131,15 +117,16 @@
             <name>Proposal_Approved</name>
             <type>FieldUpdate</type>
         </action>
-    </finalRejectionActions>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
-            <name>Approval_in_Process</name>
+            <name>Flag_Approval_Process_Queue_Update</name>
             <type>FieldUpdate</type>
         </action>
         <action>
-            <name>Flag_Approval_Process_Queue_Update</name>
+            <name>Proposal_Submitted</name>
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
@@ -150,14 +137,6 @@
     </nextAutomatedApprover>
     <processOrder>3</processOrder>
     <recallActions>
-        <action>
-            <name>Approval_Not_In_Process</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Approval_Recalled</name>
-            <type>FieldUpdate</type>
-        </action>
         <action>
             <name>Recalled</name>
             <type>FieldUpdate</type>

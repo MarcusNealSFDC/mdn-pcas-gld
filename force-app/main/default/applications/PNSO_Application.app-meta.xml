@@ -42,6 +42,42 @@
     <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
+        <content>ACT_Contract</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>PNNL Internal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Contract</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>PNNL Internal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Contract</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Contract</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>PNNL_Contracts__c</pageOrSobjectType>
+        <recordType>PNNL_Contracts__c.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
         <content>NICRW_Proposal_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
@@ -168,123 +204,6 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>CRADA_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
-        <recordType>CRADA__c.CRADA</recordType>
-        <type>Flexipage</type>
-        <profile>Non-PNNL Users</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CRADA_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
-        <recordType>CRADA__c.CRADA</recordType>
-        <type>Flexipage</type>
-        <profile>Non-PNNL Users</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CRADA_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
-        <recordType>CRADA__c.CRADA</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CRADA_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
-        <recordType>CRADA__c.CRADA</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CRADA_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
-        <recordType>CRADA__c.MSW_CRADA</recordType>
-        <type>Flexipage</type>
-        <profile>Non-PNNL Users</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CRADA_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
-        <recordType>CRADA__c.MSW_CRADA</recordType>
-        <type>Flexipage</type>
-        <profile>Non-PNNL Users</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CRADA_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
-        <recordType>CRADA__c.MSW_CRADA</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CRADA_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
-        <recordType>CRADA__c.MSW_CRADA</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>ACT_Proposal_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.ACT</recordType>
-        <type>Flexipage</type>
-        <profile>Non-PNNL Users</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>ACT_Proposal_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.ACT</recordType>
-        <type>Flexipage</type>
-        <profile>Non-PNNL Users</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>NFSPP_Proposal_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.NF_SPP</recordType>
-        <type>Flexipage</type>
-        <profile>Non-PNNL Users</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>NFSPP_Proposal_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.NF_SPP</recordType>
-        <type>Flexipage</type>
-        <profile>Non-PNNL Users</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>NFSPP_Proposal_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.NF_SPP</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
         <content>NFSPP_Proposal_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
@@ -307,22 +226,6 @@
         <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
         <type>Flexipage</type>
         <profile>Non-PNNL Users</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Funding_Agreement_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>PNSO_Portal Profile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Funding_Agreement_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>PNSO_Portal Profile</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -417,6 +320,193 @@
         <content>Funding_Action_Record_Page</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Funding_Action_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CRADA_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
+        <recordType>CRADA__c.MSW_CRADA</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Proposal_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Proposal_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>NFSPP_Proposal_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.NF_SPP</recordType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>NFSPP_Proposal_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.NF_SPP</recordType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>NFSPP_Proposal_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.NF_SPP</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CRADA_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
+        <recordType>CRADA__c.CRADA</recordType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CRADA_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
+        <recordType>CRADA__c.CRADA</recordType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CRADA_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
+        <recordType>CRADA__c.CRADA</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CRADA_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
+        <recordType>CRADA__c.CRADA</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CRADA_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
+        <recordType>CRADA__c.MSW_CRADA</recordType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CRADA_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
+        <recordType>CRADA__c.MSW_CRADA</recordType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CRADA_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>CRADA__c</pageOrSobjectType>
+        <recordType>CRADA__c.MSW_CRADA</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Proposal_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Proposal_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.ACT</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Funding_Action_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Funding_Action_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Funding_Action_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ACT_Funding_Action_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Funding_Action_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
         <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
         <type>Flexipage</type>
         <profile>Non-PNNL Users</profile>
@@ -429,6 +519,27 @@
         <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
         <type>Flexipage</type>
         <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Funding_Action_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
+<<<<<<< HEAD:force-app/main/default/applications/PNSO_Application.app-meta.xml
+        <type>Flexipage</type>
+        <profile>Non-PNNL Users</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Funding_Action_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+        <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
+=======
+>>>>>>> 03-uat:force-app/main/default/applications/PNSO_Application_c.app-meta.xml
+        <type>Flexipage</type>
+        <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -462,9 +573,13 @@
         <content>ACT_Funding_Action_Record_Page1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
+<<<<<<< HEAD:force-app/main/default/applications/PNSO_Application.app-meta.xml
         <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
+=======
+        <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
+>>>>>>> 03-uat:force-app/main/default/applications/PNSO_Application_c.app-meta.xml
         <type>Flexipage</type>
-        <profile>Non-PNNL Users</profile>
+        <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
