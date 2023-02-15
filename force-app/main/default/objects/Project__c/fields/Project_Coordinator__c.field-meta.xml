@@ -7,7 +7,7 @@
     <lookupFilter>
         <active>true</active>
         <filterItems>
-            <field>$User.Project_Coordinator__c</field>
+            <field>User.Project_Coordinator__c</field>
             <operation>equals</operation>
             <value>True</value>
         </filterItems>

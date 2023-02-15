@@ -19,6 +19,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Field_Work_Proposal__c</field>
             </layoutItems>
             <layoutItems>

@@ -296,28 +296,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Fee_Amount2__c</fieldItem>
-                <identifier>RecordFee_Amount2_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Total__c</fieldItem>
                 <identifier>RecordTotal_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Incremental_Funding__c</fieldItem>
-                <identifier>RecordIncremental_Funding_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-98c8c690-d6d5-4ed2-aa43-0bef9883e3e9</name>
@@ -624,50 +604,10 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Project_Admin__c</fieldItem>
-                <identifier>RecordPNSO_Project_Admin_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Project_Admin_Email__c</fieldItem>
-                <identifier>RecordPNSO_Project_Admin_Email_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-eadd5087-2060-45a6-b8d1-f81528e2ddb6</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Program_Admin__c</fieldItem>
-                <identifier>RecordPNSO_Program_Admin_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNSO_Program_Admin_Email__c</fieldItem>
-                <identifier>RecordPNSO_Program_Admin_Email_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-6b2d0600-0480-4360-b8d9-d40f0d5723be</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -774,7 +714,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>PNSO Administrators</value>
+                    <value>Notifications</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection5</identifier>

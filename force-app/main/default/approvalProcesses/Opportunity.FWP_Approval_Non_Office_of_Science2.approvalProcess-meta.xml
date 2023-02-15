@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
     <active>true</active>
-    <allowRecall>false</allowRecall>
+    <allowRecall>true</allowRecall>
     <allowedSubmitters>
         <submitter>Internal_PNNL_Users</submitter>
         <type>group</type>
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
+        <field>Scope__c</field>
+        <field>Project_Title__c</field>
+        <field>Proposed_Start_Date__c</field>
+        <field>CloseDate</field>
         <field>Owner</field>
     </approvalPageFields>
     <approvalStep>
@@ -81,7 +85,7 @@
         </rejectBehavior>
     </approvalStep>
     <description>Approval process for use in FWP proposal Type - Phase 2 which includes PNSO approval</description>
-    <emailTemplate>unfiled$public/Proposal_Approval_Email</emailTemplate>
+    <emailTemplate>ApprovalProcessEmails/Approval_Template_1676320339023</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>
