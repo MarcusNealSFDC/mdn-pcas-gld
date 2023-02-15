@@ -739,6 +739,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Contact.GenderIdentity</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Contact.Hanford_ID__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -791,6 +796,11 @@
         <editable>true</editable>
         <field>Contact.Phone</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Pronouns</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1764,21 +1774,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.FY_2023__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.FY_2024__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.FY_2025__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.Facility_Requirements__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2379,6 +2374,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.ProposedAmtFY0__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.ProposedAmtFY1__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.ProposedAmtFY2__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Proposed_Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2565,6 +2575,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Statement_of_Consideration__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Status__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3303,11 +3318,6 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Project__c.PPM_Project_Status__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Project__c.PPM_Project__c</field>
         <readable>true</readable>
@@ -3438,14 +3448,14 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>User.Accounts_Receivable_Manager__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>User.Accounts_Receivable_Reviewer__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -3548,9 +3558,9 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>User.Project_Coordinator__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -3615,6 +3625,21 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Fin_Plan_Data__c-Fin Plan Data Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Funding_Action__c-Funding Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Funding_Action__c-Funding Action Layout</layout>
+        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Funding_Action__c-Funding Action Layout</layout>
+        <recordType>Funding_Action__c.DOE_Direct_Funding_Action</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Funding_Action__c-Funding Action Layout</layout>
+        <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Funding_Agreement__c-Funding Agreement Layout</layout>
@@ -3831,6 +3856,11 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Funding_Action__c.DOE_Direct_Funding_Action</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <default>false</default>
         <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
         <visible>false</visible>
@@ -3955,10 +3985,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Project__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Proposals</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

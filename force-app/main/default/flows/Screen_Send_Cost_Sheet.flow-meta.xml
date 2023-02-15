@@ -28,6 +28,9 @@
         <label>Create Platform Event</label>
         <locationX>176</locationX>
         <locationY>278</locationY>
+        <connector>
+            <targetReference>Cost_Sheet</targetReference>
+        </connector>
         <inputAssignments>
             <field>Action__c</field>
             <value>
@@ -61,6 +64,22 @@
         <object>PNNL_Data_Event__e</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
+    <screens>
+        <name>Cost_Sheet</name>
+        <label>Cost Sheet</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Confirmation</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://pnnl--uat.sandbox.file.force.com/sfc/servlet.shepherd/version/download/0683R000000sWC3?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;company_logo_348910.png&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); font-size: 18px; color: rgb(131, 131, 131);&quot;&gt;Cost Sheet Number {!Cost_Sheet_Number}, Revision {!Cost_Sheet_Revision} has been attached&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
     <screens>
         <name>Cost_Sheet_Inputs</name>
         <label>Cost Sheet Inputs</label>

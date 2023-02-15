@@ -13,7 +13,7 @@
 Record Detail Link:
 {!Funding_Agreement__c.Link}
 Approval History:
-{!Funding_Agreement__c.Approval_in_Process__c}
+{!Funding_Agreement__c.00N3R0000037UM6}
 
 Status:
 {!Funding_Agreement__c.Status__c}

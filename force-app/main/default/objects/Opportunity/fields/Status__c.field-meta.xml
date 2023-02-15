@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Anticipatory</fullName>
+                <default>false</default>
+                <label>Anticipatory</label>
+            </value>
+            <value>
+                <fullName>Cleared</fullName>
+                <default>false</default>
+                <label>Cleared</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Not Cleared</fullName>
+                <default>false</default>
+                <label>Not Cleared</label>
+            </value>
+            <value>
+                <fullName>Proposed</fullName>
+                <default>false</default>
+                <label>Proposed</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Vaulted</fullName>
+                <default>false</default>
+                <label>Vaulted</label>
+            </value>
+            <value>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+                <label>Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Closed (C</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Closed (C</label>
+            </value>
+            <value>
+                <fullName>Vaultable</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vaultable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
