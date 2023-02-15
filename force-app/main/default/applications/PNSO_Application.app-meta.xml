@@ -526,18 +526,6 @@
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
         <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
-<<<<<<< HEAD:force-app/main/default/applications/PNSO_Application.app-meta.xml
-        <type>Flexipage</type>
-        <profile>Non-PNNL Users</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Funding_Action_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
-        <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
-=======
->>>>>>> 03-uat:force-app/main/default/applications/PNSO_Application_c.app-meta.xml
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
@@ -573,11 +561,7 @@
         <content>ACT_Funding_Action_Record_Page1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Funding_Action__c</pageOrSobjectType>
-<<<<<<< HEAD:force-app/main/default/applications/PNSO_Application.app-meta.xml
-        <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
-=======
         <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
->>>>>>> 03-uat:force-app/main/default/applications/PNSO_Application_c.app-meta.xml
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>

@@ -3623,17 +3623,6 @@
         <layout>Opportunity-Opportunity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.ACT</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.DHS</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-ACT Proposal</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Opportunity-ACT Proposal</layout>
         <recordType>Opportunity.ACT</recordType>
     </layoutAssignments>
