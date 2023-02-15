@@ -245,18 +245,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Fund_Code__c</fieldItem>
-                <identifier>RecordFund_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.PNNL_Fund_Code__c</fieldItem>
-                <identifier>RecordPNNL_Fund_Code_cField2</identifier>
+                <identifier>RecordPNNL_Fund_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

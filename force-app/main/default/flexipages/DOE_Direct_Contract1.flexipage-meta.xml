@@ -226,7 +226,7 @@
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNNL_Fund_Code__c</fieldItem>
-                <identifier>RecordPNNL_Fund_Code_cField2</identifier>
+                <identifier>RecordPNNL_Fund_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
