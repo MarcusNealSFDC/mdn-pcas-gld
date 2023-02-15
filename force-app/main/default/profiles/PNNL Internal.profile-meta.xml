@@ -115,6 +115,22 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PNNL_GenerateCostSheetRollup</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PNNL_GenerateCostSheetRollupTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PNNL_PreventBudgetCodeDeletionTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PNNL_PreventBudgetCodeEditTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PNNL_UploadAttachmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -785,6 +801,26 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Hanford_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Cost_Sheet_Rollup__c.Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Cost_Sheet_Rollup__c.Cost_Sheet_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Cost_Sheet_Rollup__c.OpportunityId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Cost_Sheet_Rollup__c.Revision_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3596,6 +3632,9 @@
     <layoutAssignments>
         <layout>Contact-PNNL Contact Layout</layout>
         <recordType>Contact.Sponsor_Contact</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cost_Sheet_Rollup__c-Cost Sheet Rollup Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Fin_Plan_Data__c-Fin Plan Data Layout</layout>

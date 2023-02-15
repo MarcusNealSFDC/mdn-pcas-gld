@@ -115,6 +115,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PNNL_GenerateCostSheetRollup</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PNNL_GenerateCostSheetRollupTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PNNL_PreventBudgetCodeDeletionTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -800,6 +808,26 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Hanford_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Cost_Sheet_Rollup__c.Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Cost_Sheet_Rollup__c.Cost_Sheet_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Cost_Sheet_Rollup__c.OpportunityId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Cost_Sheet_Rollup__c.Revision_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3673,6 +3701,9 @@
         <recordType>Contact.Sponsor_Contact</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Cost_Sheet_Rollup__c-Cost Sheet Rollup Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Fin_Plan_Data__c-Fin Plan Data Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3829,6 +3860,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>CRADA__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Cost_Sheet_Rollup__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
