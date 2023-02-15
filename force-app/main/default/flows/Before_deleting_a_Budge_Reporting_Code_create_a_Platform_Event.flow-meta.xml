@@ -34,7 +34,7 @@ Before deleting a Budge &amp; Reporting Code, create a Platform Event.</descript
         <inputAssignments>
             <field>Action__c</field>
             <value>
-                <elementReference>$Record.PNNL_Budget_Reporting_Number_External__c</elementReference>
+                <stringValue>Delete B&amp;R Code</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>

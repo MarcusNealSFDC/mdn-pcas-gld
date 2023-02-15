@@ -4,6 +4,11 @@
     <description>A Platform Event is create before each Budget &amp; Report Code is created or updated. Before creating or updating an Budget &amp; Funding Code, create a Platform Event.</description>
     <environments>Default</environments>
     <formulas>
+        <name>Action_Type</name>
+        <dataType>String</dataType>
+        <expression>IF(ISNEW(), &apos;Create B&amp;R Code&apos;, &apos;Update B&amp;R Code&apos;)</expression>
+    </formulas>
+    <formulas>
         <name>Event_Type</name>
         <dataType>String</dataType>
         <expression>IF(ISNEW(), &apos;Create&apos;, &apos;Update&apos;)</expression>
@@ -38,7 +43,7 @@
         <inputAssignments>
             <field>Action__c</field>
             <value>
-                <elementReference>$Record.PNNL_Budget_Reporting_Number_External__c</elementReference>
+                <elementReference>Action_Type</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
