@@ -4,6 +4,10 @@
     <language>en_US</language>
     <masterLabel>PNNL_LIMITEDhorizontalAbbreviated_L</masterLabel>
     <relationships>
+        <network>
+            <access>VIEWER</access>
+            <name>PNSO_Portal</name>
+        </network>
         <workspace>
             <access>INFERRED</access>
             <isManagingWorkspace>true</isManagingWorkspace>

@@ -1467,6 +1467,45 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anticipatory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Cleared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vaulted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Type</picklist>
         <values>
             <fullName>Existing Business</fullName>

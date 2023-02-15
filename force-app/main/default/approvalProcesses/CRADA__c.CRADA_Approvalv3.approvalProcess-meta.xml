@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>true</active>
+    <active>false</active>
     <allowRecall>false</allowRecall>
     <allowedSubmitters>
-        <type>owner</type>
+        <submitter>Internal_PNNL_Users</submitter>
+        <type>group</type>
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
@@ -184,7 +185,6 @@
             <type>RejectRequest</type>
         </rejectBehavior>
     </approvalStep>
-    <emailTemplate>unfiled$public/Proposal_Approval_Email</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>
