@@ -87,7 +87,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>hideUpdateButton</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>variant</name>
@@ -105,7 +105,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 18px; color: rgb(253, 25, 25);&quot;&gt;This Proposal has been approved and can not be edited.&lt;/strong&gt;&lt;/p&gt;</value>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(116, 116, 116); font-size: 18px;&quot;&gt;﻿&lt;/strong&gt;&lt;strong style=&quot;color: rgb(238, 7, 7); font-size: 18px;&quot;&gt;This Proposal has been APPROVED and is Read-Only.&lt;/strong&gt;&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText</identifier>
@@ -198,6 +198,29 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Risk_Assessment_Link__c</fieldItem>
                 <identifier>RecordRisk_Assessment_Link_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.BO_Tax_Credit__c</fieldItem>
+                <identifier>RecordBO_Tax_Credit_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Integration User Profile</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-e42b5582-9a7d-411d-946d-f97b6f727225</name>
@@ -1089,6 +1112,27 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;No information is required for Non-FWP Proposals&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.FWP__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>No</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>columns</name>
                     <value>Facet-3fb908c2-5b57-4d5a-a6a9-9a5e0126d041</value>
                 </componentInstanceProperties>
@@ -1119,16 +1163,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Comments__c</fieldItem>
                 <identifier>RecordComments_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.BO_Tax_Credit__c</fieldItem>
-                <identifier>RecordBO_Tax_Credit_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-636e3893-4eb4-4d21-8d55-3de47fa7dce8</name>
@@ -1318,7 +1352,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.FY_2023__c</fieldItem>
+                <fieldItem>Record.ProposedAmtFY0__c</fieldItem>
                 <identifier>RecordFY_2023_cField</identifier>
             </fieldInstance>
         </itemInstances>
@@ -1328,7 +1362,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.FY_2024__c</fieldItem>
+                <fieldItem>Record.ProposedAmtFY1__c</fieldItem>
                 <identifier>RecordFY_2024_cField</identifier>
             </fieldInstance>
         </itemInstances>
@@ -1338,7 +1372,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.FY_2025__c</fieldItem>
+                <fieldItem>Record.ProposedAmtFY2__c</fieldItem>
                 <identifier>RecordFY_2025_cField</identifier>
             </fieldInstance>
         </itemInstances>
@@ -1370,6 +1404,27 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(18, 18, 18); font-size: 14px;&quot;&gt;&lt;u&gt;No information is required for Non-FWP Proposals&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText3</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.FWP__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>No</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -1535,6 +1590,27 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px; color: rgb(21, 21, 21);&quot;&gt;&lt;u&gt;No information is required for Non-FWP Proposals&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText4</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.FWP__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>No</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

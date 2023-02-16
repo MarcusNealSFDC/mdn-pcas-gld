@@ -110,6 +110,13 @@
                 <elementReference>recordId</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Is_Locked__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>CreateOppRecord</targetReference>
         </connector>
@@ -159,6 +166,13 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>GetRecords.Parent_Opportunity__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Is_Locked__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
             </value>
         </assignmentItems>
         <connector>

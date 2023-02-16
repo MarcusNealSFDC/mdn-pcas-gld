@@ -115,7 +115,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.FAC__c</fieldItem>
                 <identifier>RecordFAC_cField</identifier>

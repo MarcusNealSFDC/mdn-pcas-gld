@@ -23,6 +23,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Risk_Assessment_Link__c</field>
             </layoutItems>
             <layoutItems>
@@ -343,6 +347,11 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>Opportunity.Purge_Cost_Sheet</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>19</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>FeedItem.TextPost</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>0</sortOrder>
@@ -436,11 +445,6 @@
             <actionName>Opportunity.Send_Cost_Sheet</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>18</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Opportunity.Purge_Cost_Sheet</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>19</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedContent>
