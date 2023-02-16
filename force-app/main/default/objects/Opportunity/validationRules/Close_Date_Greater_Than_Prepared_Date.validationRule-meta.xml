@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Date_Greater_Than_Prepared_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>CloseDate &lt; Proposed_Start_Date__c</errorConditionFormula>
+    <errorDisplayField>CloseDate</errorDisplayField>
+    <errorMessage>The Close Date field must be greater than the Proposed Start Date.</errorMessage>
+</ValidationRule>

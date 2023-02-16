@@ -11,6 +11,12 @@
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Funding_Preparation_Approval</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
                 <name>SPP_Office_Reviewer__c</name>
@@ -30,12 +36,6 @@
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
-        <approvalActions>
-            <action>
-                <name>Funding_Preparation_Approval</name>
-                <type>FieldUpdate</type>
-            </action>
-        </approvalActions>
         <assignedApprover>
             <approver>
                 <name>Contract_Specialist__c</name>
@@ -55,6 +55,12 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Funding_Preparation_Approval</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -83,6 +89,12 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Funding_Preparation_Approval</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -98,6 +110,12 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Funding_Preparation_Approval</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <emailTemplate>PCAS_Funding_Agreement_Email_Templates/PCAS_Funding_Action_Notification_Action_Required</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
