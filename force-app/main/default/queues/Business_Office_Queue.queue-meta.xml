@@ -2,12 +2,6 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Business Office Queue</name>
-    <queueMembers>
-        <users>
-            <user>farrah.taylor@pnnl.gov</user>
-            <user>lisa.johnson@pnnl.gov</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Funding_Agreement__c</sobjectType>
     </queueSobject>
