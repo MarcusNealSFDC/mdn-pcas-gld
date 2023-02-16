@@ -20,7 +20,7 @@
 		<name>ApexTrigger</name>
 	</types>
 	<types>
-		<members>CRADA__c.CRADA_Approvalv3</members>
+		<members>CRADA__c.CRADA_Approvalv4</members>
 		<members>Funding_Action__c.Funding_Action_Approval2</members>
 		<members>Funding_Action__c.Funding_Action_Approval_ACT3</members>
 		<members>Funding_Agreement__c.Work_Authorization_Approval</members>
@@ -161,21 +161,7 @@
 		<name>DuplicateRule</name>
 	</types>
 	<types>
-		<members>Funding_Agreement/NON_DOE_Funding_Agreement_Approval_Email_Template</members>
-		<members>Funding_Agreement/NON_Doe_F_A_approval_email_template</members>
-		<members>Funding_Agreement/PNNL_Non_DOE_Funding_Agreement_Approval_Email</members>
-		<members>PCAS_1830_Work_Authorization/PCAS_1830_Work_Authorization_Action_Required_from_PNNL_Budget_Office</members>
-		<members>PCAS_1830_Work_Authorization/PCAS_1830_Work_Authorization_Action_Required_from_PNSO_Contract_Officer</members>
-		<members>PCAS_1830_Work_Authorization/PCAS_1830_Work_Authorization_Action_Required_from_PNSO_Technical_Rep</members>
-		<members>PCAS_1830_Work_Authorization/PNNL_Budget_Office_Approval_Action_Required</members>
-		<members>PCAS_Funding_Agreement_Email_Templates/PCAS_Funding_Action_Notification_Action_Required</members>
-		<members>PCAS_Funding_Agreement_Email_Templates/PCAS_Funding_Agreement_Action_Required_from_PNNL_Budget_Office</members>
-		<members>PCAS_Funding_Agreement_Email_Templates/PCAS_Funding_Agreement_Action_Required_from_PNSO_Contract_Officer</members>
-		<members>PCAS_Funding_Agreement_Email_Templates/PCAS_Funding_Agreement_Action_Required_from_PNSO_Technical_Rep</members>
-		<members>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Email_Template_for_PM_PMO</members>
-		<members>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Email_Template_to_Assigned_PM</members>
-		<members>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_No</members>
-		<members>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Yes</members>
+		<members>*</members>
 		<name>EmailTemplate</name>
 	</types>
 	<types>
@@ -427,6 +413,10 @@
 		<name>ReportType</name>
 	</types>
 	<types>
+		<members>EmailAdministration</members>
+		<name>Settings</name>
+	</types>
+	<types>
 		<members>Account</members>
 		<members>Alpha_Code__c</members>
 		<members>Budget_Reporting_Code__c</members>
@@ -441,6 +431,7 @@
 		<members>CRADA__c.Foreign_Sponsor_Approval</members>
 		<members>CRADA__c.PNSO_Animal_Researcher</members>
 		<members>Funding_Action__c.Funding_Action_Completion_Date</members>
+		<members>Opportunity.Close_Date_Greater_Than_Prepared_Date</members>
 		<members>Opportunity.Cost_Sheet_Must_be_Attached</members>
 		<members>Opportunity.EMSL</members>
 		<members>Opportunity.Foreign_Sponsor_Approval</members>
