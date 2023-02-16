@@ -518,6 +518,22 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
+        <content>Funding_Agreement_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Funding_Agreement_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
         <content>ACT_Proposal_Record_Page1</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
@@ -625,6 +641,7 @@
         <profile>Admin</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
+    <tabs>standard-Opportunity</tabs>
     <tabs>Funding_Agreement__c</tabs>
     <tabs>CRADA__c</tabs>
     <tabs>Funding_Action__c</tabs>
