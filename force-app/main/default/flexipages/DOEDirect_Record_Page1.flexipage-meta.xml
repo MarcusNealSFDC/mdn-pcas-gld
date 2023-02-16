@@ -20,7 +20,7 @@
                         <valueListItems>
                             <value>Submit</value>
                             <visibilityRule>
-                                <booleanFilter>1 AND 2</booleanFilter>
+                                <booleanFilter>1 AND 2 AND 3</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.PNNL_DOE_Submit_Approval_Checkbox__c}</leftValue>
                                     <operator>EQUAL</operator>
@@ -29,7 +29,12 @@
                                 <criteria>
                                     <leftValue>{!Record.StageName}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Proposal Preparation</rightValue>
+                                    <rightValue>Proposal Draft</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.FWP__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Yes</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -51,6 +56,9 @@
                         </valueListItems>
                         <valueListItems>
                             <value>Opportunity.Purge_Cost_Sheet</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Clone</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
