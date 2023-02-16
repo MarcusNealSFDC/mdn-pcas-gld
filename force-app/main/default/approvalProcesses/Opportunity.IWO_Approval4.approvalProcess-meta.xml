@@ -94,7 +94,7 @@
             <type>RejectRequest</type>
         </rejectBehavior>
     </approvalStep>
-    <emailTemplate>unfiled$public/Proposal_Approval_Email</emailTemplate>
+    <emailTemplate>ApprovalProcessEmails/Approval_Template_1676320339023</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>

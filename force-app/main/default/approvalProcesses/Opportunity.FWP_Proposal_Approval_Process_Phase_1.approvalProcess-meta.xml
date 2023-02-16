@@ -104,7 +104,7 @@
         </rejectBehavior>
     </approvalStep>
     <description>Approval process for use in FWP proposal Type - Phase 1 includes Project Managers/Project Coordinators, etc.</description>
-    <emailTemplate>unfiled$public/Proposal_Approval_Email</emailTemplate>
+    <emailTemplate>ApprovalProcessEmails/Approval_Template_1676320339023</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>

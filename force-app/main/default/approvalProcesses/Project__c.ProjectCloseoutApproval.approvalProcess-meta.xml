@@ -70,6 +70,7 @@
             <type>RejectRequest</type>
         </rejectBehavior>
     </approvalStep>
+    <emailTemplate>ApprovalProcessEmails/Project_Closeout_Template_1676338190631</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>
