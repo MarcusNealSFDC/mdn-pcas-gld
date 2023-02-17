@@ -37,15 +37,15 @@ Before creating or updating an  funding action , create a Platform Event.</descr
         <locationX>176</locationX>
         <locationY>335</locationY>
         <inputAssignments>
-            <field>Action__c</field>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
             <field>ObjectType__c</field>
             <value>
                 <stringValue>Funding_Action__c</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordId__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
