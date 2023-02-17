@@ -604,10 +604,30 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Notify1__c</fieldItem>
+                <identifier>RecordNotify1_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-eadd5087-2060-45a6-b8d1-f81528e2ddb6</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Notify__c</fieldItem>
+                <identifier>RecordNotify_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-6b2d0600-0480-4360-b8d9-d40f0d5723be</name>
         <type>Facet</type>
     </flexiPageRegions>
