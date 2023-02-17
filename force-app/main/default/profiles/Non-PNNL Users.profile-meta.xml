@@ -3645,9 +3645,6 @@
         <layout>Funding_Agreement__c-Funding Agreement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Opportunity-ACT Proposal</layout>
         <recordType>Opportunity.ACT</recordType>
     </layoutAssignments>
