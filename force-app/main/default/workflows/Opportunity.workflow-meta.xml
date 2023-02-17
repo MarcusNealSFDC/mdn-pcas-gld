@@ -10,7 +10,7 @@
         </recipients>
         <senderAddress>matthew.allen@salesforce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>unfiled$public/IP_Services_Review_Required_Template_1676494761519</template>
+        <template>Approval Process Emails/IP_Services_Review_Required_Template_1676494761519</template>
     </alerts>
     <alerts>
         <fullName>Fin_Plan_Proposal_Submitted</fullName>
