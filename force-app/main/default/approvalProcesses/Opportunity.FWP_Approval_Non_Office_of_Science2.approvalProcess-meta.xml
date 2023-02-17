@@ -85,7 +85,7 @@
         </rejectBehavior>
     </approvalStep>
     <description>Approval process for use in FWP proposal Type - Phase 2 which includes PNSO approval</description>
-    <emailTemplate>ApprovalProcessEmails/Approval_Template_1676320339023</emailTemplate>
+    <emailTemplate>unfiled$public/Proposal_Approval_Email</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>

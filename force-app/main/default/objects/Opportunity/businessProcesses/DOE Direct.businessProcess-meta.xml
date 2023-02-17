@@ -3,10 +3,6 @@
     <fullName>DOE Direct</fullName>
     <isActive>true</isActive>
     <values>
-        <fullName>Funding Approved</fullName>
-        <default>false</default>
-    </values>
-    <values>
         <fullName>Proposal Approved</fullName>
         <default>false</default>
     </values>
