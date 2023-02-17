@@ -23,7 +23,7 @@
 		<members>CRADA__c.CRADA_Approvalv4</members>
 		<members>Funding_Action__c.Funding_Action_Approval2</members>
 		<members>Funding_Action__c.Funding_Action_Approval_ACT3</members>
-		<members>Funding_Agreement__c.Work_Authorization_Approval</members>
+		<members>Funding_Agreement__c.Work_Authorization_Approval2</members>
 		<members>Opportunity.ACT_Approvals6</members>
 		<members>Opportunity.FWP_Approval_Non_Office_of_Science2</members>
 		<members>Opportunity.FWP_Proposal_Approval_Process_Phase_1</members>
@@ -159,10 +159,6 @@
 		<members>Contact.Standard_Contact_Duplicate_Rule</members>
 		<members>Contact.Standard_Rule_for_Contacts_with_Duplicate_Leads</members>
 		<name>DuplicateRule</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>EmailTemplate</name>
 	</types>
 	<types>
 		<members>ACT_Contract</members>

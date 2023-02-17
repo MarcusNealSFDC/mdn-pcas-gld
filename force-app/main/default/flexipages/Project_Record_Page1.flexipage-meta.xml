@@ -154,8 +154,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Report_Contract_Number1__c</fieldItem>
-                <identifier>RecordReport_Contract_Number1_cField</identifier>
+                <fieldItem>Record.PNNL_Contract__c</fieldItem>
+                <identifier>RecordPNNL_Contract_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-926beea1-b664-4f61-a64d-f80a15a0ec13</name>

@@ -34,6 +34,28 @@
     </approvalStep>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>PNSO_Coordinator__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Funding_Agreement__c.PNSO_Coordinator__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>PNSO Coordinator Approval</label>
+        <name>PNSO_Coordinator_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
                 <name>WA_Update_to_PNSO_Contracting</name>
