@@ -6,7 +6,7 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>PNSO_Application_c</application>
+        <application>PNSO_Application</application>
         <default>true</default>
         <visible>true</visible>
     </applicationVisibilities>
@@ -113,6 +113,14 @@
     <classAccesses>
         <apexClass>PNNL_CopyAttachmentTest</apexClass>
         <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PNNL_GenerateCostSheetRollup</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PNNL_GenerateCostSheetRollupTest</apexClass>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PNNL_PreventBudgetCodeDeletionTest</apexClass>
@@ -364,21 +372,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Approval_Process_Signing_Ceremony__mdt.Signing_Ceremony_Copy_Long__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Budget_Reporting_Code__c.Number_Of_Opportunities__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Budget_Reporting_Code__c.Number_of_B_R_Entries__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Budget_Reporting_Code__c.Number_of_PNNL_Contracts__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -783,6 +776,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Cost_Sheet_Rollup__c.Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Cost_Sheet_Rollup__c.Cost_Sheet_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Cost_Sheet_Rollup__c.OpportunityId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Cost_Sheet_Rollup__c.Revision_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Fin_Plan_Data__c.BA_Change__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1057,13 +1070,37 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <field>Funding_Action__c.PNNL_Amount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.PNNL_Budget_Ceiling_Availability__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Action__c.PNNL_Contract__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Funding_Action__c.PNNL_SPP_Code__c</field>
+        <field>Funding_Action__c.PNNL_Obligation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.PNNL_Remaining_Agreement__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.PNNL_SC_Approved_Level__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.PNNL_Total_Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1160,6 +1197,11 @@
         <editable>false</editable>
         <field>Funding_Action__c.Service_Description__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.Sponsor_Group_Code__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -2913,16 +2955,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>PNNL_Contracts__c.Funding_Action_Id__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>PNNL_Contracts__c.Funding_Action__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>PNNL_Contracts__c.Funding_Client_Reference__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3003,17 +3035,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>PNNL_Contracts__c.PNNL_Fund_Code__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>PNNL_Contracts__c.PNNL_Limited_Term_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>PNNL_Contracts__c.PNNL_Limited_Term_Funds__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>PNNL_Contracts__c.PNNL_SPP_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3093,6 +3125,86 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>PNNL_Fund_Code__c.Fiscal_Year__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Active__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Approved_Ceiling__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Approved__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Balance__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Obligated__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_PNNL_Contract__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Request_minus_Approved__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Requested_Ceiling__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Fund_Code__c.PNNL_Total_Obligations__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Funding_Obligation__c.Fiscal_Year__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Funding_Obligation__c.PNNL_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Funding_Obligation__c.PNNL_Balance__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Funding_Obligation__c.PNNL_Fund_Code_Fiscal_Year__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PNNL_Funding_Obligation__c.PNNL_Obligations__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Project_Allocation__c.ALC_TOE__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3168,16 +3280,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Project__c.Country_Code1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Project__c.Country_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Project__c.EPR_Signed_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3219,11 +3321,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Project__c.PM_Employee_ID__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Project__c.PNNL_Contract__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3546,6 +3643,9 @@
         <layout>CommunityMemberLayout-Community Member Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Cost_Sheet_Rollup__c-Cost Sheet Rollup Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Fin_Plan_Data__c-Fin Plan Data Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3565,9 +3665,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Funding_Agreement__c-Funding Agreement Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-ACT Proposal</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-ACT Proposal</layout>
@@ -3627,8 +3724,10 @@
         <recordType>PNNL_Contracts__c.Non_DOE</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PNNL_Contracts__c-Non-DOE Layout</layout>
-        <recordType>PNNL_Contracts__c.IWO</recordType>
+        <layout>PNNL_Fund_Code__c-Fund Code Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PNNL_Funding_Obligation__c-Budget Ceiling Entry Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Project_Allocation__c-Project Allocation Layout</layout>
@@ -3915,6 +4014,14 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>PNNL_Fund_Code__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>PNNL_Funding_Obligation__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Project_Allocation__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -4093,10 +4200,6 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>SubscribeToLightningReports</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
         <name>TransactionalEmailSend</name>
     </userPermissions>
     <userPermissions>
@@ -4114,10 +4217,6 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ViewRoles</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>ViewSetup</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
