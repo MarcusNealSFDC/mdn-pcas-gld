@@ -140,6 +140,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>RecordTypeId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>ORO_Budget_Approver__c</field>
             </layoutItems>
             <layoutItems>
@@ -264,6 +268,10 @@
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Funding_Action_Attachment__c.Funding_Action__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <relatedList>RelatedFileList</relatedList>
     </relatedLists>
     <relatedLists>
@@ -277,6 +285,13 @@
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>PNNL_Contracts__c.Funding_Action__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Fiscal_Year__c</fields>
+        <fields>PNNL_Fund_Code__c.NAME</fields>
+        <fields>PNNL_Amount__c</fields>
+        <fields>PNNL_Balance__c</fields>
+        <relatedList>PNNL_Funding_Obligation__c.Funding_Action__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

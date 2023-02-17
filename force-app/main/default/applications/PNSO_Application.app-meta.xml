@@ -281,22 +281,6 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Funding_Agreement_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>PNSO_Portal Profile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Funding_Agreement_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>PNSO_Portal Profile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
         <content>DOEDirect_Record_Page1</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
@@ -520,14 +504,6 @@
         <actionName>View</actionName>
         <content>Funding_Agreement_Record_Page</content>
         <formFactor>Small</formFactor>
-        <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Funding_Agreement_Record_Page</content>
-        <formFactor>Large</formFactor>
         <pageOrSobjectType>Funding_Agreement__c</pageOrSobjectType>
         <type>Flexipage</type>
         <profile>Admin</profile>
