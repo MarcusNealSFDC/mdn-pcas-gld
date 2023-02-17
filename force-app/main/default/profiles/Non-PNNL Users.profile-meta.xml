@@ -1293,6 +1293,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Funding_Agreement__c.PNSO_Coordinator__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Agreement__c.PNSO_Sign_Date__c</field>
         <readable>false</readable>
