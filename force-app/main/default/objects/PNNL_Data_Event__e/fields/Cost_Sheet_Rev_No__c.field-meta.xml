@@ -6,7 +6,7 @@
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
-    <label>Cost Sheet Rev. No</label>
+    <label>Cost Sheet Revision Number</label>
     <precision>9</precision>
     <required>false</required>
     <scale>0</scale>
