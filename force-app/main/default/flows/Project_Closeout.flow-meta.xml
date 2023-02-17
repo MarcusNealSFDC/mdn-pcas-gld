@@ -98,9 +98,9 @@
             </value>
         </filters>
         <inputAssignments>
-            <field>PPM_Project_Status__c</field>
+            <field>Project_Status__c</field>
             <value>
-                <elementReference>PendingClose</elementReference>
+                <stringValue>Pending Close</stringValue>
             </value>
         </inputAssignments>
         <object>Project__c</object>
@@ -142,7 +142,7 @@
             <targetReference>GetProjects</targetReference>
         </connector>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
     <textTemplates>
         <name>PendingClose</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>

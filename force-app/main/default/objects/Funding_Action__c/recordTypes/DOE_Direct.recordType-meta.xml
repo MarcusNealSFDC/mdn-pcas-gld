@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DOE_Direct</fullName>
+    <active>true</active>
+    <label>DOE Direct</label>
+    <picklistValues>
+        <picklist>Acceptance_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Action_Type__c</picklist>
+        <values>
+            <fullName>Close</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funds %26 Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time Extension</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FAC_Waiver__c</picklist>
+        <values>
+            <fullName>Ballistic Missile Defense Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter Terrorism and Homeland Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Defense Counter Proliferation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Defense Joint Advanced Strike Technology Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Homeland Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Institutions of higher education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intergovernmental Personnel Act Assignments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Institutes of Health %28NIH%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Reconnaissance Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Naval Reactors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Nuclear Munitions Technology Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Profit Entities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State and local governments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Environmental Research and Development Program %28SERDP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Enrichment Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Nuclear Detonation Detection System</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Funding_Authority__c</picklist>
+        <values>
+            <fullName>Atomic Energy Act of 1954 %28P%2EL%2E 83-703%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clean Water Act%2E 33 U%2ES%2EC%2E 1254</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clear Air Act Sec%2F103 %28b%29 %282%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DHS Act 6 U%2ES%2EC%2E 189</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Economy Acr 31 U%2ES%2EC%2E1535</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Reorganization Act %2842 U%2ES%2EC%2E 5845%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foreign Assistance Act 22 U%2ES%2EC%2E2395 %28b%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meteorological Services 49 U%2ES%2EC%2E 44720 %28b%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Aeronautical and Space Act of 1958 42 U%2ES%2EC%2E 241</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Aeronautical and Space Act of 1958 as amended %28%22Space Act%22%29 51 U%2ES%2EC%2E 20113</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outer Continental Shelf 43 U%2ES%2EC%2E 1331 et seq %28OCS%29 Lands Act of 1953 as amended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Health Services Act 42 U%2ES%2EC%2E 285a-2%28B%29%288%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Health and Welfare 42 U%2ES%2EC%2E 241</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Incremental_Funding__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Closeout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funding Approved - Project Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funding Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funding Preparation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funding Received</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
