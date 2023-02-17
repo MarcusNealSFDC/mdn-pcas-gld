@@ -88,10 +88,10 @@
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>PPM_Project_Status__c</field>
+            <field>Project_Status__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Closed</stringValue>
+                <stringValue>Pending Close</stringValue>
             </value>
         </filters>
         <object>Project__c</object>

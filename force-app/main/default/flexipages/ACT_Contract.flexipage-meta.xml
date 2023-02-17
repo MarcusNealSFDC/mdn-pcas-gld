@@ -107,16 +107,6 @@
                 <identifier>RecordContract_Administrator_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Status__c</fieldItem>
-                <identifier>RecordContract_Status_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-22e170f9-2a8f-4231-9f12-fd53050d4fa1</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -125,17 +115,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNNL_SPP_Code__c</fieldItem>
-                <identifier>RecordPNNL_SPP_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.FAC__c</fieldItem>
                 <identifier>RecordFAC_cField</identifier>
@@ -159,6 +139,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Master_Scope_of_Work_Proposal__c</fieldItem>
                 <identifier>RecordMaster_Scope_of_Work_Proposal_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Contract_Status__c</fieldItem>
+                <identifier>RecordContract_Status_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -225,8 +215,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Billing_Code__c</fieldItem>
-                <identifier>RecordBilling_Code_cField</identifier>
+                <fieldItem>Record.Program_Code__c</fieldItem>
+                <identifier>RecordProgram_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -245,8 +235,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Fund_Code__c</fieldItem>
-                <identifier>RecordFund_Code_cField</identifier>
+                <fieldItem>Record.SPP_Code__c</fieldItem>
+                <identifier>RecordSPP_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -255,8 +245,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Fund_Type__c</fieldItem>
-                <identifier>RecordFund_Type_cField</identifier>
+                <fieldItem>Record.Fund_Code__c</fieldItem>
+                <identifier>RecordFund_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-f2691759-9993-4590-891f-a8da4058c4c1</name>
@@ -313,6 +303,16 @@
                 <identifier>RecordClose_Out_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Fund_Type__c</fieldItem>
+                <identifier>RecordFund_Type_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-817d5222-10c4-4306-ba89-b91b8a590342</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -341,6 +341,16 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Authorized_Amount__c</fieldItem>
+                <identifier>RecordAuthorized_Amount_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>

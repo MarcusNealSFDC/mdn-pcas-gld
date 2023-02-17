@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Sheet_Must_be_Attached</fullName>
+    <active>true</active>
+    <description>If the recordtype of the proposal is DOE Direct, then the user cannot move to the Proposal Submitted stage or beyond. If the recordtype is Non-DOE Direct, then the user cannot navigate to the Proposal Preparation stage or beyond.</description>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+    Cost_Sheet_Line_Rollup__c == 0,
+    OR(
+        AND(
+            RecordType.Name == &apos;DOE Direct&apos;,
+            ISPICKVAL(StageName,&apos;Proposal Submitted&apos;)
+        ),
+        AND(
+            RecordType.Name &lt;&gt; &apos;DOE Direct&apos;,
+            ISPICKVAL(StageName,&apos;Proposal Preparation&apos;)
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>A cost sheet must be attached before moving to the selected stage.</errorMessage>
+</ValidationRule>

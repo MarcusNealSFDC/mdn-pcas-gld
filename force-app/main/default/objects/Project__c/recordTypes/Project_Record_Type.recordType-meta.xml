@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Record_Type</fullName>
+    <active>true</active>
+    <label>Project Record Type</label>
+    <picklistValues>
+        <picklist>Project_Account_Number__c</picklist>
+        <values>
+            <fullName>D5000 - DOE Financial Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5005 - DOE Related Serv Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5008 - Bonneville Power Admin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5009 - Non-IC Reimbursable Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5010 - Related Services-Non DOE %28SPP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5012 - Joint Appointments-Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5013 - Joint Appointment Out - ACT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5015 - Homeland Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5040 - ACT Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5908 - DOE Sites Cap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5909 - Line Item Construction Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5910 - Construction Work in Prog GF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5911 - Equipment Work in Prog  GF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5912 - Construction Work in Prog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5913 - Equipment Work in Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5915 - Equipment Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anticipatory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Close</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Report_Period__c</picklist>
+        <values>
+            <fullName>FY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Special_Reporting_Funds1__c</picklist>
+        <values>
+            <fullName>BIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIJA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
