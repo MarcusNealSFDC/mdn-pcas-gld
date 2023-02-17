@@ -3,7 +3,7 @@
     <fullName>PNNL_SPP_Code__c</fullName>
     <externalId>false</externalId>
     <label>SPP Code</label>
-    <length>6</length>
+    <length>8</length>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

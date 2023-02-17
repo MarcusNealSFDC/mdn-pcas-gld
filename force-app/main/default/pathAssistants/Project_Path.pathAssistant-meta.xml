@@ -4,5 +4,5 @@
     <entityName>Project__c</entityName>
     <fieldName>Project_Status__c</fieldName>
     <masterLabel>Project Path</masterLabel>
-    <recordTypeName>__MASTER__</recordTypeName>
+    <recordTypeName>Project_Record_Type</recordTypeName>
 </PathAssistant>

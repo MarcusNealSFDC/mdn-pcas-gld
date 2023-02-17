@@ -17,14 +17,14 @@
                 <label>Atomic Energy Act of 1954 (P.L. 83-703)</label>
             </value>
             <value>
-                <fullName>Clear Air Act Sec/103 (b) (2)</fullName>
-                <default>false</default>
-                <label>Clear Air Act Sec/103 (b) (2)</label>
-            </value>
-            <value>
                 <fullName>Clean Water Act. 33 U.S.C. 1254</fullName>
                 <default>false</default>
                 <label>Clean Water Act. 33 U.S.C. 1254</label>
+            </value>
+            <value>
+                <fullName>Clear Air Act Sec/103 (b) (2)</fullName>
+                <default>false</default>
+                <label>Clear Air Act Sec/103 (b) (2)</label>
             </value>
             <value>
                 <fullName>DHS Act 6 U.S.C. 189</fullName>
@@ -32,9 +32,9 @@
                 <label>DHS Act 6 U.S.C. 189</label>
             </value>
             <value>
-                <fullName>Economy Acr 31 U.S.C.1535</fullName>
+                <fullName>Economy Act 31 U.S.C.1535</fullName>
                 <default>false</default>
-                <label>Economy Acr 31 U.S.C.1535</label>
+                <label>Economy Act 31 U.S.C.1535</label>
             </value>
             <value>
                 <fullName>Energy Reorganization Act (42 U.S.C. 5845)</fullName>
@@ -52,14 +52,14 @@
                 <label>Meteorological Services 49 U.S.C. 44720 (b)</label>
             </value>
             <value>
-                <fullName>National Aeronautical and Space Act of 1958 as amended (&quot;Space Act&quot;) 51 U.S.C. 20113</fullName>
-                <default>false</default>
-                <label>National Aeronautical and Space Act of 1958 as amended (&quot;Space Act&quot;) 51 U.S.C. 20113</label>
-            </value>
-            <value>
                 <fullName>National Aeronautical and Space Act of 1958 42 U.S.C. 241</fullName>
                 <default>false</default>
                 <label>National Aeronautical and Space Act of 1958 42 U.S.C. 241</label>
+            </value>
+            <value>
+                <fullName>National Aeronautical and Space Act of 1958 as amended (&quot;Space Act&quot;) 51 U.S.C. 20113</fullName>
+                <default>false</default>
+                <label>National Aeronautical and Space Act of 1958 as amended (&quot;Space Act&quot;) 51 U.S.C. 20113</label>
             </value>
             <value>
                 <fullName>Outer Continental Shelf 43 U.S.C. 1331 et seq (OCS) Lands Act of 1953 as amended</fullName>
@@ -67,14 +67,20 @@
                 <label>Outer Continental Shelf 43 U.S.C. 1331 et seq (OCS) Lands Act of 1953 as amended</label>
             </value>
             <value>
+                <fullName>Public Health and Welfare 42 U.S.C. 241</fullName>
+                <default>false</default>
+                <label>Public Health and Welfare 42 U.S.C. 241</label>
+            </value>
+            <value>
                 <fullName>Public Health Services Act 42 U.S.C. 285a-2(B)(8)</fullName>
                 <default>false</default>
                 <label>Public Health Services Act 42 U.S.C. 285a-2(B)(8)</label>
             </value>
             <value>
-                <fullName>Public Health and Welfare 42 U.S.C. 241</fullName>
+                <fullName>Economy Acr 31 U.S.C.1535</fullName>
                 <default>false</default>
-                <label>Public Health and Welfare 42 U.S.C. 241</label>
+                <isActive>false</isActive>
+                <label>Economy Acr 31 U.S.C.1535</label>
             </value>
         </valueSetDefinition>
     </valueSet>

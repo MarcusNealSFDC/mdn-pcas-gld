@@ -3,10 +3,218 @@
     <fullName>Contract_Account_Number__c</fullName>
     <externalId>false</externalId>
     <label>Contract Account Number</label>
-    <length>10</length>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Text</type>
-    <unique>false</unique>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>20021	Accounts Receivable</fullName>
+                <default>false</default>
+                <label>20021	Accounts Receivable</label>
+            </value>
+            <value>
+                <fullName>20022	IP - Accounts Receivable</fullName>
+                <default>false</default>
+                <label>20022	IP - Accounts Receivable</label>
+            </value>
+            <value>
+                <fullName>D1414A	AR - ICP-Other DOE</fullName>
+                <default>false</default>
+                <label>D1414A	AR - ICP-Other DOE</label>
+            </value>
+            <value>
+                <fullName>D1414	AR - ICP CONT</fullName>
+                <default>false</default>
+                <label>D1414	AR - ICP CONT</label>
+            </value>
+            <value>
+                <fullName>D1414B	AR - ICP-OHC-BHI</fullName>
+                <default>false</default>
+                <label>D1414B	AR - ICP-OHC-BHI</label>
+            </value>
+            <value>
+                <fullName>D1414P	AR - DOE-PAC Sales</fullName>
+                <default>false</default>
+                <label>D1414P	AR - DOE-PAC Sales</label>
+            </value>
+            <value>
+                <fullName>D1414R	AR - ICP-RL/ORP</fullName>
+                <default>false</default>
+                <label>D1414R	AR - ICP-RL/ORP</label>
+            </value>
+            <value>
+                <fullName>D1416	Accounts Receivable-Other</fullName>
+                <default>false</default>
+                <label>D1416	Accounts Receivable-Other</label>
+            </value>
+            <value>
+                <fullName>D1416B	AR - ICP-OHC-BHI</fullName>
+                <default>false</default>
+                <label>D1416B	AR - ICP-OHC-BHI</label>
+            </value>
+            <value>
+                <fullName>D1416C	Accounts Receivable-CHG</fullName>
+                <default>false</default>
+                <label>D1416C	Accounts Receivable-CHG</label>
+            </value>
+            <value>
+                <fullName>D1416D	AR - ICP-OHC-WCH</fullName>
+                <default>false</default>
+                <label>D1416D	AR - ICP-OHC-WCH</label>
+            </value>
+            <value>
+                <fullName>D1416E	Accts Rec - Bechtel National</fullName>
+                <default>false</default>
+                <label>D1416E	Accts Rec - Bechtel National</label>
+            </value>
+            <value>
+                <fullName>D1416M	Accounts Receivable-HEHF</fullName>
+                <default>false</default>
+                <label>D1416M	Accounts Receivable-HEHF</label>
+            </value>
+            <value>
+                <fullName>D1416P	Central Hanford Plateau Rem Cp</fullName>
+                <default>false</default>
+                <label>D1416P	Central Hanford Plateau Rem Cp</label>
+            </value>
+            <value>
+                <fullName>D1416R	WA River Protection Solution</fullName>
+                <default>false</default>
+                <label>D1416R	WA River Protection Solution</label>
+            </value>
+            <value>
+                <fullName>D1416U	Mission Support Alliance, LLC</fullName>
+                <default>false</default>
+                <label>D1416U	Mission Support Alliance, LLC</label>
+            </value>
+            <value>
+                <fullName>D1416W	Accounts Receivable-FDH</fullName>
+                <default>false</default>
+                <label>D1416W	Accounts Receivable-FDH</label>
+            </value>
+            <value>
+                <fullName>D1441	Accounts Receivable-OFA</fullName>
+                <default>false</default>
+                <label>D1441	Accounts Receivable-OFA</label>
+            </value>
+            <value>
+                <fullName>D1441D	Accounts Receivable-OFA DOD</fullName>
+                <default>false</default>
+                <label>D1441D	Accounts Receivable-OFA DOD</label>
+            </value>
+            <value>
+                <fullName>D1442	A/R Non-Federal-Domestic</fullName>
+                <default>false</default>
+                <label>D1442	A/R Non-Federal-Domestic</label>
+            </value>
+            <value>
+                <fullName>D1442E	Accounts Receivable - Bechtel</fullName>
+                <default>false</default>
+                <label>D1442E	Accounts Receivable - Bechtel</label>
+            </value>
+            <value>
+                <fullName>D1442P	Accounts Receivable - CPCCo</fullName>
+                <default>false</default>
+                <label>D1442P	Accounts Receivable - CPCCo</label>
+            </value>
+            <value>
+                <fullName>D1442R	Accounts Receivable - WRPS</fullName>
+                <default>false</default>
+                <label>D1442R	Accounts Receivable - WRPS</label>
+            </value>
+            <value>
+                <fullName>D1442U	Accounts Receivable - HMIS</fullName>
+                <default>false</default>
+                <label>D1442U	Accounts Receivable - HMIS</label>
+            </value>
+            <value>
+                <fullName>D1443	Accounts Receivable - Foreign</fullName>
+                <default>false</default>
+                <label>D1443	Accounts Receivable - Foreign</label>
+            </value>
+            <value>
+                <fullName>D1444	A/R ACT Industrial</fullName>
+                <default>false</default>
+                <label>D1444	A/R ACT Industrial</label>
+            </value>
+            <value>
+                <fullName>D1445	A/R ACT Government</fullName>
+                <default>false</default>
+                <label>D1445	A/R ACT Government</label>
+            </value>
+            <value>
+                <fullName>D1446	A/R Legacy Industrial</fullName>
+                <default>false</default>
+                <label>D1446	A/R Legacy Industrial</label>
+            </value>
+            <value>
+                <fullName>D1447	A/R Legacy Government</fullName>
+                <default>false</default>
+                <label>D1447	A/R Legacy Government</label>
+            </value>
+            <value>
+                <fullName>D1448	Accounts Receivable - BPA</fullName>
+                <default>false</default>
+                <label>D1448	Accounts Receivable - BPA</label>
+            </value>
+            <value>
+                <fullName>D1681	Other Special Materials</fullName>
+                <default>false</default>
+                <label>D1681	Other Special Materials</label>
+            </value>
+            <value>
+                <fullName>D1691	Stores</fullName>
+                <default>false</default>
+                <label>D1691	Stores</label>
+            </value>
+            <value>
+                <fullName>D1711	Allowance/Loss - Stores</fullName>
+                <default>false</default>
+                <label>D1711	Allowance/Loss - Stores</label>
+            </value>
+            <value>
+                <fullName>D1813	Contract 1830 Suspense</fullName>
+                <default>false</default>
+                <label>D1813	Contract 1830 Suspense</label>
+            </value>
+            <value>
+                <fullName>D81119	Transfers to DOE</fullName>
+                <default>false</default>
+                <label>D81119	Transfers to DOE</label>
+            </value>
+            <value>
+                <fullName>D8111C	Transfers to CHG</fullName>
+                <default>false</default>
+                <label>D8111C	Transfers to CHG</label>
+            </value>
+            <value>
+                <fullName>D8111	Transfers to Other DOE Sites</fullName>
+                <default>false</default>
+                <label>D8111	Transfers to Other DOE Sites</label>
+            </value>
+            <value>
+                <fullName>D8111W	Transfers to FDH</fullName>
+                <default>false</default>
+                <label>D8111W	Transfers to FDH</label>
+            </value>
+            <value>
+                <fullName>D8131	Costs Capitalized-Inventories</fullName>
+                <default>false</default>
+                <label>D8131	Costs Capitalized-Inventories</label>
+            </value>
+            <value>
+                <fullName>D8132	Net Cost of Operations</fullName>
+                <default>false</default>
+                <label>D8132	Net Cost of Operations</label>
+            </value>
+            <value>
+                <fullName>D8133	Cost Capitalized-Plant &amp; Equip</fullName>
+                <default>false</default>
+                <label>D8133	Cost Capitalized-Plant &amp; Equip</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
 </CustomField>

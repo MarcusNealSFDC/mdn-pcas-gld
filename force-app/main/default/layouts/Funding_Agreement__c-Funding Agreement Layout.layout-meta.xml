@@ -63,6 +63,10 @@
                 <behavior>Readonly</behavior>
                 <field>Total_WAS_Amount_Received__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PNSO_Coordinator__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
