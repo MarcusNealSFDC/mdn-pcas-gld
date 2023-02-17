@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remaining_Agreement_Amount_Less_than_0</fullName>
+    <active>true</active>
+    <errorConditionFormula>PNNL_Remaining_Agreement__c  &lt; 0</errorConditionFormula>
+    <errorMessage>The Remaining Agreement Amount can not be less than 0</errorMessage>
+</ValidationRule>
