@@ -12,10 +12,16 @@
                         <valueListItems>
                             <value>Submit</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.Status__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>Work Authorization Review</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.WA_Ready_for_Review__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
