@@ -1103,6 +1103,10 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Funding_Action__c.Obs_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Funding_Action__c.PNNL_Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
