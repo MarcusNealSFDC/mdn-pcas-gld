@@ -8,12 +8,38 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Edit</value>
+                            <value>Opportunity.Scope_Validated</value>
                             <visibilityRule>
                                 <criteria>
-                                    <leftValue>{!Record.Is_Locked__c}</leftValue>
+                                    <leftValue>{!Record.StageName}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>false</rightValue>
+                                    <rightValue>Scope Filed</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Begin_Proposal_Draft</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Scope Cleared</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Complete_DOE_Proposal</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.FWP__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>No</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Proposal Draft</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -57,9 +83,6 @@
                         <valueListItems>
                             <value>Opportunity.Purge_Cost_Sheet</value>
                         </valueListItems>
-                        <valueListItems>
-                            <value>Clone</value>
-                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -76,7 +99,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
