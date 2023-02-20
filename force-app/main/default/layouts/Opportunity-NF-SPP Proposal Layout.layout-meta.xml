@@ -576,15 +576,6 @@
         <relatedList>RelatedOpportunitySalesTeam</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>Product2</fields>
-        <fields>Quantity</fields>
-        <fields>UnitPrice</fields>
-        <fields>ServiceDate</fields>
-        <fields>Description</fields>
-        <fields>ListPrice</fields>
-        <relatedList>RelatedLineItemList</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>NAME</fields>
         <fields>Advance_Payment_Requested__c</fields>
         <fields>Amendment_Fee_Amount__c</fields>
@@ -644,6 +635,7 @@
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
         <masterLabel>00h3R0000016iqb</masterLabel>
+        <masterLabel>00h3S000000o2i6</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
