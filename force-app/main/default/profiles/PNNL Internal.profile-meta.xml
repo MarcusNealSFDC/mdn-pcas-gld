@@ -3654,9 +3654,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Funding_Action__c-Funding Action Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Funding_Action__c-Funding Action Layout</layout>
         <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
     </layoutAssignments>
     <layoutAssignments>

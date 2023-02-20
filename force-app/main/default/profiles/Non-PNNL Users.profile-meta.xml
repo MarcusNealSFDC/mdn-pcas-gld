@@ -937,11 +937,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Funding_Action__c.FAC_Amount__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Funding_Action__c.FAC_Waiver__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3592,9 +3587,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Funding_Agreement__c-Funding Agreement Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-ACT Proposal</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-ACT Proposal</layout>
