@@ -195,9 +195,19 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Reject_back_to_Draft</fullName>
+        <field>StageName</field>
+        <literalValue>Proposal Draft</literalValue>
+        <name>Reject back to Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Field_to_Proposal_Prep</fullName>
         <field>StageName</field>
-        <literalValue>Proposal Submitted</literalValue>
+        <literalValue>Proposal Preparation</literalValue>
         <name>Update Field to Proposal Prep</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
