@@ -5,11 +5,12 @@
     <externalId>false</externalId>
     <formula>AND(
 RecordType.Name = &quot;F-SPP&quot;,
-ISPICKVAL(StageName,&quot;Proposal Draft&quot;),
+ISPICKVAL(StageName,&quot;Proposal Preparation&quot;),
 NOT(ISBLANK(Project_Coordinators__c)),
 NOT(ISBLANK(Project_Manager3__c)),
 NOT(ISBLANK(SPP_Office_Reviewer2__c)),
-NOT(ISBLANK(DOE_Site_Office_Approver2__c)),
+NOT(ISBLANK(Project_Staff_Reviewer__c)),
+NOT(ISBLANK(PNSO_Contracting_Officer2__c)),
 NOT(ISBLANK(PNSO_Technical_Rep2__c))
 )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>

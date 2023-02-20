@@ -4,24 +4,48 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>Edit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Submit</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Work Authorization Review</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.WA_Ready_for_Review__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>collapsed</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsConfiguration</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsInNative</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
-                    <value>3</value>
+                    <value>5</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
                 <identifier>force_highlightsPanel</identifier>
@@ -128,16 +152,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.AFP_Month__c</fieldItem>
                 <identifier>RecordAFP_Month_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Number__c</fieldItem>
-                <identifier>RecordContract_Number_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-e809e0c1-4c0e-4383-94f9-3240daaec90f</name>
@@ -376,6 +390,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Technical_Reviewer__c</fieldItem>
                 <identifier>RecordPNSO_Technical_Reviewer_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Coordinator__c</fieldItem>
+                <identifier>RecordPNSO_Coordinator_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-2cccc769-dc30-4428-a2d4-8b07e5708fee</name>

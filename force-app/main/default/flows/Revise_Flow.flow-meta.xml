@@ -4,7 +4,7 @@
         <name>Copy_Attachment</name>
         <label>Copy Attachment</label>
         <locationX>50</locationX>
-        <locationY>758</locationY>
+        <locationY>1214</locationY>
         <actionName>PNNL_CopyAttachment</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -22,7 +22,7 @@
         <name>Open</name>
         <label>OpenNewRecord</label>
         <locationX>182</locationX>
-        <locationY>974</locationY>
+        <locationY>1430</locationY>
         <actionName>c:OpenOpportunity</actionName>
         <actionType>component</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -39,7 +39,7 @@
         <name>AssignIdsToList</name>
         <label>AssignIdsToList</label>
         <locationX>182</locationX>
-        <locationY>518</locationY>
+        <locationY>974</locationY>
         <assignmentItems>
             <assignToReference>OpportunityIdList</assignToReference>
             <operator>Add</operator>
@@ -59,10 +59,10 @@
         </connector>
     </assignments>
     <assignments>
-        <name>AssignRecordValues</name>
+        <name>AssignRecordValuesForNewOppty</name>
         <label>AssignRecordValues</label>
-        <locationX>182</locationX>
-        <locationY>278</locationY>
+        <locationX>50</locationX>
+        <locationY>638</locationY>
         <assignmentItems>
             <assignToReference>RecordToClone.Id</assignToReference>
             <operator>Assign</operator>
@@ -79,9 +79,9 @@
         </assignmentItems>
         <assignmentItems>
             <assignToReference>RecordToClone.Revison__c</assignToReference>
-            <operator>Add</operator>
+            <operator>Assign</operator>
             <value>
-                <numberValue>1.0</numberValue>
+                <elementReference>RevisionCount</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -91,15 +91,137 @@
                 <stringValue>Proposal Draft</stringValue>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Is_Locked__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>CreateOpportunityRecord</targetReference>
         </connector>
     </assignments>
+    <assignments>
+        <name>AssignRecordValuesForRevision</name>
+        <label>AssignRecordValues</label>
+        <locationX>314</locationX>
+        <locationY>638</locationY>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GetRecords</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Revison__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>RevisionCount</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.StageName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Proposal Draft</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordToClone.Is_Locked__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>CreateOpportunityRecord</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>AssignRevisionCount</name>
+        <label>AssignRevisionCount</label>
+        <locationX>50</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>RevisionCount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GetAllRelatedOpptyRecords.Revison__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RevisionCount</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AssignRecordValuesForNewOppty</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_AssignRevisionCount</name>
+        <label>Copy 1 of AssignRevisionCount</label>
+        <locationX>314</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>RevisionCount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GetAllChildRecords.Revison__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RevisionCount</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AssignRecordValuesForRevision</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Opportunity_Parent</name>
+        <label>Check Opportunity Parent</label>
+        <locationX>182</locationX>
+        <locationY>278</locationY>
+        <defaultConnector>
+            <targetReference>GetAllChildRecords</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Parent</defaultConnectorLabel>
+        <rules>
+            <name>OpportunityHasParent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetRecords.Parent_Opportunity__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetAllRelatedOpptyRecords</targetReference>
+            </connector>
+            <label>OpportunityHasParent</label>
+        </rules>
+    </decisions>
     <decisions>
         <name>DOEIWO</name>
         <label>DOEIWO</label>
         <locationX>182</locationX>
-        <locationY>638</locationY>
+        <locationY>1094</locationY>
         <defaultConnector>
             <targetReference>Open</targetReference>
         </defaultConnector>
@@ -153,12 +275,72 @@
         <name>CreateOpportunityRecord</name>
         <label>CreateOpportunityRecord</label>
         <locationX>182</locationX>
-        <locationY>398</locationY>
+        <locationY>854</locationY>
         <connector>
             <targetReference>AssignIdsToList</targetReference>
         </connector>
         <inputReference>RecordToClone</inputReference>
     </recordCreates>
+    <recordLookups>
+        <name>GetAllChildRecords</name>
+        <label>Get All Child Records</label>
+        <locationX>314</locationX>
+        <locationY>398</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_1_of_AssignRevisionCount</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Parent_Opportunity__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Amendment_Number__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRecords.Amendment_Number__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <sortField>Revison__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetAllRelatedOpptyRecords</name>
+        <label>GetAllRelatedOpptyRecords</label>
+        <locationX>50</locationX>
+        <locationY>398</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>AssignRevisionCount</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Parent_Opportunity__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRecords.Parent_Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Amendment_Number__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRecords.Amendment_Number__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <sortField>Revison__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordLookups>
         <name>GetRecords</name>
         <label>GetRecords</label>
@@ -166,7 +348,7 @@
         <locationY>158</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>AssignRecordValues</targetReference>
+            <targetReference>Check_Opportunity_Parent</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -209,5 +391,16 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>RevisionCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
     </variables>
 </Flow>
