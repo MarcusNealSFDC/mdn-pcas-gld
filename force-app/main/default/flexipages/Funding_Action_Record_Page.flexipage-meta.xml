@@ -729,58 +729,6 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNNL_Remaining_Agreement__c</fieldItem>
-                <identifier>RecordPNNL_Remaining_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-e391ee12-4ae5-4c9d-868b-046386493a61</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNNL_Budget_Ceiling_Availability__c</fieldItem>
-                <identifier>RecordPNNL_Budget_Ceiling_Availability_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-b1542797-e083-431b-8a51-2d662b4c8e86</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-e391ee12-4ae5-4c9d-868b-046386493a61</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column15</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-b1542797-e083-431b-8a51-2d662b4c8e86</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column16</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-09f79d90-e1b0-46fe-87c0-70941c1c4718</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
