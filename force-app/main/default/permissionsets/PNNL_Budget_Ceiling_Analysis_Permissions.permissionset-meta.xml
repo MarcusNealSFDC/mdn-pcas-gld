@@ -57,6 +57,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>PNNL_Funding_Obligation__c.Fiscal_Year__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>PNNL_Funding_Obligation__c.PNNL_Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -67,7 +72,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>PNNL_Funding_Obligation__c.PNNL_Fund_Code_Fiscal_Year__c</field>
+        <field>PNNL_Funding_Obligation__c.PNNL_Sponsor_Group_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>

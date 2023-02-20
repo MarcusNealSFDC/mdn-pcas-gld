@@ -117,8 +117,8 @@
                     <name>uiBehavior</name>
                     <value>readonly</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.FAC__c</fieldItem>
-                <identifier>RecordFAC_cField</identifier>
+                <fieldItem>Record.SPP_Code__c</fieldItem>
+                <identifier>RecordSPP_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -235,8 +235,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.SPP_Code__c</fieldItem>
-                <identifier>RecordSPP_Code_cField</identifier>
+                <fieldItem>Record.PNNL_Fund_Code__c</fieldItem>
+                <identifier>RecordPNNL_Fund_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
