@@ -3742,12 +3742,18 @@
         <layout>Fin_Plan_Data__c-Fin Plan Data Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Funding_Action_Attachment__c-Funding Action Attachment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Funding_Action__c-Funding Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Funding_Action__c-Funding Action Layout</layout>
         <recordType>Funding_Action__c.ACT_Funding_Action</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Funding_Action__c-Funding Action Layout</layout>
-        <recordType>Funding_Action__c.DOE_Direct_Funding_Action</recordType>
+        <recordType>Funding_Action__c.DOE_Direct</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Funding_Action__c-Funding Action Layout</layout>
@@ -4122,8 +4128,8 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Funding_Action__c.DOE_Direct_Funding_Action</recordType>
-        <visible>true</visible>
+        <recordType>Funding_Action__c.DOE_Direct</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
