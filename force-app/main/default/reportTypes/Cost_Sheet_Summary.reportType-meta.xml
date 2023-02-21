@@ -98,7 +98,7 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Project_Manager3__c</field>
+            <field>Cost_Sheet_Line_Rollup__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
