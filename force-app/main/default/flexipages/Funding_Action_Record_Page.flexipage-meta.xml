@@ -174,8 +174,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Proposal_Amendment__c</fieldItem>
-                <identifier>RecordProposal_Amendment_cField</identifier>
+                <fieldItem>Record.Proposed_Amendment__c</fieldItem>
+                <identifier>RecordProposed_Amendment_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
