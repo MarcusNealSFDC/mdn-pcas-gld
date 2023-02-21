@@ -8,12 +8,13 @@
                     <valueList>
                         <valueListItems>
                             <value>Funding_Action__c.Add_SPP_Code</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Edit</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Clone</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.SPP_Code_Visibility_Check__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>Submit</value>
@@ -24,6 +25,12 @@
                                     <rightValue>Funding Preparation</rightValue>
                                 </criteria>
                             </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Edit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Clone</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>

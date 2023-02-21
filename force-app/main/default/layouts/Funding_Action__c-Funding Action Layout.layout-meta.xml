@@ -230,6 +230,10 @@
                 <behavior>Edit</behavior>
                 <field>CRADA__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>SPP_Code_Visibility_Check__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>

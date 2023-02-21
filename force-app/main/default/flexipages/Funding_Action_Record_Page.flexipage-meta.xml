@@ -7,6 +7,26 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
+                            <value>Funding_Action__c.Add_SPP_Code</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.SPP_Code_Visibility_Check__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Submit</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.SPP_Code__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
@@ -23,19 +43,6 @@
                         </valueListItems>
                         <valueListItems>
                             <value>PrintableView</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Submit</value>
-                            <visibilityRule>
-                                <criteria>
-                                    <leftValue>{!$User.Profile.Name}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Non-PNNL Users</rightValue>
-                                </criteria>
-                            </visibilityRule>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Funding_Action__c.Add_SPP_Code</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
