@@ -24,8 +24,8 @@
         </rules>
     </decisions>
     <environments>Default</environments>
-    <interviewLabel>Add CSC Approver to Related Proposal {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Add CSC Approver to Related Proposal</label>
+    <interviewLabel>Add CSC Approver to Proposal Team {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Add CSC Approver to Proposal Team</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -130,5 +130,5 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
 </Flow>
