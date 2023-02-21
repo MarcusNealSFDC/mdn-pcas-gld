@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>BalanceUpdate</name>
+        <dataType>Currency</dataType>
+        <expression>{!$Record.Fund_Code__r.PNNL_Balance__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Funding Obligation Balance {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Funding Obligation Balance</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Funding_Obligation_Balance_Update</name>
+        <label>Funding Obligation  Balance Update</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <inputAssignments>
+            <field>PNNL_Balance__c</field>
+            <value>
+                <elementReference>BalanceUpdate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Funding_Obligation_Balance_Update</targetReference>
+        </connector>
+        <object>PNNL_Funding_Obligation__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

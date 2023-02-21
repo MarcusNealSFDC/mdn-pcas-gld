@@ -4,6 +4,7 @@
     <columns>OPPORTUNITY.NAME</columns>
     <columns>Revison__c</columns>
     <columns>Amendment_Number__c</columns>
+    <columns>Risk_Assessment_Link__c</columns>
     <columns>Budget_Year__c</columns>
     <columns>Project_Title__c</columns>
     <columns>OPPORTUNITY.RECORDTYPE</columns>

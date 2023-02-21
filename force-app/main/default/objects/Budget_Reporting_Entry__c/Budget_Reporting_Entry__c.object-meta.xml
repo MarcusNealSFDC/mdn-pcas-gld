@@ -155,9 +155,10 @@
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>Budget &amp; Reporting Entry</label>
     <nameField>
+        <displayFormat>BRE-{YY}{MM}{DD}-{0}</displayFormat>
         <label>Budget &amp; Reporting Entry Name</label>
         <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Budget &amp; Reporting Entries</pluralLabel>
     <searchLayouts></searchLayouts>

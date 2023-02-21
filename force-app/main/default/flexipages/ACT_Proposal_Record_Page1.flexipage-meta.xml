@@ -8,6 +8,26 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
+                            <value>Opportunity.Scope_Validated</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Scope Filed</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Begin_Proposal_Draft</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Scope Cleared</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Opportunity.Assign_to_Contract_Specialist</value>
                             <visibilityRule>
                                 <criteria>
@@ -71,7 +91,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
@@ -79,6 +99,27 @@
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
                 <identifier>force_highlightsPanel</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(116, 116, 116); font-size: 18px;&quot;&gt;﻿&lt;/strong&gt;&lt;strong style=&quot;color: rgb(238, 7, 7); font-size: 18px;&quot;&gt;This Proposal has been APPROVED and is Read-Only.&lt;/strong&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText4</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.StageName}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Proposal Approved</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -90,7 +131,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>hideUpdateButton</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>variant</name>
@@ -119,7 +160,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Scope__c</fieldItem>
                 <identifier>RecordScope_cField</identifier>
@@ -149,7 +190,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Amendment_Number__c</fieldItem>
                 <identifier>RecordAmendment_Number_cField</identifier>
@@ -159,7 +200,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Revison__c</fieldItem>
                 <identifier>RecordRevison_cField</identifier>
@@ -175,6 +216,29 @@
                 <identifier>RecordRisk_Assessment_Link_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.BO_Tax_Credit__c</fieldItem>
+                <identifier>RecordBO_Tax_Credit_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Integration User Profile</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-e42b5582-9a7d-411d-946d-f97b6f727225</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -183,20 +247,20 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_Title__c</fieldItem>
-                <identifier>RecordProject_Title_cField</identifier>
+                <fieldItem>Record.StageName</fieldItem>
+                <identifier>RecordStageNameField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>required</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.StageName</fieldItem>
-                <identifier>RecordStageNameField</identifier>
+                <fieldItem>Record.Project_Title__c</fieldItem>
+                <identifier>RecordProject_Title_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -243,10 +307,30 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNNL_Budget_Reporting_Number__c</fieldItem>
                 <identifier>RecordPNNL_Budget_Reporting_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.EPR_Signed_Date__c</fieldItem>
+                <identifier>RecordEPR_Signed_Date_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.StageName</fieldItem>
+                <identifier>RecordStageNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-23d2eac5-764d-4194-bfe2-deb2e26752cb</name>
@@ -399,8 +483,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Organization_Code__c</fieldItem>
-                <identifier>RecordOrganization_Code_cField</identifier>
+                <fieldItem>Record.Fund_Type__c</fieldItem>
+                <identifier>RecordFund_Type_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -409,8 +493,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Fund_Type__c</fieldItem>
-                <identifier>RecordFund_Type_cField</identifier>
+                <fieldItem>Record.Cost_Code__c</fieldItem>
+                <identifier>RecordCost_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -666,6 +750,23 @@
                 <identifier>RecordIntellectual_Property_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Commercialization_Manager2__c</fieldItem>
+                <identifier>RecordCommercialization_Manager2_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Intellectual_Property__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-2c431d45-8412-46a6-8a73-bc6abbc99020</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -686,8 +787,42 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Coordinator_Foreign_Approver__c</fieldItem>
+                <identifier>RecordPNSO_Coordinator_Foreign_Approver_cField2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Foreign_Sponsor__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.PNSO_Animal_Research_Required__c</fieldItem>
                 <identifier>RecordPNSO_Animal_Research_Required_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNSO_Animal_Researcher2__c</fieldItem>
+                <identifier>RecordPNSO_Animal_Researcher2_cField2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.PNSO_Animal_Research_Required__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Yes</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -708,23 +843,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Non_Standard_Equipment_Utilized__c</fieldItem>
                 <identifier>RecordNon_Standard_Equipment_Utilized_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Commercialization_Manager2__c</fieldItem>
-                <identifier>RecordCommercialization_Manager2_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Intellectual_Property__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>Yes</rightValue>
-                    </criteria>
-                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-9f4e0eeb-ca28-4a3e-a528-e7987b18bc4b</name>
@@ -900,6 +1018,24 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Opportunity.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>Cost_Sheet_Rollup__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>GRID</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>columns</name>
                     <value>Facet-e32ce238-d5d9-4938-9331-993aaeed0e72</value>
                 </componentInstanceProperties>
@@ -909,32 +1045,6 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection6</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>cacheAge</name>
-                    <value>1440</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Cost Sheet Records</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>reportFilter</name>
-                    <value>OPPORTUNITY_ID</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>reportName</name>
-                    <value>New_Opportunities_with_Products_Report_Y08</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showRefreshButton</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:reportChart</componentName>
-                <identifier>flexipage_reportChart</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -1055,6 +1165,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.ACT_Determinations_2__c</fieldItem>
+                <identifier>RecordACT_Determinations_2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.SPP_Determination_2__c</fieldItem>
                 <identifier>RecordSPP_Determination_2_cField</identifier>
             </fieldInstance>
@@ -1105,6 +1225,16 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.ACT_Determinations_4__c</fieldItem>
+                <identifier>RecordACT_Determinations_4_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -1999,6 +2129,13 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection24</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Amendment_Number__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>0</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -2013,6 +2150,13 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection32</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Amendment_Number__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>0</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-6e25553f-99c2-4ab2-970b-34fd324262ad</name>
@@ -2105,6 +2249,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.PNNL_IP_Approver__c</fieldItem>
                 <identifier>RecordPNNL_IP_Approver_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.DOE_IP_Approver__c</fieldItem>
+                <identifier>RecordDOE_IP_Approver_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-6aa170f7-2f3b-4938-bce2-c73518760465</name>
@@ -2487,6 +2641,32 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListApiName</name>
+                    <value>Proposed_Amendments__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Opportunity.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
                     <value>Projects__r</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -2513,32 +2693,6 @@
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
                 <identifier>force_relatedListSingleContainer5</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>parentFieldApiName</name>
-                    <value>Opportunity.Id</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListApiName</name>
-                    <value>Proposed_Amendments__r</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListComponentOverride</name>
-                    <value>NONE</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>rowsToDisplay</name>
-                    <value>10</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer6</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>

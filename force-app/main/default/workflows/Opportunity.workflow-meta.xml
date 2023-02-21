@@ -96,50 +96,22 @@
         <senderType>CurrentUser</senderType>
         <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_No</template>
     </alerts>
-    <fieldUpdates>
-        <fullName>Approval_Not_In_Process</fullName>
-        <description>Field update to indicate the proposal is no longer in the approval process</description>
-        <field>Approval_in_Process__c</field>
-        <literalValue>0</literalValue>
-        <name>Approval Not In Process</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
+    <alerts>
+        <fullName>Scope_Clearance_Decision_No_Email_Alert</fullName>
+        <ccEmails>spp@pnnl.gov</ccEmails>
+        <description>Scope Clearance Decision No Email Alert</description>
         <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Approval_Recalled</fullName>
-        <description>FIeld update to indicate an approval has been recalled for the proposal</description>
-        <field>Approval_Recalled__c</field>
-        <literalValue>1</literalValue>
-        <name>Approval Recalled</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
+        <senderType>CurrentUser</senderType>
+        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_No</template>
+    </alerts>
+    <alerts>
+        <fullName>Scope_Clearance_Decision_Yes</fullName>
+        <ccEmails>spp@pnnl.gov</ccEmails>
+        <description>Scope Clearance Decision Yes Email Alert</description>
         <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Approval_Rejected</fullName>
-        <description>Field update to indicate that the approval has been rejected for the proposal</description>
-        <field>Approval_Rejected__c</field>
-        <literalValue>1</literalValue>
-        <name>Approval Rejected</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Approval_in_Process</fullName>
-        <description>Field to indicate that an approval is in process for this proposal</description>
-        <field>Approval_in_Process__c</field>
-        <literalValue>1</literalValue>
-        <name>Approval in Process</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
+        <senderType>CurrentUser</senderType>
+        <template>Scope_Clearance_Decision_Email_Template/Scope_Clearance_Decision_Yes</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Final_Approval_Received</fullName>
         <description>Field update to indicate the Final Approval has been received.</description>
@@ -156,6 +128,16 @@
         <field>Trigger_Approval_Process_Queue_Update__c</field>
         <literalValue>1</literalValue>
         <name>Flag Approval Process Queue Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lock_Record</fullName>
+        <field>Is_Locked__c</field>
+        <literalValue>1</literalValue>
+        <name>Lock Record</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -195,7 +177,7 @@
         <fullName>Proposal_Submitted</fullName>
         <description>Field to indicate a proposal has been submitted for approval</description>
         <field>StageName</field>
-        <literalValue>Proposal Submitted</literalValue>
+        <literalValue>Proposal Pending</literalValue>
         <name>Proposal Submitted</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
@@ -207,6 +189,16 @@
         <field>StageName</field>
         <literalValue>Work Authorization Review</literalValue>
         <name>Recalled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reject_back_to_Draft</fullName>
+        <field>StageName</field>
+        <literalValue>Proposal Draft</literalValue>
+        <name>Reject back to Draft</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -257,6 +249,16 @@
         <field>StageName</field>
         <literalValue>Proposal Submitted</literalValue>
         <name>Update to Proposal Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Work_Authorization_Review</fullName>
+        <field>StageName</field>
+        <literalValue>Work Authorization Review</literalValue>
+        <name>Work Authorization Review</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>

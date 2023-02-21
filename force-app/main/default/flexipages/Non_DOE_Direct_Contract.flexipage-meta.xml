@@ -13,6 +13,9 @@
                         <valueListItems>
                             <value>Clone</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>ChangeRecordType</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -127,8 +130,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.PNNL_SPP_Code__c</fieldItem>
-                <identifier>RecordPNNL_SPP_Code_cField</identifier>
+                <fieldItem>Record.SPP_Code__c</fieldItem>
+                <identifier>RecordSPP_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -169,16 +172,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.CRADA2__c</fieldItem>
                 <identifier>RecordCRADA2_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Funding_Action__c</fieldItem>
-                <identifier>RecordFunding_Action_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-95759a73-4880-4852-a86d-5e9995273798</name>
@@ -235,18 +228,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Billing_Code__c</fieldItem>
-                <identifier>RecordBilling_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Project_Code__c</fieldItem>
-                <identifier>RecordProject_Code_cField</identifier>
+                <identifier>RecordProject_Code_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -255,8 +238,18 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Fund_Code__c</fieldItem>
-                <identifier>RecordFund_Code_cField</identifier>
+                <fieldItem>Record.Program_Code__c</fieldItem>
+                <identifier>RecordProgram_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNNL_Fund_Code__c</fieldItem>
+                <identifier>RecordPNNL_Fund_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -443,6 +436,16 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Authorized_Amount__c</fieldItem>
+                <identifier>RecordAuthorized_Amount_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>

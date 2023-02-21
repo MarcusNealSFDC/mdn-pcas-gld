@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>PNNL_Internal_RW_Oppty</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>PNNL PG Internal RW Oppty</label>
+        <sharedTo>
+            <group>Internal_PNNL_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>IWO,SIPP,DOE Direct,ACT,NF-SPP,NIC-RW,F-SPP,DHS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>
