@@ -69,10 +69,6 @@
                 <field>Project_Management_Office_pnnl__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Special_Reporting_Funds__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CRADA__c</field>
             </layoutItems>
@@ -110,7 +106,19 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PNNL_Contract__c</field>
+                <field>Project_Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Report_Contract_Number1__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Special_Reporting_Funds1__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Country_Code1__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -161,10 +169,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>BO_Tax_Cr_Cd__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Country_Code__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -253,12 +257,10 @@
     </quickActionList>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>ALC_TOE__c</fields>
-        <fields>TOE_Title__c</fields>
-        <fields>Effective_Date2__c</fields>
-        <fields>Inactive_Date2__c</fields>
-        <fields>Deactivate__c</fields>
-        <relatedList>Project_Allocation__c.Projects__c</relatedList>
+        <fields>Contract_Status__c</fields>
+        <fields>FY_Authorized_Amount__c</fields>
+        <fields>Fee_Amount__c</fields>
+        <relatedList>PNNL_Contracts__c.Project__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -272,13 +274,6 @@
         <fields>Funding_Amount__c</fields>
         <fields>Funds_Recieved__c</fields>
         <relatedList>Budget_Reporting_Entry__c.Project__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Contract_Status__c</fields>
-        <fields>FY_Authorized_Amount__c</fields>
-        <fields>Fee_Amount__c</fields>
-        <relatedList>PNNL_Contracts__c.Project__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
@@ -300,9 +295,6 @@
         <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
-        <relatedList>RelatedNoteList</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>CreatedDate</fields>
         <fields>StepStatus</fields>
         <fields>OriginalActor</fields>
@@ -310,13 +302,22 @@
         <fields>Comments</fields>
         <relatedList>RelatedProcessHistoryList</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>ALC_TOE__c</fields>
+        <fields>TOE_Title__c</fields>
+        <fields>Effective_Date2__c</fields>
+        <fields>Inactive_Date2__c</fields>
+        <fields>Deactivate__c</fields>
+        <relatedList>Project_Allocation__c.Projects__c</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000012ai7</masterLabel>
+        <masterLabel>00h3R000000np99</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

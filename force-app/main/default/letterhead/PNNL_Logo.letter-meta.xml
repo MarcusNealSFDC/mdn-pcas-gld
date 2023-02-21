@@ -10,7 +10,7 @@
     <description>This logo will be used for PNNL Email Templates.</description>
     <footer>
         <backgroundColor>#000000</backgroundColor>
-        <height>50</height>
+        <height>0</height>
         <horizontalAlignment>Left</horizontalAlignment>
         <verticalAlignment>Top</verticalAlignment>
     </footer>
