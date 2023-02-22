@@ -4,6 +4,15 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
     <label>CSC Budget Approver</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$User.CSC_Approver__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
     <referenceTo>User</referenceTo>
     <relationshipName>Funding_Actions5</relationshipName>
     <required>false</required>
