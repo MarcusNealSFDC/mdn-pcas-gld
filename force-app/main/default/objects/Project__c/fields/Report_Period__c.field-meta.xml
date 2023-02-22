@@ -24,7 +24,7 @@
             </value>
         </valueSetDefinition>
         <valueSettings>
-            <controllingFieldValue>D5909 - Line Item Construction Projects</controllingFieldValue>
+            <controllingFieldValue>D5909 - Line Item Construction Projs</controllingFieldValue>
             <controllingFieldValue>D5912 - Construction Work in Prog</controllingFieldValue>
             <controllingFieldValue>D5913 - Equipment Work in Progress</controllingFieldValue>
             <controllingFieldValue>D5020 - Work for Hanford Contractors</controllingFieldValue>
