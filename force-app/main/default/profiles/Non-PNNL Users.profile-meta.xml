@@ -3184,11 +3184,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>PNNL_Contracts__c.PNNL_SPP_Code__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>PNNL_Contracts__c.Prior_FY_Carryover__c</field>
         <readable>false</readable>
     </fieldPermissions>
