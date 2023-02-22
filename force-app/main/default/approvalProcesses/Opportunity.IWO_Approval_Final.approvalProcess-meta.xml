@@ -8,100 +8,63 @@
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
+        <field>Scope__c</field>
+        <field>Project_Title__c</field>
+        <field>Proposed_Start_Date__c</field>
+        <field>CloseDate</field>
         <field>Owner</field>
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
         <approvalActions>
             <action>
-                <name>Update_to_Proposal_Submitted</name>
+                <name>Proposal_Submitted</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
         <assignedApprover>
             <approver>
-                <name>Contract_Specialist2__c</name>
+                <name>IWO_Specialist__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Contract Specialist Approval</label>
-        <name>Contract_Specialist_Approval</name>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>false</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>PNNL_ACT_Office2__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <label>ACT Office Reviewer Approval</label>
-        <name>ACT_Office_Reviewer_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
+        <label>IWO Specialist Approval</label>
+        <name>IWO_Specialist_Approval</name>
+        <rejectionActions>
+            <action>
+                <name>Update_Field_to_Proposal_Prep</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>PNNL_IP_Approver__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <label>PNNL IP Approval</label>
-        <name>PNNL_IP_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>DOE_IP_Approver__c</name>
+                <name>PNSO_Proposal_Reviewer__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <entryCriteria>
             <criteriaItems>
-                <field>Opportunity.DOE_IP_Approver__c</field>
+                <field>Opportunity.PNSO_Proposal_Reviewer__c</field>
                 <operation>notEqual</operation>
             </criteriaItems>
         </entryCriteria>
         <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
-        <label>DOE IP Approval</label>
-        <name>DOE_IP_Approval</name>
+        <label>PNSO Proposal Reviewer</label>
+        <name>PNSO_Proposal_Reviewer</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>PNSO_Animal_Researcher2__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <entryCriteria>
-            <criteriaItems>
-                <field>Opportunity.PNSO_Animal_Research_Required__c</field>
-                <operation>equals</operation>
-                <value>Yes</value>
-            </criteriaItems>
-        </entryCriteria>
-        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
-        <label>PNSO Animal Research Approval</label>
-        <name>PNSO_Animal_Research_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Update_Field_to_Proposal_Prep</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -117,29 +80,12 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>PNSO_Coordinator_Foreign_Approver__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <entryCriteria>
-            <criteriaItems>
-                <field>Opportunity.Foreign_Sponsor__c</field>
-                <operation>equals</operation>
-                <value>Yes</value>
-            </criteriaItems>
-        </entryCriteria>
-        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
-        <label>PNSO Coordinator - Foreign Sponsor Approval</label>
-        <name>PNSO_Coordinator_Foreign_Sponsor_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Update_Field_to_Proposal_Prep</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -161,10 +107,16 @@
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <label>PNSO Contracting Officer Approval</label>
-        <name>PNSO_Contract_Rep_Approval</name>
+        <name>PNSO_Contracting_Officer_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Update_Field_to_Proposal_Prep</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <emailTemplate>unfiled$public/Proposal_Approval_Email</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
@@ -172,7 +124,7 @@
         <criteriaItems>
             <field>Opportunity.RecordType</field>
             <operation>equals</operation>
-            <value>ACT</value>
+            <value>IWO</value>
         </criteriaItems>
         <criteriaItems>
             <field>Opportunity.StageName</field>
@@ -192,14 +144,14 @@
     </finalApprovalActions>
     <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
-    <initialSubmissionActions>
+    <label>IWO Approval - Final</label>
+    <processOrder>5</processOrder>
+    <recallActions>
         <action>
-            <name>Proposal_Submitted</name>
+            <name>Update_Field_to_Proposal_Prep</name>
             <type>FieldUpdate</type>
         </action>
-    </initialSubmissionActions>
-    <label>ACT Approvals6</label>
-    <processOrder>4</processOrder>
-    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    </recallActions>
+    <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>

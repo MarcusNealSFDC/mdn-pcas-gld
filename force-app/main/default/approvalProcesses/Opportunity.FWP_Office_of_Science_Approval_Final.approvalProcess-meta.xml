@@ -18,17 +18,6 @@
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <type>adhoc</type>
-            </approver>
-        </assignedApprover>
-        <description>To Budget Office Queue</description>
-        <label>Budget Office Approval</label>
-        <name>Budget_Office_Approval</name>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
                 <name>Project_Coordinators__c</name>
                 <type>relatedUserField</type>
             </approver>
@@ -36,27 +25,48 @@
         </assignedApprover>
         <label>Project Coordinator Approval</label>
         <name>Project_Coordinator_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Reject_back_to_Draft</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Flag_Approval_Process_Queue_Update</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
-                <name>Project_Manager3__c</name>
+                <name>PNNL_Work_Proposal_Manager2__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Project Manager Approval</label>
-        <name>Project_Manager_Approval</name>
+        <label>Program Manager Approval</label>
+        <name>Program_Manager_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Reject_back_to_Draft</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Flag_Approval_Process_Queue_Update</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
                 <type>adhoc</type>
@@ -68,6 +78,32 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Reject_back_to_Draft</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>adhoc</type>
+            </approver>
+        </assignedApprover>
+        <description>To Budget Office Queue</description>
+        <label>Budget Office Approval</label>
+        <name>Budget_Office_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Reject_back_to_Draft</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -78,13 +114,26 @@
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>PNSO Technical Rep Approval</label>
-        <name>PNSO_Technical_Rep_Approval</name>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.FFRDC__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>FFDRC = Yes</label>
+        <name>FFDRC_Yes</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Reject_back_to_Draft</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
-    <description>Approval process for use in FWP proposal Type - Phase 2 which includes PNSO approval</description>
+    <description>Approval process for use in FWP proposal Type - Phase 1 includes Project Managers/Project Coordinators, etc.</description>
     <emailTemplate>unfiled$public/Proposal_Approval_Email</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
@@ -102,6 +151,11 @@
             <field>Opportunity.FWP__c</field>
             <operation>equals</operation>
             <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.B_R_Text__c</field>
+            <operation>startsWith</operation>
+            <value>AT,KA,KB,KC,KL,KP,KX,KJ,ST,FS10</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
@@ -126,23 +180,19 @@
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
-            <name>Flag_Approval_Process_Queue_Update</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
             <name>Proposal_Submitted</name>
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>FWP Approval - Non Office of Science</label>
+    <label>FWP - Office of Science Approval - Final</label>
     <nextAutomatedApprover>
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>
     </nextAutomatedApprover>
-    <processOrder>3</processOrder>
+    <processOrder>2</processOrder>
     <recallActions>
         <action>
-            <name>Recalled</name>
+            <name>Reject_back_to_Draft</name>
             <type>FieldUpdate</type>
         </action>
     </recallActions>
