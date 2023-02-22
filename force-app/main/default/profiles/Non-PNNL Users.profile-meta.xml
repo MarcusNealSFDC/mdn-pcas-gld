@@ -1219,11 +1219,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Funding_Action__c.PNNL_SPP_Code__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Funding_Action__c.PNNL_Total_Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>
