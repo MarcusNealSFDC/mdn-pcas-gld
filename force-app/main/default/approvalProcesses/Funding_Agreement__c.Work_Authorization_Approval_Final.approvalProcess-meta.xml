@@ -8,149 +8,147 @@
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
+        <field>Owner</field>
     </approvalPageFields>
     <approvalStep>
-        <allowDelegate>true</allowDelegate>
+        <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>Funding_Preparation_Approval</name>
+                <name>PNNL_Signed_Date</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WA_Stage_Update_to_PNSO_Technical</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
         <assignedApprover>
             <approver>
-                <name>SPP_Office_Reviewer__c</name>
-                <type>relatedUserField</type>
+                <name>Budget_Office_Queue</name>
+                <type>queue</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <entryCriteria>
-            <criteriaItems>
-                <field>Funding_Action__c.SPP_Office_Reviewer__c</field>
-                <operation>notEqual</operation>
-            </criteriaItems>
-        </entryCriteria>
-        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
-        <label>SPP Office Reviewer Approval</label>
-        <name>SPP_Office_Reviewer_Approval</name>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>Contract_Specialist__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <entryCriteria>
-            <criteriaItems>
-                <field>Funding_Action__c.Contract_Specialist__c</field>
-                <operation>notEqual</operation>
-            </criteriaItems>
-        </entryCriteria>
-        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
-        <label>Contract Specialist Approval</label>
-        <name>Contract_Specialist_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
+        <label>Budget Manager Approval</label>
+        <name>Budget_Manager_Approval</name>
         <rejectionActions>
             <action>
-                <name>Funding_Preparation_Approval</name>
+                <name>WA_Review</name>
                 <type>FieldUpdate</type>
             </action>
         </rejectionActions>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>true</allowDelegate>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>PNSO_Coordinator__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Funding_Agreement__c.PNSO_Coordinator__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>PNSO Coordinator Approval</label>
+        <name>PNSO_Coordinator_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>WA_Review</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>Funding_Pending_Approval</name>
+                <name>WA_Update_to_PNSO_Contracting</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
         <assignedApprover>
             <approver>
-                <name>Accounts_Receivable_Reviewer__c</name>
+                <name>PNSO_Technical_Reviewer__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <entryCriteria>
-            <criteriaItems>
-                <field>Funding_Action__c.Accounts_Receivable_Reviewer__c</field>
-                <operation>notEqual</operation>
-            </criteriaItems>
-        </entryCriteria>
-        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
-        <label>Accounts Receivable Approval</label>
-        <name>Accounts_Receivable_Approval</name>
+        <label>PNSO Technical Rep Approval</label>
+        <name>PNSO_Technical_Rep_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
         <rejectionActions>
             <action>
-                <name>Funding_Preparation_Approval</name>
+                <name>WA_Review</name>
                 <type>FieldUpdate</type>
             </action>
         </rejectionActions>
     </approvalStep>
     <approvalStep>
-        <allowDelegate>true</allowDelegate>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>PNSO_Signed_Date</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WA_Approved</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
-                <name>Accounts_Receivable_Manager__c</name>
+                <name>PNSO_Contracting_Officer__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Accounts Receivable Manager</label>
-        <name>Accounts_Receivable_Manager</name>
+        <label>PNSO Contracting Officer Approval</label>
+        <name>PNSO_Contracting_Officer_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
         <rejectionActions>
             <action>
-                <name>Funding_Preparation_Approval</name>
+                <name>WA_Review</name>
                 <type>FieldUpdate</type>
             </action>
         </rejectionActions>
     </approvalStep>
-    <emailTemplate>PCAS_Funding_Agreement_Email_Templates/PCAS_Funding_Action_Notification_Action_Required</emailTemplate>
+    <emailTemplate>unfiled$public/Proposal_Approval_Email</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>
-            <field>Funding_Action__c.Proposal_Type__c</field>
+            <field>Funding_Agreement__c.Status__c</field>
             <operation>equals</operation>
-            <value>ACT</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Funding_Action__c.Status__c</field>
-            <operation>equals</operation>
-            <value>Funding Preparation</value>
+            <value>Work Authorization Review</value>
         </criteriaItems>
     </entryCriteria>
-    <finalApprovalActions>
-        <action>
-            <name>Funding_Action_Approval</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Funding_Approval_Date</name>
-            <type>FieldUpdate</type>
-        </action>
-    </finalApprovalActions>
-    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
-            <name>Update_to_Funding_Pending</name>
+            <name>WA_Status_to_FA_Approval</name>
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>Funding Action Approval - ACT</label>
-    <processOrder>2</processOrder>
+    <label>Work Authorization Approval - Final</label>
+    <processOrder>1</processOrder>
+    <recallActions>
+        <action>
+            <name>WA_Review</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>

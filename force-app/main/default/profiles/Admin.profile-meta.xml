@@ -802,21 +802,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Contact.Pronouns</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.ReportsToId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.Title</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Fin_Plan_Data__c.BA_Change__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -899,21 +884,6 @@
         <editable>false</editable>
         <field>Fin_Plan_Data__c.WFO__c</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Action_Attachment__c.AttachmentId__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Action_Attachment__c.Document_Link__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Funding_Action_Attachment__c.View__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1151,23 +1121,13 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Funding_Action__c.PNNL_SPP_Code__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Action__c.PNNL_Total_Amount__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Funding_Action__c.PNNL_Contract__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Funding_Action__c.PNNL_SPP_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1228,6 +1188,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Funding_Action__c.Proposal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Funding_Action__c.Proposed_Amendment__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2527,6 +2492,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Proposed_Amendment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Proposed_Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3019,16 +2989,6 @@
         <editable>false</editable>
         <field>PNNL_Contracts__c.Fund_Type__c</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>PNNL_Contracts__c.Funding_Action_Id__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>PNNL_Contracts__c.Funding_Action__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -3597,6 +3557,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>User.CSC_Approver__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>User.Commercialization_Manager__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3787,6 +3752,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Funding_Action__c-Funding Action Layout</layout>
+        <recordType>Funding_Action__c.DOE_Direct_Funding_Action</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Funding_Action__c-Funding Action Layout</layout>
         <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -3808,6 +3777,10 @@
         <recordType>Opportunity.DOE_Direct</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity-DOE Direct Proposal Layout</layout>
+        <recordType>Opportunity.DOE_Holding</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-IWO Page Layout</layout>
         <recordType>Opportunity.IWO</recordType>
     </layoutAssignments>
@@ -3821,7 +3794,19 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-SPP Proposal Layout</layout>
+        <recordType>Opportunity.CRADA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-SPP Proposal Layout</layout>
         <recordType>Opportunity.F_SPP</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-SPP Proposal Layout</layout>
+        <recordType>Opportunity.JA_IPA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-SPP Proposal Layout</layout>
+        <recordType>Opportunity.Other</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-SPP Proposal Layout</layout>
@@ -4031,15 +4016,6 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>PNNL_Fund_Code__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
         <object>PNNL_Funding_Obligation__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -4207,6 +4183,11 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Funding_Action__c.DOE_Direct_Funding_Action</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <default>true</default>
         <recordType>Funding_Action__c.SPP_Funding_Action</recordType>
         <visible>true</visible>
@@ -4214,6 +4195,11 @@
     <recordTypeVisibilities>
         <default>true</default>
         <recordType>Opportunity.ACT</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.CRADA</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -4228,6 +4214,11 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Opportunity.DOE_Holding</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Opportunity.F_SPP</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -4238,12 +4229,22 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Opportunity.JA_IPA</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Opportunity.NF_SPP</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.NIC_RW</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Other</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

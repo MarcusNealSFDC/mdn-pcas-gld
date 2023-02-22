@@ -42,6 +42,10 @@
                 <behavior>Edit</behavior>
                 <field>Project_Coordinator__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CSC_Approver__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

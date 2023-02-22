@@ -8,12 +8,48 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Edit</value>
+                            <value>Opportunity.Scope_Validated</value>
                             <visibilityRule>
                                 <criteria>
-                                    <leftValue>{!Record.Is_Locked__c}</leftValue>
+                                    <leftValue>{!Record.StageName}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>false</rightValue>
+                                    <rightValue>Scope Filed</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Begin_Proposal_Draft</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Scope Cleared</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Complete_DOE_Proposal</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.FWP__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>No</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Proposal Draft</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Convert_to_FWP</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Proposal Approved</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -57,9 +93,6 @@
                         <valueListItems>
                             <value>Opportunity.Purge_Cost_Sheet</value>
                         </valueListItems>
-                        <valueListItems>
-                            <value>Clone</value>
-                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -76,7 +109,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
@@ -243,6 +276,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.FWP__c</fieldItem>
                 <identifier>RecordFWP_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.StageName</fieldItem>
+                <identifier>RecordStageNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1859,6 +1902,32 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListApiName</name>
+                    <value>Proposed_Amendments__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Opportunity.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
                     <value>Projects__r</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -1911,7 +1980,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListApiName</name>
-                    <value>Proposed_Amendments__r</value>
+                    <value>Funding_Actions__r</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
@@ -1926,7 +1995,7 @@
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer4</identifier>
+                <identifier>force_relatedListSingleContainer11</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>

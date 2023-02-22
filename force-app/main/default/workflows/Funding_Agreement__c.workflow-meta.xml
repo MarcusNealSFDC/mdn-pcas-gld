@@ -52,6 +52,16 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>WA_Review</fullName>
+        <field>Status__c</field>
+        <literalValue>Work Authorization Review</literalValue>
+        <name>WA Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>WA_Stage_Update_to_PNSO_Technical</fullName>
         <field>Status__c</field>
         <literalValue>Work Authorization Approval: PNSO Technical Rep</literalValue>
