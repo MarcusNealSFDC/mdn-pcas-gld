@@ -53,6 +53,6 @@
     <showSubTotals>false</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Opportunity$EPR_Signed_Date__c</dateColumn>
-        <interval>INTERVAL_CURRENT</interval>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>
