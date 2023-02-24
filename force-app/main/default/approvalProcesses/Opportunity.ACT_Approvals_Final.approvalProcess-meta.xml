@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
     <active>true</active>
-    <allowRecall>false</allowRecall>
+    <allowRecall>true</allowRecall>
     <allowedSubmitters>
         <submitter>Internal_PNNL_Users</submitter>
         <type>group</type>
@@ -12,21 +12,9 @@
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>Commercialization_Manager__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <label>Commercialization Manager Approval</label>
-        <name>Commercialization_Manager_Approval</name>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>Update_to_Proposal_Prep</name>
+                <name>Update_to_Proposal_Submitted</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
@@ -39,98 +27,132 @@
         </assignedApprover>
         <label>Contract Specialist Approval</label>
         <name>Contract_Specialist_Approval</name>
+        <rejectionActions>
+            <action>
+                <name>Update_Field_to_Proposal_Prep</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>PNNL_ACT_Office2__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>ACT Office Reviewer Approval</label>
+        <name>ACT_Office_Reviewer_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Update_Field_to_Proposal_Prep</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>PNNL_IP_Approver2__c</name>
+                <name>PNNL_IP_Approver__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <label>PNNL IP Approval</label>
-        <name>PNNL_IP_Approver</name>
+        <name>PNNL_IP_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Update_Field_to_Proposal_Prep</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>PNSO_Animal_Researcher__c</name>
+                <name>DOE_IP_Approver__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <entryCriteria>
             <criteriaItems>
-                <field>CRADA__c.Animal_Research_Required__c</field>
-                <operation>equals</operation>
-                <value>Yes</value>
+                <field>Opportunity.DOE_IP_Approver__c</field>
+                <operation>notEqual</operation>
             </criteriaItems>
         </entryCriteria>
         <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
-        <label>Animal Research Approval</label>
-        <name>Animal_Research_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <approvalActions>
-            <action>
-                <name>Update_to_Proposal_Pending</name>
-                <type>FieldUpdate</type>
-            </action>
-        </approvalActions>
-        <assignedApprover>
-            <approver>
-                <name>DOE_IP_Approver2__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
         <label>DOE IP Approval</label>
         <name>DOE_IP_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Update_Field_to_Proposal_Prep</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>PNSO_CRADA_Coordinator2__c</name>
+                <name>PNSO_Animal_Researcher2__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>PNSO CRADA Coordinator Approval</label>
-        <name>PNSO_CRADA_Coordinator_Approval</name>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.PNSO_Animal_Research_Required__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>PNSO Animal Research Approval</label>
+        <name>PNSO_Animal_Research_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Update_Field_to_Proposal_Prep</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>PNSO_Technical_Reviewer2__c</name>
+                <name>PNSO_Technical_Rep2__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>PNSO Technical Reviewer Approval</label>
-        <name>PNSO_Technical_Reviewer_Approval</name>
+        <label>PNSO Technical Rep Approval</label>
+        <name>PNSO_Technical_Rep_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Update_Field_to_Proposal_Prep</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -143,20 +165,36 @@
         </assignedApprover>
         <entryCriteria>
             <criteriaItems>
-                <field>CRADA__c.Foreign__c</field>
+                <field>Opportunity.Foreign_Sponsor__c</field>
                 <operation>equals</operation>
                 <value>Yes</value>
             </criteriaItems>
         </entryCriteria>
         <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
-        <label>PNSO Foreign Approval</label>
-        <name>PNSO_Foreign_Approval</name>
+        <label>PNSO Coordinator - Foreign Sponsor Approval</label>
+        <name>PNSO_Coordinator_Foreign_Sponsor_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Update_Field_to_Proposal_Prep</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>PNSO_Signed_Date</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Proposal_Approved</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
                 <name>PNSO_Contracting_Officer2__c</name>
@@ -165,54 +203,57 @@
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <label>PNSO Contracting Officer Approval</label>
-        <name>PNSO_Contracting_Officer_Approval</name>
+        <name>PNSO_Contract_Rep_Approval</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Update_Field_to_Proposal_Prep</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>CRADA_Contracts_Manager__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <label>CRADA Contracts Manager Approval</label>
-        <name>CRADA_Contracts_Manager_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
-    </approvalStep>
+    <emailTemplate>unfiled$public/Proposal_Approval_Email</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>
-            <field>CRADA__c.CRADA_Status__c</field>
+            <field>Opportunity.RecordType</field>
             <operation>equals</operation>
-            <value>Proposal Draft</value>
+            <value>ACT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Proposal Preparation</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
         <action>
-            <name>CRADA_Approved</name>
-            <type>Alert</type>
-        </action>
-        <action>
-            <name>Proposal_Approved</name>
+            <name>Lock_Record</name>
             <type>FieldUpdate</type>
         </action>
+        <action>
+            <name>PNSO_Approval_of_SPP_Proposal</name>
+            <type>Alert</type>
+        </action>
     </finalApprovalActions>
-    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
-            <name>Update_to_Proposal_Prep</name>
+            <name>Proposal_Submitted</name>
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>CRADA Approval v4</label>
-    <processOrder>1</processOrder>
+    <label>ACT Approvals - Final</label>
+    <processOrder>4</processOrder>
+    <recallActions>
+        <action>
+            <name>Update_Field_to_Proposal_Prep</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
     <recordEditability>AdminOrCurrentApprover</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>
