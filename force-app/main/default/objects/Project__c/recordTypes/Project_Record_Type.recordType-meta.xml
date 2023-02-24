@@ -22,7 +22,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>D5010 - Related Services-Non DOE %28SPP%29</fullName>
+            <fullName>D5010 - Related Services-Non DOE %28WFO%29</fullName>
             <default>false</default>
         </values>
         <values>
@@ -38,7 +38,23 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>D5020 - Work for Hanford Contractors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5021 - Wk for Other Hanford Cont-ARRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>D5040 - ACT Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5041 - ACT Non-Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5050 - Legacy Government</fullName>
             <default>false</default>
         </values>
         <values>
@@ -46,15 +62,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>D5909 - Line Item Construction Projects</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>D5910 - Construction Work in Prog GF</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>D5911 - Equipment Work in Prog  GF</fullName>
+            <fullName>D5909 - Line Item Construction Projs</fullName>
             <default>false</default>
         </values>
         <values>
@@ -63,10 +71,6 @@
         </values>
         <values>
             <fullName>D5913 - Equipment Work in Progress</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>D5915 - Equipment Other</fullName>
             <default>false</default>
         </values>
     </picklistValues>
