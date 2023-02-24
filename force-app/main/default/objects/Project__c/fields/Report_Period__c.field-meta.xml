@@ -24,20 +24,21 @@
             </value>
         </valueSetDefinition>
         <valueSettings>
-            <controllingFieldValue>D5909 - Line Item Construction Projects</controllingFieldValue>
-            <controllingFieldValue>D5910 - Construction Work in Prog GF</controllingFieldValue>
-            <controllingFieldValue>D5911 - Equipment Work in Prog  GF</controllingFieldValue>
+            <controllingFieldValue>D5909 - Line Item Construction Projs</controllingFieldValue>
             <controllingFieldValue>D5912 - Construction Work in Prog</controllingFieldValue>
             <controllingFieldValue>D5913 - Equipment Work in Progress</controllingFieldValue>
-            <controllingFieldValue>D5915 - Equipment Other</controllingFieldValue>
+            <controllingFieldValue>D5020 - Work for Hanford Contractors</controllingFieldValue>
+            <controllingFieldValue>D5021 - Wk for Other Hanford Cont-ARRA</controllingFieldValue>
+            <controllingFieldValue>D5041 - ACT Non-Federal</controllingFieldValue>
             <controllingFieldValue>D5005 - DOE Related Serv Projects</controllingFieldValue>
             <controllingFieldValue>D5008 - Bonneville Power Admin</controllingFieldValue>
             <controllingFieldValue>D5009 - Non-IC Reimbursable Work</controllingFieldValue>
-            <controllingFieldValue>D5010 - Related Services-Non DOE (SPP)</controllingFieldValue>
+            <controllingFieldValue>D5010 - Related Services-Non DOE (WFO)</controllingFieldValue>
             <controllingFieldValue>D5012 - Joint Appointments-Out</controllingFieldValue>
             <controllingFieldValue>D5013 - Joint Appointment Out - ACT</controllingFieldValue>
             <controllingFieldValue>D5015 - Homeland Security</controllingFieldValue>
             <controllingFieldValue>D5040 - ACT Federal</controllingFieldValue>
+            <controllingFieldValue>D5050 - Legacy Government</controllingFieldValue>
             <controllingFieldValue>D5908 - DOE Sites Cap</controllingFieldValue>
             <valueName>TD</valueName>
         </valueSettings>
