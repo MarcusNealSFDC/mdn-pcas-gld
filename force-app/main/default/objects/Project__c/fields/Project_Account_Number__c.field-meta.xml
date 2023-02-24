@@ -32,9 +32,9 @@
                 <label>D5009 - Non-IC Reimbursable Work</label>
             </value>
             <value>
-                <fullName>D5010 - Related Services-Non DOE (SPP)</fullName>
+                <fullName>D5010 - Related Services-Non DOE (WFO)</fullName>
                 <default>false</default>
-                <label>D5010 - Related Services-Non DOE (SPP)</label>
+                <label>D5010 - Related Services-Non DOE (WFO)</label>
             </value>
             <value>
                 <fullName>D5012 - Joint Appointments-Out</fullName>
@@ -52,9 +52,29 @@
                 <label>D5015 - Homeland Security</label>
             </value>
             <value>
+                <fullName>D5020 - Work for Hanford Contractors</fullName>
+                <default>false</default>
+                <label>D5020 - Work for Hanford Contractors</label>
+            </value>
+            <value>
+                <fullName>D5021 - Wk for Other Hanford Cont-ARRA</fullName>
+                <default>false</default>
+                <label>D5021 - Wk for Other Hanford Cont-ARRA</label>
+            </value>
+            <value>
                 <fullName>D5040 - ACT Federal</fullName>
                 <default>false</default>
                 <label>D5040 - ACT Federal</label>
+            </value>
+            <value>
+                <fullName>D5041 - ACT Non-Federal</fullName>
+                <default>false</default>
+                <label>D5041 - ACT Non-Federal</label>
+            </value>
+            <value>
+                <fullName>D5050 - Legacy Government</fullName>
+                <default>false</default>
+                <label>D5050 - Legacy Government</label>
             </value>
             <value>
                 <fullName>D5908 - DOE Sites Cap</fullName>
@@ -62,19 +82,9 @@
                 <label>D5908 - DOE Sites Cap</label>
             </value>
             <value>
-                <fullName>D5909 - Line Item Construction Projects</fullName>
+                <fullName>D5909 - Line Item Construction Projs</fullName>
                 <default>false</default>
-                <label>D5909 - Line Item Construction Projects</label>
-            </value>
-            <value>
-                <fullName>D5910 - Construction Work in Prog GF</fullName>
-                <default>false</default>
-                <label>D5910 - Construction Work in Prog GF</label>
-            </value>
-            <value>
-                <fullName>D5911 - Equipment Work in Prog  GF</fullName>
-                <default>false</default>
-                <label>D5911 - Equipment Work in Prog  GF</label>
+                <label>D5909 - Line Item Construction Projs</label>
             </value>
             <value>
                 <fullName>D5912 - Construction Work in Prog</fullName>
@@ -87,8 +97,21 @@
                 <label>D5913 - Equipment Work in Progress</label>
             </value>
             <value>
+                <fullName>D5910 - Construction Work in Prog GF</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>D5910 - Construction Work in Prog GF</label>
+            </value>
+            <value>
+                <fullName>D5911 - Equipment Work in Prog  GF</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>D5911 - Equipment Work in Prog  GF</label>
+            </value>
+            <value>
                 <fullName>D5915 - Equipment Other</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>D5915 - Equipment Other</label>
             </value>
         </valueSetDefinition>
