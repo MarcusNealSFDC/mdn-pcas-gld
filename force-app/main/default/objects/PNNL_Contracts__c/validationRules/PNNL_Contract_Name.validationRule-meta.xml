@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PNNL_Contract_Name</fullName>
+    <active>true</active>
+    <description>NNL Contract can&apos;t be edited after the record has been created.
+Please Contact your System Administrator for assistance</description>
+    <errorConditionFormula>ISCHANGED( Name )</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>PNNL Contract can&apos;t be edited after the record has been created.
+Please Contact your System Administrator for assistance</errorMessage>
+</ValidationRule>
