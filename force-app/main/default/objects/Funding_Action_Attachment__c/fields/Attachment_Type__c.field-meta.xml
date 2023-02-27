@@ -163,7 +163,7 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>SPP Funding Action</controllingFieldValue>
-            <controllingFieldValue>DOE Direct</controllingFieldValue>
+            <controllingFieldValue>DOE Direct Funding Action</controllingFieldValue>
             <valueName>Statement of Work</valueName>
         </valueSettings>
         <valueSettings>
@@ -171,19 +171,19 @@
             <valueName>Funding Document (Manually Signed)</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>DOE Direct</controllingFieldValue>
+            <controllingFieldValue>DOE Direct Funding Action</controllingFieldValue>
             <valueName>Incoming WAS Email</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>DOE Direct</controllingFieldValue>
+            <controllingFieldValue>DOE Direct Funding Action</controllingFieldValue>
             <valueName>Work Authorization Document</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>DOE Direct</controllingFieldValue>
+            <controllingFieldValue>DOE Direct Funding Action</controllingFieldValue>
             <valueName>CPS Document</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>DOE Direct</controllingFieldValue>
+            <controllingFieldValue>DOE Direct Funding Action</controllingFieldValue>
             <valueName>Work Authorization Attachments</valueName>
         </valueSettings>
     </valueSet>
