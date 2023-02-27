@@ -35,8 +35,8 @@
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
                 <header>Missing SPP Codes</header>
-                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorBreakpoint1>10.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>20.0</indicatorBreakpoint2>
                 <indicatorHighColor>#C23934</indicatorHighColor>
                 <indicatorLowColor>#00716B</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
@@ -62,8 +62,8 @@
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
                 <header>Funding Action with SPP Codes</header>
-                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
@@ -186,7 +186,7 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>default.user@pnnl.gov</runningUser>
+    <runningUser>test-wppkpdvfigm8@example.com</runningUser>
     <textColor>#000000</textColor>
     <title>CSC Dashboard</title>
     <titleColor>#000000</titleColor>
