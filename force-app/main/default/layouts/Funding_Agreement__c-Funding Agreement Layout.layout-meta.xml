@@ -249,6 +249,10 @@
     </quickActionList>
     <relatedLists>
         <fields>NAME</fields>
+        <relatedList>Work_Authorization_Attachment__c.Work_Authorization__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
         <fields>Budget_Reporting_Code__c</fields>
         <fields>Project__c</fields>
         <fields>Funding_Amount__c</fields>
@@ -283,7 +287,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3S000000o48F</masterLabel>
+        <masterLabel>00h3R0000017SOi</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
