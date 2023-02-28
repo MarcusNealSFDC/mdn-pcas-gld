@@ -1008,10 +1008,6 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <recordType>Funding_Action__c.DOE_Direct</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
         <recordType>Funding_Action__c.DOE_Direct_Funding_Action</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
