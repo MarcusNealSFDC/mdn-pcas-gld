@@ -39,11 +39,12 @@
         <inputAssignments>
             <field>SPP_Code__c</field>
             <value>
-                <elementReference>pnnlcontractrecordId.SPP_Code__c</elementReference>
+                <elementReference>SPP_Code</elementReference>
             </value>
         </inputAssignments>
         <object>PNNL_Contracts__c</object>
     </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
     <screens>
         <name>Add_SPP_Code</name>
         <label>Add SPP Code</label>
@@ -57,14 +58,11 @@
             <targetReference>updateSPPCode</targetReference>
         </connector>
         <fields>
-            <fieldType>ObjectProvided</fieldType>
+            <name>SPP_Code</name>
+            <dataType>String</dataType>
+            <fieldText>SPP Code</fieldText>
+            <fieldType>InputField</fieldType>
             <isRequired>false</isRequired>
-            <objectFieldReference>recordId.PNNL_Contract__c</objectFieldReference>
-        </fields>
-        <fields>
-            <fieldType>ObjectProvided</fieldType>
-            <isRequired>false</isRequired>
-            <objectFieldReference>pnnlcontractrecordId.SPP_Code__c</objectFieldReference>
         </fields>
         <nextOrFinishButtonLabel>Save</nextOrFinishButtonLabel>
         <showFooter>true</showFooter>
@@ -77,15 +75,7 @@
             <targetReference>Add_SPP_Code</targetReference>
         </connector>
     </start>
-    <status>Obsolete</status>
-    <variables>
-        <name>pnnlcontractrecordId</name>
-        <dataType>SObject</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-        <objectType>PNNL_Contracts__c</objectType>
-    </variables>
+    <status>Active</status>
     <variables>
         <name>recordId</name>
         <dataType>SObject</dataType>

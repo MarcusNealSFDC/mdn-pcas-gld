@@ -58,7 +58,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Funding_Action__c.DOE_Direct,Funding_Action__c.DOE_Direct_Funding_Action,Funding_Action__c.SPP_Funding_Action</value>
+            <value>Funding_Action__c.DOE_Direct_Funding_Action,Funding_Action__c.SPP_Funding_Action</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
