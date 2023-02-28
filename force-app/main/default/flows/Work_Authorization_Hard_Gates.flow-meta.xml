@@ -2,9 +2,25 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>57.0</apiVersion>
     <assignments>
+        <name>AssignSOW</name>
+        <label>AssignSOW</label>
+        <locationX>1062</locationX>
+        <locationY>671</locationY>
+        <assignmentItems>
+            <assignToReference>IsStatementOfWork</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>LoopAtAttchmentRecords</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>IsEmailAssignment</name>
         <label>IsEmailAssignment</label>
-        <locationX>270</locationX>
+        <locationX>534</locationX>
         <locationY>671</locationY>
         <assignmentItems>
             <assignToReference>IsEmailType</assignToReference>
@@ -20,7 +36,7 @@
     <assignments>
         <name>IsWADocumentAssignment</name>
         <label>IsWADocumentAssignment</label>
-        <locationX>534</locationX>
+        <locationX>798</locationX>
         <locationY>671</locationY>
         <assignmentItems>
             <assignToReference>IsWADocument</assignToReference>
@@ -36,7 +52,7 @@
     <decisions>
         <name>Attachmenttype</name>
         <label>Attachmenttype</label>
-        <locationX>534</locationX>
+        <locationX>930</locationX>
         <locationY>551</locationY>
         <defaultConnector>
             <targetReference>LoopAtAttchmentRecords</targetReference>
@@ -72,12 +88,27 @@
             </connector>
             <label>IsWorkAttachment</label>
         </rules>
+        <rules>
+            <name>StatementOfWork</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LoopAtAttchmentRecords.Attachment_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Statement of Work</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AssignSOW</targetReference>
+            </connector>
+            <label>IsStatementOfWork</label>
+        </rules>
     </decisions>
     <decisions>
         <name>CanSubmitForApproval</name>
         <label>CanSubmitForApproval</label>
-        <locationX>182</locationX>
-        <locationY>983</locationY>
+        <locationX>710</locationX>
+        <locationY>1103</locationY>
         <defaultConnector>
             <targetReference>CannotApprove</targetReference>
         </defaultConnector>
@@ -93,7 +124,7 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>IsWorkAttachment</leftValueReference>
+                <leftValueReference>IsWADocument</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -105,13 +136,77 @@
             <label>HasAttachments</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>Copy_1_of_CanSubmitForApproval</name>
+        <label>Copy 1 of CanSubmitForApproval</label>
+        <locationX>182</locationX>
+        <locationY>1103</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_CannotApprove</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_HasAttachments</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsEmailType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IsWADocument</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>StatementOfWork</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_UpdateCanApprove</targetReference>
+            </connector>
+            <label>Copy 1 of HasAttachments</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>IsChanged</name>
+        <label>IsChanged</label>
+        <locationX>446</locationX>
+        <locationY>983</locationY>
+        <defaultConnector>
+            <targetReference>CanSubmitForApproval</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>CheckForSOW</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Scope_Changed__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_CanSubmitForApproval</targetReference>
+            </connector>
+            <label>CheckForSOW</label>
+        </rules>
+    </decisions>
     <environments>Default</environments>
     <interviewLabel>Work Authorization Hard Gates {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Work Authorization Hard Gates</label>
     <loops>
         <name>LoopAtAttchmentRecords</name>
         <label>LoopAtAttchmentRecords</label>
-        <locationX>182</locationX>
+        <locationX>446</locationX>
         <locationY>431</locationY>
         <collectionReference>GetAttachmentRecords</collectionReference>
         <iterationOrder>Asc</iterationOrder>
@@ -119,7 +214,7 @@
             <targetReference>Attachmenttype</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>CanSubmitForApproval</targetReference>
+            <targetReference>IsChanged</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -144,7 +239,7 @@
     <recordLookups>
         <name>GetAttachmentRecords</name>
         <label>GetAttachmentRecords</label>
-        <locationX>182</locationX>
+        <locationX>446</locationX>
         <locationY>311</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -165,8 +260,8 @@
     <recordUpdates>
         <name>CannotApprove</name>
         <label>CannotApprove</label>
-        <locationX>314</locationX>
-        <locationY>1103</locationY>
+        <locationX>842</locationX>
+        <locationY>1223</locationY>
         <inputAssignments>
             <field>CanSubmitForApproval__c</field>
             <value>
@@ -176,10 +271,36 @@
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <recordUpdates>
+        <name>Copy_1_of_CannotApprove</name>
+        <label>Copy 1 of CannotApprove</label>
+        <locationX>314</locationX>
+        <locationY>1223</locationY>
+        <inputAssignments>
+            <field>CanSubmitForApproval__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_1_of_UpdateCanApprove</name>
+        <label>Copy 1 of UpdateCanApprove</label>
+        <locationX>50</locationX>
+        <locationY>1223</locationY>
+        <inputAssignments>
+            <field>CanSubmitForApproval__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
         <name>UpdateCanApprove</name>
         <label>UpdateCanApprove</label>
-        <locationX>50</locationX>
-        <locationY>1103</locationY>
+        <locationX>578</locationX>
+        <locationY>1223</locationY>
         <inputAssignments>
             <field>CanSubmitForApproval__c</field>
             <value>
@@ -189,7 +310,7 @@
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
-        <locationX>56</locationX>
+        <locationX>320</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>GetAttachmentRecords</targetReference>
@@ -201,6 +322,16 @@
     <status>Active</status>
     <variables>
         <name>IsEmailType</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <name>IsStatementOfWork</name>
         <dataType>Boolean</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
