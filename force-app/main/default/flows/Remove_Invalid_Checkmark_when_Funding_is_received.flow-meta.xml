@@ -12,12 +12,19 @@
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>isActiveDecision</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>or</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.PPM_Project_Status__c</leftValueReference>
-                <operator>Contains</operator>
+                <leftValueReference>$Record.Project_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>active</stringValue>
+                    <stringValue>Active</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Project_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Anticipatory</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -76,7 +83,7 @@
     </recordUpdates>
     <start>
         <locationX>970</locationX>
-        <locationY>45</locationY>
+        <locationY>44</locationY>
         <connector>
             <targetReference>isActive</targetReference>
         </connector>

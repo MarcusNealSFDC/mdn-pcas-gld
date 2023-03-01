@@ -8,16 +8,12 @@
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Name</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>Funding_Action__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>PNNL_Fund_Code_Fiscal_Year__c</field>
+                <behavior>Edit</behavior>
+                <field>Fiscal_Year__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -90,7 +86,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000014Wj5</masterLabel>
+        <masterLabel>00h3S000000nVVD</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Client_Reference_Number__c</fullName>
     <externalId>false</externalId>
-    <label>Client Reference Number</label>
+    <label>Sponsor Reference Number</label>
     <length>12</length>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

@@ -13,7 +13,7 @@
             <sorted>false</sorted>
             <value>
                 <fullName>Funding Received</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>Funding Received</label>
             </value>
             <value>
