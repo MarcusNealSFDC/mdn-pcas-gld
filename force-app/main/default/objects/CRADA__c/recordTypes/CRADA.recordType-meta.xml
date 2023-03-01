@@ -64,27 +64,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Commercialization_Manager_CM__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Contract_Specialist__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>DOE_IP_Approver__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Foreign__c</picklist>
         <values>
             <fullName>No</fullName>
@@ -125,34 +104,6 @@
         </values>
         <values>
             <fullName>Yes</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>PNNL_IP_Approver__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>PNSO_CRADA_Coordinator__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>PNSO_Contracting_Officer__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>PNSO_Technical_Reviewer__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -263,13 +214,6 @@
         </values>
         <values>
             <fullName>Transportation</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Principal_Investigator__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -389,13 +333,6 @@
         </values>
         <values>
             <fullName>WA - Western Area Power Administration</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Project_Management_Office__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
             <default>false</default>
         </values>
     </picklistValues>

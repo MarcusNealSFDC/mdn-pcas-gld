@@ -56,6 +56,18 @@
                 <default>false</default>
                 <label>Withdrawn</label>
             </value>
+            <value>
+                <fullName>Closed (C</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Closed (C</label>
+            </value>
+            <value>
+                <fullName>Vaultable</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vaultable</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

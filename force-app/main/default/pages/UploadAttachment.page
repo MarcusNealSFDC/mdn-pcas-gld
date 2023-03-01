@@ -1,5 +1,4 @@
-<apex:page
-  standardController="Opportunity"
+<apex:page standardController="Opportunity"
   tabStyle="Opportunity"
   extensions="PNNL_UploadAttachmentController"
   lightningStylesheets="true"
@@ -17,10 +16,9 @@
   <apex:sectionHeader title="{!Opportunity.Name}" subtitle="Attach File" />
 
   <apex:form id="form_Upload">
-    <apex:pageBlock>
-      <apex:pageBlockButtons>
-        <apex:commandButton
-          action="{!back}"
+    <apex:pageBlock >
+      <apex:pageBlockButtons >
+        <apex:commandButton action="{!back}"
           value="Back to {!Opportunity.Name}"
         />
         <apex:commandButton action="{!back}" value="Cancel" />
@@ -28,37 +26,31 @@
       <apex:pageMessages />
 
       <apex:pageBlockSection columns="1">
-        <apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem >
           <apex:outputLabel value="File" for="file_File" />
-          <apex:inputFile
-            id="file_File"
+          <apex:inputFile id="file_File"
             value="{!fileBody}"
             filename="{!fileName}"
           />
         </apex:pageBlockSectionItem>
 
-        <apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem >
           <apex:outputLabel value="Type" for="type" />
           <apex:selectList size="1" id="type">
-            <apex:selectOption
-              itemValue="Biographical Sketches"
+            <apex:selectOption itemValue="Biographical Sketches"
               itemLabel="Biographical Sketches"
             />
-            <apex:selectOption
-              itemValue="Obligation Cost Roadmap"
+            <apex:selectOption itemValue="Obligation Cost Roadmap"
               itemLabel="Obligation Cost Roadmap"
             />
             <apex:selectOption itemValue="Other" itemLabel="Other" />
-            <apex:selectOption
-              itemValue="Proposal Letter"
+            <apex:selectOption itemValue="Proposal Letter"
               itemLabel="Proposal Letter"
             />
-            <apex:selectOption
-              itemValue="Research Plan"
+            <apex:selectOption itemValue="Research Plan"
               itemLabel="Research Plan"
             />
-            <apex:selectOption
-              itemValue="Statement of Work (hard gate)"
+            <apex:selectOption itemValue="Statement of Work (hard gate)"
               itemLabel="Statement of Work (hard gate)"
             />
           </apex:selectList>
@@ -86,10 +78,9 @@
       <apex:inputTextarea id="description" value="{!description}" rows="4" cols="50"/>
     </apex:pageBlockSectionItem>-->
 
-        <apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem >
           <apex:outputLabel value="" for="uploadBtn" />
-          <apex:commandButton
-            id="uploadBtn"
+          <apex:commandButton id="uploadBtn"
             value="Attach File"
             action="{!processUpload}"
           />

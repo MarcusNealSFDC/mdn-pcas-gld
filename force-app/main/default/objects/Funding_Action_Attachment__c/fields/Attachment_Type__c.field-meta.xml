@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attachment_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Attachment Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Funding_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Incoming WAS Email</fullName>
+                <default>false</default>
+                <label>Incoming WAS Email</label>
+            </value>
+            <value>
+                <fullName>Work Authorization Document</fullName>
+                <default>false</default>
+                <label>Work Authorization Document</label>
+            </value>
+            <value>
+                <fullName>CPS Document</fullName>
+                <default>false</default>
+                <label>CPS Document</label>
+            </value>
+            <value>
+                <fullName>ACT Agreement</fullName>
+                <default>false</default>
+                <label>ACT Agreement</label>
+            </value>
+            <value>
+                <fullName>Invoice Document</fullName>
+                <default>false</default>
+                <label>Invoice Document</label>
+            </value>
+            <value>
+                <fullName>Determination and Findings</fullName>
+                <default>false</default>
+                <label>Determination and Findings</label>
+            </value>
+            <value>
+                <fullName>Closeout Documentation</fullName>
+                <default>false</default>
+                <label>Closeout Documentation</label>
+            </value>
+            <value>
+                <fullName>Funding Document</fullName>
+                <default>false</default>
+                <label>Funding Document</label>
+            </value>
+            <value>
+                <fullName>LDRD</fullName>
+                <default>false</default>
+                <label>LDRD</label>
+            </value>
+            <value>
+                <fullName>Impact Analysis</fullName>
+                <default>false</default>
+                <label>Impact Analysis</label>
+            </value>
+            <value>
+                <fullName>Acceptance</fullName>
+                <default>false</default>
+                <label>Acceptance</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>DOE&apos;s Acceptance</fullName>
+                <default>false</default>
+                <label>DOE&apos;s Acceptance</label>
+            </value>
+            <value>
+                <fullName>Advance Documentation</fullName>
+                <default>false</default>
+                <label>Advance Documentation</label>
+            </value>
+            <value>
+                <fullName>Property List</fullName>
+                <default>false</default>
+                <label>Property List</label>
+            </value>
+            <value>
+                <fullName>Statement of Work</fullName>
+                <default>false</default>
+                <label>Statement of Work</label>
+            </value>
+            <value>
+                <fullName>Funding Document (Manually Signed)</fullName>
+                <default>false</default>
+                <label>Funding Document (Manually Signed)</label>
+            </value>
+            <value>
+                <fullName>Work Authorization Attachments</fullName>
+                <default>false</default>
+                <label>Work Authorization Attachments</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ACT Funding Action</controllingFieldValue>
+            <valueName>ACT Agreement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT Funding Action</controllingFieldValue>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACT Funding Action</controllingFieldValue>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>Advance Documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>Invoice Document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>Determination and Findings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>Closeout Documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>Funding Document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>LDRD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>Impact Analysis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>Acceptance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>DOE&apos;s Acceptance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>Property List</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <controllingFieldValue>DOE Direct Funding Action</controllingFieldValue>
+            <valueName>Statement of Work</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPP Funding Action</controllingFieldValue>
+            <valueName>Funding Document (Manually Signed)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOE Direct Funding Action</controllingFieldValue>
+            <valueName>Incoming WAS Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOE Direct Funding Action</controllingFieldValue>
+            <valueName>Work Authorization Document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOE Direct Funding Action</controllingFieldValue>
+            <valueName>CPS Document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOE Direct Funding Action</controllingFieldValue>
+            <valueName>Work Authorization Attachments</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

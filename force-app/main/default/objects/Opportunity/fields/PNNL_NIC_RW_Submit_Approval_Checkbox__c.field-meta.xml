@@ -4,7 +4,7 @@
     <externalId>false</externalId>
     <formula>AND(
 RecordType.Name = &quot;NIC-RW&quot;,
-ISPICKVAL(StageName,&quot;Proposal Draft&quot;),
+ISPICKVAL(StageName,&quot;Proposal Preparation&quot;),
 NOT(ISBLANK(Project_Coordinators__c)),
 NOT(ISBLANK(Project_Manager3__c)),
 NOT(ISBLANK(SPP_Office_Reviewer2__c)),

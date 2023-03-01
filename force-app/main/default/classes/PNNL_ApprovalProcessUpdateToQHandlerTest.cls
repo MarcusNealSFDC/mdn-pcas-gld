@@ -1,5 +1,6 @@
 @isTest
 public class PNNL_ApprovalProcessUpdateToQHandlerTest {
+    // Setup up data for rest of test class.
     @TestSetup
     static void loadData() {
         Profile p = [SELECT Id FROM Profile WHERE Name='PNNL Internal']; 
