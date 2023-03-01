@@ -1108,9 +1108,12 @@
         <editable>false</editable>
         <field>Funding_Action__c.Notify__c</field>
         <readable>false</readable>
+    </fieldPermissions> 
+    <fieldPermissions>  
+        <editable>false</editable>
         <field>Funding_Action__c.Invoice_Document__c</field>
         <readable>true</readable>
-       </fieldPermissions>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Action__c.ORO_Budget_Approver__c</field>
