@@ -228,10 +228,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PNNL_SPP_Code__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>CRADA__c</field>
             </layoutItems>
             <layoutItems>
@@ -277,6 +273,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Proposed_Amendment__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Act_Agreement__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>
@@ -343,7 +343,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3S000000nVV8</masterLabel>
+        <masterLabel>00h3R0000017FsS</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

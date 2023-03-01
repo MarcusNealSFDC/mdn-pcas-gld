@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Funding Action LRP</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
@@ -7,22 +8,27 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>FeedItem.TextPost</value>
+                            <value>Funding_Action__c.Add_SPP_Code</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.SPP_Code_Visibility_Check__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
-                            <value>FeedItem.ContentPost</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>FeedItem.RypplePost</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>FeedItem.LinkPost</value>
+                            <value>Submit</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.SPP_Code__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>Edit</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>FeedItem.PollPost</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Delete</value>
@@ -38,16 +44,6 @@
                         </valueListItems>
                         <valueListItems>
                             <value>PrintableView</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Submit</value>
-                            <visibilityRule>
-                                <criteria>
-                                    <leftValue>{!$User.Profile.Name}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Non-PNNL Users</rightValue>
-                                </criteria>
-                            </visibilityRule>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
@@ -79,7 +75,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>hideUpdateButton</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>variant</name>

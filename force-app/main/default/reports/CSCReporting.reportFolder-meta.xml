@@ -5,5 +5,5 @@
         <sharedTo>marcus.neal@salesforce.com.prod</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
-    <name>Read Only Folder</name>
+    <name>CSC Reporting</name>
 </ReportFolder>
