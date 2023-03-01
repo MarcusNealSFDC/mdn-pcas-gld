@@ -31,4 +31,9 @@
         <default>false</default>
         <label>PNSO Contracting Officer</label>
     </standardValue>
+    <standardValue>
+        <fullName>CSC Budget Reviewer</fullName>
+        <default>false</default>
+        <label>CSC Budget Reviewer</label>
+    </standardValue>
 </StandardValueSet>

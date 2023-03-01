@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPP_Funding_Document</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.Name = &quot;SPP Funding Action&quot;,
+ Funding_Document__c   =  0,
+ISPICKVAL(Status__c ,&apos;Funding Preparation&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>A Funding Document must be attached before moving to Funding Preparation.</errorMessage>
+</ValidationRule>
