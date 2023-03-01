@@ -2,7 +2,7 @@
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingCriteriaRules>
         <fullName>PNNL_Internal_RW_Oppty</fullName>
-        <accessLevel>Edit</accessLevel>
+        <accessLevel>Read</accessLevel>
         <label>PNNL PG Internal RW Oppty</label>
         <sharedTo>
             <group>Internal_PNNL_Users</group>
@@ -10,7 +10,7 @@
         <criteriaItems>
             <field>RecordTypeId</field>
             <operation>equals</operation>
-            <value>IWO,SIPP,DOE Direct,ACT,NF-SPP,NIC-RW,F-SPP,DHS</value>
+            <value>DOE Direct,IWO,SIPP,DOE Holding,ACT,JA/IPA,NF-SPP,NIC-RW,CRADA,F-SPP,DHS,Other</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
