@@ -1347,6 +1347,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Funding_Agreement__c.CanSubmitForApproval__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Agreement__c.Change_Amount__c</field>
         <readable>false</readable>
