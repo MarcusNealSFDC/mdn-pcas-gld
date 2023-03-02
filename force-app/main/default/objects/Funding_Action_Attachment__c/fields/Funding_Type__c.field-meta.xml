@@ -21,9 +21,9 @@
                 <label>SPP Funding Action</label>
             </value>
             <value>
-                <fullName>DOE Direct</fullName>
+                <fullName>DOE Direct Funding Action</fullName>
                 <default>false</default>
-                <label>DOE Direct</label>
+                <label>DOE Direct Funding Action</label>
             </value>
         </valueSetDefinition>
     </valueSet>

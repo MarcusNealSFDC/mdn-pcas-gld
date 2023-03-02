@@ -5,7 +5,8 @@
     <formula>AND(
 ISPICKVAL(Status__c, &quot;Work Authorization Review&quot;),
 NOT(ISBLANK(PNSO_Technical_Reviewer__c)),
-NOT(ISBLANK(PNSO_Contracting_Officer__c)))</formula>
+NOT(ISBLANK(PNSO_Contracting_Officer__c)),
+ CanSubmitForApproval__c = True)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>WA Ready for Review</label>
     <trackHistory>false</trackHistory>
