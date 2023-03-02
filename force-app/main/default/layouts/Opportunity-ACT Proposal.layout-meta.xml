@@ -548,9 +548,9 @@
         <excludeButtons>MassChangeOwner</excludeButtons>
         <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
+        <fields>Account__c</fields>
         <fields>Cost_Sheet_Number__c</fields>
         <fields>Revision_Number__c</fields>
-        <fields>Account__c</fields>
         <relatedList>Cost_Sheet_Rollup__c.OpportunityId__c</relatedList>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
