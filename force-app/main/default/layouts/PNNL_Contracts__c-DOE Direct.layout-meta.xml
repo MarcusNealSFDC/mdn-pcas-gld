@@ -296,6 +296,14 @@
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
+        <fields>NAME</fields>
+        <fields>Proposal_Amendment__c</fields>
+        <fields>Status__c</fields>
+        <fields>Amendment_Authorized_Amount__c</fields>
+        <fields>Action_Type__c</fields>
+        <relatedList>Funding_Action__c.PNNL_Contract__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>TASK.WHO_NAME</fields>
         <fields>ACTIVITY.TASK</fields>
@@ -320,7 +328,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000013KxC</masterLabel>
+        <masterLabel>00h3R0000017hkO</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

@@ -3,6 +3,7 @@
     <fullName>SPP_Contract_Compact</fullName>
     <fields>Name</fields>
     <fields>Contract_Amount__c</fields>
+    <fields>RecordTypeId</fields>
     <fields>Fund_Code__c</fields>
     <fields>Contract_Client_Reference__c</fields>
     <fields>Start_Date__c</fields>

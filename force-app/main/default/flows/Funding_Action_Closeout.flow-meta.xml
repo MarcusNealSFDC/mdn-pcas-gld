@@ -7,17 +7,17 @@
         <dataType>Date</dataType>
         <expression>Today()</expression>
     </formulas>
-    <interviewLabel>Project Closeout {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Project Closeout</label>
+    <interviewLabel>Funding Action Closeout {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Funding Action Closeout</label>
     <loops>
         <name>Loop_all_Contracts</name>
         <label>Loop all Contracts</label>
         <locationX>176</locationX>
-        <locationY>518</locationY>
-        <collectionReference>GetRelatedPNNLContracts</collectionReference>
+        <locationY>398</locationY>
+        <collectionReference>GetRelatedFundingActions</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
-            <targetReference>Update_to_Status_to_Vaulted</targetReference>
+            <targetReference>Update_to_Status_to_Closed</targetReference>
         </nextValueConnector>
     </loops>
     <processMetadataValues>
@@ -40,13 +40,13 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordLookups>
-        <name>GetProjects</name>
-        <label>GetProjects</label>
+        <name>GetPNNLContracts</name>
+        <label>GetPNNLContracts</label>
         <locationX>176</locationX>
         <locationY>158</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Update_Project_to_Pending_Close</targetReference>
+            <targetReference>GetRelatedFundingActions</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -57,59 +57,35 @@
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Project__c</object>
+        <object>PNNL_Contracts__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>GetRelatedPNNLContracts</name>
-        <label>GetRelatedPNNLContracts</label>
+        <name>GetRelatedFundingActions</name>
+        <label>GetRelatedFundingActions</label>
         <locationX>176</locationX>
-        <locationY>398</locationY>
+        <locationY>278</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_all_Contracts</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Project__c</field>
+            <field>PNNL_Contract__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>GetProjects.Id</elementReference>
+                <elementReference>GetPNNLContracts.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>PNNL_Contracts__c</object>
+        <object>Funding_Action__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
-        <name>Update_Project_to_Pending_Close</name>
-        <label>Update Project to Pending Close</label>
-        <locationX>176</locationX>
-        <locationY>278</locationY>
-        <connector>
-            <targetReference>GetRelatedPNNLContracts</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>GetProjects.Id</elementReference>
-            </value>
-        </filters>
-        <inputAssignments>
-            <field>Project_Status__c</field>
-            <value>
-                <stringValue>Pending Close</stringValue>
-            </value>
-        </inputAssignments>
-        <object>Project__c</object>
-    </recordUpdates>
-    <recordUpdates>
-        <name>Update_to_Status_to_Vaulted</name>
-        <label>Update to Status to Vaulted</label>
+        <name>Update_to_Status_to_Closed</name>
+        <label>Update to Status to Closed</label>
         <locationX>264</locationX>
-        <locationY>638</locationY>
+        <locationY>518</locationY>
         <connector>
             <targetReference>Loop_all_Contracts</targetReference>
         </connector>
@@ -122,27 +98,21 @@
             </value>
         </filters>
         <inputAssignments>
-            <field>Close_Out_Date__c</field>
+            <field>Status__c</field>
             <value>
-                <elementReference>CloseoutDate</elementReference>
+                <stringValue>Completed</stringValue>
             </value>
         </inputAssignments>
-        <inputAssignments>
-            <field>Contract_Status__c</field>
-            <value>
-                <stringValue>Vaulted</stringValue>
-            </value>
-        </inputAssignments>
-        <object>PNNL_Contracts__c</object>
+        <object>Funding_Action__c</object>
     </recordUpdates>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>GetProjects</targetReference>
+            <targetReference>GetPNNLContracts</targetReference>
         </connector>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
     <textTemplates>
         <name>PendingClose</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>

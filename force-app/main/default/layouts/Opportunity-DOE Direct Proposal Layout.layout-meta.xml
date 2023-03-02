@@ -329,6 +329,11 @@
             <sortOrder>17</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+            <actionName>Opportunity.Complete_Proposal</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>20</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>Opportunity.Begin_Proposal_Draft</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>18</sortOrder>
@@ -465,7 +470,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3S000000o48T</masterLabel>
+        <masterLabel>00h3R0000017hki</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
