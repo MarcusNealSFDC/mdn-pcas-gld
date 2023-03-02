@@ -529,6 +529,8 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>Account__c</fields>
         <fields>Cost_Sheet_Number__c</fields>
@@ -621,7 +623,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000017rOu</masterLabel>
+        <masterLabel>00h3S000000p7jS</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
