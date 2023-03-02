@@ -155,8 +155,9 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Cost Sheet Rollup</label>
     <nameField>
+        <displayFormat>CS-{YYYY}{MM}-{0000}</displayFormat>
         <label>Cost Sheet Rollup Name</label>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Cost Sheet Rollup</pluralLabel>
     <searchLayouts></searchLayouts>
