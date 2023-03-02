@@ -174,10 +174,6 @@
                 <field>Object_Class__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>PNNL_SPP_Code__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Local_Use__c</field>
             </layoutItems>
