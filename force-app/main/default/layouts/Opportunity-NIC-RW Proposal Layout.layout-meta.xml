@@ -432,11 +432,6 @@
             <sortOrder>8</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>ChangeOwnerOne</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>9</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>ChangeRecordType</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>10</sortOrder>
@@ -482,6 +477,11 @@
             <sortOrder>18</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+            <actionName>Clone</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>19</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>Opportunity.Send_Cost_Sheet</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>20</sortOrder>
@@ -502,9 +502,9 @@
             <sortOrder>23</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Clone</actionName>
+            <actionName>ChangeOwnerOne</actionName>
             <actionType>StandardButton</actionType>
-            <sortOrder>19</sortOrder>
+            <sortOrder>9</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
@@ -549,8 +549,10 @@
         <relatedList>Cost_Sheet_Rollup__c.OpportunityId__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>AddProduct</excludeButtons>
         <excludeButtons>ChoosePricebook</excludeButtons>
         <excludeButtons>EditAllProduct</excludeButtons>
+        <excludeButtons>MultiAdd</excludeButtons>
         <excludeButtons>MultiEdit</excludeButtons>
         <excludeButtons>Sort</excludeButtons>
         <excludeButtons>SortLineItem</excludeButtons>
@@ -633,7 +635,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000016iqc</masterLabel>
+        <masterLabel>00h3R0000017rOw</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

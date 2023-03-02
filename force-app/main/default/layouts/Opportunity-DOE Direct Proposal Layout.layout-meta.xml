@@ -381,8 +381,10 @@
         <relatedList>Cost_Sheet_Rollup__c.OpportunityId__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>AddProduct</excludeButtons>
         <excludeButtons>ChoosePricebook</excludeButtons>
         <excludeButtons>EditAllProduct</excludeButtons>
+        <excludeButtons>MultiAdd</excludeButtons>
         <excludeButtons>MultiEdit</excludeButtons>
         <excludeButtons>Sort</excludeButtons>
         <excludeButtons>SortLineItem</excludeButtons>
@@ -463,7 +465,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3S000000o48T</masterLabel>
+        <masterLabel>00h3R0000017rOt</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
