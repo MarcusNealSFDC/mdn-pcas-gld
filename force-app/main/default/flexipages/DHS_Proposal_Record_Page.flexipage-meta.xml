@@ -39,6 +39,13 @@
                         </valueListItems>
                         <valueListItems>
                             <value>Opportunity.Amendment</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Proposal Approved</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>Opportunity.Revision</value>
