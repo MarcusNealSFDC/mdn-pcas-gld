@@ -155,6 +155,16 @@
                 <identifier>RecordAmendment_Authorized_Amount_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNNL_Sponsor_Group_Code__c</fieldItem>
+                <identifier>RecordPNNL_Sponsor_Group_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-891cadc1-9828-4c8b-bdd5-e28b967772db</name>
         <type>Facet</type>
     </flexiPageRegions>
