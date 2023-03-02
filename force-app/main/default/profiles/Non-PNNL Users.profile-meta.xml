@@ -1096,6 +1096,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Funding_Action__c.Invoice_Document__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Funding_Action__c.Notes__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1108,11 +1113,6 @@
         <editable>false</editable>
         <field>Funding_Action__c.Notify__c</field>
         <readable>false</readable>
-    </fieldPermissions> 
-    <fieldPermissions>  
-        <editable>false</editable>
-        <field>Funding_Action__c.Invoice_Document__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1152,6 +1152,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Action__c.PNNL_SC_Approved_Level__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.PNNL_Sponsor_Group_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1227,6 +1232,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Funding_Action__c.Revison__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Funding_Action__c.SC_Approved_Level_Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2791,27 +2801,52 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>OpportunityLineItem.Discount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>OpportunityLineItem.External_Id__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>OpportunityLineItem.Fiscal_Year__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.ListPrice</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>OpportunityLineItem.Manual_Override__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>OpportunityLineItem.PNNL_Project_Account_No__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.ProductCode</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>OpportunityLineItem.Revision_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.ServiceDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.Subtotal</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3570,6 +3605,16 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Sponsor_Group_Code__c.Fiscal_Year__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Sponsor_Group_Code__c.SC_Approved_Level_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>User.Accounts_Receivable_Manager__c</field>
         <readable>true</readable>
@@ -3833,6 +3878,9 @@
         <recordType>Opportunity.NIC_RW</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-SPP Proposal Layout</layout>
         <recordType>Opportunity.CRADA</recordType>
     </layoutAssignments>
@@ -3899,6 +3947,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Proposed_Amendment__c-Proposed Amendment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Sponsor_Group_Code__c-Sponsor Group Code Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>User-User Layout</layout>
