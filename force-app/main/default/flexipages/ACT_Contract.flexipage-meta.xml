@@ -107,6 +107,16 @@
                 <identifier>RecordContract_Administrator_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Contract_Status__c</fieldItem>
+                <identifier>RecordContract_Status_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-22e170f9-2a8f-4231-9f12-fd53050d4fa1</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -139,16 +149,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Master_Scope_of_Work_Proposal__c</fieldItem>
                 <identifier>RecordMaster_Scope_of_Work_Proposal_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Status__c</fieldItem>
-                <identifier>RecordContract_Status_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

@@ -228,6 +228,11 @@
             <actionType>StandardButton</actionType>
             <sortOrder>1</sortOrder>
         </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Project__c.Submit_for_Project_Closeout</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>2</sortOrder>
+        </platformActionListItems>
     </platformActionList>
     <quickActionList>
         <quickActionListItems>
@@ -258,14 +263,16 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>Contract_Status__c</fields>
-        <fields>FY_Authorized_Amount__c</fields>
-        <fields>Fee_Amount__c</fields>
+        <fields>Authorized_Amount__c</fields>
+        <fields>Effective_Date__c</fields>
+        <fields>Completion_Date__c</fields>
         <relatedList>PNNL_Contracts__c.Project__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>SPP_Code__c</fields>
-        <fields>B_R_Number__c</fields>
+        <fields>Status__c</fields>
+        <fields>Proposed_Amendment__c</fields>
+        <fields>Amendment_Authorized_Amount__c</fields>
         <relatedList>Funding_Action__c.Project__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -317,7 +324,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R000000np99</masterLabel>
+        <masterLabel>00h3R0000017hkS</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

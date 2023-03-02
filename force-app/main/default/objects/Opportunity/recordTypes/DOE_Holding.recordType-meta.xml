@@ -3,6 +3,7 @@
     <fullName>DOE_Holding</fullName>
     <active>true</active>
     <businessProcess>CRADA%2FJA%2FOther</businessProcess>
+    <description>Department of Energy</description>
     <label>DOE Holding</label>
     <picklistValues>
         <picklist>ACT_Determinations_2__c</picklist>
