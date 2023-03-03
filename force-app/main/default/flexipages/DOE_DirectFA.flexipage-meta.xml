@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>DOE Direct FA</description>
+    <description>DOE Direct Funding Action</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
@@ -80,7 +80,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>hideUpdateButton</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>variant</name>
@@ -153,6 +153,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Amendment_Authorized_Amount__c</fieldItem>
                 <identifier>RecordAmendment_Authorized_Amount_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PNNL_Sponsor_Group_Code__c</fieldItem>
+                <identifier>RecordPNNL_Sponsor_Group_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-891cadc1-9828-4c8b-bdd5-e28b967772db</name>

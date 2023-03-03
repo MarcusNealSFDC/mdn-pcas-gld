@@ -7,12 +7,6 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Edit</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Clone</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Submit</value>
                             <visibilityRule>
                                 <criteria>
@@ -21,6 +15,12 @@
                                     <rightValue>Funding Preparation</rightValue>
                                 </criteria>
                             </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Edit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Clone</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
@@ -52,7 +52,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>hideUpdateButton</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>variant</name>
@@ -225,18 +225,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Sponsor_Group_Code__c</fieldItem>
-                <identifier>RecordSponsor_Group_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.PNNL_SC_Approved_Level__c</fieldItem>
-                <identifier>RecordPNNL_SC_Approved_Level_cField</identifier>
+                <fieldItem>Record.PNNL_Sponsor_Group_Code__c</fieldItem>
+                <identifier>RecordPNNL_Sponsor_Group_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-7f16892c-3d3a-4dd7-b160-e5816bd3d8f0</name>
