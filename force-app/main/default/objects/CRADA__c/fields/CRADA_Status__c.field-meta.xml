@@ -13,7 +13,7 @@
             <sorted>false</sorted>
             <value>
                 <fullName>Proposal Draft</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>Proposal Draft</label>
             </value>
             <value>

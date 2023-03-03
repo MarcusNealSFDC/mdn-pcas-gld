@@ -3,6 +3,7 @@
     <fullName>JA_IPA</fullName>
     <active>true</active>
     <businessProcess>CRADA%2FJA%2FOther</businessProcess>
+    <description>Joint Appointment (JA) /InterGovernmental Personnel Act/Loaned Labor Agreements (IPA)</description>
     <label>JA/IPA</label>
     <picklistValues>
         <picklist>ACT_Determinations_2__c</picklist>
