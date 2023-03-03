@@ -374,6 +374,16 @@
             <field>SPP_Code_Visibility_Check__c</field>
             <table>Funding_Action__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PNNL_Sponsor_Group_Code__c</field>
+            <table>Funding_Action__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SC_Approved_Level_Amount__c</field>
+            <table>Funding_Action__c</table>
+        </columns>
         <masterLabel>Funding Actions</masterLabel>
     </sections>
     <sections>

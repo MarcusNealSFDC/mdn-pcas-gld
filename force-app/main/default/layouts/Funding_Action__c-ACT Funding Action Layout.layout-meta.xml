@@ -228,10 +228,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PNNL_SPP_Code__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>CRADA__c</field>
             </layoutItems>
             <layoutItems>
@@ -281,6 +277,14 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Act_Agreement__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PNNL_Sponsor_Group_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>SC_Approved_Level_Amount__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>
