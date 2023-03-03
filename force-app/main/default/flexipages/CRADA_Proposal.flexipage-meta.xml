@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Scope Clearance proposal for CRADA</description>
+    <description>Scope Clearance proposal for CRADA - No Approvals</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>actionNames</name>
                     <valueList>
+                        <valueListItems>
+                            <value>Edit</value>
+                        </valueListItems>
                         <valueListItems>
                             <value>Opportunity.Scope_Validated</value>
                             <visibilityRule>
@@ -18,7 +21,20 @@
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
-                            <value>Opportunity.Begin_Proposal_Draft</value>
+                            <value>Opportunity.Amendment</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Completed</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Revision</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity.Complete_Proposal</value>
                             <visibilityRule>
                                 <criteria>
                                     <leftValue>{!Record.StageName}</leftValue>
@@ -26,47 +42,6 @@
                                     <rightValue>Scope Cleared</rightValue>
                                 </criteria>
                             </visibilityRule>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.Assign_to_Contract_Specialist</value>
-                            <visibilityRule>
-                                <criteria>
-                                    <leftValue>{!Record.StageName}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>Proposal Draft</rightValue>
-                                </criteria>
-                            </visibilityRule>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Submit</value>
-                            <visibilityRule>
-                                <booleanFilter>1 AND 2</booleanFilter>
-                                <criteria>
-                                    <leftValue>{!Record.PNNL_F_SPP_Submit_Approval_Checkbox__c}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>true</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.StageName}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>Proposal Preparation</rightValue>
-                                </criteria>
-                            </visibilityRule>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Edit</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.Amendment</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.Revision</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.Send_Cost_Sheet</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.Purge_Cost_Sheet</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>

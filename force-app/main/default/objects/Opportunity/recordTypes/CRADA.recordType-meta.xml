@@ -3,6 +3,7 @@
     <fullName>CRADA</fullName>
     <active>true</active>
     <businessProcess>CRADA%2FJA%2FOther</businessProcess>
+    <description>Cooperative Research and Development Agreement</description>
     <label>CRADA</label>
     <picklistValues>
         <picklist>ACT_Determinations_2__c</picklist>
