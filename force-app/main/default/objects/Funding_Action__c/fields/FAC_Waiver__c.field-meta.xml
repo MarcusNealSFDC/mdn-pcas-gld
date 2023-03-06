@@ -12,11 +12,6 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Not Applicable</fullName>
-                <default>false</default>
-                <label>Not Applicable</label>
-            </value>
-            <value>
                 <fullName>Ballistic Missile Defense Program</fullName>
                 <default>false</default>
                 <label>Ballistic Missile Defense Program</label>
@@ -75,6 +70,11 @@
                 <fullName>Non-Profit Entities</fullName>
                 <default>false</default>
                 <label>Non-Profit Entities</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
             </value>
             <value>
                 <fullName>Small business</fullName>
