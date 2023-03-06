@@ -12,9 +12,9 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>New</fullName>
+                <fullName>Close</fullName>
                 <default>false</default>
-                <label>New</label>
+                <label>Close</label>
             </value>
             <value>
                 <fullName>Funds</fullName>
@@ -22,14 +22,14 @@
                 <label>Funds</label>
             </value>
             <value>
-                <fullName>Time Extension</fullName>
-                <default>false</default>
-                <label>Time Extension</label>
-            </value>
-            <value>
                 <fullName>Funds &amp; Time</fullName>
                 <default>false</default>
                 <label>Funds &amp; Time</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
             </value>
             <value>
                 <fullName>Other</fullName>
@@ -37,9 +37,9 @@
                 <label>Other</label>
             </value>
             <value>
-                <fullName>Close</fullName>
+                <fullName>Time Extension</fullName>
                 <default>false</default>
-                <label>Close</label>
+                <label>Time Extension</label>
             </value>
         </valueSetDefinition>
     </valueSet>
