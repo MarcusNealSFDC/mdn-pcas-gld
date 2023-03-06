@@ -142,7 +142,7 @@
             <targetReference>GetProjects</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <textTemplates>
         <name>PendingClose</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>

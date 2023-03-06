@@ -186,10 +186,6 @@
                 <field>Local_Use__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>PNNL_SPP_Code__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Billing_Type__c</field>
             </layoutItems>
@@ -321,6 +317,14 @@
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
+        <fields>NAME</fields>
+        <fields>Proposed_Amendment__c</fields>
+        <fields>Status__c</fields>
+        <fields>Amendment_Authorized_Amount__c</fields>
+        <fields>Action_Type__c</fields>
+        <relatedList>Funding_Action__c.PNNL_Contract__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>TASK.WHO_NAME</fields>
         <fields>ACTIVITY.TASK</fields>
@@ -339,7 +343,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3R0000013Kxg</masterLabel>
+        <masterLabel>00h3R0000017hkn</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

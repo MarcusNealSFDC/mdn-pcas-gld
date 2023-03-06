@@ -6,11 +6,11 @@
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>FK_$Funding_Action__c.PNNL_SC_Approved_Level__c</field>
+        <field>FK_$Funding_Action__c.SC_Approved_Level_Amount__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>PNNL_Fund_Code__c.PNNL_Obligated__c</field>
+        <field>PNNL_Funding_Obligation__c.PCAS_Obligated__c</field>
     </columns>
     <format>Matrix</format>
     <groupingsAcross>
@@ -20,7 +20,7 @@
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>PNNL_Funding_Obligation__c.PNNL_Sponsor_Group_Code__c</field>
+        <field>FK_$Funding_Action__c.PNNL_Sponsor_Group_Code__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>SPP Comparison Report</name>
