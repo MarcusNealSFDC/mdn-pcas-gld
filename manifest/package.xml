@@ -84,8 +84,12 @@
 		<name>ContentAsset</name>
 	</types>
 	<types>
+	<types>
 		<members>PNNL_Proposal</members>
-		<members>PNSO_Application_c</members>
+		<members>PNSO_Application</members>
+		<members>Proposal_Contract_Authorization_Console</members>
+		<name>CustomApplication</name>
+	</types>
 		<name>CustomApplication</name>
 	</types>
 	<types>
