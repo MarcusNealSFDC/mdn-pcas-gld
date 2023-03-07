@@ -186,7 +186,7 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>default.user@pnnl.gov</runningUser>
+    <runningUser>marcus.neal@experiencecloud.com</runningUser>
     <textColor>#000000</textColor>
     <title>CSC Dashboard</title>
     <titleColor>#000000</titleColor>

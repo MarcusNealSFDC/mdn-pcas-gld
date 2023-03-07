@@ -1,7 +1,7 @@
 {
-    "orgName": "pnnl-hub",
-    "sourceOrg": "00D8z0000008anN",
-    "features": ["Communities", "ForceComPlatform"],
+    "orgName": "PCAS-HUB",
+    "sourceOrg": "00DDo000000I2J5",
+    "features": ["Communities", "WorkThanksPref","ForceComPlatform"],
     "settings": {
         "communitiesSettings": {
             "enableNetworksEnabled": true
@@ -11,6 +11,13 @@
         },
         "opportunitySettings": {
             "enableOpportunityTeam": true
+        },
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+          },
+        "workDotComSettings": {
+            "enableWorkThanksPref": true,
+            "enableProfileSkills": true
         }
     }
 }

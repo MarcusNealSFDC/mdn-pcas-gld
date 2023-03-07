@@ -162,10 +162,6 @@
             <name>Funding_Preparation_Approval</name>
             <type>FieldUpdate</type>
         </action>
-        <action>
-            <name>Funding_Preparation_Approval</name>
-            <type>FieldUpdate</type>
-        </action>
     </recallActions>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>

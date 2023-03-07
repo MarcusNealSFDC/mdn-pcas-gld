@@ -4,11 +4,51 @@
         <layout>ACT Proposal</layout>
         <sections>
             <label></label>
+            <section>Cost Details</section>
+        </sections>
+        <sections>
+            <label></label>
             <section>Custom Links</section>
         </sections>
         <sections>
             <label></label>
-            <section>Fields</section>
+            <section>Explain How the Proposed Work is aligned with DOE / PNNL Missions.</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Location, Facilities, and Equipment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Price-Anderson Amendments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Team &amp; Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Provide an executive summary suitable for public release.</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope Statement</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sponsor Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Strategic Partnership Project Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Will the Proposed Work Adversely Impact  DOE-Assigned Projects?</section>
         </sections>
     </layouts>
     <layouts>
@@ -83,7 +123,47 @@
     </quickActions>
     <quickActions>
         <label></label>
+        <name>Amendment</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Assign_to_Contract_Specialist</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Assign_to_IWO_Specialist</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Begin_Proposal_Draft</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Complete_DOE_Proposal</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Complete_Proposal</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Convert_to_FWP</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
         <name>Create_a_Project</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Purge_Cost_Sheet</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Revision</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Scope_Validated</name>
     </quickActions>
     <quickActions>
         <label></label>
@@ -93,6 +173,11 @@
         <description></description>
         <label></label>
         <name>ACT</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>CRADA</name>
     </recordTypes>
     <recordTypes>
         <description></description>
@@ -107,12 +192,22 @@
     <recordTypes>
         <description></description>
         <label></label>
+        <name>DOE_Holding</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
         <name>F_SPP</name>
     </recordTypes>
     <recordTypes>
         <description></description>
         <label></label>
         <name>IWO</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>JA_IPA</name>
     </recordTypes>
     <recordTypes>
         <description></description>
@@ -125,13 +220,29 @@
         <name>NIC_RW</name>
     </recordTypes>
     <recordTypes>
+        <label></label>
+        <name>Other</name>
+    </recordTypes>
+    <recordTypes>
         <description></description>
         <label></label>
         <name>SIPP</name>
     </recordTypes>
     <validationRules>
         <errorMessage></errorMessage>
+        <name>Close_Date_Greater_Than_Prepared_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cost_Sheet_Must_be_Attached</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
         <name>EMSL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Foreign_Sponsor_Approval</name>
     </validationRules>
     <validationRules>
         <errorMessage></errorMessage>
@@ -149,4 +260,16 @@
         <errorMessage></errorMessage>
         <name>When_FFRDC_is_True</name>
     </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>errorOnLock</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>DeliveryStatus</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>new_oppty</name>
+    </webLinks>
 </CustomObjectTranslation>

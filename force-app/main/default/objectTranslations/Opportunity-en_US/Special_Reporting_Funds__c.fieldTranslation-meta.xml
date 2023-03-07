@@ -14,8 +14,4 @@
         <masterLabel>IRA</masterLabel>
         <translation></translation>
     </picklistValues>
-    <picklistValues>
-        <masterLabel>None</masterLabel>
-        <translation></translation>
-    </picklistValues>
 </CustomFieldTranslation>

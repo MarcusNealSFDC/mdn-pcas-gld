@@ -260,7 +260,7 @@
     <dashboardType>LoggedInUser</dashboardType>
     <description>A dashboard to provide a comprehensive overview of the status of approvals</description>
     <isGridLayout>true</isGridLayout>
-    <runningUser>default.user@pnnl.gov</runningUser>
+    <runningUser>marcus.neal@experiencecloud.com</runningUser>
     <textColor>#000000</textColor>
     <title>Approvals Overview</title>
     <titleColor>#000000</titleColor>
