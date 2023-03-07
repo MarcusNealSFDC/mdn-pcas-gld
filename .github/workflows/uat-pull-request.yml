@@ -3,17 +3,17 @@ name: Deployments:PR BUGFIXES/FEATURES - Pull Request Against uat
 on:
   pull_request:
     branches:
-    - org/03-uat 
+    - mdn-pcas/org-uat
   push:
     branches:
-    - org/03-uat 
+    - mdn-pcas/org-uat
 
 env:
   SFDX_AUDIENCE_URL: https://test.salesforce.com # Use https://login.salesforce.com for production instances. Use https://test.salesforce.com for sandboxes
-  SALESFORCE_ORG_DEV_URL: https://pnnl--uat.sandbox.my.salesforce.com # Salesforce URL of target org
-  SALESFORCE_ORG_USERNAME: builduser@pnnl.gov.uat # Salesforce username of target org
-  TARGET_BRANCH: org/03-uat
-  ORG_NAME: pnnl-uat
+  SALESFORCE_ORG_DEV_URL: https://experiencecloudcom6-dev-ed.develop.lightning.force.com # Salesforce URL of target org
+  SALESFORCE_ORG_USERNAME: marcus.neal@experiencecloud.com # Salesforce username of target org
+  TARGET_BRANCH: mdn-pcas/org-uat
+  ORG_NAME: expcasgld
   SOURCE_DIR: force-app
 
 jobs:
