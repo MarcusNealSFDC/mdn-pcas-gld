@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>PNSO_Contracting_Officer_Copy__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">The Contracting Officer’s approval does not constitute a determination of the acceptability of the terms or of the allowability of costs, or the allowance of any deviation to the contract or approved management systems, unless the consent or approval specifies otherwise.</value>
     </values>
     <values>
         <field>Signing_Ceremony_Copy_Long__c</field>
