@@ -3,7 +3,27 @@
     <label></label>
     <name>SPECIMEN_1_Detail__c</name>
     <picklistValues>
+        <masterLabel>Battelle is lead party. Battelle will report new inventions to Sponsor, under the terms of a separate option IP option Sponsor may license new IP from Battelle. (DOE Approval NOT Required)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battelle is lead party. No IP transferred, but Sponsor can own technical information (TI) created under the agreement (DOE Approval NOT Required)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battelle is lead party. Sponsor gets royalty-free right to use TI subject to Battelle IP rights. (DOE Approval NOT Required)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other- Please work with IPLS for phrasing-(DOE Approval may or may not be Required</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Sponsor is a United States entity. Specimen Agreement No. 1 (DOE Approved Not Required)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sponsor is lead party.  Takes on all responsibilities under the class waiver. (DOE Approval NOT Required)</masterLabel>
         <translation></translation>
     </picklistValues>
 </CustomFieldTranslation>

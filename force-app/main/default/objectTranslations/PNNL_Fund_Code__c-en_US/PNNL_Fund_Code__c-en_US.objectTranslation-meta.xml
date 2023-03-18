@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fund Code</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fund Codes</value>
+    </caseValues>
+    <layouts>
+        <layout>Fund Code Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Fund_Code_Name</name>
+    </validationRules>
+</CustomObjectTranslation>

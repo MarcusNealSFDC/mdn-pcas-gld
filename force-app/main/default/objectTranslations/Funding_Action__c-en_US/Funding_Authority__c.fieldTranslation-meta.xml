@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Funding_Authority__c</name>
+    <picklistValues>
+        <masterLabel>Atomic Energy Act of 1954 (P.L. 83-703)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clean Water Act. 33 U.S.C. 1254</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clear Air Act Sec/103 (b) (2)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DHS Act 6 U.S.C. 189</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Economy Act 31 U.S.C.1535</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energy Reorganization Act (42 U.S.C. 5845)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foreign Assistance Act 22 U.S.C.2395 (b)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meteorological Services 49 U.S.C. 44720 (b)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Aeronautical and Space Act of 1958 42 U.S.C. 241</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Aeronautical and Space Act of 1958 as amended (&quot;Space Act&quot;) 51 U.S.C. 20113</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outer Continental Shelf 43 U.S.C. 1331 et seq (OCS) Lands Act of 1953 as amended</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Health Services Act 42 U.S.C. 285a-2(B)(8)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Health and Welfare 42 U.S.C. 241</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

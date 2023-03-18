@@ -3,6 +3,18 @@
     <label></label>
     <name>SPECIMEN_4_Detail__c</name>
     <picklistValues>
+        <masterLabel>No IP transferred. Battelle owns IP under terms of M&amp;O contract (DOE Approval Required)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No IP transferred. Sponsor own IP under terms reviewed and approved by DOE (DOE Approval Required</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other- Please work with IPLS for phrasing (DOE Approval Required)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Sponsor is a Foreign Entity. Specimen Agreement No. 4 (DOE Approval Required)</masterLabel>
         <translation></translation>
     </picklistValues>

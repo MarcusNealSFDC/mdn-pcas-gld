@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Budget &amp; Reporting Entry</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Budget &amp; Reporting Entries</value>
+    </caseValues>
+    <layouts>
+        <layout>Budget &amp; Reporting Entry Layout</layout>
+        <sections>
+            <label></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Funding Entry Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Have the following been verified?</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>If_CRADA_is_yes</name>
+    </validationRules>
+</CustomObjectTranslation>

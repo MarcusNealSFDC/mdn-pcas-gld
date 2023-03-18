@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CRADA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CRADA</value>
+    </caseValues>
+    <layouts>
+        <layout>CRADA Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MSW CRADA Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>CRADA</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>MSW_CRADA</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Foreign_Sponsor_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PNSO_Animal_Researcher</name>
+    </validationRules>
+</CustomObjectTranslation>

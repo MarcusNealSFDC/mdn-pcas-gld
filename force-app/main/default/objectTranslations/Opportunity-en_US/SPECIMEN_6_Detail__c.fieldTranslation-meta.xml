@@ -3,7 +3,19 @@
     <label></label>
     <name>SPECIMEN_6_Detail__c</name>
     <picklistValues>
-        <masterLabel>Agreemnt is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</masterLabel>
+        <masterLabel>Agreement is merely for standard laboratory analysis, technical assistance, and training. Specimen Agreement No. 6 (DOE Approval NOT Required)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battelle is lead party, TI subject to 5 year protection limitation (DOE Approval Required)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other- Please work with IPLS for phrasing (DOE Approval Required</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sponsor is lead party.  TI subject to 5 year protection limitation (DOE Approval Required)</masterLabel>
         <translation></translation>
     </picklistValues>
 </CustomFieldTranslation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Funding Action</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Funding Actions</value>
+    </caseValues>
+    <layouts>
+        <layout>ACT Funding Action Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DOE Funding Action Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPP Funding Action Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Add_SPP_Code</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>ACT_Funding_Action</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>DOE_Direct_Funding_Action</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SPP_Funding_Action</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ACT_Agreement_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Funding_Action_Completion_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Manually_Signed_Funding_Docu</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Remaining_Agreement_Amount_Less_than_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>SPP_Closeout_Documentation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>SPP_Funding_Document</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>SPP_Invoice_Document</name>
+    </validationRules>
+</CustomObjectTranslation>
